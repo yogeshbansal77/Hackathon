@@ -1,0 +1,29 @@
+Query: i have to fetch files from sftp
+
+Recommendation:
+1. **Recommended Service(s):**  
+   - **Beam Service**
+
+2. **Why this service is appropriate:**  
+   Beam Service is explicitly designed to handle file transfers from SFTP servers. It supports SFTP connections, file downloads, and authentication, making it the most suitable choice for fetching files from an SFTP server in an automated or manual manner.
+
+3. **Example of how to use this service:**
+
+   - **Step 1:** Configure the SFTP connection in Beam Service by providing the server address, port, username, and password/key.
+   - **Step 2:** Specify the directory path in the SFTP server where the desired files are located.
+   - **Step 3:** Trigger or schedule the file fetch operation through Beam's interface or API.
+   - **Step 4:** Downloaded files will be made available in the designated storage location.
+
+   **Example Configuration:**
+   ```
+   {
+       "sftp_server": "sftp.example.com",
+       "port": 22,
+       "username": "your_username",
+       "private_key": "path/to/private_key.pem",  // or password
+       "remote_directory": "/path/to/files",
+       "local_directory": "/destination/path/"
+   }
+   ```
+
+   If you need further guidance on setting up or running Beam Service, let me know!

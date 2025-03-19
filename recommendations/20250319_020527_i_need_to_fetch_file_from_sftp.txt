@@ -1,0 +1,32 @@
+Query: i need to fetch file from sftp
+
+Recommendation:
+For your requirement of fetching a file from an SFTP server, **Beam Service** is the most appropriate choice. Here's a detailed explanation:
+
+---
+
+### **Recommended Service**
+- **Beam Service**
+
+---
+
+### **Why Beam Service?**
+Beam Service is specifically designed for connecting to SFTP servers, authenticating, and downloading files. It automates file transfers and can handle tasks like fetching data regularly from external SFTP systems.
+
+---
+
+### **Simple Example of How to Use Beam Service**
+1. **Set Up the Configuration**:
+   - Provide the SFTP server details such as hostname, port, username, password (or private key for authentication), and the file path.
+   - Define the schedule, if you want to automate the file fetching.
+
+2. **Fetch the File**:
+   - Use Beam Service's API or dashboard to initiate the file retrieval.
+   - The file will be downloaded and can be saved to a desired location or further processed.
+
+3. **Output/Processing**:
+   - Once the file is fetched, you can either store it locally, move it to an S3 bucket using **Batch Service**, or process it using another Razorpay tool.
+
+---
+
+Let me know if you need detailed steps, documentation, or help setting up the Beam Service!

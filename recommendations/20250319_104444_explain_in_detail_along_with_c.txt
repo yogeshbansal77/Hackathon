@@ -1,0 +1,84 @@
+Query: explain in detail along with code snippets
+
+Recommendation:
+Based on the updated information and the available services, none of the listed services (Batch Service, Document Processor, or API Gateway) specifically handles downloading files from an **SFTP server**. However, Razorpay employees typically use internal utilities or write specific scripts to interact with **external SFTP servers**, often supported by libraries or integrations like Python's `pysftp` or AWS SDKs (if integrated with SFTP-to-S3 workflows).
+
+If no direct Razorpay service exists for this purpose, you can use a combination of Razorpay's **Batch Service** (to handle the downloaded file once retrieved from SFTP) in conjunction with a **custom SFTP download mechanism**. Here's a detailed explanation of how you can implement these steps:
+
+---
+
+### **Step 1: Download File from SFTP Server**
+You can use Python's `pysftp` library to fetch a file from an SFTP server programmatically.
+
+#### Code Example:
+```python
+import pysftp
+
+# Define connection parameters
+sftp_host = "sftp.example.com"
+sftp_port = 22
+username = "razorpay_user"
+password = "secure_password"
+remote_file_path = "/incoming/data.csv"
+local_save_path = "/local/path/to/save/data.csv"
+
+# Connect to the SFTP server and download the file
+with pysftp.Connection(host=sftp_host, username=username, password=password, port=sftp_port) as sftp:
+    print("Connection successful!")
+    sftp.get(remote_file_path, local_save_path)  # Download file
+    print(f"File downloaded successfully to {local_save_path}")
+```
+
+---
+
+### **Step 2: Upload the File for Processing Using Batch Service**
+After downloading the file from the SFTP server, you can upload it to **Batch Service** for further operations like storing it in an S3 bucket or processing it.
+
+#### Example Workflow with Batch Service:
+1. Use the Batch Service API to upload the file to S3.
+2. Trigger any processing operations on the uploaded file if required.
+
+#### Python Script for Batch Service Interaction:
+```python
+import requests
+
+# Batch Service API URL (example URL)
+batch_service_url = "https://batch-service.internal.razorpay.com/upload"
+
+# Define headers and payload
+headers = {
+    "Authorization": "Bearer <your_access_token>"
+}
+files = {
+    "file": open(local_save_path, "rb")
+}
+payload = {
+    "bucket_name": "razorpay-batch-bucket",
+    "file_key": "data.csv"  # File name in S3
+}
+
+# Upload file to Batch Service
+response = requests.post(batch_service_url, headers=headers, files=files, data=payload)
+
+# Check response
+if response.status_code == 200:
+    print("File uploaded successfully to the Batch Service!")
+else:
+    print(f"Failed to upload file: {response.text}")
+```
+
+---
+
+### **Step 3: Use Batch Service for Further Operations**
+Once the file is uploaded to Batch Service, you can:
+1. Perform **data transformations**.
+2. Integrate with **downstream services** for further processing.
+3. Store the file permanently in S3 buckets for archival purposes.
+
+---
+
+### Why This Solution Works:
+1. The **SFTP approach** ensures external file retrieval.
+2. **Batch Service** handles uploading, processing, and any post-processing tasks like storing data in S3, compressing it, or analyzing it.
+
+If you have specific needs for Batch Service or need assistance in setting up SFTP access, let me know!

@@ -1,0 +1,18 @@
+Query: Thanks
+
+Recommendation:
+To accomplish your task of placing a file in an S3 bucket, you should continue using:
+
+---
+
+### **Recommended Service**
+- **Batch Service**
+
+---
+
+### **Why Batch Service?**
+Batch Service is explicitly designed for file-related operations, such as moving files to cloud storage solutions like S3 buckets. It ensures seamless integrations while handling both large and small file transfers.
+
+---
+
+Would you like a simple example or any further guidance in setting this up? Let me know!

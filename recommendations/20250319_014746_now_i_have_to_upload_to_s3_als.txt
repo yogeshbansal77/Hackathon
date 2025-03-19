@@ -1,0 +1,59 @@
+Query: now i have to upload to s3 also
+
+Recommendation:
+### Recommended Services:
+1. **Beam Service**  
+   - To fetch a file from the SFTP server (as per your first requirement).  
+   
+2. **Batch Service**  
+   - To upload the downloaded file to an S3 bucket.  
+
+---
+
+### Why These Services?  
+- **Beam Service**: Handles fetching files securely from an SFTP server, ensuring reliable file retrieval.  
+- **Batch Service**: Specializes in uploading files to Amazon S3, particularly with support for large files and additional operations like compression that you might need later.  
+
+---
+
+### Example Workflow:  
+Here’s how you can achieve the entire task step-by-step:
+
+#### **Step 1: Fetch File from SFTP using Beam Service**
+1. Use the Beam Service to fetch the file from the SFTP server (refer to the guide provided earlier).  
+2. Retrieve the downloaded file, which will be temporarily stored in your configured location.
+
+#### **Step 2: Upload File to S3 using Batch Service**
+1. Use the Batch Service API or UI to:
+   - Point to the file fetched by the Beam Service.  
+   - Provide your S3 bucket name and the object key (e.g., `uploaded_reports/file_name.csv`) where you want the file stored.  
+2. Trigger the upload task, and the file will be uploaded to the S3 bucket.
+
+---
+
+### Usage Example:
+
+#### **Beam Service (Fetch from SFTP)**
+- **Input**:  
+  SFTP Details:  
+  ```
+  Hostname: sftp.example.com
+  Username: user123
+  Password: securepassword
+  File Path: /path/to/your/file.csv
+  ```
+- **Output**:  
+  File gets downloaded locally or into a temporary storage location configured for your project.
+
+#### **Batch Service (Upload to S3)**  
+- **Input**:  
+  - File: `file.csv` from the Beam Service output.  
+  - S3 Bucket: `my-s3-bucket`  
+  - S3 Object Key: `uploaded_reports/file.csv`  
+
+- **Process**:  
+  The service uploads the file to the S3 bucket and makes it available for further use.
+
+---
+
+If you need further assistance with setting up either the Beam or Batch Service, let me know, and I can guide you!

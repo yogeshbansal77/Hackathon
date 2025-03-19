@@ -1,0 +1,74 @@
+Query: i want tio upload file to s3 also
+
+Recommendation:
+To fulfill your requirement of downloading a file from an SFTP server **and** uploading it to an Amazon S3 bucket, you can use a combination of **Beam Service** and **Batch Service**. Here's how:
+
+---
+
+### 1. **Recommended Services**
+
+#### a) **Beam Service**
+   - **Use Case**: Fetch files from the SFTP server.
+   - **Capabilities**: Handles SFTP connections, downloads files securely, and provides the file data for further operations.
+
+#### b) **Batch Service**
+   - **Use Case**: Upload the downloaded file to an Amazon S3 bucket.
+   - **Capabilities**: Efficiently uploads files to S3 buckets and supports file operations like compression and metadata handling.
+
+---
+
+### 2. **Why These Services are Appropriate**
+   - **Beam Service** ensures you can securely fetch the required file(s) from the remote SFTP server.
+   - **Batch Service** enables seamless integration with S3 buckets for efficient and reliable file uploads.
+
+---
+
+### 3. **Example Workflow**
+
+Let’s break this into two steps:
+
+#### **Step 1: Fetch file from SFTP using Beam Service**
+1. Configure a Beam job:
+   - Input the SFTP server details (host, port, username, password/key).
+   - Specify the file path (e.g., `/path/to/data_file.csv`).
+   - Run or schedule the job to fetch the file.
+
+   **Example Configuration:**
+   ```yaml
+   {
+     "host": "sftp.partner-server.com",
+     "port": 22,
+     "username": "your_sftp_username",
+     "password": "your_sftp_password",
+     "file_path": "/path/to/data_file.csv"
+   }
+   ```
+
+2. The file fetched from the SFTP server will be accessible for further processing.
+
+---
+
+#### **Step 2: Upload fetched file to S3 using Batch Service**
+1. Configure a Batch job:
+   - Provide your S3 bucket details.
+   - Specify the local file path where the file was stored after Beam fetched it.
+   - Run or schedule the Batch job to upload the file to your desired S3 bucket.
+
+   **Example Configuration:**
+   ```yaml
+   {
+     "bucket_name": "your-s3-bucket-name",
+     "file_path": "/local/storage/path/data_file.csv",
+     "s3_key": "uploads/data_file.csv"
+   }
+   ```
+
+2. Once the job is executed, your file will be securely uploaded to the S3 bucket.
+
+---
+
+### 4. **Combined Flow**
+1. Use **Beam Service** to fetch the file from the SFTP server.
+2. Use **Batch Service** to upload the fetched file to an S3 bucket in an automated manner.
+
+If you need detailed API documentation for these services or assistance in setting them up, just let me know!

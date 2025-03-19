@@ -1,0 +1,15 @@
+Query: if i have to upload to s3 then which service i have to use, answer in single line
+
+Recommendation:
+**Recommended Service(s):**  
+- **Batch Service**
+
+**Explanation:**  
+Batch Service is purpose-built for uploading files to Amazon S3 buckets, providing a robust and efficient solution for this task.
+
+**Example Usage:**  
+1. Configure the S3 bucket details (bucket name, region, access key, secret key).  
+2. Specify the file path(s) to be uploaded.  
+3. Trigger the file upload via Batch Service API or interface.  
+
+Let me know if you need help with the setup!
