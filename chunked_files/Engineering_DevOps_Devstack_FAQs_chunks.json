@@ -1,0 +1,76 @@
+[
+    {
+        "id": "engineering_devops_devstack_faqs-chunk-0",
+        "name": "FAQs.txt - How to keep deployments/labels up for more than 72 hours?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Devstack"
+        ],
+        "description": "This section explains how to keep deployments or labels running for more than the default 72-hour limit in the devstack service fleet. By default, non-base pods can only run for 72 hours. To extend this duration, the labels associated with the deployments need to be whitelisted. The process involves updating a configuration file with the labels to be whitelisted, restarting a specific component, and ensuring that the deployments have the required label.",
+        "use_cases": [
+            "Keeping deployments or labels running for more than 72 hours",
+            "Whitelisting specific labels to bypass the default time limit",
+            "Managing the duration of non-base pods in the devstack service fleet"
+        ],
+        "capabilities": [
+            "Default time limit for non-base pods",
+            "Whitelisting labels",
+            "Updating configuration file",
+            "Restarting components",
+            "Labeling deployments",
+            "Managing deployment duration"
+        ],
+        "references": [
+            "https://github.com/razorpay/armory/blob/master/devstack-config/whitelist_labels.yaml>"
+        ]
+    },
+    {
+        "id": "engineering_devops_devstack_faqs-chunk-1",
+        "name": "FAQs.txt - How to make an endpoint available externally?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Devstack"
+        ],
+        "description": "This section appears to be a configuration snippet for a Kubernetes deployment or service, likely using Helm charts. It includes a conditional statement that checks the value of '.Values.devstack_label' and applies a label 'velero.io/include-in-backup: \"true\"' if it matches 'base'. It then sets the name and namespace for the deployment or service based on the provided values.",
+        "use_cases": [
+            "Configuring Kubernetes deployments or services using Helm charts",
+            "Enabling backup and restore capabilities for specific deployments or services",
+            "Customizing deployment or service names and namespaces based on configuration values"
+        ],
+        "capabilities": [
+            "Conditional configuration",
+            "Labeling resources",
+            "Setting resource names",
+            "Setting resource namespaces",
+            "Using Helm values"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devstack_faqs-chunk-2",
+        "name": "FAQs.txt - What are devstack NAT IPs?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Devstack"
+        ],
+        "description": "This section explains how to make a service endpoint accessible from outside the internal network. It provides a link to a document that outlines the steps to onboard a service route to the edge network and create an external route pointing to the traefik-external service. Additionally, it lists three NAT IP addresses, which are likely used for external access or testing purposes in a development environment (devstack).",
+        "use_cases": [
+            "Exposing internal service endpoints to external access",
+            "Testing external access to services in a development environment",
+            "Configuring routing and load balancing for external access"
+        ],
+        "capabilities": [
+            "External routing",
+            "Edge network integration",
+            "NAT IP assignment",
+            "Service onboarding",
+            "Traefik load balancing"
+        ],
+        "references": [
+            "https://docs.google.com/document/d/1mA-LCh-mezKMZz6lykAIHy00ErsuZVq_N1PIwsbF2eQ/edit?tab=t.0#heading=h.jdkzz6j9l23e"
+        ]
+    }
+]

@@ -1,0 +1,54 @@
+[
+    {
+        "id": "engineering_devops_processes_access-management_pagerduty-access-process-doc-chunk-0",
+        "name": "PagerDuty Access Process Doc.txt - Steps:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management"
+        ],
+        "description": "This section outlines the process for requesting access to PagerDuty, a tool used for incident management and on-call scheduling. It explains that access is granted through a Single Sign-On (SSO) system, and requests must be submitted via a JIRA ticket in the Corp project. The ticket should include the requester's email address and manager approval. Once the ticket is created, the DevOps team will onboard the user by creating a pull request in the Vishnu repository. The section also mentions that Engineering Managers can request manager access to schedules to manage on-call personnel.",
+        "use_cases": [
+            "Requesting access to PagerDuty for incident management and on-call scheduling",
+            "Engineering Managers requesting manager access to schedules for managing on-call personnel",
+            "Onboarding new users to PagerDuty by the DevOps team",
+            "Submitting access requests via JIRA tickets in the Corp project"
+        ],
+        "capabilities": [
+            "SSO authentication for PagerDuty",
+            "JIRA ticketing system for access requests",
+            "DevOps team handling onboarding and access provisioning",
+            "Vishnu repository for managing PagerDuty configurations",
+            "Manager access to schedules for Engineering Managers",
+            "Defined SLA for access approval and granting"
+        ],
+        "references": [
+            "https://razorpay.pagerduty.com/",
+            "https://razorpay.atlassian.net/browse/CORP-1296",
+            "https://github.com/razorpay/vishnu/pull/5114/files"
+        ]
+    },
+    {
+        "id": "engineering_devops_processes_access-management_pagerduty-access-process-doc-chunk-1",
+        "name": "PagerDuty Access Process Doc.txt - Note:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management"
+        ],
+        "description": "This section explains that when an employee leaves the company, it is the responsibility of their team to remove them from the on-call schedule for any services or systems they were previously responsible for. This ensures that the former employee no longer receives alerts or notifications related to their previous role.",
+        "use_cases": [
+            "Employee offboarding",
+            "Access management",
+            "Team responsibility for on-call schedules"
+        ],
+        "capabilities": [
+            "Removing ex-employees from on-call schedules",
+            "Team-based access control",
+            "On-call schedule management"
+        ],
+        "references": []
+    }
+]

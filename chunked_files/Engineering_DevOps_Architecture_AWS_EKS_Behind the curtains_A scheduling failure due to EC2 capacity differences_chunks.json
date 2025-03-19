@@ -1,0 +1,168 @@
+[
+    {
+        "id": "engineering_devops_architecture_aws_eks_behind-the-curtains_a-scheduling-failure-due-to-ec2-capacity-differences-chunk-0",
+        "name": "A scheduling failure due to EC2 capacity differences.txt - Background",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "EKS",
+            "Behind the curtains"
+        ],
+        "description": "This section displays a snippet of code that shows the status of a Kubernetes deployment named 'raw-spans-grouper-0'. The deployment has 2 pods running out of the desired 2 pods. This information is likely related to troubleshooting or monitoring the deployment's health and resource utilization.",
+        "use_cases": [
+            "Monitoring Kubernetes deployments",
+            "Troubleshooting deployment issues",
+            "Checking resource utilization",
+            "Verifying deployment status"
+        ],
+        "capabilities": [
+            "Displaying deployment name",
+            "Showing desired and running pod counts",
+            "Indicating pod status (Running)",
+            "Providing deployment age or uptime"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_aws_eks_behind-the-curtains_a-scheduling-failure-due-to-ec2-capacity-differences-chunk-1",
+        "name": "A scheduling failure due to EC2 capacity differences.txt - Logs showing pending pod",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "EKS",
+            "Behind the curtains"
+        ],
+        "description": "This section displays logs showing the status of three pods (raw-spans-grouper-1, raw-spans-grouper-2, and raw-spans-grouper-3) belonging to a stateful set. Two pods are running, while the third pod (raw-spans-grouper-3) is in a pending state, indicating that it has not been scheduled due to insufficient resources or capacity constraints in the Kubernetes cluster. The logs suggest that the stateful set did not have enough available resources or 'wiggle room' to schedule the third pod.",
+        "use_cases": [
+            "Monitoring the status of pods in a Kubernetes cluster",
+            "Troubleshooting resource constraints or capacity issues",
+            "Managing and scaling stateful applications"
+        ],
+        "capabilities": [
+            "Pod status monitoring",
+            "Resource constraint detection",
+            "Capacity management",
+            "Stateful application deployment",
+            "Kubernetes cluster management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_aws_eks_behind-the-curtains_a-scheduling-failure-due-to-ec2-capacity-differences-chunk-2",
+        "name": "A scheduling failure due to EC2 capacity differences.txt - Cluster Autoscaler behavior",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "EKS",
+            "Behind the curtains"
+        ],
+        "description": "This section explains a warning message that appears when the Kubernetes scheduler is unable to schedule pods on the available nodes in the cluster. The warning indicates that none of the 215 nodes have sufficient resources (memory, CPU, or matching node selectors) to accommodate the requested pods. Additionally, some nodes are already overloaded with too many pods. This situation can arise due to differences in the capacity of EC2 instances or resource constraints within the cluster.",
+        "use_cases": [
+            "Monitoring cluster resource utilization",
+            "Identifying resource bottlenecks",
+            "Scaling cluster capacity",
+            "Optimizing pod scheduling"
+        ],
+        "capabilities": [
+            "Cluster resource monitoring",
+            "Node capacity tracking",
+            "Pod scheduling",
+            "Resource constraint handling",
+            "Node selector matching",
+            "Overload detection"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_aws_eks_behind-the-curtains_a-scheduling-failure-due-to-ec2-capacity-differences-chunk-3",
+        "name": "A scheduling failure due to EC2 capacity differences.txt - Experiment with instance types",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "EKS",
+            "Behind the curtains"
+        ],
+        "description": "This section explains an issue where a Kubernetes cluster was unable to schedule a pod named 'raw-spans-grouper-3' even after the Cluster Autoscaler brought up a new node with sufficient capacity (c5d.2xlarge instance type). The author expected the new node to have adequate resources to run the pending pod, but the Kubernetes scheduler still refused to schedule the pod on the new node.",
+        "use_cases": [
+            "Troubleshooting Kubernetes scheduling issues",
+            "Understanding the behavior of Cluster Autoscaler",
+            "Analyzing the impact of different EC2 instance types on Kubernetes scheduling",
+            "Optimizing resource utilization in a Kubernetes cluster"
+        ],
+        "capabilities": [
+            "Kubernetes scheduling",
+            "Cluster Autoscaler",
+            "EC2 instance types",
+            "Resource capacity management",
+            "Pod scheduling",
+            "Pending pod analysis"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_aws_eks_behind-the-curtains_a-scheduling-failure-due-to-ec2-capacity-differences-chunk-4",
+        "name": "A scheduling failure due to EC2 capacity differences.txt - Comparing node resources",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "EKS",
+            "Behind the curtains"
+        ],
+        "description": "This section explains an experiment where the authors removed a specific instance type (c5d.2xlarge) from their Auto Scaling Group (ASG) to allow a different instance type (c5a.2xlarge) to be provisioned. They then compared the resources available on these two instance types using the 'kubectl describe node' command. Despite both instances being advertised as having 16GB of memory by AWS, the actual available memory differed, with the c5a.2xlarge instance having slightly more memory available (16207108Ki) than the c5d.2xlarge instance.",
+        "use_cases": [
+            "Troubleshooting scheduling issues in Kubernetes clusters",
+            "Comparing resource availability across different EC2 instance types",
+            "Optimizing resource utilization in Kubernetes clusters",
+            "Validating advertised resource specifications from cloud providers"
+        ],
+        "capabilities": [
+            "Kubernetes cluster management",
+            "Auto Scaling Group (ASG) configuration",
+            "Resource inspection using 'kubectl describe node'",
+            "Comparing advertised and actual resource availability",
+            "Identifying resource discrepancies across instance types"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/5b518939a1959523272ae4ab09818e40.png",
+            "https://alpha.razorpay.com/_static/file/99a415655f3cbf0f360fe601c06e1dc5.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_aws_eks_behind-the-curtains_a-scheduling-failure-due-to-ec2-capacity-differences-chunk-5",
+        "name": "A scheduling failure due to EC2 capacity differences.txt - Conclusion",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "EKS",
+            "Behind the curtains"
+        ],
+        "description": "This section explains that there was a discrepancy in the memory capacity between two different EC2 instance types (c5a.2xlarge and c5d.2xlarge) from AWS, despite both being listed as having 16GB of memory. The c5d.2xlarge instance had around 400MB more memory than the c5a.2xlarge instance, which caused a scheduling issue where a pod could not be scheduled on the c5d.2xlarge instance due to insufficient memory. This memory difference, although small, was enough to cause the pod to remain in a pending state.",
+        "use_cases": [
+            "Troubleshooting scheduling issues in Kubernetes clusters running on AWS EC2 instances",
+            "Understanding and accounting for potential discrepancies in resource specifications across different EC2 instance types",
+            "Optimizing resource allocation and utilization in containerized applications running on AWS EC2"
+        ],
+        "capabilities": [
+            "Memory capacity comparison",
+            "EC2 instance type analysis",
+            "Kubernetes pod scheduling",
+            "Resource allocation",
+            "Troubleshooting"
+        ],
+        "references": [
+            "https://razorpay.slack.com/archives/CU5GKS8MQ/p1621426889020500>"
+        ]
+    }
+]

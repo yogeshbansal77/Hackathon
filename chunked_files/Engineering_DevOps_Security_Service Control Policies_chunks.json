@@ -1,0 +1,142 @@
+[
+    {
+        "id": "engineering_devops_security_service-control-policies-chunk-0",
+        "name": "Service Control Policies.txt - What is SCP?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Security"
+        ],
+        "description": "This section explains how Service Control Policies (SCPs) work in AWS Organizations. SCPs allow administrators of the management account to define maximum permissions for member accounts within the organization. They can restrict access to specific AWS services, resources, and API actions for users and roles in member accounts. These restrictions override any permissions granted by member account administrators, ensuring centralized control over access policies.",
+        "use_cases": [
+            "Restricting access to specific AWS services or resources for member accounts",
+            "Defining conditions for when to restrict access to AWS services, resources, and API actions",
+            "Overriding permissions granted by member account administrators",
+            "Enforcing centralized access control policies across the organization"
+        ],
+        "capabilities": [
+            "Specify maximum permissions for member accounts",
+            "Restrict access to AWS services",
+            "Restrict access to resources",
+            "Restrict access to individual API actions",
+            "Define conditions for access restrictions",
+            "Override member account administrator permissions"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/51e14fb8e6eef29b694cf29108117388.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_security_service-control-policies-chunk-1",
+        "name": "Service Control Policies.txt - How does SCP work?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Security"
+        ],
+        "description": "This section explains how Service Control Policies (SCPs) in AWS Organizations work. SCPs are used to control access to AWS services and API actions for individual AWS accounts or groups of accounts within an Organizational Unit (OU). Any service or action not explicitly allowed by the SCPs associated with an account or OU is denied access. SCPs are inherited from parent OUs, and they apply to all IAM identities, including the root user, within the associated accounts.",
+        "use_cases": [
+            "Restricting access to specific AWS services or API actions for individual accounts or groups of accounts within an OU",
+            "Enforcing centralized access control policies across multiple AWS accounts",
+            "Preventing accidental or unauthorized changes to resources by limiting access to certain services or actions"
+        ],
+        "capabilities": [
+            "Allow or deny access to AWS services",
+            "Apply to individual AWS accounts or groups of accounts within an OU",
+            "Inherited by child OUs and accounts",
+            "Affect all IAM identities, including the root user",
+            "Complement IAM policies within accounts",
+            "Provide centralized access control across multiple accounts"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_security_service-control-policies-chunk-2",
+        "name": "Service Control Policies.txt - Difference between an AWS Organizations SCP and an IAM policy",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Security"
+        ],
+        "description": "This section explains the difference between AWS Service Control Policies (SCPs) and IAM Permissions Boundaries. SCPs are applied at the service level, restricting what actions can be performed on specific AWS services across multiple accounts. In contrast, IAM Permissions Boundaries are applied at the role level, limiting the permissions that can be assigned to a specific IAM role. The section suggests using SCPs when managing multiple AWS accounts, empowering teams with controlled access, following an account-per-service model, and minimizing human errors in a large organization.",
+        "use_cases": [
+            "Managing multiple AWS accounts grouped in different Organizational Units (OUs)",
+            "Empowering feature teams with controlled access to create and deploy services",
+            "Following an account-per-service ideology",
+            "Minimizing the risk of human mistakes in a large organization with many people working on AWS infrastructure"
+        ],
+        "capabilities": [
+            "Service Control Policies (SCPs)",
+            "IAM Permissions Boundaries",
+            "AWS Organizations",
+            "Organizational Units (OUs)",
+            "Account-per-service model",
+            "Access control",
+            "Risk mitigation"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_security_service-control-policies-chunk-3",
+        "name": "Service Control Policies.txt - When does it make sense to use AWS SCP?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Security"
+        ],
+        "description": "This section explains that Service Control Policies (SCPs) in AWS can be configured to work as either a 'deny list' or an 'allow list'. In a deny list approach, all actions are allowed by default, and the SCP specifies which services and actions are prohibited. This allows organizations to have a more permissive default policy and selectively restrict access to specific resources or actions.",
+        "use_cases": [
+            "Implementing a least-privilege access model by denying specific services or actions",
+            "Enforcing compliance and security policies across the organization",
+            "Restricting access to sensitive or high-risk resources"
+        ],
+        "capabilities": [
+            "deny list",
+            "allow list",
+            "service restrictions",
+            "action restrictions",
+            "organizational policy enforcement"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_security_service-control-policies-chunk-4",
+        "name": "Service Control Policies.txt - Strategies for using SCPs",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Security"
+        ],
+        "description": "This section explains different strategies for using Service Control Policies (SCPs) in AWS Organizations. It discusses using SCPs as an allow list, where all actions are denied by default, and only specified services and actions are allowed. It also covers using SCPs as a deny list, where all actions are allowed by default, and specific services or actions are denied. The section provides examples and use cases for implementing these strategies, such as restricting services to certain regions, preventing disabling of CloudTrail and GuardDuty, and controlling costs by denying expensive EC2 instances.",
+        "use_cases": [
+            "Restricting services to certain AWS regions",
+            "Preventing disabling of CloudTrail and GuardDuty",
+            "Controlling costs by denying expensive EC2 instances",
+            "Implementing an allow list or deny list approach for service access"
+        ],
+        "capabilities": [
+            "Allow list approach",
+            "Deny list approach",
+            "Region restriction",
+            "Service restriction",
+            "Action restriction",
+            "Cost control"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/ec67f96bcb9cec631231b44611aa63d4.png",
+            "https://alpha.razorpay.com/_static/file/f0adb0e0b8ead24f4f5d12ff2355deee.png",
+            "https://alpha.razorpay.com/_static/file/999f9196eab507dd57a43eb7c2f8a26e.png",
+            "https://alpha.razorpay.com/_static/file/81a171049f6d5edf5abe98673d96c182.png",
+            "https://alpha.razorpay.com/_static/file/09b07429948a816e79854c01f06e3d91.png",
+            "https://alpha.razorpay.com/_static/file/cd94c4fd484ff264db6dc598543b3667.png",
+            "https://alpha.razorpay.com/_static/file/045cbab5ce39b0961cb39721e081b26a.png",
+            "https://alpha.razorpay.com/_static/file/c9074061b20d7c1699ab890790df1752.png",
+            "https://alpha.razorpay.com/_static/file/8c862e2e3545da5641f0ccbf27a5e38d.png",
+            "https://alpha.razorpay.com/_static/file/b0d87e76f27f68ad60308b28fe16c7a2.png",
+            "https://alpha.razorpay.com/_static/file/d64ac9109862d372eb52870c5cbd9fa4.png",
+            "https://alpha.razorpay.com/_static/file/1e47cbdffad9a7826d3e4493e9d3ca16.png",
+            "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html>",
+            "https://aws.amazon.com/blogs/security/how-to-use-service-control-policies-in-aws-organizations/>"
+        ]
+    }
+]

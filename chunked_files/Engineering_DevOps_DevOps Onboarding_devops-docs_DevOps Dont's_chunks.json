@@ -1,0 +1,113 @@
+[
+    {
+        "id": "engineering_devops_devops-onboarding_devops-docs_devops-dont's-chunk-0",
+        "name": "DevOps Dont's.txt - CAB approval:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding",
+            "devops-docs"
+        ],
+        "description": "This section discusses the double-edged nature of Terraform, a powerful tool used in DevOps for infrastructure provisioning and management. While Terraform allows developers to quickly set up entire infrastructures using code, it also carries the risk of accidentally destroying resources if not used carefully. The section emphasizes the importance of exercising caution and following best practices when working with Terraform to avoid unintended consequences.",
+        "use_cases": [
+            "Infrastructure provisioning",
+            "Infrastructure management",
+            "Automating infrastructure setup",
+            "Maintaining infrastructure as code"
+        ],
+        "capabilities": [
+            "Provisioning entire infrastructures using code",
+            "Tearing down infrastructures",
+            "Defining infrastructure as code",
+            "Automating infrastructure changes",
+            "Maintaining consistent infrastructure state"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_devops-docs_devops-dont's-chunk-1",
+        "name": "DevOps Dont's.txt - Terraform is your friend and enemy:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding",
+            "devops-docs"
+        ],
+        "description": "This section provides guidelines for using Terraform, an infrastructure as code (IaC) tool, in a responsible and controlled manner. It emphasizes the importance of thoroughly reviewing and understanding the changes proposed by Terraform before applying them to the infrastructure. The section also highlights the distinction between Terraform and Atlantis, which is a tool used for automating Terraform workflows.",
+        "use_cases": [
+            "Applying changes to infrastructure resources using Terraform",
+            "Reviewing and understanding Terraform plans before applying changes",
+            "Collaborating and seeking peer review for Terraform changes",
+            "Automating Terraform workflows using Atlantis"
+        ],
+        "capabilities": [
+            "Targeted plan and apply for specific resources",
+            "Detailed plan output review",
+            "Pull request integration",
+            "Local plan execution",
+            "Atlantis integration for automated workflows"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/wiki-atlantis"
+        ]
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_devops-docs_devops-dont's-chunk-2",
+        "name": "DevOps Dont's.txt - Terraform and Atlantis are not twin brothers:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding",
+            "devops-docs"
+        ],
+        "description": "This section explains the difference between the 'terraform plan' and 'atlantis plan' commands, and how the 'atlantis apply' command works differently than expected. It emphasizes the importance of reviewing the last 'atlantis plan' output before running 'atlantis apply' to avoid unintended changes. The section also mentions two bugs related to CloudFront and S3 bucket notifications in Terraform.",
+        "use_cases": [
+            "Understanding the behavior of 'atlantis plan' and 'atlantis apply' commands",
+            "Reviewing the output of 'atlantis plan' before running 'atlantis apply'",
+            "Awareness of potential bugs in Terraform related to CloudFront and S3 bucket notifications"
+        ],
+        "capabilities": [
+            "atlantis plan",
+            "atlantis apply",
+            "terraform plan",
+            "dryrun",
+            "resource targeting",
+            "state management",
+            "bug awareness",
+            "cloudfront bug",
+            "s3 bucket notification bug"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/devops-donts-2>",
+            "https://github.com/hashicorp/terraform-provider-aws/issues/35480>"
+        ]
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_devops-docs_devops-dont's-chunk-3",
+        "name": "DevOps Dont's.txt - Terraform - Cloudfront bug",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding",
+            "devops-docs"
+        ],
+        "description": "This section appears to be empty or missing content. There is no information provided about a Terraform CloudFront bug or any related topic.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_devops-docs_devops-dont's-chunk-4",
+        "name": "DevOps Dont's.txt - Terraform - Bucket Notification bug",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding",
+            "devops-docs"
+        ],
+        "description": "This section appears to be empty or missing content. Without any provided information, it is difficult to provide a meaningful description or extract any use cases or capabilities.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    }
+]

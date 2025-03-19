@@ -1,0 +1,191 @@
+[
+    {
+        "id": "engineering_devops_devops-onboarding_devops-onboarding-checklist-chunk-0",
+        "name": "DevOps Onboarding Checklist.txt - Important slack channels",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section provides a list of important Slack channels that new team members should join. These channels are used for various purposes such as monitoring outages, potential issues, alerts, announcements, and discussions related to DevOps, Kubernetes, and other tools used by the team. Joining these channels helps stay informed and collaborate effectively with the team.",
+        "use_cases": [
+            "Monitoring outages and potential issues",
+            "Receiving alerts and notifications",
+            "Staying updated with announcements and updates",
+            "Collaborating and discussing DevOps-related topics"
+        ],
+        "capabilities": [
+            "Outage monitoring",
+            "Potential issue tracking",
+            "Alert management",
+            "Announcement dissemination",
+            "DevOps collaboration",
+            "Kubernetes discussion"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_devops-onboarding-checklist-chunk-1",
+        "name": "DevOps Onboarding Checklist.txt - Important mailing groups",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section lists important mailing groups or communication channels that are likely used for collaboration and information sharing within the DevOps team and related teams. These mailing groups seem to be internal communication channels, possibly on a messaging platform like Slack or Microsoft Teams, where team members can discuss technical topics, share updates, and coordinate their work.",
+        "use_cases": [
+            "Facilitating communication and collaboration among DevOps team members",
+            "Sharing information and updates related to production engineering",
+            "Discussing and coordinating operational tasks and productivity initiatives"
+        ],
+        "capabilities": [
+            "Internal communication channels",
+            "Team collaboration",
+            "Information sharing",
+            "Coordination of tasks and initiatives"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_devops-onboarding-checklist-chunk-2",
+        "name": "DevOps Onboarding Checklist.txt - How to get Jira access",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section explains that to gain access to the Jira project management tool, one needs to request access through the #tech_it Slack channel. It suggests asking the team members in that channel to add you to the relevant mailing groups required for Jira access.",
+        "use_cases": [
+            "Onboarding new employees",
+            "Granting access to project management tools",
+            "Facilitating communication and collaboration"
+        ],
+        "capabilities": [
+            "Slack channel communication",
+            "Mailing group management",
+            "Access control for Jira"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_devops-onboarding-checklist-chunk-3",
+        "name": "DevOps Onboarding Checklist.txt - How to get Github access",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section explains the process for obtaining access to the GitHub repositories used by the DevOps team at Razorpay. It outlines the steps required to create a GitHub account, raise an access ticket on Jira, and configure SSH keys for cloning the repositories. The instructions are tailored for new team members who need to set up their development environment and gain access to the necessary code repositories.",
+        "use_cases": [
+            "Onboarding new DevOps team members",
+            "Granting access to code repositories",
+            "Setting up development environment",
+            "Configuring SSH keys for secure repository cloning"
+        ],
+        "capabilities": [
+            "GitHub account creation",
+            "Jira ticket management",
+            "SSH key generation",
+            "Repository access control",
+            "Collaboration on code repositories",
+            "Secure cloning of repositories"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_devops-onboarding-checklist-chunk-4",
+        "name": "DevOps Onboarding Checklist.txt - How to get AWS access",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section provides instructions for setting up SSH access to the organization's GitHub repository and obtaining AWS access. It guides the reader through the process of generating an SSH key, adding the public key to their GitHub account, and creating a pull request to authorize the key for use with the organization's repository. Additionally, it mentions the need to check with GitHub administrators or create a specific pull request to obtain AWS access.",
+        "use_cases": [
+            "Onboarding new developers or team members",
+            "Granting access to organization's GitHub repository",
+            "Obtaining AWS access for development or deployment purposes",
+            "Ensuring secure access to organization's resources"
+        ],
+        "capabilities": [
+            "SSH key generation",
+            "GitHub SSH key management",
+            "GitHub organization access control",
+            "Pull request creation",
+            "AWS access provisioning",
+            "Collaboration with GitHub administrators"
+        ],
+        "references": [
+            "https://github.com/razorpay/narayan/pull/1689/files"
+        ]
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_devops-onboarding-checklist-chunk-5",
+        "name": "DevOps Onboarding Checklist.txt - How to get K8s cluster access",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section outlines the steps required for a new employee to gain access to the Kubernetes (K8s) cluster used for managing and deploying applications. It involves raising an access request ticket with the Production Engineering (PE) team, configuring the AWS CLI on the local machine, and creating a pull request in the vishnu repository to apply and merge the necessary changes.",
+        "use_cases": [
+            "Onboarding new employees and granting them access to the K8s cluster",
+            "Managing and deploying applications on the K8s cluster",
+            "Collaborating with the Production Engineering team for access requests",
+            "Configuring and using the AWS CLI for interacting with AWS resources"
+        ],
+        "capabilities": [
+            "Access request management",
+            "K8s cluster access",
+            "AWS CLI configuration",
+            "Git repository management",
+            "Pull request creation and merging",
+            "Documentation reference"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/user-onboarding-to-landing-zone-aws-account#using-aws-cli-with-mfa-with-aws-vault",
+            "https://github.com/razorpay/vishnu/tree/master/landing-zone>,"
+        ]
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_devops-onboarding-checklist-chunk-6",
+        "name": "DevOps Onboarding Checklist.txt - Important Portals and access",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section provides an overview of various important portals and access credentials required for onboarding a new DevOps engineer at Razorpay. It lists out different portals categorized as Common, Production, and Stage environments, along with their respective URLs and instructions on how to gain access. The portals cover a range of tools and services used for tasks like issue tracking, logging, continuous deployment, database management, code repositories, documentation, and more.",
+        "use_cases": [
+            "Onboarding new DevOps engineers",
+            "Providing access to essential tools and services",
+            "Categorizing portals based on environment (Common, Production, Stage)",
+            "Guiding on how to obtain access for different portals"
+        ],
+        "capabilities": [
+            "Issue tracking (Jira)",
+            "Logging and monitoring (Coralogx, Grafana)",
+            "Continuous deployment (Spinnaker)",
+            "Database management (Redislabs)",
+            "Code repositories (Github)",
+            "Documentation (Alpha)",
+            "Credential management (Credstash)",
+            "Authentication and access control (Azure AD, SSO, Google groups)"
+        ],
+        "references": [
+            "https://write.razorpay.com/doc/setting-up-kubectl-updated-2024-IV9ik5aP2A",
+            "https://grafana.np.razorpay.in/login",
+            "https://razorpay.atlassian.net/>",
+            "https://razorpay-prod.app.coralogix.in/>",
+            "https://deploy.razorpay.com/>",
+            "https://github.com/razorpay>",
+            "https://alpha.razorpay.com/repo/devops-3>",
+            "https://jarvis.razorpay.com/>",
+            "https://credstash-ui.razorpay.com/>",
+            "https://github.com/razorpay/credstash-ui/blob/master/README.md>",
+            "https://vajra.razorpay.com/>",
+            "https://credstash-ui.concierge.stage.razorpay.in/dist/>",
+            "https://github.com/razorpay/credstash-ui/blob/master/README.md>"
+        ]
+    }
+]

@@ -1,0 +1,241 @@
+[
+    {
+        "id": "engineering_devops_security_privatebin_privatebin-chunk-0",
+        "name": "Privatebin.txt - What is Privatebin?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Security",
+            "Privatebin"
+        ],
+        "description": "PrivateBin is an open-source, web-based application that allows users to securely share text, code snippets, or other sensitive information without revealing the content to the server. It provides encryption for the data being shared, ensuring that only the intended recipients with the correct password can access the information. This tool is useful for sharing confidential data or collaborating on sensitive projects without compromising privacy.",
+        "use_cases": [
+            "Sharing code snippets or text documents securely",
+            "Collaborating on sensitive projects or content",
+            "Sharing confidential information with specific individuals",
+            "Protecting sensitive data from unauthorized access"
+        ],
+        "capabilities": [
+            "Encryption of data",
+            "Password protection",
+            "Pastebin-like functionality",
+            "Open-source",
+            "Minimalist interface",
+            "Zero knowledge of pasted data on the server"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_security_privatebin_privatebin-chunk-1",
+        "name": "Privatebin.txt - Why should I use PrivateBin?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Security",
+            "Privatebin"
+        ],
+        "description": "This section explains the benefits of using PrivateBin for both users and server administrators. For users, it provides a secure way to share sensitive information like passwords with others, choose a trusted provider, and discuss topics privately. For server administrators, it protects them from legal orders to scan user content since they don't have access to the encryption keys, and allows customization of the open-source code and templates.",
+        "use_cases": [
+            "Sharing sensitive information like passwords securely",
+            "Choosing a trusted provider for hosting the service",
+            "Discussing topics privately with others",
+            "Protecting against legal orders to scan user content (for server admins)"
+        ],
+        "capabilities": [
+            "Secure sharing of sensitive information",
+            "Choosing trusted providers",
+            "Private discussions",
+            "Legal protection for server admins",
+            "Customizable open-source code and templates"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_security_privatebin_privatebin-chunk-2",
+        "name": "Privatebin.txt - Features",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Security",
+            "Privatebin"
+        ],
+        "description": "This section outlines the various features and capabilities of Privatebin.txt, which appears to be a secure and private online platform for sharing text or code snippets. It allows users to create password-protected pastes, set expiration times, format content with Markdown, highlight code syntax, and choose from different visual themes. The platform also supports encryption, anonymous discussions, API integration, language selection, QR code generation, and automatic purging of old pastes.",
+        "use_cases": [
+            "Securely sharing sensitive information or code snippets",
+            "Collaborating on text or code with others anonymously",
+            "Temporarily storing text or code snippets with expiration options",
+            "Integrating with other applications via API"
+        ],
+        "capabilities": [
+            "Password protection",
+            "API support",
+            "Encryption and secure storage",
+            "Anonymous discussions",
+            "Expiration time settings",
+            "Markdown formatting",
+            "Syntax highlighting",
+            "Visual themes and templates",
+            "Translation and language selection",
+            "QR code generation",
+            "Auto-purge of old pastes"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_security_privatebin_privatebin-chunk-3",
+        "name": "Privatebin.txt - Where is it currently being used?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Security",
+            "Privatebin"
+        ],
+        "description": "This section explains that Privatebin is currently being used to securely share sensitive information, such as AWS first-time passwords and IAM secret keys, with users via email. Privatebin exposes an API that allows the creation of temporary, encrypted pastes, and returns a unique URL (hashUrl) for accessing the paste. This URL is then shared with users over email, enabling them to securely access the sensitive information without the risk of interception or unauthorized access.",
+        "use_cases": [
+            "Sharing AWS first-time passwords with users via email",
+            "Automatic rotation of IAM secret keys and sharing new key pairs with users via email",
+            "Secure sharing of sensitive information with authorized users"
+        ],
+        "capabilities": [
+            "API for creating encrypted pastes",
+            "Generates unique hashUrl for accessing pastes",
+            "Secure sharing of sensitive information via email",
+            "Automatic rotation and sharing of IAM secret keys"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_security_privatebin_privatebin-chunk-4",
+        "name": "Privatebin.txt - How does it work?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Security",
+            "Privatebin"
+        ],
+        "description": "This section explains how the data is encrypted and decrypted in the browser using a strong encryption algorithm called AES (Advanced Encryption Standard) with a 256-bit key length and a mode called Galois Counter mode. This ensures that the data is securely transmitted and stored, protecting the privacy and confidentiality of the information. The image provided illustrates the encryption process visually.",
+        "use_cases": [
+            "Secure data transmission",
+            "Protecting sensitive information",
+            "Ensuring privacy and confidentiality",
+            "Compliance with data protection regulations"
+        ],
+        "capabilities": [
+            "256-bit AES encryption",
+            "Galois Counter mode",
+            "Browser-based encryption and decryption",
+            "Visual representation of the encryption process"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/6d56635965d164c0f36160c35598d3b2.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_security_privatebin_privatebin-chunk-5",
+        "name": "Privatebin.txt - What parts are or aren't encrypted in a paste?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Security",
+            "Privatebin"
+        ],
+        "description": "This section explains what parts of a paste (text, comments, usernames) are encrypted end-to-end in the browser before uploading and after downloading, and what metadata (timestamps, expiration time, format, IP-based user icon) is not encrypted. It also clarifies that the decryption key is part of the URL and the password is not stored or transmitted. The section mentions that pastes are stored in a PostgreSQL database to support high scale.",
+        "use_cases": [
+            "Securely sharing sensitive text or code snippets",
+            "Enabling discussions on shared pastes with encrypted comments",
+            "Allowing users to set expiration times for pastes",
+            "Storing and retrieving pastes in a scalable database"
+        ],
+        "capabilities": [
+            "End-to-end encryption of paste text, usernames, and comments",
+            "Non-encryption of metadata like timestamps, expiration time, and paste format",
+            "IP-based user icon generation",
+            "Paste storage in a PostgreSQL database for scalability",
+            "Support for plain text, source code, and markdown paste formats",
+            "Option to enable or disable discussions on pastes"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_security_privatebin_privatebin-chunk-6",
+        "name": "Privatebin.txt - Modes of storing pastes",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Security",
+            "Privatebin"
+        ],
+        "description": "This section appears to be a brief introduction or summary on how to use the Privatebin service. However, instead of providing textual instructions, it only includes an image that seems unrelated to the stated purpose of the section. The image depicts a payment gateway interface, which does not seem relevant to explaining the modes of storing pastes in Privatebin.",
+        "use_cases": [
+            "The use cases are not explicitly mentioned or implied in this section."
+        ],
+        "capabilities": [
+            "Image display"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/f08cf30213ad2bd9ef268c12e269b492.jpg"
+        ]
+    },
+    {
+        "id": "engineering_devops_security_privatebin_privatebin-chunk-7",
+        "name": "Privatebin.txt - TL;DR How do I use it",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Security",
+            "Privatebin"
+        ],
+        "description": "This section demonstrates how to generate a shareable URL with an expiry date using the Privatebin service. It showcases the process through a GIF animation, allowing users to understand the steps involved in creating a temporary, shareable link that will become inaccessible after a certain period of time. This feature is useful for securely sharing sensitive information or files that should not remain accessible indefinitely.",
+        "use_cases": [
+            "Sharing sensitive information temporarily",
+            "Sharing confidential files with an expiration date",
+            "Secure file transfer with limited access duration",
+            "Temporary data exchange with controlled access"
+        ],
+        "capabilities": [
+            "Generate shareable URLs",
+            "Set expiry date for shared links",
+            "Secure file sharing",
+            "Temporary data exchange",
+            "Limited access duration",
+            "Animated demonstration"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/471f1300d04740508ef6d3b7a6bae01d.gif"
+        ]
+    },
+    {
+        "id": "engineering_devops_security_privatebin_privatebin-chunk-8",
+        "name": "Privatebin.txt - Demo(**Generate a shareable URL with expiry)**",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Security",
+            "Privatebin"
+        ],
+        "description": "This section explains how to generate a shareable URL with an expiration time or password protection for sharing sensitive information securely. It provides demonstrations through GIFs on how to create a one-time-use URL and a shareable URL with password protection. The section also mentions a test URL that Razorpay employees with VPN access can use, and provides references to the PrivateBin project and related information.",
+        "use_cases": [
+            "Sharing sensitive information securely",
+            "Generating one-time-use URLs for sharing data",
+            "Creating password-protected shareable URLs",
+            "Internal tool for Razorpay employees with VPN access"
+        ],
+        "capabilities": [
+            "Generate one-time-use URLs",
+            "Generate shareable URLs with expiry",
+            "Generate shareable URLs with password protection",
+            "Secure data sharing",
+            "Encryption using Galois/Counter Mode",
+            "Open-source PrivateBin project"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/a60b43c091ac363a30270e1a8d5f37cd.gif",
+            "https://alpha.razorpay.com/_static/file/74953510da10f5d8748acfe315bf1622.gif",
+            "https://paste.razorpay.com/>",
+            "https://privatebin.info/>",
+            "https://en.wikipedia.org/wiki/Galois/Counter_Mode>",
+            "https://github.com/sebsauvage/ZeroBin>",
+            "https://github.com/PrivateBin/PrivateBin>"
+        ]
+    }
+]

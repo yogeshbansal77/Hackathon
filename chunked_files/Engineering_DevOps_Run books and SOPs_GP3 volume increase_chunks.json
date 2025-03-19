@@ -1,0 +1,116 @@
+[
+    {
+        "id": "engineering_devops_run-books-and-sops_gp3-volume-increase-chunk-0",
+        "name": "GP3 volume increase.txt - Get the pv from the kubernetes pvc resources",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section provides instructions to retrieve the Persistent Volume (PV) names associated with Kubernetes Persistent Volume Claims (PVCs) for two types of servers: real-time servers and normal servers. The commands use the 'kubectl' tool to list PVCs and filter the output based on specific patterns in the PVC names. The filtered PVC names, which correspond to the PV names, are then saved to a file named 'pv.txt'. This process is likely a prerequisite step for managing or modifying the underlying storage volumes used by these servers.",
+        "use_cases": [
+            "Retrieving PV names for real-time servers",
+            "Retrieving PV names for normal servers",
+            "Preparing for storage volume management or modification tasks"
+        ],
+        "capabilities": [
+            "Listing Kubernetes PVCs",
+            "Filtering PVCs by name patterns",
+            "Extracting PV names from PVC output",
+            "Saving PV names to a file"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_gp3-volume-increase-chunk-1",
+        "name": "GP3 volume increase.txt - Get the volume IDS from pv resources",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section appears to be explaining how to retrieve the volume IDs from persistent volume (PV) resources, which are storage volumes used by applications in a Kubernetes cluster. However, the section content is empty, so there are no specific instructions provided.",
+        "use_cases": [
+            "Retrieving volume IDs for persistent storage volumes",
+            "Managing persistent storage in a Kubernetes cluster",
+            "Troubleshooting or monitoring persistent storage resources"
+        ],
+        "capabilities": [
+            "Listing persistent volume resources",
+            "Retrieving volume IDs",
+            "Interacting with Kubernetes API"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_gp3-volume-increase-chunk-2",
+        "name": "GP3 volume increase.txt - Get the current size using describe volume.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains a command that retrieves the volume handles of persistent volumes (PVs) in a Kubernetes cluster. The command first reads a list of PV names from a file named 'pv.txt'. For each PV name, it retrieves the PV details in YAML format using the 'kubectl get pv' command. It then filters the output to extract the 'volumeHandle' field, which contains the unique identifier of the underlying storage volume. The extracted volume handles are then saved to a file named 'volhandles.txt'. This process can be useful for managing and monitoring storage volumes in a Kubernetes environment.",
+        "use_cases": [
+            "Retrieving volume handles for persistent volumes",
+            "Managing storage volumes in a Kubernetes cluster",
+            "Monitoring storage volumes in a Kubernetes environment",
+            "Automating storage-related tasks in a Kubernetes cluster"
+        ],
+        "capabilities": [
+            "Retrieving persistent volume details",
+            "Filtering output using grep and awk",
+            "Extracting specific fields from YAML output",
+            "Saving output to a file",
+            "Automating tasks using shell scripting"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_gp3-volume-increase-chunk-3",
+        "name": "GP3 volume increase.txt - Modify size using modify-volume",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains how to check the current size of an Amazon Elastic Block Store (EBS) volume using the 'describe-volume' command before modifying its size. It provides a step-by-step guide for users to retrieve the volume's current size information, which is a prerequisite for increasing or decreasing the volume's capacity.",
+        "use_cases": [
+            "Modifying the size of an existing EBS volume",
+            "Checking the current size of an EBS volume before resizing",
+            "Managing storage capacity for applications running on Amazon EC2 instances"
+        ],
+        "capabilities": [
+            "Describe volume",
+            "Modify volume size",
+            "Increase EBS volume capacity",
+            "Decrease EBS volume capacity",
+            "Retrieve volume information",
+            "Manage EBS volume storage"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_gp3-volume-increase-chunk-4",
+        "name": "GP3 volume increase.txt - Resize disk from each of the EC2 nodes",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains the process of increasing the size of an existing GP3 (General Purpose SSD) Elastic Block Store (EBS) volume attached to an Amazon Elastic Compute Cloud (EC2) instance in a Kubernetes cluster. It involves retrieving the current volume size, modifying the volume size using the AWS CLI, and then resizing the file system on the EC2 instance to match the new volume size.",
+        "use_cases": [
+            "Increasing storage capacity for applications running on EC2 instances",
+            "Scaling storage resources for containerized workloads in a Kubernetes cluster",
+            "Managing and resizing EBS volumes attached to EC2 instances"
+        ],
+        "capabilities": [
+            "Retrieving EBS volume information using AWS CLI",
+            "Modifying EBS volume size using AWS CLI",
+            "Resizing file system on EC2 instance",
+            "Identifying EC2 node hosting a specific Kubernetes pod",
+            "Accessing EC2 instances via SSH or AWS Systems Manager Session Manager"
+        ],
+        "references": []
+    }
+]

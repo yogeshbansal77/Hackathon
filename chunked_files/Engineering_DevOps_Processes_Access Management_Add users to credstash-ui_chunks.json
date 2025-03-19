@@ -1,0 +1,176 @@
+[
+    {
+        "id": "engineering_devops_processes_access-management_add-users-to-credstash-ui-chunk-0",
+        "name": "Add users to credstash-ui.txt - Introduction",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management"
+        ],
+        "description": "This section explains the requirements for users to access the credstash UI, which is a tool for managing and retrieving sensitive credentials securely. It states that users must be part of one of three specific email groups within the Razorpay organization: rzp-developers@razorpay.com, developers@razorpay.com, or devops.team@razorpay.com. If a user needs to be added to any of these groups, they should seek assistance from the officeit team.",
+        "use_cases": [
+            "Granting access to the credstash UI for authorized users",
+            "Managing user access to sensitive credentials",
+            "Onboarding new users to the credstash UI"
+        ],
+        "capabilities": [
+            "User access control",
+            "Email group membership",
+            "Assistance from officeit team",
+            "Credential management",
+            "Secure credential retrieval"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_access-management_add-users-to-credstash-ui-chunk-1",
+        "name": "Add users to credstash-ui.txt - Prerequisites",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management"
+        ],
+        "description": "This section explains that the user access configuration for the credstash-ui application, which includes a list of authorized users, is stored as a Kubernetes secret in the credstash-ui namespace of the production (white-green) clusters. It provides instructions on how to retrieve or 'dump' this secret, which is a prerequisite for adding or modifying user access to the application.",
+        "use_cases": [
+            "Managing user access to the credstash-ui application",
+            "Retrieving the current user access configuration",
+            "Adding or modifying authorized users for the application",
+            "Maintaining user access control in a secure manner using Kubernetes secrets"
+        ],
+        "capabilities": [
+            "Kubernetes secret management",
+            "User access configuration",
+            "Cluster-specific configuration",
+            "Namespace-based isolation",
+            "Retrieving secret data"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_access-management_add-users-to-credstash-ui-chunk-2",
+        "name": "Add users to credstash-ui.txt - Accessing the Secret",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management"
+        ],
+        "description": "This section explains how to access the permissions granted to different users for accessing and managing secrets stored in Credstash, which is a tool for storing and retrieving encrypted data in a secure manner. The permissions are encoded in a Kubernetes secret, and the command provided allows you to retrieve and view the encoded permissions in YAML format. The encoded data appears to be a list of user groups, each with specific rules defining the resources they can access and the actions they can perform on those resources.",
+        "use_cases": [
+            "Managing access control for Credstash users",
+            "Granting or revoking permissions for specific users or groups",
+            "Auditing and reviewing the current permissions granted to users",
+            "Ensuring secure access to sensitive data stored in Credstash"
+        ],
+        "capabilities": [
+            "Access control",
+            "User management",
+            "Resource-based permissions",
+            "Verb-based permissions",
+            "Encoded data retrieval",
+            "YAML format support"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_access-management_add-users-to-credstash-ui-chunk-3",
+        "name": "Add users to credstash-ui.txt - Decoding the Secret",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management"
+        ],
+        "description": "This section appears to be incomplete or missing content. It seems to be explaining how to decode a secret called 'CREDSTASH_UI_PERMISSIONS', but the actual steps or instructions are not provided.",
+        "use_cases": [
+            "Decoding secrets or sensitive information stored in a secure manner",
+            "Accessing permissions or credentials required for a specific application or service"
+        ],
+        "capabilities": [
+            "Secret decoding",
+            "Credential management",
+            "Secure storage of sensitive data"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_access-management_add-users-to-credstash-ui-chunk-4",
+        "name": "Add users to credstash-ui.txt - Understanding the Secret",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management"
+        ],
+        "description": "This section explains how to decode a base64 encoded string that contains a list of user groups and their associated permissions for accessing certain resources in a system called 'credstash' and 'kubestash'. The decoded string is written in a format that defines the group names and the resources they can access, along with the specific actions (verbs) they are allowed to perform on those resources.",
+        "use_cases": [
+            "Managing access control for user groups",
+            "Defining resource-level permissions",
+            "Granting or restricting access to sensitive data or systems"
+        ],
+        "capabilities": [
+            "Base64 encoding/decoding",
+            "Group-based access control",
+            "Resource pattern matching",
+            "Verb-based permission definition",
+            "Centralized access management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_access-management_add-users-to-credstash-ui-chunk-5",
+        "name": "Add users to credstash-ui.txt - Adding a User",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management"
+        ],
+        "description": "This section outlines the process of granting access permissions to a specific user (ashish.tyagi@razorpay.com) within the credstash-ui system. It defines the resources and actions that the user is authorized to perform. The resources are specified using regular expressions, and the verbs (actions) are listed as 'add' and 'list'. This configuration allows the user to add new entries and list existing ones for resources matching the patterns 'credstash-(prod)-.+' (credstash resources in the production environment), 'kubestash-prod', and 'kubestash-cde'.",
+        "use_cases": [
+            "Granting access permissions to specific users",
+            "Controlling access to sensitive resources based on environment or resource patterns",
+            "Allowing users to add new entries and list existing ones for authorized resources",
+            "Managing access control within a secure credential management system"
+        ],
+        "capabilities": [
+            "User access management",
+            "Resource pattern matching",
+            "Verb (action) specification",
+            "Environment-based access control",
+            "Credential management",
+            "Access control lists (ACLs)"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_access-management_add-users-to-credstash-ui-chunk-6",
+        "name": "Add users to credstash-ui.txt - Accessing the UI",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management"
+        ],
+        "description": "This section explains how to access the Credstash UI, a web interface for managing secrets stored in AWS Credstash. It provides instructions on how to obtain the necessary permissions to list and add secrets to specific Credstash tables by generating a 'dump file' containing the required access keys and KMS key ARNs. The user can then copy the contents of the dump file and paste it into the Credstash UI to gain access to the specified tables and manage their secrets.",
+        "use_cases": [
+            "Accessing the Credstash UI to manage secrets",
+            "Listing available Credstash tables",
+            "Adding or modifying secrets in specific Credstash tables",
+            "Granting permissions to users for managing secrets in Credstash"
+        ],
+        "capabilities": [
+            "Generating a 'dump file' with access keys and KMS key ARNs",
+            "Specifying Credstash tables to grant access to",
+            "Granting 'list' and 'add' permissions for managing secrets",
+            "Accessing the Credstash UI web interface",
+            "Pasting the dump file contents into the Credstash UI",
+            "Managing secrets in specified Credstash tables"
+        ],
+        "references": [
+            "https://credstash-ui.razorpay.com/dist/>"
+        ]
+    }
+]

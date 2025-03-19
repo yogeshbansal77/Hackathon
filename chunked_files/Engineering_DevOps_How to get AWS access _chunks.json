@@ -1,0 +1,145 @@
+[
+    {
+        "id": "engineering_devops_how-to-get-aws-access--chunk-0",
+        "name": "How to get AWS access .txt - Accessing myaccess portal",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section explains the process of requesting access to a specific environment (such as staging or production) in the myaccess portal. It involves submitting an email request, which will be sent to the respective environment owner (e.g., Prabath for staging, Avinash for production, Vishal for DE) for approval. The IT team also plans to automate the creation of a Jira ticket once a request is submitted, streamlining the access request process.",
+        "use_cases": [
+            "Requesting access to a specific environment (staging, production, or DE)",
+            "Obtaining approval from the respective environment owner",
+            "Automating the creation of Jira tickets for access requests"
+        ],
+        "capabilities": [
+            "Email-based access request submission",
+            "Environment-specific access approval process",
+            "Automated Jira ticket creation for access requests",
+            "Designated environment owners for approval"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/1a65533ec4dccb4942c95cf855546196.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_how-to-get-aws-access--chunk-1",
+        "name": "How to get AWS access .txt - Approval process",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section explains that after the necessary approvals are granted, the IT team will assign the requested role or access to the user. The user can then view and access the assigned role or permissions through the myapps portal, which is a centralized platform for managing applications and resources.",
+        "use_cases": [
+            "Granting access to AWS resources after approval",
+            "Assigning roles or permissions to users",
+            "Viewing and managing assigned roles/permissions in a centralized portal"
+        ],
+        "capabilities": [
+            "Approval process for access requests",
+            "Role/permission assignment by IT team",
+            "Centralized portal (myapps) for viewing and managing assigned roles/permissions"
+        ],
+        "references": [
+            "https://myapplications.microsoft.com/"
+        ]
+    },
+    {
+        "id": "engineering_devops_how-to-get-aws-access--chunk-2",
+        "name": "How to get AWS access .txt - Accessing myapps portal",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section explains how to access the myapps portal, which seems to be a web-based application or platform. It provides a screenshot showing the login screen, where users need to choose their role if they have multiple roles assigned. This process is likely required to gain access to the specific applications or services associated with the user's role within the organization.",
+        "use_cases": [
+            "Accessing a web-based portal or application",
+            "Selecting the appropriate role for the user",
+            "Logging in to access role-specific applications or services"
+        ],
+        "capabilities": [
+            "Role-based access control",
+            "Multiple role assignments for users",
+            "Login screen with role selection",
+            "Web-based application or portal access"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/254a74477bcdcfd755308903241f0aaf.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_how-to-get-aws-access--chunk-3",
+        "name": "How to get AWS access .txt - Logging in with different roles",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section explains how to log in to the AWS Management Console with different roles or identities. It provides a visual representation (an image) that likely shows the process or interface for selecting and assuming different roles or user accounts within an AWS environment. This feature allows users with multiple roles or responsibilities to switch between them seamlessly, enabling better access control and separation of duties.",
+        "use_cases": [
+            "Managing multiple AWS accounts or roles within an organization",
+            "Separating responsibilities and access levels for different teams or users",
+            "Enabling contractors or third-party vendors to access specific AWS resources",
+            "Facilitating role-based access control (RBAC) for better security and compliance"
+        ],
+        "capabilities": [
+            "Role switching",
+            "Identity management",
+            "Access control",
+            "Multi-account management",
+            "User interface for role selection",
+            "Visual representation of role switching process"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/b16d187251cc40d0ed7a38c78830e0e5.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_how-to-get-aws-access--chunk-4",
+        "name": "How to get AWS access .txt - Requesting access for non-templated roles",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section explains the process for requesting access to non-standard or non-templated roles in AWS, which are roles that are not part of the pre-defined set of roles available to users. Instead of using the standard access request portal, users need to raise a request through the tech_devops channel, providing justification and manager approval. Once approved, a new role will be created and assigned to the user. The section also mentions that different teams may have access to different AWS accounts and roles.",
+        "use_cases": [
+            "Requesting access to non-templated or custom AWS roles",
+            "Obtaining manager approval for non-standard access requests",
+            "Creating and assigning new AWS roles based on specific user requirements",
+            "Managing access to different AWS accounts for different teams"
+        ],
+        "capabilities": [
+            "Requesting non-templated roles",
+            "Providing justification for access requests",
+            "Obtaining manager approvals",
+            "Raising requests through tech_devops channel",
+            "Creating new AWS roles",
+            "Assigning roles to users",
+            "Managing access to different AWS accounts"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_how-to-get-aws-access--chunk-5",
+        "name": "How to get AWS access .txt - Different accounts and roles",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section outlines the different AWS accounts and roles available within the organization, along with their respective purposes. It provides an overview of the access levels and responsibilities associated with each role, ranging from administrative privileges to read-only access. The accounts are categorized into POC (Proof of Concept), Stage, and Production environments, allowing for different levels of access and control based on the environment's criticality.",
+        "use_cases": [
+            "Granting administrative access for DevOps or specific teams (e.g., DE, Platform, QA) in the Stage environment.",
+            "Providing read-only access to engineers or specific teams (e.g., Frontend, FinOps) in the Production environment.",
+            "Assigning privileged access to senior engineers or staff members across Stage and Production environments.",
+            "Enabling temporary administrative access for POC (Proof of Concept) activities."
+        ],
+        "capabilities": [
+            "Role-based access control",
+            "Environment segregation (POC, Stage, Production)",
+            "Administrative privileges",
+            "Read-only access",
+            "Team-specific roles",
+            "Privileged access for senior engineers"
+        ],
+        "references": []
+    }
+]

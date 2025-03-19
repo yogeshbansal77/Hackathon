@@ -1,0 +1,80 @@
+[
+    {
+        "id": "engineering_devops_dev-self-serve_restrict-image-override-from-infra-pipeline--chunk-0",
+        "name": "Restrict image override from Infra pipeline .txt - How to enable for my application ?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains how to enable a feature that restricts image overrides from the infrastructure pipeline for a specific application. It provides instructions to modify the application's deployment manifest and pipeline configuration to allow the admission webhook to identify deployments coming from the application pipeline and permit them to pass through without image override restrictions.",
+        "use_cases": [
+            "Preventing unauthorized image overrides from the infrastructure pipeline",
+            "Ensuring application deployments use the intended container images",
+            "Maintaining security and compliance for application deployments"
+        ],
+        "capabilities": [
+            "Admission webhook",
+            "Image override restriction",
+            "Application deployment manifest modification",
+            "Pipeline configuration update",
+            "Deployment source identification"
+        ],
+        "references": [
+            "https://github.com/razorpay/kube-manifests/blob/bd53ee48df3e28ab67476bc8dc6a31515172254b/templates/nginx/templates/deployment.yaml#L19>",
+            "https://deploy.razorpay.com/#/applications/test-image-validation/executions/configure/34d58b8f-6567-4708-b4cd-53a0fffb2cd3>"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_restrict-image-override-from-infra-pipeline--chunk-1",
+        "name": "Restrict image override from Infra pipeline .txt - Some screenshot/message of rejection message.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains the rejection messages that can occur when attempting to override an image in a Kubernetes deployment using either the GitHub repository or the Infra pipeline. It provides examples of error messages that indicate the incoming image being deployed is different from the current image running in the container. This situation can arise when trying to update or change the container image for a specific deployment.",
+        "use_cases": [
+            "Updating or changing the container image for a Kubernetes deployment",
+            "Troubleshooting image override issues in the Infra pipeline",
+            "Understanding rejection messages related to image mismatches",
+            "Validating image changes before deployment"
+        ],
+        "capabilities": [
+            "Image override",
+            "Kubernetes deployment",
+            "Error handling",
+            "Infra pipeline",
+            "GitHub integration",
+            "Admission webhook validation"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/70b17fefadb0bad9f8a3e9f454d53af4.png \"left-50\""
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_restrict-image-override-from-infra-pipeline--chunk-2",
+        "name": "Restrict image override from Infra pipeline .txt - Is this feature optional ?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains that the feature of restricting image override from the infrastructure pipeline is optional. It allows development teams to decide whether to enable this feature for their applications by adding specific annotations. This feature provides a centralized solution to protect applications from downtime caused by manual errors or incorrectly configured infrastructure pipelines, even if the application has multiple containers within a pod. However, some applications may have their own image validation processes during the infrastructure pipeline, which need to be handled by the respective application teams.",
+        "use_cases": [
+            "Preventing downtime due to manual errors or misconfigured infrastructure pipelines",
+            "Enabling or disabling the feature based on application requirements",
+            "Providing a centralized solution for image override protection",
+            "Accommodating applications with custom image validation processes"
+        ],
+        "capabilities": [
+            "Optional feature",
+            "Centralized solution",
+            "Image override protection",
+            "Multi-container support",
+            "Annotation-based configuration",
+            "Custom image validation support"
+        ],
+        "references": []
+    }
+]

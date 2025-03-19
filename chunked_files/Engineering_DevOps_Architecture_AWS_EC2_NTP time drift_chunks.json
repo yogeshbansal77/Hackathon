@@ -1,0 +1,155 @@
+[
+    {
+        "id": "engineering_devops_architecture_aws_ec2_ntp-time-drift-chunk-0",
+        "name": "NTP time drift.txt - Example Alert",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "EC2"
+        ],
+        "description": "This section provides an example alert related to NTP time drift. It displays an image showing a warning message indicating that the system clock is not in sync. The section suggests checking if the system clock is synchronized correctly. This alert is likely triggered when there is a significant difference between the system clock and the NTP (Network Time Protocol) server's time, which can lead to issues with time-sensitive operations or services.",
+        "use_cases": [
+            "Monitoring system clock synchronization",
+            "Detecting time drift issues",
+            "Ensuring accurate time-keeping for time-sensitive applications or services"
+        ],
+        "capabilities": [
+            "NTP time synchronization",
+            "System clock monitoring",
+            "Time drift detection",
+            "Alert notification"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/de9aca8b511935704eaa7907521d3746.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_aws_ec2_ntp-time-drift-chunk-1",
+        "name": "NTP time drift.txt - Check if the system clock is in sync",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "EC2"
+        ],
+        "description": "This section demonstrates how to check if the system clock on a Linux machine is synchronized with an external time source using the 'timedatectl' command. The output shows the local time, universal time, real-time clock (RTC) time, time zone, and whether the system clock is synchronized or not. If the 'System clock synchronized' field shows 'no', it indicates that the system clock is not in sync with an external time source, which can lead to time drift issues.",
+        "use_cases": [
+            "Troubleshooting time-related issues",
+            "Ensuring accurate time synchronization for time-sensitive applications",
+            "Monitoring system clock synchronization status",
+            "Setting up NTP (Network Time Protocol) for time synchronization"
+        ],
+        "capabilities": [
+            "Displaying local time",
+            "Displaying universal time",
+            "Displaying RTC time",
+            "Displaying time zone",
+            "Checking system clock synchronization status"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_aws_ec2_ntp-time-drift-chunk-2",
+        "name": "NTP time drift.txt - Check ntp systemd service status",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "EC2"
+        ],
+        "description": "This section explains how to check the status of the systemd-timesyncd service, which is responsible for synchronizing the system clock with an NTP (Network Time Protocol) server. The output shown indicates that the service is active and running. However, it also shows that the system's Real-Time Clock (RTC) is not set to the local time zone, which could potentially cause issues with time synchronization. This section suggests that if the RTC is not set to the local time zone, the next step would be to investigate the NTP systemd service for potential issues or misconfiguration.",
+        "use_cases": [
+            "Troubleshooting time synchronization issues",
+            "Verifying the status of the systemd-timesyncd service",
+            "Checking if the system's Real-Time Clock is set to the local time zone"
+        ],
+        "capabilities": [
+            "systemd-timesyncd service status check",
+            "Real-Time Clock (RTC) time zone configuration verification",
+            "NTP service status investigation"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_aws_ec2_ntp-time-drift-chunk-3",
+        "name": "NTP time drift.txt - Check ntp systemd file for conflicts",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "EC2"
+        ],
+        "description": "This section explains how to check the status of the Network Time Protocol (NTP) service on a Linux system and troubleshoot if it's not running. It provides a command to view the status of the NTP service and suggests checking the NTP systemd file if the service is inactive, as another service might be overriding or replacing it.",
+        "use_cases": [
+            "Checking the status of the NTP service on a Linux system",
+            "Troubleshooting when the NTP service is not running",
+            "Identifying potential conflicts or overrides with other services",
+            "Verifying the NTP service configuration"
+        ],
+        "capabilities": [
+            "systemctl status ntp (command to check NTP service status)",
+            "ntp.service (NTP service managed by systemd)",
+            "systemd file (configuration file for systemd services)",
+            "service overriding",
+            "service replacement",
+            "service conflict detection"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_aws_ec2_ntp-time-drift-chunk-4",
+        "name": "NTP time drift.txt - Check systemd-timesyncd service status",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "EC2"
+        ],
+        "description": "This section provides information about the systemd service unit file for the Network Time Protocol (NTP) service on a Linux system. It shows the contents of the ntp.service file, which defines the service's behavior, dependencies, and configuration options. The service is responsible for synchronizing the system's clock with external time servers over the network, ensuring accurate timekeeping.",
+        "use_cases": [
+            "Maintaining accurate system time synchronization with external time servers",
+            "Resolving time drift issues on Linux systems",
+            "Configuring and managing the NTP service on systemd-based Linux distributions"
+        ],
+        "capabilities": [
+            "Service description and documentation",
+            "Service dependencies and conflicts",
+            "Service execution and startup options",
+            "Service installation and activation"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_aws_ec2_ntp-time-drift-chunk-5",
+        "name": "NTP time drift.txt - Check timesyncd config file",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "EC2"
+        ],
+        "description": "This section explains how to troubleshoot and resolve issues related to NTP (Network Time Protocol) time drift on a system. It provides insights into the systemd-timesyncd service, which is responsible for synchronizing the system clock with external NTP servers. The section discusses potential reasons for time drift, such as rate-limiting by upstream NTP servers, network restrictions, or misconfigured NTP client settings. It also suggests using Amazon's Time Sync Service as an alternative NTP source for instances running in a VPC.",
+        "use_cases": [
+            "Troubleshooting NTP time drift issues",
+            "Configuring NTP client settings",
+            "Utilizing Amazon Time Sync Service for instances in a VPC"
+        ],
+        "capabilities": [
+            "Checking systemd-timesyncd service status",
+            "Analyzing systemd-timesyncd logs",
+            "Modifying /etc/systemd/timesyncd.conf configuration file",
+            "Restarting systemd-timesyncd service",
+            "Configuring Amazon Time Sync Service as NTP source"
+        ],
+        "references": [
+            "https://github.com/razorpay/brahma/search?q=chrony>"
+        ]
+    }
+]

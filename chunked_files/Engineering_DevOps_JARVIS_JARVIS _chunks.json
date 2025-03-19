@@ -1,0 +1,158 @@
+[
+    {
+        "id": "engineering_devops_jarvis_jarvis--chunk-0",
+        "name": "JARVIS .txt - What is JARVIS?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section explains that JARVIS is a DevOps tool that provides various functionalities to streamline and automate processes related to software development and operations. It hosts automations for tasks such as GitOps, incident management, access control, and serves as an alternative to tools like Botkube. Additionally, it offers URL redirections to various DevOps-maintained tools and a search engine that provides recommendations for DevOps-related queries and other alpha recommendations.",
+        "use_cases": [
+            "Automating GitOps processes",
+            "Setting up incident bot alerts for developers",
+            "Providing an alternative to Botkube for DevOps automation",
+            "Managing access control for DevOps resources"
+        ],
+        "capabilities": [
+            "Hosting automations",
+            "URL redirections",
+            "Search engine",
+            "GitOps automations",
+            "DevOps automations",
+            "Incident bot alert setup",
+            "Access management",
+            "Botkube alternative",
+            "DevOps recommendations",
+            "Alpha recommendations"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_jarvis_jarvis--chunk-1",
+        "name": "JARVIS .txt - Objectives of JARVIS",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section outlines the primary objectives of JARVIS, an intelligent system designed to streamline DevOps processes and provide developers with easy access to automation tools and resources. It aims to reduce reliance on external tools and documentation by consolidating DevOps-related queries, troubleshooting, and ticket creation within a single platform. Additionally, JARVIS seeks to enhance auditing and analysis capabilities for DevOps requests, ultimately improving efficiency and productivity.",
+        "use_cases": [
+            "Providing developers with easy access to DevOps automation tools",
+            "Reducing the need for consulting documentation and seeking recommendations for DevOps-related tasks",
+            "Consolidating DevOps-related tasks, such as creating JIRA tickets, within a single platform",
+            "Offering intelligent troubleshooting capabilities for DevOps-related issues"
+        ],
+        "capabilities": [
+            "Making DevOps automations and tools accessible",
+            "Reducing queries on documents and recommendations",
+            "Reducing dependency on third-party tools",
+            "Intelligent system for troubleshooting",
+            "Better audit and analysis on DevOps requests"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_jarvis_jarvis--chunk-2",
+        "name": "JARVIS .txt - OnBoarded features:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section outlines various tools and features that have been integrated into the JARVIS system. These tools aim to automate various DevOps tasks, troubleshoot issues, track drifts, and provide a centralized search engine for accessing relevant information and links related to DevOps tools and resources.",
+        "use_cases": [
+            "Automating the creation of Statuscake resources",
+            "Replacing Botkube with an in-house Kubernetes management solution",
+            "Troubleshooting KIAM-SA migration issues",
+            "Tracking and managing drifts in onboarded production modules"
+        ],
+        "capabilities": [
+            "Vishnu BOT for Statuscake resource creation automation",
+            "JARVISKUBE as an in-house replacement for Botkube",
+            "IAM Troubleshooter for troubleshooting KIAM-SA migration",
+            "Drift Management Tracker for finding Vishnu drifts in onboarded production modules",
+            "Recommendation Search Engine for accessing data and alpha-links from DevOps experts",
+            "DevOps Tools Redirections for finding links to various DevOps tools like Spinnaker, Credstash-ui, etc."
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/vishnu-bot",
+            "https://alpha.razorpay.com/repo/jarvis-jarviskube",
+            "https://alpha.razorpay.com/repo/iam-troubleshooter",
+            "https://docs.google.com/document/d/1MekawzN_kg08aqUIZeZDqCuF7CtgBazJR6M5K8w_5wM/edit"
+        ]
+    },
+    {
+        "id": "engineering_devops_jarvis_jarvis--chunk-3",
+        "name": "JARVIS .txt - W.I.P FEATURES",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section outlines various automation features that are currently in development (Work in Progress) for the JARVIS system. These features aim to streamline and automate various tasks, such as debugging endpoints, managing Kafka certificates, troubleshooting pods, and reducing the workload of handling support tickets. The section provides a glimpse into the upcoming capabilities that will enhance the functionality and efficiency of the JARVIS system.",
+        "use_cases": [
+            "Debugging and troubleshooting endpoints",
+            "Managing Kafka certificates and credentials",
+            "Troubleshooting and monitoring pods",
+            "Automating ticket resolution and support tasks"
+        ],
+        "capabilities": [
+            "Endpoint Debugger",
+            "Kafka Cert Manager",
+            "Pod troubleshooter",
+            "Ticket reduction automations"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_jarvis_jarvis--chunk-4",
+        "name": "JARVIS .txt - TIMELINE",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section appears to be a high-level overview or timeline of upcoming features and improvements planned for a product or service called JARVIS. It mentions optimizing the search engine to provide better DevOps recommendations and document search capabilities, as well as enabling URL redirection for various DevOps tools.",
+        "use_cases": [
+            "Improving search engine for DevOps recommendations",
+            "Enhancing document search capabilities",
+            "Enabling URL redirection for DevOps tools"
+        ],
+        "capabilities": [
+            "Search engine optimization",
+            "DevOps recommendations",
+            "Document search",
+            "URL redirection",
+            "Integration with DevOps tools"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_jarvis_jarvis--chunk-5",
+        "name": "JARVIS .txt - Future Integrations and Plans",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section outlines the future plans and integrations for JARVIS, an AI-powered system. It aims to expand JARVIS's capabilities by incorporating more DevOps-related automations, enhancing its search engine for better recommendations and suggestions, integrating a chatbot to address basic queries, and enabling AI integration to make JARVIS more intelligent by leveraging data points from its usage.",
+        "use_cases": [
+            "Automating DevOps-related tasks",
+            "Improving search and recommendation capabilities",
+            "Providing a chatbot interface for basic queries",
+            "Enabling AI integration for enhanced intelligence"
+        ],
+        "capabilities": [
+            "DevOps automation integration",
+            "Search engine optimization",
+            "Chatbot integration",
+            "AI integration",
+            "Data-driven intelligence enhancement"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/7d2d9166b2ada5955b61c70fd17356a5.png",
+            "https://alpha.razorpay.com/_static/file/a3d477e5df0d5518375fa4a6eff2cee3.png"
+        ]
+    }
+]

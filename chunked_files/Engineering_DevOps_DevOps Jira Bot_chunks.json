@@ -1,0 +1,146 @@
+[
+    {
+        "id": "engineering_devops_devops-jira-bot-chunk-0",
+        "name": "DevOps Jira Bot.txt - About:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section provides an overview of the DevOps Jirabot, which is a tool designed to streamline the process of creating tickets or issues in Jira, a popular project management and issue tracking software. The bot can be accessed from the #tech-devops channel, allowing users to create tickets without having to navigate through the Jira interface manually. This automation aims to simplify and expedite the ticket creation process, making it more efficient for users.",
+        "use_cases": [
+            "Automating ticket creation process",
+            "Streamlining issue tracking and management",
+            "Improving efficiency in project management workflows",
+            "Providing a convenient interface for creating tickets"
+        ],
+        "capabilities": [
+            "Ticket creation",
+            "Accessible from #tech-devops channel",
+            "Automation",
+            "Ease of use",
+            "Integration with Jira"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops-jira-bot-chunk-1",
+        "name": "DevOps Jira Bot.txt - Components Involved:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section appears to be introducing or describing a component called 'DevOps jirabot', which is likely a software tool or application related to DevOps practices and Jira, a popular issue tracking and project management tool. However, the provided content does not provide any further details about what this component is or what it does.",
+        "use_cases": [
+            "No specific use cases are mentioned or implied in the provided content.",
+            "The section title 'Components Involved' suggests that this component may be part of a larger system or process involving multiple components, but no details are provided."
+        ],
+        "capabilities": [
+            "No capabilities or features are described in the provided content.",
+            "The section content is empty, so no information about the capabilities of the 'DevOps jirabot' component is given."
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops-jira-bot-chunk-2",
+        "name": "DevOps Jira Bot.txt - DevOps jirabot:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section explains how a custom Slack bot is used to create tickets in Jira for the DevOps team. The bot can be invoked in the #tech-devops Slack channel using the /devops-jira command. Upon invoking, a form appears where details can be filled out. After submitting the form, the bot creates a thread, tags the corresponding DevOps team, and shares the newly created Jira ticket in the comments.",
+        "use_cases": [
+            "Creating Jira tickets for the DevOps team",
+            "Tagging the relevant DevOps team in Slack",
+            "Sharing Jira ticket details in Slack comments"
+        ],
+        "capabilities": [
+            "Custom Slack bot",
+            "Invoked using /devops-jira command",
+            "Form for entering ticket details",
+            "Creating threads in Slack",
+            "Tagging teams in Slack",
+            "Sharing Jira ticket links in Slack comments"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops-jira-bot-chunk-3",
+        "name": "DevOps Jira Bot.txt - Jirabot Backend:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section explains the backend infrastructure and deployment details of the Jirabot application. It mentions that Jirabot is a Python Flask application running in an ops cluster and exposed via an ingress route. The application code is hosted on GitHub, and the infrastructure components are managed in a separate Kubernetes manifest repository.",
+        "use_cases": [
+            "Deploying and managing a Python Flask application in a Kubernetes cluster",
+            "Exposing an internal application to external users via an ingress route",
+            "Separating application code and infrastructure configuration for better maintainability"
+        ],
+        "capabilities": [
+            "Python Flask application",
+            "Kubernetes deployment",
+            "Ingress routing",
+            "Git repository for application code",
+            "Separate repository for infrastructure manifests"
+        ],
+        "references": [
+            "https://github.com/razorpay/infra-tools/tree/master/slack/devops-jira-bot"
+        ]
+    },
+    {
+        "id": "engineering_devops_devops-jira-bot-chunk-4",
+        "name": "DevOps Jira Bot.txt - JIRA:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section provides information about the JIRA component of the DevOps Jira Bot system. It mentions that the main purpose of the Jira Bot is to create tickets in JIRA, which is a popular issue tracking and project management tool. The section includes links to GitHub repositories containing templates, stage values, and production values related to the deployment of the Jira Bot component.",
+        "use_cases": [
+            "Automating the creation of JIRA tickets for various purposes, such as bug reporting, feature requests, or task tracking.",
+            "Integrating JIRA with other tools or systems used in the software development lifecycle.",
+            "Streamlining the workflow and communication around issue tracking and project management.",
+            "Providing a centralized platform for tracking and managing tasks, bugs, and features across multiple teams or projects."
+        ],
+        "capabilities": [
+            "JIRA integration",
+            "Ticket creation",
+            "Templating",
+            "Stage deployment",
+            "Production deployment",
+            "GitHub repository management"
+        ],
+        "references": [
+            "https://github.com/razorpay/kube-manifests/tree/master/ops/jirabot",
+            "https://github.com/razorpay/kube-manifests/tree/master/templates/jirabot>",
+            "https://github.com/razorpay/kube-manifests/tree/master/ops/jirabot>"
+        ]
+    },
+    {
+        "id": "engineering_devops_devops-jira-bot-chunk-5",
+        "name": "DevOps Jira Bot.txt - Setup:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section explains the steps involved in setting up a Jira bot for integration with Slack. It covers creating a custom Slack app, deploying a backend Python Flask server, configuring credentials and API keys, setting up Slack commands and permissions, and finally installing the bot in a Slack channel. The instructions are aimed at providing a non-expert with a clear understanding of the process.",
+        "use_cases": [
+            "Integrating Jira with Slack for better collaboration and productivity",
+            "Automating Jira tasks and workflows using a bot",
+            "Enabling users to interact with Jira directly from Slack",
+            "Streamlining communication and reducing context switching between tools"
+        ],
+        "capabilities": [
+            "Create custom Slack app",
+            "Deploy backend Python Flask server",
+            "Configure credentials and API keys",
+            "Set up Slack commands",
+            "Configure Slack permissions",
+            "Install bot in Slack channel"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/4e8be765c35f6fee529c12bdffbc7dce.png",
+            "https://your-bot-url.razorpay.com/slack/slash_command",
+            "https://your-bot-url.razorpay.com/slack/action`"
+        ]
+    }
+]

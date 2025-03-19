@@ -1,0 +1,103 @@
+[
+    {
+        "id": "engineering_devops_business-units_payments_provision-aws-elasticache-(redis)-for-a-service-chunk-0",
+        "name": "Provision AWS Elasticache (Redis) for a service.txt - Introduction",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section introduces a documentation guide that aims to provide step-by-step instructions for creating an AWS ElastiCache instance for any service. The goal is to minimize the dependency on DevOps teams and enable other teams or individuals to provision ElastiCache instances themselves. The section suggests that the subsequent content will outline the specific steps required for this provisioning process.",
+        "use_cases": [
+            "Provisioning AWS ElastiCache (Redis) instances for various services",
+            "Enabling teams or individuals to set up ElastiCache instances without relying on DevOps",
+            "Reducing the workload and dependency on DevOps teams for ElastiCache provisioning"
+        ],
+        "capabilities": [
+            "AWS ElastiCache provisioning",
+            "Redis instance creation",
+            "Self-service ElastiCache setup",
+            "Minimizing DevOps dependency",
+            "Step-by-step documentation"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_business-units_payments_provision-aws-elasticache-(redis)-for-a-service-chunk-1",
+        "name": "Provision AWS Elasticache (Redis) for a service.txt - Provisioning Steps",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section outlines the process for provisioning a Redis instance on AWS ElastiCache. It involves making changes to the Vishnu repository, which is a codebase managed by the Razorpay organization. Developers need to create a pull request (PR) with the necessary changes, and the DevOps team will review the PR, run an Atlantis plan, and then apply the changes to create the Redis instance. The section emphasizes that approval from the DevOps team is mandatory before provisioning the instance.",
+        "use_cases": [
+            "Provisioning a Redis instance on AWS ElastiCache",
+            "Managing infrastructure changes through a version-controlled codebase (Vishnu repository)",
+            "Collaborating between development and operations teams for infrastructure changes",
+            "Utilizing Atlantis for infrastructure as code (IaC) workflows"
+        ],
+        "capabilities": [
+            "Provisioning AWS ElastiCache Redis instances",
+            "Version control for infrastructure changes",
+            "Pull request workflow for code reviews",
+            "Atlantis for IaC planning and applying",
+            "DevOps team approval process",
+            "Multi-account/profile support for AWS"
+        ],
+        "references": [
+            "https://github.com/razorpay/vishnu/pull/5988/files>"
+        ]
+    },
+    {
+        "id": "engineering_devops_business-units_payments_provision-aws-elasticache-(redis)-for-a-service-chunk-2",
+        "name": "Provision AWS Elasticache (Redis) for a service.txt - Checklist",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section provides a checklist of important configuration values that need to be reviewed and set correctly when provisioning an AWS ElastiCache Redis cluster for a service. It explains the significance of each value and provides sample values to help understand the format. The key values covered include node type, engine version, engine family, cluster mode enabled, and cluster mode configuration.",
+        "use_cases": [
+            "Provisioning an AWS ElastiCache Redis cluster for a service",
+            "Configuring Redis cluster settings for optimal performance and scalability",
+            "Understanding and setting appropriate values for Redis cluster deployment"
+        ],
+        "capabilities": [
+            "Node type configuration",
+            "Engine version selection",
+            "Engine family selection",
+            "Cluster mode enablement",
+            "Cluster mode configuration (replicas per node group)",
+            "Referencing AWS documentation for detailed explanations"
+        ],
+        "references": [
+            "https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/CacheNodes.NodeGroups.html>"
+        ]
+    },
+    {
+        "id": "engineering_devops_business-units_payments_provision-aws-elasticache-(redis)-for-a-service-chunk-3",
+        "name": "Provision AWS Elasticache (Redis) for a service.txt - Connectivity",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section explains the connectivity aspect of the provisioned AWS ElastiCache (Redis) instance. It mentions that DevOps needs to share the CNAME (Canonical Name record) and host (typically port 6379) of the Redis instance with the developers, so they can connect to it. It also states that passwords are not created for the Redis instance, implying that it relies on other security measures for access control.",
+        "use_cases": [
+            "Sharing Redis instance connection details with developers",
+            "Connecting to the provisioned Redis instance",
+            "Accessing Redis instance without password authentication"
+        ],
+        "capabilities": [
+            "CNAME sharing",
+            "Host sharing",
+            "No password authentication"
+        ],
+        "references": []
+    }
+]

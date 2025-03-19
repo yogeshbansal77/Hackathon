@@ -1,0 +1,99 @@
+[
+    {
+        "id": "engineering_devops_processes_hiring_we-want-a-devops-engineer!-chunk-0",
+        "name": "We want a DevOps Engineer!.txt - Linux Fundamentals -",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Hiring"
+        ],
+        "description": "This section outlines the basic Linux skills expected from a beginner or 'noob' level user. It covers fundamental tasks such as installing packages using package managers like apt or yum, creating and managing users and groups, connecting to remote systems via SSH, and controlling system services (starting, stopping, or restarting them). The content suggests that these are entry-level Linux competencies required for the DevOps Engineer role.",
+        "use_cases": [
+            "Package installation and management",
+            "User and group administration",
+            "Remote system access via SSH",
+            "Service management (start, stop, restart)"
+        ],
+        "capabilities": [
+            "Linux package installation (apt/yum)",
+            "User creation",
+            "Group creation",
+            "Adding users to groups",
+            "SSH connectivity",
+            "Service control (start/stop/restart)"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_hiring_we-want-a-devops-engineer!-chunk-1",
+        "name": "We want a DevOps Engineer!.txt - Noob:-",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Hiring"
+        ],
+        "description": "This section outlines the basic skills and knowledge expected from a beginner or entry-level DevOps engineer. It covers fundamental Linux administration tasks, such as managing packages, users, groups, processes, and system resources. Additionally, it touches on understanding system signals, file permissions, systemd services, log management, and basic security practices like installing antivirus software and patching vulnerable packages.",
+        "use_cases": [
+            "Installing and running a Linux server",
+            "Managing system resources and processes",
+            "Writing and managing systemd services and cron jobs",
+            "Collecting and shipping logs to a centralized logging system",
+            "Implementing basic security measures"
+        ],
+        "capabilities": [
+            "Linux package management",
+            "User and group management",
+            "Process monitoring and resource consumption analysis",
+            "Understanding system signals",
+            "File and directory permission management",
+            "Systemd service configuration",
+            "Cron job setup",
+            "Log management and centralized logging",
+            "Basic security practices (antivirus, vulnerability patching)"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_hiring_we-want-a-devops-engineer!-chunk-2",
+        "name": "We want a DevOps Engineer!.txt - Good:-",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Hiring"
+        ],
+        "description": "This section describes the expertise and capabilities of an experienced DevOps engineer. It highlights their ability to work with low-level system components like the kernel, configure complex access control lists (ACLs), optimize system performance, analyze system calls, identify and fix memory leaks, implement robust security measures, and continuously fine-tune the operating system for optimal performance.",
+        "use_cases": [
+            "Kernel patching and customization",
+            "Advanced access control configuration",
+            "System performance optimization",
+            "Security hardening and fortification"
+        ],
+        "capabilities": [
+            "Kernel patching",
+            "ACL configuration",
+            "System optimization",
+            "System call analysis",
+            "Memory leak detection",
+            "Security hardening",
+            "Operating system tuning"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_hiring_we-want-a-devops-engineer!-chunk-3",
+        "name": "We want a DevOps Engineer!.txt - Expert:-",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Hiring"
+        ],
+        "description": "This section does not contain any content or explanation. It appears to be an empty section with no information provided.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    }
+]

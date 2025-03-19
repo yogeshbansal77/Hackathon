@@ -1,0 +1,106 @@
+[
+    {
+        "id": "engineering_devops_processes_incident-management_incident-bot-revamp--chunk-0",
+        "name": "Incident Bot Revamp .txt - New Features",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section outlines new features added to an Incident Bot, which is likely a tool used for managing and responding to incidents or issues. The key additions are: 1) An 'Add Responder' feature to engage individuals during an incident, 2) A 'Get Timeline' feature to retrieve the latest timeline document related to an incident, accessible only to specific team members, and 3) An update to the bot's code using the Slack Bolt framework, allowing for instant acknowledgment of Slack requests.",
+        "use_cases": [
+            "Engaging individuals during incidents",
+            "Retrieving timeline documents for incidents",
+            "Instant acknowledgment of requests from Slack"
+        ],
+        "capabilities": [
+            "Add Responder",
+            "Get Timeline",
+            "Slack Bolt framework integration",
+            "Incident management",
+            "User engagement",
+            "Document retrieval"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_incident-bot-revamp--chunk-1",
+        "name": "Incident Bot Revamp .txt - Slack Bolt",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section explains that the Slack Bolt framework, a Python-based framework for building Slack applications, has been implemented. It also mentions that the URLs for Slack interactivity, shortcuts, event subscriptions, and slash commands have been updated.",
+        "use_cases": [
+            "Building Slack applications",
+            "Handling Slack interactions and events",
+            "Integrating with Slack slash commands"
+        ],
+        "capabilities": [
+            "Slack Bolt framework implementation",
+            "URL updates for Slack interactivity",
+            "URL updates for Slack shortcuts",
+            "URL updates for Slack event subscriptions",
+            "URL updates for Slack slash commands"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_incident-bot-revamp--chunk-2",
+        "name": "Incident Bot Revamp .txt - Add Responder",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section explains the implementation of an 'Add Responder' feature in an Incident Bot using the PagerDuty API and Python programming language. It provides links to the PagerDuty API documentation for creating a responder request for an incident and listing users based on their email addresses. The feature allows adding responders to incidents, likely for incident management and escalation purposes.",
+        "use_cases": [
+            "Adding responders to incidents",
+            "Incident management",
+            "Incident escalation",
+            "Integrating with PagerDuty API"
+        ],
+        "capabilities": [
+            "Create responder request",
+            "List users by email",
+            "PagerDuty API integration",
+            "Python implementation"
+        ],
+        "references": [
+            "https://developer.pagerduty.com/api-reference/6850764326ee2-create-a-responder-request-for-an-incident>",
+            "https://developer.pagerduty.com/api-reference/c96e889522dd6-list-users>"
+        ]
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_incident-bot-revamp--chunk-3",
+        "name": "Incident Bot Revamp .txt - Get Timeline",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section explains the implementation of a feature that creates a timeline document as part of a Root Cause Analysis (RCA) process. It utilizes Google APIs and Python programming language. The timeline documents are created in a Google Console project named 'Incident-bot' with the project ID 'incident-bot-390611'.",
+        "use_cases": [
+            "Creating a timeline document as part of an RCA process",
+            "Automating the generation of RCA-related documents",
+            "Integrating with Google APIs for document creation and management",
+            "Utilizing Python programming language for implementing custom functionality"
+        ],
+        "capabilities": [
+            "Timeline document creation",
+            "Integration with Google APIs",
+            "Python programming",
+            "Google Console project management",
+            "Root Cause Analysis (RCA) documentation"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/418d0ff79c994873436d4fcfc549c32c.png",
+            "https://alpha.razorpay.com/_static/file/e798db4f6ea5df772943a4e05eb0a33e.png"
+        ]
+    }
+]

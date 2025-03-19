@@ -1,0 +1,51 @@
+[
+    {
+        "id": "engineering_devops_run-books-and-sops_pd-alert-run-books_5xx-alerts-chunk-0",
+        "name": "5xx alerts.txt - kubectl logs command",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs",
+            "PD Alert Run-books"
+        ],
+        "description": "This section provides a command to view the logs of the Traefik Ingress Controller in a Kubernetes cluster. The command filters the logs to display only the entries related to 5xx HTTP status codes, which indicate server errors. This can be useful for troubleshooting issues with the Traefik Ingress Controller or the applications it is routing traffic to.",
+        "use_cases": [
+            "Troubleshooting server errors (5xx HTTP status codes) in the Traefik Ingress Controller",
+            "Monitoring the health and performance of applications routed through the Traefik Ingress Controller",
+            "Identifying and resolving issues with the Kubernetes cluster or the applications running in it",
+            "Analyzing and debugging issues related to the Traefik Ingress Controller's configuration or behavior"
+        ],
+        "capabilities": [
+            "Viewing logs of the Traefik Ingress Controller",
+            "Filtering logs based on specific criteria (e.g., HTTP status codes)",
+            "Limiting the number of log entries displayed",
+            "Streaming logs in real-time",
+            "Searching for specific patterns or keywords in the logs"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_pd-alert-run-books_5xx-alerts-chunk-1",
+        "name": "5xx alerts.txt - kubectl get ingress command",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs",
+            "PD Alert Run-books"
+        ],
+        "description": "This section demonstrates the use of the 'kubectl get ingress' command to retrieve information about Ingress resources in a Kubernetes cluster. The command is executed with the '--all-namespaces' flag to list Ingress resources across all namespaces, and the '--context' flag specifies the context (prod-white-eks) for the cluster. The output shows an Ingress resource named 'vendor-payments-statuscake' in the 'default' namespace, which is associated with the domain 'vendor-payments-statuscake.razorpay.com' and listens on port 80.",
+        "use_cases": [
+            "Monitoring Ingress resources in a Kubernetes cluster",
+            "Troubleshooting issues related to Ingress resources",
+            "Verifying the configuration of Ingress resources",
+            "Auditing Ingress resources across multiple namespaces"
+        ],
+        "capabilities": [
+            "List Ingress resources",
+            "Filter Ingress resources by namespace",
+            "Specify Kubernetes cluster context",
+            "Display Ingress resource details (name, hostname, port)"
+        ],
+        "references": []
+    }
+]

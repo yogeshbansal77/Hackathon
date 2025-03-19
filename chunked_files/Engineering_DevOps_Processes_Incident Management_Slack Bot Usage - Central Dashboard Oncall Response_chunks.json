@@ -1,0 +1,132 @@
+[
+    {
+        "id": "engineering_devops_processes_incident-management_slack-bot-usage---central-dashboard-oncall-response-chunk-0",
+        "name": "Slack Bot Usage - Central Dashboard Oncall Response.txt - Objective",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section outlines the purpose of the document, which is to provide standard operating procedures for Level 1 on-call engineers to follow when they receive an alert from the Central Dashboard through the Incident Slack bot. The document aims to empower these engineers with the necessary steps to address and respond to such alerts effectively.",
+        "use_cases": [
+            "Providing guidance to Level 1 on-call engineers for handling alerts from the Central Dashboard",
+            "Enabling on-call engineers to respond to alerts using the Incident Slack bot",
+            "Standardizing the procedures for addressing alerts from the Central Dashboard"
+        ],
+        "capabilities": [
+            "Standard Operating Procedures",
+            "Incident Slack bot",
+            "Central Dashboard alerts",
+            "On-call engineer empowerment",
+            "Alert handling",
+            "Pagerduty integration"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_slack-bot-usage---central-dashboard-oncall-response-chunk-1",
+        "name": "Slack Bot Usage - Central Dashboard Oncall Response.txt - Target Audience",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section explains that the intended audience for the given documentation is the Level 1 (L1) on-call engineer responsible for the Central Dashboard. In simpler terms, it means that the instructions or guidelines provided in the document are specifically meant for the technical support personnel who are tasked with handling any issues or incidents related to the Central Dashboard system during their on-call shifts.",
+        "use_cases": [
+            "Providing guidance to L1 on-call engineers for troubleshooting and resolving issues with the Central Dashboard",
+            "Serving as a reference manual for L1 on-call engineers to understand the Central Dashboard system and its components",
+            "Assisting L1 on-call engineers in responding to alerts or incidents related to the Central Dashboard",
+            "Training and onboarding new L1 on-call engineers for the Central Dashboard team"
+        ],
+        "capabilities": [
+            "L1 On-call engineer",
+            "Central Dashboard",
+            "Incident response",
+            "Troubleshooting",
+            "Alert handling",
+            "Technical support"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_slack-bot-usage---central-dashboard-oncall-response-chunk-2",
+        "name": "Slack Bot Usage - Central Dashboard Oncall Response.txt - High Level Strategy",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section outlines the purpose of the document, which is to provide guidance on how to initiate escalation procedures and notify relevant stakeholders using the Incident Slack bot during critical situations. It aims to explain the high-level strategy for leveraging this bot to streamline communication and response efforts.",
+        "use_cases": [
+            "Invoking escalation policies",
+            "Notifying stakeholders",
+            "Incident management",
+            "Communication during critical situations"
+        ],
+        "capabilities": [
+            "Incident Slack bot",
+            "Escalation policy invocation",
+            "Stakeholder notification"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_slack-bot-usage---central-dashboard-oncall-response-chunk-3",
+        "name": "Slack Bot Usage - Central Dashboard Oncall Response.txt - Scenario 1",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section explains the process that is triggered when an incident is created and detected by the Slack Bot. It outlines the steps that occur, including receiving a notification in the #potential_outages Slack channel from the Incident Bot, confirming that the bot has been triggered automatically, and providing vital information about the incident, such as the bridge and ticket details. Additionally, it mentions that a specific link is provided for the L1 support engineer to initiate a Zoom bridge, and stakeholders can join using the participant link.",
+        "use_cases": [
+            "Automated incident detection and notification",
+            "Centralized incident management and collaboration",
+            "Remote incident response and coordination",
+            "Stakeholder involvement and communication"
+        ],
+        "capabilities": [
+            "Pagerduty integration",
+            "Slack channel notifications",
+            "Incident thread creation",
+            "Zoom bridge initiation",
+            "Incident details sharing",
+            "Stakeholder participation"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/8534e54c0f5c6524c62fedbcac702041.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_slack-bot-usage---central-dashboard-oncall-response-chunk-4",
+        "name": "Slack Bot Usage - Central Dashboard Oncall Response.txt - Scenario 2",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section explains how to manually trigger the Incident Bot on Slack without a PagerDuty alert. It provides step-by-step instructions for invoking the bot using the /incident command, filling out the required details in the dialog box, and selecting 'Skip' for the Incident No. field. This allows users to initiate the incident response process without an initial PagerDuty trigger, following the same steps as in Scenario 1.",
+        "use_cases": [
+            "Manually triggering the Incident Bot on Slack",
+            "Initiating incident response without a PagerDuty alert",
+            "Providing incident details through a dialog box",
+            "Bypassing the need for an initial PagerDuty trigger"
+        ],
+        "capabilities": [
+            "Invoking the Incident Bot with /incident command",
+            "Displaying a dialog box for incident details",
+            "Skipping the Incident No. field",
+            "Initiating incident response without PagerDuty trigger",
+            "Following the steps of Scenario 1"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/d6cef66d15af2fce1fbd63031c9d7f75.png",
+            "https://alpha.razorpay.com/_static/file/fe702201dde720c2cbf33f6b525bfb97.png"
+        ]
+    }
+]

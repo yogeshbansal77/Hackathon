@@ -1,0 +1,135 @@
+[
+    {
+        "id": "engineering_devops_architecture_velero-architecture-chunk-0",
+        "name": "Velero Architecture.txt - Introduction",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture"
+        ],
+        "description": "This section introduces the key functionalities of Velero, a tool that allows users to backup and restore their Kubernetes cluster resources. It enables users to quickly recover from data loss by creating a restore object, migrate cluster resources to other clusters, and replicate production clusters for development and testing purposes. The restoration process is described as simple and fast, taking less than two minutes to initiate, although the complete restoration time depends on the cluster size.",
+        "use_cases": [
+            "Backup and restore cluster resources in case of data loss",
+            "Migrate cluster resources to other clusters",
+            "Replicate production cluster to development and testing environments"
+        ],
+        "capabilities": [
+            "Backup and restore cluster resources",
+            "Migrate cluster resources across clusters",
+            "Replicate clusters",
+            "Simple and fast restoration process",
+            "Restore initiated by creating a restore object",
+            "Restoration time depends on cluster size"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_velero-architecture-chunk-1",
+        "name": "Velero Architecture.txt - Links",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture"
+        ],
+        "description": "This section provides links to various resources related to Velero, a backup and disaster recovery tool for Kubernetes clusters. It includes links to an alert runbook, a dashboard for monitoring Velero statistics, a proof-of-concept document, and installation files for deploying Velero on a Kubernetes cluster. These links serve as a centralized location for accessing important information and resources related to the setup, configuration, and monitoring of Velero.",
+        "use_cases": [
+            "Accessing alert runbook for troubleshooting Velero issues",
+            "Monitoring Velero statistics and performance",
+            "Referring to proof-of-concept documentation for understanding Velero implementation",
+            "Installing and deploying Velero on a Kubernetes cluster"
+        ],
+        "capabilities": [
+            "Alert runbook",
+            "Monitoring dashboard",
+            "Proof-of-concept documentation",
+            "Installation files",
+            "Centralized resource links",
+            "Kubernetes cluster backup and recovery"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/velero-alerts",
+            "https://vajra.razorpay.com/d/YAniUGC/velero-stats?orgId=1",
+            "https://docs.google.com/document/d/18VOqYHw2mJ7XK6514cUfL9-ALcv4Lnab98wLYoKFdZc/edit?usp=sharing",
+            "https://github.com/razorpay/infra-kube-manifests/tree/master/helm/velero/v1.9.2"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_velero-architecture-chunk-2",
+        "name": "Velero Architecture.txt - Where is it installed?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture"
+        ],
+        "description": "This section provides information about where the Velero backup and recovery tool is installed in the infrastructure. It mentions that the official documentation has brief details about the Velero setup, and directs the reader to a separate POC (Proof of Concept) document for more detailed information regarding the installation location and configuration.",
+        "use_cases": [
+            "Understanding the deployment location of Velero in the infrastructure",
+            "Referring to additional documentation for more detailed installation and configuration guidance",
+            "Seeking information specific to the organization's infrastructure setup"
+        ],
+        "capabilities": [
+            "Backup and recovery tool",
+            "Infrastructure deployment",
+            "Documentation reference",
+            "Proof of Concept (POC) documentation"
+        ],
+        "references": [
+            "https://velero.io/docs/v1.9/how-velero-works/"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_velero-architecture-chunk-3",
+        "name": "Velero Architecture.txt - How Velero backup works in our infra?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture"
+        ],
+        "description": "This section explains how Velero, a backup and restore tool, is set up and used in the company's infrastructure. It mentions that Velero is installed in multiple Kubernetes clusters through FluxCD, a tool for managing Kubernetes clusters. The section also highlights that Velero does not back up EBS (Elastic Block Store) volumes, which means that when restoring a stateful application, the EBS volumes will be empty. It then describes the backup process, where a scheduled backup object named 'stateless-app-backup' creates backup objects daily at 3 AM.",
+        "use_cases": [
+            "Backing up Kubernetes resources (except EBS volumes) across multiple clusters",
+            "Scheduled backups of stateless applications",
+            "Restoring stateful applications (with empty EBS volumes)"
+        ],
+        "capabilities": [
+            "Velero installation in multiple Kubernetes clusters",
+            "FluxCD integration for managing Velero installation",
+            "Scheduled backups using Velero Schedule object",
+            "Backup of Kubernetes resources (excluding EBS volumes)",
+            "Restore of stateful applications (with empty EBS volumes)"
+        ],
+        "references": [
+            "https://razorpay.slack.com/archives/C021N5QL8E7/p1670400848616769",
+            "https://alpha.razorpay.com/_static/file/6860b27ad4e033e9d5c62dd3ada43202.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_velero-architecture-chunk-4",
+        "name": "Velero Architecture.txt - How to restore from backup?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture"
+        ],
+        "description": "This section explains how to restore data from a backup created by Velero, a Kubernetes backup and disaster recovery tool. It provides examples of YAML files to create a 'Restore' object, which instructs Velero to restore data from a specific backup. The restoration can be done for all namespaces, selected namespaces, or specific resource types. The section also mentions that by default, Velero performs a non-destructive restore, meaning it won't overwrite existing resources unless specified. Additionally, it outlines the steps for disaster recovery using Velero.",
+        "use_cases": [
+            "Restoring data from a backup to all namespaces",
+            "Restoring data from a backup to selected namespaces",
+            "Restoring specific resource types (e.g., ConfigMaps, Deployments) from a backup",
+            "Disaster recovery using Velero"
+        ],
+        "capabilities": [
+            "Backup and restore",
+            "Namespace-level restoration",
+            "Resource-type-level restoration",
+            "Non-destructive restore (default)",
+            "Overwrite existing resources (optional)",
+            "Disaster recovery"
+        ],
+        "references": [
+            "https://velero.io/docs/main/restore-reference/#restore-existing-resource-policy",
+            "https://velero.io/docs/main/restore-reference/#restore-command-line-options:\\~:text=ns%2D1.-,Restore%20existing%20resource%20policy,-By%20default%2C%20Velero",
+            "https://razorpay.zoom.us/rec/share/d67GaCaNUGPzsdzGRq8Ekj9EyOfvJYWFYqujtbXY7tGm7mcs_jMvvMnCVIJVnKmS.HJZVDjrQyxBgLXxz>"
+        ]
+    }
+]

@@ -1,0 +1,158 @@
+[
+    {
+        "id": "engineering_devops_jarvis_wip-features-in-jarvis-chunk-0",
+        "name": "WIP Features in JARVIS.txt - Infra Debugging tool",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section introduces an infrastructure debugging tool that helps identify and troubleshoot issues related to the infrastructure components involved in serving a domain. Given a domain name, this tool can trace the entire infrastructure stack and pinpoint the exact component where requests are failing, providing enhanced debugging options to diagnose and resolve the problem.",
+        "use_cases": [
+            "Debugging infrastructure-related issues for a given domain",
+            "Tracing requests through the infrastructure stack",
+            "Identifying the component causing request failures",
+            "Enhanced debugging capabilities for infrastructure components"
+        ],
+        "capabilities": [
+            "Trace infrastructure components",
+            "Identify request failure points",
+            "Enhanced debugging options",
+            "Infrastructure issue diagnosis",
+            "Domain-based infrastructure analysis"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_jarvis_wip-features-in-jarvis-chunk-1",
+        "name": "WIP Features in JARVIS.txt - Kafka cert Automation",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section describes a tool that automates the process of fetching Kafka certificates and storing them securely in a credential store called Credstash. Kafka is a distributed streaming platform used for building real-time data pipelines and streaming applications. Certificates are used for secure communication between Kafka components. This tool simplifies the management of these certificates by automatically retrieving them and storing them in a secure location, making it easier for applications to access and use them.",
+        "use_cases": [
+            "Automating the management of Kafka certificates",
+            "Securely storing Kafka certificates in a centralized credential store",
+            "Enabling applications to easily access and use Kafka certificates",
+            "Streamlining the deployment and configuration of Kafka-based applications"
+        ],
+        "capabilities": [
+            "Fetch Kafka certificates",
+            "Push Kafka certificates to Credstash",
+            "Automate certificate management",
+            "Secure certificate storage",
+            "Centralized credential store",
+            "Facilitate application access to certificates"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_jarvis_wip-features-in-jarvis-chunk-2",
+        "name": "WIP Features in JARVIS.txt - Pod troubleshooter",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "The Pod troubleshooter is a tool designed to help users identify and resolve issues within a pod, which is a deployment unit in a containerized environment. This tool aims to simplify the process of debugging and troubleshooting problems that may arise during the execution of a pod, making it easier for users to understand and address any issues that may be impacting the performance or functionality of their applications.",
+        "use_cases": [
+            "Troubleshooting and debugging issues in a pod (Deployment)",
+            "Identifying and resolving performance or functionality problems in containerized applications",
+            "Simplifying the process of understanding and addressing issues in a containerized environment",
+            "Providing a streamlined tool for monitoring and maintaining the health of pods"
+        ],
+        "capabilities": [
+            "Pod troubleshooting",
+            "Pod debugging",
+            "Issue identification",
+            "Issue resolution",
+            "Performance monitoring",
+            "Functionality monitoring"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_jarvis_wip-features-in-jarvis-chunk-3",
+        "name": "WIP Features in JARVIS.txt - DMS(Drift Management System) Lease",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section briefly mentions the Drift Management System (DMS) Lease feature, which is a work-in-progress (WIP) feature in JARVIS. However, no further details are provided, and the documentation states that more information will be posted soon.",
+        "use_cases": [
+            "Managing drift in a system or application",
+            "Monitoring and controlling system or application changes over time",
+            "Ensuring consistency and stability in a dynamic environment"
+        ],
+        "capabilities": [
+            "Drift Management System (DMS)",
+            "Lease management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_jarvis_wip-features-in-jarvis-chunk-4",
+        "name": "WIP Features in JARVIS.txt - Old logs retrieval Automation",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section describes an automated tool that helps users retrieve old log files. It is designed to simplify the process of accessing and retrieving historical log data, which can be useful for troubleshooting, auditing, or analyzing past events.",
+        "use_cases": [
+            "Retrieving old log files for troubleshooting purposes",
+            "Accessing historical log data for auditing or compliance purposes",
+            "Analyzing past events or system behavior based on log data",
+            "Automating the process of log retrieval, reducing manual effort"
+        ],
+        "capabilities": [
+            "Log retrieval",
+            "Automation",
+            "Historical data access",
+            "Troubleshooting",
+            "Auditing",
+            "Event analysis"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_jarvis_wip-features-in-jarvis-chunk-5",
+        "name": "WIP Features in JARVIS.txt - Beam Automation",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section appears to be a placeholder for future information about a feature called 'Beam Automation' in the JARVIS system. The current content suggests that more details will be provided later, but no specific details are given at this time.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_jarvis_wip-features-in-jarvis-chunk-6",
+        "name": "WIP Features in JARVIS.txt - DevOps Ticket Creation via JARVIS",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section appears to be about a feature in JARVIS that allows users to create DevOps tickets or issues directly through the JARVIS system. This could potentially streamline the process of reporting bugs, requesting enhancements, or tracking tasks related to the development and operations of software systems.",
+        "use_cases": [
+            "Reporting bugs or issues in software systems",
+            "Requesting new features or enhancements",
+            "Tracking development tasks or operational tasks",
+            "Integrating with existing DevOps tools or workflows"
+        ],
+        "capabilities": [
+            "DevOps ticket creation",
+            "Integration with JARVIS",
+            "Streamlined issue reporting",
+            "Task tracking",
+            "Feature request submission"
+        ],
+        "references": []
+    }
+]

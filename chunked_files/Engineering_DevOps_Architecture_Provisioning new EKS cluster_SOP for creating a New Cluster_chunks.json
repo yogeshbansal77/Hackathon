@@ -1,0 +1,146 @@
+[
+    {
+        "id": "engineering_devops_architecture_provisioning-new-eks-cluster_sop-for-creating-a-new-cluster-chunk-0",
+        "name": "SOP for creating a New Cluster.txt - for creating cluster we need make changes in vishnu repo",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Provisioning new EKS cluster"
+        ],
+        "description": "This section provides links to two pull requests (PRs) in the Razorpay Vishnu repository on GitHub. These PRs likely contain code changes or updates related to creating a new cluster. By referencing these PRs, the documentation suggests that developers need to review and potentially apply the changes from these PRs to the Vishnu codebase in order to enable or support the process of creating a new cluster.",
+        "use_cases": [
+            "Creating a new cluster",
+            "Updating the Vishnu codebase to support cluster creation"
+        ],
+        "capabilities": [
+            "Code changes or updates related to cluster creation",
+            "Pull request management and integration",
+            "Version control and collaboration using GitHub"
+        ],
+        "references": [
+            "https://github.com/razorpay/vishnu/pull/8535/files>",
+            "https://github.com/razorpay/vishnu/pull/9137>"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_provisioning-new-eks-cluster_sop-for-creating-a-new-cluster-chunk-1",
+        "name": "SOP for creating a New Cluster.txt - Atlantis in picture",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Provisioning new EKS cluster"
+        ],
+        "description": "This section appears to be explaining the concept of 'Atlantis in picture' and mentioning the term 'super user'. However, the content provided is too brief and lacks context to fully understand its meaning. It could potentially be referring to a specific feature or functionality related to user roles or permissions within the context of creating a new cluster.",
+        "use_cases": [
+            "User role management",
+            "Access control and permissions",
+            "Cluster administration",
+            "Security and authorization"
+        ],
+        "capabilities": [
+            "Super user role",
+            "User management",
+            "Role-based access control"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_provisioning-new-eks-cluster_sop-for-creating-a-new-cluster-chunk-2",
+        "name": "SOP for creating a New Cluster.txt - Alternative solutions/suggestions",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Provisioning new EKS cluster"
+        ],
+        "description": "This section appears to be suggesting an alternative solution or approach for creating a new cluster, which involves using an access key and ID. It seems to be a more secure or recommended method compared to the primary approach outlined in the documentation. However, without additional context, it's difficult to provide a more detailed explanation.",
+        "use_cases": [
+            "Creating a new cluster with enhanced security measures",
+            "Provisioning a cluster with restricted access or permissions",
+            "Setting up a cluster in a regulated or sensitive environment",
+            "Implementing role-based access control (RBAC) for cluster management"
+        ],
+        "capabilities": [
+            "Access key and ID authentication",
+            "Secure cluster creation",
+            "Role-based access control (RBAC)",
+            "Restricted or regulated cluster provisioning"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_provisioning-new-eks-cluster_sop-for-creating-a-new-cluster-chunk-3",
+        "name": "SOP for creating a New Cluster.txt - Scope",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Provisioning new EKS cluster"
+        ],
+        "description": "This section appears to be explaining the process or command for updating the kubeconfig file, which is a configuration file used by the Kubernetes command-line tool (kubectl) to access and manage Kubernetes clusters. However, the content provided is minimal and does not provide any detailed explanation or context.",
+        "use_cases": [
+            "Updating the kubeconfig file",
+            "Configuring access to a Kubernetes cluster",
+            "Managing Kubernetes cluster credentials"
+        ],
+        "capabilities": [
+            "kubeconfig update",
+            "cluster access configuration",
+            "credential management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_provisioning-new-eks-cluster_sop-for-creating-a-new-cluster-chunk-4",
+        "name": "SOP for creating a New Cluster.txt - To add core components on k8s cluster",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Provisioning new EKS cluster"
+        ],
+        "description": "This section appears to be discussing alternative solutions or suggestions related to OIDC (OpenID Connect) configuration for a Kubernetes cluster. OIDC is an authentication protocol that allows users to securely access applications and services using their existing identities from various identity providers. This section may provide guidance or options for configuring OIDC authentication in the Kubernetes cluster.",
+        "use_cases": [
+            "Configuring OIDC authentication for a Kubernetes cluster",
+            "Integrating external identity providers with Kubernetes for user authentication",
+            "Securing access to Kubernetes resources and applications using OIDC"
+        ],
+        "capabilities": [
+            "OIDC configuration",
+            "Authentication integration",
+            "Identity provider support",
+            "Access control"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_provisioning-new-eks-cluster_sop-for-creating-a-new-cluster-chunk-5",
+        "name": "SOP for creating a New Cluster.txt - Steps to access cluster for first time:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Provisioning new EKS cluster"
+        ],
+        "description": "This section outlines the steps to access a newly created Kubernetes cluster for the first time. It involves configuring AWS credentials, updating the Kubernetes configuration, applying necessary RBAC rules, and verifying access to the cluster. The process ensures secure access to the cluster by allowing only office IP addresses and configuring OIDC authentication.",
+        "use_cases": [
+            "Accessing a newly created Kubernetes cluster for the first time",
+            "Configuring secure access to a Kubernetes cluster",
+            "Applying RBAC rules and cluster role bindings for administrative access"
+        ],
+        "capabilities": [
+            "AWS EKS cluster creation",
+            "AWS CLI configuration",
+            "Kubernetes configuration update",
+            "OIDC authentication setup",
+            "RBAC rule application",
+            "Cluster access verification"
+        ],
+        "references": [
+            "https://github.com/razorpay/infra-kube-manifests/tree/master/envs/razorpayx/prod/razorpayx-green/helm>",
+            "https://github.com/razorpay/infra-kube-manifests/tree/master/envs/razorpayx/prod/razorpayx-green/kustomize>."
+        ]
+    }
+]

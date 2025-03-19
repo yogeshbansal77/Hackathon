@@ -1,0 +1,180 @@
+[
+    {
+        "id": "engineering_devops_dev-self-serve_-blackbox-exporter-chunk-0",
+        "name": " Blackbox exporter.txt - Problem statement",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section outlines the issues faced with the current monitoring system, Statuscake, which is used to monitor external and concierge endpoints. The main problems include throttling issues with the Statuscake exporter used for delegating alerts, the need to whitelist new IP addresses in load balancers when Statuscake adds new monitoring regions, and the inability to monitor internal endpoints.",
+        "use_cases": [
+            "Monitoring external endpoints",
+            "Monitoring concierge endpoints",
+            "Receiving alerts for endpoint issues",
+            "Monitoring internal endpoints"
+        ],
+        "capabilities": [
+            "Monitoring external endpoints",
+            "Monitoring internal endpoints",
+            "Delegating alerts to developers",
+            "Whitelisting IP addresses in load balancers",
+            "Avoiding throttling issues with monitoring API"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_-blackbox-exporter-chunk-1",
+        "name": " Blackbox exporter.txt - Solution",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains that the Blackbox exporter tool will be used to monitor the internal and concierge endpoints. The Blackbox exporter is a tool that can be used to monitor various endpoints and services over the network. It can be configured to periodically check the availability and response time of these endpoints, and report the results to a Prometheus monitoring system.",
+        "use_cases": [
+            "Monitoring internal endpoints",
+            "Monitoring concierge endpoints",
+            "Endpoint availability monitoring",
+            "Endpoint response time monitoring"
+        ],
+        "capabilities": [
+            "Endpoint monitoring",
+            "Internal endpoint monitoring",
+            "Concierge endpoint monitoring",
+            "Blackbox exporter integration",
+            "Prometheus monitoring integration"
+        ],
+        "references": [
+            "https://github.com/prometheus/blackbox_exporter"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_-blackbox-exporter-chunk-2",
+        "name": " Blackbox exporter.txt - Configuration",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains the process of configuring alerts for monitoring endpoints in different environments (production and non-production) at Razorpay. It involves raising a pull request (PR) in the 'alert-rules' repository and using a specific command format to add the endpoint details. The command includes the environment (prod or non-prod), endpoint type (external, internal, or concierge), and the actual endpoint URL. After adding the endpoint, the metrics can be verified before merging the PR to ensure proper monitoring and avoid false alerts.",
+        "use_cases": [
+            "Monitoring endpoints in production environments (cde-blue, cde-green, prod-white, prod-green, or ops-common clusters)",
+            "Monitoring endpoints in non-production environments (stage-white or dev-serve)",
+            "Adding new endpoints for monitoring",
+            "Verifying metrics for added endpoints before enabling alerts"
+        ],
+        "capabilities": [
+            "Adding endpoints for monitoring",
+            "Specifying environment (prod or non-prod)",
+            "Specifying endpoint type (external, internal, or concierge)",
+            "Verifying metrics for added endpoints",
+            "Exploring metrics using Vajra",
+            "Handling errors and unsupported values",
+            "Configuring alert details (severity, BU, pod, service, Slack channel, etc.)"
+        ],
+        "references": [
+            "https://github.com/razorpay/alert-rules",
+            "https://github.com/razorpay/alert-rules/tree/master/rules/prod-rules",
+            "https://github.com/razorpay/alert-rules/tree/master/rules/nonprod-rules",
+            "https://github.com/razorpay/alert-rules/pull/6646#issuecomment-1825817497",
+            "https://alpha.razorpay.com/_static/file/2e256dfce5ef9c72469e13877d1bcb43.png",
+            "https://alpha.razorpay.com/_static/file/a9f587d7afb5c72a6729e6998e1936e6.png \"left-50\"",
+            "https://alpha.razorpay.com/_static/file/b98f467f0e0f9e6457a1f7ca6cdd9135.png \"left-50\"",
+            "https://alpha.razorpay.com/_static/file/b36ac07d7a2ae8391f9792fb5e3db6ed.png \"left-50\"",
+            "https://alpha.razorpay.com/_static/file/06384ce95f265a332ebcbadf7e49280d.png \"left-50\"",
+            "https://alpha.razorpay.com/_static/file/028a9c1848ef89dce9cb06efdde7cf28.png",
+            "https://c.rzp.io/api/v2.0/ping>**",
+            "https://github.com/razorpay/alert-rules/pull/6690>"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_-blackbox-exporter-chunk-3",
+        "name": " Blackbox exporter.txt - Sample alert",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section provides links to Grafana dashboards that monitor the Blackbox exporter, a tool used to probe endpoints over various protocols. The links are divided into two categories: Production (Prod) and Non-Production (Non-prod). These dashboards likely display metrics and alerts related to the health and performance of the monitored endpoints, allowing users to quickly identify and troubleshoot any issues.",
+        "use_cases": [
+            "Monitoring the availability and performance of endpoints (e.g., websites, APIs, databases) in production and non-production environments",
+            "Identifying and troubleshooting issues with monitored endpoints",
+            "Visualizing metrics and alerts related to endpoint health and performance",
+            "Providing a centralized dashboard for monitoring multiple endpoints"
+        ],
+        "capabilities": [
+            "Grafana dashboards",
+            "Endpoint monitoring",
+            "Blackbox exporter integration",
+            "Production and non-production environment monitoring",
+            "Metrics visualization",
+            "Alerting"
+        ],
+        "references": [
+            "https://vajra.razorpay.com/d/xtkCtBkiz/prometheus-blackbox-exporter?orgId=1&refresh=10s>",
+            "https://grafana.np.razorpay.in/d/xtkCtBki/endpoint-monitor?orgId=1&refresh=10s>"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_-blackbox-exporter-chunk-4",
+        "name": " Blackbox exporter.txt - Dashboard",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section clarifies that the Blackbox exporter is not intended to replace an existing monitoring tool called Statuscake. Instead, it is an additional tool that has been configured within the cluster to monitor internal endpoints.",
+        "use_cases": [
+            "Monitoring internal endpoints within a cluster",
+            "Complementing existing monitoring tools like Statuscake",
+            "Adding monitoring capabilities to a cluster"
+        ],
+        "capabilities": [
+            "Internal endpoint monitoring",
+            "Cluster integration",
+            "Complementary monitoring"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_-blackbox-exporter-chunk-5",
+        "name": " Blackbox exporter.txt - Note",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section provides information about the Blackbox exporter, a tool used for monitoring endpoints. It mentions that support has been added for HTTP/1.1 and HTTP/2.0 protocols. It also explains how to remove alerts for endpoints that no longer need to be monitored, and how to update alerts when endpoints change. Additionally, it outlines the monitoring strategy for different environments, using Blackbox exporter for internal and concierge endpoints in production, and Statuscake for external endpoints.",
+        "use_cases": [
+            "Monitoring HTTP/1.1 and HTTP/2.0 endpoints",
+            "Removing alerts for endpoints that no longer need to be monitored",
+            "Updating alerts when endpoint details change",
+            "Monitoring internal, concierge, and external endpoints in different environments"
+        ],
+        "capabilities": [
+            "Support for HTTP/1.1 and HTTP/2.0 protocols",
+            "Ability to remove alerts for specific endpoints",
+            "Ability to update alerts when endpoint details change",
+            "Monitoring internal and concierge endpoints using Blackbox exporter",
+            "Monitoring external endpoints using Statuscake",
+            "Monitoring strategy for production and non-production environments"
+        ],
+        "references": [
+            "https://docs.google.com/document/d/1H4cK1oZR08CXaJBa8YM46whH8QsBGNbm_yVpZbznNVo/edit"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_-blackbox-exporter-chunk-6",
+        "name": " Blackbox exporter.txt - Reference:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section appears to be empty or missing content. Without any text or information provided, it is difficult to provide a meaningful description or extract any use cases or capabilities.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    }
+]

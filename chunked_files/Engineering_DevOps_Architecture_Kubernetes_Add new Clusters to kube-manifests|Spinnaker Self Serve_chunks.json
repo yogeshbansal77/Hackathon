@@ -1,0 +1,61 @@
+[
+    {
+        "id": "engineering_devops_architecture_kubernetes_add-new-clusters-to-kube-manifests|spinnaker-self-serve-chunk-0",
+        "name": "Add new Clusters to kube-manifests|Spinnaker Self Serve.txt - How to add a new kubernetes cluster to kube-manifests?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section explains the steps to add a new Kubernetes cluster to the kube-manifests repository, which is used for managing Kubernetes resources through GitHub Actions and Spinnaker. It involves creating RBAC roles and service accounts, storing the cluster's authentication token as a GitHub secret, updating the GitHub Actions workflow and Kubeconfig files to include the new cluster, and modifying the entrypoint script to configure the Kubeconfig with the new cluster's token.",
+        "use_cases": [
+            "Adding a new Kubernetes cluster to the kube-manifests repository",
+            "Enabling GitHub Actions and Spinnaker to manage resources on the new cluster",
+            "Automating the deployment and management of Kubernetes resources across multiple clusters"
+        ],
+        "capabilities": [
+            "RBAC role and service account creation",
+            "GitHub secret management",
+            "GitHub Actions workflow configuration",
+            "Kubeconfig file management",
+            "Scripting for Kubeconfig token replacement",
+            "Conditional execution based on cluster environment"
+        ],
+        "references": [
+            "https://github.com/razorpay/kube-manifests/tree/093f25edfbd392e5515eeee8b5e0ba36e089b1d7/rough-n-ready/cde/spinnaker",
+            "https://github.com/razorpay/kube-manifests/blob/093f25edfbd392e5515eeee8b5e0ba36e089b1d7/.github/workflows/workflow.yml#L32",
+            "https://github.com/razorpay/kube-manifests/blob/093f25edfbd392e5515eeee8b5e0ba36e089b1d7/.github/actions/plan/entrypoint.sh#L110",
+            "https://api-server-endpoint"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_add-new-clusters-to-kube-manifests|spinnaker-self-serve-chunk-1",
+        "name": "Add new Clusters to kube-manifests|Spinnaker Self Serve.txt - How to add a new kubernetes cluster to Spinnaker?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section explains the process of adding a new Kubernetes cluster to Spinnaker, a continuous delivery platform for deploying applications to Kubernetes clusters. It involves deploying RBAC on the new cluster, adding tokens to a credential store, updating Kubernetes configuration files, applying changes using Terraform, and redeploying Spinnaker with the new cluster configuration.",
+        "use_cases": [
+            "Adding a new Kubernetes cluster to Spinnaker for deploying applications",
+            "Integrating a new Kubernetes cluster with Spinnaker for continuous delivery",
+            "Scaling Spinnaker deployment across multiple Kubernetes clusters",
+            "Enabling Spinnaker to manage and deploy applications to a new Kubernetes cluster"
+        ],
+        "capabilities": [
+            "Deploying RBAC on a new Kubernetes cluster",
+            "Storing and managing credentials in a credential store",
+            "Updating Kubernetes configuration files for Spinnaker",
+            "Applying changes to Spinnaker configuration using Terraform",
+            "Redeploying Spinnaker with the new cluster configuration",
+            "Integrating a new Kubernetes cluster with Spinnaker"
+        ],
+        "references": [
+            "https://github.com/razorpay/kube-manifests/pull/2636>",
+            "https://github.com/razorpay/vishnu/pull/4932>"
+        ]
+    }
+]

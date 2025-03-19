@@ -1,0 +1,58 @@
+[
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_whitelisting-chunk-0",
+        "name": "Whitelisting.txt - Whitelisting inbound / Outbound IP addresses by Banks",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains the process of whitelisting IP addresses for inbound and outbound connections between Razorpay and banks. It involves allowing Razorpay to send requests to a bank's portal, and vice versa, by whitelisting specific IP addresses from where the requests originate. This is done for both testing (UAT) and production environments. The section also covers whitelisting IP addresses for secure file transfers (SFTP) between Razorpay and banks/merchants.",
+        "use_cases": [
+            "Allowing Razorpay to send requests to a bank's portal (inbound requests)",
+            "Allowing banks to send requests to Razorpay's network (outbound requests)",
+            "Enabling secure file transfers (SFTP) between Razorpay and banks/merchants"
+        ],
+        "capabilities": [
+            "Whitelisting inbound IP addresses",
+            "Whitelisting outbound IP addresses",
+            "Maintaining lists of IP addresses for UAT and production environments",
+            "Whitelisting IP addresses for SFTP file transfers (BEAM)",
+            "Host-to-host (H2H) connectivity for high-volume data transfer",
+            "Secure file transfers using SFTP protocol"
+        ],
+        "references": [
+            "https://write.razorpay.com/doc/razorpay-ip-whitelists-cSotXwFMa5\""
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_whitelisting-chunk-1",
+        "name": "Whitelisting.txt - Whitelisting SFTP IPs (BEAM)",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains the SFTP (Secure File Transfer Protocol) connections initiated by Razorpay from two different sources: BEAM (a file transfer program written in Golang) and Legacy H2H (older cron jobs using rsync, lftp mirror, and except scripts). BEAM is used to pull and push files from/to banks and merchants' SFTP hosts, while Legacy H2H is being phased out. The section provides the IP addresses that need to be whitelisted for BEAM in the production and staging environments.",
+        "use_cases": [
+            "Transferring files securely between Razorpay and banks/merchants using SFTP",
+            "Whitelisting IP addresses for BEAM in production and staging environments",
+            "Migrating file transfer jobs from Legacy H2H to BEAM",
+            "Testing SFTP connections in the staging environment"
+        ],
+        "capabilities": [
+            "SFTP file transfer",
+            "IP whitelisting",
+            "Golang-based file transfer program (BEAM)",
+            "Legacy file transfer using rsync, lftp mirror, and except scripts",
+            "Docker container deployment (BEAM in production)",
+            "Kubernetes cluster deployment (BEAM in staging)",
+            "AWS managed SFTP service for testing"
+        ],
+        "references": []
+    }
+]

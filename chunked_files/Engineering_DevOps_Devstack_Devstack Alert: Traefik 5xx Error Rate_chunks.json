@@ -1,0 +1,80 @@
+[
+    {
+        "id": "engineering_devops_devstack_devstack-alert:-traefik-5xx-error-rate-chunk-0",
+        "name": "Devstack Alert: Traefik 5xx Error Rate.txt - Check the cluster for which the alert is fired",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Devstack"
+        ],
+        "description": "This section explains that if you don't have access to the clusters where the Traefik 5xx error rate alert is being triggered, you can use the devstack onboarding scripts to gain access. This allows you to investigate and troubleshoot the issue within the relevant clusters.",
+        "use_cases": [
+            "Accessing clusters for troubleshooting alerts",
+            "Investigating Traefik 5xx error rate issues",
+            "Onboarding to devstack environment"
+        ],
+        "capabilities": [
+            "Cluster access",
+            "Onboarding scripts",
+            "Devstack environment"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devstack_devstack-alert:-traefik-5xx-error-rate-chunk-1",
+        "name": "Devstack Alert: Traefik 5xx Error Rate.txt - Get access to the clusters using the devstack onboarding scripts",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Devstack"
+        ],
+        "description": "This section provides a step to check the status of the Traefik pods, which are responsible for handling incoming traffic and routing it to the appropriate services. It suggests verifying if the Traefik pods are running and in a healthy state, which can help identify potential issues related to traffic routing or service availability.",
+        "use_cases": [
+            "Troubleshooting service availability issues",
+            "Monitoring the health of the Traefik ingress controller",
+            "Identifying potential issues with traffic routing"
+        ],
+        "capabilities": [
+            "Checking pod status",
+            "Verifying pod health",
+            "Monitoring Traefik ingress controller"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devstack_devstack-alert:-traefik-5xx-error-rate-chunk-2",
+        "name": "Devstack Alert: Traefik 5xx Error Rate.txt - Check if the traefik pods are running and in healthy state",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Devstack"
+        ],
+        "description": "This section suggests checking the registered targets for the dev-automation Application Load Balancers (ALBs) to ensure that the Traefik pods, which are responsible for routing traffic, are running and in a healthy state. If the Traefik pods are not running or are unhealthy, it could lead to 5xx errors, indicating server-side issues.",
+        "use_cases": [
+            "Troubleshooting 5xx errors related to Traefik",
+            "Monitoring the health of Traefik pods",
+            "Verifying the registered targets for dev-automation ALBs"
+        ],
+        "capabilities": [
+            "Checking registered targets",
+            "Monitoring pod health",
+            "Troubleshooting errors",
+            "Load balancer management",
+            "Kubernetes pod monitoring"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devstack_devstack-alert:-traefik-5xx-error-rate-chunk-3",
+        "name": "Devstack Alert: Traefik 5xx Error Rate.txt - Check the registered targets for the dev-automation ALBs",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Devstack"
+        ],
+        "description": "This section appears to be empty or missing content. Without any text or instructions provided, it is difficult to provide a meaningful description or extract any use cases or capabilities.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    }
+]

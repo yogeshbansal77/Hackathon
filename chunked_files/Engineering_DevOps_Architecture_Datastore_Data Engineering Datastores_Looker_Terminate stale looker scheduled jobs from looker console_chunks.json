@@ -1,0 +1,113 @@
+[
+    {
+        "id": "engineering_devops_architecture_datastore_data-engineering-datastores_looker_terminate-stale-looker-scheduled-jobs-from-looker-console-chunk-0",
+        "name": "Terminate stale looker scheduled jobs from looker console.txt - Info",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Data Engineering Datastores",
+            "Looker"
+        ],
+        "description": "This section informs that only users with administrative privileges have the authority to terminate stale or inactive scheduled jobs from the Looker console user interface. This implies that regular users without admin rights cannot perform this action through the Looker UI.",
+        "use_cases": [
+            "Terminating stale or inactive scheduled jobs",
+            "Managing scheduled jobs in Looker",
+            "Controlling access and privileges for administrative tasks"
+        ],
+        "capabilities": [
+            "Admin user privileges",
+            "Terminate scheduled jobs",
+            "Looker console UI"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_datastore_data-engineering-datastores_looker_terminate-stale-looker-scheduled-jobs-from-looker-console-chunk-1",
+        "name": "Terminate stale looker scheduled jobs from looker console.txt - Example Schedule job",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Data Engineering Datastores",
+            "Looker"
+        ],
+        "description": "This section appears to be providing an example of how to schedule a job in Looker, a business intelligence and data visualization platform. However, the section content is incomplete and does not provide any actual code or instructions for scheduling a job.",
+        "use_cases": [
+            "Scheduling recurring data analysis or reporting tasks in Looker",
+            "Automating data-driven workflows or processes",
+            "Ensuring timely delivery of business intelligence insights"
+        ],
+        "capabilities": [
+            "Job scheduling",
+            "Automation",
+            "Recurring tasks",
+            "Data analysis",
+            "Reporting"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_datastore_data-engineering-datastores_looker_terminate-stale-looker-scheduled-jobs-from-looker-console-chunk-2",
+        "name": "Terminate stale looker scheduled jobs from looker console.txt - Finalize Scheduled Job",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Data Engineering Datastores",
+            "Looker"
+        ],
+        "description": "This section provides a visual representation of the final step in terminating a stale or outdated scheduled job in the Looker console. The image shows the 'Finalize Scheduled Job' button, which, when clicked, will complete the process of stopping the scheduled job from running further. This step ensures that any unnecessary or obsolete scheduled jobs are properly terminated, freeing up resources and maintaining an efficient system.",
+        "use_cases": [
+            "Terminating stale or outdated scheduled jobs",
+            "Freeing up system resources",
+            "Maintaining an efficient Looker environment",
+            "Managing and optimizing scheduled job processes"
+        ],
+        "capabilities": [
+            "Visual guidance",
+            "Finalize Scheduled Job button",
+            "Termination of scheduled jobs",
+            "Resource management",
+            "System optimization"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/cdce104e81af7ced76c28c6272c2fb67.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_datastore_data-engineering-datastores_looker_terminate-stale-looker-scheduled-jobs-from-looker-console-chunk-3",
+        "name": "Terminate stale looker scheduled jobs from looker console.txt - Scheduled (stale) job is finalised",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Data Engineering Datastores",
+            "Looker"
+        ],
+        "description": "This section explains how to terminate or finalize a stale scheduled job in the Looker console. It provides step-by-step instructions with screenshots on how to navigate to the Looker admin console, locate the job ID of the stale job, and use the 'Finalize Scheduled Job' option to terminate the job. The process is straightforward and can be followed by anyone with access to the Looker console, even if they are not technical experts.",
+        "use_cases": [
+            "Terminating stale or long-running scheduled jobs in Looker",
+            "Freeing up resources by finalizing jobs that are no longer needed",
+            "Managing and maintaining scheduled jobs in the Looker console",
+            "Troubleshooting and resolving issues with scheduled jobs"
+        ],
+        "capabilities": [
+            "Accessing the Looker admin console",
+            "Identifying job IDs of scheduled jobs",
+            "Finalizing or terminating scheduled jobs",
+            "Viewing job status and details",
+            "Managing scheduled jobs through the Looker console"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/67eb8a6710c0f0b73a0e433cb1af0354.png",
+            "https://alpha.razorpay.com/_static/file/234d7d6636f7465d1e81b47faef77974.png",
+            "https://alpha.razorpay.com/_static/file/3c3146b2e1f7079670050af5ef483050.png",
+            "https://looker.razorpay.com/admin/broker>"
+        ]
+    }
+]

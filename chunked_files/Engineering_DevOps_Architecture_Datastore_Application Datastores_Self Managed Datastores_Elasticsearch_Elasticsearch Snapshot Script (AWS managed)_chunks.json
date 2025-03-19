@@ -1,0 +1,62 @@
+[
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_self-managed-datastores_elasticsearch_elasticsearch-snapshot-script-(aws-managed)-chunk-0",
+        "name": "Elasticsearch Snapshot Script (AWS managed).txt - Imports",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "Self Managed Datastores",
+            "Elasticsearch"
+        ],
+        "description": "This section imports various Python modules that will be used in the script. It imports the print_function from the future module to ensure compatibility with Python 2 and 3. It also imports the datetime module for working with dates and times, the requests module for making HTTP requests, the json module for working with JSON data, the os module for interacting with the operating system, and the boto3 module for interacting with AWS services.",
+        "use_cases": [
+            "Working with dates and times",
+            "Making HTTP requests",
+            "Handling JSON data",
+            "Interacting with the operating system",
+            "Interacting with AWS services"
+        ],
+        "capabilities": [
+            "Python 2 and 3 compatibility",
+            "Date and time manipulation",
+            "HTTP requests",
+            "JSON data handling",
+            "Operating system interaction",
+            "AWS service integration"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_self-managed-datastores_elasticsearch_elasticsearch-snapshot-script-(aws-managed)-chunk-1",
+        "name": "Elasticsearch Snapshot Script (AWS managed).txt - Lambda Function",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "Self Managed Datastores",
+            "Elasticsearch"
+        ],
+        "description": "This section explains a Python code snippet for a Lambda function that takes a snapshot of an Elasticsearch cluster hosted on AWS. The code authenticates with AWS using the AWS4Auth library, retrieves AWS credentials, and constructs a URL to send a PUT request to the Elasticsearch cluster's snapshot endpoint. The snapshot is saved in a specified repository with a timestamp in the snapshot name.",
+        "use_cases": [
+            "Backing up Elasticsearch data periodically",
+            "Capturing a point-in-time snapshot of Elasticsearch data",
+            "Automating Elasticsearch snapshot creation using AWS Lambda",
+            "Integrating Elasticsearch snapshot management with other AWS services"
+        ],
+        "capabilities": [
+            "AWS authentication",
+            "Elasticsearch snapshot creation",
+            "Timestamp-based snapshot naming",
+            "Configurable snapshot repository",
+            "Logging snapshot response"
+        ],
+        "references": [
+            "https://'"
+        ]
+    }
+]

@@ -1,0 +1,51 @@
+[
+    {
+        "id": "engineering_devops_zenduty_how-to-add-integrations-in-services-chunk-0",
+        "name": "How to add integrations in services.txt - Alert integration:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Zenduty"
+        ],
+        "description": "This section explains that while different integrations like Prometheus, Grafana, and Sentry may be used for different use cases, the process of creating or setting up these integrations is the same. It provides a visual representation of the process, likely a step-by-step guide or a user interface screenshot, to help users understand how to set up integrations.",
+        "use_cases": [
+            "monitoring with Prometheus",
+            "data visualization with Grafana",
+            "error tracking with Sentry"
+        ],
+        "capabilities": [
+            "integration setup",
+            "outgoing integration configuration",
+            "visual guide or UI screenshot"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/71abd68a9f7d990cd30ba3e5bfbd7c5d.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_zenduty_how-to-add-integrations-in-services-chunk-1",
+        "name": "How to add integrations in services.txt - Outgoing",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Zenduty"
+        ],
+        "description": "This section explains how to set up outgoing communication integrations, such as Slack or email notifications, to receive alerts or notifications from the service. These integrations allow users to be notified about important events or issues that may require their attention, ensuring timely response and resolution.",
+        "use_cases": [
+            "Receiving alerts or notifications from the service",
+            "Integrating with communication channels like Slack or email",
+            "Staying informed about important events or issues",
+            "Enabling timely response and resolution"
+        ],
+        "capabilities": [
+            "Slack integration",
+            "Email notification integration",
+            "Alert notification",
+            "Outgoing communication",
+            "Event notification"
+        ],
+        "references": [
+            "https://docs.zenduty.com/docs/slack>"
+        ]
+    }
+]

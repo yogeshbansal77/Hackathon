@@ -1,0 +1,49 @@
+[
+    {
+        "id": "engineering_devops_dev-self-serve_how-to-retrieve-older-logs---coralogix-chunk-0",
+        "name": "How to retrieve older logs - Coralogix.txt - For newer(last 3 months) logs",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section is referring the reader to another documentation source for the process of retrieving newer (last 3 months) logs. It does not provide any specific details or instructions within this section itself, but rather directs the reader to consult a different document for the updated process.",
+        "use_cases": [
+            "Retrieving recent logs from the last 3 months",
+            "Accessing the latest log data",
+            "Obtaining up-to-date log information"
+        ],
+        "capabilities": [
+            "Referencing external documentation",
+            "Directing users to updated processes",
+            "Handling log retrieval for recent time periods"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_how-to-retrieve-older-logs---coralogix-chunk-1",
+        "name": "How to retrieve older logs - Coralogix.txt - Please refer the below doc for the new process",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section provides a link to a Google Document that outlines the new process for retrieving older logs from Coralogix. The document is likely intended to serve as a comprehensive guide or reference material for users who need to access and retrieve log data that is older than the default retention period offered by Coralogix's logging service.",
+        "use_cases": [
+            "Accessing and retrieving historical log data",
+            "Complying with data retention policies or regulations",
+            "Investigating past incidents or issues",
+            "Performing long-term log analysis or auditing"
+        ],
+        "capabilities": [
+            "Retrieving older logs",
+            "Accessing archived log data",
+            "Extending log retention period",
+            "Comprehensive documentation",
+            "Centralized reference guide"
+        ],
+        "references": [
+            "https://docs.google.com/document/d/1tfm0MpZwp3YBcNOW4AzsDpETeXHR-XL1rB3isOoed5M/edit?usp=sharing"
+        ]
+    }
+]

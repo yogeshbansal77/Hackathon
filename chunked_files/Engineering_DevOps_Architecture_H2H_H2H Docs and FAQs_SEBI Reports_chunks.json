@@ -1,0 +1,78 @@
+[
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sebi-reports-chunk-0",
+        "name": "SEBI Reports.txt - Source SFTP accounts:-",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section provides information about two SFTP (Secure File Transfer Protocol) accounts used for transferring files to and from Razorpay's servers. The first account, 'niyo@sftp.razorpay.com', is associated with an Amazon S3 bucket named 'rzp-1415-prod-sftp/niyo/prod', while the second account, 'funds-india@razorpay.com', is linked to the 'rzp-1415-prod-sftp/funds_india' S3 bucket. These accounts and their corresponding S3 buckets are likely used for securely transferring data or files related to specific clients or services offered by Razorpay.",
+        "use_cases": [
+            "Secure file transfer between Razorpay and its clients or partners",
+            "Data exchange with specific services or applications",
+            "Automated file transfer and storage using SFTP and Amazon S3"
+        ],
+        "capabilities": [
+            "SFTP accounts for secure file transfer",
+            "Integration with Amazon S3 for file storage",
+            "Dedicated accounts and buckets for specific clients or services"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sebi-reports-chunk-1",
+        "name": "SEBI Reports.txt - Target SFTP accounts (Referenced by their beam jobs) :-",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section provides information about the target SFTP (Secure File Transfer Protocol) accounts that are referenced by their respective beam jobs. It seems to be a list or reference guide for the SFTP accounts used in the context of SEBI (Securities and Exchange Board of India) reports.",
+        "use_cases": [
+            "Transferring files securely between systems or organizations",
+            "Automating file transfers for SEBI reporting processes",
+            "Centralized management of SFTP account credentials and access"
+        ],
+        "capabilities": [
+            "SFTP account management",
+            "Beam job integration",
+            "Secure file transfers",
+            "Centralized account reference"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sebi-reports-chunk-2",
+        "name": "SEBI Reports.txt - Lambda triggers:-",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be explaining the Lambda triggers associated with the 'cams_reports' functionality. Lambda triggers are a way to automatically execute code or functions in response to certain events or changes in data. The image provided seems to be a visual representation or diagram related to these Lambda triggers, but without more context, it's difficult to infer the specifics.",
+        "use_cases": [
+            "Automating report generation or data processing tasks",
+            "Triggering notifications or alerts based on certain conditions",
+            "Integrating with other systems or services based on data changes",
+            "Implementing event-driven architectures or serverless computing"
+        ],
+        "capabilities": [
+            "Event-driven execution",
+            "Serverless computing",
+            "Automation",
+            "Integration",
+            "Data processing",
+            "Notifications"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/84073d5f338e0add06f9ec49debcadff.png \"left-50\""
+        ]
+    }
+]

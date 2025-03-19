@@ -1,0 +1,119 @@
+[
+    {
+        "id": "engineering_devops_certifihub_adding-slack-handles-to-certs-on-certifihub-chunk-0",
+        "name": "Adding slack handles to certs on certifihub.txt - Note - Edit access will only be given to leads and above.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "CERTIFIHUB"
+        ],
+        "description": "This section provides a link to request edit access to a platform called 'certifihub' for individuals with lead or higher roles within the organization. It suggests that only those with lead or higher positions will be granted edit access, implying that there are different levels of access permissions based on roles or hierarchy within the company.",
+        "use_cases": [
+            "Granting edit access to certifihub platform",
+            "Role-based access control for certifihub",
+            "Requesting access to certifihub for leads and higher roles",
+            "Managing access permissions on certifihub"
+        ],
+        "capabilities": [
+            "Access request link",
+            "Role-based access control",
+            "Edit access permission",
+            "Access levels (leads and above)",
+            "Centralized access management platform (certifihub)"
+        ],
+        "references": [
+            "https://myaccess.microsoft.com/@razorpaysoftware.onmicrosoft.com#/access-packages/8c8dc0bb-dd26-4765-9d8f-fddf52d0d501>"
+        ]
+    },
+    {
+        "id": "engineering_devops_certifihub_adding-slack-handles-to-certs-on-certifihub-chunk-1",
+        "name": "Adding slack handles to certs on certifihub.txt - Request edit access to certifihub",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "CERTIFIHUB"
+        ],
+        "description": "This section provides instructions for logging into the Certifihub platform, which is a tool used for managing digital certificates. It suggests that the user should visit the specified URL (https://certifihub.razorpay.com/rzpxCertificates?page=1) and navigate to their respective entities page. This step is likely a prerequisite for performing further actions related to managing or editing digital certificates.",
+        "use_cases": [
+            "Accessing the Certifihub platform",
+            "Managing digital certificates",
+            "Navigating to specific entity pages within Certifihub"
+        ],
+        "capabilities": [
+            "Login functionality",
+            "Entity-specific pages",
+            "URL-based access"
+        ],
+        "references": [
+            "https://certifihub.razorpay.com/rzpxCertificates?page=1"
+        ]
+    },
+    {
+        "id": "engineering_devops_certifihub_adding-slack-handles-to-certs-on-certifihub-chunk-2",
+        "name": "Adding slack handles to certs on certifihub.txt - Login to certifihub",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "CERTIFIHUB"
+        ],
+        "description": "This section provides a note indicating that the example being discussed is specific to the RazorpayX entity, and for most users, their certificates will be located in the RSPL entity. It serves as a clarification or disclaimer to help users understand the context of the example and where their own certificates might be found.",
+        "use_cases": [
+            "Understanding the context of the provided example",
+            "Identifying the entity where a user's certificates are typically located",
+            "Distinguishing between different entities (RazorpayX and RSPL) within the system"
+        ],
+        "capabilities": [
+            "Entity-specific examples",
+            "Contextual information",
+            "Clarification or disclaimer"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_certifihub_adding-slack-handles-to-certs-on-certifihub-chunk-3",
+        "name": "Adding slack handles to certs on certifihub.txt - Note",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "CERTIFIHUB"
+        ],
+        "description": "This section explains that if you have the role of an editor on the certifihub platform, you will be able to see an 'edit' button. By clicking on this button, you can add or update the Slack handle associated with a particular certificate. This is done by selecting the appropriate Slack handle from a dropdown menu that appears when you click the 'edit' button.",
+        "use_cases": [
+            "Allowing editors to add or update Slack handles associated with certificates on certifihub",
+            "Providing a user-friendly interface for editors to manage Slack handle information",
+            "Ensuring accurate and up-to-date Slack handle information for certificates"
+        ],
+        "capabilities": [
+            "Edit button visibility for editors",
+            "Slack handle dropdown field",
+            "Ability to add or update Slack handles",
+            "Role-based access control"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_certifihub_adding-slack-handles-to-certs-on-certifihub-chunk-4",
+        "name": "Adding slack handles to certs on certifihub.txt - If you are an editor you will be able to see the edit button such as seen below, click on it and add the slack handle by choosing the appropriate handle in the slack handle dropdown field.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "CERTIFIHUB"
+        ],
+        "description": "This section explains how editors can add their Slack handles to certificates on the CertifiHub platform. It provides visual instructions with screenshots showing the 'Edit' button that editors can click to access a dropdown menu where they can select and add their Slack handle to the certificate.",
+        "use_cases": [
+            "Adding Slack handles to certificates on CertifiHub",
+            "Allowing editors to associate their Slack identities with certificates",
+            "Providing visual guidance for the process of adding Slack handles"
+        ],
+        "capabilities": [
+            "Edit button for editors",
+            "Slack handle dropdown field",
+            "Visual instructions with screenshots",
+            "Associating Slack handles with certificates"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/593081147048392c2c4a0346dcabd4a5.png",
+            "https://alpha.razorpay.com/_static/file/cca70b26a60a781a45153c96da323262.png"
+        ]
+    }
+]

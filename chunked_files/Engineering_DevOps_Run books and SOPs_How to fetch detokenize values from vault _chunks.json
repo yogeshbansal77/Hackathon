@@ -1,0 +1,56 @@
+[
+    {
+        "id": "engineering_devops_run-books-and-sops_how-to-fetch-detokenize-values-from-vault--chunk-0",
+        "name": "How to fetch detokenize values from vault .txt - Via Jarvis - only for DevOps folks",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains how to access a web application called Jarvis, which is used by DevOps personnel at Razorpay to tokenize or detokenize sensitive data. It provides step-by-step instructions on how to navigate to the Jarvis application, fill in the required fields (Action, Secret/Token, Namespace, and BU Namespace), and perform the desired operation (tokenization or detokenization) on the provided data. The process seems to be a secure way of handling sensitive information within the organization.",
+        "use_cases": [
+            "Tokenizing sensitive data for secure storage",
+            "Detokenizing previously tokenized data for authorized access",
+            "Handling sensitive data securely within the organization",
+            "Providing controlled access to sensitive information based on namespaces and BU namespaces"
+        ],
+        "capabilities": [
+            "Web-based application (Jarvis) for tokenization/detokenization",
+            "Ability to tokenize or detokenize sensitive data",
+            "Input fields for Action, Secret/Token, Namespace, and BU Namespace",
+            "Controlled access based on namespaces and BU namespaces",
+            "Secure handling of sensitive information"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/5bafc0b3b2de26a8bd632f267b8be3cf.png",
+            "https://jarvis.razorpay.com/tokDetokJob>"
+        ]
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_how-to-fetch-detokenize-values-from-vault--chunk-1",
+        "name": "How to fetch detokenize values from vault .txt - Manual method:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains a manual method for developers to fetch detokenized values from a vault using tokenized values, buNamespace, and namespace provided by other developers. It involves retrieving the vault-root-token from a credstash table, executing a curl command within a Mozart pod to send a POST request to the vault API with the tokenized values, and receiving the detokenized data in response. This process is useful when automated methods are not available or when troubleshooting is required.",
+        "use_cases": [
+            "Retrieving detokenized values from a vault when automated methods are not available",
+            "Troubleshooting issues with the vault or the tokenization/detokenization process",
+            "Manually tokenizing secrets for storage in the vault"
+        ],
+        "capabilities": [
+            "Fetching detokenized values from a vault",
+            "Retrieving vault-root-token from a credstash table",
+            "Executing curl commands within Mozart pods",
+            "Sending POST requests to the vault API",
+            "Tokenizing secrets for storage in the vault",
+            "Troubleshooting and debugging the vault or tokenization process"
+        ],
+        "references": [
+            "https://vault.razorpay.com/v1/detokenize'",
+            "https://razorpay.slack.com/archives/C02GUKL2MS6/p1669969225149459>"
+        ]
+    }
+]

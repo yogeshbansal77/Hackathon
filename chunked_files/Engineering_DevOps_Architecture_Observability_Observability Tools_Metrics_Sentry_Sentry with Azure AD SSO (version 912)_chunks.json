@@ -1,0 +1,260 @@
+[
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_metrics_sentry_sentry-with-azure-ad-sso-(version-912)-chunk-0",
+        "name": "Sentry with Azure AD SSO (version 912).txt - Add the following line to dockerfile to enable SAML SSO and bake the container image",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Metrics",
+            "Sentry"
+        ],
+        "description": "This section provides a command to install the Sentry authentication module for SAML2, which enables Single Sign-On (SSO) functionality using SAML protocol. By executing this command during the Docker image build process, the necessary authentication module is installed, allowing users to authenticate with their existing identity provider (such as Azure AD) when accessing the Sentry application.",
+        "use_cases": [
+            "Enabling SAML2-based Single Sign-On (SSO) for Sentry application",
+            "Integrating Sentry with Azure Active Directory (Azure AD) for user authentication",
+            "Streamlining user authentication process by leveraging existing identity providers",
+            "Enhancing security and access control by utilizing centralized identity management"
+        ],
+        "capabilities": [
+            "SAML2 authentication",
+            "Single Sign-On (SSO)",
+            "Integration with Azure Active Directory (Azure AD)",
+            "Centralized identity management",
+            "Secure user authentication",
+            "Docker image customization"
+        ],
+        "references": [
+            "https://github.com/getsentry/sentry-auth-saml2/archive/master.zip"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_metrics_sentry_sentry-with-azure-ad-sso-(version-912)-chunk-1",
+        "name": "Sentry with Azure AD SSO (version 912).txt - Rollout the deployment with the new container image",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Metrics",
+            "Sentry"
+        ],
+        "description": "This section appears to be empty or missing content. Without any text or instructions provided, it is difficult to provide a meaningful description or extract any use cases or capabilities.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_metrics_sentry_sentry-with-azure-ad-sso-(version-912)-chunk-2",
+        "name": "Sentry with Azure AD SSO (version 912).txt - Disable Google SSO",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Metrics",
+            "Sentry"
+        ],
+        "description": "This section provides instructions to deploy a new container image, which likely includes updates or changes to the application or system being documented. The deployment process involves rolling out the new container image, potentially replacing or updating an existing deployment.",
+        "use_cases": [
+            "Deploying application updates",
+            "Upgrading system components",
+            "Rolling out new features or bug fixes",
+            "Maintaining and managing containerized applications"
+        ],
+        "capabilities": [
+            "Container deployment",
+            "Rolling updates",
+            "Application versioning",
+            "Container image management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_metrics_sentry_sentry-with-azure-ad-sso-(version-912)-chunk-3",
+        "name": "Sentry with Azure AD SSO (version 912).txt - Enable SAML2 authentication",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Metrics",
+            "Sentry"
+        ],
+        "description": "This section explains how to enable SAML2 authentication for Sentry, a web application monitoring and error tracking tool. It provides step-by-step instructions to disable the existing Google SSO authentication method and configure SAML2 authentication instead. The instructions involve navigating to the authentication settings page and selecting the SAML2 option from the list of available authentication methods.",
+        "use_cases": [
+            "Enabling SAML2 authentication for Sentry",
+            "Disabling existing Google SSO authentication",
+            "Configuring SAML2 as the authentication method for Sentry"
+        ],
+        "capabilities": [
+            "Disable Google SSO",
+            "Enable SAML2 authentication",
+            "Configure SAML2 authentication",
+            "Authentication settings page",
+            "Select authentication method"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/cfe7818782abb657953d80b0bd17011e.png",
+            "https://sentry9.stage.razorpay.in/settings/razorpay/auth/>",
+            "https://sentry9.stage.razorpay.in/settings/razorpay/auth/>"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_metrics_sentry_sentry-with-azure-ad-sso-(version-912)-chunk-4",
+        "name": "Sentry with Azure AD SSO (version 912).txt - Get IdP Data from Azure AD",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Metrics",
+            "Sentry"
+        ],
+        "description": "This section explains how to access the Identity Provider (IdP) data from Azure Active Directory (Azure AD) when configuring SAML2 Single Sign-On (SSO) for an application. It provides a screenshot showing the 'IdP Data' tab, which contains the necessary information required to set up SSO with Azure AD as the identity provider. This step is crucial for integrating an application with Azure AD's authentication system, allowing users to seamlessly sign in using their Azure AD credentials.",
+        "use_cases": [
+            "Configuring SAML2 SSO for an application",
+            "Integrating an application with Azure AD authentication",
+            "Enabling users to sign in to an application using their Azure AD credentials",
+            "Retrieving IdP data required for SSO setup"
+        ],
+        "capabilities": [
+            "SAML2 SSO configuration",
+            "Azure AD integration",
+            "IdP data retrieval",
+            "User authentication with Azure AD credentials",
+            "Seamless sign-in experience"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/e3de2556277ec02c52cc165b878badda.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_metrics_sentry_sentry-with-azure-ad-sso-(version-912)-chunk-5",
+        "name": "Sentry with Azure AD SSO (version 912).txt - Fill SAML2 details",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Metrics",
+            "Sentry"
+        ],
+        "description": "This section explains the process of configuring Sentry, a web application, to enable Single Sign-On (SSO) using Azure Active Directory (Azure AD). It involves coordinating with the IT department to set up Azure AD as the identity provider and configuring the necessary SAML2 details in Sentry. The section provides specific URLs and a certificate that need to be entered in Sentry's configuration to establish the SSO connection with Azure AD.",
+        "use_cases": [
+            "Enabling SSO for Sentry using Azure AD",
+            "Streamlining user authentication and access management",
+            "Integrating Sentry with an organization's existing identity management system"
+        ],
+        "capabilities": [
+            "SAML2 SSO integration",
+            "Azure AD as identity provider",
+            "Configurable Entity ID",
+            "Single Sign-On URL",
+            "Single Log Out URL",
+            "X.509 certificate support"
+        ],
+        "references": [
+            "https://sentry9.razorpay.com/saml/metadata/razorpay/",
+            "https://alpha.razorpay.com/_static/file/23f3b51f65b381221f97dea2bea0ec0b.png",
+            "https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/sentry-tutorial>",
+            "https://sts.windows.net/1b9f208d-686e-4c09-876f-faac935b2a53/>",
+            "https://login.microsoftonline.com/1b9f208d-686e-4c09-876f-faac935b2a53/saml2>",
+            "https://login.microsoftonline.com/common/wsfederation?wa=wsignout1.0>"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_metrics_sentry_sentry-with-azure-ad-sso-(version-912)-chunk-6",
+        "name": "Sentry with Azure AD SSO (version 912).txt - Map user attributes",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Metrics",
+            "Sentry"
+        ],
+        "description": "This section appears to contain a certificate or encrypted data, likely related to setting up secure communication or authentication between Sentry and Azure Active Directory (Azure AD) for Single Sign-On (SSO) integration. The certificate or encrypted data is presented in a format that can be used for configuration or verification purposes.",
+        "use_cases": [
+            "Enabling SSO authentication between Sentry and Azure AD",
+            "Securing communication between Sentry and Azure AD",
+            "Configuring Sentry to use Azure AD as an identity provider"
+        ],
+        "capabilities": [
+            "Certificate management",
+            "Encryption",
+            "Authentication",
+            "Identity federation",
+            "Single Sign-On (SSO)"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_metrics_sentry_sentry-with-azure-ad-sso-(version-912)-chunk-7",
+        "name": "Sentry with Azure AD SSO (version 912).txt - Save settings",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Metrics",
+            "Sentry"
+        ],
+        "description": "This section appears to contain an encoded or encrypted string, likely representing some form of configuration settings or credentials. The purpose of including this encoded data in the documentation is not immediately clear from the provided context.",
+        "use_cases": [
+            "Storing sensitive configuration data or credentials in an encoded or encrypted format within documentation",
+            "Providing a mechanism for securely transmitting or sharing configuration settings or credentials"
+        ],
+        "capabilities": [
+            "Encoding or encrypting sensitive data",
+            "Secure storage of configuration settings",
+            "Secure transmission or sharing of credentials"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_metrics_sentry_sentry-with-azure-ad-sso-(version-912)-chunk-8",
+        "name": "Sentry with Azure AD SSO (version 912).txt - Methods to login",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Metrics",
+            "Sentry"
+        ],
+        "description": "This section explains the process of configuring Single Sign-On (SSO) with Azure Active Directory (Azure AD) for the Sentry application. It provides instructions on how to map user attributes from Azure AD to Sentry, save the settings, and enable SSO. Once SSO is enabled, it outlines different methods for users to log in to Sentry using their Azure AD credentials.",
+        "use_cases": [
+            "Enabling SSO authentication for Sentry using Azure AD",
+            "Mapping user attributes from Azure AD to Sentry",
+            "Logging in to Sentry using Azure AD credentials after enabling SSO"
+        ],
+        "capabilities": [
+            "Mapping user attributes (User ID, Email, First Name, Last Name) from Azure AD to Sentry",
+            "Saving SSO settings and attribute mappings in Sentry",
+            "Disabling Google OAuth authentication after enabling Azure AD SSO",
+            "Logging in to Sentry via SSO app dashboard, Sentry login URL, or email notification link"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/7ff83f02bd10fcebc17116a03564547e.png",
+            "https://alpha.razorpay.com/_static/file/ff68d88853fb3ea109293be8d927eb67.png",
+            "https://alpha.razorpay.com/_static/file/d86690527a31147ec1ac6bc412a1bbc3.png",
+            "https://myapplications.microsoft.com/",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name>",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress>",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname>",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname>",
+            "https://sentry9.razorpay.com/auth/login/razorpay/>"
+        ]
+    }
+]

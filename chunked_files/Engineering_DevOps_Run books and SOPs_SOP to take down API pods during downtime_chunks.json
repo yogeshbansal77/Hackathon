@@ -1,0 +1,126 @@
+[
+    {
+        "id": "engineering_devops_run-books-and-sops_sop-to-take-down-api-pods-during-downtime-chunk-0",
+        "name": "SOP to take down API pods during downtime.txt - Problem statement",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains that the company's API frequently experiences downtime due to MySQL connection issues. To recover from these incidents, they need to shut down all API and queue worker pods to release database connections, which is a time-consuming process involving manually scaling down over 150 API worker pods. This lengthy recovery process negatively impacts the Mean Time To Recover (MTTR) metric, which measures the average time it takes to resolve an incident.",
+        "use_cases": [
+            "Recovering from API downtime caused by MySQL connection issues",
+            "Releasing database connections by shutting down API and queue worker pods",
+            "Reducing the time required for incident recovery",
+            "Improving the Mean Time To Recover (MTTR) metric"
+        ],
+        "capabilities": [
+            "Scaling API worker pods",
+            "Shutting down API and queue worker pods",
+            "Releasing database connections",
+            "Incident recovery",
+            "Monitoring MTTR metric"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_sop-to-take-down-api-pods-during-downtime-chunk-1",
+        "name": "SOP to take down API pods during downtime.txt - Solution",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section outlines a standard procedure for DevOps personnel to safely shut down API pods and related queues during scheduled downtime. It involves disabling the SQS Autoscaler and Cluster Autoscaler for the relevant Auto Scaling Groups (ASGs) to prevent nodes from being taken down, thereby reducing the mean time to recovery (MTTR) during the maintenance window.",
+        "use_cases": [
+            "Scheduled maintenance or downtime for API services",
+            "Controlled shutdown of API pods and related queues",
+            "Improving MTTR during maintenance windows",
+            "Preventing unnecessary scaling of resources during maintenance"
+        ],
+        "capabilities": [
+            "Standard script for API and queue shutdown",
+            "Disabling SQS Autoscaler",
+            "Disabling Cluster Autoscaler",
+            "Targeting specific Auto Scaling Groups",
+            "Reducing mean time to recovery",
+            "Controlled resource scaling during maintenance"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_sop-to-take-down-api-pods-during-downtime-chunk-2",
+        "name": "SOP to take down API pods during downtime.txt - Steps",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section provides instructions for downloading a script that can be used to take down API pods during scheduled downtime. It assumes that the user has access to the CDE cluster context, which is set to 'cde-green-eks' and 'cde-blue-eks'. If the user's local machine has a different context, they need to modify the commands accordingly.",
+        "use_cases": [
+            "Scheduled maintenance or downtime for API pods",
+            "Controlled shutdown of API pods",
+            "Preparation for software updates or infrastructure changes",
+            "Troubleshooting or debugging API-related issues"
+        ],
+        "capabilities": [
+            "Script download",
+            "Context switching",
+            "Cluster management",
+            "API pod management",
+            "Deployment control",
+            "Downtime handling"
+        ],
+        "references": [
+            "https://github.com/razorpay/armory/blob/master/api-downtime/api-downtime.sh>__"
+        ]
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_sop-to-take-down-api-pods-during-downtime-chunk-3",
+        "name": "SOP to take down API pods during downtime.txt - Scale Down",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section outlines the steps to scale down various components of an API system during planned downtime. It involves disabling cluster autoscalers, SQS autoscalers, API queue workers, and API deployments across multiple Kubernetes clusters (cde-green-eks and cde-blue-eks). The process involves running scripts that create backups of configurations and replica counts, which can be used to restore the system after the downtime.",
+        "use_cases": [
+            "Planned maintenance or upgrades of the API system",
+            "Scaling down resources to reduce costs during low-traffic periods",
+            "Preparing the system for major updates or migrations"
+        ],
+        "capabilities": [
+            "Disable cluster autoscaler",
+            "Disable SQS autoscaler",
+            "Disable API queue workers",
+            "Disable API deployments",
+            "Create backups of configurations and replica counts",
+            "Support for multiple Kubernetes clusters"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_sop-to-take-down-api-pods-during-downtime-chunk-4",
+        "name": "SOP to take down API pods during downtime.txt - Scale UP",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section outlines the steps to scale up and re-enable various components of an API system after a planned downtime. It involves enabling the SQS autoscaler, API deployments, API queue workers, and cluster autoscalers across two Kubernetes clusters (cde-green-eks and cde-blue-eks). The process involves running scripts with specific commands to restore the desired state of the system components.",
+        "use_cases": [
+            "Scaling up an API system after a planned downtime",
+            "Enabling and restoring API deployments, queue workers, and autoscalers",
+            "Managing and coordinating the state of multiple Kubernetes clusters"
+        ],
+        "capabilities": [
+            "Scaling up/down API deployments",
+            "Enabling/disabling SQS autoscaler",
+            "Enabling/disabling API queue workers",
+            "Enabling/disabling cluster autoscaler",
+            "Scripted automation for system operations",
+            "Multi-cluster management and coordination"
+        ],
+        "references": []
+    }
+]

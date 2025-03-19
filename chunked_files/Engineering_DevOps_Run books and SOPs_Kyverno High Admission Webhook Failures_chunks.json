@@ -1,0 +1,120 @@
+[
+    {
+        "id": "engineering_devops_run-books-and-sops_kyverno-high-admission-webhook-failures-chunk-0",
+        "name": "Kyverno High Admission Webhook Failures.txt - Issue:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section highlights an issue where the admission failures in a Kubernetes cluster are high, indicating a potential problem with the Kyverno admission webhook. The alert should mention the specific cluster and namespace where the high failure rate is occurring, allowing administrators to investigate and resolve the issue.",
+        "use_cases": [
+            "Monitoring Kyverno admission webhook failures",
+            "Identifying clusters and namespaces with high admission failure rates",
+            "Alerting on critical admission webhook issues",
+            "Troubleshooting and resolving admission webhook failures"
+        ],
+        "capabilities": [
+            "Admission failure monitoring",
+            "Cluster and namespace identification",
+            "Alerting on high failure rates",
+            "Admission webhook failure troubleshooting"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_kyverno-high-admission-webhook-failures-chunk-1",
+        "name": "Kyverno High Admission Webhook Failures.txt - Debugging:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section suggests that the high admission webhook failures could potentially lead to Pods entering an unavailable state or experiencing a crash loop backoff. It provides guidance for debugging such issues, which may be helpful for troubleshooting and resolving problems related to Kyverno's admission webhook.",
+        "use_cases": [
+            "Troubleshooting Kyverno admission webhook failures",
+            "Resolving issues with Pods going into an unavailable state",
+            "Addressing crash loop backoff scenarios related to Kyverno's admission webhook"
+        ],
+        "capabilities": [
+            "Debugging",
+            "Troubleshooting",
+            "Issue resolution",
+            "Availability monitoring",
+            "Crash loop backoff handling"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_kyverno-high-admission-webhook-failures-chunk-2",
+        "name": "Kyverno High Admission Webhook Failures.txt - Resolution:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section suggests that when encountering high admission webhook failures related to Kyverno, the user should examine the pod logs to identify the specific policy that is causing the failure. It recommends investigating the logs to pinpoint the root cause of the issue.",
+        "use_cases": [
+            "Troubleshooting high admission webhook failures",
+            "Identifying the policy causing failures",
+            "Analyzing pod logs for error information",
+            "Resolving issues with Kyverno policies"
+        ],
+        "capabilities": [
+            "Pod log analysis",
+            "Policy failure identification",
+            "Troubleshooting admission webhook failures",
+            "Root cause analysis",
+            "Kyverno policy management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_kyverno-high-admission-webhook-failures-chunk-3",
+        "name": "Kyverno High Admission Webhook Failures.txt - Impact:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains that when a Kubernetes pod configuration fails to meet certain best practices or policies enforced by Kyverno, the pod events will provide information on how to fix the configuration. The section suggests two options: either fix the pod configuration based on the recommendations in the pod events, or take an alternative approach that is not specified.",
+        "use_cases": [
+            "Enforcing best practices for Kubernetes pod configurations",
+            "Troubleshooting and resolving Kyverno admission webhook failures",
+            "Ensuring compliance with organizational policies or industry standards"
+        ],
+        "capabilities": [
+            "Pod configuration validation",
+            "Policy enforcement",
+            "Event logging",
+            "Remediation guidance"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_kyverno-high-admission-webhook-failures-chunk-4",
+        "name": "Kyverno High Admission Webhook Failures.txt - Disclaimer:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section discusses the impact of not adhering to infrastructure and security best practices when configuring Kubernetes pods. It warns that pods will fail to start and remain in a pending state if their configuration violates these policies. Additionally, it mentions that any manual changes made to the configuration will be reverted by the FluxCD tool, which manages the configuration through reconciliation.",
+        "use_cases": [
+            "Ensuring compliance with infrastructure and security best practices",
+            "Preventing pods from starting with non-compliant configurations",
+            "Automating configuration management and reconciliation using FluxCD"
+        ],
+        "capabilities": [
+            "Policy enforcement",
+            "Pod lifecycle management",
+            "Configuration reconciliation",
+            "Infrastructure as Code",
+            "GitOps",
+            "Compliance monitoring"
+        ],
+        "references": [
+            "https://razorpay.slack.com/archives/C021MURE99Q/p1695900175844709>"
+        ]
+    }
+]

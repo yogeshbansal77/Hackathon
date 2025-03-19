@@ -1,0 +1,307 @@
+[
+    {
+        "id": "engineering_devops_dev-self-serve_how-to-silence-alerts-from-alert-manager-ui-chunk-0",
+        "name": "How to silence alerts from Alert Manager UI.txt - Want to silence an alert during a planned activity or maintenance window?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains how to find the name of an alert that needs to be silenced during planned maintenance or activities. It suggests looking for the alert name in various sources like alert channels (e.g., Slack), incident management tools (e.g., PagerDuty), or alert rule definitions (e.g., GitHub repository). The image provided seems to be an example of how an alert name might appear in one of these sources.",
+        "use_cases": [
+            "Silencing alerts during planned maintenance windows",
+            "Temporarily suppressing alerts for known issues or activities",
+            "Managing alert noise during scheduled system changes"
+        ],
+        "capabilities": [
+            "Identifying alert names",
+            "Accessing alert channels",
+            "Integrating with incident management tools",
+            "Referencing alert rule definitions",
+            "Providing visual examples"
+        ],
+        "references": [
+            "https://razorpay.slack.com/archives/C02B75CA8V9/p1634854723028200",
+            "https://razorpay.pagerduty.com/incidents/Q34CMFL6BEJGAB?utm_source=slack&utm_campaign=channel",
+            "https://github.com/razorpay/alert-rules/blob/master/rules/prod-rules/central_dashboard_deviation_rules.yaml#L21",
+            "https://alpha.razorpay.com/_static/file/c5369bb44c330f0e53cb131ada37ab4a.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_how-to-silence-alerts-from-alert-manager-ui-chunk-1",
+        "name": "How to silence alerts from Alert Manager UI.txt - Get the alert name",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains how to access the Alert Manager UI and filter alerts by their name. It guides the user to navigate to the Alert Manager UI website, click on the bell icon, and then select the 'alertname' option from the 'Label name' dropdown menu. This allows the user to view and manage alerts based on their specific names, which can be useful for identifying and addressing specific issues.",
+        "use_cases": [
+            "Filtering and managing alerts based on their names",
+            "Identifying and addressing specific issues or incidents",
+            "Monitoring and troubleshooting system or application alerts",
+            "Customizing alert views and notifications based on alert names"
+        ],
+        "capabilities": [
+            "Accessing Alert Manager UI",
+            "Filtering alerts by name",
+            "Selecting 'alertname' label",
+            "Dropdown menu for label selection",
+            "Viewing and managing alerts",
+            "Identifying specific issues or incidents"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/3d43e381e373708e79e5c0584fe549f7.png \"right-50\"",
+            "https://alertmanager-ui.razorpay.com/>"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_how-to-silence-alerts-from-alert-manager-ui-chunk-2",
+        "name": "How to silence alerts from Alert Manager UI.txt - Head straight to <https://alertmanager-ui.razorpay.com/> and hit the bell icon(but don't subscribe)",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains how to silence specific alerts from the Alert Manager UI by providing the alert name as a label value. It guides the user to navigate to the Alert Manager UI, click on the bell icon, and then enter the full alert name in the provided field to create a filter that silences that particular alert. This process allows users to selectively mute alerts they don't want to receive notifications for, without disabling the entire alert system.",
+        "use_cases": [
+            "Silencing specific alerts that are not relevant or important for the user",
+            "Temporarily muting alerts during maintenance or known issues",
+            "Customizing alert notifications based on individual preferences or requirements"
+        ],
+        "capabilities": [
+            "Accessing Alert Manager UI",
+            "Filtering alerts by name",
+            "Creating alert silencing rules",
+            "Selective alert muting",
+            "Customizable alert notifications"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/bbe6e1202e0f92404e0ec10262d0bd46.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_how-to-silence-alerts-from-alert-manager-ui-chunk-3",
+        "name": "How to silence alerts from Alert Manager UI.txt - Select \"==alertname==\" from the drop down menu **Label name**",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains how to filter alerts in the Alert Manager UI based on the alert name. It provides a screenshot showing a dropdown menu labeled 'Label name' where you can select '==alertname==' to filter alerts by their specific alert name. This feature allows you to easily identify and manage alerts related to a particular issue or component in your monitoring system.",
+        "use_cases": [
+            "Filtering alerts by their name or type",
+            "Identifying and managing alerts related to a specific issue or component",
+            "Simplifying alert triage and analysis by focusing on relevant alerts"
+        ],
+        "capabilities": [
+            "Alert filtering",
+            "Alert management",
+            "Alert triage",
+            "Alert analysis",
+            "Dropdown menu for label selection",
+            "Visual interface for alert monitoring"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/dba239412c25dc7d799242a5c0c3671e.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_how-to-silence-alerts-from-alert-manager-ui-chunk-4",
+        "name": "How to silence alerts from Alert Manager UI.txt - Paste the full alert name as Label value and click Create \"alert: name\" to add",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains how to set the start time for silencing alerts in the Alert Manager UI. When silencing alerts, users need to specify the time from which the silence should take effect. This allows users to temporarily suppress notifications for specific alerts without disabling them entirely.",
+        "use_cases": [
+            "Temporarily muting alerts during maintenance windows",
+            "Suppressing non-critical alerts during incident response",
+            "Scheduling alert silences for planned outages or system upgrades",
+            "Customizing alert notification behavior based on operational needs"
+        ],
+        "capabilities": [
+            "Setting start time for alert silences",
+            "Configuring alert silences through UI",
+            "Granular control over alert notification behavior",
+            "Scheduling alert silences in advance",
+            "Temporary suppression of alerts"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_how-to-silence-alerts-from-alert-manager-ui-chunk-5",
+        "name": "How to silence alerts from Alert Manager UI.txt - Select start time for silence",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains how to select the start and end times for silencing alerts in the Alert Manager UI. It provides a visual representation of the interface where users can specify the time range during which alerts should be suppressed or silenced. This feature allows users to temporarily disable notifications for a specific period, which can be useful when performing maintenance tasks or during known issues that generate expected alerts.",
+        "use_cases": [
+            "Silencing alerts during scheduled maintenance windows",
+            "Temporarily suppressing notifications for known issues",
+            "Managing alert fatigue by silencing non-critical alerts for a specific duration",
+            "Customizing alert notification behavior based on specific time periods"
+        ],
+        "capabilities": [
+            "Select start time for silence",
+            "Select end time for silence",
+            "Visual interface for time range selection",
+            "Temporary alert suppression",
+            "Alert notification management",
+            "Time-based alert configuration"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/e4b49f8dc0dd5d8337df3c5f8a758047.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_how-to-silence-alerts-from-alert-manager-ui-chunk-6",
+        "name": "How to silence alerts from Alert Manager UI.txt - Select end time for silence",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains how to set an end time for silencing alerts in the Alert Manager UI. It provides a visual representation of the interface where users can select a specific date and time for the silence to automatically expire. This feature allows users to temporarily suppress alerts for a defined period, after which the alerts will resume their normal behavior.",
+        "use_cases": [
+            "Temporarily muting alerts during scheduled maintenance or known issues",
+            "Preventing alert fatigue by silencing non-critical alerts for a specific duration",
+            "Setting a time-bound silence to ensure alerts are not permanently disabled"
+        ],
+        "capabilities": [
+            "Select end time for silence",
+            "Date and time picker interface",
+            "Automatic expiration of silence",
+            "Visual representation of silence duration"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/8bc768b08d90e0ecf93f863a6d1b0792.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_how-to-silence-alerts-from-alert-manager-ui-chunk-7",
+        "name": "How to silence alerts from Alert Manager UI.txt - Add a comment just for the kicks and click \"Preview\" which will open the next window",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section provides instructions on how to add a comment and preview it before finalizing the alert silencing process in the Alert Manager UI. It suggests that adding a comment, even if it's just for fun, and clicking the 'Preview' button will open a new window where you can review the changes before applying them.",
+        "use_cases": [
+            "Silencing alerts in the Alert Manager UI",
+            "Adding comments or notes to alert silencing actions",
+            "Previewing changes before finalizing alert silencing",
+            "Reviewing alert silencing configurations"
+        ],
+        "capabilities": [
+            "Add comment",
+            "Preview changes",
+            "Open new window",
+            "Review alert silencing",
+            "Finalize alert silencing"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_how-to-silence-alerts-from-alert-manager-ui-chunk-8",
+        "name": "How to silence alerts from Alert Manager UI.txt - Click \"Submit\" (or <- Back to rework )",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section provides a visual representation of the final step in the process of silencing alerts from the Alert Manager UI. It shows a screenshot of the 'Submit' button, which the user needs to click to confirm and apply the changes made to silence the alerts. Alternatively, if the user wants to modify the settings, they can click the 'Back' button to go back and rework the configurations.",
+        "use_cases": [
+            "Silencing alerts from the Alert Manager UI",
+            "Confirming and applying changes to alert silencing configurations",
+            "Modifying or reworking alert silencing settings"
+        ],
+        "capabilities": [
+            "Submit button",
+            "Back button",
+            "Visual guidance",
+            "Confirmation step",
+            "Rework option"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/3a3fe02feb0486e4aa356d1075941ba7.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_how-to-silence-alerts-from-alert-manager-ui-chunk-9",
+        "name": "How to silence alerts from Alert Manager UI.txt - Your silence is submitted now",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains the final step in the process of silencing alerts from the Alert Manager UI. After configuring the silence parameters, the user can click the 'Submit' button to apply the silence or click the 'Back' button to go back and modify the silence configuration.",
+        "use_cases": [
+            "Submitting a configured silence to the Alert Manager",
+            "Reviewing and modifying silence configuration before submission",
+            "Applying a silence to suppress alerts from the Alert Manager UI"
+        ],
+        "capabilities": [
+            "Submit silence configuration",
+            "Modify silence configuration",
+            "Review silence configuration",
+            "Apply silence to Alert Manager"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_how-to-silence-alerts-from-alert-manager-ui-chunk-10",
+        "name": "How to silence alerts from Alert Manager UI.txt - Give it a couple of minutes (you won't see the silence immediately, don't go back and do it all over again)",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains that after silencing an alert in the Alert Manager UI, it may take a couple of minutes for the silence to take effect and the alert to disappear from the UI. The image provided serves as a visual reminder to be patient and not attempt to silence the alert again, as this could potentially create duplicate silences or other unintended consequences.",
+        "use_cases": [
+            "Silencing alerts in the Alert Manager UI",
+            "Managing and monitoring alerts in a monitoring system",
+            "Troubleshooting and resolving issues related to alerts"
+        ],
+        "capabilities": [
+            "Silencing alerts",
+            "Alert management",
+            "User interface",
+            "Visual guidance",
+            "Patience reminder"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/c3200801f8a3fa991fe1b3c0ee7b0ab7.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_how-to-silence-alerts-from-alert-manager-ui-chunk-11",
+        "name": "How to silence alerts from Alert Manager UI.txt - Go back to the bell  icon and click browse to list your silenced alert",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains the steps to follow after submitting a silence request to mute alerts in the Alert Manager UI. It mentions that it may take a couple of minutes for the silence to take effect, and advises against resubmitting the request during this time. The section then guides the user to navigate to the 'Browse' section under the bell icon to view the list of silenced alerts.",
+        "use_cases": [
+            "Silencing alerts in the Alert Manager UI",
+            "Viewing the list of silenced alerts",
+            "Waiting for the silence request to take effect"
+        ],
+        "capabilities": [
+            "Submitting silence requests",
+            "Browsing silenced alerts",
+            "Delayed propagation of silence requests",
+            "Visual confirmation of successful silence submission",
+            "Step-by-step guidance for navigating the UI"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/27c4c307cd5e92484d02a61473e0eb11.png",
+            "https://alpha.razorpay.com/_static/file/6f930e7edd27726054797fb141686467.png",
+            "https://alpha.razorpay.com/_static/file/67a393c1b5c5ba8f07e66ec1a8b7e727.png"
+        ]
+    }
+]

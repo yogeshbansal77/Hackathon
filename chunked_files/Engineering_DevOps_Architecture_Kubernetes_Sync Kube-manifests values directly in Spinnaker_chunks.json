@@ -1,0 +1,62 @@
+[
+    {
+        "id": "engineering_devops_architecture_kubernetes_sync-kube-manifests-values-directly-in-spinnaker-chunk-0",
+        "name": "Sync Kube-manifests values directly in Spinnaker.txt - Introduction",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section introduces a new feature that allows users to directly synchronize the Helm 'values.yaml' file from Kubernetes manifests to Spinnaker, a continuous delivery platform. This enables users to keep their application configurations in sync between Kubernetes and Spinnaker, streamlining the deployment process.",
+        "use_cases": [
+            "Keeping application configurations in sync between Kubernetes manifests and Spinnaker",
+            "Streamlining the deployment process by eliminating manual configuration updates",
+            "Enabling seamless integration between Kubernetes and Spinnaker for continuous delivery",
+            "Reducing the risk of configuration drift and inconsistencies"
+        ],
+        "capabilities": [
+            "Direct sync of Helm values.yaml file",
+            "Integration between Kubernetes manifests and Spinnaker",
+            "Automated configuration synchronization",
+            "Streamlined deployment process",
+            "Consistency in application configurations"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_sync-kube-manifests-values-directly-in-spinnaker-chunk-1",
+        "name": "Sync Kube-manifests values directly in Spinnaker.txt - Steps to sync Helm values.yaml from Kube Manifests to Spinnaker",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section explains the steps to synchronize the Helm values.yaml file from a Kubernetes Manifests repository to Spinnaker, which is a continuous delivery platform. It involves configuring a pipeline in Spinnaker to fetch the values.yaml file from a GitHub repository and use it as an artifact during the deployment process. This allows for seamless integration between the application's configuration values and the deployment process.",
+        "use_cases": [
+            "Synchronizing application configuration values from a centralized repository to Spinnaker",
+            "Automating the deployment process with up-to-date configuration values",
+            "Enabling consistent configuration management across different environments (e.g., production, staging)",
+            "Facilitating collaboration and version control for application configuration files"
+        ],
+        "capabilities": [
+            "Bake Manifest stage in Spinnaker pipelines",
+            "Value artifact configuration",
+            "GitHub integration for fetching configuration files",
+            "Environment-specific configuration file paths",
+            "Parameterized commit/branch selection",
+            "Overriding configuration values during deployment"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/6cf390d383564590d03ab2fc89c97cd2.png",
+            "https://alpha.razorpay.com/_static/file/f9a5282559af871ed57289884189a852.png",
+            "https://alpha.razorpay.com/_static/file/855c3fed8daba3b2222140e0303518f7.png",
+            "https://alpha.razorpay.com/_static/file/35d01da48d6977eca124a392440ca584.png",
+            "https://api.github.com/repos/$ORG/$REPO/contents/$FILEPATH",
+            "https://api.github.com/repos/razorpay/kube-manifests/contents/prod/$APP_NAME/values.yaml",
+            "https://api.github.com/repos/razorpay/kube-manifests/contents/stage/$APP_NAME/values.yaml",
+            "https://api.github.com/repos/razorpay/kube-manifests/contents/$ENV/$APP_NAME/values.yaml"
+        ]
+    }
+]

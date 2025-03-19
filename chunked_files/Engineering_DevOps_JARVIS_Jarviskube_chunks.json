@@ -1,0 +1,97 @@
+[
+    {
+        "id": "engineering_devops_jarvis_jarviskube-chunk-0",
+        "name": "Jarviskube.txt - Problem :confounded: :",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section discusses a problem faced by developers when using Botkube, a tool for cluster-level read access. Developers often struggle to identify the result data for their queries due to the large amount of data and the current asynchronous approach used by Botkube. This issue has led to multiple complaints reaching the DevOps team.",
+        "use_cases": [
+            "Cluster-level read access for developers",
+            "Querying and retrieving data from clusters",
+            "Identifying and analyzing query results"
+        ],
+        "capabilities": [
+            "Asynchronous approach",
+            "Data population",
+            "Query execution",
+            "Result data identification"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_jarvis_jarviskube-chunk-1",
+        "name": "Jarviskube.txt - Solution :magic_wand: :",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section introduces Jarviskube, an in-house tool developed as a replacement for Botkube. Jarviskube simplifies the process of executing commands across multiple clusters within a specific environment. Users can easily construct commands using dropdown menus and text fields, and upon submission, the tool will run the specified command on all clusters belonging to the selected environment, providing consolidated output.",
+        "use_cases": [
+            "Executing commands across multiple clusters within an environment",
+            "Replacing Botkube for cluster management tasks",
+            "Consolidating output from multiple clusters"
+        ],
+        "capabilities": [
+            "Intuitive command construction using dropdowns and text fields",
+            "Environment-specific cluster targeting",
+            "Consolidated output from multiple clusters",
+            "Automation of cluster management tasks",
+            "Replacement for Botkube"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_jarvis_jarviskube-chunk-2",
+        "name": "Jarviskube.txt - PS :stop_sign: :",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section explains the importance of specifying resource names (such as pod or deployment names) when using certain commands like 'get' or 'describe' in Jarviskube. This is to prevent retrieving large amounts of unnecessary data that could potentially overload or crash the frontend interface. It emphasizes the need for precision when accessing and managing resources within the Jarviskube system.",
+        "use_cases": [
+            "Retrieving specific resource details (e.g., pod or deployment details) without overwhelming the frontend",
+            "Avoiding unnecessary data retrieval that could impact system performance",
+            "Precisely managing and monitoring individual resources within the Jarviskube environment"
+        ],
+        "capabilities": [
+            "Resource-specific data retrieval",
+            "Targeted resource management",
+            "Performance optimization",
+            "Precise resource monitoring",
+            "Frontend protection from data overload"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_jarvis_jarviskube-chunk-3",
+        "name": "Jarviskube.txt - How do you access Jarviskube :mag: :",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section provides a visual representation of the Jarviskube interface, which appears to be a web-based platform or dashboard. The image shows various sections and menus, suggesting that Jarviskube is a tool for managing and monitoring cloud resources, applications, or infrastructure. The interface seems user-friendly and intuitive, allowing users to access and interact with different components of their system.",
+        "use_cases": [
+            "Monitoring cloud resources",
+            "Managing applications",
+            "Administering infrastructure",
+            "Visualizing system status and performance"
+        ],
+        "capabilities": [
+            "Web-based interface",
+            "Intuitive navigation",
+            "Sectioned views",
+            "Monitoring and management capabilities",
+            "Resource visualization",
+            "User-friendly design"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/a970904373cd47f2d56c697446cf34d9.png"
+        ]
+    }
+]

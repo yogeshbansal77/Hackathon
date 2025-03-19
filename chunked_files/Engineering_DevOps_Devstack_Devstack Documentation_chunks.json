@@ -1,0 +1,153 @@
+[
+    {
+        "id": "engineering_devops_devstack_devstack-documentation-chunk-0",
+        "name": "Devstack Documentation.txt - User Guide",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Devstack"
+        ],
+        "description": "This section provides an index for the User Guide section of the Devstack Documentation. It includes a link to the 'Devstack New User Onboarding' guide, which is likely a resource for new users to get started with Devstack.",
+        "use_cases": [
+            "Onboarding new users to Devstack",
+            "Providing a centralized resource for user guides and documentation",
+            "Helping users navigate and find relevant information"
+        ],
+        "capabilities": [
+            "Index",
+            "User Guide",
+            "Onboarding",
+            "Documentation",
+            "Navigation"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/devstack-onboarding"
+        ]
+    },
+    {
+        "id": "engineering_devops_devstack_devstack-documentation-chunk-1",
+        "name": "Devstack Documentation.txt - Application Guide",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Devstack"
+        ],
+        "description": "This section provides a guide for onboarding new applications to the Devstack platform. It covers the essential steps and configurations required to deploy, manage, and monitor applications on the platform. The guide aims to help developers understand the process of setting up applications, including configuring databases, caches, async workers, queues, and integrating with services like Kafka. It also touches upon logging and monitoring setup for the deployed applications.",
+        "use_cases": [
+            "Deploying and managing new applications on the Devstack platform",
+            "Configuring databases, caches, and queues for applications",
+            "Integrating applications with Kafka for event streaming",
+            "Setting up logging and monitoring for deployed applications"
+        ],
+        "capabilities": [
+            "Application deployment",
+            "Service configuration",
+            "IngressRoute setup",
+            "Ephemeral database configuration",
+            "Ephemeral cache configuration",
+            "Async worker and queue configuration",
+            "Kafka integration",
+            "Logging and monitoring setup"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/deploying-applications-on-devstack",
+            "https://alpha.razorpay.com/repo/code-sync-and-live-debugging",
+            "https://alpha.razorpay.com/repo/onboarding-a-new-application",
+            "https://alpha.razorpay.com/repo/onboarding-a-new-application#basic-setup-deployment-service-ingressroute",
+            "https://alpha.razorpay.com/repo/onboarding-a-new-application#configuring-an-ephemeral-databases",
+            "https://alpha.razorpay.com/repo/onboarding-a-new-application#configuring-an-ephemeral-cache",
+            "https://alpha.razorpay.com/repo/onboarding-a-new-application#configuring-async-workers-and-queues",
+            "https://alpha.razorpay.com/repo/onboarding-a-new-application#connecting-to-kafka",
+            "https://alpha.razorpay.com/repo/onboarding-a-new-application#setup-logging-and-monitoring"
+        ]
+    },
+    {
+        "id": "engineering_devops_devstack_devstack-documentation-chunk-2",
+        "name": "Devstack Documentation.txt - FAQs",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Devstack"
+        ],
+        "description": "This section provides information about frequently asked questions (FAQs) related to Devstack, which appears to be a development environment or platform. It includes links to resources that address common queries, such as how to keep deployments or labels running for more than 72 hours and how to make an endpoint accessible externally.",
+        "use_cases": [
+            "Troubleshooting common issues encountered while using Devstack",
+            "Learning how to extend the duration of deployments or labels",
+            "Exposing internal endpoints to external access",
+            "Finding solutions to frequently encountered problems"
+        ],
+        "capabilities": [
+            "FAQs",
+            "Deployment duration management",
+            "Endpoint exposure",
+            "Troubleshooting",
+            "Knowledge base",
+            "Documentation"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/base-pods",
+            "https://alpha.razorpay.com/repo/base-pods#base-pod-guidelines",
+            "https://alpha.razorpay.com/repo/base-pods#deploying-base-pods-for-a-service",
+            "https://alpha.razorpay.com/repo/devstack-faqs",
+            "https://alpha.razorpay.com/repo/devstack-faqs#how-to-keep-deploymentslabels-up-for-more-than-72-hours",
+            "https://alpha.razorpay.com/repo/devstack-faqs#how-to-make-an-endpoint-available-externally"
+        ]
+    },
+    {
+        "id": "engineering_devops_devstack_devstack-documentation-chunk-3",
+        "name": "Devstack Documentation.txt - Troubleshooting",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Devstack"
+        ],
+        "description": "This section provides troubleshooting information and resources for Devstack, a development environment for Razorpay's applications. It includes a link to a comprehensive troubleshooting guide that covers various aspects of the development process, such as onboarding, working with Helmfile (a tool for managing Kubernetes deployments), using Devspace (a tool for developing and deploying cloud-native applications), and general API-related issues.",
+        "use_cases": [
+            "Resolving issues during the onboarding process for new developers",
+            "Troubleshooting problems related to Helmfile and Kubernetes deployments",
+            "Debugging issues with Devspace and cloud-native application development",
+            "Addressing general API-related problems"
+        ],
+        "capabilities": [
+            "Troubleshooting Guide",
+            "Onboarding",
+            "Helmfile",
+            "Devspace",
+            "API",
+            "General"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/devstack-faqs#what-are-devstack-nat-ips",
+            "https://alpha.razorpay.com/repo/devstack-troubleshooting-1",
+            "https://alpha.razorpay.com/repo/devstack-troubleshooting-1#onboarding",
+            "https://alpha.razorpay.com/repo/devstack-troubleshooting-1#helmfile",
+            "https://alpha.razorpay.com/repo/devstack-troubleshooting-1#devspace",
+            "https://alpha.razorpay.com/repo/devstack-troubleshooting-1#onboarding",
+            "https://alpha.razorpay.com/repo/devstack-troubleshooting-1#onboarding"
+        ]
+    },
+    {
+        "id": "engineering_devops_devstack_devstack-documentation-chunk-4",
+        "name": "Devstack Documentation.txt - Alerts",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Devstack"
+        ],
+        "description": "This section appears to be providing information about alerts and runbooks related to the Devstack Documentation. Specifically, it mentions a runbook for handling Traefik 5xx error rates, which likely refers to issues with the Traefik reverse proxy/load balancer used in the Devstack environment.",
+        "use_cases": [
+            "Monitoring and alerting for Traefik 5xx errors",
+            "Troubleshooting and resolving Traefik 5xx errors",
+            "Documenting procedures for handling Traefik 5xx errors"
+        ],
+        "capabilities": [
+            "Alerts",
+            "Runbooks",
+            "Error monitoring",
+            "Error handling",
+            "Traefik integration",
+            "Proxy/Load balancer monitoring"
+        ],
+        "references": []
+    }
+]

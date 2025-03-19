@@ -1,0 +1,89 @@
+[
+    {
+        "id": "engineering_devops_dev-self-serve_k8s-getting-started---pid-chunk-0",
+        "name": "K8s Getting Started - PID.txt - Quickly create an app:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section provides a configuration template for deploying an NGINX web server application on a Kubernetes cluster. It includes a Deployment resource that specifies the desired state of the application, such as the number of replicas, container image, resource limits, and environment variables. It also defines a Service resource to expose the application internally within the cluster, and an Ingress resource to route external traffic to the application using a load balancer.",
+        "use_cases": [
+            "Deploying a web application on a Kubernetes cluster",
+            "Exposing a web application internally within the cluster",
+            "Routing external traffic to a web application using a load balancer",
+            "Configuring resource limits and environment variables for a containerized application"
+        ],
+        "capabilities": [
+            "Deployment",
+            "Replication",
+            "Container",
+            "Resource limits",
+            "Environment variables",
+            "Service",
+            "Ingress",
+            "Load balancing",
+            "Traffic routing",
+            "Security headers"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_k8s-getting-started---pid-chunk-1",
+        "name": "K8s Getting Started - PID.txt - This section creates secrets which can be consumed by application. \n## You can remove this section if not required.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section appears to be defining an Ingress resource in Kubernetes, which acts as an entry point for external traffic into the cluster. It specifies a host domain and an HTTP path that maps to a backend service named 'nginx-service' running on port 80. This allows external clients to access the nginx service through the specified host and path.",
+        "use_cases": [
+            "Exposing a service (nginx-service) to external traffic",
+            "Routing external traffic to a specific service based on the URL path",
+            "Providing a single entry point (host domain) for accessing multiple services"
+        ],
+        "capabilities": [
+            "Ingress",
+            "Traffic routing",
+            "Service exposure",
+            "Path-based routing",
+            "Host-based routing"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_k8s-getting-started---pid-chunk-2",
+        "name": "K8s Getting Started - PID.txt - This section creates configmap which can be consumed by application. \n## You can remove this section if not required.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains how to create and deploy a Kubernetes application using various objects like Deployment, Service, Ingress, Secret, and ConfigMap. It walks through the process of applying a YAML file containing these object definitions, which creates the necessary resources for running the application. The section also covers how to access the deployed application using the Ingress URL and how to inspect the created objects using kubectl commands.",
+        "use_cases": [
+            "Deploying a containerized application on Kubernetes",
+            "Managing application configuration and secrets using ConfigMaps and Secrets",
+            "Exposing the application externally using an Ingress resource",
+            "Scaling and managing the application lifecycle using Deployments"
+        ],
+        "capabilities": [
+            "Creating Kubernetes objects (Deployment, Service, Ingress, Secret, ConfigMap)",
+            "Applying YAML configuration files",
+            "Accessing deployed applications via Ingress URLs",
+            "Inspecting created resources using kubectl commands",
+            "Injecting configuration and secrets into application containers",
+            "Managing application lifecycle (scaling, updates, rollbacks)"
+        ],
+        "references": [
+            "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/",
+            "https://kubernetes.io/docs/concepts/services-networking/service/",
+            "http://k8s-nginx-test.concierge.stage.razorpay.in",
+            "https://pid-test-nijil.concierge.stage.razorpay.in/",
+            "http://nginx.org/\">nginx.org</a>.<br/>",
+            "http://nginx.com/\">nginx.com</a>.</p>",
+            "https://k8s-nginx-test.concierge.stage.razorpay.in",
+            "http://nginx.org/\">nginx.org</a>.<br/>",
+            "http://nginx.com/\">nginx.com</a>.</p>"
+        ]
+    }
+]

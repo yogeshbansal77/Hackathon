@@ -1,0 +1,217 @@
+[
+    {
+        "id": "engineering_devops_processes_production-releases_ami-release-notes-template-chunk-0",
+        "name": "AMI release notes template.txt - AMI Release notes- (date)",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Production Releases"
+        ],
+        "description": "This section provides information about the environment, Auto Scaling Groups (ASG), and Operating System (OS) related to the AMI release. It serves as a summary of the key details associated with the AMI release, allowing users to quickly understand the context in which the AMI was built and deployed.",
+        "use_cases": [
+            "Understanding the environment configuration for the AMI release",
+            "Identifying the Auto Scaling Groups associated with the AMI",
+            "Determining the Operating System used for the AMI"
+        ],
+        "capabilities": [
+            "Environment details",
+            "Auto Scaling Group information",
+            "Operating System specification"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_production-releases_ami-release-notes-template-chunk-1",
+        "name": "AMI release notes template.txt - Objective",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Production Releases"
+        ],
+        "description": "This section outlines the purpose of the document, which is to provide release notes for the latest version of an Amazon Machine Image (AMI) used in a specific environment and Auto Scaling Group (ASG). The AMI ID is included, allowing users to identify the specific version being documented.",
+        "use_cases": [
+            "Tracking updates and changes to AMIs used in a particular environment",
+            "Understanding the latest AMI version deployed in an Auto Scaling Group",
+            "Referencing the AMI ID for troubleshooting or deployment purposes"
+        ],
+        "capabilities": [
+            "AMI release notes",
+            "Environment specification",
+            "Auto Scaling Group identification",
+            "AMI ID reference"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_production-releases_ami-release-notes-template-chunk-2",
+        "name": "AMI release notes template.txt - New Features/Upgrades",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Production Releases"
+        ],
+        "description": "This section outlines the new features and upgrades introduced in the latest release of the AMI (Amazon Machine Image). It provides a brief overview of the enhancements made to the software or system, highlighting the improvements and additions that users can expect.",
+        "use_cases": [
+            "Understanding the latest enhancements and additions to the AMI",
+            "Evaluating the benefits of upgrading to the new release",
+            "Identifying new functionalities relevant to specific use cases"
+        ],
+        "capabilities": [
+            "Feature A",
+            "New functionality",
+            "Upgraded components",
+            "Performance improvements",
+            "Bug fixes",
+            "Enhanced security"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_production-releases_ami-release-notes-template-chunk-3",
+        "name": "AMI release notes template.txt - Bug Fixes",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Production Releases"
+        ],
+        "description": "This section outlines bug fixes and upgrades made to specific software packages in the latest release. It provides information about resolved issues and improvements to existing functionality, ensuring a more stable and reliable software experience.",
+        "use_cases": [
+            "Addressing known software bugs",
+            "Improving software stability and performance",
+            "Enhancing existing features and functionality"
+        ],
+        "capabilities": [
+            "Bug fixes for package C",
+            "Upgrades for package B",
+            "Resolving software issues",
+            "Improving software reliability",
+            "Enhancing existing features"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_production-releases_ami-release-notes-template-chunk-4",
+        "name": "AMI release notes template.txt - Release Window:-",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Production Releases"
+        ],
+        "description": "This section discusses a kernel bug that causes unexpected restarts of the operating system. It provides a reference link to a bug report for further details on the issue.",
+        "use_cases": [
+            "Identifying and addressing kernel bugs",
+            "Troubleshooting unexpected system restarts",
+            "Referencing bug reports for more information"
+        ],
+        "capabilities": [
+            "Kernel bug reporting",
+            "Bug reference linking",
+            "Operating system restart issue"
+        ],
+        "references": [
+            "https://bug-report/bug__"
+        ]
+    },
+    {
+        "id": "engineering_devops_processes_production-releases_ami-release-notes-template-chunk-5",
+        "name": "AMI release notes template.txt - Expected Downtime:-",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Production Releases"
+        ],
+        "description": "This section explains the release window and the process of upgrading existing nodes by draining them and launching new instances to replace the old ones. The release will be carried out on a specific date and time mentioned in the section.",
+        "use_cases": [
+            "Upgrading existing nodes in a cluster",
+            "Replacing old instances with new ones",
+            "Scheduled maintenance or upgrades",
+            "Rolling out new features or bug fixes"
+        ],
+        "capabilities": [
+            "Node draining",
+            "Instance launching",
+            "Instance replacement",
+            "Scheduled release window",
+            "Release date and time specification"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_production-releases_ami-release-notes-template-chunk-6",
+        "name": "AMI release notes template.txt - Roll-out plan:-",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Production Releases"
+        ],
+        "description": "This section explains the expected downtime during an AMI (Amazon Machine Image) release process. It clarifies that there will be no downtime for currently running instances, and any new instances launched within the same Auto Scaling Group (ASG) will have the latest AMI version. The process involves replacing an existing launch configuration with a new one that includes the updated AMI version.",
+        "use_cases": [
+            "AMI release process",
+            "Updating instances in an Auto Scaling Group",
+            "Minimizing downtime during software updates"
+        ],
+        "capabilities": [
+            "No downtime for existing instances",
+            "Automatic deployment of new instances with updated AMI",
+            "Seamless AMI version updates within Auto Scaling Groups"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_production-releases_ami-release-notes-template-chunk-7",
+        "name": "AMI release notes template.txt - Roll-back plan:-",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Production Releases"
+        ],
+        "description": "This section outlines the steps to roll out a new version of an Amazon Machine Image (AMI) in an Auto Scaling Group (ASG). It involves updating the AMI version in the launch template associated with the ASG and applying the changes using a tool like Terraform. Once the new configuration is applied, new nodes (EC2 instances) will be launched with the updated AMI version.",
+        "use_cases": [
+            "Updating AMI version for an Auto Scaling Group",
+            "Rolling out new AMI versions to a cluster or fleet of instances",
+            "Automating AMI version updates using Infrastructure as Code (IaC) tools like Terraform"
+        ],
+        "capabilities": [
+            "AMI version management",
+            "Auto Scaling Group configuration",
+            "Launch template updates",
+            "Terraform integration",
+            "Rolling deployment of new instances"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_production-releases_ami-release-notes-template-chunk-8",
+        "name": "AMI release notes template.txt - Example AMI release notes:-",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Production Releases"
+        ],
+        "description": "This section provides instructions for rolling back an AMI (Amazon Machine Image) version in an Auto Scaling Group (ASG) and launching new nodes with the previous AMI version. It outlines the steps to revert the AMI version in the ASG launch template, apply the changes using Terraform, launch new nodes with the previous AMI version, and then drain (remove) the old nodes running the newer AMI version.",
+        "use_cases": [
+            "Rolling back an AMI version in an Auto Scaling Group",
+            "Reverting to a previous AMI version for nodes in a cluster",
+            "Updating nodes in a cluster with a different AMI version"
+        ],
+        "capabilities": [
+            "AMI version management",
+            "Auto Scaling Group configuration",
+            "Terraform integration",
+            "Node draining",
+            "Launch template configuration"
+        ],
+        "references": [
+            "https://docs.google.com/document/d/1V_6TnG1oOjs9sSreWHghWjSucPd4OYZf-8ZXQOcMTfo/edit?ts=5fe052d9#heading=h.8redt8es69yq"
+        ]
+    }
+]

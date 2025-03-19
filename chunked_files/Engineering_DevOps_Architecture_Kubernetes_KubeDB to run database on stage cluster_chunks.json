@@ -1,0 +1,129 @@
+[
+    {
+        "id": "engineering_devops_architecture_kubernetes_kubedb-to-run-database-on-stage-cluster-chunk-0",
+        "name": "KubeDB to run database on stage cluster.txt - Storage class name: **pid-storage**",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section explains that there is a limit on the maximum storage capacity that can be allocated to a namespace in the Kubernetes cluster. Specifically, it states that each namespace can have a maximum of 10GB of storage space allocated to it. This information is likely relevant for managing and allocating storage resources within the cluster, particularly when running databases or other applications that require persistent storage.",
+        "use_cases": [
+            "Managing storage allocation for namespaces",
+            "Ensuring efficient utilization of cluster storage resources",
+            "Monitoring and enforcing storage limits for applications"
+        ],
+        "capabilities": [
+            "Storage capacity limit",
+            "Namespace-level storage management",
+            "Resource allocation control"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_kubedb-to-run-database-on-stage-cluster-chunk-1",
+        "name": "KubeDB to run database on stage cluster.txt - **==Supported mysql versions==**",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section lists the supported versions of MySQL database that can be deployed using KubeDB on a Kubernetes cluster. It provides a table with the version names, actual version numbers, corresponding Docker images, and information about whether a version is deprecated or not. This information helps users choose the appropriate MySQL version for their application requirements and deployment needs.",
+        "use_cases": [
+            "Deploying MySQL databases on Kubernetes clusters",
+            "Selecting the desired MySQL version for application compatibility",
+            "Upgrading or migrating to newer MySQL versions",
+            "Identifying deprecated versions to plan for upgrades"
+        ],
+        "capabilities": [
+            "Supports multiple MySQL versions",
+            "Provides Docker images for each version",
+            "Indicates deprecated versions",
+            "Shows version age or release date"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_kubedb-to-run-database-on-stage-cluster-chunk-2",
+        "name": "KubeDB to run database on stage cluster.txt - **Create a MySQL database**",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section provides instructions on how to create a MySQL database on a Kubernetes cluster using KubeDB. It lists the available MySQL versions and provides a YAML file template that needs to be filled with the desired MySQL version, namespace, and storage class name. The YAML file defines a MySQL resource in the KubeDB API, which will provision a MySQL database instance with the specified configuration.",
+        "use_cases": [
+            "Running a MySQL database on a Kubernetes cluster",
+            "Provisioning a MySQL database instance with persistent storage",
+            "Configuring MySQL version and storage settings for the database instance"
+        ],
+        "capabilities": [
+            "MySQL version selection",
+            "Persistent storage configuration",
+            "Storage class specification",
+            "Access mode configuration",
+            "Resource requests/limits specification"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_kubedb-to-run-database-on-stage-cluster-chunk-3",
+        "name": "KubeDB to run database on stage cluster.txt - **Apply the manifest file**",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section appears to be a configuration snippet for deploying a MySQL database on a Kubernetes cluster using KubeDB. It specifies resource requests, node selector for zone placement, environment variables for the database name and character set, command-line arguments, termination policy, and update strategy for the MySQL deployment.",
+        "use_cases": [
+            "Running a MySQL database on a Kubernetes cluster",
+            "Configuring resource requests for the database deployment",
+            "Specifying node selector for zone placement",
+            "Setting environment variables for the database"
+        ],
+        "capabilities": [
+            "Resource requests configuration",
+            "Node selector for zone placement",
+            "Environment variable configuration",
+            "Command-line argument configuration",
+            "Termination policy configuration",
+            "Update strategy configuration"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_kubedb-to-run-database-on-stage-cluster-chunk-4",
+        "name": "KubeDB to run database on stage cluster.txt - **==Supported postgres versions==**",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section provides information about the supported PostgreSQL versions and instructions on how to create a PostgreSQL database using KubeDB on a Kubernetes cluster. It lists the available PostgreSQL versions and their corresponding Docker images, and provides a sample YAML manifest file that can be used to create a PostgreSQL instance with a specific version, storage configuration, and node selector.",
+        "use_cases": [
+            "Running PostgreSQL databases on a Kubernetes cluster",
+            "Deploying and managing PostgreSQL instances with different versions and configurations",
+            "Configuring storage and node selectors for PostgreSQL instances",
+            "Accessing PostgreSQL instances from applications within the cluster"
+        ],
+        "capabilities": [
+            "List of supported PostgreSQL versions",
+            "Docker images for each PostgreSQL version",
+            "YAML manifest for creating PostgreSQL instances",
+            "Storage configuration (storage class, access mode, size)",
+            "Node selector for scheduling PostgreSQL pods",
+            "Accessing PostgreSQL service using DNS name",
+            "Retrieving admin credentials from a secret"
+        ],
+        "references": [
+            "https://kubedb.com/docs/v0.13.0-rc.0/guides/mysql/quickstart/quickstart/",
+            "https://kubedb.com/docs/v0.13.0-rc.0/guides/postgres/quickstart/quickstart/",
+            "https://kubedb.com/docs/v0.13.0-rc.0/guides/redis/quickstart/quickstart/"
+        ]
+    }
+]

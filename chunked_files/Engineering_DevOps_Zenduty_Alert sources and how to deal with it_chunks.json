@@ -1,0 +1,171 @@
+[
+    {
+        "id": "engineering_devops_zenduty_alert-sources-and-how-to-deal-with-it-chunk-0",
+        "name": "Alert sources and how to deal with it.txt - Alert manager :",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Zenduty"
+        ],
+        "description": "This section explains the Alert Manager, which is responsible for handling the majority (85-90%) of alerts through global routing rules. When onboarding new alerts into the alert-rules repository, a routing rule needs to be created for the respective team, ensuring that the necessary information is properly mentioned in the alert.",
+        "use_cases": [
+            "Handling the majority of alerts through global routing rules",
+            "Onboarding new alerts into the alert-rules repository",
+            "Creating routing rules for specific teams based on their alerts"
+        ],
+        "capabilities": [
+            "Global routing rules",
+            "Alert onboarding",
+            "Team-specific routing rule creation",
+            "Alert management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_zenduty_alert-sources-and-how-to-deal-with-it-chunk-1",
+        "name": "Alert sources and how to deal with it.txt - Grafana :",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Zenduty"
+        ],
+        "description": "This section appears to be a table or list of information related to monitoring and alerting in Grafana, a popular open-source data visualization and monitoring tool. It seems to display details about team names, pods (likely referring to Kubernetes pods), and live status, which could be used to track the health and performance of various components or services.",
+        "use_cases": [
+            "Monitoring team-specific resources or services",
+            "Tracking the status of Kubernetes pods",
+            "Visualizing live performance metrics or alerts"
+        ],
+        "capabilities": [
+            "Team name display",
+            "Pod monitoring",
+            "Live status tracking"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_zenduty_alert-sources-and-how-to-deal-with-it-chunk-2",
+        "name": "Alert sources and how to deal with it.txt - Sentry",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Zenduty"
+        ],
+        "description": "This section discusses the integration of Grafana, a data visualization and monitoring tool, with the service being documented. It suggests that a new integration needs to be created within the service to enable this functionality.",
+        "use_cases": [
+            "Visualizing data from the service",
+            "Monitoring the service",
+            "Integrating Grafana with the service for data analysis and visualization"
+        ],
+        "capabilities": [
+            "Grafana integration",
+            "Data visualization",
+            "Monitoring",
+            "Service integration"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_zenduty_alert-sources-and-how-to-deal-with-it-chunk-3",
+        "name": "Alert sources and how to deal with it.txt - Databricks",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Zenduty"
+        ],
+        "description": "This section explains how to integrate Databricks with an alert management system called Zenduty. It mentions that a webhook needs to be configured in the alert channel, and that channel needs to be specified in the router within the alert configuration. The section also provides a link to the Zenduty documentation for more detailed instructions on setting up the integration with Grafana.",
+        "use_cases": [
+            "Integrating Databricks with an alert management system",
+            "Configuring webhooks for alert channels",
+            "Setting up routers for alert configurations",
+            "Referring to external documentation for more detailed instructions"
+        ],
+        "capabilities": [
+            "Integration with Databricks",
+            "Webhook configuration",
+            "Alert channel management",
+            "Alert router configuration",
+            "External documentation reference"
+        ],
+        "references": [
+            "https://docs.zenduty.com/docs/grafana>"
+        ]
+    },
+    {
+        "id": "engineering_devops_zenduty_alert-sources-and-how-to-deal-with-it-chunk-4",
+        "name": "Alert sources and how to deal with it.txt - Statuscake",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Zenduty"
+        ],
+        "description": "This section provides information about integrating Sentry and Databricks with a service called Zenduty for alert management. It mentions that a new integration for Sentry is available, and the same webhook can be used for alerts. Additionally, it explains that Databricks alerts are sent via email, so an email integration needs to be set up and configured in the Databricks alert configuration.",
+        "use_cases": [
+            "Integrating Sentry with Zenduty for alert management",
+            "Configuring Databricks to send alerts to Zenduty via email integration",
+            "Centralized alert management for multiple services like Sentry and Databricks"
+        ],
+        "capabilities": [
+            "Sentry integration",
+            "Webhook configuration",
+            "Email integration",
+            "Alert configuration",
+            "Centralized alert management"
+        ],
+        "references": [
+            "https://docs.zenduty.com/docs/sentry>"
+        ]
+    },
+    {
+        "id": "engineering_devops_zenduty_alert-sources-and-how-to-deal-with-it-chunk-5",
+        "name": "Alert sources and how to deal with it.txt - Email :",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Zenduty"
+        ],
+        "description": "This section provides guidance on setting up email integration with Zenduty, a platform for managing alerts and incidents. It emphasizes the importance of creating a new integration with an advanced name, as the old integration may not properly handle image attachments in emails. The section includes a link to Zenduty's documentation for more detailed information on configuring email integration.",
+        "use_cases": [
+            "Setting up email integration with Zenduty",
+            "Ensuring proper handling of image attachments in emails",
+            "Accessing additional documentation for email integration"
+        ],
+        "capabilities": [
+            "email integration",
+            "advanced naming for email integration",
+            "handling image attachments",
+            "documentation link"
+        ],
+        "references": [
+            "https://docs.zenduty.com/docs/emailv2>"
+        ]
+    },
+    {
+        "id": "engineering_devops_zenduty_alert-sources-and-how-to-deal-with-it-chunk-6",
+        "name": "Alert sources and how to deal with it.txt - Slack :",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Zenduty"
+        ],
+        "description": "This section explains how to set up different alert sources or integrations with the Zenduty platform. It covers three specific sources: Statuscake, Email, and Slack. The instructions outline the steps required to configure each integration, including creating notification integrations, adding webhooks, authenticating channels, and more. The goal is to enable users to receive alerts from these sources within the Zenduty platform.",
+        "use_cases": [
+            "Receiving alerts from Statuscake monitoring service",
+            "Receiving alerts from email notifications",
+            "Receiving alerts from Slack channels"
+        ],
+        "capabilities": [
+            "Statuscake integration",
+            "Email integration",
+            "Slack integration",
+            "Notification integrations",
+            "Contact group management",
+            "Webhook configuration",
+            "Channel authentication"
+        ],
+        "references": [
+            "https://docs.zenduty.com/docs/statuscake>",
+            "https://docs.zenduty.com/docs/emailv2>",
+            "https://docs.zenduty.com/docs/slack>"
+        ]
+    }
+]

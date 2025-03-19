@@ -1,0 +1,57 @@
+[
+    {
+        "id": "engineering_devops_architecture_aws_aws-overview-and-it\u2019s-usage-at-razorpay-chunk-0",
+        "name": "AWS Overview and it\u2019s usage at Razorpay.txt - What is a cloud provider? (Nothing to do with the clouds in the sky)",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS"
+        ],
+        "description": "This section explains that AWS (Amazon Web Services) is a cloud provider that offers various services and APIs to provision and manage infrastructure resources without the need for physical data centers. It highlights that Razorpay utilizes multiple AWS accounts for segregating workloads and implementing granular access controls, with billing consolidated under a parent account.",
+        "use_cases": [
+            "Provisioning and managing infrastructure resources without physical data centers",
+            "Segregating workloads across multiple AWS accounts",
+            "Implementing granular role-based access controls (RBACs) across accounts",
+            "Consolidated billing under a parent account"
+        ],
+        "capabilities": [
+            "Cloud provider services",
+            "APIs for infrastructure provisioning",
+            "Managed services",
+            "Multiple AWS accounts",
+            "Billing consolidation",
+            "Workload segregation",
+            "Granular RBAC"
+        ],
+        "references": [
+            "https://aws.amazon.com/>"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_aws_aws-overview-and-it\u2019s-usage-at-razorpay-chunk-1",
+        "name": "AWS Overview and it\u2019s usage at Razorpay.txt - Usage at Razorpay:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS"
+        ],
+        "description": "This section explains the key AWS services used by Razorpay, a company that primarily relies on Kubernetes (k8s) for its infrastructure. It highlights the critical role of Amazon Relational Database Service (RDS) as the main data store for their API, and the use of Elastic Kubernetes Service (EKS) for managing their Kubernetes clusters. The section also mentions other AWS services like S3, KMS, and DynamoDB, which are utilized for various purposes within the organization.",
+        "use_cases": [
+            "Main data store for API (RDS)",
+            "Kubernetes cluster management (EKS)",
+            "Storage (S3)",
+            "Key management (KMS)",
+            "NoSQL database (DynamoDB)"
+        ],
+        "capabilities": [
+            "Managed database service (RDS)",
+            "Managed Kubernetes service (EKS)",
+            "Object storage (S3)",
+            "Key management service (KMS)",
+            "NoSQL database service (DynamoDB)"
+        ],
+        "references": []
+    }
+]

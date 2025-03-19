@@ -1,0 +1,108 @@
+[
+    {
+        "id": "engineering_devops_architecture_kubernetes_canary-spinnaker-setup-guide-chunk-0",
+        "name": "Canary Spinnaker Setup Guide.txt - Background",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section explains the need for a separate Canary environment for Spinnaker, a Continuous Delivery tool. Currently, making changes to the live Spinnaker system is risky as it can cause downtime and disrupt deployments. A Canary Spinnaker allows testing changes without affecting the live system, increasing availability, enabling faster improvements, and reducing fear of outages. It also supports enhancements like version upgrades and deploying Spinnaker components via Helm charts.",
+        "use_cases": [
+            "Testing changes to Spinnaker without affecting the live system",
+            "Enabling rapid improvements and updates to Spinnaker",
+            "Reducing fear of outages caused by changes to Spinnaker",
+            "Supporting version upgrades and deploying Spinnaker components via Helm charts"
+        ],
+        "capabilities": [
+            "Canary environment",
+            "Continuous Delivery (CD) tool",
+            "Replicated environment",
+            "Increased availability",
+            "Rapid improvements and updates",
+            "Reduced fear of outages",
+            "Version upgrades",
+            "Deploying components via Helm charts"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_canary-spinnaker-setup-guide-chunk-1",
+        "name": "Canary Spinnaker Setup Guide.txt - Spinnaker Overview",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section provides an overview of Spinnaker, an open-source platform that automates the process of building, testing, and deploying software applications across different cloud environments. It explains that Spinnaker consists of several modular components, each responsible for a specific task in the continuous delivery pipeline, such as managing cloud infrastructure, handling user interfaces, processing events and notifications, and orchestrating deployment workflows.",
+        "use_cases": [
+            "Streamlining the deployment of applications across multiple cloud environments",
+            "Automating the building, testing, and releasing of software changes",
+            "Ensuring efficient and reliable software delivery",
+            "Integrating with CI/CD tools like Jenkins and GitHub for triggering pipelines"
+        ],
+        "capabilities": [
+            "Multi-cloud support",
+            "Continuous Delivery automation",
+            "Modular architecture with specialized components",
+            "Cloud infrastructure management",
+            "Web-based user interface",
+            "Event processing and notifications",
+            "Role-Based Access Control (RBAC)",
+            "Metadata storage and persistence",
+            "API gateway",
+            "CI/CD tool integration",
+            "Canary analysis for deployment validation",
+            "Pipeline orchestration",
+            "Machine image baking"
+        ],
+        "references": [
+            "https://github.com/razorpay/spinnaker-sleeve"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_canary-spinnaker-setup-guide-chunk-2",
+        "name": "Canary Spinnaker Setup Guide.txt - Deployment Structure",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section outlines the structure and deployment process of the Spinnaker application within the Vishnu repository. It explains the repository structure, module values, and the steps involved in deploying Spinnaker components using Halyard and Spin-Sleeve. Additionally, it introduces the concept of setting up a Canary Spinnaker environment for testing changes before applying them to the production system. The section also covers the necessary resources required for the Canary Spinnaker setup, such as Redis cache, Amazon Aurora MySQL database, and S3 bucket, along with the processes to create and configure them.",
+        "use_cases": [
+            "Deploying and managing Spinnaker components within the Vishnu repository",
+            "Setting up a Canary Spinnaker environment for testing changes before production deployment",
+            "Configuring necessary resources like Redis cache, MySQL database, and S3 bucket for Spinnaker"
+        ],
+        "capabilities": [
+            "Repository structure for Spinnaker components",
+            "Module values for Halyard and Spin-Sleeve deployments",
+            "Deployment process using Halyard and Spin-Sleeve",
+            "Redis cache for caching and performance optimization",
+            "MySQL database for persistent metadata storage",
+            "S3 bucket for backups and metadata storage"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/spinnaker-deployment",
+            "https://razorpay.atlassian.net/browse/DBOPS-4017",
+            "https://prod-gandalf.razorpay.com/",
+            "https://razorpay.enterprise.slack.com/files/U05674N69PH/F071Q5LHY04/gandalf__database_provisioning",
+            "https://razorpay.atlassian.net/browse/DBRE-6358",
+            "https://docs.google.com/document/d/1RYOXKK6oOgMGJM8XTSmH3T_Ep7Gn2cqUTLICGqTr7sc/edit#heading=h.wmws9bwu8js0",
+            "https://razorpay.atlassian.net/browse/DBRE-6921?atlOrigin=eyJpIjoiMmMxODdkZWVlOWViNDlmZDllMjFjMmZhYTg1ODAyNDEiLCJwIjoiamlyYS1zbGFjay1pbnQifQ",
+            "https://razorpay.atlassian.net/browse/DBRE-7294?atlOrigin=eyJpIjoiMWMzOGVkZDQwYzMyNDYzMWE2ODIzM2RkOWJkMzA1NzAiLCJwIjoiamlyYS1zbGFjay1pbnQifQ",
+            "https://github.com/razorpay/vishnu/blob/master/modules/applications/canary-spinnaker/s3.tf",
+            "https://github.com/razorpay/vishnu/blob/master/modules/applications/canary-spinnaker/kms.tf",
+            "https://github.com/razorpay/vishnu/blob/master/modules/applications/canary-spinnaker/serviceaccount.tf",
+            "https://github.com/razorpay/vishnuprod/kubernetes/ops-eks/cluster/workers.tf",
+            "https://github.com/razorpay/vishnu/pull/12161/files",
+            "https://github.com/razorpay/vishnu/pull/12161#issuecomment-2321130359",
+            "https://deploy-canary.razorpay.com/login>",
+            "https://deploy-api-canary.razorpay.com>",
+            "https://deploy-canary.razorpay.com/>."
+        ]
+    }
+]

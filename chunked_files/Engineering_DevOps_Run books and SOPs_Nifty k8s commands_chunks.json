@@ -1,0 +1,122 @@
+[
+    {
+        "id": "engineering_devops_run-books-and-sops_nifty-k8s-commands-chunk-0",
+        "name": "Nifty k8s commands.txt - For getting the requested resources on the nodes, in case the scheduling is failing:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section provides a bash script that can be used to check the CPU and memory resource utilization on each node in a Kubernetes cluster. It iterates through all the nodes, prints the node name, and then describes the node's resource usage, specifically looking for CPU and memory utilization percentages. This can be helpful in identifying resource bottlenecks or imbalances across the cluster nodes, which may be causing scheduling issues or performance problems.",
+        "use_cases": [
+            "Troubleshooting scheduling failures in Kubernetes clusters",
+            "Monitoring resource utilization across nodes",
+            "Identifying resource bottlenecks or imbalances",
+            "Capacity planning and resource allocation"
+        ],
+        "capabilities": [
+            "List nodes in a Kubernetes cluster",
+            "Describe node resource utilization",
+            "Filter output for CPU and memory utilization percentages",
+            "Iterate through multiple nodes",
+            "Bash scripting",
+            "Kubectl command usage"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_nifty-k8s-commands-chunk-1",
+        "name": "Nifty k8s commands.txt - For getting the requests for all deployments in the cluster:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section provides a script that allows users to retrieve the resource requests for all deployments across all namespaces in a Kubernetes cluster. The script iterates through each namespace and deployment, and outputs the namespace, deployment name, and the resource requests specified in the deployment's YAML configuration. This can be useful for monitoring resource utilization and ensuring that deployments have appropriate resource allocations.",
+        "use_cases": [
+            "Monitoring resource utilization across deployments",
+            "Auditing resource requests for deployments",
+            "Identifying deployments with insufficient or excessive resource allocations",
+            "Troubleshooting resource-related issues in a Kubernetes cluster"
+        ],
+        "capabilities": [
+            "Retrieve resource requests",
+            "Iterate through namespaces",
+            "Iterate through deployments",
+            "Extract deployment configuration",
+            "Filter and format output"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_nifty-k8s-commands-chunk-2",
+        "name": "Nifty k8s commands.txt - Getting the number of pods/node",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains a command that allows you to get the number of pods running on each node in a Kubernetes cluster. The command 'kgpn api' retrieves information about the pods and nodes, and the output is then piped through 'awk' to extract the seventh column, which contains the node names. The 'sort' command sorts the node names, and 'uniq -c' counts the number of occurrences of each node name, effectively giving you the number of pods running on each node.",
+        "use_cases": [
+            "Monitoring resource utilization across nodes",
+            "Load balancing and scheduling decisions",
+            "Capacity planning and cluster scaling",
+            "Troubleshooting and debugging node-related issues"
+        ],
+        "capabilities": [
+            "Retrieving pod and node information",
+            "Filtering and extracting specific columns",
+            "Sorting and counting unique values",
+            "Displaying the number of pods per node"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_nifty-k8s-commands-chunk-3",
+        "name": "Nifty k8s commands.txt - To get all ingresses of a specific type (filtered by annotation)",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section provides a command to retrieve all Kubernetes Ingress resources that have a specific annotation. Ingress is a Kubernetes resource that manages external access to services within a cluster. By filtering Ingresses based on annotations, users can easily identify and manage specific types of Ingresses.",
+        "use_cases": [
+            "Retrieving a subset of Ingress resources based on a specific annotation",
+            "Managing and monitoring Ingress resources of a particular type or configuration",
+            "Auditing or troubleshooting Ingress resources with specific annotations"
+        ],
+        "capabilities": [
+            "Filtering Ingress resources",
+            "Annotation-based filtering",
+            "Retrieving Ingress resource details",
+            "Kubernetes resource management",
+            "Ingress resource management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_nifty-k8s-commands-chunk-4",
+        "name": "Nifty k8s commands.txt - To check the pod distribution of api-web deployment.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section provides commands to check the distribution of pods across nodes for a specific deployment (api-web) in a Kubernetes cluster. The first command lists all ingress resources and filters those managed by the 'traefik-concierge' ingress controller, displaying their names and ingress class annotations. The second command retrieves the pods for the 'api-web' deployment and shows the node they are running on, along with a count of pods per node.",
+        "use_cases": [
+            "Monitoring pod distribution across nodes",
+            "Troubleshooting uneven pod distribution",
+            "Verifying ingress resources and their ingress class",
+            "Identifying ingress resources managed by a specific ingress controller"
+        ],
+        "capabilities": [
+            "Listing ingress resources",
+            "Filtering ingress resources by annotation",
+            "Listing pods for a specific deployment",
+            "Displaying node assignment for pods",
+            "Counting pods per node",
+            "Parsing JSON output using jq"
+        ],
+        "references": []
+    }
+]

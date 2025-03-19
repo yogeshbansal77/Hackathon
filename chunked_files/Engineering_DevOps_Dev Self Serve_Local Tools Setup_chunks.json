@@ -1,0 +1,253 @@
+[
+    {
+        "id": "engineering_devops_dev-self-serve_local-tools-setup-chunk-0",
+        "name": "Local Tools Setup.txt - 1. Docker",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section provides instructions for setting up Docker, a popular containerization platform, on a local machine. It includes a link to download the stable version of Docker Desktop for Mac and suggests exploring Docker through an interactive tutorial. Additionally, it mentions creating a Docker Hub account, which is a cloud-based repository service for managing and distributing Docker images.",
+        "use_cases": [
+            "Setting up Docker on a local machine",
+            "Learning and practicing Docker through an interactive tutorial",
+            "Creating a Docker Hub account for managing and distributing Docker images"
+        ],
+        "capabilities": [
+            "Docker Desktop installation",
+            "Docker tutorial and learning resources",
+            "Docker Hub account creation",
+            "Container management",
+            "Image distribution"
+        ],
+        "references": [
+            "https://hub.docker.com/editions/community/docker-ce-desktop-mac/",
+            "https://docker-curriculum.com/",
+            "https://brew.sh/>"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_local-tools-setup-chunk-1",
+        "name": "Local Tools Setup.txt - 2. Brew",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains Brew, a package manager for macOS that helps users install various tools and applications on their system. It mentions that Brew might already be pre-installed as part of the macOS operating system, so users may not need to install it separately. The section also briefly mentions Parallel, which is a tool for executing jobs in parallel, but does not provide any further details about it.",
+        "use_cases": [
+            "Installing tools and applications on macOS",
+            "Managing packages and dependencies on macOS"
+        ],
+        "capabilities": [
+            "Package management",
+            "Tool installation",
+            "Dependency management",
+            "Parallel job execution"
+        ],
+        "references": [
+            "https://www.gnu.org/software/parallel/>"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_local-tools-setup-chunk-2",
+        "name": "Local Tools Setup.txt - 3. Parallel",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section introduces 'parallel', a powerful command-line tool that serves as an alternative to 'xargs'. It allows running multiple commands or tasks simultaneously, which can significantly speed up certain operations. The section provides a link to a cheat sheet for learning more about 'parallel' and includes a command to install it using the 'brew' package manager on macOS or Linux systems.",
+        "use_cases": [
+            "Running multiple commands or tasks in parallel to improve performance and efficiency",
+            "Replacing 'xargs' with a more powerful and feature-rich alternative",
+            "Automating repetitive tasks or operations that can benefit from parallel execution"
+        ],
+        "capabilities": [
+            "Parallel execution of commands or tasks",
+            "Alternative to 'xargs'",
+            "Installation via 'brew' package manager",
+            "Cheat sheet available for reference"
+        ],
+        "references": [
+            "https://www.gnu.org/software/parallel/parallel_cheat.pdf>"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_local-tools-setup-chunk-3",
+        "name": "Local Tools Setup.txt - 4. Kubectl",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section introduces kubectl, a command-line tool that allows users to interact with and manage a Kubernetes cluster. It provides a link to the kubectl cheatsheet, which contains a comprehensive list of commands and their usage. Kubectl enables users to perform various operations on the cluster, such as deploying applications, managing resources, and monitoring the cluster's health.",
+        "use_cases": [
+            "Managing Kubernetes clusters",
+            "Deploying applications to the cluster",
+            "Monitoring cluster health",
+            "Scaling and updating applications"
+        ],
+        "capabilities": [
+            "Interacting with Kubernetes cluster",
+            "Executing commands on the cluster",
+            "Deploying and managing resources",
+            "Monitoring cluster status",
+            "Scaling and updating applications",
+            "Accessing cheatsheet for command reference"
+        ],
+        "references": [
+            "https://kubernetes.io/docs/reference/kubectl/cheatsheet/>"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_local-tools-setup-chunk-4",
+        "name": "Local Tools Setup.txt - 5. ZSH",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section introduces ZSH, a powerful and highly customizable shell for Unix-based systems like macOS and Linux. It provides a link to the Oh My Zsh project, which is a popular framework for managing and configuring the ZSH shell. The section also includes a command to install kubectl, a command-line tool for managing Kubernetes clusters.",
+        "use_cases": [
+            "Customizing and enhancing the terminal experience on macOS or Linux",
+            "Managing and interacting with Kubernetes clusters using kubectl",
+            "Automating tasks and scripting with a more powerful shell"
+        ],
+        "capabilities": [
+            "ZSH shell",
+            "Oh My Zsh framework",
+            "kubectl installation",
+            "Terminal customization",
+            "Kubernetes cluster management"
+        ],
+        "references": [
+            "https://ohmyz.sh/>"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_local-tools-setup-chunk-5",
+        "name": "Local Tools Setup.txt - 6. Kind (Local multi-node k8s cluster )",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section provides information about setting up a local multi-node Kubernetes (k8s) cluster using Kind. Kind is a tool that allows you to run Kubernetes clusters locally on your machine, making it easier to test and develop applications without the need for a remote or cloud-based cluster. The section includes a link to the Kind GitHub repository, where you can find more details and instructions on how to install and use it.",
+        "use_cases": [
+            "Local development and testing of Kubernetes applications",
+            "Learning and experimenting with Kubernetes",
+            "Simulating a multi-node Kubernetes cluster environment"
+        ],
+        "capabilities": [
+            "Local multi-node Kubernetes cluster",
+            "Easy setup and configuration",
+            "Lightweight and resource-efficient",
+            "Compatible with various Kubernetes versions",
+            "Supports different operating systems (Linux, macOS, Windows)"
+        ],
+        "references": [
+            "https://ohmyz.sh/",
+            "https://github.com/denysdovhan/spaceship-prompt",
+            "https://blog.jonlu.ca/posts/speeding-up-zsh>The",
+            "https://github.com/kubernetes-sigs/kind>"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_local-tools-setup-chunk-6",
+        "name": "Local Tools Setup.txt - 7. Kubectx",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains how to set up a local Kubernetes (k8s) cluster on your machine using a tool called 'kind'. It warns that running a local k8s cluster might slow down your machine's performance. The section provides a single command to install 'kind' using the Homebrew package manager on macOS or Linux.",
+        "use_cases": [
+            "Running a local Kubernetes cluster on your machine",
+            "Testing and developing applications locally before deploying to a production cluster",
+            "Learning and experimenting with Kubernetes"
+        ],
+        "capabilities": [
+            "Local Kubernetes cluster setup",
+            "Homebrew package installation",
+            "Performance impact warning"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_local-tools-setup-chunk-7",
+        "name": "Local Tools Setup.txt - 8. AWS CLI",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section introduces Kubectx, a command-line tool that helps manage multiple Kubernetes clusters and namespaces. It provides a convenient way to switch between different clusters and namespaces, making it easier to work with multiple Kubernetes environments. Kubectx simplifies the process of interacting with Kubernetes resources across different contexts, which can be particularly useful for developers and administrators working with complex Kubernetes setups.",
+        "use_cases": [
+            "Managing multiple Kubernetes clusters",
+            "Switching between different Kubernetes namespaces",
+            "Streamlining workflows involving multiple Kubernetes environments",
+            "Improving productivity when working with Kubernetes resources across different contexts"
+        ],
+        "capabilities": [
+            "Manage multiple Kubernetes clusters",
+            "Switch between Kubernetes namespaces",
+            "Simplify interaction with Kubernetes resources",
+            "Improve productivity",
+            "Streamline workflows",
+            "Enhance Kubernetes management experience"
+        ],
+        "references": [
+            "https://github.com/ahmetb/kubectx>"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_local-tools-setup-chunk-8",
+        "name": "Local Tools Setup.txt - 9. Terraform",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section provides a single command to install a tool called 'kubectx' using the Homebrew package manager on macOS or Linux systems. Kubectx is a utility that helps manage and switch between different Kubernetes contexts and namespaces. However, the section does not provide any further explanation or context about the tool or its usage.",
+        "use_cases": [
+            "Managing multiple Kubernetes contexts and namespaces",
+            "Switching between different Kubernetes clusters or environments"
+        ],
+        "capabilities": [
+            "Installing kubectx tool",
+            "Using Homebrew package manager"
+        ],
+        "references": [
+            "https://aws.amazon.com/cli/>"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_local-tools-setup-chunk-9",
+        "name": "Local Tools Setup.txt - 10. JQ",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section provides instructions for installing various command-line tools on a local machine using the Homebrew package manager. It covers the installation of AWS CLI (for interacting with AWS resources), Terraform (an infrastructure as code tool), and jq (a lightweight and flexible command-line JSON processor). The section includes brief explanations and links to additional resources for each tool.",
+        "use_cases": [
+            "Querying and managing AWS resources",
+            "Infrastructure provisioning and management",
+            "Processing and manipulating JSON data"
+        ],
+        "capabilities": [
+            "AWS CLI installation",
+            "Terraform installation",
+            "jq installation",
+            "JSON processing",
+            "Infrastructure as code",
+            "AWS resource management"
+        ],
+        "references": [
+            "https://dev.to/mdminhazulhaque/aws-cli-cheatsheet-15f2>",
+            "https://github.com/tfutils/tfenv>",
+            "https://stedolan.github.io/jq/>"
+        ]
+    }
+]

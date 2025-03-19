@@ -1,0 +1,118 @@
+[
+    {
+        "id": "engineering_devops_architecture_aws_eks_lazy-world_lazy---startup-chunk-0",
+        "name": "Lazy - Startup.txt - Introduction",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "EKS",
+            "Lazy World"
+        ],
+        "description": "This section introduces an automation tool called 'LAZY' that aims to streamline the process of upgrading worker nodes in an Elastic Kubernetes Service (EKS) environment. Previously, upgrading worker nodes was a manual and time-consuming task for DevOps teams. The automation tool aims to eliminate this tedious process, thereby improving productivity and efficiency.",
+        "use_cases": [
+            "Automating the process of upgrading worker nodes in an EKS environment",
+            "Reducing manual effort and time spent by DevOps teams on upgrading worker nodes",
+            "Improving productivity and efficiency by eliminating tedious manual processes"
+        ],
+        "capabilities": [
+            "Automated worker node upgrades",
+            "Managed AMI support",
+            "Streamlined process",
+            "Time-saving",
+            "Productivity enhancement",
+            "Elimination of manual tasks"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_aws_eks_lazy-world_lazy---startup-chunk-1",
+        "name": "Lazy - Startup.txt - Access The Platform",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "EKS",
+            "Lazy World"
+        ],
+        "description": "This section explains the process of accessing a virtual machine called 'Titus-driver' which is used for creating lazy containers. It provides step-by-step instructions for connecting to the Titus-driver VM from different AWS accounts (STAGE, PROD, and QUBOLE) using a bastion jump box and SSH commands. The instructions involve authenticating with Duo, adding SSH keys, and connecting to the Titus-driver VM through its IP address.",
+        "use_cases": [
+            "Creating lazy containers",
+            "Accessing the Titus-driver VM from different AWS accounts",
+            "Connecting to a remote VM through a bastion jump box",
+            "Authenticating with Duo for secure access"
+        ],
+        "capabilities": [
+            "SSH access",
+            "Bastion jump box",
+            "Duo authentication",
+            "Multi-account access",
+            "Virtual machine (Titus-driver)",
+            "Lazy container creation"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_aws_eks_lazy-world_lazy---startup-chunk-2",
+        "name": "Lazy - Startup.txt - Create the container",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "EKS",
+            "Lazy World"
+        ],
+        "description": "This section provides instructions for accessing virtual machines (VMs) hosted on the Razorpay cloud infrastructure. It outlines the steps to connect to a jump box server (hagrid.razorpay.com) using SSH, and then further connect from the jump box to another VM (titus-driver) using its IP address. The instructions include the necessary syntax and examples for establishing these SSH connections.",
+        "use_cases": [
+            "Accessing virtual machines hosted on Razorpay's cloud infrastructure",
+            "Connecting to a jump box server for secure access to internal resources",
+            "Establishing SSH connections between different virtual machines",
+            "Accessing resources or services running on specific virtual machines"
+        ],
+        "capabilities": [
+            "SSH connection",
+            "Jump box access",
+            "VM access",
+            "IP-based access",
+            "User authentication",
+            "Duo authentication"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_aws_eks_lazy-world_lazy---startup-chunk-3",
+        "name": "Lazy - Startup.txt - P.S Pointers",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "EKS",
+            "Lazy World"
+        ],
+        "description": "This section explains the process of creating a dedicated Docker container called 'lazy' for each EKS (Elastic Kubernetes Service) cluster within an AWS account. The lazy container acts as an isolated environment to perform kubectl operations on a specific EKS cluster. Each AWS account has a virtual machine (VM) named 'titus-driver' that hosts these lazy containers, ensuring proper separation and abstraction between clusters. The section provides step-by-step instructions on how to create and manage these lazy containers using a script called 'get_lazy_for.sh'.",
+        "use_cases": [
+            "Isolating kubectl operations for each EKS cluster within an AWS account",
+            "Providing a dedicated environment for managing and interacting with a specific EKS cluster",
+            "Enabling auditing and version control by associating logs with the EKS cluster and the user who created the container",
+            "Facilitating cluster-specific operations, such as upgrading launch templates or worker nodes"
+        ],
+        "capabilities": [
+            "Creating dedicated Docker containers ('lazy') for each EKS cluster",
+            "Executing kubectl commands within the lazy container to manage the associated EKS cluster",
+            "Updating the kubeconfig file for the EKS cluster within the lazy container",
+            "Stopping and removing existing lazy containers",
+            "Accessing the lazy container through SSH tunneling",
+            "Providing usage examples for upgrading launch templates and worker nodes using the lazy script"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/6adc55df06ad79335a6c089bffe9f786.png",
+            "https://alpha.razorpay.com/_static/file/caefe731be49669f54039d13287292c0.png",
+            "https://alpha.razorpay.com/repo/upgrade-asgs-launch-templates-ami>",
+            "https://alpha.razorpay.com/repo/upgrade-worker-node-via-lazy>"
+        ]
+    }
+]

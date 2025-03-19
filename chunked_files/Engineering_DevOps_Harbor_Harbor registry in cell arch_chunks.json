@@ -1,0 +1,120 @@
+[
+    {
+        "id": "engineering_devops_harbor_harbor-registry-in-cell-arch-chunk-0",
+        "name": "Harbor registry in cell arch.txt - Background",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Harbor"
+        ],
+        "description": "This section explains that Harbor is being used as a container registry in the cell architecture at Razorpay. Each cell has its own Harbor registry that acts as a proxy to the central Harbor registry in Mumbai. The section provides a link to a document that compares and evaluates different container registries.",
+        "use_cases": [
+            "Container registry for individual cells in the cell architecture",
+            "Proxy to the central Harbor registry in Mumbai",
+            "Evaluation and comparison of different container registries"
+        ],
+        "capabilities": [
+            "Container registry",
+            "Proxy",
+            "Cell architecture",
+            "Central registry",
+            "Registry comparison",
+            "Registry evaluation"
+        ],
+        "references": [
+            "https://harbor.razorpay.com/",
+            "https://docs.google.com/document/d/1lXkplGTpuuQYccLbKdCEy253dcBwKf291v5w3qLnX6A/edit?tab=t.0"
+        ]
+    },
+    {
+        "id": "engineering_devops_harbor_harbor-registry-in-cell-arch-chunk-1",
+        "name": "Harbor registry in cell arch.txt - Setup",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Harbor"
+        ],
+        "description": "This section explains the setup process for Harbor registry in the cell architecture. It involves making changes to the vishnu repository, which is a tool used for creating infrastructure prerequisites on AWS. The section provides a checklist of infrastructure tasks that need to be completed before deploying Harbor registry.",
+        "use_cases": [
+            "Setting up Harbor registry in the cell architecture",
+            "Creating infrastructure prerequisites on AWS",
+            "Following a checklist for deployment"
+        ],
+        "capabilities": [
+            "Infrastructure setup",
+            "AWS integration",
+            "Deployment checklist",
+            "Vishnu repository management"
+        ],
+        "references": [
+            "https://github.com/razorpay/vishnu/tree/us-cell/cell/prod/rspl"
+        ]
+    },
+    {
+        "id": "engineering_devops_harbor_harbor-registry-in-cell-arch-chunk-2",
+        "name": "Harbor registry in cell arch.txt - Infra checklist:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Harbor"
+        ],
+        "description": "This section outlines the infrastructure components required for setting up a Harbor registry in a cell architecture. It provides details on the various AWS resources needed, such as S3 for storing image blobs, PostgreSQL RDS for storing image mapping and application data, Redis for queues, and Route53 for DNS resolution. The section also mentions the Git URLs pointing to the Terraform code for provisioning these resources in the us-cell branch of the vishnu repository.",
+        "use_cases": [
+            "Setting up a Harbor registry for storing and managing container images",
+            "Provisioning AWS resources (S3, RDS, Redis, Route53) for Harbor registry infrastructure",
+            "Referencing Git URLs for Terraform code to provision the required resources",
+            "Enabling image pull and Harbor UI access through DNS records"
+        ],
+        "capabilities": [
+            "S3 for storing image blobs",
+            "PostgreSQL RDS for storing image mapping and application data",
+            "Redis for queues",
+            "Route53 for DNS resolution",
+            "Git URLs for Terraform code",
+            "DNS records for image pull and Harbor UI access"
+        ],
+        "references": [
+            "https://github.com/razorpay/vishnu/tree/us-cell/cell/prod/rspl/us-cell-201/us-east-2/ops/s3/harbor/harbor-registry",
+            "https://github.com/razorpay/vishnu/tree/us-cell/cell/prod/rspl/us-cell-201/us-east-2/ops/iam/harbor/prod-harbor",
+            "https://github.com/razorpay/vishnu/tree/us-cell/cell/prod/rspl/us-cell-201/us-east-2/ops/rds/harbor/aurora-postgresql",
+            "https://github.com/razorpay/vishnu/tree/us-cell/cell/prod/rspl/us-cell-201/us-east-2/ops/rds/harbor/parameter-groups",
+            "https://github.com/razorpay/vishnu/tree/us-cell/cell/prod/rspl/us-cell-201/us-east-2/ops/kms/harbor",
+            "https://github.com/razorpay/vishnu/tree/us-cell/cell/prod/rspl/us-cell-201/us-east-2/ops/security_groups/harbor/rds",
+            "https://github.com/razorpay/vishnu/tree/us-cell/cell/prod/rspl/us-cell-201/us-east-2/ops/elasticache/harbor/prod-harbor",
+            "https://github.com/razorpay/vishnu/blob/us-cell/cell/prod/rspl/us-cell-201/us-east-2/ops/security_groups/harbor/redis/terragrunt.hcl",
+            "https://github.com/razorpay/vishnu/blob/us-cell/cell/prod/rspl/us-cell-201/us-east-2/ops/dns/harbor/harbor-redis/terragrunt.hcl",
+            "https://github.com/razorpay/vishnu/blob/us-cell/cell/prod/rspl/us-cell-201/global/hosted-zone/rzp.io/terragrunt.hcl",
+            "https://github.com/razorpay/vishnu/blob/us-cell/cell/prod/rspl/us-cell-201/global/dns/c.rzp.io/terragrunt.hcl",
+            "https://github.com/razorpay/vishnu/blob/us-cell/cell/prod/rspl/us-cell-201/global/dns/mum-proxy.rzp.io/terragrunt.hcl"
+        ]
+    },
+    {
+        "id": "engineering_devops_harbor_harbor-registry-in-cell-arch-chunk-3",
+        "name": "Harbor registry in cell arch.txt - ",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Harbor"
+        ],
+        "description": "This section explains the DNS records and infrastructure setup required for the Harbor registry in the Razorpay cell architecture. It provides details on the DNS records for various components like Redis, PostgreSQL, and the Harbor registry itself, along with their respective Git URLs for the Terraform code. It also mentions the steps involved in provisioning the database and making changes to the Kubernetes manifests for the Harbor deployment.",
+        "use_cases": [
+            "Setting up DNS records for Harbor registry components (Redis, PostgreSQL, Harbor registry)",
+            "Provisioning the database for Harbor registry",
+            "Updating Kubernetes manifests and Helm charts for Harbor deployment"
+        ],
+        "capabilities": [
+            "DNS record management",
+            "Database provisioning",
+            "Kubernetes manifest updates",
+            "Helm chart updates",
+            "Terraform code management",
+            "Infrastructure as Code (IaC)"
+        ],
+        "references": [
+            "https://github.com/razorpay/vishnu/blob/us-cell/cell/prod/rspl/us-cell-201/us-east-2/ops/dns/harbor/harbor-redis/terragrunt.hcl",
+            "https://github.com/razorpay/vishnu/blob/us-cell/cell/prod/rspl/us-cell-201/us-east-2/ops/rds/harbor/aurora-postgresql/terragrunt.hcl",
+            "https://github.com/razorpay/terraform-modules/blob/cell-arch/cell-modules/rds_aurora/postgresql/db_dns.tf",
+            "https://github.com/razorpay/vishnu/blob/us-cell/cell/prod/rspl/us-cell-201/global/dns/us-harbor.razorpay.com/terragrunt.hcl"
+        ]
+    }
+]

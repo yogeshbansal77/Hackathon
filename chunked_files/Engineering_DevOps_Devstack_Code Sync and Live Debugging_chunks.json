@@ -1,0 +1,108 @@
+[
+    {
+        "id": "engineering_devops_devstack_code-sync-and-live-debugging-chunk-0",
+        "name": "Code Sync and Live Debugging.txt - 1. Pre-requisites",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Devstack"
+        ],
+        "description": "This section outlines the prerequisites for using the Code Sync and Live Debugging feature. It explains that you need to make certain application-side changes in your app's repository to enable the use of the 'devspace' feature. Additionally, you must have services deployed on the 'devstack' environment with a unique label. The section also mentions that if you have run the onboarding script from the 'Devstack Onboarding' repository, the required 'devspace' binary would already be installed.",
+        "use_cases": [
+            "Enabling Code Sync and Live Debugging for an application",
+            "Setting up the 'devspace' feature for a repository",
+            "Deploying services on the 'devstack' environment",
+            "Installing the 'devspace' binary through the 'Devstack Onboarding' script"
+        ],
+        "capabilities": [
+            "Application-side changes",
+            "Devspace setup",
+            "Service deployment on devstack",
+            "Unique service labeling",
+            "Devspace binary installation",
+            "Devstack onboarding script"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/onboarding-a-new-application#setting-up-devspace",
+            "https://alpha.razorpay.com/repo/devstack-onboarding"
+        ]
+    },
+    {
+        "id": "engineering_devops_devstack_code-sync-and-live-debugging-chunk-1",
+        "name": "Code Sync and Live Debugging.txt - 2. Set up Code Sync",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Devstack"
+        ],
+        "description": "This section is likely intended to provide instructions or guidance on setting up Code Sync, which is a feature or functionality related to code collaboration and live debugging. However, the provided content is empty, so it's unclear what specific steps or information would be covered.",
+        "use_cases": [
+            "Code collaboration",
+            "Live debugging",
+            "Real-time code editing",
+            "Remote pair programming"
+        ],
+        "capabilities": [
+            "Code synchronization",
+            "Live code editing",
+            "Collaborative coding",
+            "Remote debugging",
+            "Real-time code sharing",
+            "Version control integration"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devstack_code-sync-and-live-debugging-chunk-2",
+        "name": "Code Sync and Live Debugging.txt - 2.1 Update devspace.yaml",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Devstack"
+        ],
+        "description": "This section explains how to update the 'devspace.yaml' file, typically located in the root directory of the repository you want to sync your local code with. It involves modifying the 'vars' section of the file with the appropriate values for 'devstack_label' (provided in the helmfile), 'namespace', and 'app name'. This step is necessary to ensure that your local code changes are properly synced and reflected in the development environment.",
+        "use_cases": [
+            "Syncing local code changes with the development environment",
+            "Configuring the development environment for live debugging",
+            "Setting up the necessary variables for code synchronization"
+        ],
+        "capabilities": [
+            "code sync",
+            "live debugging",
+            "devspace.yaml configuration",
+            "vars section update",
+            "devstack_label integration",
+            "namespace configuration",
+            "app name configuration"
+        ],
+        "references": [
+            "https://github.com/razorpay/terminals/blob/master/devspace.yaml"
+        ]
+    },
+    {
+        "id": "engineering_devops_devstack_code-sync-and-live-debugging-chunk-3",
+        "name": "Code Sync and Live Debugging.txt - 2.2 Run devspace",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Devstack"
+        ],
+        "description": "This section explains how to run the 'devspace' command, which is a tool used for code synchronization and live debugging. It provides instructions on navigating to the root directory of the application and running the 'devspace dev --no-warn' command. This command synchronizes the local files with the remote container in the development deployment and streams the logs to the same terminal for better debugging capabilities. It also includes a note about rebuilding vendor packages for Go applications when adding new dependencies.",
+        "use_cases": [
+            "Code synchronization between local and remote environments",
+            "Live debugging with log streaming",
+            "Rebuilding vendor packages for Go applications"
+        ],
+        "capabilities": [
+            "File synchronization",
+            "Log streaming",
+            "Remote container deployment",
+            "Vendor package rebuilding",
+            "Development environment management",
+            "Debugging support"
+        ],
+        "references": [
+            "https://github.com/razorpay/api/blob/master/devspace.yaml"
+        ]
+    }
+]

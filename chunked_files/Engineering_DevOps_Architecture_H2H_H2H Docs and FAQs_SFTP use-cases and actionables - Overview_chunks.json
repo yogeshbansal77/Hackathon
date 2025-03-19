@@ -1,0 +1,196 @@
+[
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-use-cases-and-actionables---overview-chunk-0",
+        "name": "SFTP use-cases and actionables - Overview.txt - Use-cases :vibration_mode:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section outlines two primary use cases related to SFTP (Secure File Transfer Protocol) at Razorpay. The first involves banks or merchants needing to transfer files to or from Razorpay, either manually or automatically, in which case Razorpay hosts an SFTP server on AWS Transfer Family. The second use case pertains to internal Razorpay employees accessing production files, which is now done through AWS SSO access rather than SFTP.",
+        "use_cases": [
+            "Banks or merchants transferring files to or from Razorpay",
+            "Internal Razorpay employees accessing production files"
+        ],
+        "capabilities": [
+            "SFTP automation on Jarvis",
+            "SFTP user creation",
+            "AWS Transfer Family SFTP server",
+            "S3 bucket as file system for SFTP server",
+            "AWS SSO access for internal file access",
+            "Access package management for S3 locations"
+        ],
+        "references": [
+            "https://jarvis.razorpay.com/sftpUserCreate",
+            "https://alpha.razorpay.com/repo/sftp-automation-jarvis",
+            "https://myaccess.microsoft.com/@razorpaysoftware.onmicrosoft.com#/access-packages"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-use-cases-and-actionables---overview-chunk-1",
+        "name": "SFTP use-cases and actionables - Overview.txt - 1. When bank/merchant hosts an SFTP server and they want Razorpay to push/pull files from their server",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section outlines various use cases and actionables related to SFTP (Secure File Transfer Protocol) interactions between Razorpay and banks/merchants. It covers scenarios where the bank/merchant hosts an SFTP server, and Razorpay needs to push or pull files from their server. It also discusses file processing, SFTP public key creation for Razorpay internal access, and manual file uploads on Razorpay's SFTP server for bank/merchant consumption.",
+        "use_cases": [
+            "Performing reconciliation or processing on files received via SFTP from banks/merchants",
+            "Creating SFTP public keys for Razorpay internal access to bank/merchant hosted SFTP servers",
+            "Uploading files manually on Razorpay's SFTP server for bank/merchant consumption"
+        ],
+        "capabilities": [
+            "SFTP file transfer",
+            "File processing using AWS Lambda and S3 triggers",
+            "SFTP public key generation",
+            "Manual file uploads on Razorpay's SFTP server",
+            "Access to S3 buckets and paths for SFTP file storage"
+        ],
+        "references": [
+            "https://razorpay.atlassian.net/browse/PE-7455",
+            "https://helpdeskgeek.com/how-to/how-to-generate-ssh-keys-on-windows-mac-and-linux/amp/"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-use-cases-and-actionables---overview-chunk-2",
+        "name": "SFTP use-cases and actionables - Overview.txt - 2. When bank/merchant want to push/pull files [either manually or automated fashion], and want Razorpay to host an SFTP server",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section outlines various use cases and procedures related to managing and utilizing SFTP (Secure File Transfer Protocol) servers hosted by Razorpay. It covers scenarios such as providing SFTP access to auditors for sharing settlement data files, updating expired SFTP passwords, and uploading ad-hoc files to bank/merchant SFTP servers. The section also mentions specific tools, automation processes, and commands involved in these tasks.",
+        "use_cases": [
+            "Providing SFTP access to auditors for sharing settlement data files from banks",
+            "Updating expired SFTP passwords",
+            "Uploading ad-hoc files to bank/merchant SFTP servers"
+        ],
+        "capabilities": [
+            "SFTP user creation automation",
+            "File copying from banks to auditor's SFTP user via Lambda function",
+            "Password authentication for SFTP access",
+            "File transfer to Kubernetes pods",
+            "Execution of commands within Kubernetes pods"
+        ],
+        "references": [
+            "https://jarvis.razorpay.com/sftpUserCreate",
+            "https://ap-south-1.console.aws.amazon.com/lambda/home?region=ap-south-1#/functions/sync-icici-escrow-files?tab=code",
+            "https://stackoverflow.com/questions/52407277/how-to-copy-files-from-kubernetes-pods-to-local-system"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-use-cases-and-actionables---overview-chunk-3",
+        "name": "SFTP use-cases and actionables - Overview.txt - 3. Access to files over SFTP for internal folks",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be empty or missing content. Without any text provided, it is not possible to provide a meaningful description, use cases, or capabilities related to accessing files over SFTP for internal folks.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-use-cases-and-actionables---overview-chunk-4",
+        "name": "SFTP use-cases and actionables - Overview.txt - 4. Recon for files received over SFTP",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section outlines the steps to access and retrieve authentication credentials (private key or password) stored as secrets for SFTP connections. It explains how to handle key-based and password-based authentication methods, allowing users to securely access and transfer files over SFTP.",
+        "use_cases": [
+            "Accessing private key and passphrase for key-based SFTP authentication",
+            "Retrieving password for password-based SFTP authentication",
+            "Securely transferring files over SFTP",
+            "Automating SFTP file transfers using stored credentials"
+        ],
+        "capabilities": [
+            "Key-based authentication",
+            "Password-based authentication",
+            "Secure storage of credentials as secrets",
+            "Temporary file creation for private key",
+            "Handling passphrase-protected private keys"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-use-cases-and-actionables---overview-chunk-5",
+        "name": "SFTP use-cases and actionables - Overview.txt - 5. SFTP public key creation for SFTP access on bank/merchant hosted SFTP server for RZP internal folks",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains the process of accessing an SFTP server hosted by a bank or merchant for internal Razorpay employees. It involves navigating to the /tmp directory, installing OpenSSH, and using the sftp command to log in to the server. The login can be done either with a password or a key-based authentication method. Once logged in, files can be uploaded or downloaded using the put or get commands. After completing the file transfer, the user can exit the SFTP session and the Beam pod.",
+        "use_cases": [
+            "Accessing a bank or merchant's SFTP server for internal Razorpay employees",
+            "Uploading or downloading files to/from the SFTP server",
+            "Using password-based or key-based authentication for SFTP access",
+            "Accessing the SFTP server from within a Beam pod"
+        ],
+        "capabilities": [
+            "SFTP access",
+            "Password authentication",
+            "Key-based authentication",
+            "File upload",
+            "File download",
+            "Beam pod access"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-use-cases-and-actionables---overview-chunk-6",
+        "name": "SFTP use-cases and actionables - Overview.txt - 6. SFTP adhoc file manual uploads on sftp.razorpay.com for bank/merchant to consume",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains a mechanism for manually uploading files to an S3 location when the automated reconciliation process fails due to incorrect file formats provided by merchants or banks. Developers can directly upload the correct files to the designated S3 location, either through AWS SSO access or by raising a JIRA ticket with DevOps. This manual upload will trigger a Lambda function to re-initiate the reconciliation process with the correct files.",
+        "use_cases": [
+            "Manual file uploads for reconciliation when automated process fails",
+            "Handling incorrect file formats from merchants or banks",
+            "Re-triggering reconciliation process with correct files"
+        ],
+        "capabilities": [
+            "Adhoc S3 uploads",
+            "AWS SSO access for developers",
+            "JIRA ticket creation for DevOps assistance",
+            "Lambda function triggering on new file uploads",
+            "Reconciliation process re-initiation"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-use-cases-and-actionables---overview-chunk-7",
+        "name": "SFTP use-cases and actionables - Overview.txt - 7. SFTP access for auditors",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be empty or missing content. Without any text or information provided, it is not possible to provide a meaningful description, identify use cases, or list capabilities related to SFTP access for auditors.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    }
+]

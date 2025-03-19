@@ -1,0 +1,35 @@
+[
+    {
+        "id": "engineering_backend_guides_emulate-aws-sqs-locally-in-golang-chunk-0",
+        "name": "Emulate AWS SQS Locally in GoLang.txt - Main Content",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Guides"
+        ],
+        "description": "This section explains how to emulate the AWS SQS (Simple Queue Service) locally using a Docker container. It provides step-by-step instructions for setting up the container, configuring the AWS CLI to connect to the local SQS server, sending messages to a queue, creating new queues, and connecting to the local SQS server from a Go program. This allows developers to test and experiment with SQS functionality without using the actual AWS service.",
+        "use_cases": [
+            "Testing and experimenting with SQS functionality locally",
+            "Developing and debugging applications that use SQS without incurring AWS costs",
+            "Simulating SQS behavior in a controlled environment",
+            "Learning and understanding how SQS works"
+        ],
+        "capabilities": [
+            "Emulating AWS SQS locally using a Docker container",
+            "Configuring AWS CLI to connect to the local SQS server",
+            "Sending messages to a queue",
+            "Creating new queues",
+            "Connecting to the local SQS server from a Go program",
+            "Configuring queue settings (region, prefix)"
+        ],
+        "references": [
+            "https://github.com/roribio/alpine-sqs/blob/master/opt/sqs-insight/config/config_local.json",
+            "https://github.com/roribio/alpine-sqs`",
+            "http://localhost:9324",
+            "http://localhost:9324/queue/default",
+            "http://localhost:9324",
+            "http://localhost:9324\"",
+            "http://localhost:9324/queue\""
+        ]
+    }
+]

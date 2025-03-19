@@ -1,0 +1,405 @@
+[
+    {
+        "id": "engineering_devops_architecture_coralogix_coralogix-logging-setup-in-devperf-cell-chunk-0",
+        "name": "Coralogix Logging Setup in devperf-cell.txt - Infrastructure Overview",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Coralogix"
+        ],
+        "description": "This section provides an overview of the infrastructure setup for Coralogix logging in the devperf-cell environment. It includes an architectural diagram that illustrates the various AWS components involved in the logging process. The diagram aims to give a high-level understanding of how different services interact and work together to facilitate efficient logging and monitoring.",
+        "use_cases": [
+            "Centralized logging for monitoring and troubleshooting",
+            "Integration of AWS services for streamlined logging",
+            "Visualization and analysis of log data"
+        ],
+        "capabilities": [
+            "AWS infrastructure components",
+            "Coralogix logging integration",
+            "Architectural diagram visualization"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/0beb0452cc4bd3ce4999d4b73142b767.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_coralogix_coralogix-logging-setup-in-devperf-cell-chunk-1",
+        "name": "Coralogix Logging Setup in devperf-cell.txt - AWS Components",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Coralogix"
+        ],
+        "description": "This section appears to be empty, as there is no content provided between the code block markers. Without any information, it is difficult to provide a meaningful description or infer any use cases or capabilities.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_coralogix_coralogix-logging-setup-in-devperf-cell-chunk-2",
+        "name": "Coralogix Logging Setup in devperf-cell.txt - 1. Worker Nodes Configuration",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Coralogix"
+        ],
+        "description": "This section outlines the configuration of three worker nodes (coralogix-1a, 1b, and 1c) deployed in the ap-south zone. These worker nodes are instances of the r5a.xlarge type, which is a specific Amazon EC2 instance type designed for memory-intensive applications. The section provides details about the infrastructure setup for the Coralogix logging system, likely in a specific environment or deployment.",
+        "use_cases": [
+            "Logging infrastructure setup",
+            "Deployment of worker nodes",
+            "Scaling and load balancing"
+        ],
+        "capabilities": [
+            "Worker node deployment",
+            "Instance type configuration",
+            "Availability zone selection",
+            "Infrastructure provisioning",
+            "Logging system setup"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_coralogix_coralogix-logging-setup-in-devperf-cell-chunk-3",
+        "name": "Coralogix Logging Setup in devperf-cell.txt - 2. Network Configuration",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Coralogix"
+        ],
+        "description": "This section explains the network configuration for securely sending logs from an AWS VPC (Virtual Private Cloud) to Coralogix, a third-party logging service. It describes the creation of a VPC Endpoint (VPCE), which acts as a private tunnel between the VPC and Coralogix, allowing logs to travel through AWS's private network directly to Coralogix without going over the public internet. This setup ensures secure and efficient log transmission.",
+        "use_cases": [
+            "Secure log transmission from AWS VPC to a third-party logging service (Coralogix)",
+            "Efficient log transmission through AWS's private network",
+            "Avoiding exposure of logs to the public internet",
+            "Centralized logging for applications running in an AWS VPC"
+        ],
+        "capabilities": [
+            "VPC Endpoint (VPCE) creation",
+            "Private network communication",
+            "Secure log transmission",
+            "Efficient log transmission",
+            "Integration with third-party logging services (Coralogix)"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_coralogix_coralogix-logging-setup-in-devperf-cell-chunk-4",
+        "name": "Coralogix Logging Setup in devperf-cell.txt - Kubernetes Components",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Coralogix"
+        ],
+        "description": "This section appears to be about the Kubernetes components that are relevant for logging setup with Coralogix in the devperf-cell environment. However, the section content is currently empty, so there is no specific information provided about the Kubernetes components themselves.",
+        "use_cases": [
+            "Setting up logging for Kubernetes components",
+            "Configuring Coralogix logging in a devperf-cell environment",
+            "Understanding the Kubernetes components involved in logging"
+        ],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_coralogix_coralogix-logging-setup-in-devperf-cell-chunk-5",
+        "name": "Coralogix Logging Setup in devperf-cell.txt - Core Components",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Coralogix"
+        ],
+        "description": "This section appears to be a placeholder or a heading for a section that should explain the core components of the Coralogix Logging Setup in devperf-cell.txt. However, there is no actual content provided under this section, so it is difficult to provide a meaningful description or infer any use cases or capabilities.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_coralogix_coralogix-logging-setup-in-devperf-cell-chunk-6",
+        "name": "Coralogix Logging Setup in devperf-cell.txt - 1. FluentBit DaemonSet",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Coralogix"
+        ],
+        "description": "This section explains the deployment of FluentBit, a log forwarder, as a DaemonSet in a Kubernetes cluster. A DaemonSet ensures that FluentBit runs on each worker node in the cluster. The specific version of the FluentBit image being used is 3.0.4-debug, which is hosted on the Razorpay container registry.",
+        "use_cases": [
+            "Collecting and forwarding logs from applications running on Kubernetes worker nodes",
+            "Centralized log management and monitoring",
+            "Enabling log analysis and troubleshooting for distributed applications"
+        ],
+        "capabilities": [
+            "DaemonSet deployment",
+            "Log forwarding",
+            "Container image versioning",
+            "Private container registry"
+        ],
+        "references": [
+            "http://c.rzp.io/razorpay-external/fluent/fluent-bit:3.0.4-debug"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_coralogix_coralogix-logging-setup-in-devperf-cell-chunk-7",
+        "name": "Coralogix Logging Setup in devperf-cell.txt - 2. FluentBit Aggregator (StatefulSet)",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Coralogix"
+        ],
+        "description": "This section explains the FluentBit Aggregator component, which is a StatefulSet responsible for collecting logs from individual nodes within a Kubernetes cluster. It performs zone-wise log aggregation, meaning it aggregates logs from nodes within the same Availability Zone (AZ) in AWS. The aggregators have a dedicated storage of 20GB per instance, which serves as a temporary buffer for logs before forwarding them to the Coralogix ingress endpoint. This buffer helps ensure log delivery even in case of network disruptions or temporary outages.",
+        "use_cases": [
+            "Log aggregation from individual nodes within a Kubernetes cluster",
+            "Zone-wise log aggregation for high availability and load distribution",
+            "Temporary log storage and buffering to ensure reliable log delivery"
+        ],
+        "capabilities": [
+            "FluentBit Aggregator (StatefulSet)",
+            "Zone-wise log aggregation",
+            "Availability Zone (AZ) awareness",
+            "Temporary log storage (20GB per aggregator)",
+            "Log forwarding to Coralogix ingress endpoint"
+        ],
+        "references": [
+            "http://ingress.private.coralogix.in"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_coralogix_coralogix-logging-setup-in-devperf-cell-chunk-8",
+        "name": "Coralogix Logging Setup in devperf-cell.txt - Supporting Components",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Coralogix"
+        ],
+        "description": "This section appears to be a heading or title for a subsequent section that likely explains the various components or services that support the Coralogix logging setup in the devperf-cell environment. However, based solely on the provided content, which is just the section title, it is difficult to provide a more detailed description without additional context.",
+        "use_cases": [
+            "Understanding the different components involved in the Coralogix logging setup",
+            "Identifying the supporting services or dependencies required for the logging setup",
+            "Troubleshooting or maintaining the Coralogix logging infrastructure",
+            "Documenting the architecture or design of the logging system"
+        ],
+        "capabilities": [
+            "Listing of supporting components",
+            "Explanation of component roles",
+            "Integration details",
+            "Dependency mapping",
+            "System architecture overview"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_coralogix_coralogix-logging-setup-in-devperf-cell-chunk-9",
+        "name": "Coralogix Logging Setup in devperf-cell.txt - 1. ConfigMaps",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Coralogix"
+        ],
+        "description": "This section explains the configuration of Fluent-bit, a log forwarder, and its components used for collecting and processing logs from various sources within a Kubernetes cluster. It describes two ConfigMaps: one for the main Fluent-bit configuration that collects container logs, application traces, and Apache logs, while excluding certain system logs; and another for Lua scripts used by the aggregator pods to add metadata, extract Kubernetes information, and implement PCI compliance by masking credit card numbers.",
+        "use_cases": [
+            "Centralized log collection and forwarding",
+            "Application and system log monitoring",
+            "Log processing and enrichment",
+            "PCI compliance through log masking"
+        ],
+        "capabilities": [
+            "Container log collection",
+            "Application trace and Apache log collection",
+            "Log filtering and exclusion",
+            "Log buffering and memory management",
+            "Log forwarding to aggregator service",
+            "Log metadata enrichment",
+            "Kubernetes metadata extraction",
+            "Worker name extraction from logs",
+            "Credit card number masking for PCI compliance"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_coralogix_coralogix-logging-setup-in-devperf-cell-chunk-10",
+        "name": "Coralogix Logging Setup in devperf-cell.txt - 2. Services",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Coralogix"
+        ],
+        "description": "This section explains that the 'fluent-bit-http' service filters logs from certain edge services, which could be useful for managing and analyzing log data from various components or microservices in a distributed system.",
+        "use_cases": [
+            "Log filtering",
+            "Log management for edge services",
+            "Monitoring distributed systems",
+            "Analyzing microservice logs"
+        ],
+        "capabilities": [
+            "Log filtering",
+            "Edge service log management",
+            "Distributed system monitoring",
+            "Microservice log analysis"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_coralogix_coralogix-logging-setup-in-devperf-cell-chunk-11",
+        "name": "Coralogix Logging Setup in devperf-cell.txt - 3. Security",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Coralogix"
+        ],
+        "description": "This section explains the configuration of a ConfigMap resource in Kubernetes, which is used by the aggregator StatefulSet pods. The ConfigMap sets up the forward input plugin to receive logs from worker nodes and configures storage settings for log persistence. In simpler terms, it describes how the logging system is configured to collect logs from different nodes and store them persistently.",
+        "use_cases": [
+            "Centralized log collection from worker nodes",
+            "Persistent log storage",
+            "Log forwarding and aggregation"
+        ],
+        "capabilities": [
+            "Forward input plugin configuration",
+            "Log persistence storage configuration",
+            "ConfigMap resource management",
+            "StatefulSet pod configuration"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_coralogix_coralogix-logging-setup-in-devperf-cell-chunk-12",
+        "name": "Coralogix Logging Setup in devperf-cell.txt - Implementation Approach",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Coralogix"
+        ],
+        "description": "This section outlines the approach used to configure logging in the devperf-cell environment. It explains that logs from different applications and subsystems are labeled based on their sources, and logs from certain namespaces can be filtered out.",
+        "use_cases": [
+            "Organizing logs by application and subsystem for better visibility and analysis",
+            "Filtering out irrelevant logs from specific namespaces to reduce noise and focus on relevant data",
+            "Centralizing logs from multiple sources for easier monitoring and troubleshooting",
+            "Customizing log collection and filtering based on specific requirements"
+        ],
+        "capabilities": [
+            "Application labeling",
+            "Subsystem labeling",
+            "Log source identification",
+            "Namespace filtering",
+            "Log filtering",
+            "Centralized logging"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_coralogix_coralogix-logging-setup-in-devperf-cell-chunk-13",
+        "name": "Coralogix Logging Setup in devperf-cell.txt - Reference Sources",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Coralogix"
+        ],
+        "description": "This section outlines the setup process for configuring the HTTP output plugin to send logs to Coralogix's endpoint. It also mentions dedicated services for each aggregator zone, which handle log forwarding and communication between pods.",
+        "use_cases": [
+            "Sending logs to Coralogix's endpoint",
+            "Log forwarding",
+            "Pod communication"
+        ],
+        "capabilities": [
+            "HTTP output plugin configuration",
+            "Dedicated services for aggregator zones",
+            "Log forwarding handling",
+            "Pod communication handling"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_coralogix_coralogix-logging-setup-in-devperf-cell-chunk-14",
+        "name": "Coralogix Logging Setup in devperf-cell.txt - Key Changes and Customizations",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Coralogix"
+        ],
+        "description": "This section discusses security measures implemented for the Coralogix logging setup. It mentions the creation of a dedicated ServiceAccount specifically for communication with Coralogix, which helps in isolating and controlling access to the logging service, enhancing overall security.",
+        "use_cases": [
+            "Secure communication with Coralogix logging service",
+            "Access control and isolation for logging service",
+            "Implementing least privilege principle for logging"
+        ],
+        "capabilities": [
+            "Dedicated ServiceAccount",
+            "Secure communication",
+            "Access control",
+            "Isolation",
+            "Least privilege"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_coralogix_coralogix-logging-setup-in-devperf-cell-chunk-15",
+        "name": "Coralogix Logging Setup in devperf-cell.txt - 1. Infrastructure",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Coralogix"
+        ],
+        "description": "This section discusses the secure management and communication of sensitive data, such as private keys, within the infrastructure. It highlights the importance of protecting confidential information and ensuring secure data transmission between different components or endpoints.",
+        "use_cases": [
+            "Protecting private keys and other sensitive data",
+            "Enabling secure communication between endpoints or services",
+            "Implementing secure data transfer protocols",
+            "Ensuring data privacy and integrity"
+        ],
+        "capabilities": [
+            "Secrets management",
+            "Private key protection",
+            "Secure endpoint communication",
+            "Data encryption",
+            "Access control",
+            "Secure data transfer protocols"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_coralogix_coralogix-logging-setup-in-devperf-cell-chunk-16",
+        "name": "Coralogix Logging Setup in devperf-cell.txt - 2. Logging Configuration",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Coralogix"
+        ],
+        "description": "This section outlines the implementation approach and key changes made for setting up a logging configuration in the devperf-cell environment. It discusses the reference sources used, such as configurations from other clusters and Terragrunt configurations. The section highlights the migration to the ap-south zone, optimization of instance specifications, storage allocation, and cluster naming customization. It also mentions challenges faced during FluxCD integration and the resolution through manual intervention. Additionally, it covers monitoring and management aspects, including autoscaling policies, service boundaries, log forwarding, and troubleshooting.",
+        "use_cases": [
+            "Setting up a logging configuration for the devperf-cell environment",
+            "Optimizing infrastructure and resource allocation for logging",
+            "Integrating with FluxCD for deployment management",
+            "Monitoring and managing the logging infrastructure"
+        ],
+        "capabilities": [
+            "Infrastructure migration",
+            "Instance specification optimization",
+            "Storage allocation optimization",
+            "Cluster naming customization",
+            "FluxCD integration",
+            "Autoscaling configuration",
+            "Service boundary management",
+            "Log forwarding",
+            "Troubleshooting"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/35587b0e58ebf816e1b0eb289777a32c.png",
+            "https://alpha.razorpay.com/_static/file/814433156e88ba8b17f9337c9f3701e0.png",
+            "https://drive.google.com/file/d/1TEKDOMB8Bj1X3avfQWrRSCJeKkwZCRwe/view"
+        ]
+    }
+]

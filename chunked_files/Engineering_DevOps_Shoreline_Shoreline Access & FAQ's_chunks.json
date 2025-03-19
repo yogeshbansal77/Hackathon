@@ -1,0 +1,152 @@
+[
+    {
+        "id": "engineering_devops_shoreline_shoreline-access-&-faq's-chunk-0",
+        "name": "Shoreline Access & FAQ's.txt - Shoreline Access",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Shoreline"
+        ],
+        "description": "This section explains the process of accessing the Shoreline application, which is integrated with Google's Identity Provider (IDP). There are two Google groups, 'Shoreline-Stage' and 'Shoreline-Prod', that grant access to the staging and production environments of the Shoreline app, respectively. To gain access, users need to request the IT team (@techit) in the #tech_it channel to add them to the appropriate group. Once added, users can access the Shoreline app through Google Apps, and the app will redirect them to the corresponding staging or production URL. Direct access to the endpoints is not recommended.",
+        "use_cases": [
+            "Accessing the Shoreline application in the staging environment for testing and development purposes",
+            "Accessing the Shoreline application in the production environment for live usage",
+            "Requesting access to the Shoreline application through the IT team",
+            "Accessing Shoreline notebooks with read and run permissions based on group membership"
+        ],
+        "capabilities": [
+            "Google IDP integration",
+            "Access control via Google groups",
+            "Staging and production environments",
+            "Proxy redirection to Shoreline URLs",
+            "Notebook access permissions"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/32b5178400f088de0b20e766f3b73b3b.png \"left-50\"",
+            "https://proxy.rzp.stage-sh.app.shoreline.razorpay.in>",
+            "https://proxy.rzp.prod-sh.app.shoreline.razorpay.in>"
+        ]
+    },
+    {
+        "id": "engineering_devops_shoreline_shoreline-access-&-faq's-chunk-1",
+        "name": "Shoreline Access & FAQ's.txt - Access Control",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Shoreline"
+        ],
+        "description": "This section explains how to control access and permissions for users in the Shoreline platform. It covers limiting the number of resources, metrics, actions, and Linux commands that users can view or execute. It also discusses granting 'Configure' and 'Administer' roles to users. The section differentiates between access levels for Stage and Production environments, and provides instructions on how to request temporary privileged access for specific use cases.",
+        "use_cases": [
+            "Controlling access for Stage and Production environments",
+            "Requesting temporary privileged access for Central Dashboard, Security, or other use cases",
+            "Limiting the number of resources, metrics, actions, and Linux commands accessible to users"
+        ],
+        "capabilities": [
+            "Metric view limit",
+            "Action execution limit",
+            "Linux command execution limit",
+            "Configure role",
+            "Administer role",
+            "Temporary access request process"
+        ],
+        "references": [
+            "https://docs.shoreline.io/access-control#metric-view-limit",
+            "https://docs.shoreline.io/platform/resources",
+            "https://docs.shoreline.io/access-control#action-execution-limit",
+            "https://docs.shoreline.io/platform/resources",
+            "https://docs.shoreline.io/access-control#linux-command-execution-limit",
+            "https://docs.shoreline.io/access-control#configure-role",
+            "https://docs.shoreline.io/access-control#administer-role",
+            "https://alpha.razorpay.com/_static/file/24cb1bd22314b48e263b8405e4a1986d.png",
+            "https://alpha.razorpay.com/_static/file/41d6a8ffb29cfcb37542471c940d0b9d.png",
+            "https://razorpay.slack.com/team/U03MZGN2JA2",
+            "https://alpha.razorpay.com/_static/file/f1727ba598cfb2985cc52de2aca47f82.png",
+            "https://docs.shoreline.io/access-control>"
+        ]
+    },
+    {
+        "id": "engineering_devops_shoreline_shoreline-access-&-faq's-chunk-2",
+        "name": "Shoreline Access & FAQ's.txt - Notebooks restriction",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Shoreline"
+        ],
+        "description": "This section explains a feature in Shoreline that allows users to create notebooks and restrict access to specific team members. Users can grant 'run access' to selected team members by adding them to the 'Allowed users' list for a particular notebook. It also provides instructions on how to seek help for notebook implementation, report issues with Shoreline backend or agents, and onboard notebooks to the production environment after testing in a staging environment. Additionally, it mentions the availability of predefined Kubernetes cluster resources for running commands.",
+        "use_cases": [
+            "Restricting access to notebooks for specific team members",
+            "Seeking help for notebook implementation",
+            "Reporting issues with Shoreline backend or agents",
+            "Onboarding notebooks to production after testing in staging"
+        ],
+        "capabilities": [
+            "Create notebooks",
+            "Restrict notebook access",
+            "Grant 'run access' to selected users",
+            "Seek help for notebook implementation",
+            "Report issues with Shoreline backend or agents",
+            "Onboard notebooks to production",
+            "Test notebooks in staging environment",
+            "Access predefined Kubernetes cluster resources"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/fe54e8adc28d3939bf05c92938356531.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_shoreline_shoreline-access-&-faq's-chunk-3",
+        "name": "Shoreline Access & FAQ's.txt - Stage account K8s cluster",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Shoreline"
+        ],
+        "description": "This section provides instructions on how to access and manage a Kubernetes (K8s) cluster for a staging environment, specifically the 'stage_white_eks' cluster. It includes screenshots that guide the user through the process of executing commands and viewing the output related to the staging cluster.",
+        "use_cases": [
+            "Managing a Kubernetes cluster for a staging environment",
+            "Accessing and executing commands on the 'stage_white_eks' cluster",
+            "Viewing the output of executed commands related to the staging cluster"
+        ],
+        "capabilities": [
+            "Kubernetes cluster management",
+            "Staging environment access",
+            "Command execution",
+            "Output viewing",
+            "Visual guidance with screenshots"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/52586ca09e6356bb43acc426da53bd2a.png",
+            "https://alpha.razorpay.com/_static/file/7953d45fece8a68c61951991407aedd4.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_shoreline_shoreline-access-&-faq's-chunk-4",
+        "name": "Shoreline Access & FAQ's.txt - Production K8s clusters resources",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Shoreline"
+        ],
+        "description": "This section provides information about Kubernetes (K8s) clusters used in production environments at Razorpay, as well as details on integrating with Shoreline, a tool for executing notebooks and queries. It explains how to link Shoreline notebooks with Alertmanager alerts, execute Prometheus and Coralogix queries within Shoreline, and troubleshoot common issues related to query execution and data retrieval.",
+        "use_cases": [
+            "Monitoring and managing production K8s clusters",
+            "Executing Prometheus queries within Shoreline notebooks",
+            "Querying Coralogix logs from Shoreline notebooks",
+            "Automating notebook execution based on Alertmanager alerts"
+        ],
+        "capabilities": [
+            "List of production K8s cluster resources",
+            "Linking Shoreline notebooks with Alertmanager alerts",
+            "Executing Prometheus queries in Shoreline",
+            "Executing Coralogix queries in Shoreline",
+            "Troubleshooting Prometheus and Coralogix query issues",
+            "Retrieving Coralogix tokens from Kubernetes secrets"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/41f4ee111ab8dff45196c64a171b5102.png",
+            "https://alpha.razorpay.com/_static/file/f7c7490148b32552a147c9d7ba07d3d9.png",
+            "https://alpha.razorpay.com/_static/file/a4208d6eb31b64b289c23f22aa8e29f3.png",
+            "http://ng-api-http.app.coralogix.in/"
+        ]
+    }
+]

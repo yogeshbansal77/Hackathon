@@ -1,0 +1,40 @@
+[
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_metrics_sentry_useful-links-chunk-0",
+        "name": "Useful Links.txt - Useful Links",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Metrics",
+            "Sentry"
+        ],
+        "description": "This section provides a list of useful links related to Sentry, a popular application monitoring and error tracking platform. The links cover topics such as account management, single sign-on (SSO) configuration, developer resources, and integration with other services like Azure Active Directory. These links serve as a reference for users and developers working with Sentry, providing guidance on setting up and using various features of the platform.",
+        "use_cases": [
+            "Managing user accounts and team membership in Sentry",
+            "Configuring Single Sign-On (SSO) with SAML2 identity providers",
+            "Integrating Sentry with Azure Active Directory",
+            "Accessing developer resources and documentation for Sentry"
+        ],
+        "capabilities": [
+            "Account management",
+            "Team membership",
+            "Single Sign-On (SSO)",
+            "SAML2 identity provider integration",
+            "Azure Active Directory integration",
+            "Developer resources",
+            "Documentation"
+        ],
+        "references": [
+            "https://docs.sentry.io/product/accounts/membership/>",
+            "https://develop.sentry.dev/>",
+            "https://docs.sentry.io/product/sentry-basics/>",
+            "https://docs.sentry.io/product/accounts/sso/#saml2-identity-provider>",
+            "https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/sentry-tutorial>",
+            "https://github.com/getsentry/sentry-auth-saml2>",
+            "https://github.com/getsentry/sentry-auth-saml2/issues/35#issuecomment-435231635>"
+        ]
+    }
+]

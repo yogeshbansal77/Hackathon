@@ -1,0 +1,118 @@
+[
+    {
+        "id": "engineering_devops_processes_incident-management_sop:-adding-central-dashboard-alerts-chunk-0",
+        "name": "SOP: Adding central dashboard alerts.txt - For adding alerts to go via the IM flow followed for the central dashboard",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section explains the process of adding new alert rules for monitoring the central dashboard of the Razorpay system. It provides a link to the GitHub repository where the existing alert rules are stored and instructs the user to create a pull request (PR) by adding a new alert rule block. The provided code block is an example of an alert rule that monitors the success rate of UPI transactions and triggers an alert if the rate drops below 20% during specific hours.",
+        "use_cases": [
+            "Monitoring the central dashboard of the Razorpay system",
+            "Adding new alert rules for specific metrics or conditions",
+            "Tracking the success rate of UPI transactions",
+            "Triggering alerts based on predefined thresholds and time windows"
+        ],
+        "capabilities": [
+            "Centralized alert rule management",
+            "Version control for alert rules",
+            "Monitoring specific metrics (e.g., API payment authorized, API payment created)",
+            "Filtering metrics by job, mode, method, and transaction type",
+            "Defining alert conditions using PromQL expressions",
+            "Specifying time windows for alert conditions"
+        ],
+        "references": [
+            "https://github.com/razorpay/alert-rules",
+            "https://github.com/razorpay/alert-rules/blob/master/rules/prod-rules/central_dashboard_deviation_rules.yaml>__"
+        ]
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_sop:-adding-central-dashboard-alerts-chunk-1",
+        "name": "SOP: Adding central dashboard alerts.txt - Example alert rule",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section provides an example configuration for setting up an alert rule in a monitoring system. The rule is designed to trigger an alert when the UPI (Unified Payments Interface) success rate drops below a certain threshold for a specified duration. The alert will be sent to a designated Slack channel, and relevant stakeholders will be notified. This configuration helps ensure timely detection and resolution of issues related to UPI payment transactions, minimizing potential impact on merchants and customers.",
+        "use_cases": [
+            "Monitoring UPI success rate",
+            "Alerting on critical UPI performance degradation",
+            "Notifying relevant teams via Slack for incident response",
+            "Providing visibility into potential merchant-facing issues"
+        ],
+        "capabilities": [
+            "Alert rule configuration",
+            "Threshold-based alerting",
+            "Time-based alert evaluation",
+            "Labeling and categorization",
+            "Slack integration",
+            "Impact assessment"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_sop:-adding-central-dashboard-alerts-chunk-2",
+        "name": "SOP: Adding central dashboard alerts.txt - Fields to Change for your alert",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section explains the fields that need to be modified when creating a new alert for the central dashboard. It provides guidelines on how to set the alert name, expression, business unit, pod, service name, impact description, and Slack notification channel. The alert name should follow a specific format, and the service name should be unique to avoid conflicts with existing services. The section also mentions integrating the alert with PagerDuty and configuring the Zenduty escalation policy and bot.",
+        "use_cases": [
+            "Creating a new alert for the central dashboard",
+            "Integrating the alert with PagerDuty",
+            "Configuring the Zenduty escalation policy and bot"
+        ],
+        "capabilities": [
+            "alert_name_format",
+            "expression_configuration",
+            "business_unit_specification",
+            "pod_specification",
+            "service_name_uniqueness",
+            "impact_description",
+            "slack_notification_channel",
+            "pagerduty_integration",
+            "zenduty_escalation_policy_configuration",
+            "zenduty_bot_configuration"
+        ],
+        "references": [
+            "https://github.com/razorpay/alert-rules/pull/998",
+            "https://vajra.razorpay.com/d/LA4p4o77k/central-dashboard?orgId=1"
+        ]
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_sop:-adding-central-dashboard-alerts-chunk-3",
+        "name": "SOP: Adding central dashboard alerts.txt - Configure Zenduty escalation Policy & Bot",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section outlines the steps to configure the Zenduty escalation policy and bot for a new alert. It involves creating an escalation policy on Zenduty for the application owners, mapping the alert service name to the escalation policy ID in a GitHub repository, running a plan to deploy the changes, and finally adding the alert details to a central sheet maintained by the IM team.",
+        "use_cases": [
+            "Configuring escalation policies for new alerts",
+            "Mapping alert service names to escalation policies",
+            "Deploying changes to the incident bot configuration",
+            "Maintaining a central repository of alerts"
+        ],
+        "capabilities": [
+            "Creating escalation policies on Zenduty",
+            "Mapping service names to escalation policy IDs",
+            "Running deployment plans",
+            "Updating configuration in a GitHub repository",
+            "Maintaining a central alert sheet"
+        ],
+        "references": [
+            "https://github.com/razorpay/kube-manifests/blob/master/ops/devops-incident-bot/values.yaml#L15",
+            "https://deploy.razorpay.com/#/applications/devops-incident-bot/executions?pipeline=PROD%20-%20Update%20ConfigMap",
+            "https://docs.google.com/spreadsheets/d/1bmhVFNK7PCGmXTiXh1q_D1ymfotPVv5h_tMaCWZkmeM/edit#gid=247253967"
+        ]
+    }
+]

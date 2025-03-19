@@ -1,0 +1,619 @@
+[
+    {
+        "id": "engineering_devops_processes_access-management_aws_aws-identity-center-sso-chunk-0",
+        "name": "AWS Identity Center SSO.txt - Groups",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management",
+            "AWS"
+        ],
+        "description": "This section appears to be a table header that outlines the columns for managing groups and their access permissions within AWS Identity Center SSO. It suggests that the table will list various groups, the type of access they have (either direct membership or via a Privileged Identity Management group), the approvers required for granting access, the AWS account number, and the account name.",
+        "use_cases": [
+            "Managing access groups and their permissions within AWS Identity Center SSO",
+            "Defining approvers for granting access to groups",
+            "Tracking AWS account numbers and names associated with access groups"
+        ],
+        "capabilities": [
+            "Group management",
+            "Access control",
+            "Privileged Identity Management (PIM) group integration",
+            "Multi-level approval process",
+            "Account mapping"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_access-management_aws_aws-identity-center-sso-chunk-1",
+        "name": "AWS Identity Center SSO.txt - AWS__533267024078_admin",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management",
+            "AWS"
+        ],
+        "description": "This section appears to be a table row containing information related to an AWS Identity and Access Management (IAM) role or user account named 'AWS__533267024078_admin'. It provides details such as the account name, access type (Direct Access), email addresses of individuals associated with the account, the AWS account ID (533267024078), and a resource or environment name ('upiswitch-prod-axis'). This information is likely used for managing access and permissions within an AWS environment.",
+        "use_cases": [
+            "Managing access and permissions for AWS resources",
+            "Granting or revoking access to specific AWS services or environments",
+            "Auditing and tracking access to AWS resources",
+            "Implementing role-based access control (RBAC) in an AWS environment"
+        ],
+        "capabilities": [
+            "AWS Identity and Access Management (IAM)",
+            "Role-based access control (RBAC)",
+            "Access management for AWS resources",
+            "User and account management",
+            "Environment or resource-specific access control"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_access-management_aws_aws-identity-center-sso-chunk-2",
+        "name": "AWS Identity Center SSO.txt - AWS_019662644023_developer",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management",
+            "AWS"
+        ],
+        "description": "This section appears to be a table row containing information about an AWS Identity and Access Management (IAM) group named 'AWS_019662644023_developer'. It lists the group name, type (PIM Group), email addresses of two members (Abhishek Singh and Sreenadh D S), an AWS account ID (19662644023), and a value 'curlec' which could be a reference or identifier.",
+        "use_cases": [
+            "Managing access and permissions for a specific group of developers within an AWS account",
+            "Tracking and auditing AWS resource usage by a particular team or project",
+            "Implementing role-based access control (RBAC) for AWS resources",
+            "Facilitating collaboration and resource sharing among team members"
+        ],
+        "capabilities": [
+            "IAM group management",
+            "User and group membership",
+            "Email address association",
+            "Account ID association",
+            "Identifier or reference tracking"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_access-management_aws_aws-identity-center-sso-chunk-3",
+        "name": "AWS Identity Center SSO.txt - AWS_074624632167_read",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management",
+            "AWS"
+        ],
+        "description": "This section appears to be a table row or entry that describes an AWS Identity and Access Management (IAM) role or group named 'AWS_074624632167_read'. It is a 'PIM Group', which likely refers to a Privileged Identity Management group, granting specific permissions or access rights. The group is associated with two individuals, Abhishek Singh and Sreenadh D S, who are likely members or owners of this group. The entry also includes an AWS account ID (74624632167) and a reference to 'RZPX Prod', which could be a production environment or resource.",
+        "use_cases": [
+            "Managing and controlling privileged access to AWS resources",
+            "Implementing least privilege access principles for sensitive operations",
+            "Auditing and monitoring privileged activities within an AWS account"
+        ],
+        "capabilities": [
+            "Privileged Identity Management (PIM)",
+            "AWS Identity and Access Management (IAM) roles and groups",
+            "User and group association",
+            "Account and environment mapping"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_access-management_aws_aws-identity-center-sso-chunk-4",
+        "name": "AWS Identity Center SSO.txt - AWS_087514423043_dev_rds_read",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management",
+            "AWS"
+        ],
+        "description": "This section appears to be a table row or entry related to an AWS Identity and Access Management (IAM) group called 'AWS_087514423043_dev_rds_read'. It seems to be associated with a Privileged Identity Management (PIM) group, and lists two individuals (Abhishek Singh and Sreenadh D S) who are likely members or owners of this group. The group is linked to an AWS account with the ID '87514423043' and is related to a 'Wallet Prod' environment, which could be a production environment for a wallet application or service.",
+        "use_cases": [
+            "Managing access to AWS resources (e.g., RDS databases) in a development environment",
+            "Implementing privileged access management for sensitive AWS resources",
+            "Granting and revoking temporary elevated permissions for specific tasks or operations"
+        ],
+        "capabilities": [
+            "IAM group management",
+            "Privileged Identity Management (PIM)",
+            "Access control for AWS resources",
+            "User and group permissions",
+            "Environment-specific access configurations"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_access-management_aws_aws-identity-center-sso-chunk-5",
+        "name": "AWS Identity Center SSO.txt - AWS_098596092361_admin",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management",
+            "AWS"
+        ],
+        "description": "This section appears to be describing an AWS Identity and Access Management (IAM) role or user account named 'AWS_098596092361_admin' with direct access privileges. It lists the email addresses of two individuals (Syed Mudassir Hasan Razvi and Simon Rajan) associated with this account, along with an account ID (98596092361) and a reference to 'dev-perf', which could be an environment or project name.",
+        "use_cases": [
+            "Managing access and permissions for AWS resources",
+            "Granting direct access to specific individuals or roles",
+            "Tracking and auditing access to AWS resources",
+            "Separating environments or projects (e.g., 'dev-perf')"
+        ],
+        "capabilities": [
+            "IAM role or user account management",
+            "Direct access privileges",
+            "Association with email addresses or individuals",
+            "Account ID tracking",
+            "Environment or project separation"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_access-management_aws_aws-identity-center-sso-chunk-6",
+        "name": "AWS Identity Center SSO.txt - AWS_101860328116_admin",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management",
+            "AWS"
+        ],
+        "description": "This section appears to be describing an AWS Identity and Access Management (IAM) role or user account named 'AWS_101860328116_admin' that has direct access privileges. It provides the email addresses of two individuals (Syed Mudassir Hasan Razvi and Simon Rajan) associated with this account, along with the AWS account ID (101860328116) and a description indicating that it is a 'RSPL Stage Account'.",
+        "use_cases": [
+            "Managing access and permissions for an AWS account",
+            "Granting direct access to specific individuals or roles",
+            "Tracking and auditing AWS account usage and activities",
+            "Separating production and staging/development environments"
+        ],
+        "capabilities": [
+            "IAM role or user account management",
+            "Direct access privileges",
+            "Email address association",
+            "AWS account ID tracking",
+            "Account description or labeling",
+            "Staging/development environment separation"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_access-management_aws_aws-identity-center-sso-chunk-7",
+        "name": "AWS Identity Center SSO.txt - AWS_141592612890_admin",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management",
+            "AWS"
+        ],
+        "description": "This section appears to be a table row or entry that provides information about an AWS account or role named 'AWS_141592612890_admin'. It seems to be related to an organization called 'RSPL Prod' and lists two individuals, Syed Mudassir Hasan Razvi and Simon Rajan, who have direct access to this account or role. The account or role ID is provided as '141592612890'.",
+        "use_cases": [
+            "Managing access and permissions for an AWS account or role",
+            "Tracking and documenting AWS account or role information",
+            "Providing direct access to specific individuals for an AWS account or role"
+        ],
+        "capabilities": [
+            "AWS account or role management",
+            "Access control and permissions",
+            "User or personnel association",
+            "Account or role identification",
+            "Organization or project association"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_access-management_aws_aws-identity-center-sso-chunk-8",
+        "name": "AWS Identity Center SSO.txt - AWS_141592612890_read",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management",
+            "AWS"
+        ],
+        "description": "This section appears to be describing an AWS Identity and Access Management (IAM) policy or role named 'AWS_141592612890_read' that grants read-only access to an AWS account with the ID 141592612890. It is associated with a 'PIM Group' and lists two individuals (Syed Mudassir Hasan Razvi and Sreenadh D S) who are likely granted this access. The account is labeled as 'RSPL Prod', suggesting it is a production account for a company named RSPL.",
+        "use_cases": [
+            "Granting read-only access to specific individuals or groups for auditing or monitoring purposes",
+            "Providing limited access to production environments for troubleshooting or analysis",
+            "Implementing least-privilege access controls for enhanced security",
+            "Facilitating collaboration or knowledge sharing across teams or departments"
+        ],
+        "capabilities": [
+            "IAM policy or role management",
+            "Access control and permissions",
+            "User and group management",
+            "Account and environment labeling",
+            "Email integration"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_access-management_aws_aws-identity-center-sso-chunk-9",
+        "name": "AWS Identity Center SSO.txt - AWS_164294033593_admin",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management",
+            "AWS"
+        ],
+        "description": "This section appears to be a table row or entry that provides information about an AWS Identity and Access Management (IAM) role or user account named 'AWS_164294033593_admin'. It indicates that this account has direct access privileges, and lists two email addresses associated with it, likely belonging to individuals named Syed Mudassir Hasan Razvi and Simon Rajan. The account is associated with the AWS account ID 164294033593, which seems to be related to a production environment called 'DataOrg Prod'.",
+        "use_cases": [
+            "Managing access and permissions for AWS resources",
+            "Granting direct access to specific individuals or roles",
+            "Separating production and non-production environments",
+            "Tracking and auditing resource access and usage"
+        ],
+        "capabilities": [
+            "IAM role or user account management",
+            "Direct access privileges",
+            "Email address association",
+            "AWS account ID association",
+            "Environment or organization labeling"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_access-management_aws_aws-identity-center-sso-chunk-10",
+        "name": "AWS Identity Center SSO.txt - AWS_192870797902_admin",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management",
+            "AWS"
+        ],
+        "description": "This section appears to be a table row or entry that provides information about an AWS account or role named 'AWS_192870797902_admin'. It indicates that this account or role has direct access privileges, and lists two individuals (Abhishek Singh and Sreenadh D S) along with their email addresses, who are likely associated with or have access to this account or role. Additionally, it mentions the AWS account ID (192870797902) and a label 'Ezetap Prod', which could be a reference to a specific environment or application.",
+        "use_cases": [
+            "Managing access and permissions for an AWS account or role",
+            "Tracking and documenting account or role ownership and associated individuals",
+            "Identifying the specific AWS account ID and environment or application context"
+        ],
+        "capabilities": [
+            "Direct Access",
+            "Account or Role Management",
+            "User Association",
+            "Email Contact Information",
+            "Account ID Identification",
+            "Environment or Application Labeling"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_access-management_aws_aws-identity-center-sso-chunk-11",
+        "name": "AWS Identity Center SSO.txt - AWS_192870797902_DE",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management",
+            "AWS"
+        ],
+        "description": "This section appears to be a table row containing information about an AWS account or role named 'AWS_192870797902_DE'. It is associated with a 'PIM Group' and lists two individuals (Abhishek Singh and Sreenadh D S) along with their email addresses. The account ID is provided as '192870797902', and it is labeled as 'Ezetap Prod', which could indicate that it is related to a production environment for a company called Ezetap.",
+        "use_cases": [
+            "Managing access and permissions for an AWS account or role",
+            "Tracking and documenting AWS account/role details and associated personnel",
+            "Organizing and categorizing AWS accounts/roles based on their purpose or environment (e.g., production, development)"
+        ],
+        "capabilities": [
+            "AWS account/role management",
+            "Access control and permissions",
+            "Documentation and tracking",
+            "Categorization and organization"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_access-management_aws_aws-identity-center-sso-chunk-12",
+        "name": "AWS Identity Center SSO.txt - AWS_19662644023_admin",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management",
+            "AWS"
+        ],
+        "description": "This section appears to be a table row containing information about an AWS Identity and Access Management (IAM) user or role named 'AWS_19662644023_admin'. It provides details such as the user's email addresses for direct access, the associated AWS account ID (19662644023), and a reference name 'curlec'. This information is likely used for managing access and permissions within an AWS environment.",
+        "use_cases": [
+            "Managing AWS IAM users or roles",
+            "Controlling access to AWS resources",
+            "Auditing and tracking AWS account activities",
+            "Collaborating with team members on AWS resources"
+        ],
+        "capabilities": [
+            "IAM user or role management",
+            "Direct access email addresses",
+            "AWS account ID association",
+            "Reference name or alias"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_access-management_aws_aws-identity-center-sso-chunk-13",
+        "name": "AWS Identity Center SSO.txt - AWS_211125606938_admin",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management",
+            "AWS"
+        ],
+        "description": "This section appears to be a table row containing information about an AWS Identity and Access Management (IAM) role or user account named 'AWS_211125606938_admin'. It provides details such as the account name, access type (Direct Access), email addresses associated with the account, the AWS account ID (211125606938), and a resource name ('razorpay-cell-poc'). This information is likely used for managing access and permissions within an AWS environment.",
+        "use_cases": [
+            "Managing access and permissions for AWS resources",
+            "Granting or revoking access to specific AWS services or resources",
+            "Auditing and monitoring AWS account activity",
+            "Implementing role-based access control (RBAC) in an AWS environment"
+        ],
+        "capabilities": [
+            "AWS Identity and Access Management (IAM)",
+            "Role-based access control (RBAC)",
+            "Access management",
+            "User and account management",
+            "Resource management",
+            "Auditing and monitoring"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_access-management_aws_aws-identity-center-sso-chunk-14",
+        "name": "AWS Identity Center SSO.txt - AWS_252196822118_admin",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management",
+            "AWS"
+        ],
+        "description": "This section appears to be a table row containing information about an AWS Identity and Access Management (IAM) role named 'AWS_252196822118_admin'. It provides details such as the role name, access type (Direct Access), email addresses of users associated with the role, the AWS account ID (252196822118), and a resource name (rzp-cloudtelephony). This role likely grants administrative privileges to the specified users within the given AWS account.",
+        "use_cases": [
+            "Granting administrative access to specific users within an AWS account",
+            "Managing and controlling access to AWS resources and services",
+            "Implementing role-based access control (RBAC) for AWS resources",
+            "Auditing and monitoring user activities within an AWS account"
+        ],
+        "capabilities": [
+            "AWS Identity and Access Management (IAM) roles",
+            "Direct Access",
+            "User association with IAM roles",
+            "AWS account management",
+            "Resource management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_access-management_aws_aws-identity-center-sso-chunk-15",
+        "name": "AWS Identity Center SSO.txt - AWS_257915852743_admin",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management",
+            "AWS"
+        ],
+        "description": "This section appears to be describing an AWS Identity and Access Management (IAM) role or user account named 'AWS_257915852743_admin' with direct access privileges. It provides the email addresses of two individuals (Syed Mudassir Hasan Razvi and Simon Rajan) associated with this account, along with an AWS account ID (257915852743) and a note indicating that this is a 'RSPL POC' (possibly a proof of concept for Razorpay Solutions Private Limited).",
+        "use_cases": [
+            "Managing access and permissions for an AWS account",
+            "Granting direct access to specific individuals or roles",
+            "Tracking and auditing AWS account usage and activities",
+            "Setting up a proof of concept or testing environment for an organization"
+        ],
+        "capabilities": [
+            "AWS Identity and Access Management (IAM)",
+            "Direct access privileges",
+            "User or role management",
+            "Account ID association",
+            "Email address association",
+            "Organizational or project notes"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_access-management_aws_aws-identity-center-sso-chunk-16",
+        "name": "AWS Identity Center SSO.txt - AWS_365792603090_admin",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management",
+            "AWS"
+        ],
+        "description": "This section appears to be describing an AWS Identity and Access Management (IAM) role or user account named 'AWS_365792603090_admin' that has been granted direct access privileges. The account is associated with the email addresses ashwath.k@razorpay.com and ankit.anurag@razorpay.com, likely belonging to individuals named Ashwath Kumar and Ankit Anurag respectively. The account is linked to the AWS account ID 365792603090 and the 'razorpay-it' organization or group.",
+        "use_cases": [
+            "Granting direct access to an AWS account or resources for specific individuals or roles",
+            "Managing access and permissions for AWS resources within an organization or company",
+            "Associating email addresses or user identities with AWS IAM roles or accounts",
+            "Organizing and grouping AWS resources or accounts under specific organizational units or groups"
+        ],
+        "capabilities": [
+            "AWS Identity and Access Management (IAM)",
+            "Direct access privileges",
+            "User account or role management",
+            "Email address association",
+            "AWS account ID",
+            "Organizational unit or group association"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_access-management_aws_aws-identity-center-sso-chunk-17",
+        "name": "AWS Identity Center SSO.txt - AWS_373612835807_admin",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management",
+            "AWS"
+        ],
+        "description": "This section appears to be describing an AWS Identity and Access Management (IAM) role or user account named 'AWS_373612835807_admin' with direct access privileges. It lists two email addresses associated with this account, likely belonging to individuals named Syed Mudassir Hasan Razvi and Simon Rajan. The account is linked to the AWS account ID 373612835807, which is labeled as 'Razorpay Datarobot'.",
+        "use_cases": [
+            "Managing access and permissions for AWS resources",
+            "Granting direct access to specific individuals or roles",
+            "Auditing and tracking access to AWS services and resources",
+            "Implementing role-based access control (RBAC) for AWS accounts"
+        ],
+        "capabilities": [
+            "AWS Identity and Access Management (IAM)",
+            "User and role management",
+            "Access control policies",
+            "Email address association",
+            "AWS account ID mapping",
+            "Resource labeling or tagging"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_access-management_aws_aws-identity-center-sso-chunk-18",
+        "name": "AWS Identity Center SSO.txt - AWS_373612835807_read",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management",
+            "AWS"
+        ],
+        "description": "This section appears to be a table row or entry that defines an AWS Identity and Access Management (IAM) role or permission set named 'AWS_373612835807_read'. It is associated with a 'PIM Group' and lists two individuals (Syed Mudassir Hasan Razvi and Simon Rajan) who are likely granted access or permissions through this role. The role is specific to the AWS account ID '373612835807', which belongs to the organization 'Razorpay Datarobot'.",
+        "use_cases": [
+            "Granting specific AWS permissions or access to individuals or groups within an organization",
+            "Managing and controlling access to AWS resources and services",
+            "Implementing role-based access control (RBAC) for AWS accounts",
+            "Auditing and tracking AWS access and permissions"
+        ],
+        "capabilities": [
+            "AWS Identity and Access Management (IAM)",
+            "Role-based access control (RBAC)",
+            "Permissions management",
+            "User and group access assignments",
+            "Account-specific access control",
+            "Organizational access governance"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_access-management_aws_aws-identity-center-sso-chunk-19",
+        "name": "AWS Identity Center SSO.txt - AWS_381491927598_admin",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management",
+            "AWS"
+        ],
+        "description": "This section appears to be describing an AWS Identity and Access Management (IAM) role or user account named 'AWS_381491927598_admin' with direct access privileges. It provides information about the account owner (Syed Mudassir Hasan Razvi and Simon Rajan), the associated AWS account ID (381491927598), and a note indicating that it is related to the 'Prod Singapore Cell', which could be a specific production environment or infrastructure setup.",
+        "use_cases": [
+            "Managing and administering AWS resources and services for a specific production environment or infrastructure setup (Prod Singapore Cell)",
+            "Granting direct access and administrative privileges to specific individuals (Syed Mudassir Hasan Razvi and Simon Rajan) for managing AWS resources",
+            "Controlling and auditing access to AWS services and resources through IAM roles or user accounts"
+        ],
+        "capabilities": [
+            "IAM role or user account management",
+            "Direct access privileges",
+            "Association with a specific AWS account ID",
+            "Mapping to individuals or personnel",
+            "Categorization or grouping of resources (Prod Singapore Cell)"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_access-management_aws_aws-identity-center-sso-chunk-20",
+        "name": "AWS Identity Center SSO.txt - AWS_381491927598_read",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management",
+            "AWS"
+        ],
+        "description": "This section appears to be describing an AWS Identity and Access Management (IAM) policy or role named 'AWS_381491927598_read' that grants read-only access to a specific AWS account (381491927598) for a group called 'PIM Group'. The policy or role is assigned to two individuals, Syed Mudassir Hasan Razvi and Simon Rajan, who are likely employees or contractors of a company called Razorpay. The account is associated with a 'Prod Singapore Cell', which may refer to a production environment or infrastructure located in Singapore.",
+        "use_cases": [
+            "Granting read-only access to specific AWS resources or services for auditing or monitoring purposes",
+            "Providing limited access to AWS resources for contractors or third-party vendors",
+            "Implementing least-privilege access controls for different roles or groups within an organization",
+            "Separating production environments or infrastructure across different AWS accounts or regions"
+        ],
+        "capabilities": [
+            "AWS Identity and Access Management (IAM) policies or roles",
+            "Read-only access control",
+            "Group-based access management",
+            "Multi-account AWS environment",
+            "Regional or location-specific infrastructure"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_access-management_aws_aws-identity-center-sso-chunk-21",
+        "name": "AWS Identity Center SSO.txt - AWS_459164390929_admin",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management",
+            "AWS"
+        ],
+        "description": "This section appears to be a table row containing information about an AWS account or role named 'AWS_459164390929_admin'. It provides details such as the account ID (459164390929), the access type (Direct Access), and the email addresses of two individuals (Abhishek Singh and Sreenadh D S) who seem to have access to this account or role. The last column suggests that this account or role is related to a production environment for 'rzpx airtel upiswitch'.",
+        "use_cases": [
+            "Managing access to an AWS account or role",
+            "Tracking account or role details and associated personnel",
+            "Maintaining information related to production environments"
+        ],
+        "capabilities": [
+            "Account or role management",
+            "Access control",
+            "User association",
+            "Environment tracking",
+            "Tabular data representation"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_access-management_aws_aws-identity-center-sso-chunk-22",
+        "name": "AWS Identity Center SSO.txt - AWS_478971466103_admin",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management",
+            "AWS"
+        ],
+        "description": "This section appears to be a table listing various AWS accounts and their associated access permissions, account IDs, and account names or purposes. It seems to be related to managing access and permissions for different AWS accounts within an organization, likely using AWS Identity Center SSO (Single Sign-On) for centralized access control. The table includes details such as account names or purposes (e.g., 'Wallet Prod', 'Security Production'), account IDs, access types (e.g., 'Direct Access', 'PIM Group'), and email addresses of individuals or groups granted access.",
+        "use_cases": [
+            "Centralized access management for multiple AWS accounts within an organization",
+            "Granting and controlling access permissions for different teams or projects",
+            "Maintaining a record of account details, access types, and responsible individuals or groups",
+            "Facilitating secure access to AWS resources through AWS Identity Center SSO"
+        ],
+        "capabilities": [
+            "Direct Access",
+            "PIM Group",
+            "Account ID",
+            "Account Name or Purpose",
+            "Email Addresses",
+            "Access Control"
+        ],
+        "references": [
+            "https://docs.google.com/document/d/13zRHQDUwYLo1DNi8x8MtqnI2L00XDy9ghhXGml_Ar_w/edit#heading=h.z0plsiwtir9v",
+            "https://docs.google.com/document/d/13zRHQDUwYLo1DNi8x8MtqnI2L00XDy9ghhXGml_Ar_w/edit#heading=h.slzfex8jfa3b",
+            "https://docs.google.com/document/d/13zRHQDUwYLo1DNi8x8MtqnI2L00XDy9ghhXGml_Ar_w/edit#heading=h.lxx0g8gglnz",
+            "https://docs.google.com/document/d/13zRHQDUwYLo1DNi8x8MtqnI2L00XDy9ghhXGml_Ar_w/edit#heading=h.4qlauldorlvp",
+            "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcqdUmlsmEI68c0WMBdABzZ22tCabE5oe5qlYb1wbDN2K5ajiNHxrOOOVh3FFa34tQw_2WRPG8UJyaFusUkng-Vcz70PeOSrZlYFfNfI8x4FduLkQzG1AmsPCegHDl2cGvnbqEzQqP8tqkksX4lRBsy37qM?key=sDkedTDFp683V71enKCoWg",
+            "https://lh7-rt.googleusercontent.com/docsz/AD_4nXd6PWdooZF6i7gKtybf7V32K4TjHNab16sbeoWtw-4LRqP1fXj_j9GZlLwGroZQEZI9gUsB39wnA-HtPhBhzrcGOook5-xhSvwdYQUVNmxBridHWX01614ubhEN9KdDfucQIK0jTuUnBMOO57Y-DS0iQlkE?key=sDkedTDFp683V71enKCoWg",
+            "https://d-9f6706151a.awsapps.com/start/#",
+            "https://lh7-rt.googleusercontent.com/docsz/AD_4nXf8y38EFSpox-p1Cw8EWtzQm0izLXUNvh6HOZoqpnlSepZPqM_lBtwfUhXy6NYKcDHwBVY4FiFIAO_jymkchi3_LUnWPhe7GxSIV-HuR1OSKw8M1WJxI1T652RuVizLjm5bNONZ1eDX4k2sz-TInOgI3Djk?key=sDkedTDFp683V71enKCoWg",
+            "https://lh7-rt.googleusercontent.com/docsz/AD_4nXc6nuQ7qrOOaD2l2eIjGU0r8fM-7xpg-2c0EKZjBLTqc9Ri_ugsYvNusSkRABMm6QYJhr_Ew4XpQGRw0Nhia5CjvARA4sQRb_1H74MFeeFx22FBHtKuWmo14wgYnKjNbA2J8oq0rvxAFKJhIfniadr095g3?key=sDkedTDFp683V71enKCoWg",
+            "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfsPAJsZJMsKsbHZmby6A4VmRhHFM1jM099UQdp7hqHkU8HRa6m6x_5n7AMTj8N3by4EbL44EKKwj7UE8uPIxZ7SeRlEK1RA4xaGd9THc9TeZcC25zfUXFSl4PcEqbxp-FSOoYTb_MH0zS7AYAtNfa1Fc6f?key=sDkedTDFp683V71enKCoWg",
+            "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcqKv0dPa0jLF3djwJwr8FCCqIuxyQJ7fba6lDoewzoA0TVVKHJRnqgRavFYOM3nT5D6hshnt0li-633xnDbpABWesHhOYmQuc4NXQXt6uNoTYwjb9klcFCW9RNgHoBQCAhBzeIfaD2K9P0jQ5EwwK4OQg?key=sDkedTDFp683V71enKCoWg",
+            "https://lh7-rt.googleusercontent.com/docsz/AD_4nXdviTIrbBOuWYcfAc10s3HiimLdQla4BetbYco-wq-XxgqQbacparrh7coTm5X7R1FzWYyMjtaCpdHKfmIa4QEuYPpkyE63bQngvMyes3MSIbQyTb4qxTj9E112BoTSomjaw56fI481MC_eg0QmllZr80s?key=sDkedTDFp683V71enKCoWg",
+            "https://lh7-rt.googleusercontent.com/docsz/AD_4nXeiB-CM6in1iCGJRHuGI2ytMFONU7azBUAjygoRbp77ZFdrMPFgiMhXKtDtPE6Y57hMRc5Mpi6GCjoHRQLR614MZh7vMMoyGb7W4SgdUiFMpC-mfelNvEm5ZLcd_mySbi8EBoeNcv9QawtfRO-uHLvntNb5?key=sDkedTDFp683V71enKCoWg",
+            "https://lh7-rt.googleusercontent.com/docsz/AD_4nXdcDH2cWyVo367ahoHKRzFrjHz_FtorzqNDmbICn4GRlguktkD0UNmzZdUXEU03ekzA__WDdDaYnAJqPXEhXbWJf7CdJOpoaIzUp7Ekj9Mj3dyOq3mOTf63hm6mYFGKtipwosh-SdSQhXO6GfsKhTKE7ZgV?key=sDkedTDFp683V71enKCoWg",
+            "https://portal.azure.com/?feature.msaljs=true#view/Microsoft_Azure_PIMCommon/ActivationMenuBlade/%5C\\~/aadgroup",
+            "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcubUG3afs6GJ47EwE57c4jrK6q4bVxsmuKl8W1vgcqJDsPUgGVjFncVHPal8uZXhwZDMLUIvVBgoXfSurRFTEw8hiV975rSZm8ymdVYW9QB5x4seMxQx2uTi3ViPuzk4Oe19DakNilB0U5-tBVFlVu83cf?key=sDkedTDFp683V71enKCoWg",
+            "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfrDQDgz12gJgavtkYLPr17ERdg6CcZerWFlgo-weYsMn66B21MB__-Z9sXxWo0k0NHZaViEXiMJ3JTSComLlROQDZBQW2_4O1cHp0tEfNhG-v2IY9ZhcTE9PXzHn-EuQK4yw2G61IG4jB4v0MRTfcJ4J8?key=sDkedTDFp683V71enKCoWg",
+            "https://portal.azure.com/?feature.msaljs=true#view/Microsoft_Azure_PIMCommon/ApproveRequestMenuBlade/%5C\\~/aadmigratedroles",
+            "https://myapps.microsoft.com/>__",
+            "https://d-9f6706151a.awsapps.com/start/#/?tab=accounts>__",
+            "https://d-9f6706151a.awsapps.com/start/#"
+        ]
+    }
+]

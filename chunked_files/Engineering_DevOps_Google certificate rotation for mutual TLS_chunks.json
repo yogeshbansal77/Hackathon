@@ -1,0 +1,159 @@
+[
+    {
+        "id": "engineering_devops_google-certificate-rotation-for-mutual-tls-chunk-0",
+        "name": "Google certificate rotation for mutual TLS.txt - Certificate Expiry",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section explains that Google will send an email notification one month before the expiration of the SSL/TLS certificate used for mutual TLS authentication. The email will contain the key and previous CNAME (Canonical Name record) associated with the certificate. This notification serves as a reminder to renew or replace the certificate before it expires, ensuring uninterrupted secure communication.",
+        "use_cases": [
+            "Receiving timely notifications for certificate expiration",
+            "Facilitating certificate renewal or replacement process",
+            "Maintaining secure communication with Google services",
+            "Ensuring compliance with security protocols"
+        ],
+        "capabilities": [
+            "Certificate expiration notification",
+            "Email notification",
+            "Advance notification (one month before expiry)",
+            "Providing key and previous CNAME information",
+            "Mutual TLS authentication",
+            "Certificate management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_google-certificate-rotation-for-mutual-tls-chunk-1",
+        "name": "Google certificate rotation for mutual TLS.txt - Notification from Google",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section provides a notification from Google regarding the rotation of their SSL/TLS certificate used for mutual TLS authentication. It includes an image that likely shows details about the new certificate. The instructions suggest downloading the new key and verifying the new Common Name (CN) from it. This is a standard security practice to ensure the authenticity and integrity of the communication channel between the client and Google's servers.",
+        "use_cases": [
+            "Mutual TLS authentication with Google services",
+            "Secure communication channel establishment",
+            "Certificate management and rotation"
+        ],
+        "capabilities": [
+            "SSL/TLS certificate rotation",
+            "Mutual TLS authentication",
+            "Common Name (CN) verification",
+            "Key download and verification"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/d42d5f5c5ad1cedea84c688da94bfc9e.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_google-certificate-rotation-for-mutual-tls-chunk-2",
+        "name": "Google certificate rotation for mutual TLS.txt - Verify New Certificate",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section explains the process of verifying and updating the new SSL/TLS certificate for secure communication between Razorpay's services and Google Cloud Platform. It involves raising a pull request on Razorpay's internal 'mozart' repository to add the new certificate's CNAME (Canonical Name) to a list and remove the previous expired certificate's CNAME. This ensures that the latest valid certificate is used for mutual TLS authentication between the two systems.",
+        "use_cases": [
+            "Updating SSL/TLS certificates for secure communication between Razorpay and Google Cloud Platform",
+            "Maintaining a list of valid SSL/TLS certificates for mutual TLS authentication",
+            "Removing expired SSL/TLS certificates from the list to ensure security",
+            "Automating the process of certificate rotation and verification through internal repositories and pull requests"
+        ],
+        "capabilities": [
+            "Certificate rotation",
+            "Mutual TLS authentication",
+            "Internal repository management",
+            "Pull request workflow",
+            "Certificate expiration tracking",
+            "Secure communication"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/cd6ac3ecab060506494c0a40874b970c.png",
+            "https://github.com/razorpay/mozart/pull/4219/files>"
+        ]
+    },
+    {
+        "id": "engineering_devops_google-certificate-rotation-for-mutual-tls-chunk-3",
+        "name": "Google certificate rotation for mutual TLS.txt - Update Mozart Repository",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section outlines the final steps in the process of updating the Mozart Repository, which is likely a code repository or deployment environment. It instructs the reader to request approval and merge from the @express team for a Pull Request (PR), which suggests changes have been made to the codebase. Once the PR is merged, the commit ID (a unique identifier for the code changes) should be used to deploy the updated code to the prod-express application using a deployment tool or platform.",
+        "use_cases": [
+            "Updating a code repository or deployment environment",
+            "Merging code changes through a Pull Request workflow",
+            "Deploying updated code to a production application"
+        ],
+        "capabilities": [
+            "Pull Request approval and merging",
+            "Commit ID tracking",
+            "Automated deployment to production environment"
+        ],
+        "references": [
+            "https://deploy.razorpay.com/#/applications/prod-express/executions?pipeline=prod-express>"
+        ]
+    },
+    {
+        "id": "engineering_devops_google-certificate-rotation-for-mutual-tls-chunk-4",
+        "name": "Google certificate rotation for mutual TLS.txt - Deploy to Production",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section explains that after updating the list of certificates for mutual TLS (Transport Layer Security) with Google, it is necessary to confirm the update via email communication with Google. This step ensures that Google is aware of the changes made to the certificate list, which is crucial for maintaining secure communication between the two parties.",
+        "use_cases": [
+            "Updating the list of certificates for mutual TLS with Google",
+            "Confirming the update of certificates with Google",
+            "Maintaining secure communication with Google",
+            "Ensuring proper certificate management for mutual TLS"
+        ],
+        "capabilities": [
+            "Certificate management",
+            "Mutual TLS",
+            "Email communication",
+            "Secure communication",
+            "Certificate list updates"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_google-certificate-rotation-for-mutual-tls-chunk-5",
+        "name": "Google certificate rotation for mutual TLS.txt - Confirm to Google",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section provides a link to a Slack conversation thread, which likely contains information or updates related to the process of confirming or verifying something with Google, possibly regarding the certificate rotation for mutual TLS (Transport Layer Security). The link suggests that the conversation thread may have details or instructions on how to proceed with the confirmation process.",
+        "use_cases": [
+            "Confirming or verifying a process with Google",
+            "Obtaining information or updates related to certificate rotation for mutual TLS",
+            "Accessing a conversation thread for guidance or instructions",
+            "Collaborating or communicating with team members on a specific topic"
+        ],
+        "capabilities": [
+            "Slack conversation thread",
+            "Link sharing",
+            "Information access",
+            "Collaboration",
+            "Communication",
+            "Documentation"
+        ],
+        "references": [
+            "https://razorpay.slack.com/archives/C0ZJSSQSV/p1663222430943839>"
+        ]
+    },
+    {
+        "id": "engineering_devops_google-certificate-rotation-for-mutual-tls-chunk-6",
+        "name": "Google certificate rotation for mutual TLS.txt - Reference",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section does not contain any content or explanation. It appears to be a placeholder or a reference section without any actual information provided.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    }
+]

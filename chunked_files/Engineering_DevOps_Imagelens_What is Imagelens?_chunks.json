@@ -1,0 +1,102 @@
+[
+    {
+        "id": "engineering_devops_imagelens_what-is-imagelens?-chunk-0",
+        "name": "What is Imagelens?.txt - What is Imagelens?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Imagelens"
+        ],
+        "description": "This section introduces Imagelens, an in-house tool developed by the company to provide visibility into Kubernetes clusters. It allows users to view detailed information about the components running in the cluster, including their current versions, latest available versions, security scan results from Trivy, and end-of-life (EOL) details. The section also mentions a link to a Google document that provides more information about Imagelens.",
+        "use_cases": [
+            "Monitoring and managing Kubernetes cluster components",
+            "Tracking component versions and identifying outdated components",
+            "Checking security vulnerabilities through Trivy scan results",
+            "Planning for component upgrades and end-of-life replacements"
+        ],
+        "capabilities": [
+            "Visibility into Kubernetes cluster components",
+            "Detailed view of component versions",
+            "Integration with Trivy for security scanning",
+            "End-of-life (EOL) information for components"
+        ],
+        "references": [
+            "https://docs.google.com/document/d/1zErRNOMAskgFqzE2PC-ob5aRTuu_3IBKLXCVXFmZsM4/edit?usp=sharing"
+        ]
+    },
+    {
+        "id": "engineering_devops_imagelens_what-is-imagelens?-chunk-1",
+        "name": "What is Imagelens?.txt - Ticket creation in CAG board.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Imagelens"
+        ],
+        "description": "This section explains the criteria and process for creating tickets in the CAG board by Imagelens. Imagelens will automatically create tickets if certain conditions are met, such as a significant version difference between the latest and current image, the presence of critical vulnerabilities, or the use of end-of-life components. These tickets will be assigned to a designated point of contact (POC) stored in the Imagelens database, which should be maintained by managers. If no POC is available for a specific image, a ticket will be created but not assigned.",
+        "use_cases": [
+            "Monitoring and tracking image version updates",
+            "Identifying and addressing critical vulnerabilities in images",
+            "Detecting and managing end-of-life components in images",
+            "Automated ticket creation and assignment for image-related issues"
+        ],
+        "capabilities": [
+            "Automated ticket creation",
+            "Ticket assignment to designated POCs",
+            "Version difference detection",
+            "Critical vulnerability detection",
+            "End-of-life component detection",
+            "POC management in Imagelens database"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_imagelens_what-is-imagelens?-chunk-2",
+        "name": "What is Imagelens?.txt - Editing PoC details.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Imagelens"
+        ],
+        "description": "This section explains the process of editing the classification details of images analyzed by Imagelens, which is necessary for creating JIRA tickets. It mentions that members of the DevOps and security teams have the authority to fill in and edit the classification information for specific images. The classification level of P0 is highlighted as the criteria for Imagelens to create JIRA tickets.",
+        "use_cases": [
+            "Editing image classification details by DevOps and security teams",
+            "Creating JIRA tickets for images classified as P0",
+            "Collaboration between DevOps and security teams for image analysis"
+        ],
+        "capabilities": [
+            "Image classification",
+            "JIRA ticket creation",
+            "User access control",
+            "Collaboration between teams",
+            "Prioritization of issues"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_imagelens_what-is-imagelens?-chunk-3",
+        "name": "What is Imagelens?.txt - Consuming Imagelens data.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Imagelens"
+        ],
+        "description": "This section explains the three main pages of the Imagelens application. The first page is the dashboard, which provides an overview of the number of images present in each cluster. The second page is a detailed view of all the images. The third page is the CVE (Common Vulnerabilities and Exposures) table, which shows which specific CVEs are present in which images. The section includes screenshots of each of these pages.",
+        "use_cases": [
+            "Monitoring the number of images in each cluster",
+            "Viewing detailed information about individual images",
+            "Identifying which CVEs are present in which images"
+        ],
+        "capabilities": [
+            "Dashboard view",
+            "Detailed image view",
+            "CVE table",
+            "Image clustering",
+            "CVE identification"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/0837afca4868f94781de0807cca12436.png",
+            "https://alpha.razorpay.com/_static/file/84b14ac39f4a30bfc814fb3557261ad0.png",
+            "https://alpha.razorpay.com/_static/file/a66e8bab4a5747e6bee9a300a10e2788.png"
+        ]
+    }
+]

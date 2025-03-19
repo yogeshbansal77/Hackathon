@@ -1,0 +1,99 @@
+[
+    {
+        "id": "engineering_devops_run-books-and-sops_kyverno-pod-count-alert-chunk-0",
+        "name": "Kyverno Pod Count Alert.txt - Issue:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains that the alert should mention the pod count for the Kyverno component in the specified cluster and namespace. Kyverno is likely a tool or service running in the cluster, and monitoring its pod count is important for ensuring its proper functioning and resource allocation.",
+        "use_cases": [
+            "Monitoring the pod count for a specific component (Kyverno) in a Kubernetes cluster",
+            "Alerting when the pod count deviates from the expected value",
+            "Ensuring the availability and scalability of the Kyverno service",
+            "Identifying potential issues or resource constraints related to the Kyverno pods"
+        ],
+        "capabilities": [
+            "Pod count monitoring",
+            "Namespace-specific monitoring",
+            "Cluster-wide monitoring",
+            "Alerting",
+            "Resource management",
+            "Service availability monitoring"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_kyverno-pod-count-alert-chunk-1",
+        "name": "Kyverno Pod Count Alert.txt - Debugging:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains that the issue of the Kyverno Pod Count Alert could be caused by either an Out-of-Memory (OOM) situation or a lack of available nodes in the cluster. In simpler terms, it suggests that the problem might arise due to insufficient memory resources or a shortage of computing nodes to run the required pods.",
+        "use_cases": [
+            "Troubleshooting Kyverno Pod Count Alert issues",
+            "Identifying resource constraints in a Kubernetes cluster",
+            "Monitoring cluster health and resource utilization"
+        ],
+        "capabilities": [
+            "OOM detection",
+            "Node availability monitoring",
+            "Resource constraint identification",
+            "Cluster health monitoring",
+            "Troubleshooting assistance"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_kyverno-pod-count-alert-chunk-2",
+        "name": "Kyverno Pod Count Alert.txt - Resolution:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section provides guidance on debugging and troubleshooting issues related to the Kyverno Pod Count Alert by suggesting to examine the pod logs for further investigation and analysis.",
+        "use_cases": [
+            "Troubleshooting Kyverno Pod Count Alert issues",
+            "Analyzing pod logs for debugging purposes",
+            "Identifying and resolving problems related to Kyverno Pod Count Alert"
+        ],
+        "capabilities": [
+            "Pod log analysis",
+            "Debugging",
+            "Troubleshooting",
+            "Issue identification",
+            "Problem resolution"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_kyverno-pod-count-alert-chunk-3",
+        "name": "Kyverno Pod Count Alert.txt - Impact:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section discusses the impact of Kyverno, a Kubernetes policy engine, not functioning properly. It explains that if Kyverno is not working, changes made to the infrastructure may not be validated or audited, potentially leading to issues. However, it also mentions that the FailurePolicy mode is set to 'ignore,' which means that changes will not be blocked. The section also notes that Kyverno is managed by FluxCD, an automated GitOps tool, which will revert any manual changes made to Kyverno during reconciliation.",
+        "use_cases": [
+            "Validating and auditing changes to Kubernetes infrastructure",
+            "Enforcing infrastructure guardrails",
+            "Ensuring high availability of Kyverno pods"
+        ],
+        "capabilities": [
+            "FailurePolicy mode",
+            "Ignore mode",
+            "Validation of infrastructure changes",
+            "Auditing of infrastructure changes",
+            "High availability deployment",
+            "Automated reconciliation with FluxCD"
+        ],
+        "references": [
+            "https://vajra.razorpay.com/d/B5komYeVk/kyverno-usage?orgId=1&var-cluster=eks-ops-common-infra>"
+        ]
+    }
+]

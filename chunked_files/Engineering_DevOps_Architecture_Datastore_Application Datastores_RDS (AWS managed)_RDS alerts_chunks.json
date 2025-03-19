@@ -1,0 +1,140 @@
+[
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_rds-(aws-managed)_rds-alerts-chunk-0",
+        "name": "RDS alerts.txt - Introduction",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "RDS (AWS managed)"
+        ],
+        "description": "This section introduces the topic of alerts related to Amazon Relational Database Service (RDS). It poses a question, 'What are the alerts we need?', suggesting that the subsequent content will provide information about the types of alerts or notifications that users should be aware of when working with RDS. The section aims to set the context for understanding the importance and relevance of alerts in the RDS environment.",
+        "use_cases": [
+            "Monitoring database performance and health",
+            "Identifying potential issues or failures",
+            "Receiving notifications for critical events",
+            "Proactive maintenance and troubleshooting"
+        ],
+        "capabilities": [
+            "Alert configuration",
+            "Alert categorization",
+            "Alert severity levels",
+            "Alert delivery mechanisms",
+            "Alert customization"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_rds-(aws-managed)_rds-alerts-chunk-1",
+        "name": "RDS alerts.txt - What are the alerts we need?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "RDS (AWS managed)"
+        ],
+        "description": "This section introduces the broad classification of alerts in the context of RDS (Relational Database Service). It suggests that there are two main categories or types of alerts, without providing further details about what those categories are. The section serves as a preface or introduction to the subsequent content, which is likely to delve into the specifics of these two alert classifications.",
+        "use_cases": [
+            "Understanding the different types of alerts available for RDS",
+            "Categorizing and organizing RDS alerts for better management",
+            "Identifying the appropriate alert types based on specific monitoring requirements"
+        ],
+        "capabilities": [
+            "Alert classification",
+            "Alert categorization",
+            "Alert organization",
+            "Alert identification"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_rds-(aws-managed)_rds-alerts-chunk-2",
+        "name": "RDS alerts.txt - RDS Resource Metrics alerts",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "RDS (AWS managed)"
+        ],
+        "description": "This section appears to be outlining different types of alerts or monitoring mechanisms available for Amazon Relational Database Service (RDS). It mentions two specific categories: 'RDS Resource Metrics alerts' and 'RDS Events'. The former likely refers to alerts based on performance metrics or resource utilization of RDS instances, while the latter may cover alerts related to specific events or activities occurring within the RDS environment.",
+        "use_cases": [
+            "Monitoring resource utilization and performance of RDS instances",
+            "Receiving alerts for specific events or activities within the RDS environment",
+            "Proactive identification of potential issues or bottlenecks",
+            "Ensuring compliance with service level agreements (SLAs) or performance requirements"
+        ],
+        "capabilities": [
+            "RDS Resource Metrics alerts",
+            "RDS Events alerts",
+            "Performance monitoring",
+            "Event monitoring",
+            "Alert configuration",
+            "Notification mechanisms"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_rds-(aws-managed)_rds-alerts-chunk-3",
+        "name": "RDS alerts.txt - RDS Events",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "RDS (AWS managed)"
+        ],
+        "description": "This section explains that RDS Resource Metrics provides various performance metrics for monitoring and analyzing the health and performance of an Amazon Relational Database Service (RDS) instance. It mentions common metrics such as CPU utilization, memory usage, disk usage, replication lag (for replicated databases), and I/O operations, which can help identify potential issues or bottlenecks in the database system.",
+        "use_cases": [
+            "Monitoring database performance",
+            "Identifying resource bottlenecks",
+            "Troubleshooting database issues",
+            "Capacity planning and scaling"
+        ],
+        "capabilities": [
+            "CPU monitoring",
+            "Memory monitoring",
+            "Disk usage monitoring",
+            "Replication lag monitoring",
+            "I/O usage monitoring"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_rds-(aws-managed)_rds-alerts-chunk-4",
+        "name": "RDS alerts.txt - Where to find/add these alerts?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "RDS (AWS managed)"
+        ],
+        "description": "This section explains where to find and add alert rules related to RDS (Relational Database Service) events in a GitHub repository called 'alert-rules'. It mentions that new alerts are introduced through pull requests (PRs) in this repository, and provides the specific path to locate the RDS alert rules for the production environment.",
+        "use_cases": [
+            "Finding existing RDS alert rules for the production environment",
+            "Adding new RDS alert rules through pull requests",
+            "Monitoring RDS events like failover, creation, and destruction",
+            "Centralized management of alert rules in a GitHub repository"
+        ],
+        "capabilities": [
+            "RDS event monitoring",
+            "Alert rule management",
+            "GitHub repository integration",
+            "Pull request workflow",
+            "Production environment support",
+            "Centralized alert rule repository"
+        ],
+        "references": [
+            "https://github.com/razorpay/alert-rules/tree/master/rules/prod-rules",
+            "https://github.com/razorpay/alert-rules/tree/master/rules/prod-rules>"
+        ]
+    }
+]

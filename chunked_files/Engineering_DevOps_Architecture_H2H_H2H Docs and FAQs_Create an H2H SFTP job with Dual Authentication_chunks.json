@@ -1,0 +1,174 @@
+[
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_create-an-h2h-sftp-job-with-dual-authentication-chunk-0",
+        "name": "Create an H2H SFTP job with Dual Authentication.txt - Pull Beam repository",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be empty or missing content. Without any text or instructions provided, it is difficult to determine what this section is intended to explain or describe.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_create-an-h2h-sftp-job-with-dual-authentication-chunk-1",
+        "name": "Create an H2H SFTP job with Dual Authentication.txt - Switch to feature branch",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section provides instructions for pulling the Beam repository from GitHub, which is likely a prerequisite for working on the project or making changes to the codebase. It assumes that the reader has access to the Beam repository and is familiar with the basic Git workflow.",
+        "use_cases": [
+            "Accessing the Beam project codebase",
+            "Contributing to the Beam project",
+            "Developing new features or fixing bugs in the Beam project",
+            "Keeping the local copy of the Beam repository up-to-date"
+        ],
+        "capabilities": [
+            "Git",
+            "GitHub",
+            "Code repositories",
+            "Version control",
+            "Collaboration",
+            "Open-source development"
+        ],
+        "references": [
+            "https://github.com/razorpay/beam>"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_create-an-h2h-sftp-job-with-dual-authentication-chunk-2",
+        "name": "Create an H2H SFTP job with Dual Authentication.txt - Adding configuration",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be empty or missing content. Without any text or instructions provided, it is difficult to determine what this section aims to explain or describe. It may be a placeholder or an incomplete section that needs to be filled in with relevant information.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_create-an-h2h-sftp-job-with-dual-authentication-chunk-3",
+        "name": "Create an H2H SFTP job with Dual Authentication.txt - Create key file",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section provides instructions for switching to a specific branch called 'feature' in a GitHub repository. It is likely a step in a larger process or workflow, but the context is not provided. Switching branches in a version control system like Git is a common task for developers when working on new features or bug fixes.",
+        "use_cases": [
+            "Collaborating on software development projects using Git and GitHub",
+            "Working on new features or bug fixes in a separate branch before merging into the main codebase",
+            "Following a specific workflow or process for contributing to a project"
+        ],
+        "capabilities": [
+            "Git",
+            "GitHub",
+            "Version control",
+            "Branch management",
+            "Collaboration",
+            "Software development workflow"
+        ],
+        "references": [
+            "https://github.com/razorpay/beam/tree/feature"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_create-an-h2h-sftp-job-with-dual-authentication-chunk-4",
+        "name": "Create an H2H SFTP job with Dual Authentication.txt - Raise PR and merge",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains the steps to be followed after creating a feature branch in a code repository. It suggests making certain changes within the feature branch, but does not provide details about what those changes are.",
+        "use_cases": [
+            "Modifying code in a feature branch",
+            "Collaborating on code changes within a team",
+            "Following a specific development workflow"
+        ],
+        "capabilities": [
+            "feature branch",
+            "code changes",
+            "development workflow"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_create-an-h2h-sftp-job-with-dual-authentication-chunk-5",
+        "name": "Create an H2H SFTP job with Dual Authentication.txt - Add password and passphrase to kubestash",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be empty or missing content. Without any text or instructions provided, it is difficult to provide a meaningful description or identify any use cases or capabilities.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_create-an-h2h-sftp-job-with-dual-authentication-chunk-6",
+        "name": "Create an H2H SFTP job with Dual Authentication.txt - Deploy latest commit",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be empty or missing content. Without any text or instructions provided, it is difficult to determine what this section is intended to explain or describe.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_create-an-h2h-sftp-job-with-dual-authentication-chunk-7",
+        "name": "Create an H2H SFTP job with Dual Authentication.txt - Test your job",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains how to test and configure a job for transferring files between an SFTP server and an S3 bucket using dual authentication (password and private key). It provides instructions for adding the job configuration, storing the password and passphrase securely, deploying the job, and testing it using API calls.",
+        "use_cases": [
+            "Transferring files from an SFTP server to an S3 bucket (pull job)",
+            "Transferring files from an S3 bucket to an SFTP server (push job)",
+            "Securely storing and managing credentials (password and passphrase) for SFTP servers",
+            "Automating file transfers between SFTP servers and S3 buckets"
+        ],
+        "capabilities": [
+            "Dual authentication (password and private key) for SFTP servers",
+            "Configuration management for SFTP and S3 settings",
+            "Secure credential storage using Credstash",
+            "API endpoints for triggering and testing file transfer jobs",
+            "Support for both pull (SFTP to S3) and push (S3 to SFTP) jobs",
+            "Deployment and testing in different environments (stage and production)"
+        ],
+        "references": [
+            "https://credstash-ui.concierge.stage.razorpay.in/dist/",
+            "https://credstash-ui.concierge.stage.razorpay.in/dist/>",
+            "https://chotabeam.razorpay.com/pull",
+            "https://chotabeam.razorpay.com/push"
+        ]
+    }
+]

@@ -1,0 +1,124 @@
+[
+    {
+        "id": "engineering_devops_jarvis_vishnu-bot-chunk-0",
+        "name": "Vishnu BOT.txt - FIRST STEP TOWARDS AUTOMATION OF VISHNU PR CREATION/APPROVAL PROCESS",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section outlines the initial steps towards automating the process of creating and approving pull requests (PRs) for the Vishnu project. It describes the current manual steps involved in creating AWS resources, which include identifying the resource, creating a branch, updating files, creating a PR, raising a ticket for review, waiting for approval, running Atlantis commands, and merging the PR. The automation aims to streamline this process and create a more efficient and consistent ecosystem.",
+        "use_cases": [
+            "Automating the creation and approval of pull requests for AWS resource provisioning",
+            "Streamlining the process of creating and managing AWS resources",
+            "Enabling a drift-free ecosystem by automating repetitive tasks"
+        ],
+        "capabilities": [
+            "Automated PR creation",
+            "Automated PR approval",
+            "Integration with Atlantis for infrastructure provisioning",
+            "Ticket management and review process automation",
+            "Merge automation after approval"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_jarvis_vishnu-bot-chunk-1",
+        "name": "Vishnu BOT.txt - \"WHAT IF\" all of the above steps are automated.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section explains how the Vishnu bot and Jarvis work together to automate the process of creating JIRA tickets, raising pull requests, and sending notifications. Jarvis receives input from the user, parses the data, and sends a payload to Vishnu bot via an API call. Vishnu bot then performs a series of actions, including creating a JIRA ticket, raising a pull request, and sending a Slack notification with relevant information. The process aims to streamline and automate the workflow, reducing manual effort.",
+        "use_cases": [
+            "Automating the creation of JIRA tickets for resource requests",
+            "Automating the process of raising pull requests for requested resources",
+            "Sending notifications to relevant stakeholders about the progress of resource requests",
+            "Facilitating collaboration between different teams and systems (Jarvis, Vishnu bot, JIRA, and Slack)"
+        ],
+        "capabilities": [
+            "User input parsing",
+            "API integration",
+            "JIRA ticket creation",
+            "Pull request creation",
+            "Slack notification",
+            "Workflow automation"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_jarvis_vishnu-bot-chunk-2",
+        "name": "Vishnu BOT.txt - The above-explained workflow is the vision of vishnu bot.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section outlines the envisioned workflow for the Vishnu Bot, which appears to be an automation tool for managing code changes and related tasks. The process involves creating a pull request (PR) for code changes, which triggers an automated review and approval process. Once approved, the PR is automatically merged, and any associated project management tickets are closed, streamlining the development and deployment cycle.",
+        "use_cases": [
+            "Automated code review and approval process",
+            "Automated merge of approved code changes",
+            "Automated closure of related project management tickets",
+            "Streamlining development and deployment workflows"
+        ],
+        "capabilities": [
+            "Automated pull request handling",
+            "Automated code review and approval",
+            "Automated merge of approved code changes",
+            "Automated project management ticket closure",
+            "Integration with code repositories and project management tools"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_jarvis_vishnu-bot-chunk-3",
+        "name": "Vishnu BOT.txt - Current Implementation:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section explains the current implementation status of the Vishnu bot. It states that as of now, the bot only supports the creation of StatusCake resources, which is a monitoring service for websites and APIs. The section implies that the bot automates the process of setting up StatusCake resources, likely saving time and effort for users.",
+        "use_cases": [
+            "Automating the creation of StatusCake resources",
+            "Monitoring websites and APIs using StatusCake",
+            "Streamlining the setup process for StatusCake resources"
+        ],
+        "capabilities": [
+            "StatusCake resource creation",
+            "Automation",
+            "Monitoring websites",
+            "Monitoring APIs"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/22baad0c94ef41c6187d5730ed7d2d4a.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_jarvis_vishnu-bot-chunk-4",
+        "name": "Vishnu BOT.txt - Future Scope:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section discusses the future plans and enhancements for the Vishnu BOT. It mentions that the current implementation focuses on integrating with Statuscake, and provides a link to a Google Spreadsheet for adding integration details. The section then outlines the upcoming features and use cases that will be implemented, such as updating existing resources, deleting resources, and updating previously created pull requests.",
+        "use_cases": [
+            "Updating an existing resource",
+            "Deleting a resource",
+            "Updating a previously created pull request"
+        ],
+        "capabilities": [
+            "Integration with Statuscake",
+            "Adding integration details via a Google Spreadsheet",
+            "Implementing various use cases for Vishnu pull requests",
+            "Updating resources",
+            "Deleting resources",
+            "Updating pull requests"
+        ],
+        "references": [
+            "https://docs.google.com/spreadsheets/d/1-Unqh51iBz_ugTERzrABTxXtkcfznyS5KbWuy20Usoc/edit#gid=0"
+        ]
+    }
+]

@@ -1,0 +1,146 @@
+[
+    {
+        "id": "engineering_devops_dev-self-serve_provisioning-a-new-kafka-cluster-chunk-0",
+        "name": "Provisioning a new Kafka cluster.txt - Issues to be expected after applying the changes",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section outlines potential issues that may arise after provisioning a new Kafka cluster using Helm-generated YAML files. It provides troubleshooting steps for common problems such as Kafka pods not deploying, Kafka entity and exporter pods not being created, and Kafka topics not appearing in the Kafdrop UI. The explanations are aimed at helping users understand and resolve these issues, even if they are not experts in Kafka or Kubernetes.",
+        "use_cases": [
+            "Troubleshooting Kafka pod deployment failures",
+            "Resolving issues with Kafka entity and exporter pod creation",
+            "Investigating and fixing Kafka topic visibility issues in Kafdrop UI"
+        ],
+        "capabilities": [
+            "Kafka cluster provisioning",
+            "Helm-based resource deployment",
+            "Strimzi operator configuration",
+            "Kafka entity operator management",
+            "Kafka topic configuration",
+            "Kafdrop UI integration"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_provisioning-a-new-kafka-cluster-chunk-1",
+        "name": "Provisioning a new Kafka cluster.txt - Kafka Terraform Module",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains how Kafka clusters are provisioned using Terraform modules and Helm charts. It provides a link to the Terraform module repository and an example pull request. The section includes code snippets and configuration parameters required to create resources for a Kafka cluster using the Terraform module. It also mentions the use of a Kafka Helm chart, although no further details are provided.",
+        "use_cases": [
+            "Provisioning a new Kafka cluster",
+            "Simplifying infrastructure creation for Kafka clusters",
+            "Automating the deployment of Kafka clusters using Terraform and Helm"
+        ],
+        "capabilities": [
+            "Terraform module for Kafka cluster provisioning",
+            "Configurable parameters for Kafka cluster resources",
+            "Helm chart for Kafka cluster deployment",
+            "Code snippets and examples for Terraform module usage",
+            "Links to Terraform module repository and example pull requests"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/eb4415c1a3d62b257aadcc8a1b386b6e.png",
+            "https://alpha.razorpay.com/_static/file/c4135dfa7e0d7c469cadf81775f4b70d.png",
+            "https://github.com/razorpay/vishnu/pull/4491/files>__",
+            "https://github.com/razorpay/vishnu/pull/4900/files>__"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_provisioning-a-new-kafka-cluster-chunk-2",
+        "name": "Provisioning a new Kafka cluster.txt - Kafka Helm Chart",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains the process of deploying a Kafka cluster on Kubernetes using a Helm chart. It provides details on the Strimzi Operator, which is an open-source project that simplifies the deployment and management of Kafka clusters on Kubernetes. The section includes links to the Helm chart repository, an example pull request, and instructions on how to create a values.yaml file with the necessary parameters for deploying the cluster. It also covers verifying the Kafka version compatibility with the existing Strimzi Operator, adding the namespace to the Strimzi Operator deployment, and using an existing Kafka cluster's CA certificate for an active/passive Kafka cluster setup.",
+        "use_cases": [
+            "Deploying a Kafka cluster on Kubernetes",
+            "Managing Kafka clusters using the Strimzi Operator",
+            "Setting up an active/passive Kafka cluster with an existing CA certificate"
+        ],
+        "capabilities": [
+            "Helm chart for deploying Kafka cluster",
+            "Strimzi Operator for managing Kafka clusters",
+            "Values.yaml file for configuring Kafka cluster parameters",
+            "Verifying Kafka version compatibility with Strimzi Operator",
+            "Adding namespace to Strimzi Operator deployment",
+            "Using existing Kafka cluster's CA certificate"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/2d87457ed8c3acc290e97ffa41c7fe6d.png",
+            "https://alpha.razorpay.com/_static/file/24e800f8770019959bb4a0e60eae8575.png",
+            "https://alpha.razorpay.com/_static/file/a4164e7ad3d966f5db0563bdacd2cf34.png",
+            "https://alpha.razorpay.com/_static/file/82f49cba1e2875de85cde297c06d3b55.png",
+            "https://alpha.razorpay.com/_static/file/d12bf61cf866edbdd7f0f7e462fbe751.png",
+            "https://strimzi.io/>__",
+            "https://github.com/razorpay/kube-manifests/pull/1620/files>__",
+            "https://github.com/razorpay/kube-manifests/pull/2771/files>__"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_provisioning-a-new-kafka-cluster-chunk-3",
+        "name": "Provisioning a new Kafka cluster.txt - Verify Strimzi Operator Kafka Version Support",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains that when provisioning a new Kafka cluster, if the generateclusterca and generateclientsca options are set to false, certain secrets related to client authentication need to be copied from an existing Kafka cluster to the new cluster's namespace. These secrets are kafka-test-clients-ca and kafka-test-clients-ca-cert, which contain the client CA certificate and key used for authenticating clients connecting to the Kafka cluster.",
+        "use_cases": [
+            "Migrating an existing Kafka cluster to a new environment",
+            "Provisioning a new Kafka cluster with pre-existing client authentication credentials",
+            "Maintaining consistent client authentication across multiple Kafka clusters",
+            "Ensuring secure client-broker communication in a Kafka cluster"
+        ],
+        "capabilities": [
+            "Client authentication",
+            "Certificate management",
+            "Secret management",
+            "Cluster migration",
+            "Secure communication"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_provisioning-a-new-kafka-cluster-chunk-4",
+        "name": "Provisioning a new Kafka cluster.txt - Add Namespace to Strimzi Operator",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section appears to be providing the names of two resources related to a Kafka cluster, specifically a certificate authority (CA) and a CA certificate. These resources are likely required for secure communication and authentication within the Kafka cluster environment.",
+        "use_cases": [
+            "Provisioning a new Kafka cluster",
+            "Configuring security and authentication for a Kafka cluster",
+            "Managing certificates for a Kafka cluster"
+        ],
+        "capabilities": [
+            "Certificate Authority (CA) resource",
+            "CA certificate resource",
+            "Secure communication",
+            "Authentication"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_provisioning-a-new-kafka-cluster-chunk-5",
+        "name": "Provisioning a new Kafka cluster.txt - Use Existing Kafka Cluster CA Cert",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section appears to be empty, as there is no content provided within the code block. Without any information, it is difficult to provide a meaningful description or infer any use cases or capabilities related to using an existing Kafka cluster CA certificate.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    }
+]

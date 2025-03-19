@@ -1,0 +1,131 @@
+[
+    {
+        "id": "engineering_devops_dev-self-serve_kafka-for-apps-chunk-0",
+        "name": "Kafka for apps.txt - Introduction",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section introduces the purpose of the document, which is to provide information about the in-house managed Kafka setup used for data engineering and other use cases. It aims to cover details related to the Kafka setup, its limitations, access, and usage.",
+        "use_cases": [
+            "data engineering",
+            "other unspecified use cases"
+        ],
+        "capabilities": [
+            "managed Kafka setup",
+            "infrastructure details",
+            "limitations",
+            "access",
+            "usage"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_kafka-for-apps-chunk-1",
+        "name": "Kafka for apps.txt - Infrastructure Details",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section outlines the infrastructure details for Kafka setups in different environments. It describes the number of brokers, zookeeper nodes, and default topic retention periods for the stage and production (non-CDE) environments. The stage environment has 3 brokers, 3 zookeeper nodes, and a 3-day default topic retention, while the production environment has 5 brokers, 3 zookeeper nodes, and a 7-day default topic retention. The section also mentions a Kafka module on Vishnu, which likely provides more details on the setup.",
+        "use_cases": [
+            "Non-production workloads (func, stage, perf, etc.)",
+            "Production applications in the non-CDE environment",
+            "Understanding the Kafka setup through the Vishnu module"
+        ],
+        "capabilities": [
+            "Stage environment setup",
+            "Production (Non-CDE) environment setup",
+            "Default topic retention configuration",
+            "Kafka module reference",
+            "High-level architecture diagram"
+        ],
+        "references": [
+            "https://github.com/razorpay/vishnu/tree/master/third-party/kafka"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_kafka-for-apps-chunk-2",
+        "name": "Kafka for apps.txt - Why kubernetes?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains the rationale behind using a Kubernetes-based setup for deploying applications. It highlights the benefits of using Kubernetes, such as avoiding the complexities of managing infrastructure components like AMIs, networking, and service discovery. The setup leverages AWS Elastic Block Store (EBS) volumes attached to the Kubernetes nodes, ensuring data persistence and automatic rescheduling of pods in case of node failures. Additionally, it mentions the ability to dynamically increase the volume size by editing the Persistent Volume Claim (PVC).",
+        "use_cases": [
+            "Deploying applications in a scalable and fault-tolerant manner",
+            "Ensuring data persistence and availability",
+            "Dynamically scaling storage volumes"
+        ],
+        "capabilities": [
+            "Automated infrastructure management",
+            "Automatic scaling and self-healing",
+            "Persistent storage using EBS volumes",
+            "Dynamic volume resizing",
+            "Fault tolerance and high availability"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_kafka-for-apps-chunk-3",
+        "name": "Kafka for apps.txt - Deployment Network Diagram",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains the deployment architecture and network configuration of Kafka in a Kubernetes environment. It describes how Kafka brokers, Zookeeper pods, and related services are set up, exposed, and secured using TLS encryption. It also covers the Kafka Entity Operator, which manages topics and users, and the Kafka Connect component used for data replication from PostgreSQL to Kafka. Additionally, it provides instructions on how to obtain and configure Kafka user credentials for applications to securely connect and consume data from Kafka topics.",
+        "use_cases": [
+            "Deploying and managing Kafka in a Kubernetes environment",
+            "Securing Kafka communication with TLS encryption",
+            "Managing Kafka topics and users with the Kafka Entity Operator",
+            "Replicating data from PostgreSQL to Kafka using Kafka Connect"
+        ],
+        "capabilities": [
+            "Kafka deployment in Kubernetes namespaces",
+            "Exposing Kafka brokers and Zookeeper pods via Kubernetes services",
+            "TLS encryption for Kafka broker and Zookeeper communication",
+            "Kafka Entity Operator for managing topics and users",
+            "Kafka Connect for data replication from external sources",
+            "RBAC mechanism for secure Kafka user access",
+            "Obtaining and configuring Kafka user credentials for applications"
+        ],
+        "references": [
+            "https://razorpay.slack.com/archives/C0ZJSSQSV/p1650954390621289",
+            "https://write.razorpay.com/doc/kafka-4AxoDGjqAW>",
+            "https://github.com/strimzi/strimzi-kafka-operator/blob/bbe43eba4495224e7218e123ba7e0ba7598e61f1/documentation/book/ref-kafka-user.adoc>"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_kafka-for-apps-chunk-4",
+        "name": "Kafka for apps.txt - Kafka Connect",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section provides instructions for configuring Kafka clients (Java and Go applications) to securely connect to a Kafka cluster using SSL/TLS encryption and authentication. It explains how to generate and manage SSL certificates, create keystores and truststores, and set up the necessary configuration properties for the client applications. Additionally, it includes steps for increasing the number of partitions for a Kafka topic, which is an operational task.",
+        "use_cases": [
+            "Secure communication between Kafka clients and brokers using SSL/TLS encryption",
+            "Authentication of Kafka clients using SSL certificates",
+            "Scaling Kafka topics by increasing the number of partitions"
+        ],
+        "capabilities": [
+            "SSL/TLS encryption for Kafka clients",
+            "SSL certificate management (generating, importing, keystores, truststores)",
+            "Client configuration for secure Kafka connection",
+            "Kafka topic partition management",
+            "Kafka cluster operations (listing topics, describing topics)"
+        ],
+        "references": [
+            "https://github.com/razorpay/vishnu/tree/master/third-party/kafka/manifests>.",
+            "https://github.com/razorpay/vishnu/blob/master/third-party/kafka/manifests/stage/kafka_user_lumberjack.yaml.>In",
+            "https://github.com/strimzi/strimzi-kafka-operator/blob/bbe43eba4495224e7218e123ba7e0ba7598e61f1/documentation/book/ref-kafka-user.adoc>",
+            "https://write.razorpay.com/doc/kafka-4AxoDGjqAW>2.",
+            "https://github.com/strimzi/strimzi-kafka-operator>"
+        ]
+    }
+]

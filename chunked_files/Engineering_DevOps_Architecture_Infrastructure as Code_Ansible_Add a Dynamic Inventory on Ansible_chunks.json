@@ -1,0 +1,112 @@
+[
+    {
+        "id": "engineering_devops_architecture_infrastructure-as-code_ansible_add-a-dynamic-inventory-on-ansible-chunk-0",
+        "name": "Add a Dynamic Inventory on Ansible.txt - Create an inventory",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Infrastructure as Code",
+            "Ansible"
+        ],
+        "description": "This section explains how to create an inventory in Ansible, which is a prerequisite for setting up dynamic inventory configurations. It guides the user to click on the '+' button and select 'Inventory' to navigate to the new inventory page, where they can create a new inventory. This step is essential for managing and organizing the hosts or systems that Ansible will interact with.",
+        "use_cases": [
+            "Setting up dynamic inventory configurations",
+            "Managing and organizing hosts or systems for Ansible",
+            "Automating infrastructure management",
+            "Centralizing host management"
+        ],
+        "capabilities": [
+            "Creating new inventory",
+            "Navigating to inventory page",
+            "Organizing hosts or systems",
+            "Enabling dynamic inventory configurations",
+            "Inventory management",
+            "Centralized host management"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/c96f3a387a0b63b0248c21009beaa5fc.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_infrastructure-as-code_ansible_add-a-dynamic-inventory-on-ansible-chunk-1",
+        "name": "Add a Dynamic Inventory on Ansible.txt - Add the inventory name",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Infrastructure as Code",
+            "Ansible"
+        ],
+        "description": "This section explains how to add a name for a dynamic inventory in Ansible and associate it with an organization. After providing a name and selecting the organization, the user can proceed to further configure the dynamic inventory. The image illustrates the interface where the user can enter the inventory name and choose the organization.",
+        "use_cases": [
+            "Setting up a dynamic inventory in Ansible",
+            "Associating a dynamic inventory with an organization",
+            "Configuring a dynamic inventory for further customization"
+        ],
+        "capabilities": [
+            "Adding a name for a dynamic inventory",
+            "Selecting an organization for the dynamic inventory",
+            "Enabling further configuration options for the dynamic inventory",
+            "Providing a visual interface for managing dynamic inventories"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/9a6c34fb54e8d1a30047573a7c3f470f.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_infrastructure-as-code_ansible_add-a-dynamic-inventory-on-ansible-chunk-2",
+        "name": "Add a Dynamic Inventory on Ansible.txt - Create a new source",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Infrastructure as Code",
+            "Ansible"
+        ],
+        "description": "This section explains the process of creating a new source for populating hosts within a dynamic inventory in Ansible. After creating the inventory, the user needs to switch to the Sources tab and create a new source. This source will be responsible for fetching and adding the hosts to the inventory dynamically.",
+        "use_cases": [
+            "Setting up a dynamic inventory in Ansible",
+            "Populating hosts in an inventory from an external source",
+            "Automating the process of adding hosts to an Ansible inventory"
+        ],
+        "capabilities": [
+            "Creating a new source",
+            "Switching to the Sources tab",
+            "Populating hosts within an inventory",
+            "Fetching hosts from an external source",
+            "Adding hosts dynamically to an Ansible inventory"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_infrastructure-as-code_ansible_add-a-dynamic-inventory-on-ansible-chunk-3",
+        "name": "Add a Dynamic Inventory on Ansible.txt - Configure the new source",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Infrastructure as Code",
+            "Ansible"
+        ],
+        "description": "This section explains how to configure a new dynamic inventory source in Ansible, specifically for Amazon EC2 instances. It outlines the steps to name the source, select the Amazon EC2 plugin, provide AWS credentials, set update and overwrite options, and specify any additional source variables or filters to retrieve the desired EC2 instances.",
+        "use_cases": [
+            "Managing and automating infrastructure on Amazon EC2 instances using Ansible",
+            "Dynamically retrieving and updating the inventory of EC2 instances for Ansible playbooks",
+            "Filtering and targeting specific EC2 instances based on tags, regions, or other criteria",
+            "Integrating Ansible with AWS infrastructure for configuration management and automation tasks"
+        ],
+        "capabilities": [
+            "Dynamic inventory source configuration",
+            "Amazon EC2 plugin integration",
+            "AWS credentials management",
+            "Inventory update and overwrite options",
+            "Source variable customization",
+            "Instance filtering based on tags, regions, or other attributes"
+        ],
+        "references": [
+            "https://docs.ansible.com/ansible/latest/collections/amazon/aws/aws_ec2_inventory.html",
+            "https://alpha.razorpay.com/_static/file/d2a8359b4383080acce2c032f5c7eac2.png"
+        ]
+    }
+]

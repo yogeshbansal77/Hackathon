@@ -1,0 +1,178 @@
+[
+    {
+        "id": "engineering_devops_run-books-and-sops_historical-log-sync-for-unpartitioned-to-partitioned-bucket-chunk-0",
+        "name": "Historical Log Sync for Unpartitioned to Partitioned Bucket.txt - Note: Before you start syncing",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains the preparatory steps that need to be taken before copying log data from a non-partitioned bucket to a partitioned bucket. It suggests that there are certain prerequisites or preliminary actions required before initiating the log synchronization process between these two types of storage buckets.",
+        "use_cases": [
+            "Migrating log data from a non-partitioned storage bucket to a partitioned one",
+            "Synchronizing historical log data between different storage bucket configurations",
+            "Preparing for log data reorganization or restructuring"
+        ],
+        "capabilities": [
+            "Log data migration",
+            "Log data synchronization",
+            "Partitioned bucket support",
+            "Non-partitioned bucket support",
+            "Prerequisite steps",
+            "Preparatory actions"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_historical-log-sync-for-unpartitioned-to-partitioned-bucket-chunk-1",
+        "name": "Historical Log Sync for Unpartitioned to Partitioned Bucket.txt - Prerequisites",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section provides instructions for accessing a specific server or system, likely related to log management or data synchronization. It suggests that users need to request access to a server called 'hagrid.razorpay.com' and then use that server to connect to another server with the IP address '10.1.158.230'. The instructions are marked as outdated or no longer applicable, as indicated by the strike-through formatting.",
+        "use_cases": [
+            "Accessing a log server or system",
+            "Requesting access to a specific server or system",
+            "Connecting to a remote server or system"
+        ],
+        "capabilities": [
+            "SSH access",
+            "Server access management",
+            "Remote server connection",
+            "Access request process",
+            "Outdated documentation"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_historical-log-sync-for-unpartitioned-to-partitioned-bucket-chunk-2",
+        "name": "Historical Log Sync for Unpartitioned to Partitioned Bucket.txt - Access EC2 instance",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section provides instructions to access an Amazon EC2 instance (i-009d45b43c6afe429) through AWS Systems Manager (SSM). The purpose of this EC2 instance is to synchronize (copy or move) objects (files or data) from an Amazon S3 bucket named 'rzp-sumologic-logstore-2020' to another S3 bucket named 'rzp-1415-prod-sumo-partitioned-logs'. The section also mentions that the 'rzp-sumologic-logstore-2020' bucket is used to forward logs from a service or application called 'sumo'.",
+        "use_cases": [
+            "Accessing an EC2 instance through AWS Systems Manager (SSM)",
+            "Synchronizing or transferring data between Amazon S3 buckets",
+            "Forwarding logs from a service or application to an S3 bucket",
+            "Managing and organizing log data in partitioned S3 buckets"
+        ],
+        "capabilities": [
+            "EC2 instance access",
+            "SSM (AWS Systems Manager)",
+            "S3 bucket synchronization",
+            "Log forwarding",
+            "Partitioned S3 buckets",
+            "Data transfer between S3 buckets"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_historical-log-sync-for-unpartitioned-to-partitioned-bucket-chunk-3",
+        "name": "Historical Log Sync for Unpartitioned to Partitioned Bucket.txt - Run the python script",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section provides instructions for running a Python script that synchronizes historical logs from an unpartitioned S3 bucket to a partitioned S3 bucket. The script is designed to work with Sumo Logic logs and requires specifying the source and destination indexes, as well as the start and end dates for the log data to be synced. The script should be run within a screen session on an Ubuntu system, and examples are provided for different log indexes.",
+        "use_cases": [
+            "Migrating historical log data from an unpartitioned to a partitioned S3 bucket",
+            "Synchronizing log data between Sumo Logic indexes and S3 buckets",
+            "Archiving or backing up log data in a partitioned format",
+            "Optimizing log storage and querying performance by partitioning log data"
+        ],
+        "capabilities": [
+            "Parallel processing for efficient log synchronization",
+            "Filtering logs by date range",
+            "Mapping between Sumo Logic indexes and S3 bucket names",
+            "Partitioning log data in S3 buckets",
+            "Running scripts within a screen session on Ubuntu systems",
+            "Providing examples for different log index configurations"
+        ],
+        "references": [
+            "https://github.com/razorpay/infra-tools/blob/master/older-log-s3-sync/partition_sync_s3_to_s3_parallel.py",
+            "https://github.com/razorpay/infra-tools/blob/master/older-log-s3-sync/partition_sync_s3_to_s3_parallel.py"
+        ]
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_historical-log-sync-for-unpartitioned-to-partitioned-bucket-chunk-4",
+        "name": "Historical Log Sync for Unpartitioned to Partitioned Bucket.txt - Note on query_index and sumologic_index",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains how to reattach to a running screen session and provides information about the arguments 'query_index' and 'sumologic_index' that need to be specified when running the 'partition_sync_s3_to_s3_parallel.py' script. It also mentions the format for specifying the 'start_date' argument.",
+        "use_cases": [
+            "Reattaching to a running screen session",
+            "Syncing logs from an S3 bucket to another S3 bucket in a partitioned format",
+            "Specifying the index used by Querybook to search logs",
+            "Specifying the prefix of logs to be synced from the source S3 bucket"
+        ],
+        "capabilities": [
+            "Screen session management",
+            "Log syncing from S3 to S3",
+            "Partitioned log storage",
+            "Querybook index configuration",
+            "Sumologic index configuration",
+            "Date range specification for log syncing"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_historical-log-sync-for-unpartitioned-to-partitioned-bucket-chunk-5",
+        "name": "Historical Log Sync for Unpartitioned to Partitioned Bucket.txt - Update partitions in Hive store",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains how to specify the end date for syncing historical logs from an unpartitioned bucket to a partitioned bucket in Hive store. It also provides a note on how to determine the value of the 'query_index' variable based on the 'sumologic_index' variable, which is particularly important for default index logs.",
+        "use_cases": [
+            "Syncing historical logs from an unpartitioned bucket to a partitioned bucket in Hive store",
+            "Determining the value of 'query_index' variable based on 'sumologic_index' variable",
+            "Handling default index logs differently when determining 'query_index' value"
+        ],
+        "capabilities": [
+            "Specifying end date for log sync",
+            "Handling unpartitioned to partitioned bucket sync",
+            "Determining 'query_index' value",
+            "Handling default index logs",
+            "Partitioning logs in Hive store"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_historical-log-sync-for-unpartitioned-to-partitioned-bucket-chunk-6",
+        "name": "Historical Log Sync for Unpartitioned to Partitioned Bucket.txt - Note on retrieving logs",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains how to retrieve logs after completing the process of syncing historical logs from an unpartitioned bucket to a partitioned bucket. It provides a command to update the partitions in the Hive store and mentions that the output should be 'true'. Additionally, it states that the developer or requestor needs to provide the 'query_index' value to the reporter, who can then follow a self-serve documentation to query and retrieve the logs using Querybook.",
+        "use_cases": [
+            "Retrieving logs after syncing historical data from an unpartitioned to a partitioned bucket",
+            "Updating partitions in the Hive store after data sync",
+            "Providing access to logs for developers or requestors",
+            "Self-serve log retrieval for reporters or analysts"
+        ],
+        "capabilities": [
+            "Syncing historical logs",
+            "Partitioned and unpartitioned bucket management",
+            "Hive store partition metadata synchronization",
+            "Querybook integration for log retrieval",
+            "Self-serve log retrieval documentation",
+            "Query indexing for log access"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/retrieve-older-logs",
+            "https://querybook.de.razorpay.com/prod/query_execution/218446/>__"
+        ]
+    }
+]

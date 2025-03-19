@@ -1,0 +1,83 @@
+[
+    {
+        "id": "engineering_devops_business-units_payments_kafka-troubleshooting-chunk-0",
+        "name": "Kafka Troubleshooting.txt - kafka Ref",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section provides a reference link to a Kafka repository or documentation hosted on the alpha.razorpay.com domain. The link seems to be related to Kafka setup or configuration for applications, potentially offering guidance or resources for integrating Kafka with various applications.",
+        "use_cases": [
+            "Integrating Kafka with applications",
+            "Setting up Kafka for application use",
+            "Configuring Kafka for specific application requirements",
+            "Referencing Kafka documentation or resources for application development"
+        ],
+        "capabilities": [
+            "Kafka reference link",
+            "Kafka repository",
+            "Kafka documentation",
+            "Kafka setup guide",
+            "Kafka configuration guide",
+            "Kafka integration guide"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/kafka-for-apps>"
+        ]
+    },
+    {
+        "id": "engineering_devops_business-units_payments_kafka-troubleshooting-chunk-1",
+        "name": "Kafka Troubleshooting.txt - If a ticket is raised asking for TLS certs",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section provides instructions on how to retrieve TLS (Transport Layer Security) certificates for Kafka, which are used to enable secure communication between Kafka components. If a request is made for TLS certificates, the instructions suggest accessing a secure credential storage system called 'credstash' and looking for keys containing the keywords 'KAFKA' and 'CERT' in the 'kubestash' table. The values associated with these keys can then be shared as the requested TLS certificates.",
+        "use_cases": [
+            "Retrieving TLS certificates for Kafka",
+            "Enabling secure communication between Kafka components",
+            "Responding to requests for TLS certificates",
+            "Accessing secure credential storage systems like 'credstash'"
+        ],
+        "capabilities": [
+            "TLS certificate management",
+            "Secure credential storage",
+            "Keyword-based credential lookup",
+            "Credential sharing"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_business-units_payments_kafka-troubleshooting-chunk-2",
+        "name": "Kafka Troubleshooting.txt - If a ticket is raised asking for kafka topic not created",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section provides instructions for troubleshooting a scenario where a ticket is raised regarding a Kafka topic not being created. It suggests checking if the topic exists in Kafdrop, a web-based UI for monitoring Apache Kafka clusters. If the topic is not present in Kafdrop but exists in the Kafka namespace, it provides a link to follow specific instructions for resolving the issue. Additionally, it includes a link to access the Kafdrop interface for the stage environment.",
+        "use_cases": [
+            "Troubleshooting Kafka topic creation issues",
+            "Verifying the existence of Kafka topics",
+            "Accessing Kafdrop for monitoring Kafka clusters",
+            "Following documented procedures for resolving specific Kafka-related issues"
+        ],
+        "capabilities": [
+            "Kafka topic management",
+            "Kafdrop integration",
+            "Environment-specific access (prod, stage)",
+            "Documented troubleshooting procedures",
+            "Cluster monitoring",
+            "Issue tracking (Atlassian Jira)"
+        ],
+        "references": [
+            "https://razorpay.atlassian.net/browse/PE-719>",
+            "https://kafdrop.concierge.stage.razorpay.in/>"
+        ]
+    }
+]

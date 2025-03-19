@@ -1,0 +1,117 @@
+[
+    {
+        "id": "engineering_devops_processes_access-management_grafana-access-automation-and-dashboard-backups-chunk-0",
+        "name": "Grafana Access Automation and Dashboard backups.txt - Azure AD Sync with Grafana Teams",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management"
+        ],
+        "description": "This section explains how Grafana allows synchronization between teams or groups from an authentication provider (like Azure AD, LDAP, or SAML) and teams within Grafana. This enables automatic addition or removal of users from specific Grafana teams based on their membership in the corresponding teams or groups in the authentication provider. It simplifies user management by keeping team memberships in sync across systems.",
+        "use_cases": [
+            "Automatically add or remove users from Grafana teams based on their membership in corresponding teams/groups in the authentication provider (Azure AD, LDAP, SAML, etc.)",
+            "Streamline user management by keeping team memberships in sync across Grafana and the authentication provider",
+            "Ensure appropriate access and permissions for users in Grafana based on their roles or teams in the authentication provider",
+            "Simplify onboarding and offboarding processes by automatically updating Grafana team memberships based on changes in the authentication provider"
+        ],
+        "capabilities": [
+            "Team sync",
+            "Synchronization between auth provider teams and Grafana teams",
+            "Automatic user addition/removal from Grafana teams",
+            "Support for LDAP, OAuth, and SAML auth providers",
+            "Centralized user and team management",
+            "Streamlined access control and permissions"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_access-management_grafana-access-automation-and-dashboard-backups-chunk-1",
+        "name": "Grafana Access Automation and Dashboard backups.txt - Implementation",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management"
+        ],
+        "description": "This section explains the implementation of two scheduled tasks (cronjobs) in the Grafana Access Automation and Dashboard Backups system. The first task, 'team_sync', synchronizes user accounts from Azure Active Directory (AD) groups to Grafana teams every hour, ensuring that new users added or removed from AD are reflected in Grafana. The second task, 'dashboard_backup', creates daily backups of all Grafana dashboards.",
+        "use_cases": [
+            "Automated user provisioning and deprovisioning from Azure AD to Grafana",
+            "Centralized user management across Azure AD and Grafana",
+            "Regular backup of Grafana dashboards for data protection and recovery"
+        ],
+        "capabilities": [
+            "Azure AD integration",
+            "User synchronization",
+            "Team management",
+            "Scheduled tasks",
+            "Dashboard backup",
+            "Data protection"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_access-management_grafana-access-automation-and-dashboard-backups-chunk-2",
+        "name": "Grafana Access Automation and Dashboard backups.txt - Audit logs",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management"
+        ],
+        "description": "This section briefly mentions that audit logs related to Grafana Access Automation and Dashboard backups are available in a tool called Sumo. Audit logs are records that provide information about activities or events that occur within a system, application, or environment. They can be used for monitoring, troubleshooting, and security purposes.",
+        "use_cases": [
+            "Monitoring activities related to Grafana Access Automation and Dashboard backups",
+            "Troubleshooting issues related to Grafana Access Automation and Dashboard backups",
+            "Auditing and security analysis for Grafana Access Automation and Dashboard backups"
+        ],
+        "capabilities": [
+            "Audit logs",
+            "Sumo (log management tool)"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_access-management_grafana-access-automation-and-dashboard-backups-chunk-3",
+        "name": "Grafana Access Automation and Dashboard backups.txt - Getting access to BU dashboards",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management"
+        ],
+        "description": "This section explains how to gain access to Grafana dashboards specific to different business units (BUs) at Razorpay. It provides a link to request access to the Azure Active Directory (AD) group corresponding to your BU. It also includes a table with the names of BU managers and their respective Azure AD group names. Additionally, it describes the process of restoring dashboard backups from an S3 bucket in case of any issues or accidental modifications.",
+        "use_cases": [
+            "Requesting access to BU-specific Grafana dashboards",
+            "Identifying the appropriate Azure AD group for your BU",
+            "Restoring dashboard backups in case of issues or accidental modifications"
+        ],
+        "capabilities": [
+            "Access management for Grafana dashboards",
+            "Azure AD group mapping for different BUs",
+            "Dashboard backup and restoration",
+            "S3 bucket storage for dashboard backups",
+            "Web interface for accessing dashboard backups"
+        ],
+        "references": [
+            "https://myaccess.microsoft.com/",
+            "https://drive.google.com/file/d/1FbPmfwb0qqBzd5otGs4E-tv3mTNIQUxg/view?usp=sharing",
+            "https://service.in.sumologic.com/ui/#/search/create?id=fj1HtIjw0u92xDhQLsI6ZdRItpMqucGi2bG73D6s",
+            "https://grafanabackup.concierge.razorpay.com/>__"
+        ]
+    },
+    {
+        "id": "engineering_devops_processes_access-management_grafana-access-automation-and-dashboard-backups-chunk-4",
+        "name": "Grafana Access Automation and Dashboard backups.txt - Restoring dashboard backups",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management"
+        ],
+        "description": "This section appears to be empty, as there is no content provided within the code block. Without any information, it is difficult to provide a meaningful description or infer any use cases or capabilities related to restoring dashboard backups in Grafana.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    }
+]

@@ -1,0 +1,121 @@
+[
+    {
+        "id": "engineering_devops_processes_hiring_devops-interviewer\u2019s-guide-chunk-0",
+        "name": "DevOps Interviewer\u2019s Guide.txt - Introduction",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Hiring"
+        ],
+        "description": "This section introduces the DevOps interview process documentation. It clarifies that the document does not contain actual interview questions but serves as a guide for interviewers, outlining the various rounds, procedures, and philosophy of the DevOps interview process. The section also mentions that interested candidates should reach out to Abhinav Gupta to participate in the DevOps interview process.",
+        "use_cases": [
+            "Providing guidance to interviewers for conducting DevOps interviews",
+            "Outlining the overall structure and philosophy of the DevOps interview process",
+            "Directing interested candidates to the appropriate contact person for participating in the DevOps interviews"
+        ],
+        "capabilities": [
+            "Introduction",
+            "Interview rounds overview",
+            "Interview procedures",
+            "Interview philosophy",
+            "Candidate participation instructions"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_hiring_devops-interviewer\u2019s-guide-chunk-1",
+        "name": "DevOps Interviewer\u2019s Guide.txt - Interview Rounds",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Hiring"
+        ],
+        "description": "This section outlines the different interview rounds and processes for various DevOps roles within the organization. It provides a tabular representation of the roles, screening rounds, and subsequent rounds focused on assessing specific skills and competencies required for each role. The interview philosophy emphasizes testing candidates based on different tracks to ensure a comprehensive evaluation of their abilities.",
+        "use_cases": [
+            "Hiring process for DevOps engineers",
+            "Hiring process for Lead DevOps engineers",
+            "Hiring process for DevOps leadership roles"
+        ],
+        "capabilities": [
+            "Screening round",
+            "Coding round",
+            "Networking and System Fundamentals",
+            "Cloud/Containers",
+            "Architectural exposure",
+            "AWS cloud",
+            "Kubernetes (K8s)",
+            "Docker",
+            "Manager round",
+            "Resume Deep Dive"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_hiring_devops-interviewer\u2019s-guide-chunk-2",
+        "name": "DevOps Interviewer\u2019s Guide.txt - Interview Philosophy",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Hiring"
+        ],
+        "description": "This section outlines the interview philosophy for DevOps candidates. It emphasizes assessing candidates' knowledge in Unix/System fundamentals, AWS/Cloud fundamentals, and Kubernetes/Container fundamentals. The expectation is that candidates should be reasonably proficient in at least one of these areas, and the interviews will focus on testing their expertise in that domain. The difficulty and nature of the questions will vary based on the candidate's experience level. Additionally, candidates should be able to answer questions related to their resume, and a new coding round philosophy is being introduced for IC (Individual Contributor) roles, involving a 'Game Of Maze' coding challenge.",
+        "use_cases": [
+            "Evaluating DevOps candidates' technical knowledge and expertise",
+            "Tailoring interview questions based on candidate's experience level",
+            "Assessing candidate's ability to answer questions related to their resume",
+            "Introducing a new coding round philosophy for IC roles"
+        ],
+        "capabilities": [
+            "Unix/System fundamentals assessment",
+            "AWS/Cloud fundamentals assessment",
+            "Kubernetes/Container fundamentals assessment",
+            "Resume-based questioning",
+            "Experience-level-based question difficulty adjustment",
+            "Coding round with 'Game Of Maze' challenge for IC roles"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_hiring_devops-interviewer\u2019s-guide-chunk-3",
+        "name": "DevOps Interviewer\u2019s Guide.txt - Special Note on the coding round for IC's \u2013 A Game Of Maze",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Hiring"
+        ],
+        "description": "This section outlines a practical coding round for interviewing candidates for Infrastructure and Cloud (IC) roles. It involves creating a simulated environment with intentional issues, and the candidate is tasked with troubleshooting, debugging, and correcting the systems within a limited time. The process is designed to test the candidate's understanding of cloud infrastructure, problem-solving skills, and ability to ask the right questions. The evaluation focuses on the candidate's approach, listening skills, and debugging abilities rather than just the final solution.",
+        "use_cases": [
+            "Assessing candidates for Infrastructure and Cloud (IC) roles",
+            "Testing candidates' understanding of cloud infrastructure",
+            "Evaluating candidates' problem-solving and debugging skills",
+            "Evaluating candidates' ability to ask the right questions"
+        ],
+        "capabilities": [
+            "Creating simulated environments with intentional issues",
+            "Troubleshooting and debugging systems",
+            "Correcting and modifying cloud infrastructure",
+            "Evaluating candidates' approach and problem-solving skills",
+            "Assessing candidates' listening skills and ability to follow hints",
+            "Assessing candidates' ability to ask relevant questions"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_hiring_devops-interviewer\u2019s-guide-chunk-4",
+        "name": "DevOps Interviewer\u2019s Guide.txt - Evaluation:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Hiring"
+        ],
+        "description": "This section does not contain any content. It appears to be an empty section, possibly meant for future updates or additions related to the evaluation process or criteria for DevOps roles.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    }
+]

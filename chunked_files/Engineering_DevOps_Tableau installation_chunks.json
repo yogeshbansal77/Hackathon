@@ -1,0 +1,206 @@
+[
+    {
+        "id": "engineering_devops_tableau-installation-chunk-0",
+        "name": "Tableau installation.txt - Launch EC2 instance",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section provides links to Tableau documentation for setting up a single-server Tableau Server instance on Amazon Web Services (AWS) Elastic Compute Cloud (EC2) and configuring an external file store for storing data extracts and other files. It seems to be intended for users who want to install and configure Tableau Server on an EC2 instance, potentially with an external file store for better performance and scalability.",
+        "use_cases": [
+            "Installing Tableau Server on an AWS EC2 instance",
+            "Configuring an external file store for Tableau Server",
+            "Setting up a single-server Tableau Server deployment",
+            "Improving performance and scalability of Tableau Server by using an external file store"
+        ],
+        "capabilities": [
+            "Single-server Tableau Server installation",
+            "AWS EC2 instance deployment",
+            "External file store configuration",
+            "Data extract storage",
+            "File storage"
+        ],
+        "references": [
+            "https://help.tableau.com/current/server/en-us/ts_aws_single_server.htm>",
+            "https://help.tableau.com/current/server/en-us/server_external_filestore_storage_new_install.htm>"
+        ]
+    },
+    {
+        "id": "engineering_devops_tableau-installation-chunk-1",
+        "name": "Tableau installation.txt - Install Tableau Server",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section provides instructions for updating the package lists on an Ubuntu system and creating an account for downloading Tableau Server. It assumes that the user has administrative privileges and is using the command line interface (CLI) to execute commands.",
+        "use_cases": [
+            "Installing Tableau Server on Ubuntu",
+            "Updating package lists on Ubuntu",
+            "Creating an account for downloading Tableau Server"
+        ],
+        "capabilities": [
+            "Package list update",
+            "Account creation",
+            "Command line interface",
+            "Administrative privileges"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_tableau-installation-chunk-2",
+        "name": "Tableau installation.txt - Create Tableau User",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section provides instructions for installing Tableau Server on a Linux system using the command line. It first updates the system packages, installs the gdebi package installer, downloads the Tableau Server installation package, and then uses gdebi to install the downloaded package. After that, it creates a new user account named 'rzptableau' and prompts for setting a password for that user.",
+        "use_cases": [
+            "Installing Tableau Server on a Linux system",
+            "Creating a dedicated user account for Tableau Server",
+            "Automating the installation process using command line"
+        ],
+        "capabilities": [
+            "System package update",
+            "Package installation (gdebi)",
+            "User account creation",
+            "Password setting",
+            "Command line installation"
+        ],
+        "references": [
+            "https://downloads.tableau.com/esdalt/2023.3.0/tableau-server-2023-3-0_amd64.deb>"
+        ]
+    },
+    {
+        "id": "engineering_devops_tableau-installation-chunk-3",
+        "name": "Tableau installation.txt - Configure Tableau Server",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section explains how to configure the Tableau Server by adding a user named 'rzptableau' to the sudoers file, which grants administrative privileges to that user. The sudoers file is a configuration file that controls which users can run commands with elevated (root or superuser) permissions. By adding 'rzptableau' to this file, the user will be able to execute commands with administrative rights, which is likely necessary for managing and configuring the Tableau Server.",
+        "use_cases": [
+            "Granting administrative privileges to a specific user for managing the Tableau Server",
+            "Configuring the Tableau Server installation",
+            "Performing administrative tasks on the Tableau Server"
+        ],
+        "capabilities": [
+            "User privilege management",
+            "Sudoers file configuration",
+            "Administrative access control"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_tableau-installation-chunk-4",
+        "name": "Tableau installation.txt - Enable External File Store",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section provides a command that grants a user or group named 'rzptableau' full administrative privileges (ALL) on all resources (ALL:ALL) in the system. This command is typically used to grant elevated permissions to a specific user or group for managing and administering the system or application.",
+        "use_cases": [
+            "Granting administrative privileges to a specific user or group",
+            "Managing and administering the system or application",
+            "Performing tasks that require elevated permissions"
+        ],
+        "capabilities": [
+            "Privilege escalation",
+            "User/group management",
+            "Access control",
+            "System administration"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_tableau-installation-chunk-5",
+        "name": "Tableau installation.txt - Complete Tableau Server Setup",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section provides a command to switch to the Tableau Server user account named 'rzptableau'. This step is likely part of the Tableau Server setup process, where certain configuration or maintenance tasks need to be performed with elevated privileges or as the dedicated Tableau Server user account.",
+        "use_cases": [
+            "Tableau Server setup",
+            "Performing administrative tasks on Tableau Server",
+            "Configuring Tableau Server settings",
+            "Maintaining Tableau Server"
+        ],
+        "capabilities": [
+            "User account switching",
+            "Privileged account access",
+            "Command-line interface"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_tableau-installation-chunk-6",
+        "name": "Tableau installation.txt - Create Initial User",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section provides instructions for creating an initial user account on the Tableau Server during the installation process. It involves running a command using the 'sudo' privilege to initialize the Tableau Services Manager (TSM) with specific options. The '--accepteula' option accepts the End User License Agreement, '--no-activation-service' skips the activation service, and '-a rzptableau' creates an initial user account with the username 'rzptableau'. This step is crucial for setting up administrative access to the Tableau Server.",
+        "use_cases": [
+            "Initial user account creation during Tableau Server installation",
+            "Accepting End User License Agreement (EULA)",
+            "Skipping activation service",
+            "Setting up administrative access to Tableau Server"
+        ],
+        "capabilities": [
+            "Initializing Tableau Services Manager (TSM)",
+            "Accepting EULA",
+            "Skipping activation service",
+            "Creating initial user account",
+            "Administrative access setup"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_tableau-installation-chunk-7",
+        "name": "Tableau installation.txt - Login to Tableau Server",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section provides instructions for attaching an additional file system to the /tableau-data directory and formatting it with the ext4 file system. This is likely required for storing data related to Tableau Server, such as user data, workbooks, and other content. The instructions are specific to a system with an NVMe drive (nvme1n1) and assume a Linux or Unix-like operating system.",
+        "use_cases": [
+            "Expanding storage capacity for Tableau Server",
+            "Configuring storage for Tableau Server data",
+            "Setting up a dedicated file system for Tableau Server data"
+        ],
+        "capabilities": [
+            "Attaching secondary file system",
+            "Formatting file system",
+            "ext4 file system support",
+            "NVMe drive support"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_tableau-installation-chunk-8",
+        "name": "Tableau installation.txt - Stop and Start Tableau Server",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section provides instructions for setting up and managing Tableau Server, a data visualization and analytics platform. It covers steps like creating directories, assigning permissions, mounting storage devices, activating licenses, enabling external file storage, configuring initial user accounts, and accessing the Tableau Server Manager web interface. Additionally, it includes commands to stop, start, and check the status of the Tableau Server service.",
+        "use_cases": [
+            "Installing and configuring Tableau Server",
+            "Managing Tableau Server service (start, stop, status)",
+            "Setting up external file storage for Tableau Server",
+            "Creating initial administrative user account"
+        ],
+        "capabilities": [
+            "Directory creation and permission management",
+            "Storage device mounting",
+            "License activation and registration",
+            "External file storage enablement",
+            "Tableau Server Manager setup and access",
+            "Initial user account creation via command line",
+            "Tableau Server service management (start, stop, status)"
+        ],
+        "references": [
+            "http://localhost>"
+        ]
+    }
+]

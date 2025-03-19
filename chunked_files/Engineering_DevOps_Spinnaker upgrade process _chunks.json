@@ -1,0 +1,105 @@
+[
+    {
+        "id": "engineering_devops_spinnaker-upgrade-process--chunk-0",
+        "name": "Spinnaker upgrade process .txt - Upgrade",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section explains the process of upgrading Spinnaker, an open-source continuous delivery platform. It involves modifying a configuration file to specify the desired version, applying the changes using a tool called Vishnu, and then executing specific commands within the Spinnaker pod to complete the upgrade. The section also provides links to relevant resources, such as the version list and an example pull request for the upgrade.",
+        "use_cases": [
+            "Upgrading Spinnaker to a newer version",
+            "Applying configuration changes to Spinnaker",
+            "Executing commands within the Spinnaker pod",
+            "Referring to documentation and example resources for the upgrade process"
+        ],
+        "capabilities": [
+            "Version specification",
+            "Configuration file modification",
+            "Vishnu tool integration",
+            "Command execution within pods",
+            "Documentation and resource linking",
+            "Example pull request reference"
+        ],
+        "references": [
+            "https://github.com/razorpay/vishnu/blob/master/modules/applications/spinnaker/templates/halconfig.tpl>",
+            "https://github.com/razorpay/vishnu/blob/master/modules/applications/spinnaker/README.md>",
+            "https://spinnaker.io/docs/releases/versions/>",
+            "https://github.com/razorpay/vishnu/pull/9286>"
+        ]
+    },
+    {
+        "id": "engineering_devops_spinnaker-upgrade-process--chunk-1",
+        "name": "Spinnaker upgrade process .txt - Post upgrade validation",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section outlines the process of validating the successful upgrade of a system called Spinnaker by running various pipelines or automated workflows. It provides links to different applications and their respective pipelines that need to be executed to ensure the upgraded system is functioning correctly across different components or services.",
+        "use_cases": [
+            "Validating the successful upgrade of a system or application",
+            "Testing the functionality of different components or services after an upgrade",
+            "Automating the validation process through pre-defined pipelines or workflows",
+            "Monitoring the execution of validation pipelines across multiple applications"
+        ],
+        "capabilities": [
+            "Pipeline execution",
+            "Application monitoring",
+            "Automated validation",
+            "Multi-application support",
+            "Upgrade validation",
+            "Workflow management"
+        ],
+        "references": [
+            "https://deploy.razorpay.com/#/applications/beam/executions?pipeline=Rotate%20Beam%20All%20Pods",
+            "https://deploy.razorpay.com//#/applications/stage-capital-los/executions?pipeline=rotate%20pods",
+            "https://deploy.razorpay.com//#/applications/stage-capital-los/executions?pipeline=Scale%20Deploy",
+            "https://deploy.razorpay.com/#/applications/stage-cadence/executions?pipeline=Cadence%20rotate%20pods"
+        ]
+    },
+    {
+        "id": "engineering_devops_spinnaker-upgrade-process--chunk-2",
+        "name": "Spinnaker upgrade process .txt - Rollback",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section explains the process of rolling back or reverting to a previous version of Spinnaker in case of any issues with the upgrade. It suggests modifying the same file that was used for the upgrade, and then following the 'vishnu plan-apply' and 'hal' commands to complete the rollback process. The section also mentions a review by someone named Sreenadh on a specific date, which could be related to the documentation or the rollback process itself.",
+        "use_cases": [
+            "Reverting to a previous version of Spinnaker in case of issues with the upgrade",
+            "Troubleshooting and recovering from failed or problematic upgrades"
+        ],
+        "capabilities": [
+            "Rollback",
+            "Version revert",
+            "Vishnu plan-apply command",
+            "Hal commands",
+            "Review process"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_spinnaker-upgrade-process--chunk-3",
+        "name": "Spinnaker upgrade process .txt - Caution",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section highlights the importance of reviewing the version change logs before upgrading Spinnaker, specifically to check for any changes related to Redis or schema modifications. It serves as a cautionary note to ensure that potential impacts on data storage and schema compatibility are assessed prior to proceeding with the upgrade process. This step is crucial to prevent data loss or compatibility issues that could arise from overlooked changes in the new version.",
+        "use_cases": [
+            "Reviewing version change logs before upgrading software",
+            "Checking for Redis-related changes in the new version",
+            "Identifying potential schema changes or modifications",
+            "Ensuring data integrity and compatibility during software upgrades"
+        ],
+        "capabilities": [
+            "Version change log review",
+            "Redis change detection",
+            "Schema change identification",
+            "Data integrity assessment",
+            "Compatibility evaluation",
+            "Upgrade risk mitigation"
+        ],
+        "references": []
+    }
+]

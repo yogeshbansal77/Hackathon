@@ -1,0 +1,126 @@
+[
+    {
+        "id": "engineering_devops_banking-devops_how-to-create-a-public-ca-signed-certificate-chunk-0",
+        "name": "How to create a public CA signed certificate.txt - Introduction",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Banking Devops"
+        ],
+        "description": "This section introduces the process of creating a private key using the OpenSSL command-line tool. A private key is a crucial component in the process of obtaining a public CA (Certificate Authority) signed certificate, which is commonly used for secure communication over the internet. The section provides a command snippet that can be used to generate a private key file, which is a necessary first step before creating a Certificate Signing Request (CSR) and obtaining a CA-signed certificate.",
+        "use_cases": [
+            "Obtaining a public CA-signed certificate for secure communication (e.g., HTTPS)",
+            "Enabling secure data transfer and encryption for web servers, email servers, or other internet-facing services",
+            "Establishing trust and identity verification for websites or online services",
+            "Implementing secure communication channels for internal applications or services within an organization"
+        ],
+        "capabilities": [
+            "Private key generation",
+            "OpenSSL command-line tool usage",
+            "Certificate Signing Request (CSR) creation",
+            "Public CA-signed certificate acquisition",
+            "Secure communication enablement",
+            "Identity verification and trust establishment"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_banking-devops_how-to-create-a-public-ca-signed-certificate-chunk-1",
+        "name": "How to create a public CA signed certificate.txt - 1. To create a private key using openssl",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Banking Devops"
+        ],
+        "description": "This section explains how to create a private key using the OpenSSL command-line tool. It provides a command that generates a new private key and a self-signed certificate, which can be used for testing purposes. However, the self-signed certificate is not suitable for production use, as it is not trusted by web browsers or other clients. The section also includes an example of the prompts and responses required to generate the private key and self-signed certificate.",
+        "use_cases": [
+            "Creating a private key for testing or development purposes",
+            "Generating a self-signed certificate for local or internal use",
+            "Understanding the process of creating a private key and certificate using OpenSSL"
+        ],
+        "capabilities": [
+            "Private key generation",
+            "Self-signed certificate creation",
+            "Specifying key parameters (algorithm, key size, expiration)",
+            "Providing certificate details (organization, common name, email)"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_banking-devops_how-to-create-a-public-ca-signed-certificate-chunk-2",
+        "name": "How to create a public CA signed certificate.txt - 2. Now to generate CSR,",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Banking Devops"
+        ],
+        "description": "This section explains how to generate a Certificate Signing Request (CSR) using the OpenSSL command-line tool. A CSR is a data file that contains information about the organization and the server for which a digital certificate is being requested. The generated CSR file can then be submitted to a Certificate Authority (CA) to obtain a signed SSL/TLS certificate.",
+        "use_cases": [
+            "Obtaining a public CA-signed SSL/TLS certificate for a website or server",
+            "Securing web traffic with HTTPS",
+            "Enabling secure communication between client and server applications",
+            "Establishing trust and identity verification for online services"
+        ],
+        "capabilities": [
+            "CSR generation",
+            "Private key usage",
+            "Organization details specification",
+            "Command-line interface",
+            "OpenSSL tool integration",
+            "Certificate Authority submission"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_banking-devops_how-to-create-a-public-ca-signed-certificate-chunk-3",
+        "name": "How to create a public CA signed certificate.txt - 3. Now that you have Certificate Signing Request \"domain.csr\" you need to create a ticket with #techit to get CSR signed by 3rd party Public CA.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Banking Devops"
+        ],
+        "description": "This section explains the process of generating a Certificate Signing Request (CSR) for a domain, which is a necessary step to obtain a publicly trusted SSL/TLS certificate from a third-party Certificate Authority (CA). It provides an example of the prompts and information required, such as the fully qualified domain name and an email address. The section also mentions the option to encrypt the CSR file with a password or leave it unencrypted.",
+        "use_cases": [
+            "Obtaining a publicly trusted SSL/TLS certificate for a website or web application",
+            "Enabling secure communication (HTTPS) for a domain",
+            "Establishing trust and encryption for data transmission over the internet",
+            "Complying with security standards and regulations for handling sensitive information"
+        ],
+        "capabilities": [
+            "Certificate Signing Request (CSR) generation",
+            "Domain name specification",
+            "Email address specification",
+            "Password encryption option",
+            "Integration with third-party Certificate Authorities (CAs)",
+            "Secure communication enablement"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_banking-devops_how-to-create-a-public-ca-signed-certificate-chunk-4",
+        "name": "How to create a public CA signed certificate.txt - 4. Once you have certificate bundle given by IT, look for the following directory",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Banking Devops"
+        ],
+        "description": "This section explains the process of obtaining a public CA signed certificate bundle from the IT team after submitting a Certificate Signing Request (CSR). It provides details about the directory structure and files that will be received, including the public certificate file with a .crt extension, the private key file, the CA bundle file containing the chain of trust certificates, and plain text versions of these files. The section emphasizes the importance of sharing the CA bundle file with clients or developers if they request it.",
+        "use_cases": [
+            "Obtaining a public CA signed certificate for a domain",
+            "Sharing the certificate bundle with clients or developers",
+            "Identifying the necessary files in the received certificate bundle"
+        ],
+        "capabilities": [
+            "Certificate Signing Request (CSR) submission",
+            "Public CA certificate signing",
+            "Certificate bundle directory structure",
+            "Public certificate file (.crt)",
+            "Private key file",
+            "CA bundle file (chain of trust certificates)",
+            "Plain text versions of certificate files"
+        ],
+        "references": [
+            "https://razorpay.atlassian.net/browse/CORP-2838>"
+        ]
+    }
+]

@@ -1,0 +1,65 @@
+[
+    {
+        "id": "engineering_devops_processes_access-management_aws-console-access-chunk-0",
+        "name": "AWS console access.txt - Raise a ticket via the JIRA board",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management"
+        ],
+        "description": "This section provides an example URL for raising a ticket on the JIRA board used by the organization. It suggests that users can access the JIRA board to create or manage tickets related to various issues or requests, such as those related to AWS console access.",
+        "use_cases": [
+            "Raising a ticket for requesting AWS console access",
+            "Managing existing tickets related to AWS console access",
+            "Tracking the status of tickets raised on the JIRA board",
+            "Collaborating with team members or support staff through the JIRA board"
+        ],
+        "capabilities": [
+            "JIRA board access",
+            "Ticket creation",
+            "Ticket management",
+            "Issue tracking",
+            "Collaboration",
+            "URL-based ticket referencing"
+        ],
+        "references": [
+            "https://jira.corp.razorpay.com/browse/BAD-5001>"
+        ]
+    },
+    {
+        "id": "engineering_devops_processes_access-management_aws-console-access-chunk-1",
+        "name": "AWS console access.txt - Example",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management"
+        ],
+        "description": "This section provides an alternative method for obtaining approval for AWS console access when the primary method (JIRA) is not available. It suggests that an email from the manager can serve as a substitute for the approval process.",
+        "use_cases": [
+            "Obtaining approval for AWS console access when JIRA is unavailable",
+            "Seeking manager's approval via email"
+        ],
+        "capabilities": [
+            "Alternative approval method",
+            "Manager approval",
+            "Email approval"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_access-management_aws-console-access-chunk-2",
+        "name": "AWS console access.txt - If you do not have access to JIRA",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management"
+        ],
+        "description": "This section does not provide any content or explanation. It appears to be an empty section, possibly a placeholder or a section that has not been filled out yet.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    }
+]

@@ -1,0 +1,64 @@
+[
+    {
+        "id": "engineering_devops_run-books-and-sops_dms-cron-alert-chunk-0",
+        "name": "DMS CRON alert.txt - Issue",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains a CRON job called 'DMS CRON' that runs every 60 minutes. Its purpose is to fetch a list of directories from an S3 storage location and trigger a webhook in Spinnaker to check if each directory is 'drift-free' (meaning no changes have been made). If a directory is drift-free, DMS (likely a Data Management System) can then change the status of that directory from 'blocked' to 'free'. If this CRON job is not running, DMS will not be able to update the status of drift-free directories, potentially causing issues with data access or management.",
+        "use_cases": [
+            "Monitoring directories for changes (drift detection)",
+            "Automating the process of updating directory status based on drift detection",
+            "Integrating with external systems like S3 and Spinnaker for data retrieval and webhook triggering"
+        ],
+        "capabilities": [
+            "CRON job scheduling",
+            "S3 integration",
+            "Spinnaker webhook triggering",
+            "Directory drift detection",
+            "Directory status management",
+            "Namespace and cluster deployment"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_dms-cron-alert-chunk-1",
+        "name": "DMS CRON alert.txt - Debugging",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section appears to be about debugging, but it is empty and does not provide any information or instructions. Without any content, it is difficult to determine what this section is intended to explain or cover.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_dms-cron-alert-chunk-2",
+        "name": "DMS CRON alert.txt - Resolution",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section provides guidance on how to resolve an issue related to the DMS CRON alert. It suggests examining the pod logs for more information and offers two potential solutions: either rotating the pod or consulting with someone named Anuj. Additionally, it includes a link to a monitoring dashboard for the DMS system.",
+        "use_cases": [
+            "Troubleshooting DMS CRON alert issues",
+            "Accessing pod logs for debugging",
+            "Rotating pods to resolve issues",
+            "Seeking assistance from subject matter experts"
+        ],
+        "capabilities": [
+            "Pod log analysis",
+            "Pod rotation",
+            "Collaboration with subject matter experts",
+            "Monitoring dashboard access"
+        ],
+        "references": [
+            "https://vajra.razorpay.com/d/Dxr0ybtIz/dms-monitoring?orgId=1>"
+        ]
+    }
+]

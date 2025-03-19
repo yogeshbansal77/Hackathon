@@ -1,0 +1,68 @@
+[
+    {
+        "id": "engineering_devops_dev-self-serve_faqs-for-self-serve-tools-chunk-0",
+        "name": "FAQs for self-serve tools.txt - kube-manifests",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section provides a comprehensive guide on managing services, secrets, and resources in a Kubernetes cluster. It covers various aspects such as creating new services, managing secrets, setting resource limits, integrating with Prometheus, and deploying applications in live and test modes. Additionally, it includes instructions on creating infrastructure pipelines in Spinnaker, a continuous delivery platform.",
+        "use_cases": [
+            "Creating and managing services in a Kubernetes cluster",
+            "Managing secrets and sensitive data in a secure manner",
+            "Setting resource limits for CPU and memory usage",
+            "Integrating applications with monitoring tools like Prometheus",
+            "Deploying applications in different environments (live and test modes)"
+        ],
+        "capabilities": [
+            "Creating new services in Kubernetes",
+            "Managing secrets (creating, updating, file-based secrets)",
+            "Setting CPU and memory limits for services",
+            "Integrating services with Prometheus for monitoring",
+            "Deploying applications in live and test modes",
+            "Creating infrastructure pipelines in Spinnaker",
+            "Syncing Kubernetes manifests and values with Spinnaker"
+        ],
+        "references": [
+            "https://github.com/razorpay/kube-manifests/#general-application-deployment-resources--kubernetes-101",
+            "https://github.com/razorpay/kube-manifests/#general-application-deployment-resources--kubernetes-101",
+            "https://alpha.razorpay.com/repo/secrets-management-at-razorpay",
+            "https://github.com/razorpay/kube-manifests/tree/master/templates/ledger",
+            "https://drive.google.com/file/d/1atiKcRr7WapJCmT8kkO58wm9H3COB0rW/view",
+            "https://alpha.razorpay.com/repo/sync-kube-manifests-values-directly-in-spinnaker"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_faqs-for-self-serve-tools-chunk-1",
+        "name": "FAQs for self-serve tools.txt - Spinnaker",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section provides information and troubleshooting steps related to various self-service tools and processes used within the organization. It covers topics such as Spinnaker deployment status, Kafka user and topic management, debugging techniques for issues like image pull errors, crash loops, and rate-limiting errors, as well as setting up PagerDuty alerts from Sumologic.",
+        "use_cases": [
+            "Checking the status of Spinnaker deployments and debugging issues",
+            "Creating and managing Kafka users and topics",
+            "Troubleshooting common issues like image pull errors, crash loops, and rate-limiting errors",
+            "Setting up PagerDuty alerts from Sumologic for existing services"
+        ],
+        "capabilities": [
+            "Spinnaker deployment monitoring",
+            "Kafka user and topic management",
+            "Debugging techniques (logs, events, describe)",
+            "Image pull error troubleshooting",
+            "Crash loop troubleshooting",
+            "Rate-limiting error troubleshooting",
+            "PagerDuty alert setup from Sumologic"
+        ],
+        "references": [
+            "https://github.com/razorpay/kube-manifests/tree/master/templates/kafka-entity",
+            "https://www.docker.com/increase-rate-limits",
+            "https://github.com/razorpay/vishnu/pull/4950",
+            "https://razorpay.pagerduty.com/incidents",
+            "https://kafdrop.concierge.stage.razorpay.in/>"
+        ]
+    }
+]

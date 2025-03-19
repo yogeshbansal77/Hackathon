@@ -1,0 +1,88 @@
+[
+    {
+        "id": "engineering_devops_run-books-and-sops_pd-alert-run-books_kubestash-alerts-sop-chunk-0",
+        "name": "Kubestash Alerts SOP.txt - Dashboards",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs",
+            "PD Alert Run-books"
+        ],
+        "description": "This section provides links to Grafana dashboards for monitoring the Kubestash service in the Stage and Production environments. These dashboards offer a visual representation of various metrics and performance indicators related to Kubestash, allowing users to monitor the health and status of the service in real-time.",
+        "use_cases": [
+            "Monitoring the performance and health of the Kubestash service",
+            "Identifying and troubleshooting issues or bottlenecks in the Kubestash service",
+            "Analyzing historical data and trends related to Kubestash",
+            "Proactive monitoring and alerting for potential issues or anomalies"
+        ],
+        "capabilities": [
+            "Grafana dashboards",
+            "Real-time monitoring",
+            "Performance metrics",
+            "Health status indicators",
+            "Stage environment monitoring",
+            "Production environment monitoring"
+        ],
+        "references": [
+            "https://grafana.np.razorpay.in/d/zR-Xcuf4z/kubestash-monitoring?orgId=1&viewPanel=2>",
+            "https://vajra.razorpay.com/d/gXSM2XB4k/kubestash-monitoring?orgId=1&viewPanel=2>"
+        ]
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_pd-alert-run-books_kubestash-alerts-sop-chunk-1",
+        "name": "Kubestash Alerts SOP.txt - Action Steps",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs",
+            "PD Alert Run-books"
+        ],
+        "description": "This section outlines the steps to troubleshoot and resolve alerts related to failed jobs in the Kubestash cluster. It involves identifying the affected cluster, checking the status of the Kubestash namespace and cron jobs, analyzing logs to find the root cause, and deleting the failed jobs to resolve the alerts.",
+        "use_cases": [
+            "Monitoring and alerting for failed jobs in Kubestash clusters",
+            "Troubleshooting and resolving issues with Kubestash cron jobs",
+            "Analyzing logs to identify root causes of job failures",
+            "Cleaning up failed jobs to resolve alerts"
+        ],
+        "capabilities": [
+            "Monitoring and alerting",
+            "Cluster management",
+            "Namespace and cron job inspection",
+            "Log analysis",
+            "Job deletion",
+            "Alert resolution"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_pd-alert-run-books_kubestash-alerts-sop-chunk-2",
+        "name": "Kubestash Alerts SOP.txt - Coralogix Index for logs verification",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs",
+            "PD Alert Run-books"
+        ],
+        "description": "This section provides links to the Coralogix log indexing service for verifying logs related to the Kubestash application across different Kubernetes clusters and environments like ops-common, prod-green-eks, prod-white-eks, cde-blue, and cde-green. The links include filters to view logs from the Kubestash namespace and various log severity levels (Debug, Verbose, Info, Warning, Error, Critical) for the past 24 hours. It also mentions reporting any errors related to AWS resource access to the leads or security team immediately.",
+        "use_cases": [
+            "Monitoring and troubleshooting Kubestash application logs across multiple Kubernetes clusters and environments",
+            "Identifying and investigating errors or issues related to AWS resource access",
+            "Analyzing log patterns and trends for different severity levels",
+            "Auditing and compliance purposes by reviewing historical logs"
+        ],
+        "capabilities": [
+            "Coralogix log indexing and querying",
+            "Filtering logs by cluster, namespace, and severity level",
+            "Viewing logs for a specific time range (past 24 hours)",
+            "Sharing log query links with permalink",
+            "Alerting and reporting for critical issues"
+        ],
+        "references": [
+            "https://razorpay-prod.app.cx180.coralogix.com/#/query-new/archive-logs?query=(cluster%3A%20%22ops-common%22%20AND%20kubernetes.namespace_name%3A%20%22kubestash%22",
+            "https://razorpay-prod.app.cx180.coralogix.com/#/query-new/archive-logs?query=(cluster%3A%20%22prod-green-eks%22%20AND%20kubernetes.namespace_name%3A%20%22kubestash%22",
+            "https://razorpay-prod.app.cx180.coralogix.com/#/query-new/archive-logs?query=(cluster%3A%20%22prod-white-eks%22%20AND%20kubernetes.namespace_name%3A%20%22kubestash%22",
+            "https://razorpay-prod.app.cx180.coralogix.com/#/query-new/archive-logs?query=(cluster%3A%20%22cde-blue-eks%22%20AND%20kubernetes.namespace_name%3A%20%22kubestash%22",
+            "https://razorpay-prod.app.cx180.coralogix.com/#/query-new/archive-logs?query=(cluster%3A%20%22cde-green-eks%22%20AND%20kubernetes.namespace_name%3A%20%22kubestash%22"
+        ]
+    }
+]

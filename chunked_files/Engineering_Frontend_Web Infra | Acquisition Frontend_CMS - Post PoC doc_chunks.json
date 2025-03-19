@@ -1,0 +1,112 @@
+[
+    {
+        "id": "engineering_frontend_web-infra-|-acquisition-frontend_cms---post-poc-doc-chunk-0",
+        "name": "CMS - Post PoC doc.txt - References",
+        "breadcrumb": [
+            "Engineering",
+            "Frontend",
+            "Web Infra | Acquisition Frontend"
+        ],
+        "description": "This section provides a reference link to the product documentation, which likely contains detailed information about the core features and functionality of the CMS (Content Management System) being discussed. It suggests that the subsequent content will outline the core set of features or capabilities offered by this CMS product.",
+        "use_cases": [
+            "Accessing comprehensive product documentation",
+            "Understanding the core feature set of the CMS",
+            "Referencing key capabilities during implementation or evaluation"
+        ],
+        "capabilities": [
+            "Product documentation",
+            "Core feature set"
+        ],
+        "references": [
+            "https://docs.google.com/document/d/1lMZgl865Epb9l7JpZ1Uiq3AwxpwVx0EWe38frD2Q9hU/edit"
+        ]
+    },
+    {
+        "id": "engineering_frontend_web-infra-|-acquisition-frontend_cms---post-poc-doc-chunk-1",
+        "name": "CMS - Post PoC doc.txt - Core featureset",
+        "breadcrumb": [
+            "Engineering",
+            "Frontend",
+            "Web Infra | Acquisition Frontend"
+        ],
+        "description": "This section outlines the core features and capabilities desired for a Content Management System (CMS) to be used for the razorpay.com website. It explains that the CMS should allow modifying existing content, creating new pages from templates, managing banners, and previewing changes before publishing. The section also mentions that Netlify CMS was chosen for a proof-of-concept (PoC) implementation, with further details provided in a separate product documentation.",
+        "use_cases": [
+            "Modifying existing website content (text, images, videos)",
+            "Creating new pages (landing, product) from templates",
+            "Managing banners (adding, removing, scheduling)",
+            "Previewing changes before publishing"
+        ],
+        "capabilities": [
+            "Edit content (text, images, videos)",
+            "Edit URLs and metadata",
+            "Shared and independent content properties",
+            "Clone pages from templates",
+            "Add, remove, schedule banners",
+            "WYSIWYG or preview mode"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_frontend_web-infra-|-acquisition-frontend_cms---post-poc-doc-chunk-2",
+        "name": "CMS - Post PoC doc.txt - PoC",
+        "breadcrumb": [
+            "Engineering",
+            "Frontend",
+            "Web Infra | Acquisition Frontend"
+        ],
+        "description": "This section discusses the key features and capabilities of a Content Management System (CMS) that is Git-based, open-source, and can be hosted. It highlights the system's ability to manage content through Git, its extensibility for custom elements and WYSIWYG editing, and its potential as an alternative to traditional database-backed CMS solutions like Strapi.",
+        "use_cases": [
+            "Git-based content management for websites or applications",
+            "Open-source CMS solution for self-hosting",
+            "Alternative to traditional database-backed CMS platforms"
+        ],
+        "capabilities": [
+            "Git-based content management",
+            "Open-source software",
+            "Hosting capability",
+            "Extensible editing capabilities",
+            "Support for custom elements",
+            "WYSIWYG editing"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_frontend_web-infra-|-acquisition-frontend_cms---post-poc-doc-chunk-3",
+        "name": "CMS - Post PoC doc.txt - Main points",
+        "breadcrumb": [
+            "Engineering",
+            "Frontend",
+            "Web Infra | Acquisition Frontend"
+        ],
+        "description": "This section outlines the key features and capabilities of a Content Management System (CMS) being evaluated for potential integration with an existing website. It discusses aspects like content organization, editing experience, workflow management, scheduling, multi-lingual support, and custom integrations required for the specific website architecture. The section aims to provide an overview of the CMS's strengths and limitations, as well as the necessary steps for successful implementation.",
+        "use_cases": [
+            "Managing a website with a hierarchical page structure (parent-child relationships)",
+            "Creating and updating content using a user-friendly WYSIWYG editor",
+            "Implementing an editorial workflow with draft, review, and publishing stages",
+            "Scheduling content updates or banners for specific dates or URL patterns"
+        ],
+        "capabilities": [
+            "Parent-child page relationships",
+            "Configurable content templates",
+            "Content duplication and creation",
+            "WYSIWYG editing",
+            "Real-time component updates",
+            "Preview links for draft content",
+            "Multi-lingual support (requires custom integration)",
+            "Custom element integration",
+            "Complex page layouts with images and text",
+            "Scheduled content publishing"
+        ],
+        "references": [
+            "https://flamboyant-mirzakhani-a59e4c.netlify.app/",
+            "https://flamboyant-mirzakhani-a59e4c.netlify.app/admin",
+            "https://www.netlifycms.org/docs/add-to-your-site/",
+            "https://www.netlify.com/",
+            "https://github.com/netlify/netlify-cms/tree/master/packages/netlify-cms-backend-github",
+            "https://github.com/netlify/netlify-cms/issues/263",
+            "https://strapi.io/documentation/v3.x/guides/scheduled-publication.html#scheduled-publication",
+            "https://github.com/netlify/netlify-cms/issues/716",
+            "https://github.com/netlify/netlify-cms/tree/master/packages/netlify-cms-backend-github"
+        ]
+    }
+]

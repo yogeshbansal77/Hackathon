@@ -1,0 +1,195 @@
+[
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_create-an-h2h-sftp-pull-job-chunk-0",
+        "name": "Create an H2H SFTP Pull Job.txt - Introduction",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section introduces the concept of an SFTP Pull Job, which is a mechanism for transferring files from a remote server to a local system using the SFTP protocol. It provides a link to the GitHub repository containing the configuration file for these jobs, and shows an example of how a pull job is structured in that file. The section aims to familiarize the reader with the basic idea of SFTP Pull Jobs and where to find the relevant configuration information.",
+        "use_cases": [
+            "Transferring files from a remote server to a local system",
+            "Automating file transfers",
+            "Integrating with external systems or services"
+        ],
+        "capabilities": [
+            "SFTP file transfer",
+            "Configuration management via JSON file",
+            "Hosted on GitHub repository",
+            "Example configuration structure"
+        ],
+        "references": [
+            "https://github.com/razorpay/beam/blob/master/conf/pull_jobs.json>"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_create-an-h2h-sftp-pull-job-chunk-1",
+        "name": "Create an H2H SFTP Pull Job.txt - Beam Service and Configuration",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section provides a code snippet that appears to be a configuration for an SFTP (Secure File Transfer Protocol) job. It defines a key-value pair where the key is the job name, and the value is an object containing various settings for the job. One of the settings shown is the 'host' property, which likely specifies the hostname or IP address of the SFTP server that the job will connect to.",
+        "use_cases": [
+            "Automating file transfers between systems using SFTP",
+            "Securely transferring sensitive data over an encrypted connection",
+            "Scheduling regular file transfers as part of a data pipeline or integration process",
+            "Centralizing file transfer configurations for multiple SFTP jobs"
+        ],
+        "capabilities": [
+            "SFTP job configuration",
+            "Job naming",
+            "Specifying SFTP hostname",
+            "Potentially configuring additional SFTP settings (not shown)"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_create-an-h2h-sftp-pull-job-chunk-2",
+        "name": "Create an H2H SFTP Pull Job.txt - Pull Job Configuration",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section outlines the configuration parameters required to set up an SFTP pull job, which involves transferring files from a remote SFTP server to an Amazon S3 bucket. It specifies details such as the SFTP server's port number, username, and remote file path, as well as the target S3 bucket name, region, and relative path within the bucket. Additionally, it includes an authentication type parameter to specify whether key-based or password-based authentication should be used.",
+        "use_cases": [
+            "Automated file transfer from an SFTP server to an S3 bucket",
+            "Data ingestion from remote SFTP sources to cloud storage",
+            "Scheduled or event-driven file synchronization between SFTP and S3"
+        ],
+        "capabilities": [
+            "SFTP server connection configuration",
+            "S3 bucket and path specification",
+            "Authentication type selection (key or password)",
+            "Remote file path specification (SFTP)",
+            "S3 bucket region specification",
+            "Relative path specification within S3 bucket"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_create-an-h2h-sftp-pull-job-chunk-3",
+        "name": "Create an H2H SFTP Pull Job.txt - Authentication Type: Password",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains the authentication process for an SFTP (Secure File Transfer Protocol) pull job, specifically when using a password-based authentication method. It provides the necessary parameters, such as the host, port, and username, along with the authentication type, which in this case is set to 'password'. The section is intended to guide users through the configuration steps required to establish a secure connection to an SFTP server using a password for authentication.",
+        "use_cases": [
+            "Configuring an SFTP pull job to retrieve files from a remote server",
+            "Setting up password-based authentication for SFTP connections",
+            "Securely transferring files over an encrypted SFTP channel",
+            "Automating file transfers between systems using SFTP"
+        ],
+        "capabilities": [
+            "SFTP hostname specification",
+            "SFTP port configuration",
+            "SFTP account user credentials",
+            "Password-based authentication",
+            "Secure file transfer",
+            "Automated file retrieval"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_create-an-h2h-sftp-pull-job-chunk-4",
+        "name": "Create an H2H SFTP Pull Job.txt - Authentication Type: Key",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains the process of generating an RSA key pair for authentication in an SFTP (Secure File Transfer Protocol) job. It involves using the 'ssh-keygen' command to create a public and private key pair, and setting a passphrase for added security. The generated public key needs to be added to the credstash-prod-beam system, while the private key is used locally for authentication. The section also provides an example of generating a random passphrase using the 'pwgen' tool.",
+        "use_cases": [
+            "Secure authentication for SFTP file transfers",
+            "Automating file transfers between systems",
+            "Implementing secure data exchange protocols"
+        ],
+        "capabilities": [
+            "RSA key pair generation",
+            "Passphrase creation",
+            "Public key management",
+            "Private key authentication",
+            "Secure file transfer",
+            "Automation of file transfer jobs"
+        ],
+        "references": [
+            "https://www.ssh.com/ssh/keygen/",
+            "https://credstash-ui.razorpay.com/dist/>"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_create-an-h2h-sftp-pull-job-chunk-5",
+        "name": "Create an H2H SFTP Pull Job.txt - Configuration Parameters",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains the process of generating a secure key pair (private and public keys) using the SHA256 algorithm. The private key is named 'id_jobname_rsa' and the public key is named 'id_jobname_rsa.pub'. The keys are used for secure file transfer over SFTP (Secure File Transfer Protocol). The randomart image is a visual representation of the key's randomness, which helps in identifying potential key compromises.",
+        "use_cases": [
+            "Secure file transfer over SFTP",
+            "Authentication for SFTP connections",
+            "Encryption of data during file transfer",
+            "Ensuring data integrity during file transfer"
+        ],
+        "capabilities": [
+            "Key generation using SHA256 algorithm",
+            "Private key (id_jobname_rsa)",
+            "Public key (id_jobname_rsa.pub)",
+            "Randomart image for visual key identification",
+            "Secure File Transfer Protocol (SFTP) support",
+            "Data encryption and integrity during file transfer"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_create-an-h2h-sftp-pull-job-chunk-6",
+        "name": "Create an H2H SFTP Pull Job.txt - Example Job Configuration",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains the process of configuring and setting up an SFTP pull job to download files from a remote SFTP server to an S3 bucket. It provides an example job configuration with details like the SFTP host, port, username, remote path, and authentication type. It also covers how to test the job, set up a cron job for regular file pulls, and monitor the status of file transfers using a Sumologic query. Additionally, it mentions the information that may need to be shared with the bank or merchant for setting up the SFTP account.",
+        "use_cases": [
+            "Automating file transfers from a remote SFTP server to an S3 bucket",
+            "Setting up a scheduled cron job for regular file pulls",
+            "Monitoring the status of file transfers using a Sumologic query",
+            "Sharing necessary information with the bank or merchant for setting up the SFTP account"
+        ],
+        "capabilities": [
+            "SFTP pull job configuration",
+            "Testing SFTP pull job",
+            "Cron job setup for scheduled file pulls",
+            "Monitoring file transfer status",
+            "Sharing POC details with bank/merchant",
+            "Deploying SFTP pull job configuration"
+        ],
+        "references": [
+            "http://beam.razorpay.vpc/pull",
+            "https://github.com/razorpay/kube-manifests/blob/master/prod/beam/values.yaml>",
+            "https://github.com/razorpay/kube-manifests/pull/845>",
+            "https://deploy.razorpay.com/#/applications/beam/executions?pipeline=beam-infra-stage>",
+            "https://deploy.razorpay.com/#/applications/beam/executions?pipeline=beam-infra-prod>"
+        ]
+    }
+]

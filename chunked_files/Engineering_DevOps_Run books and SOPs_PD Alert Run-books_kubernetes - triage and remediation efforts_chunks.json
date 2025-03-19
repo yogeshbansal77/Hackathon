@@ -1,0 +1,39 @@
+[
+    {
+        "id": "engineering_devops_run-books-and-sops_pd-alert-run-books_kubernetes---triage-and-remediation-efforts-chunk-0",
+        "name": "kubernetes - triage and remediation efforts.txt - Main Content",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs",
+            "PD Alert Run-books"
+        ],
+        "description": "This section explains the process of triaging and remediating issues related to the uptime monitoring of Razorpay's internal and external production URIs using StatusCake. It provides guidance on identifying the affected service, checking the status of pods, containers, and events, and troubleshooting common issues like liveness/readiness probe failures, restarts, and upstream service failures. The section aims to help on-call personnel efficiently diagnose and resolve alerts related to service availability.",
+        "use_cases": [
+            "Monitoring uptime of internal and external production URIs",
+            "Triaging and remediating alerts related to service availability",
+            "Identifying the affected service and environment (CDE or non-CDE)",
+            "Troubleshooting issues like liveness/readiness probe failures, pod restarts, and upstream service failures"
+        ],
+        "capabilities": [
+            "Uptime monitoring using StatusCake",
+            "Alerting via Slack channel and PagerDuty",
+            "Checking pod status, container readiness, and restarts",
+            "Describing pods to identify root cause",
+            "Checking events for additional context",
+            "Identifying affected services and environments"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/2f40c8b46b958931d5c74e10124c6301.png",
+            "https://alpha.razorpay.com/repo/devops-on-call-response>",
+            "https://kubernetes.io/docs/tasks/debug-application-cluster/debug-application-introspection/>",
+            "https://dashboard.razorpay.com/status>",
+            "http://10.5.228.196:9000/_health/:",
+            "http://10.26.93.249:80/status:",
+            "http://10.26.47.70:80/status:",
+            "http://10.26.43.191:80/status:",
+            "https://vajra.razorpay.com/d/alJY6yWZz/kubernetes-hpa>",
+            "https://vajra.razorpay.com/d/n6Wk3ckMk/cde-cluster-traefik-metrics?orgId=1&var-job=eks-cde-blue-kubernetes-pods&var-backend=vault.razorpay.com%2F&var-entrypoint=All&from=now-7d&to=now>"
+        ]
+    }
+]

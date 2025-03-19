@@ -1,0 +1,64 @@
+[
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_logging_logging-infrastructure-chunk-0",
+        "name": "Logging Infrastructure.txt - Fundamentals",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Logging"
+        ],
+        "description": "This section explains the two primary methods used to collect log data in the logging infrastructure: log forwarding using FluentD/Filebeat agents, and log fetching from S3. It also introduces Sumologic as the existing solution for log management, which accepts logs via HTTP endpoints and installed agents, indexes the data into partitions, and provides a dashboard for viewing and querying the data.",
+        "use_cases": [
+            "Collecting logs from managed infrastructure using FluentD/Filebeat agents",
+            "Collecting logs from unmanaged infrastructure by fetching from S3",
+            "Viewing and querying log data using Sumologic dashboard",
+            "Indexing log data into partitions in Sumologic"
+        ],
+        "capabilities": [
+            "Log forwarding using FluentD/Filebeat agents",
+            "Log fetching from S3",
+            "HTTP endpoints (HTTP Collectors) for log ingestion",
+            "Installed agents (Installed Collector) for log ingestion",
+            "Indexing log data into partitions/indexes",
+            "Querying log data using Sumologic's query language and functions",
+            "Dashboard for viewing log data"
+        ],
+        "references": [
+            "https://help.sumologic.com/05Search/Search-Query-Language>"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_logging_logging-infrastructure-chunk-1",
+        "name": "Logging Infrastructure.txt - Sumologic \u2013 Existing Solution",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Logging"
+        ],
+        "description": "This section explains the existing logging infrastructure used by the organization, which is Sumologic. It describes how logs are collected from various sources like Docker containers and PHP applications, and pushed to Sumologic using FluentD. Sumologic provides features like data retention, compliance with regulations, access control, and dashboarding. The section also mentions an alternative logging solution based on AWS Elasticsearch Service, which is being explored for cost savings and as a fallback option.",
+        "use_cases": [
+            "Compliance with regulations (e.g., RBI data localization requirements)",
+            "Log retention and archiving",
+            "Access control and role-based access management",
+            "Dashboarding and data visualization"
+        ],
+        "capabilities": [
+            "Proprietary WORM (Write Only Read Many) Store for data immutability",
+            "Log collection from Docker containers and log files",
+            "Log forwarding to AWS S3 for archiving",
+            "Scheduled searches and dashboarding on indexed data",
+            "Cost-effective log storage with AWS Elasticsearch Service and UltraWarm storage",
+            "Log indexing and rotation using FileBeat"
+        ],
+        "references": [
+            "https://aws.amazon.com/elasticsearch-service/",
+            "https://opendistro.github.io/for-elasticsearch/"
+        ]
+    }
+]

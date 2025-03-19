@@ -1,0 +1,60 @@
+[
+    {
+        "id": "engineering_devops_architecture_aws_eks_lazy-world_upgrade-asgs-launch-template's-ami-via-lazy-chunk-0",
+        "name": "Upgrade ASGs Launch template's AMI via Lazy.txt - Introduction",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "EKS",
+            "Lazy World"
+        ],
+        "description": "This section introduces a process to automate the upgrade of Amazon Machine Images (AMIs) used by Auto Scaling Groups (ASGs) through a tool called Lazy. It explains that previously, this process was manual and time-consuming, involving creating a dummy pull request, planning, and creating a new version of the launch template. With Lazy, this process is now automated, making it more efficient and streamlined.",
+        "use_cases": [
+            "Upgrading AMIs for Auto Scaling Groups",
+            "Automating the process of updating launch templates",
+            "Replacing manual and time-consuming processes with automated solutions"
+        ],
+        "capabilities": [
+            "Automated AMI upgrades",
+            "Launch template updates",
+            "Streamlined process",
+            "Replaces manual steps",
+            "Utilizes Lazy tool"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_aws_eks_lazy-world_upgrade-asgs-launch-template's-ami-via-lazy-chunk-1",
+        "name": "Upgrade ASGs Launch template's AMI via Lazy.txt - Command",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "EKS",
+            "Lazy World"
+        ],
+        "description": "This section explains a command called 'lazy' that can be used to upgrade the Amazon Machine Image (AMI) of the Launch Templates associated with Auto Scaling Groups (ASGs) in an Amazon Elastic Kubernetes Service (EKS) cluster. The command takes two parameters: '-a' for the action (upgrade_ami) and '-t' for the target (either specific ASG names or 'cluster' to upgrade all ASGs). It provides examples of the command syntax and usage, along with a screenshot showing the command in action. Additionally, it includes links to guides for rotating nodes and creating a Lazy container.",
+        "use_cases": [
+            "Upgrading the AMI of Launch Templates for specific ASGs",
+            "Upgrading the AMI of Launch Templates for all ASGs in an EKS cluster",
+            "Rotating nodes after upgrading the AMI",
+            "Creating a Lazy container for running the 'lazy' command"
+        ],
+        "capabilities": [
+            "Upgrade AMI of Launch Templates",
+            "Target specific ASGs or entire EKS cluster",
+            "Command syntax and examples",
+            "Visual demonstration (screenshot)",
+            "Links to related guides",
+            "Node rotation after AMI upgrade"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/1e7c45cc50d33924b2ef8faad1cfc50f.png",
+            "https://alpha.razorpay.com/repo/upgrade-worker-node-via-lazy>",
+            "https://alpha.razorpay.com/repo/lazy-startup>"
+        ]
+    }
+]

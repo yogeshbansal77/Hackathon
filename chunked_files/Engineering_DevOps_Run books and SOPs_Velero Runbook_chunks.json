@@ -1,0 +1,55 @@
+[
+    {
+        "id": "engineering_devops_run-books-and-sops_velero-runbook-chunk-0",
+        "name": "Velero Runbook.txt - Alert 1: Velero backup of one of the cluster is older than 24 hours:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains that an alert is triggered when the Velero backup process fails to create a successful backup for one or more clusters within the last 24 hours. The backup process runs daily at 3 AM, and the alert indicates that the backup has not been completed successfully for at least one cluster during the most recent run.",
+        "use_cases": [
+            "Monitoring the status of Velero backups across multiple clusters",
+            "Identifying clusters where backup failures have occurred",
+            "Troubleshooting and resolving backup issues",
+            "Ensuring data protection and disaster recovery capabilities"
+        ],
+        "capabilities": [
+            "Velero backup scheduling",
+            "Backup failure alerting",
+            "Cluster-specific backup monitoring",
+            "Centralized monitoring dashboard (Grafana)",
+            "Documentation reference (Infra details)"
+        ],
+        "references": [
+            "https://vajra.razorpay.com/d/YAniUGC/velero-stats?orgId=1",
+            "https://alpha.razorpay.com/repo/velero-architecture"
+        ]
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_velero-runbook-chunk-1",
+        "name": "Velero Runbook.txt - Action",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section provides a step-by-step guide to troubleshoot and investigate issues related to failed backups in a Kubernetes cluster using Velero, a backup and disaster recovery tool. It explains how to identify the cluster where the backup failed, check the backup history, understand if the backup task was initiated or not, and analyze Velero logs for potential issues. The section also covers checking the backup schedule and the backup storage location status to ensure they are configured correctly.",
+        "use_cases": [
+            "Troubleshooting failed backups in a Kubernetes cluster",
+            "Investigating backup issues with Velero",
+            "Verifying backup schedule and storage location configuration"
+        ],
+        "capabilities": [
+            "Identifying cluster with failed backup",
+            "Checking backup history",
+            "Determining if backup task was initiated",
+            "Analyzing Velero logs",
+            "Verifying backup schedule status",
+            "Checking backup storage location availability"
+        ],
+        "references": [
+            "https://vajra.razorpay.com/d/YAniUGC/velero-stats?orgId=1&viewPanel=13"
+        ]
+    }
+]

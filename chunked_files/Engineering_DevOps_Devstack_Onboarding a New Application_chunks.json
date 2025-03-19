@@ -1,0 +1,115 @@
+[
+    {
+        "id": "engineering_devops_devstack_onboarding-a-new-application-chunk-0",
+        "name": "Onboarding a New Application.txt - Introduction",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Devstack"
+        ],
+        "description": "This section introduces the purpose of the document, which is to provide step-by-step guidance for developers who want to integrate their applications into the devstack ecosystem. It explains that the document covers the entire workflow, from start to finish, for onboarding applications to the devstack platform. The section also includes a note about contacting the devstack team on Slack for any clarifications or issues that may arise during the onboarding process.",
+        "use_cases": [
+            "Onboarding a new application to the devstack ecosystem",
+            "Integrating an existing application with the devstack platform",
+            "Developers seeking guidance on the end-to-end workflow for onboarding applications"
+        ],
+        "capabilities": [
+            "Step-by-step instructions",
+            "End-to-end workflow",
+            "Onboarding applications",
+            "Integration with devstack ecosystem",
+            "Support and clarification from devstack team"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devstack_onboarding-a-new-application-chunk-1",
+        "name": "Onboarding a New Application.txt - Basic Setup - Deployment, Service, IngressRoute",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Devstack"
+        ],
+        "description": "This section provides an overview of the basic setup required for deploying a new application. It covers the creation of a Deployment, Service, and IngressRoute, which are essential components in a Kubernetes environment. The Deployment defines how the application should be deployed, including the number of replicas and container specifications. The Service acts as an entry point for the application, enabling communication between different components. The IngressRoute manages external access to the application, routing traffic from outside the cluster to the appropriate Service.",
+        "use_cases": [
+            "Deploying a new application in a Kubernetes cluster",
+            "Exposing an application to external traffic",
+            "Scaling an application by adjusting the number of replicas",
+            "Enabling communication between different components of an application"
+        ],
+        "capabilities": [
+            "Deployment management",
+            "Service creation",
+            "IngressRoute configuration",
+            "Replica scaling",
+            "Container specification",
+            "Traffic routing"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/ab797ea543a66c3ca23d1d96088406ac.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_devstack_onboarding-a-new-application-chunk-2",
+        "name": "Onboarding a New Application.txt - Setup the Helm Chart",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Devstack"
+        ],
+        "description": "This section explains the steps to set up a Helm chart for a new application or service in a Kubernetes cluster. It involves cloning a repository, creating a new folder and files for the Helm chart, and configuring the necessary values in the 'values.yaml' file. The 'values.yaml' file contains various settings for the application, such as environment, image, resource requests and limits, replicas, node selectors, database and cache configurations, and more. The section also includes instructions for creating a 'NOTES.txt' file with information on accessing the deployed application.",
+        "use_cases": [
+            "Onboarding a new application or service to a Kubernetes cluster",
+            "Configuring and deploying a new application or service using Helm",
+            "Setting up database and cache configurations for a new application",
+            "Providing access information for the deployed application"
+        ],
+        "capabilities": [
+            "Helm chart setup",
+            "Application configuration",
+            "Resource management",
+            "Database integration",
+            "Cache integration",
+            "Node selection",
+            "Deployment information"
+        ],
+        "references": [
+            "https://{{"
+        ]
+    },
+    {
+        "id": "engineering_devops_devstack_onboarding-a-new-application-chunk-3",
+        "name": "Onboarding a New Application.txt - Create Deployment Spec - deployment.yaml",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Devstack"
+        ],
+        "description": "This section explains how to create a deployment specification (deployment.yaml) for a new application in a Kubernetes environment. It provides a sample deployment configuration file and highlights important points to consider, such as naming conventions, mandatory annotations and labels, resource requests and limits, and readiness and liveness probes. The deployment specification manages the automated creation, scaling, and updating of application pods, ensuring the desired number of replicas are running and facilitating smooth application changes through rolling updates and rollbacks.",
+        "use_cases": [
+            "Onboarding a new application in a Kubernetes environment",
+            "Configuring deployment specifications for an application",
+            "Automating application scaling and updates",
+            "Ensuring application availability and reliability through rolling updates and rollbacks"
+        ],
+        "capabilities": [
+            "Deployment resource management",
+            "Pod replication and scaling",
+            "Rolling updates and rollbacks",
+            "Resource requests and limits configuration",
+            "Readiness and liveness probes",
+            "Annotations and labels management",
+            "Affinity and anti-affinity rules"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/onboarding-a-new-application#secrets-management",
+            "https://www.localstack.cloud/",
+            "https://{{",
+            "http://localstack.localstack.svc.cluster.local:4566/000000000000`.",
+            "http://localstack.localstack.svc.cluster.local:4566/000000000000/settlement-create-live-{{",
+            "https://credstash-ui.concierge.stage.razorpay.in/dist/>__",
+            "https://credstash-ui.concierge.stage.razorpay.in/dist/>",
+            "https://razorpay-non-prod.app.coralogix.in/#/query-new/archive-logs?id=4J8zrxWz8SS&page=0>"
+        ]
+    }
+]

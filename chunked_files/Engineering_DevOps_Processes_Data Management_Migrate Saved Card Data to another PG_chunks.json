@@ -1,0 +1,31 @@
+[
+    {
+        "id": "engineering_devops_processes_data-management_migrate-saved-card-data-to-another-pg-chunk-0",
+        "name": "Migrate Saved Card Data to another PG.txt - Main Content",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Data Management"
+        ],
+        "description": "This section outlines a secure process for sharing encrypted credit card data with a rival payment gateway provider, while adhering to PCI compliance standards. It involves obtaining approval from stakeholders, fetching tokenized card numbers, decrypting them, encrypting the data using PGP encryption, and securely transferring the encrypted file via SFTP. The process emphasizes strict adherence to security protocols and the deletion of sensitive data after the transfer.",
+        "use_cases": [
+            "Migrating saved card data to another payment gateway provider",
+            "Securely sharing sensitive card data with a third-party",
+            "Adhering to PCI compliance standards for handling card data",
+            "Encrypting and transferring sensitive data securely"
+        ],
+        "capabilities": [
+            "PCI compliance",
+            "Card data tokenization",
+            "Card number decryption",
+            "PGP encryption",
+            "Secure file transfer (SFTP)",
+            "Data shredding and deletion"
+        ],
+        "references": [
+            "https://docs.google.com/document/d/1vihTiSR2u5HDBaiYDyUnzWI8L7iAH-Bgrt2dKe1ZxLU/edit",
+            "https://alpha.razorpay.com/repo/how-to-share-data-via-pgp-encryption>"
+        ]
+    }
+]

@@ -1,0 +1,194 @@
+[
+    {
+        "id": "engineering_databases_poc_aurora-serverless-migration-chunk-0",
+        "name": "Aurora Serverless Migration.txt - Scaling Details:",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "POC"
+        ],
+        "description": "This section explains how the capacity of an Aurora Serverless database is configured using Aurora Capacity Units (ACU). Each ACU provides approximately 2 GB of memory, and the CPU and network resources are similar to those of Aurora instances with the same memory configuration (comparable to the db.r5 class). This allows users to scale the database's capacity up or down based on their workload requirements.",
+        "use_cases": [
+            "Scaling database capacity up or down based on workload demands",
+            "Optimizing resource utilization and cost by adjusting capacity",
+            "Handling variable or unpredictable workloads",
+            "Providing flexibility for applications with fluctuating resource needs"
+        ],
+        "capabilities": [
+            "Aurora Capacity Units (ACU)",
+            "Configurable database capacity",
+            "Automatic scaling",
+            "Memory allocation",
+            "CPU and network resource allocation",
+            "Comparable to db.r5 class instances"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_poc_aurora-serverless-migration-chunk-1",
+        "name": "Aurora Serverless Migration.txt - ACUs scaling :",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "POC"
+        ],
+        "description": "This section explains the scaling behavior of Aurora Serverless, which automatically adjusts the compute capacity (measured in Aurora Capacity Units or ACUs) based on the workload. It specifies the minimum and maximum ACU limits, the possible ACU values, and the conditions that trigger automatic scaling up or down of ACUs.",
+        "use_cases": [
+            "Handling variable workloads with automatic scaling",
+            "Optimizing resource utilization and cost",
+            "Ensuring application performance under high load",
+            "Simplifying capacity management"
+        ],
+        "capabilities": [
+            "Automatic scaling up of ACUs",
+            "Automatic scaling down of ACUs",
+            "Configurable scaling thresholds",
+            "Minimum and maximum ACU limits",
+            "Predefined ACU values"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_poc_aurora-serverless-migration-chunk-2",
+        "name": "Aurora Serverless Migration.txt - How does the Scaling works:",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "POC"
+        ],
+        "description": "This section explains the scaling behavior of Amazon Aurora Serverless, which is a cloud-based relational database service that automatically scales compute resources based on workload demands. It describes the cool-down period for scaling down, the immediate scaling up when certain thresholds are met, the warm pool of resources maintained by AWS to minimize scaling time, the router fleet that manages client connections during scaling, the scaling point identification process, and the option to force capacity changes, which may interrupt ongoing transactions.",
+        "use_cases": [
+            "Automatically scaling database resources based on workload demands",
+            "Minimizing scaling time by maintaining a warm pool of resources",
+            "Managing client connections during scaling operations",
+            "Identifying the optimal scaling point to minimize disruptions"
+        ],
+        "capabilities": [
+            "Cool-down period for scaling down",
+            "Immediate scaling up based on thresholds",
+            "Warm pool of resources",
+            "Router fleet for connection management",
+            "Scaling point identification",
+            "Force capacity change option"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_poc_aurora-serverless-migration-chunk-3",
+        "name": "Aurora Serverless Migration.txt - Pause Compute Capacity:",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "POC"
+        ],
+        "description": "This section explains the reasons why the scaling point (the point at which the database can be paused or scaled down) cannot be identified in an Aurora Serverless database. It mentions three specific scenarios where long-running queries, ongoing transactions, or temporary tables/locks prevent the system from determining a suitable scaling point, making it difficult to pause or scale down the compute capacity.",
+        "use_cases": [
+            "Identifying when to pause or scale down an Aurora Serverless database",
+            "Managing long-running queries and transactions in an Aurora Serverless environment",
+            "Handling temporary tables and table locks in an Aurora Serverless database"
+        ],
+        "capabilities": [
+            "Identifying scaling points",
+            "Handling long-running queries",
+            "Managing in-progress transactions",
+            "Dealing with temporary tables",
+            "Handling table locks",
+            "Scaling compute capacity"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_poc_aurora-serverless-migration-chunk-4",
+        "name": "Aurora Serverless Migration.txt - Migration Steps :",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "POC"
+        ],
+        "description": "This section explains the process of pausing the compute capacity of an Aurora Serverless database cluster. Pausing the compute capacity allows you to temporarily stop the database from running and incurring charges when it is not in use, while still retaining the data and configuration. This can be useful for cost optimization or maintenance purposes.",
+        "use_cases": [
+            "Cost optimization",
+            "Maintenance activities",
+            "Temporary workload pauses",
+            "Resource management"
+        ],
+        "capabilities": [
+            "Pause compute capacity",
+            "Retain data and configuration",
+            "Stop database temporarily",
+            "Cost savings",
+            "Flexible resource management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_poc_aurora-serverless-migration-chunk-5",
+        "name": "Aurora Serverless Migration.txt - From RDS to Aurora Serverless :",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "POC"
+        ],
+        "description": "This section explains that the Aurora Serverless cluster has the ability to automatically scale down to zero compute units when it is idle for a configurable period of time. This means that when there is no active workload or traffic on the database, it can pause itself and stop consuming resources, effectively reducing the cost to zero during idle periods. This feature is designed to optimize resource utilization and minimize costs for workloads with intermittent or unpredictable usage patterns.",
+        "use_cases": [
+            "Workloads with intermittent or unpredictable usage patterns",
+            "Cost optimization for databases with idle periods",
+            "Automatically scaling resources based on demand"
+        ],
+        "capabilities": [
+            "Automatic scaling down to zero compute units",
+            "Configurable idle time before scaling down",
+            "Pause state with no resource consumption",
+            "Cost savings during idle periods"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_poc_aurora-serverless-migration-chunk-6",
+        "name": "Aurora Serverless Migration.txt - Method 1 : (using snapshot and restoration)",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "POC"
+        ],
+        "description": "This section outlines a method for migrating a database from Amazon RDS (Relational Database Service) to Amazon Aurora Serverless, which is a serverless version of the Aurora database service. The method involves creating an Aurora Read Replica from the existing RDS instance, allowing data to be replicated from the RDS instance to the new Aurora instance. This approach enables a smooth transition without downtime, as changes made to the RDS instance are automatically propagated to the Aurora instance.",
+        "use_cases": [
+            "Migrating an existing RDS database to Aurora Serverless",
+            "Transitioning to a serverless database architecture",
+            "Replicating data from an RDS instance to an Aurora instance"
+        ],
+        "capabilities": [
+            "Create Aurora Read Replica",
+            "Data replication from RDS to Aurora",
+            "Seamless migration without downtime",
+            "Transition to serverless database"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_poc_aurora-serverless-migration-chunk-7",
+        "name": "Aurora Serverless Migration.txt - Method 2 : (using DMS)",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "POC"
+        ],
+        "description": "This section outlines different methods for migrating an existing RDS database to an Aurora Serverless database. It explains three methods: 1) Taking a snapshot of the RDS instance and restoring it as an Aurora Serverless instance, 2) Using the AWS Database Migration Service (DMS) to migrate data to Aurora Serverless, and 3) Using the mysqlbinlog utility to migrate data for MySQL databases. It also discusses limitations of Aurora Serverless, such as version support, parameter changes, and unsupported features like IAM role access and performance insights. Additionally, it provides insights from a sysbench test performed on an Aurora Serverless instance.",
+        "use_cases": [
+            "Migrating an existing RDS database to Aurora Serverless",
+            "Migrating data from RDS to Aurora Serverless using DMS",
+            "Migrating MySQL data to Aurora Serverless using mysqlbinlog utility"
+        ],
+        "capabilities": [
+            "Snapshot-based migration to Aurora Serverless",
+            "Database Migration Service (DMS) support for Aurora Serverless as destination",
+            "mysqlbinlog utility for MySQL data migration",
+            "Scaling up/down of Aurora Serverless instances",
+            "Connection handling during scaling events",
+            "Limitations of Aurora Serverless (version support, parameter changes, unsupported features)"
+        ],
+        "references": [
+            "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless.html#aurora-serverless.limitations"
+        ]
+    }
+]

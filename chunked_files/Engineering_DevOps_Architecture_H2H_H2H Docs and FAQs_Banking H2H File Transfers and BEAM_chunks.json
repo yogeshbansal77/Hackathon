@@ -1,0 +1,214 @@
+[
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_banking-h2h-file-transfers-and-beam-chunk-0",
+        "name": "Banking H2H File Transfers and BEAM.txt - Introduction",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains the concept of Host-to-Host (H2H) file transfers, which are bi-directional data exchanges between the company and remote servers of various banks. The company sends files related to merchant onboarding to the banks' servers at scheduled intervals, and also retrieves files from the same servers for purposes like reconciliation, settlement, and acknowledgment. This process facilitates seamless data sharing and integration between the company and its banking partners.",
+        "use_cases": [
+            "Merchant onboarding",
+            "Reconciliation",
+            "Settlement",
+            "Acknowledgment"
+        ],
+        "capabilities": [
+            "Bi-directional file transfers",
+            "Scheduled file transfers",
+            "SFTP server integration",
+            "File transfers with multiple banks"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_banking-h2h-file-transfers-and-beam-chunk-1",
+        "name": "Banking H2H File Transfers and BEAM.txt - H2H File Transfers",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be listing various banks and merchants for which a certain file transfer system or process is implemented. It seems to be an overview or reference list of financial institutions and companies that are supported by a particular file transfer mechanism, likely related to banking transactions or data exchange.",
+        "use_cases": [
+            "File transfers between banks (e.g., RBL, AXIS, SBI, YESBANK, ICICI, CITIBANK, PNB)",
+            "File transfers involving merchants or businesses"
+        ],
+        "capabilities": [
+            "Support for file transfers with multiple banks",
+            "Support for file transfers with merchants"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_banking-h2h-file-transfers-and-beam-chunk-2",
+        "name": "Banking H2H File Transfers and BEAM.txt - Banks and Merchants",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section introduces BEAM, a service written in Go programming language used for file transfers between Razorpay and various banks and merchants. It mentions a configuration file for push jobs hosted on GitHub, implying that BEAM handles file transfers in both directions (push and pull). The section also lists some entities like banks and companies that likely use BEAM for file transfers.",
+        "use_cases": [
+            "File transfers between Razorpay and banks/merchants",
+            "Handling push jobs (sending files from Razorpay to banks/merchants)",
+            "Handling pull jobs (receiving files from banks/merchants to Razorpay)",
+            "Onboarding new banks/merchants for file transfers"
+        ],
+        "capabilities": [
+            "Written in Go programming language",
+            "Configuration files for push and pull jobs",
+            "GitHub repository for configuration files",
+            "Supports file transfers with multiple banks/merchants",
+            "Bidirectional file transfers (push and pull)"
+        ],
+        "references": [
+            "https://github.com/razorpay/beam/blob/master/conf/push_jobs.json%22"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_banking-h2h-file-transfers-and-beam-chunk-3",
+        "name": "Banking H2H File Transfers and BEAM.txt - BEAM Service",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section introduces the BEAM service, which is a system for transferring files between different entities in the banking domain. It categorizes the file transfer operations into two broad categories: PUSH and PULL jobs. The section provides a link to a configuration file that likely contains details about these job types. The content suggests that the BEAM service facilitates the secure and automated exchange of files, potentially between banks or financial institutions.",
+        "use_cases": [
+            "File transfers between banks or financial institutions",
+            "Automated exchange of data or documents",
+            "Secure transmission of sensitive financial information",
+            "Integration with existing banking systems or workflows"
+        ],
+        "capabilities": [
+            "PUSH jobs for sending files",
+            "PULL jobs for receiving files",
+            "Categorization of file transfers into PUSH and PULL operations",
+            "Configuration management through a centralized configuration file",
+            "Potential support for secure file transfers"
+        ],
+        "references": [
+            "https://github.com/razorpay/beam/blob/master/conf/push_jobs.json%22"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_banking-h2h-file-transfers-and-beam-chunk-4",
+        "name": "Banking H2H File Transfers and BEAM.txt - PUSH Jobs",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains the process of transferring files between Razorpay and banks through PUSH and PULL operations. PUSH involves sending files from Razorpay to a remote SFTP location specified by the bank, typically initiated by an API call with a payload containing details like job name, bucket information, and file paths. PULL, on the other hand, involves retrieving files from the bank's remote SFTP location to Razorpay's systems, often mirroring the PUSH operation.",
+        "use_cases": [
+            "Sending files (e.g., merchant onboarding data) from Razorpay to banks",
+            "Retrieving files (e.g., transaction data) from banks to Razorpay",
+            "Automating file transfers between Razorpay and banks",
+            "Securely transferring sensitive financial data"
+        ],
+        "capabilities": [
+            "PUSH file transfers",
+            "PULL file transfers",
+            "API-based file transfer initiation",
+            "Payload configuration (job name, bucket details, file paths)",
+            "SFTP integration",
+            "Mirroring file transfers"
+        ],
+        "references": [
+            "http://0:80/push"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_banking-h2h-file-transfers-and-beam-chunk-5",
+        "name": "Banking H2H File Transfers and BEAM.txt - PULL Jobs",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains how to initiate a PULL job, which is a process of retrieving files from a specified bucket in a cloud storage service like Amazon S3. The example provided shows a curl command that sends an HTTP request to a specific URL with a JSON payload containing the job name, bucket name, and bucket region. The response shown is an empty JSON object with a null value for the 'files' key, indicating that no files were found or retrieved during this particular PULL job.",
+        "use_cases": [
+            "Retrieving files from a cloud storage bucket",
+            "Automating file transfers from remote storage",
+            "Integrating with cloud-based file storage services",
+            "Scheduling periodic file retrieval tasks"
+        ],
+        "capabilities": [
+            "Initiating PULL jobs via HTTP requests",
+            "Specifying job parameters like job name, bucket name, and region",
+            "Retrieving files from cloud storage buckets",
+            "Handling responses with file information or errors"
+        ],
+        "references": [
+            "http://0:80/pull"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_banking-h2h-file-transfers-and-beam-chunk-6",
+        "name": "Banking H2H File Transfers and BEAM.txt - Legacy System",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section discusses a legacy system that runs cron jobs to handle file transfers, similar to the functionality provided by the BEAM system. It mentions that the list of jobs running in the legacy system is available in a shared Google Spreadsheet. The section also hints at providing more information about settlement files, which are likely related to financial transactions or reconciliations.",
+        "use_cases": [
+            "Automated file transfers",
+            "Settlement file processing",
+            "Legacy system integration",
+            "Cron job scheduling"
+        ],
+        "capabilities": [
+            "File transfers",
+            "Cron job execution",
+            "Legacy system integration",
+            "Settlement file handling",
+            "Shared documentation (Google Spreadsheet)"
+        ],
+        "references": [
+            "https://docs.google.com/spreadsheets/d/1mYn7RcYrai2ETsZ94l4eo1WyzKoBJUJF3ne7IqJ1RTk/edit?usp=sharing%22"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_banking-h2h-file-transfers-and-beam-chunk-7",
+        "name": "Banking H2H File Transfers and BEAM.txt - Settlements Files",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to provide links to documentation related to settlement files in the context of banking file transfers and BEAM (potentially a system or process). However, the content itself does not provide any explanatory details, only the links.",
+        "use_cases": [
+            "Accessing documentation on settlement files",
+            "Understanding settlement file processes in banking/financial systems"
+        ],
+        "capabilities": [
+            "Documentation links",
+            "Settlement files",
+            "Banking file transfers",
+            "BEAM"
+        ],
+        "references": [
+            "https://docs.google.com/document/d/1nUNpM0J7cgswrle8BtSwp6evrTRVybaXSp3TcZo9faM/edit#heading=h.r9q4bz593bg6%22",
+            "https://docs.google.com/document/d/1gegtF2u6Kjz_stqI6BCLaSKE_GLcUwSsEb8QNvJXe8Q%22"
+        ]
+    }
+]

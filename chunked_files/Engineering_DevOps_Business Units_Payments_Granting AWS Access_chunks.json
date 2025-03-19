@@ -1,0 +1,54 @@
+[
+    {
+        "id": "engineering_devops_business-units_payments_granting-aws-access-chunk-0",
+        "name": "Granting AWS Access.txt - Introduction",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section introduces a document that outlines the process of granting access to new individuals within the organization's AWS (Amazon Web Services) accounts. It explains that the document will cover the different steps and procedures required to provide access across various AWS accounts. The author acknowledges their enthusiasm for documentation and writing, despite being a beginner in this area.",
+        "use_cases": [
+            "Onboarding new employees or contractors",
+            "Granting access to specific AWS accounts or resources",
+            "Documenting access management processes",
+            "Providing a centralized reference for AWS access procedures"
+        ],
+        "capabilities": [
+            "Access management",
+            "AWS account administration",
+            "Documentation",
+            "Onboarding processes",
+            "Centralized reference"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_business-units_payments_granting-aws-access-chunk-1",
+        "name": "Granting AWS Access.txt - Action Sets",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section provides a link to a Google Spreadsheet that appears to contain a list of predefined action sets for granting AWS access. Action sets are groups of permissions that can be assigned to users or roles, allowing them to perform specific actions within AWS services. This spreadsheet likely serves as a reference for administrators or developers to easily identify and assign the appropriate set of permissions based on the required access level.",
+        "use_cases": [
+            "Granting specific permissions to users or roles for AWS services",
+            "Defining and managing access levels for different user groups or roles",
+            "Streamlining the process of assigning permissions by using predefined action sets",
+            "Maintaining a centralized reference for available action sets and their associated permissions"
+        ],
+        "capabilities": [
+            "Predefined action sets",
+            "Centralized reference",
+            "Access level management",
+            "Permission assignment",
+            "User/role-based access control"
+        ],
+        "references": [
+            "https://docs.google.com/spreadsheets/d/1XM1bbtyeUE3zXR7ZfyoYxQy6ZlUwPX9X05l8euo8J7k/edit#gid=0"
+        ]
+    }
+]

@@ -1,0 +1,211 @@
+[
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-push-|-pull-configuration-request-chunk-0",
+        "name": "SFTP push | pull configuration request.txt - File transfers are an indispensable mode of information exchange when you are dealing with bulk data or there is an absence of tech to do the same via APIs. SFTP is a **S**ecure **F**ile **T**ransfer **P**rotocol that sends files over a secure shell (SSH) with proper data encryption between systems that exchange data. It also offers authentication methods \u2014with a user ID and password, SSH key, or a combination of a password and SSH key. BEAM, which is razorpay's in-house intelligent (*debatable*) SFTP client program, allows us to create bi-directional file transfer jobs (*you either push or pull files*) with a simple 5 line configuration.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section provides an overview of the SFTP (Secure File Transfer Protocol) process and its importance in sharing files, particularly for bulk data or when APIs are not available. It mentions that BEAM, an in-house SFTP client program, allows for bi-directional file transfer jobs with a simple 5-line configuration. The section also suggests reaching out to specific teams for reporting schedules, report contents, or custom needs that fall outside their jurisdiction.",
+        "use_cases": [
+            "Reporting",
+            "Reconciliation",
+            "Settlements",
+            "Refunds",
+            "Sharing files in bulk",
+            "Exchanging data when APIs are not available"
+        ],
+        "capabilities": [
+            "Secure file transfer",
+            "Authentication methods (user ID and password, SSH key, or combination)",
+            "Bi-directional file transfer (push or pull files)",
+            "Simple 5-line configuration",
+            "In-house SFTP client program (BEAM)"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-push-|-pull-configuration-request-chunk-1",
+        "name": "SFTP push | pull configuration request.txt - If someone drops SFTP or file transfers in any conversations that involves sharing files, irrespective of the nature - (reporting, recon, settlements, refunds\u2026..etc) this is your go-to guide.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be an introduction or overview for a guide on using SFTP (Secure File Transfer Protocol) for transferring files in various business scenarios. It suggests that this guide will provide instructions and information on how to handle file transfers securely using SFTP, regardless of the specific context or purpose of the file transfer, such as reporting, reconciliation, settlements, refunds, or any other file-sharing needs.",
+        "use_cases": [
+            "Reporting",
+            "Reconciliation",
+            "Settlements",
+            "Refunds"
+        ],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-push-|-pull-configuration-request-chunk-2",
+        "name": "SFTP push | pull configuration request.txt - For anything related to reporting schedules or the contents of the reports generated, please reach out to `@report-tech` . If you have custom needs that doesn't come under their jurisdiction, reach out to `@reporting`.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains that the current version of BEAM (a software or system) supports only one file transfer protocol, which is SFTP (Secure File Transfer Protocol). SFTP is a secure method of transferring files over a network, ensuring that the data being transmitted is encrypted and protected from unauthorized access. This information is likely relevant for users or administrators who need to transfer files to or from BEAM, as it clarifies that SFTP is the only supported protocol for file transfers.",
+        "use_cases": [
+            "Transferring files securely to or from BEAM",
+            "Configuring SFTP connections for file transfers",
+            "Automating file transfers using SFTP"
+        ],
+        "capabilities": [
+            "Secure file transfer",
+            "Encrypted data transmission",
+            "SFTP protocol support"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-push-|-pull-configuration-request-chunk-3",
+        "name": "SFTP push | pull configuration request.txt - :::info\nBEAM currently supports only one file transfer protocol - SFTP.\n\nAlso remember,  FTPS and SFTP are not the same.\n\n* FTPS is FTP over SSL\n* SFTP is Secure FTP over SSH\n:::",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains the difference between two secure file transfer protocols: FTPS (FTP over SSL) and SFTP (Secure FTP over SSH). It clarifies that BEAM, the system being discussed, currently supports only SFTP, which is a secure file transfer protocol that operates over an SSH (Secure Shell) connection. The section emphasizes that FTPS and SFTP are not the same, as FTPS is a different protocol that uses SSL/TLS encryption for FTP (File Transfer Protocol) connections.",
+        "use_cases": [
+            "Secure file transfer between systems",
+            "Remote file management and transfer",
+            "Automated file transfer workflows",
+            "Integration with existing SSH infrastructure"
+        ],
+        "capabilities": [
+            "SFTP support",
+            "Secure file transfer over SSH",
+            "Differentiation between FTPS and SFTP protocols",
+            "Clarification of supported protocols",
+            "Information about protocol characteristics"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-push-|-pull-configuration-request-chunk-4",
+        "name": "SFTP push | pull configuration request.txt - **For SFTP job setup:-**",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be a heading or title for a set of instructions or guidelines related to setting up an SFTP (Secure File Transfer Protocol) job. However, there is no actual content provided under this heading in the given text.",
+        "use_cases": [
+            "Configuring an SFTP job for file transfers",
+            "Setting up secure file transfer protocols",
+            "Automating file transfer processes"
+        ],
+        "capabilities": [
+            "SFTP job setup",
+            "Secure file transfer",
+            "File transfer automation"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-push-|-pull-configuration-request-chunk-5",
+        "name": "SFTP push | pull configuration request.txt - This is to help you collect all necessary details for setting up an SFTP connection between Razorpay and a merchant/bank.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section aims to provide guidance and collect the necessary information required for establishing an SFTP (Secure File Transfer Protocol) connection between Razorpay, a payment gateway service provider, and a merchant or bank. The SFTP connection facilitates secure data transfer, enabling seamless integration and communication between the parties involved.",
+        "use_cases": [
+            "Setting up an SFTP connection between Razorpay and a merchant",
+            "Setting up an SFTP connection between Razorpay and a bank",
+            "Enabling secure data transfer between Razorpay and external entities",
+            "Facilitating integration and communication between Razorpay and third-party systems"
+        ],
+        "capabilities": [
+            "SFTP connection setup",
+            "Secure data transfer",
+            "Integration with merchants",
+            "Integration with banks",
+            "Communication with third-party systems"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-push-|-pull-configuration-request-chunk-6",
+        "name": "SFTP push | pull configuration request.txt - **If the SFTP server is managed by the merchant/bank**",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains the necessary information and steps required to set up an SFTP (Secure File Transfer Protocol) connection for file transfers between Razorpay and a merchant/bank. It covers the scenario where the SFTP server is managed by the merchant/bank, as well as the case where the merchant/bank does not have an SFTP server, and Razorpay can provide access to their own AWS-managed SFTP server. The section outlines the specific details needed, such as IP addresses, port numbers, usernames, passwords or public keys, and the destination directory on the SFTP server.",
+        "use_cases": [
+            "Setting up an SFTP connection for file transfers between Razorpay and a merchant/bank",
+            "Whitelisting Razorpay's SFTP client IP addresses on the merchant/bank's firewall",
+            "Providing access to Razorpay's AWS-managed SFTP server for merchants/banks without their own SFTP server"
+        ],
+        "capabilities": [
+            "SFTP server management",
+            "Firewall whitelisting",
+            "IP address validation",
+            "Authentication methods (password, public key)",
+            "Directory path specification",
+            "AWS-managed SFTP server"
+        ],
+        "references": [
+            "https://www.ssh.com/academy/ssh/keygen#creating-an-ssh-key-pair-for-user-authentication",
+            "http://sftp.razorpay.com"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-push-|-pull-configuration-request-chunk-7",
+        "name": "SFTP push | pull configuration request.txt - **If they do not have the facility to host an SFTP server -**",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains the process of setting up an SFTP (Secure File Transfer Protocol) account for a client who does not have the capability to host an SFTP server. It outlines the necessary steps, such as providing a list of IP addresses from which the client will access the SFTP server, generating an RSA key pair for secure authentication, and sharing the public key with the SFTP server provider. The section also mentions potential issues that may arise during the setup process and offers troubleshooting suggestions.",
+        "use_cases": [
+            "Enabling secure file transfers for clients without an SFTP server",
+            "Configuring IP address whitelisting for secure access",
+            "Generating and managing RSA key pairs for authentication",
+            "Troubleshooting common SFTP setup and connectivity issues"
+        ],
+        "capabilities": [
+            "SFTP account creation",
+            "IP address whitelisting",
+            "RSA key pair generation",
+            "Public key sharing",
+            "SFTP path configuration",
+            "Permission management",
+            "Connectivity testing",
+            "Troubleshooting guidance"
+        ],
+        "references": [
+            "https://www.ssh.com/academy/ssh/keygen#creating-an-ssh-key-pair-for-user-authentication",
+            "https://alpha.razorpay.com/repo/write-an-sftp-push-job>",
+            "https://alpha.razorpay.com/repo/write-an-h2h-sftp-push-job-with-date-format>",
+            "https://alpha.razorpay.com/repo/create-an-sftp-pull-job>"
+        ]
+    }
+]

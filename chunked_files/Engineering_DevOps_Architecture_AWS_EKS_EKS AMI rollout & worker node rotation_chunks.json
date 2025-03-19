@@ -1,0 +1,61 @@
+[
+    {
+        "id": "engineering_devops_architecture_aws_eks_eks-ami-rollout-&-worker-node-rotation-chunk-0",
+        "name": "EKS AMI rollout & worker node rotation.txt - Apply AMI changes.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "EKS"
+        ],
+        "description": "This section explains the process of updating the Amazon Machine Image (AMI) used by the worker nodes in an Amazon Elastic Kubernetes Service (EKS) cluster. It involves using Terraform to plan and apply changes to the launch template associated with the worker node Auto Scaling Group (ASG). After updating the AMI, the section describes how to cordon and drain existing worker nodes to replace them with new nodes using the updated AMI.",
+        "use_cases": [
+            "Updating the AMI for worker nodes in an EKS cluster",
+            "Rotating worker nodes to use a new AMI version",
+            "Maintaining and upgrading worker node configurations in a managed Kubernetes environment"
+        ],
+        "capabilities": [
+            "Terraform integration for managing EKS resources",
+            "Launch template management for worker node configurations",
+            "Worker node cordon and drain for controlled node replacement",
+            "Kubernetes node management in an EKS cluster"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_aws_eks_eks-ami-rollout-&-worker-node-rotation-chunk-1",
+        "name": "EKS AMI rollout & worker node rotation.txt - Node cordon & drain",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "EKS"
+        ],
+        "description": "This section explains the process of draining and cordoning a worker node in an Elastic Kubernetes Service (EKS) cluster. It involves identifying the node to be rotated, increasing the desired count of instances in the Auto Scaling Group (ASG) to accommodate the workload during the rotation, cordoning the node to prevent new pod deployments, and then draining the node to terminate the running pods and reschedule them on other nodes. The process ensures a smooth transition of workloads without disrupting the overall cluster operations.",
+        "use_cases": [
+            "Worker node rotation in an EKS cluster",
+            "Upgrading or replacing worker nodes",
+            "Maintaining high availability of applications during node maintenance",
+            "Scaling up or down the cluster capacity"
+        ],
+        "capabilities": [
+            "Node cordon",
+            "Node drain",
+            "Ignoring DaemonSet pods during drain",
+            "Identifying worker nodes by IP address",
+            "Increasing ASG desired count",
+            "Evicting and rescheduling pods"
+        ],
+        "references": [
+            "ttps://ap-south-1.console.aws.amazon.com/ec2autoscaling/home?region=ap-south-1#/details/",
+            "https://alpha.razorpay.com/_static/file/5449aa1276d7cdc06ed7f5ae0aca028e.png",
+            "https://alpha.razorpay.com/_static/file/823d943307951423714a251e76453c2f.png",
+            "https://alpha.razorpay.com/_static/file/c461788f240b5c017f88e90d79febfc0.png",
+            "https://ap-south-1.console.aws.amazon.com/ec2autoscaling/home?region=ap-south-1#/details/>",
+            "https://kubernetes.io/docs/tasks/run-application/configure-pdb/>",
+            "https://kubernetes.io/docs/tasks/run-application/configure-pdb/#think-about-how-your-application-reacts-to-disruptions>"
+        ]
+    }
+]

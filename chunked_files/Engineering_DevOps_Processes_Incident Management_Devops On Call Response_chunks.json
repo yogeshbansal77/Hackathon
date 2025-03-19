@@ -1,0 +1,192 @@
+[
+    {
+        "id": "engineering_devops_processes_incident-management_devops-on-call-response-chunk-0",
+        "name": "Devops On Call Response.txt - Role",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section explains the critical role of the DevOps on-call team in ensuring the reliability and availability of Razorpay's services. It highlights that during their shift, if any issue arises, the on-call engineer will receive notifications through various channels such as push notifications, phone calls, texts, emails, or Slack messages. This allows the on-call engineer to promptly respond and address any problems that may occur.",
+        "use_cases": [
+            "Ensuring the reliability and availability of Razorpay's services",
+            "Prompt notification and response to any issues or incidents",
+            "Monitoring and maintaining the system's health",
+            "Providing support and troubleshooting during critical situations"
+        ],
+        "capabilities": [
+            "On-call duty rotation",
+            "Multi-channel notification system",
+            "Push notifications",
+            "Phone calls",
+            "Text messages",
+            "Email notifications",
+            "Slack notifications"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_devops-on-call-response-chunk-1",
+        "name": "Devops On Call Response.txt - Notification Channels",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section explains the primary notification channels used to alert the DevOps on-call team about various issues or incidents. It mentions that PagerDuty is used for critical (P0) alerts, while Slack is used for all alert levels, including P0 (critical), P1 (high), P2 (medium), and P3 (low). These channels are designed to ensure that the on-call team is promptly notified about any issues that require their attention and intervention.",
+        "use_cases": [
+            "Alerting the DevOps on-call team about critical incidents (P0)",
+            "Notifying the on-call team about high, medium, and low-priority issues (P1, P2, P3)"
+        ],
+        "capabilities": [
+            "Pagerduty integration for critical (P0) alerts",
+            "Slack integration for all alert levels (P0, P1, P2, P3)",
+            "Categorization of alerts based on priority levels"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_devops-on-call-response-chunk-2",
+        "name": "Devops On Call Response.txt - Response",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section outlines the communication channels and mechanisms used for responding to incidents or issues during on-call shifts. It mentions automated Slack messages, which likely refer to notifications or alerts triggered by monitoring systems, and communications from other teams over Slack channels, suggesting collaboration and coordination across different teams.",
+        "use_cases": [
+            "Receiving automated alerts or notifications",
+            "Coordinating with other teams during incidents",
+            "Responding to issues or incidents during on-call shifts",
+            "Collaborating with cross-functional teams"
+        ],
+        "capabilities": [
+            "Automated Slack messaging",
+            "Slack channel communication",
+            "On-call response management",
+            "Cross-team collaboration",
+            "Incident notification",
+            "Incident coordination"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_devops-on-call-response-chunk-3",
+        "name": "Devops On Call Response.txt - 1. Identify",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section explains the initial step in the incident response process, which is to identify whether an alert or notification received through various channels (such as monitoring systems or support channels) represents a genuine incident or a false positive. The on-call engineer is responsible for analyzing the alert and determining if it requires further investigation and action, or if it can be disregarded as a false alarm.",
+        "use_cases": [
+            "Analyzing alerts from monitoring systems",
+            "Identifying genuine incidents from false positives",
+            "Triaging alerts for on-call engineers",
+            "Initial incident response and analysis"
+        ],
+        "capabilities": [
+            "Alert identification",
+            "Incident detection",
+            "False positive identification",
+            "On-call engineer notification",
+            "Alert analysis",
+            "Incident triage"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_devops-on-call-response-chunk-4",
+        "name": "Devops On Call Response.txt - 2. Triage",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section outlines the process of triaging an incident or service degradation detected by the on-call engineer. It involves confirming the incident, classifying it as a production or internal incident, assigning a priority level, and initiating communication channels based on the priority. The higher the priority, the more urgent and extensive the communication channels are, ranging from creating a Zoom bridge and informing stakeholders on Slack to calling stakeholders and BU leaders.",
+        "use_cases": [
+            "Triaging a potential outage or service degradation",
+            "Classifying an incident as production or internal",
+            "Assigning priority levels to incidents",
+            "Initiating communication channels based on incident priority"
+        ],
+        "capabilities": [
+            "Incident triage",
+            "Incident classification",
+            "Priority assignment",
+            "Communication channel management",
+            "Stakeholder notification",
+            "Zoom bridge creation"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/devops-on-call-response#production-incident",
+            "https://alpha.razorpay.com/repo/devops-on-call-response#internal-incident"
+        ]
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_devops-on-call-response-chunk-5",
+        "name": "Devops On Call Response.txt - Escalation Matrix",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section explains the concept of an Escalation Matrix, which is a system for notifying the appropriate personnel in case of critical issues or incidents. It provides a list of different business units (BUs) within the organization, along with links to their respective on-call rosters and escalation matrices. The escalation matrix ensures that the right people are notified about critical alerts, regardless of business hours. This helps in efficient incident response and resolution.",
+        "use_cases": [
+            "Notifying the right personnel during critical incidents or outages",
+            "Ensuring efficient incident response and resolution",
+            "Providing a centralized repository for on-call rosters and escalation matrices across different business units"
+        ],
+        "capabilities": [
+            "Escalation Matrix",
+            "On-call Rosters",
+            "Business Unit (BU) specific contacts",
+            "Critical alert notifications",
+            "Incident response",
+            "Centralized repository"
+        ],
+        "references": [
+            "https://docs.google.com/spreadsheets/d/1ia14q4ewJSBFZpOORyHTHO2GBddY4N_PWluRokJm0bA/edit?ts=6017a5bc#gid=1621038658",
+            "https://docs.google.com/document/d/1EmUAEgfXAY9ZqUaVni2sRi-TxOWwc8w3t9ZjVBhA5Jo/edit",
+            "https://docs.google.com/spreadsheets/d/1S4nZoxuewuObIcnpwCGpVuKr2dvMBTRT-LXTMjsZaRk/edit#gid=0",
+            "https://docs.google.com/document/d/1vQS1UTzMhOr2ND9f4ShdPoJWA_4Fa1pU3fKRowLeOTo/edit#",
+            "https://docs.google.com/spreadsheets/d/1qwkrZ_EfCrx-V98y0IJywmNzlU9WVAN33EeyERE9Dmw/edit#gid=0",
+            "https://docs.google.com/spreadsheets/d/1Ggg6o7De3kY5bpf0cgzqwsLmSfwlCuMaJe_bLkP16sA/edit#gid=0",
+            "https://docs.google.com/spreadsheets/d/1L0-IMlVB6m1tiuHF-Hqwo9jQUfHHx_6EdnqAY3gUIDY/edit#gid=0",
+            "https://docs.google.com/spreadsheets/d/1StEBtNC9kO-rc_4P-8BEzttZ7sp4kroapFUJ9JHbk5Y/edit#gid=1791314751"
+        ]
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_devops-on-call-response-chunk-6",
+        "name": "Devops On Call Response.txt - 3. Post Outages Channel",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section outlines the process for communicating and logging incidents related to service outages or degradations at Razorpay. It covers steps like posting updates in the #outages Slack channel, informing leadership via email integration, logging incidents in Jira, and using emojis to track internal incidents. The goal is to ensure efficient incident response, stakeholder communication, and visibility across the organization.",
+        "use_cases": [
+            "Communicating service outages or degradations to stakeholders",
+            "Logging and tracking incidents for root cause analysis",
+            "Distinguishing between external and internal incidents",
+            "Ensuring visibility of internal incidents across the DevOps team"
+        ],
+        "capabilities": [
+            "Posting outage details in #outages Slack channel",
+            "Informing leadership via PagerDuty email integration",
+            "Logging incidents in Jira with specific issue types",
+            "Using emojis to track internal incidents in #devops-jira channel",
+            "Defining and distinguishing between production incidents, internal incidents, application alerts, and infrastructure alerts"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/8f951a58be08c7e6e3e742afe9ca675e.png"
+        ]
+    }
+]

@@ -1,0 +1,139 @@
+[
+    {
+        "id": "engineering_devops_architecture_capital_proxy-to-webflow-chunk-0",
+        "name": "Proxy to webflow.txt - Overview",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Capital"
+        ],
+        "description": "This section explains how a subdomain (rize.razorpay.com) is configured to use a proxy service (proxy-ssl.webflow.com) through a CNAME record. This allows the subdomain to be served by the proxy service, which can provide additional functionality or security features.",
+        "use_cases": [
+            "Proxying a subdomain to a third-party service",
+            "Enabling additional features or security for a subdomain",
+            "Routing traffic through a proxy for performance or caching"
+        ],
+        "capabilities": [
+            "CNAME record configuration",
+            "Subdomain proxying",
+            "Third-party service integration",
+            "Traffic routing",
+            "Performance optimization",
+            "Security enhancements"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_capital_proxy-to-webflow-chunk-1",
+        "name": "Proxy to webflow.txt - Example for Rize",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Capital"
+        ],
+        "description": "This section provides an example of a Terraform module that can be used to create a CNAME record for the Webflow service. The example code is hosted on GitHub, and the provided link directs the reader to the specific section of the code that demonstrates how to set up the CNAME record. This could be useful for developers or system administrators who need to configure DNS records for their web applications or services.",
+        "use_cases": [
+            "Setting up a CNAME record for the Webflow service",
+            "Configuring DNS records for web applications or services",
+            "Using Terraform for infrastructure as code (IaC) and automating DNS management"
+        ],
+        "capabilities": [
+            "Terraform module",
+            "CNAME record creation",
+            "DNS management",
+            "Infrastructure as code (IaC)",
+            "GitHub code hosting",
+            "Example code reference"
+        ],
+        "references": [
+            "https://github.com/razorpay/vishnu/blob/b29f40df6a7142f0c1d6393d38347184a37e648b/prod/dns/records.tf#L562>"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_capital_proxy-to-webflow-chunk-2",
+        "name": "Proxy to webflow.txt - Terraform Module",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Capital"
+        ],
+        "description": "This section suggests that the technical aspects of setting up the proxy to Webflow have been covered, and the remaining tasks, such as designing and developing the website's front-end, will be handled by designers and front-end developers. It implies that the technical setup is complete, and the focus can now shift to the visual and user experience aspects of the website.",
+        "use_cases": [
+            "Website design",
+            "Front-end development",
+            "User experience enhancement"
+        ],
+        "capabilities": [
+            "Proxy setup",
+            "Webflow integration",
+            "Handoff to design and development teams"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_capital_proxy-to-webflow-chunk-3",
+        "name": "Proxy to webflow.txt - Note",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Capital"
+        ],
+        "description": "This section appears to be a note or reminder for developers, indicating that they may need to perform certain actions or configurations on their end to properly utilize the proxy to webflow functionality. However, the specific details or instructions are not provided in the given content.",
+        "use_cases": [
+            "Proxy setup for webflow",
+            "Developer configuration for webflow integration",
+            "Enabling webflow functionality for developers"
+        ],
+        "capabilities": [
+            "Developer awareness",
+            "Developer action required",
+            "End-user configuration"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_capital_proxy-to-webflow-chunk-4",
+        "name": "Proxy to webflow.txt - Instructions for Developers",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Capital"
+        ],
+        "description": "This section explains the process for developers to make their website, created on the Webflow platform, accessible through a custom domain name. It involves publishing the website on Webflow and then enabling the CNAME (Canonical Name) record to associate the custom domain with the Webflow-hosted website. This allows users to access the website using a personalized domain name instead of the default Webflow URL.",
+        "use_cases": [
+            "Enabling a custom domain for a website built on Webflow",
+            "Publishing a website on Webflow",
+            "Associating a custom domain with a Webflow-hosted website",
+            "Improving branding and professionalism by using a custom domain"
+        ],
+        "capabilities": [
+            "Custom domain setup",
+            "Website publishing",
+            "CNAME record configuration",
+            "Domain name association",
+            "Webflow console access"
+        ],
+        "references": [
+            "https://university.webflow.com/lesson/connect-a-custom-domain>"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_capital_proxy-to-webflow-chunk-5",
+        "name": "Proxy to webflow.txt - Webflow Documentation",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Capital"
+        ],
+        "description": "This section appears to be empty, as there is no content provided within the code block. Without any information or details, it is difficult to provide a meaningful description or infer any use cases or capabilities.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    }
+]

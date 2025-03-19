@@ -1,0 +1,56 @@
+[
+    {
+        "id": "engineering_devops_jarvis_onboarding-clusters-to-iam-troubleshooter-chunk-0",
+        "name": "Onboarding clusters to IAM-Troubleshooter.txt - About IAM-Troubleshooter",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section introduces IAM-Troubleshooter, a tool designed to help diagnose and resolve issues related to pod access to AWS IAM (Identity and Access Management). It provides a brief overview of the tool's purpose and includes a link to a resource where more information can be found. The section aims to give a high-level understanding of IAM-Troubleshooter's functionality for those who may not be familiar with it.",
+        "use_cases": [
+            "Troubleshooting pod access issues to AWS IAM",
+            "Diagnosing and resolving problems related to pod authentication and authorization with AWS IAM",
+            "Identifying and addressing misconfigurations or permission-related issues that prevent pods from accessing AWS resources"
+        ],
+        "capabilities": [
+            "Troubleshooting",
+            "Diagnostics",
+            "Access issue resolution",
+            "Pod authentication",
+            "Pod authorization",
+            "AWS IAM integration"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/iam-troubleshooter"
+        ]
+    },
+    {
+        "id": "engineering_devops_jarvis_onboarding-clusters-to-iam-troubleshooter-chunk-1",
+        "name": "Onboarding clusters to IAM-Troubleshooter.txt - How to Onboard a new cluster to IAM-Troubleshooter?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section outlines the steps to onboard a new Kubernetes cluster to the IAM-Troubleshooter tool. It involves deploying the IAM-Troubleshooter application on the cluster using a Helm chart, exposing it via an ingress route, verifying its successful deployment by accessing the endpoint, and sharing the endpoint with the DevOps team for integration with the Jarvis frontend.",
+        "use_cases": [
+            "Onboarding a new Kubernetes cluster to the IAM-Troubleshooter tool",
+            "Deploying and exposing the IAM-Troubleshooter application on a cluster",
+            "Verifying successful deployment of IAM-Troubleshooter",
+            "Integrating IAM-Troubleshooter with the Jarvis frontend"
+        ],
+        "capabilities": [
+            "Deploying IAM-Troubleshooter using Helm chart",
+            "Exposing IAM-Troubleshooter via ingress route",
+            "Creating endpoint for IAM-Troubleshooter",
+            "Verifying deployment by accessing endpoint",
+            "Sharing endpoint for integration with Jarvis frontend"
+        ],
+        "references": [
+            "https://github.com/razorpay/kube-manifests/tree/master/templates/jarviskube",
+            "https://github.com/razorpay/vishnu/blob/0e2cf0891480083bb1f4c0bed100a3a8137bd075/prod/dns/records.tf#L1057",
+            "https://iam-troubleshooter-CLUSTER.razorpay.com"
+        ]
+    }
+]

@@ -1,0 +1,28 @@
+[
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_aws-transfer-service-(sftprazorpaycom)-chunk-0",
+        "name": "AWS Transfer Service (sftprazorpaycom).txt - Document URL",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section provides a URL link to an AWS blog post that discusses using VPC-hosted endpoints in shared VPCs with the AWS Transfer Family service. The blog post likely explains how to securely transfer files between on-premises systems and AWS resources using the AWS Transfer Family service, while leveraging VPC-hosted endpoints in a shared VPC environment for enhanced security and network isolation.",
+        "use_cases": [
+            "Securely transferring files between on-premises systems and AWS resources",
+            "Leveraging VPC-hosted endpoints in a shared VPC environment for enhanced security and network isolation"
+        ],
+        "capabilities": [
+            "AWS Transfer Family service",
+            "VPC-hosted endpoints",
+            "Shared VPCs",
+            "Secure file transfer",
+            "Network isolation"
+        ],
+        "references": [
+            "https://aws.amazon.com/blogs/storage/using-vpc-hosted-endpoints-in-shared-vpcs-with-aws-transfer-family/>"
+        ]
+    }
+]

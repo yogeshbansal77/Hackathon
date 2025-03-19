@@ -1,0 +1,132 @@
+[
+    {
+        "id": "engineering_devops_devstack_deploying-applications-on-devstack-chunk-0",
+        "name": "Deploying Applications on Devstack.txt - 1. Pre-requisites",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Devstack"
+        ],
+        "description": "This section outlines the prerequisites for deploying applications on Devstack, which appears to be a cloud-based development environment. It emphasizes the need for being connected to the office network (either through VPN or Wi-Fi) and completing the Devstack onboarding process. Additionally, it mentions that the application to be deployed should already be onboarded on Devstack, and provides a link to a repository containing a list of onboarded applications.",
+        "use_cases": [
+            "Deploying applications on a cloud-based development environment (Devstack)",
+            "Ensuring secure access to the deployment environment through office network connectivity",
+            "Onboarding applications to the Devstack platform before deployment",
+            "Referencing a centralized repository for a list of onboarded applications"
+        ],
+        "capabilities": [
+            "Office network connectivity (VPN or Wi-Fi)",
+            "Devstack onboarding process",
+            "Application onboarding on Devstack",
+            "Centralized repository for onboarded applications",
+            "Deployment of onboarded applications on Devstack"
+        ],
+        "references": [
+            "https://github.com/razorpay/kube-manifests/tree/master/helmfile/charts"
+        ]
+    },
+    {
+        "id": "engineering_devops_devstack_deploying-applications-on-devstack-chunk-1",
+        "name": "Deploying Applications on Devstack.txt - 2. Good to have",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Devstack"
+        ],
+        "description": "This section outlines the recommended prerequisites for working with the Devstack applications. It suggests having a basic understanding of Kubernetes concepts like pods, deployments, services, and IngressRoutes, as well as familiarity with kubectl commands used to manage Kubernetes resources. Additionally, it mentions the need for basic knowledge of Helm and Helmfile, which are tools utilized for deploying the Devstack applications.",
+        "use_cases": [
+            "Deploying applications on Devstack",
+            "Managing Kubernetes resources",
+            "Working with Helm and Helmfile for application deployment"
+        ],
+        "capabilities": [
+            "Understanding Kubernetes concepts (pods, deployments, services, IngressRoutes)",
+            "Knowledge of kubectl commands",
+            "Familiarity with Helm",
+            "Familiarity with Helmfile",
+            "Deploying applications using Helm and Helmfile"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devstack_deploying-applications-on-devstack-chunk-2",
+        "name": "Deploying Applications on Devstack.txt - 3. Steps to Deploy",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Devstack"
+        ],
+        "description": "This section explains the steps to deploy applications on a Devstack environment using a tool called Helmfile. It involves cloning a repository containing Kubernetes manifests, modifying a configuration file (helmfile.yaml) to specify the deployment details like a unique identifier and time-to-live, and then running a command (helmfile sync) to deploy the desired applications along with their dependencies like caches, queues, and ingress configuration. The deployed services can be accessed by passing a unique header in the requests.",
+        "use_cases": [
+            "Deploying applications on a Devstack environment",
+            "Testing applications in a temporary environment",
+            "Deploying applications with dependencies like caches, queues, and ingress configuration"
+        ],
+        "capabilities": [
+            "Cloning a repository containing Kubernetes manifests",
+            "Modifying a configuration file (helmfile.yaml) to specify deployment details",
+            "Deploying desired applications along with dependencies using Helmfile",
+            "Accessing deployed services by passing a unique header",
+            "Validating the configuration file for linting errors",
+            "Setting a time-to-live (TTL) for the deployed services"
+        ],
+        "references": [
+            "https://github.com/razorpay/kube-manifests",
+            "https://alpha.razorpay.com/_static/file/8ff28f1eccc70e18d253671246737309.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_devstack_deploying-applications-on-devstack-chunk-3",
+        "name": "Deploying Applications on Devstack.txt - 4. [Optional] Verify your Deployment",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Devstack"
+        ],
+        "description": "This section explains how to verify the deployment of applications or services on a Kubernetes cluster using the 'kubectl' command-line tool. It provides instructions to list all running pods (containers) within a specific namespace or across all namespaces, filtered by a label associated with the deployed applications. This allows users to check the status of their deployed applications and ensure they are running correctly.",
+        "use_cases": [
+            "Verifying the successful deployment of applications or services on a Kubernetes cluster",
+            "Monitoring the running status of deployed applications or services",
+            "Troubleshooting deployment issues by checking the running pods",
+            "Identifying the namespaces and labels associated with deployed applications"
+        ],
+        "capabilities": [
+            "Listing pods (containers) within a specific namespace",
+            "Listing pods across all namespaces",
+            "Filtering pods by labels",
+            "Identifying namespaces and labels associated with deployed applications",
+            "Verifying deployment status",
+            "Monitoring running applications"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devstack_deploying-applications-on-devstack-chunk-4",
+        "name": "Deploying Applications on Devstack.txt - 5. Accessing the provisioned fleet",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Devstack"
+        ],
+        "description": "This section explains how to access the applications deployed on the Devstack platform and view their logs. It provides instructions on obtaining the unique URL for each deployed application, as well as how to use headers to access the services. The section also covers methods for viewing logs of the deployed pods using the kubectl command.",
+        "use_cases": [
+            "Accessing deployed applications on Devstack",
+            "Viewing logs of deployed pods",
+            "Using headers to access services",
+            "Cleaning up resources after deployment"
+        ],
+        "capabilities": [
+            "Generating unique URLs for deployed applications",
+            "Accessing ingressroute resource details",
+            "Using headers with browser extensions, Postman, or curl",
+            "Viewing pod logs with kubectl",
+            "Deleting deployed resources with helmfile",
+            "Automatic resource cleanup after time-to-live (TTL) expiry"
+        ],
+        "references": [
+            "https://chrome.google.com/webstore/detail/modheader/idgpnmonknjnojddfkpgkljpfnnfcklj?hl=en",
+            "https://addons.mozilla.org/en-US/firefox/addon/modheader-firefox/",
+            "https://dashboard-awesomedevstack.dev.razorpay.in`"
+        ]
+    }
+]

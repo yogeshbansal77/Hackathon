@@ -1,0 +1,85 @@
+[
+    {
+        "id": "engineering_devops_jarvis_adding-an-automation-to-compliance-automations-chunk-0",
+        "name": "Adding an automation to Compliance Automations.txt - Overview",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section provides an overview of the architecture and technology stack used for the Compliance Automations feature. It explains that the frontend is integrated with Jarvis, while the backend and automations are stored in the 'infra-tools' repository on GitHub. The backend is built using the FastAPI library, and the frontend is developed using the Next.js framework, with its repository also hosted on GitHub.",
+        "use_cases": [
+            "Integrating the frontend with Jarvis",
+            "Managing and storing backend code and automations",
+            "Developing the frontend using Next.js framework",
+            "Hosting and maintaining code repositories on GitHub"
+        ],
+        "capabilities": [
+            "Frontend integration",
+            "Backend development (FastAPI)",
+            "Automation management",
+            "Code repository hosting (GitHub)",
+            "Frontend development (Next.js)",
+            "Compliance automation"
+        ],
+        "references": [
+            "https://github.com/razorpay/infra-tools/tree/master/compliance-automations",
+            "https://github.com/razorpay/frontend-jarvis"
+        ]
+    },
+    {
+        "id": "engineering_devops_jarvis_adding-an-automation-to-compliance-automations-chunk-1",
+        "name": "Adding an automation to Compliance Automations.txt - Workflow",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section outlines the workflow for automations, which are processes that collect data and store it for later retrieval. The automations are triggered either from the frontend or through a scheduled task (cron). When triggered, a 'generate()' function initiates the automation workflow, which gathers the required data and stores it in an S3 bucket following a specific naming convention. Subsequently, the backend retrieves the data from the S3 bucket and caches it in a MongoDB database. Finally, the data is served to the frontend from the MongoDB database.",
+        "use_cases": [
+            "Automating data collection and storage processes",
+            "Caching data for efficient retrieval",
+            "Integrating with cloud storage (S3) and databases (MongoDB)"
+        ],
+        "capabilities": [
+            "Automation triggering (frontend or cron)",
+            "Data collection",
+            "S3 bucket storage",
+            "Naming convention for S3 objects",
+            "Data retrieval from S3",
+            "MongoDB caching",
+            "Serving data to frontend"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_jarvis_adding-an-automation-to-compliance-automations-chunk-2",
+        "name": "Adding an automation to Compliance Automations.txt - New automations:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section outlines the steps to integrate a new automation with the backend and frontend systems. It explains how to set up the automation workflow, store files in the S3 bucket, and utilize helper functions. Additionally, it provides guidance on integrating the automation with the frontend, including cloning the repository, installing dependencies, creating a new branch, setting up a local server, and following the file structure and routing system used in the Next.js framework.",
+        "use_cases": [
+            "Integrating a new automation with the backend system",
+            "Integrating a new automation with the frontend system",
+            "Adding new reports or features similar to existing ones (e.g., IAM reports, K8s reports)",
+            "Storing and retrieving files from the S3 bucket"
+        ],
+        "capabilities": [
+            "Automation workflow setup",
+            "S3 bucket file storage and retrieval",
+            "Helper functions for general tasks",
+            "Frontend repository cloning and dependency installation",
+            "Branch creation and local server setup",
+            "File-based routing system in Next.js",
+            "Data fetching and dynamic URL handling",
+            "Table rendering for report display",
+            "Date input handling and URL updating"
+        ],
+        "references": [
+            "http://jarvis.razorpay.com/iamReports"
+        ]
+    }
+]

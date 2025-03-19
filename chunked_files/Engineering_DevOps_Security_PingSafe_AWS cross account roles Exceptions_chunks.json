@@ -1,0 +1,50 @@
+[
+    {
+        "id": "engineering_devops_security_pingsafe_aws-cross-account-roles-exceptions-chunk-0",
+        "name": "AWS cross account roles Exceptions.txt - PingSafe Alert",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Security",
+            "PingSafe"
+        ],
+        "description": "This section provides information about external AWS accounts that are authorized to assume roles within the organization's AWS accounts. It serves as a reference list that should be updated whenever new trusted external accounts are added or removed.",
+        "use_cases": [
+            "Managing access for external parties or partners",
+            "Enabling cross-account resource access",
+            "Auditing and controlling external account access"
+        ],
+        "capabilities": [
+            "Cross-account role assumption",
+            "External account trust management",
+            "Access control list maintenance"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_security_pingsafe_aws-cross-account-roles-exceptions-chunk-1",
+        "name": "AWS cross account roles Exceptions.txt - Trusted External Accounts",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Security",
+            "PingSafe"
+        ],
+        "description": "This section lists external AWS account IDs that are trusted by the organization for specific purposes. These account IDs likely belong to third-party services or vendors that require cross-account access to perform their intended functions within the organization's AWS environment. The list serves as a reference for authorized external accounts that have been granted trust relationships.",
+        "use_cases": [
+            "Granting access to third-party monitoring services (e.g., SumoLogic, DataDog, Coralogix)",
+            "Enabling integration with cloud cost management tools (e.g., CloudZero)",
+            "Allowing access for security and compliance scanning tools (e.g., PingSafe, Cloudsploit)",
+            "Facilitating integration with data platforms and services (e.g., Databricks, Qubole, Redis Labs)"
+        ],
+        "capabilities": [
+            "Cross-account trust relationships",
+            "External account access management",
+            "Third-party service integration",
+            "Monitoring and security scanning",
+            "Cost management and optimization",
+            "Data platform integration"
+        ],
+        "references": []
+    }
+]

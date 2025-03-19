@@ -1,0 +1,149 @@
+[
+    {
+        "id": "engineering_devops_run-books-and-sops_api-certificate-renewal-chunk-0",
+        "name": "API Certificate Renewal.txt - Step 1: Issue a new certificate",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains the recommended practice of generating a new Certificate Signing Request (CSR) and a new private key when issuing a new SSL/TLS certificate. A CSR is a data file that contains information about the organization and the server that needs to be certified. Generating a new CSR and private key for each certificate renewal ensures better security and prevents potential issues that may arise from reusing the same key pair.",
+        "use_cases": [
+            "Issuing a new SSL/TLS certificate",
+            "Renewing an existing SSL/TLS certificate",
+            "Replacing an expired or compromised SSL/TLS certificate",
+            "Securing web servers and online services"
+        ],
+        "capabilities": [
+            "Generate new CSR",
+            "Issue new private key",
+            "Secure certificate issuance",
+            "Improve security",
+            "Prevent key reuse issues",
+            "Facilitate certificate renewal process"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_api-certificate-renewal-chunk-1",
+        "name": "API Certificate Renewal.txt - 1.1 Generating a new CSR",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains how to generate a new Certificate Signing Request (CSR) using the OpenSSL command-line tool. A CSR is a data file that contains information about the organization and the server that needs to be certified. The generated CSR needs to be submitted to a Certificate Authority (CA) to obtain a new SSL/TLS certificate. The section emphasizes not to use any websites to generate the CSR and provides a specific command with parameters to create a new 2048-bit RSA key pair and CSR.",
+        "use_cases": [
+            "Obtaining a new SSL/TLS certificate for a website or server",
+            "Renewing an existing SSL/TLS certificate that is about to expire",
+            "Generating a CSR for a new domain or subdomain",
+            "Creating a CSR with specific organization and server information"
+        ],
+        "capabilities": [
+            "Generating a new CSR",
+            "Creating a new 2048-bit RSA key pair",
+            "Specifying organization details (Country, State, City, Organization Name, Organizational Unit)",
+            "Specifying domain or subdomain (Common Name)",
+            "Specifying email address for domain administrator",
+            "Outputting the CSR and private key to separate files"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_api-certificate-renewal-chunk-2",
+        "name": "API Certificate Renewal.txt - 1.2 Raise request with IT team",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains the process of requesting a new SSL/TLS certificate for the Razorpay domain (*.razorpay.com) from the IT team. It involves generating a Certificate Signing Request (CSR), raising a ticket with the IT team, attaching the CSR, specifying the required Subject Alternative Names (SANs), and requesting the certificates in PEM format. Once the IT team provides the new certificates, the section guides on verifying the certificate details and validity using OpenSSL. It also mentions updating the merchant communication and documentation website with the new certificate information.",
+        "use_cases": [
+            "Renewing SSL/TLS certificates for the Razorpay domain",
+            "Requesting new SSL/TLS certificates from the IT team",
+            "Verifying certificate details and validity",
+            "Updating merchant communication and documentation with new certificate information"
+        ],
+        "capabilities": [
+            "Generating Certificate Signing Request (CSR)",
+            "Raising tickets with IT team",
+            "Specifying Subject Alternative Names (SANs)",
+            "Requesting certificates in PEM format",
+            "Verifying certificate details using OpenSSL",
+            "Updating documentation website"
+        ],
+        "references": [
+            "https://razorpay.atlassian.net/browse/CORP-4333",
+            "https://razorpay.com/docs/security/whitelists/"
+        ]
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_api-certificate-renewal-chunk-3",
+        "name": "API Certificate Renewal.txt - Step 2: Merchant communications and Docs update",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains the need for testing the renewed API certificate with a Razorpay.com URL. It suggests that after renewing the certificate, the next step is to verify its functionality by testing it with a URL from the Razorpay.com domain.",
+        "use_cases": [
+            "Testing the renewed API certificate",
+            "Verifying the functionality of the renewed certificate",
+            "Ensuring the renewed certificate works with Razorpay.com URLs"
+        ],
+        "capabilities": [
+            "Certificate renewal",
+            "Certificate testing",
+            "Integration with Razorpay.com"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_api-certificate-renewal-chunk-4",
+        "name": "API Certificate Renewal.txt - Step 3: Testing Certificate",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains the process of testing and validating a newly imported or renewed SSL/TLS certificate for the Razorpay.com domain. It involves importing the certificate into AWS Certificate Manager (ACM), attaching it to a load balancer, creating a Route53 entry linked to the load balancer, and verifying the certificate's validity by visiting the URL and checking for any TLS-related errors in CloudWatch logs.",
+        "use_cases": [
+            "Validating a newly imported or renewed SSL/TLS certificate for the Razorpay.com domain",
+            "Ensuring secure communication between clients and Razorpay's web services",
+            "Troubleshooting and monitoring TLS-related issues"
+        ],
+        "capabilities": [
+            "Importing SSL/TLS certificates into AWS Certificate Manager (ACM)",
+            "Attaching certificates to AWS Load Balancers",
+            "Creating and managing Route53 entries",
+            "Linking Route53 entries across AWS accounts",
+            "Monitoring and logging TLS-related errors in CloudWatch"
+        ],
+        "references": [
+            "https://sst.dev/archives/share-route-53-domains-across-aws-accounts.html"
+        ]
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_api-certificate-renewal-chunk-5",
+        "name": "API Certificate Renewal.txt - Step 4: Certificate rotation",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section outlines the steps to rotate or update an existing SSL/TLS certificate for the Razorpay API domain (api.razorpay.com). It involves importing the new certificate details into the system and provides post-update validation steps to ensure the new certificate is working correctly without any TLS errors or accessibility issues.",
+        "use_cases": [
+            "SSL/TLS certificate renewal",
+            "API endpoint certificate management",
+            "Secure communication validation"
+        ],
+        "capabilities": [
+            "Certificate reimport",
+            "Certificate details review",
+            "Certificate import",
+            "Cloudwatch TLS error monitoring",
+            "API endpoint accessibility verification"
+        ],
+        "references": []
+    }
+]

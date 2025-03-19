@@ -1,0 +1,240 @@
+[
+    {
+        "id": "engineering_devops_architecture_kubernetes_basic-understanding-of-k8s-chunk-0",
+        "name": "Basic understanding of K8S.txt - Basic Understanding of kubernetes",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section introduces the concept of containers and sets the stage for understanding Kubernetes, a container orchestration platform. It aims to provide a basic understanding of why containers are important and how they relate to Kubernetes.",
+        "use_cases": [
+            "Understanding the motivation behind containers",
+            "Learning the basics of Kubernetes",
+            "Gaining foundational knowledge for further exploration"
+        ],
+        "capabilities": [
+            "Introduction to containers",
+            "Explanation of Kubernetes basics",
+            "Simplified explanations for non-experts"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_basic-understanding-of-k8s-chunk-1",
+        "name": "Basic understanding of K8S.txt - Why Containers?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section explains the benefits of using containers over traditional virtual machines (VMs). Containers provide an efficient and reliable way to package and deploy applications, ensuring consistent behavior across different environments. They offer better resource utilization, isolation, and observability compared to VMs. Kubernetes is introduced as a platform for managing and orchestrating containerized applications at scale.",
+        "use_cases": [
+            "Deploying and managing containerized applications across different environments (on-premises, cloud, etc.)",
+            "Scaling and load balancing applications dynamically",
+            "Automating application deployment and rollbacks",
+            "Monitoring and observing application health and performance"
+        ],
+        "capabilities": [
+            "Containerization",
+            "Image immutability",
+            "Decoupling applications from infrastructure",
+            "Observability",
+            "Portability",
+            "Abstraction",
+            "Microservices architecture",
+            "Resource isolation",
+            "Resource utilization",
+            "Declarative configuration",
+            "Automation"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_basic-understanding-of-k8s-chunk-2",
+        "name": "Basic understanding of K8S.txt - What is kubernetes?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section explains that in a production environment, managing containers running applications is crucial to ensure no downtime. If a container fails, another container should start to maintain service availability. Kubernetes provides a framework to run distributed systems reliably by handling tasks like scaling, failover, and deployment strategies for applications.",
+        "use_cases": [
+            "Managing containers in production environments",
+            "Ensuring application uptime and availability",
+            "Running distributed systems resiliently"
+        ],
+        "capabilities": [
+            "Container management",
+            "Scaling",
+            "Failover",
+            "Deployment patterns",
+            "Distributed systems management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_basic-understanding-of-k8s-chunk-3",
+        "name": "Basic understanding of K8S.txt - Why Kubernetes?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section explains the key features and capabilities provided by Kubernetes, a popular container orchestration platform. It highlights how Kubernetes simplifies the deployment, management, and scaling of containerized applications by offering services like load balancing, storage management, automated rollouts and rollbacks, efficient resource utilization, self-healing capabilities, and secure management of secrets and configurations.",
+        "use_cases": [
+            "Service discovery and load balancing for containerized applications",
+            "Storage orchestration for persistent data management",
+            "Automated deployment and rollback of application updates",
+            "Efficient resource utilization and bin packing of containers across nodes"
+        ],
+        "capabilities": [
+            "Service discovery",
+            "Load balancing",
+            "Storage orchestration",
+            "Automated rollouts",
+            "Automated rollbacks",
+            "Bin packing",
+            "Self-healing",
+            "Secret management",
+            "Configuration management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_basic-understanding-of-k8s-chunk-4",
+        "name": "Basic understanding of K8S.txt - Kubernetes Components",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section explains that Kubernetes provides resources called Secrets and ConfigMaps to securely manage sensitive data and configuration settings. These resources can be mounted as volumes, allowing containers to access the data and configurations they need without exposing sensitive information.",
+        "use_cases": [
+            "Secret management",
+            "Configuration management",
+            "Secure data access for containers",
+            "Centralized management of sensitive data and configurations"
+        ],
+        "capabilities": [
+            "Secret resources",
+            "ConfigMap resources",
+            "Volume mounts",
+            "Secure data storage",
+            "Centralized configuration management",
+            "Containerized access to sensitive data"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_basic-understanding-of-k8s-chunk-5",
+        "name": "Basic understanding of K8S.txt - Control Plane",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section provides a high-level overview of the Kubernetes architecture, specifically focusing on the control plane component. It explains that Kubernetes consists of two main sets of components: the control plane and worker nodes. The control plane is responsible for managing and orchestrating the overall cluster operations.",
+        "use_cases": [
+            "Understanding the basic architecture of Kubernetes",
+            "Learning about the role of the control plane in a Kubernetes cluster",
+            "Gaining knowledge about the kube-apiserver component"
+        ],
+        "capabilities": [
+            "Cluster management",
+            "Orchestration",
+            "API server",
+            "Control plane"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_basic-understanding-of-k8s-chunk-6",
+        "name": "Basic understanding of K8S.txt - Worker Node",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section lists the core components of the Kubernetes control plane, which are responsible for managing and orchestrating the worker nodes and containers in a Kubernetes cluster. However, it mentions that in the case of AWS EKS (Elastic Kubernetes Service), these control plane components are managed by the AWS service itself, relieving the user from the responsibility of setting up and maintaining the control plane.",
+        "use_cases": [
+            "Understanding the core components of the Kubernetes control plane",
+            "Recognizing that AWS EKS manages the control plane components for the user",
+            "Highlighting the separation of concerns between the control plane and worker nodes in a Kubernetes cluster"
+        ],
+        "capabilities": [
+            "kube-controller-manager",
+            "kube-scheduler",
+            "ETCD",
+            "AWS EKS control plane management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_basic-understanding-of-k8s-chunk-7",
+        "name": "Basic understanding of K8S.txt - Kubernetes Resources",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section appears to be explaining the concept of a Worker Node in the context of Kubernetes (K8s). A Worker Node is a machine or server that runs containerized applications and workloads in a Kubernetes cluster. It is responsible for executing the tasks assigned by the Kubernetes control plane, such as running containers and managing their lifecycle.",
+        "use_cases": [
+            "Running containerized applications and workloads",
+            "Scaling applications by adding or removing Worker Nodes",
+            "Providing compute resources for containers",
+            "Enabling high availability and fault tolerance for applications"
+        ],
+        "capabilities": [
+            "Container execution",
+            "Resource management",
+            "Networking",
+            "Storage management",
+            "Monitoring and logging",
+            "Scaling and load balancing"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_basic-understanding-of-k8s-chunk-8",
+        "name": "Basic understanding of K8S.txt - Pods",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section explains the fundamental building blocks of Kubernetes, known as resources. It covers various types of resources such as Pods, Replica Sets, Deployments, StatefulSets, DaemonSets, Jobs, CronJobs, Services, and Ingress. These resources are used to manage and orchestrate containerized applications running on a Kubernetes cluster. The section provides a basic understanding of what each resource is and how it can be used, along with relevant commands to interact with them.",
+        "use_cases": [
+            "Managing and scaling containerized applications",
+            "Ensuring high availability and fault tolerance",
+            "Scheduling periodic or recurring tasks",
+            "Exposing applications as network services"
+        ],
+        "capabilities": [
+            "Pod management",
+            "Replica set management",
+            "Deployment management",
+            "StatefulSet management",
+            "DaemonSet management",
+            "Job scheduling",
+            "CronJob scheduling",
+            "Service discovery and load balancing",
+            "Ingress routing and load balancing"
+        ],
+        "references": [
+            "https://www.katacoda.com/courses/kubernetes/playground",
+            "https://www.katacoda.com/courses/kubernetes/playground>",
+            "https://write.razorpay.com/doc/setting-up-kubectl-KMzSn69dCu>",
+            "https://kubernetes.io>"
+        ]
+    }
+]

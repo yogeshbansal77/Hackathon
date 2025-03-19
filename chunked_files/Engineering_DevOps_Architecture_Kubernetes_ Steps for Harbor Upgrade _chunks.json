@@ -1,0 +1,183 @@
+[
+    {
+        "id": "engineering_devops_architecture_kubernetes_-steps-for-harbor-upgrade--chunk-0",
+        "name": " Steps for Harbor Upgrade .txt - Overview of Harbor Environments",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section provides an overview of the Harbor environment, specifically the Stage Harbor environment. It explains that the Stage Harbor is a deployment of the Harbor application hosted on the 'stage-white-eks' Kubernetes cluster, within the 'harbor' namespace. The Stage Harbor is accessible through the provided URL, which is likely used for testing, staging, or pre-production purposes before deploying changes to the production environment.",
+        "use_cases": [
+            "Testing and staging of Harbor application changes",
+            "Pre-production environment for Harbor application",
+            "Validating Harbor application updates before production deployment",
+            "Providing a separate environment for development and testing purposes"
+        ],
+        "capabilities": [
+            "Harbor deployment",
+            "Kubernetes cluster hosting",
+            "Namespace isolation",
+            "Staging environment",
+            "URL-based access"
+        ],
+        "references": [
+            "https://harbor.concierge.stage.razorpay.in/account/sign-in?redirect_url=%2Fharbor%2Fprojects"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_-steps-for-harbor-upgrade--chunk-1",
+        "name": " Steps for Harbor Upgrade .txt - Stage Harbor",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section provides information about the Harbor deployment for the staging environment at Razorpay. It mentions the location of the Helm templates and environment-specific configuration files used for deploying Harbor on the Kubernetes cluster. Harbor is a cloud-native registry that stores and distributes Docker images, and it is deployed on the 'prod-wallet-white' EKS cluster in the 'harbor' namespace for the staging environment.",
+        "use_cases": [
+            "Deploying Harbor on a Kubernetes cluster for staging environment",
+            "Managing Docker images and container registry for staging environment",
+            "Configuring Harbor deployment using Helm templates and values files"
+        ],
+        "capabilities": [
+            "Helm templates",
+            "Environment-specific configuration",
+            "Kubernetes deployment",
+            "Docker image registry",
+            "Container management"
+        ],
+        "references": [
+            "https://github.com/razorpay/kube-manifests/tree/master/templates/harbor/templates>__",
+            "https://github.com/razorpay/kube-manifests/blob/master/stage/harbor/values.yaml>__",
+            "https://harbor.razorpaywallet.com/>__"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_-steps-for-harbor-upgrade--chunk-2",
+        "name": " Steps for Harbor Upgrade .txt - Wallet Harbor",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section provides information about the Harbor repository, which is a centralized container registry used by Razorpay for storing and managing Docker images. It mentions the location of the Helm templates and environment-specific configuration files for deploying Harbor. Additionally, it includes the URL for accessing the production Harbor instance used across different business units at Razorpay.",
+        "use_cases": [
+            "Centralized container registry for storing and managing Docker images",
+            "Deploying and configuring Harbor using Helm templates and values files",
+            "Accessing the production Harbor instance used across different business units"
+        ],
+        "capabilities": [
+            "Helm templates for Harbor deployment",
+            "Environment-specific configuration files (values.yaml)",
+            "Centralized production Harbor instance",
+            "Container registry",
+            "Docker image management"
+        ],
+        "references": [
+            "http://harbor.razorpay.com",
+            "https://github.com/razorpay/kube-manifests/tree/master/templates/harbor/templates>__",
+            "https://github.com/razorpay/kube-manifests/blob/master/rtpl/prod/harbor/values.yaml>__"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_-steps-for-harbor-upgrade--chunk-3",
+        "name": " Steps for Harbor Upgrade .txt - Production Harbor",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section provides information about the production deployment of Harbor, which is a cloud-native registry for storing and distributing container images. It mentions that Harbor is deployed on the 'ops-common-eks' Kubernetes cluster in the 'harbor' namespace. The Helm templates used for deploying Harbor are stored in a GitHub repository called 'kube-manifests', and the environment-specific configuration values are stored in a file called 'values.yaml' within the same repository.",
+        "use_cases": [
+            "Deploying and managing a container registry (Harbor) in a production environment",
+            "Storing and distributing container images for applications running in a Kubernetes cluster",
+            "Configuring and customizing Harbor deployment using Helm templates and values files"
+        ],
+        "capabilities": [
+            "Kubernetes deployment",
+            "Helm templates",
+            "Environment-specific configuration",
+            "Container registry",
+            "Container image storage",
+            "Container image distribution"
+        ],
+        "references": [
+            "https://github.com/razorpay/kube-manifests/tree/master/templates/harbor/templates>__",
+            "https://github.com/razorpay/kube-manifests/blob/master/ops/harbor/values.yaml>__"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_-steps-for-harbor-upgrade--chunk-4",
+        "name": " Steps for Harbor Upgrade .txt - Generating Helm Templates and Checking Differences",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section explains the process of generating Helm templates for Harbor, a cloud-native registry that stores and distributes container images, and checking for differences between the generated templates and the current configuration. It involves running a command to generate the templates based on the specified values file, and then using another command to compare the generated templates with the current configuration. If there are no differences or if the differences are acceptable, a new pull request can be created to update the Helm templates and the corresponding environment-specific values file.",
+        "use_cases": [
+            "Upgrading Harbor to a new version",
+            "Modifying Harbor configuration",
+            "Reviewing changes before applying them to Harbor",
+            "Automating Harbor deployment and configuration management"
+        ],
+        "capabilities": [
+            "Helm template generation",
+            "Helm values file management",
+            "Configuration diff checking",
+            "Pull request creation",
+            "Harbor deployment",
+            "Harbor configuration management"
+        ],
+        "references": [
+            "https://lh6.googleusercontent.com/VXf9NboD_fGe7rlDRpXv9z3KNwoPtwftkw4xSBVmHOe1QhyWjJtIZxTxhItHIREKSUYrKO3aTiNsycHcOzKEVpSBT0etKRXCwOo8xZthVkAfZWuGAwx07orRAUYXY6ClKLUjcHR9jsWXICqNUw",
+            "https://lh5.googleusercontent.com/Sv8J-Q2w8o974MG3YYLK5HLJL046_TPeGGibQHVoHG5vurH1KFsvA8i4vdE2WjXRZ8C4p4LI7jvPOAmirseICFPQH21aumNRN3ElnEuXHvBgqtzwuYtMgbeCCpV7A2htbs6VBpXXfaAruSnH0w"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_-steps-for-harbor-upgrade--chunk-5",
+        "name": " Steps for Harbor Upgrade .txt - Steps for Production Harbor Upgrade",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section outlines the detailed steps for upgrading the Harbor container registry in a production environment. It covers creating a pull request, taking backups, generating new manifests, applying changes, verifying the upgrade, and rolling back if needed. The process involves coordination with teams, approvals, and monitoring to ensure a smooth transition.",
+        "use_cases": [
+            "Upgrading Harbor container registry in a production environment",
+            "Coordinating with teams and obtaining approvals for the upgrade",
+            "Rolling back the upgrade if issues are encountered",
+            "Monitoring and validating the upgraded Harbor environment"
+        ],
+        "capabilities": [
+            "Creating pull requests for Harbor upgrade",
+            "Taking backups of configurations, secrets, deployments, and databases",
+            "Generating new Kubernetes manifests using Helm templates",
+            "Applying the new manifests and monitoring the upgrade process",
+            "Verifying the upgraded Harbor environment through UI testing and metrics",
+            "Rolling back the upgrade by restoring backups and applying previous manifests"
+        ],
+        "references": [
+            "https://docs.google.com/spreadsheets/d/15wpGabEY1TsKm5ZHZQKIGuRLQCqTpZE2zlE0Exl3Iy0/edit#gid=0",
+            "https://docs.google.com/document/d/1f5i0yGEy9Ch32dobv2gSza_-DA5Is6_fBS2pV2evoTU/edit",
+            "https://github.com/razorpay/kube-manifests/pull/3464>__",
+            "https://github.com/razorpay/kube-manifests/pull/4194>__",
+            "https://github.com/razorpay/kube-manifests/pull/3464>__*,",
+            "https://vajra.razorpay.com/d/Chkv50UWkE/harbor-overview?orgId=1>",
+            "https://drive.google.com/drive/folders/1CMiMleI-YqPIh4Hm9lqTjPsJUvHHvd8q>__**",
+            "https://github.com/razorpay/infra-kube-manifests/commit/1c83e746222dd42bd6a6d64acfee57c4e4b8f0c8>",
+            "https://razorpay.atlassian.net/browse/INFRA-5789>",
+            "https://github.com/goharbor/harbor/blob/v2.11.0/make/migrations/postgresql/0140_2.11.0_schema.up.sql>",
+            "https://razorpay.atlassian.net/browse/INFRA-5851>",
+            "https://github.com/razorpay/infra-kube-manifests/tree/sg-prod/helm/harbor>",
+            "https://github.com/razorpay/infra-kube-manifests/tree/sg-prod/envs/razorpay/cell/prod/ops-sg-cell-101-blue/helm/harbor>",
+            "https://github.com/razorpay/fluxcd/tree/sg-prod/clusters/razorpay/cell/prod/sg-cell-101/ops-sg-cell-101-blue/infra/harbor>"
+        ]
+    }
+]

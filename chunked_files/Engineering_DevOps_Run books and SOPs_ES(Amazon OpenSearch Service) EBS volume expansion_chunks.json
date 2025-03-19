@@ -1,0 +1,160 @@
+[
+    {
+        "id": "engineering_devops_run-books-and-sops_es(amazon-opensearch-service)-ebs-volume-expansion-chunk-0",
+        "name": "ES(Amazon OpenSearch Service) EBS volume expansion.txt - Introduction",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section introduces the initial steps to access the Amazon OpenSearch Service (ES) cluster console and view the current state of the cluster, including allocation, health, and node information. It serves as a starting point for understanding the cluster's configuration before performing any modifications or expansions.",
+        "use_cases": [
+            "Accessing the Amazon OpenSearch Service cluster console",
+            "Monitoring the cluster's allocation status",
+            "Checking the cluster's health and node information",
+            "Preparing for cluster modifications or expansions"
+        ],
+        "capabilities": [
+            "Cluster console access",
+            "Allocation status monitoring",
+            "Health monitoring",
+            "Node information viewing"
+        ],
+        "references": [
+            "https://ap-south-1.console.aws.amazon.com/esv3/home?region=ap-south-1#opensearch/domains/>"
+        ]
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_es(amazon-opensearch-service)-ebs-volume-expansion-chunk-1",
+        "name": "ES(Amazon OpenSearch Service) EBS volume expansion.txt - Steps Before Increasing EBS Volume",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section provides instructions for preparing to increase the storage capacity of an Amazon OpenSearch Service cluster by expanding the Elastic Block Store (EBS) volume. It includes an image that appears to be a user interface for configuring the cluster settings, and a step to edit the cluster configuration based on the desired EBS volume size. The section assumes the reader has an existing OpenSearch cluster and needs to allocate more storage space.",
+        "use_cases": [
+            "Increasing storage capacity for an Amazon OpenSearch Service cluster",
+            "Scaling up EBS volume size for an OpenSearch cluster",
+            "Configuring cluster settings to accommodate larger data volumes"
+        ],
+        "capabilities": [
+            "EBS volume expansion",
+            "Cluster configuration editing",
+            "Storage capacity scaling",
+            "OpenSearch Service cluster management"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/ea52952465133ed75a6a44e0585e68b4.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_es(amazon-opensearch-service)-ebs-volume-expansion-chunk-2",
+        "name": "ES(Amazon OpenSearch Service) EBS volume expansion.txt - Updates from AWS console",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section provides a step-by-step visual guide on how to expand the EBS volume of an Amazon OpenSearch Service cluster using the AWS console. It shows a series of screenshots that walk the user through the process of navigating to the OpenSearch Service dashboard, selecting the desired cluster, modifying the volume configuration, and applying the changes.",
+        "use_cases": [
+            "Increasing storage capacity for an OpenSearch Service cluster",
+            "Scaling up an OpenSearch Service cluster to handle larger data volumes",
+            "Managing and maintaining an OpenSearch Service cluster's storage requirements"
+        ],
+        "capabilities": [
+            "EBS volume expansion",
+            "AWS console interface",
+            "OpenSearch Service cluster management",
+            "Volume configuration modification",
+            "Visual step-by-step guide"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/819ce13e22a2a6f71665f847ecc04c44.png",
+            "https://alpha.razorpay.com/_static/file/4efd9ddc09094591d455de695467cb39.png",
+            "https://alpha.razorpay.com/_static/file/5e44079702906622d56905b5edd08c38.png",
+            "https://alpha.razorpay.com/_static/file/33d8f005c3784a1925c14de02c12c183.png",
+            "https://alpha.razorpay.com/_static/file/7da048a99388cf452f0107283ae3fc1f.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_es(amazon-opensearch-service)-ebs-volume-expansion-chunk-3",
+        "name": "ES(Amazon OpenSearch Service) EBS volume expansion.txt - Steps After Increasing EBS Volume",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains the steps that occur after increasing the Elastic Block Store (EBS) volume size for an Amazon OpenSearch Service cluster. It mentions that additional data nodes are added with the increased EBS volume size, and provides a visual representation of the cluster's allocation, health, and node status after the volume expansion. This information is useful for monitoring and managing the cluster's resources and performance after scaling up the storage capacity.",
+        "use_cases": [
+            "Scaling up storage capacity for an Amazon OpenSearch Service cluster",
+            "Monitoring cluster health and resource allocation after volume expansion",
+            "Managing data node distribution and load balancing after adding new nodes"
+        ],
+        "capabilities": [
+            "EBS volume expansion",
+            "Automatic addition of data nodes",
+            "Cluster allocation visualization",
+            "Cluster health monitoring",
+            "Node status monitoring"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/1521e2127f4269b44b962d774f8fb066.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_es(amazon-opensearch-service)-ebs-volume-expansion-chunk-4",
+        "name": "ES(Amazon OpenSearch Service) EBS volume expansion.txt - Relocation of Shards",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains the process of relocating shards (data partitions) to new nodes during an EBS volume expansion for an Amazon OpenSearch Service cluster. It mentions that the relocation step takes time based on the number of shards in the cluster. The images provided likely show the progress or status of the shard relocation process.",
+        "use_cases": [
+            "Expanding storage capacity for an Amazon OpenSearch Service cluster",
+            "Redistributing data across nodes after adding new storage volumes",
+            "Scaling an OpenSearch cluster to handle increased data or traffic"
+        ],
+        "capabilities": [
+            "Shard relocation",
+            "EBS volume expansion",
+            "Cluster scaling",
+            "Data redistribution",
+            "Monitoring shard relocation progress"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/16ca32fd0b039ee0959f3c6ae930ef1b.png",
+            "https://alpha.razorpay.com/_static/file/4d8e515fbe8c4fc56f87aba49c94ed19.png",
+            "https://alpha.razorpay.com/_static/file/bdd5b63d55436911e222f62c63f87b3e.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_es(amazon-opensearch-service)-ebs-volume-expansion-chunk-5",
+        "name": "ES(Amazon OpenSearch Service) EBS volume expansion.txt - Deletion of Older Nodes",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains the process of deleting older nodes in an Amazon OpenSearch Service cluster after successfully relocating data to new nodes with expanded EBS volume size. Once the data relocation is complete, the older nodes with smaller disk space will be removed from the cluster, allowing the new nodes with larger disk capacity to handle the workload efficiently.",
+        "use_cases": [
+            "Expanding EBS volume size for an Amazon OpenSearch Service cluster",
+            "Scaling up storage capacity for an OpenSearch cluster",
+            "Migrating data from older nodes to newer nodes with larger disk space",
+            "Decommissioning and removing older nodes from an OpenSearch cluster"
+        ],
+        "capabilities": [
+            "Data relocation",
+            "Node deletion",
+            "EBS volume expansion",
+            "Storage capacity scaling",
+            "Cluster resizing",
+            "Node decommissioning"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/fd50199da6300c746ca829bc4f841553.png",
+            "https://alpha.razorpay.com/_static/file/07f07a74d2150027f685b0876e66c929.png"
+        ]
+    }
+]

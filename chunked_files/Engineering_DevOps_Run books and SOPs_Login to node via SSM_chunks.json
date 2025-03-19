@@ -1,0 +1,277 @@
+[
+    {
+        "id": "engineering_devops_run-books-and-sops_login-to-node-via-ssm-chunk-0",
+        "name": "Login to node via SSM.txt - What is SSM?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains the requirements for accessing AWS resources using the SSM (AWS Systems Manager) service. It suggests that you need to have the necessary permissions and access to your AWS account to utilize SSM.",
+        "use_cases": [
+            "Accessing AWS resources",
+            "Managing AWS infrastructure",
+            "Automating AWS operations"
+        ],
+        "capabilities": [
+            "Access management",
+            "Permission control",
+            "AWS account access"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_login-to-node-via-ssm-chunk-1",
+        "name": "Login to node via SSM.txt - What is profile?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains what a profile is in the context of the AWS CLI (Command Line Interface). A profile is a set of configurations that store information such as access keys, region, and other settings specific to an AWS account or role. Profiles allow users to easily switch between different AWS accounts or roles without having to manually update their credentials or settings each time. This is particularly useful for developers or administrators who need to manage multiple AWS environments.",
+        "use_cases": [
+            "Managing multiple AWS accounts or roles",
+            "Separating development, testing, and production environments",
+            "Sharing AWS resources or configurations among team members",
+            "Automating AWS tasks or deployments using scripts or CI/CD pipelines"
+        ],
+        "capabilities": [
+            "Storing AWS access keys and secret keys",
+            "Specifying default AWS region",
+            "Configuring output format (e.g., JSON, text, table)",
+            "Setting default parameter values for AWS CLI commands",
+            "Switching between profiles using a simple command",
+            "Sharing profiles across multiple machines or team members"
+        ],
+        "references": [
+            "https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html"
+        ]
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_login-to-node-via-ssm-chunk-2",
+        "name": "Login to node via SSM.txt - Bash Shell",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section appears to be explaining how to set a profile, likely in the context of configuring AWS credentials or settings for accessing resources via the AWS Systems Manager (SSM) service. However, the provided content is incomplete and does not contain any actual instructions or explanations.",
+        "use_cases": [
+            "Configuring AWS credentials or settings for accessing resources via AWS SSM",
+            "Setting up a profile for a specific AWS account or environment",
+            "Managing multiple AWS profiles or configurations"
+        ],
+        "capabilities": [
+            "Profile configuration",
+            "AWS credentials management",
+            "AWS SSM integration"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_login-to-node-via-ssm-chunk-3",
+        "name": "Login to node via SSM.txt - To set a profile",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains how to set an AWS profile environment variable, which is a way to specify the credentials and configuration settings for a particular AWS account or role. By exporting the AWS_PROFILE variable with a specific profile name, you can easily switch between different AWS accounts or roles without having to manually update your credentials or configuration files.",
+        "use_cases": [
+            "Managing multiple AWS accounts or roles",
+            "Switching between different AWS environments (e.g., development, staging, production)",
+            "Separating access and permissions for different projects or teams",
+            "Simplifying the process of authenticating with AWS services"
+        ],
+        "capabilities": [
+            "Setting AWS profile",
+            "Exporting environment variable",
+            "Specifying AWS credentials",
+            "Configuring AWS settings",
+            "Switching between AWS accounts/roles"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_login-to-node-via-ssm-chunk-4",
+        "name": "Login to node via SSM.txt - To clear set variable",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains how to clear or unset the AWS_PROFILE environment variable, which is used to specify the AWS profile to use when interacting with AWS services. Clearing this variable can be useful when you want to switch between different AWS profiles or when you want to ensure that the default AWS profile is used.",
+        "use_cases": [
+            "Switching between different AWS profiles",
+            "Ensuring that the default AWS profile is used",
+            "Troubleshooting issues related to AWS profile configuration",
+            "Resetting the AWS environment before running a script or command"
+        ],
+        "capabilities": [
+            "Unset environment variable",
+            "Clear AWS profile configuration",
+            "Switch AWS profiles",
+            "Reset AWS environment"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_login-to-node-via-ssm-chunk-5",
+        "name": "Login to node via SSM.txt - function",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains a Bash function named 'ss' that facilitates connecting to an Amazon EC2 instance via AWS Systems Manager (SSM) Session Manager. The function takes an IP address as the first argument and an optional AWS profile as the second argument. It determines the instance ID based on the provided IP address, and then initiates an SSM session to connect to that instance. If no profile is provided, it uses the AWS_PROFILE environment variable or defaults to 'default'.",
+        "use_cases": [
+            "Connecting to an EC2 instance using its private IP address",
+            "Connecting to an EC2 instance using a specific AWS profile",
+            "Connecting to an EC2 instance without specifying a profile (using default or environment variable)"
+        ],
+        "capabilities": [
+            "Bash function",
+            "AWS CLI integration",
+            "EC2 instance discovery",
+            "SSM Session Manager",
+            "AWS profile handling",
+            "Environment variable support"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_login-to-node-via-ssm-chunk-6",
+        "name": "Login to node via SSM.txt - How to use?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section provides instructions on how to use a script or tool for logging into a node or instance via SSM (Secure Shell Manager). It appears to be a part of a larger documentation file that explains the process of connecting to a remote instance or server using SSM. The code snippet shown is likely a part of the script that checks if the provided instance IP address exists in the specified AWS profile or account. If the instance does not exist, it prints an error message.",
+        "use_cases": [
+            "Logging into a remote instance or server using SSM",
+            "Verifying if a given instance IP address exists in a specific AWS profile or account",
+            "Troubleshooting connectivity issues with remote instances",
+            "Automating the process of connecting to multiple instances using a script"
+        ],
+        "capabilities": [
+            "Instance IP verification",
+            "AWS profile selection",
+            "Error handling",
+            "Command-line interface",
+            "Scripting",
+            "Remote instance management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_login-to-node-via-ssm-chunk-7",
+        "name": "Login to node via SSM.txt - Fish Shell",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section provides instructions for adding a command to the .bashrc file, which is a configuration file for the Bash shell. The .bashrc file is executed whenever a new Bash shell is opened, allowing users to customize their shell environment. By adding commands to this file, users can automate certain tasks or set up aliases for frequently used commands. However, the content provided does not specify what command should be added, making it unclear what functionality is being enabled or configured.",
+        "use_cases": [
+            "Customizing the Bash shell environment",
+            "Automating tasks or setting up aliases",
+            "Modifying shell behavior or settings"
+        ],
+        "capabilities": [
+            "Editing .bashrc file",
+            "Running source command",
+            "Configuring Bash shell"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_login-to-node-via-ssm-chunk-8",
+        "name": "Login to node via SSM.txt - To set a profile",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains how to connect to a remote node (server) using the 'ss' command, which likely stands for 'secure shell'. It provides two ways to specify the node's private IP address: either by using the default profile or by specifying a custom profile. If the AWS_PROFILE environment variable is set, it will automatically use that profile when no profile is specified.",
+        "use_cases": [
+            "Connecting to a remote node (server) using SSH",
+            "Using a default profile for SSH connection",
+            "Using a custom profile for SSH connection",
+            "Leveraging environment variables for profile selection"
+        ],
+        "capabilities": [
+            "SSH connection",
+            "Private IP address specification",
+            "Default profile usage",
+            "Custom profile usage",
+            "Environment variable integration",
+            "Profile management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_login-to-node-via-ssm-chunk-9",
+        "name": "Login to node via SSM.txt - To clear set variable",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section appears to be explaining how to set environment variables or configuration settings in the Fish shell, which is a Unix shell and command-line interpreter. However, the content provided is incomplete and does not provide any specific instructions or examples for setting variables in the Fish shell.",
+        "use_cases": [
+            "Configuring environment variables or settings in the Fish shell",
+            "Customizing the Fish shell environment for specific needs or preferences"
+        ],
+        "capabilities": [
+            "Setting environment variables",
+            "Configuring shell profiles",
+            "Customizing shell behavior"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_login-to-node-via-ssm-chunk-10",
+        "name": "Login to node via SSM.txt - function",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains how to set and clear the AWS_PROFILE environment variable, which is used to specify the AWS credentials and configuration to be used when interacting with AWS services. It also includes a function, but the content of the function is not provided. The instructions are written in a way that can be easily understood by non-experts.",
+        "use_cases": [
+            "Setting the AWS_PROFILE environment variable to a specific value (e.g., 'thirdwatch-prod')",
+            "Clearing the AWS_PROFILE environment variable",
+            "Executing a function (content not provided)"
+        ],
+        "capabilities": [
+            "Setting environment variables",
+            "Clearing environment variables",
+            "Executing functions or scripts"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_login-to-node-via-ssm-chunk-11",
+        "name": "Login to node via SSM.txt - How to use?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains a Fish shell function named 'ss' that allows users to connect to an AWS EC2 instance using the AWS Systems Manager (SSM) service. The function takes the private IP address of the EC2 instance as the first argument and optionally the AWS profile name as the second argument. If no profile is provided, it uses the default profile or the AWS_PROFILE environment variable. The function retrieves the instance ID based on the provided IP address and then starts an SSM session to connect to the instance.",
+        "use_cases": [
+            "Connecting to an AWS EC2 instance using SSM",
+            "Specifying a custom AWS profile for connecting to the instance",
+            "Using the default AWS profile or the AWS_PROFILE environment variable if no profile is provided"
+        ],
+        "capabilities": [
+            "Retrieve EC2 instance ID based on private IP address",
+            "Start SSM session to connect to the instance",
+            "Use custom AWS profile or default profile",
+            "Utilize AWS_PROFILE environment variable",
+            "Fish shell function for easy command-line usage"
+        ],
+        "references": []
+    }
+]

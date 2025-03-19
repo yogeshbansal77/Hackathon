@@ -1,0 +1,47 @@
+[
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_self-managed-datastores_tidb_kt-sessions-chunk-0",
+        "name": "KT sessions.txt - KT for High Availability setup in TiDB",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "Self Managed Datastores",
+            "TiDB"
+        ],
+        "description": "This section appears to be about a Zoom recording related to setting up high availability for TiDB, a distributed SQL database. However, there is no actual content provided, only the title 'Zoom recording:'. Without any further details, it is difficult to provide a meaningful description or infer any use cases or capabilities.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_self-managed-datastores_tidb_kt-sessions-chunk-1",
+        "name": "KT sessions.txt - Zoom recording",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "Self Managed Datastores",
+            "TiDB"
+        ],
+        "description": "This section provides a link to a Google Drive file, which appears to be a video recording of a Zoom session. The link allows users to view the recorded session, likely for reference or educational purposes. Video recordings can be useful for reviewing discussions, presentations, or demonstrations that took place during the session.",
+        "use_cases": [
+            "Reviewing past sessions or meetings",
+            "Learning from recorded presentations or demonstrations",
+            "Sharing recordings with others who missed the live session",
+            "Archiving important discussions or events"
+        ],
+        "capabilities": [
+            "Video recording",
+            "Sharing recorded sessions via Google Drive link",
+            "Viewing recorded Zoom sessions"
+        ],
+        "references": [
+            "https://drive.google.com/file/d/1TsHaoEaDISf9CaJE3v0JquYSHLmQpLg4/view?usp=sharing"
+        ]
+    }
+]

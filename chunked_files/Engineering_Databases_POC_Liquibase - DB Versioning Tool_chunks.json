@@ -1,0 +1,110 @@
+[
+    {
+        "id": "engineering_databases_poc_liquibase---db-versioning-tool-chunk-0",
+        "name": "Liquibase - DB Versioning Tool.txt - Configuration :",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "POC"
+        ],
+        "description": "This section explains the essential configuration parameters required to set up and use Liquibase, a database versioning tool. It provides a table listing the key parameters like the database URL, username, password, changelog file location, logging level, and log file location. The section also hints at how Liquibase works by managing database changes through version files.",
+        "use_cases": [
+            "Setting up Liquibase for a database project",
+            "Configuring database connection details",
+            "Specifying the location of changelog files",
+            "Adjusting logging levels and log file locations"
+        ],
+        "capabilities": [
+            "Database connection configuration",
+            "Changelog file management",
+            "Logging level control",
+            "Log file location specification",
+            "Database versioning",
+            "Change tracking through version files"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_poc_liquibase---db-versioning-tool-chunk-1",
+        "name": "Liquibase - DB Versioning Tool.txt - How Liquibase works:",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "POC"
+        ],
+        "description": "This section explains how Liquibase, a database versioning tool, works. It describes the process of applying changes (called changesets) to a database schema. Liquibase maintains two tables to track deployed changes and uses checksums to validate changesets. It executes changesets within transactions, ensuring atomicity and rollback capability. The section also mentions the format of the changelog file, which can be SQL, XML, JSON, or YAML.",
+        "use_cases": [
+            "Applying database schema changes in a controlled and versioned manner",
+            "Tracking and validating deployed database changes",
+            "Enabling rollback of database changes in case of errors",
+            "Managing database schema changes across multiple environments (e.g., development, staging, production)"
+        ],
+        "capabilities": [
+            "Changeset execution within transactions",
+            "Changeset validation using checksums",
+            "Maintaining changelog and lock tables",
+            "Rollback support for changesets",
+            "Support for SQL, XML, JSON, and YAML changelog file formats",
+            "Sequential execution of changesets",
+            "Locking mechanism to ensure single instance execution"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_poc_liquibase---db-versioning-tool-chunk-2",
+        "name": "Liquibase - DB Versioning Tool.txt - ChangeLog File Format:",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "POC"
+        ],
+        "description": "This section explains the format of a changelog file used by Liquibase, a database versioning tool. The changelog file contains a series of changesets, each representing a specific change or update to the database structure. Each changeset includes SQL statements to be executed, along with optional rollback statements to undo the changes if needed. The format is designed to help manage and track database schema changes in a structured and organized manner.",
+        "use_cases": [
+            "Tracking and managing database schema changes",
+            "Applying database updates or migrations in a controlled and versioned manner",
+            "Reverting or rolling back specific database changes if needed",
+            "Collaborating on database schema changes across teams or environments"
+        ],
+        "capabilities": [
+            "Versioned changesets",
+            "SQL statement execution",
+            "Rollback statements",
+            "Changeset metadata (author, version details, keys, values)",
+            "Structured changelog file format",
+            "Database-agnostic (supports multiple database systems)"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_poc_liquibase---db-versioning-tool-chunk-3",
+        "name": "Liquibase - DB Versioning Tool.txt - Maintaining multiple changelog files:",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "POC"
+        ],
+        "description": "This section explains how to maintain and manage multiple changelog files in Liquibase, a database versioning tool. It describes a way to include multiple SQL files from a directory into a single XML changelog file, which can then be used to execute all the changes in a specific order. It also covers various Liquibase commands for updating the database, rolling back changes, validating changelogs, and more.",
+        "use_cases": [
+            "Maintaining separate files for DDL (Data Definition Language) and DML (Data Manipulation Language) changes, and executing them together in a single deployment.",
+            "Executing multiple SQL files from a directory in a specific order.",
+            "Tracking and managing database changes using Liquibase commands like update, rollback, validate, and more.",
+            "Integrating Liquibase with tools like Ant, Maven, Spring Boot, and Liquibase Hub for managing database migrations."
+        ],
+        "capabilities": [
+            "includeAll tag to include multiple SQL files from a directory",
+            "update command to deploy changes from the changelog",
+            "updateCount command to deploy a specific number of changesets",
+            "markNextChangesetRan command to mark the next changeset as executed",
+            "rollbackCount command to revert a specified number of changesets",
+            "validate command to check for potential errors in the changelog",
+            "Integration with Ant, Maven, Spring Boot, Liquibase Hub, and community tools"
+        ],
+        "references": [
+            "http://www.liquibase.org/xml/ns/dbchangelog\"*",
+            "http://www.w3.org/2001/XMLSchema-instance\"*",
+            "http://www.liquibase.org/xml/ns/dbchangelog*",
+            "http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd\">*",
+            "https://docs.liquibase.com/commands/community/home.html>__"
+        ]
+    }
+]

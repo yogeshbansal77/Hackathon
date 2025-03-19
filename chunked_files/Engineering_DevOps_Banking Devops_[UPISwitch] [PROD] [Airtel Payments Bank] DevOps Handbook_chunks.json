@@ -1,0 +1,180 @@
+[
+    {
+        "id": "engineering_devops_banking-devops_[upiswitch]-[prod]-[airtel-payments-bank]-devops-handbook-chunk-0",
+        "name": "[UPISwitch] [PROD] [Airtel Payments Bank] DevOps Handbook.txt - AWS Cloud",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Banking Devops"
+        ],
+        "description": "This section provides information about the AWS (Amazon Web Services) cloud account and region used for the UPISwitch Airtel Payments Bank project. It specifies the account ID and the primary data center region, which is Mumbai (ap-south-1). This information is crucial for accessing and managing the cloud resources associated with the project.",
+        "use_cases": [
+            "Accessing and managing cloud resources for the UPISwitch Airtel Payments Bank project",
+            "Identifying the specific AWS account and region for the project",
+            "Ensuring that the correct account and region are used for deployment and operations"
+        ],
+        "capabilities": [
+            "AWS account ID",
+            "AWS region",
+            "Primary data center region"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_banking-devops_[upiswitch]-[prod]-[airtel-payments-bank]-devops-handbook-chunk-1",
+        "name": "[UPISwitch] [PROD] [Airtel Payments Bank] DevOps Handbook.txt - AWS ReadOnly Access - Developers",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Banking Devops"
+        ],
+        "description": "This section provides instructions for developers to obtain read-only access to AWS resources, likely for monitoring or auditing purposes. It outlines the process of requesting a specific access package from Microsoft MyAccess and then activating it through the Azure portal.",
+        "use_cases": [
+            "Granting read-only access to AWS resources for developers",
+            "Monitoring or auditing AWS resources",
+            "Controlling and managing access permissions for developers"
+        ],
+        "capabilities": [
+            "AWS read-only access",
+            "Access package management",
+            "Azure portal integration",
+            "Access control",
+            "Resource monitoring"
+        ],
+        "references": [
+            "https://myaccess.microsoft.com/@razorpaysoftware.onmicrosoft.com#/access-packages",
+            "https://docs.google.com/document/d/13zRHQDUwYLo1DNi8x8MtqnI2L00XDy9ghhXGml_Ar_w/edit#heading=h.4qlauldorlvp"
+        ]
+    },
+    {
+        "id": "engineering_devops_banking-devops_[upiswitch]-[prod]-[airtel-payments-bank]-devops-handbook-chunk-2",
+        "name": "[UPISwitch] [PROD] [Airtel Payments Bank] DevOps Handbook.txt - Domains",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Banking Devops"
+        ],
+        "description": "This section explains the different domains used in the Razorpay UPI Switch system. It distinguishes between external and internal domains. The external domain is accessible from outside the system, while the internal domain is used within the system for communication between different components. This separation allows for better security and control over access to different parts of the system.",
+        "use_cases": [
+            "Accessing the Razorpay UPI Switch system from outside (e.g., by customers or external systems)",
+            "Communication between internal components of the Razorpay UPI Switch system",
+            "Separating external and internal access for security and access control"
+        ],
+        "capabilities": [
+            "External domain access",
+            "Internal domain access",
+            "Domain separation",
+            "Access control",
+            "Security"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_banking-devops_[upiswitch]-[prod]-[airtel-payments-bank]-devops-handbook-chunk-3",
+        "name": "[UPISwitch] [PROD] [Airtel Payments Bank] DevOps Handbook.txt - Tools",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Banking Devops"
+        ],
+        "description": "This section provides an overview of various tools and platforms used for monitoring, visualizing, managing secrets, logging, and profiling in the production environment of the UPISwitch Airtel Payments Bank project. It lists the URLs for accessing these tools, which are likely used by the DevOps team to ensure the smooth operation and maintenance of the application.",
+        "use_cases": [
+            "Monitoring and visualizing application metrics and performance",
+            "Managing and securing application secrets and credentials",
+            "Centralized logging and tracing for troubleshooting and analysis",
+            "Profiling application performance and identifying bottlenecks"
+        ],
+        "capabilities": [
+            "Grafana for data visualization",
+            "CredstashUI for Kubernetes secret management",
+            "Coralogix for log aggregation and tracing",
+            "PyroScope for application profiling"
+        ],
+        "references": [
+            "https://grafana.concierge.prod.razorpayupis.com/",
+            "https://credstash-ui.concierge.prod.razorpayupis.com/",
+            "https://rzpx-upiswitch-apb.app.coralogix.in/",
+            "https://pyroscope.prod.razorpayupis.com/"
+        ]
+    },
+    {
+        "id": "engineering_devops_banking-devops_[upiswitch]-[prod]-[airtel-payments-bank]-devops-handbook-chunk-4",
+        "name": "[UPISwitch] [PROD] [Airtel Payments Bank] DevOps Handbook.txt - Terraform",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Banking Devops"
+        ],
+        "description": "This section appears to be a list of URLs for accessing various tools and services related to the UPISwitch project. However, there is no actual content explaining what Terraform is or how it is used in the project.",
+        "use_cases": [
+            "Accessing a BI (Business Intelligence) tool called Redash",
+            "Accessing a Kafka UI for managing Kafka topics and messages",
+            "Implied use case: Managing infrastructure and services related to the UPISwitch project"
+        ],
+        "capabilities": [
+            "Redash BI tool",
+            "Kafka UI",
+            "Terraform (implied capability for infrastructure management, but no details provided)"
+        ],
+        "references": [
+            "https://redash.concierge.prod.razorpayupis.com/",
+            "https://kafkaui-upiswapb.concierge.prod.razorpayupis.com/auth"
+        ]
+    },
+    {
+        "id": "engineering_devops_banking-devops_[upiswitch]-[prod]-[airtel-payments-bank]-devops-handbook-chunk-5",
+        "name": "[UPISwitch] [PROD] [Airtel Payments Bank] DevOps Handbook.txt - GitOps",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Banking Devops"
+        ],
+        "description": "This section provides information about the GitOps repository (Vishnu) used for managing infrastructure and configurations related to the UPISwitch project for Airtel Payments Bank in the production environment. It includes a link to the specific branch and directory within the Vishnu repository that contains the Terraform code and configurations for this project. Additionally, it mentions a pull request (PR) related to the creation of a Route53 domain, which is likely a part of the infrastructure setup.",
+        "use_cases": [
+            "Infrastructure as Code (IaC) management for the UPISwitch project",
+            "Configuration management for the UPISwitch project",
+            "Domain management (Route53) for the UPISwitch project"
+        ],
+        "capabilities": [
+            "GitOps",
+            "Terraform",
+            "Terragrunt",
+            "Infrastructure provisioning",
+            "Configuration management",
+            "Domain management"
+        ],
+        "references": [
+            "https://github.com/razorpay/vishnu/tree/master/upiswitch/prod/airtel-payments-bank/ap-south-1",
+            "https://github.com/razorpay/vishnu/pull/12873>"
+        ]
+    },
+    {
+        "id": "engineering_devops_banking-devops_[upiswitch]-[prod]-[airtel-payments-bank]-devops-handbook-chunk-6",
+        "name": "[UPISwitch] [PROD] [Airtel Payments Bank] DevOps Handbook.txt - Alerts",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Banking Devops"
+        ],
+        "description": "This section provides information about the repositories used for managing infrastructure configurations, deployment workflows, and alert rules related to the UPISwitch Airtel Payments Bank production environment. It includes links to the GitOps repositories for storing and managing Kubernetes manifests and FluxCD configurations, as well as the repository for storing alert rules and monitoring configurations.",
+        "use_cases": [
+            "Managing infrastructure configurations for the UPISwitch Airtel Payments Bank production environment",
+            "Automating deployment workflows using GitOps principles",
+            "Defining and managing alert rules for monitoring the production environment",
+            "Centralized storage and version control for infrastructure configurations and monitoring rules"
+        ],
+        "capabilities": [
+            "GitOps",
+            "Infrastructure as Code",
+            "Kubernetes Manifest Management",
+            "FluxCD Integration",
+            "Alert Rule Management",
+            "Monitoring Configuration"
+        ],
+        "references": [
+            "https://github.com/razorpay/infra-kube-manifests/tree/master/envs/upiswitch/prod/apb-bank/ap-south-1>",
+            "https://github.com/razorpay/fluxcd/tree/master/clusters/upiswitch/prod/apb-bank/ap-south-1>",
+            "https://github.com/razorpay/alert-rules/tree/master/rules/rzpx-prod/upiswitch-prod-apb>"
+        ]
+    }
+]

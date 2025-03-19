@@ -1,0 +1,124 @@
+[
+    {
+        "id": "engineering_devops_jarvis_iam-troubleshooter-chunk-0",
+        "name": "IAM Troubleshooter.txt - Problem",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section explains that the IAM Troubleshooter is an automated process designed to check and troubleshoot issues related to Identity and Access Management (IAM) in a Kubernetes cluster. It runs various checks on a given cluster, namespace, and deployment to identify and resolve potential IAM-related problems. The IAM Troubleshooter is currently deployed as part of a system called JARVIS.",
+        "use_cases": [
+            "Troubleshooting IAM-related issues in a Kubernetes cluster",
+            "Automating IAM checks and validations",
+            "Identifying and resolving potential IAM problems in a specific namespace or deployment",
+            "Integrating IAM troubleshooting capabilities into a larger system (JARVIS)"
+        ],
+        "capabilities": [
+            "Automated IAM checks",
+            "Cluster-level IAM troubleshooting",
+            "Namespace-specific IAM troubleshooting",
+            "Deployment-specific IAM troubleshooting",
+            "Integration with JARVIS system"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_jarvis_iam-troubleshooter-chunk-1",
+        "name": "IAM Troubleshooter.txt - Solution",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section outlines the key steps to troubleshoot authentication issues when accessing AWS resources from a deployment. It involves verifying the presence of an authentication method (Service account or KIAM), checking if the associated IAM role exists, ensuring the role's assume role policy or OIDC URL is correct, and confirming the KIAM pods are running (if using KIAM).",
+        "use_cases": [
+            "Troubleshooting authentication issues when accessing AWS resources from a deployment",
+            "Verifying the authentication method used in a deployment (Service account or KIAM)",
+            "Checking the existence and configuration of the associated IAM role",
+            "Confirming the KIAM pods are running (if using KIAM)"
+        ],
+        "capabilities": [
+            "Authentication method verification",
+            "IAM role existence check",
+            "IAM role assume role policy validation",
+            "OIDC URL validation",
+            "KIAM pod status check"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_jarvis_iam-troubleshooter-chunk-2",
+        "name": "IAM Troubleshooter.txt - 1. Whether a **MODE OF AUTHENTICATION** to aws is present in the deployment (Service account or KIAM)",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section appears to be empty, so there is no explanation provided about the mode of authentication to AWS in the deployment. However, the section title suggests that it should cover whether a service account or KIAM (Kubernetes IAM Authenticator) is used for authentication to AWS services.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_jarvis_iam-troubleshooter-chunk-3",
+        "name": "IAM Troubleshooter.txt - 2. Whether the **IAM role associated with the deployment exists.**",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section appears to be empty or missing content. Without any text or information provided, it is difficult to provide a meaningful description or extract any use cases or capabilities.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_jarvis_iam-troubleshooter-chunk-4",
+        "name": "IAM Troubleshooter.txt - 3. Whether the **assume role policy of the IAM role is correct** or (if applicable) the **OIDC URL in the trust relationship is correct**",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section explains that the IAM Troubleshooter tool runs internal checks to verify if the assume role policy of an IAM role is correct, and if applicable, whether the OIDC (OpenID Connect) URL in the trust relationship is correct. It then provides a report on the JARVIS UI (User Interface) with the findings. The section also mentions that the tool will be enhanced in the future to include resource-specific policy checks as part of the same automation.",
+        "use_cases": [
+            "Verifying the correctness of assume role policies for IAM roles",
+            "Validating the OIDC URL in trust relationships (if applicable)",
+            "Generating reports on the JARVIS UI with the findings",
+            "Future enhancement to include resource-specific policy checks"
+        ],
+        "capabilities": [
+            "Assume role policy validation",
+            "OIDC URL validation",
+            "Trust relationship validation",
+            "Reporting on JARVIS UI",
+            "Automated policy checks",
+            "Resource-specific policy checks (future)"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_jarvis_iam-troubleshooter-chunk-5",
+        "name": "IAM Troubleshooter.txt - 4. Whether the KIAM pods are running or not (In case of KIAM)",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section provides a visual guide to check if the KIAM (Kubernetes IAM Authenticator) pods are running or not. KIAM is a tool that allows Kubernetes pods to securely retrieve AWS credentials from the AWS metadata service. By checking if the KIAM pods are running, users can ensure that their Kubernetes cluster is properly configured to authenticate with AWS and access AWS resources.",
+        "use_cases": [
+            "Troubleshooting authentication issues between Kubernetes and AWS",
+            "Verifying the proper setup and configuration of KIAM in a Kubernetes cluster",
+            "Monitoring the health and status of KIAM pods in a Kubernetes environment"
+        ],
+        "capabilities": [
+            "Visual representation of KIAM pod status",
+            "Identifying running or non-running KIAM pods",
+            "Troubleshooting KIAM-related issues in Kubernetes clusters"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/1ebaee6260d68f4089d1163b838c63f8.png"
+        ]
+    }
+]

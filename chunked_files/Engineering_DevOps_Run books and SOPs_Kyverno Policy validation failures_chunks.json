@@ -1,0 +1,101 @@
+[
+    {
+        "id": "engineering_devops_run-books-and-sops_kyverno-policy-validation-failures-chunk-0",
+        "name": "Kyverno Policy validation failures.txt - Issue:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section highlights an issue where the Policy validation failures in a Kubernetes cluster are high. It provides a link to a monitoring dashboard that displays the Kyverno usage and policy validation failures for a specific cluster (eks-ops-common-infra) within a given time range. The section implies that the user needs to investigate the high policy validation failures by checking the provided dashboard link.",
+        "use_cases": [
+            "Monitoring Kyverno policy validation failures in a Kubernetes cluster",
+            "Investigating and troubleshooting high policy validation failure rates",
+            "Analyzing policy validation trends over time",
+            "Identifying clusters or namespaces with high policy validation failures"
+        ],
+        "capabilities": [
+            "Kyverno policy validation monitoring",
+            "Cluster-specific policy validation analysis",
+            "Time-range filtering for policy validation data",
+            "Namespace-level policy validation insights",
+            "Centralized dashboard for policy validation metrics"
+        ],
+        "references": [
+            "https://vajra.razorpay.com/d/B5komYeVk/kyverno-usage?orgId=1&from=1696435171951&to=1696445971951&var-cluster=eks-ops-common-infra&viewPanel=12>"
+        ]
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_kyverno-policy-validation-failures-chunk-1",
+        "name": "Kyverno Policy validation failures.txt - Debugging:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains that the Kyverno policy validation failures can potentially cause Pods to become unavailable or enter an unhealthy state. This means that the application running inside the Pod may become inaccessible or unresponsive due to the policy validation issues, which can impact the overall functionality and availability of the application.",
+        "use_cases": [
+            "Troubleshooting Pod availability issues",
+            "Identifying root causes of application downtime",
+            "Monitoring the health and status of Pods",
+            "Ensuring compliance with Kyverno policies"
+        ],
+        "capabilities": [
+            "Pod availability monitoring",
+            "Policy validation failure detection",
+            "Root cause analysis",
+            "Application health monitoring",
+            "Compliance checking"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_kyverno-policy-validation-failures-chunk-2",
+        "name": "Kyverno Policy validation failures.txt - Resolution:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section provides guidance on how to debug and resolve Kyverno policy validation failures. It suggests examining the pod logs to identify the specific policy that is causing the failure, which can help in troubleshooting and resolving the issue.",
+        "use_cases": [
+            "Debugging Kyverno policy validation failures",
+            "Identifying the failing policy",
+            "Troubleshooting policy-related issues",
+            "Resolving policy validation errors"
+        ],
+        "capabilities": [
+            "Pod log analysis",
+            "Policy failure identification",
+            "Troubleshooting guidance",
+            "Error resolution"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_kyverno-policy-validation-failures-chunk-3",
+        "name": "Kyverno Policy validation failures.txt - Impact:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains the impact of failing to comply with the Kyverno policy validation rules for pod configurations. It states that if the pod configuration does not adhere to the infrastructure and security best practices defined by the policy, the pods will not be able to start up or run. The resolution provided suggests either fixing the pod configuration to align with the best practices mentioned in the pod events, or excluding the pod from the policy check.",
+        "use_cases": [
+            "Ensuring pod configurations comply with infrastructure and security best practices",
+            "Preventing non-compliant pods from running",
+            "Providing a way to exclude pods from policy checks if needed"
+        ],
+        "capabilities": [
+            "Policy validation",
+            "Pod configuration compliance",
+            "Infrastructure best practices enforcement",
+            "Security best practices enforcement",
+            "Pod event analysis",
+            "Policy exclusion"
+        ],
+        "references": [
+            "https://razorpay.slack.com/archives/C021MURE99Q/p1695900175844709>"
+        ]
+    }
+]

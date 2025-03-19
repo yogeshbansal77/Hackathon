@@ -1,0 +1,260 @@
+[
+    {
+        "id": "engineering_devops_harbor_harbor-registry-chunk-0",
+        "name": "Harbor Registry.txt - Architecture",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Harbor"
+        ],
+        "description": "This section provides an architectural overview of Harbor, an open-source cloud-native registry project that stores and distributes container images. It includes a diagram illustrating the various components and their interactions within the Harbor system. The diagram serves as a visual aid to understand the overall structure and deployment of Harbor.",
+        "use_cases": [
+            "Storing and distributing container images",
+            "Managing and securing container image repositories",
+            "Integrating with container orchestration platforms",
+            "Enabling collaboration and sharing of container images"
+        ],
+        "capabilities": [
+            "Container image registry",
+            "Role-based access control",
+            "Vulnerability scanning",
+            "Replication across multiple registries",
+            "Audit logging",
+            "Integration with external authentication providers"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/f799afb079c993b2e020eebb957c671d.png",
+            "https://github.com/goharbor/harbor/wiki/Architecture-Overview-of-Harbor>__"
+        ]
+    },
+    {
+        "id": "engineering_devops_harbor_harbor-registry-chunk-1",
+        "name": "Harbor Registry.txt - Deployment",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Harbor"
+        ],
+        "description": "This section provides an overview of the Harbor Registry deployment at Razorpay. It mentions that Harbor is deployed in the ops-common-eks Kubernetes cluster, within the harbor namespace. The section lists the various components of Harbor, such as clair, chartmuseum, trivy, portal, registry, jobservice, and core. It also mentions the Postgres database instance used by Harbor, along with the credentials (password) for accessing it.",
+        "use_cases": [
+            "Deploying and managing a container registry (Harbor) in a Kubernetes cluster",
+            "Securing and managing access to container images",
+            "Integrating container vulnerability scanning and security analysis"
+        ],
+        "capabilities": [
+            "Container Registry",
+            "Kubernetes Deployment",
+            "Vulnerability Scanning (Clair, Trivy)",
+            "Helm Chart Repository (ChartMuseum)",
+            "Web Portal",
+            "Postgres Database Integration"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/84512c1d987819a0f992e5200264ce79.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_harbor_harbor-registry-chunk-2",
+        "name": "Harbor Registry.txt - Concept Note",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Harbor"
+        ],
+        "description": "This section appears to be a placeholder or a stub for explaining the concept of Harbor Registry. However, it does not provide any meaningful information or explanation. The content is simply the word 'harbor' without any additional context or details.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_harbor_harbor-registry-chunk-3",
+        "name": "Harbor Registry.txt - Onboarding Guide",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Harbor"
+        ],
+        "description": "This section provides information about the databases used by Harbor Registry, a software solution for managing and distributing container images. It specifically mentions two databases: 'registry' and 'clair'. The 'registry' database is likely used to store metadata and other information related to the container images hosted in Harbor Registry. The 'clair' database is likely used by the Clair component, which is a vulnerability static analysis tool that scans container images for known vulnerabilities.",
+        "use_cases": [
+            "Managing and distributing container images",
+            "Scanning container images for vulnerabilities",
+            "Storing metadata and information related to container images",
+            "Integrating with vulnerability scanning tools"
+        ],
+        "capabilities": [
+            "Registry database",
+            "Clair database",
+            "Container image management",
+            "Container image distribution",
+            "Vulnerability scanning",
+            "Metadata storage"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_harbor_harbor-registry-chunk-4",
+        "name": "Harbor Registry.txt - Harbor Tracker",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Harbor"
+        ],
+        "description": "This section provides information about the Elasticache Redis instance used by the Harbor Registry. Elasticache Redis is a fully managed, in-memory data store that provides high performance and low latency for caching and real-time workloads. The instance name 'prod-ops.cache.razorpay.vpc' suggests that this Redis instance is used in the production environment for caching operations related to the Harbor Registry.",
+        "use_cases": [
+            "Caching for Harbor Registry",
+            "Improving performance and reducing latency for Harbor Registry operations",
+            "Storing and retrieving data quickly for real-time workloads related to Harbor Registry"
+        ],
+        "capabilities": [
+            "Elasticache Redis",
+            "In-memory data store",
+            "High performance",
+            "Low latency",
+            "Caching",
+            "Real-time workloads"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_harbor_harbor-registry-chunk-5",
+        "name": "Harbor Registry.txt - Harbor Presentation",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Harbor"
+        ],
+        "description": "This section appears to be referring to an S3 bucket named 'rzp-prod-harbor-registry', which is likely used as a registry for storing and managing Docker container images. A registry is a central location where container images are stored and can be pulled from or pushed to. This particular registry seems to be used in a production environment, as indicated by the 'prod' in the name.",
+        "use_cases": [
+            "Storing and managing Docker container images",
+            "Deploying containerized applications in a production environment",
+            "Versioning and tracking container images",
+            "Enabling collaboration and sharing of container images across teams"
+        ],
+        "capabilities": [
+            "Container image registry",
+            "Image storage and management",
+            "Production-ready environment",
+            "Versioning and tracking",
+            "Collaboration and sharing"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_harbor_harbor-registry-chunk-6",
+        "name": "Harbor Registry.txt - Harbor Demo",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Harbor"
+        ],
+        "description": "This section provides a link to a Google Document that likely contains a demonstration or walkthrough of Harbor Registry, which is a cloud-based container image registry service. The document may include step-by-step instructions, screenshots, or other visual aids to help users understand how to use Harbor Registry and its various features.",
+        "use_cases": [
+            "Learning how to use Harbor Registry",
+            "Exploring the features and capabilities of Harbor Registry",
+            "Troubleshooting or getting support for Harbor Registry",
+            "Sharing a demo or tutorial with others"
+        ],
+        "capabilities": [
+            "Container image registry",
+            "Cloud-based service",
+            "Demonstration",
+            "Walkthrough",
+            "Visual aids",
+            "Step-by-step instructions"
+        ],
+        "references": [
+            "https://docs.google.com/document/d/1pOK1hEhHMsZZelMoHxCpqvCRkYtb7eYWNZSvj-Bl-mk/edit"
+        ]
+    },
+    {
+        "id": "engineering_devops_harbor_harbor-registry-chunk-7",
+        "name": "Harbor Registry.txt - Access",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Harbor"
+        ],
+        "description": "This section provides access to two important resources related to the Harbor Registry: an Onboarding Guide and a Harbor Tracker. The Onboarding Guide is likely a document that explains the process of getting started with the Harbor Registry, including steps for setting it up, configuring it, and using its features. The Harbor Tracker appears to be a spreadsheet or tracking tool that may be used for monitoring the status, progress, or issues related to the Harbor Registry.",
+        "use_cases": [
+            "Getting started with the Harbor Registry",
+            "Configuring and setting up the Harbor Registry",
+            "Monitoring the status and progress of the Harbor Registry",
+            "Tracking issues or tasks related to the Harbor Registry"
+        ],
+        "capabilities": [
+            "Onboarding Guide",
+            "Harbor Tracker",
+            "Access to documentation",
+            "Access to tracking tools"
+        ],
+        "references": [
+            "https://docs.google.com/document/d/1VFUAftTGptxRJ2od6_UbNSdNi4Obo_b2ZNlcv90D1jI/edit",
+            "https://docs.google.com/spreadsheets/d/13zLq-zCqKkIs5G5dA4_bdLGREB30w9fj3M2pg-PXU7Q"
+        ]
+    },
+    {
+        "id": "engineering_devops_harbor_harbor-registry-chunk-8",
+        "name": "Harbor Registry.txt - Operations",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Harbor"
+        ],
+        "description": "This section provides information about Harbor, which appears to be a container registry service used within the organization. It includes links to a presentation and a demo for Harbor, as well as instructions on how to access the Harbor registry website. The section also mentions a specific host (c.rzp.io) for use with container images.",
+        "use_cases": [
+            "Accessing the Harbor registry website for managing container images",
+            "Viewing a presentation or demo to learn about Harbor",
+            "Pushing or pulling container images to/from the Harbor registry using the c.rzp.io host"
+        ],
+        "capabilities": [
+            "Container registry",
+            "Web interface",
+            "SSO authentication",
+            "Access control (AD group membership required)",
+            "Presentation/documentation",
+            "Demo"
+        ],
+        "references": [
+            "https://docs.google.com/presentation/d/1ow-X-t_sl79dSOjKsaNdhwBkrHWJ-WffwNAcYCSkYiU/edit#slide=id.gc3f90d57bb_0_0",
+            "https://razorpay.slack.com/archives/CL4Q7NHMK/p1600950849009900>",
+            "https://harbor.razorpay.com/>"
+        ]
+    },
+    {
+        "id": "engineering_devops_harbor_harbor-registry-chunk-9",
+        "name": "Harbor Registry.txt - Metric Dashboards",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Harbor"
+        ],
+        "description": "This section provides information about Harbor, a cloud-native registry for storing and distributing container images. It covers various aspects such as managing user accounts, creating robot accounts for automation, scanning images for vulnerabilities, accessing metrics dashboards, upgrading Harbor, and security-related tasks. The content is presented in a technical manner, with code snippets and API endpoints.",
+        "use_cases": [
+            "Managing user accounts in Harbor",
+            "Creating robot accounts for automation tasks",
+            "Scanning container images for vulnerabilities",
+            "Accessing metrics dashboards for Harbor and its resources"
+        ],
+        "capabilities": [
+            "user management",
+            "robot account creation",
+            "image vulnerability scanning",
+            "metrics monitoring",
+            "harbor upgrade process",
+            "security token management",
+            "api endpoints for scanning and retrieving results"
+        ],
+        "references": [
+            "https://docs.google.com/spreadsheets/d/15wpGabEY1TsKm5ZHZQKIGuRLQCqTpZE2zlE0Exl3Iy0/edit?pli=1#gid=0",
+            "https://c.rzp.io/api/v2.0/robots\"",
+            "https://c.rzp.io/api/v2.0/robots\"",
+            "https://c.rzp.io/api/v2.0/projects/<project_name>/repositories/<repo_name>/artifacts/<tag_or_sha>/scan\"",
+            "https://c.rzp.io/api/v2.0/projects/<project_name>/repositories/<repo_name>/artifacts/<tag_or_sha>\"",
+            "https://c.rzp.io/api/v2.0/projects/proxy_dockerhub/repositories/razorpay%252Foutline/artifacts/v0.30.0\"",
+            "https://c.rzp.io/api/v2.0/projects/<project_name>/repositories/<repo_name>/artifacts/<tag_or_sha>/additions/vulnerabilities\"",
+            "https://github.com/goharbor/harbor>__",
+            "https://github.com/goharbor/harbor-helm>__",
+            "https://harbor.concierge.stage.razorpay.in>__"
+        ]
+    }
+]

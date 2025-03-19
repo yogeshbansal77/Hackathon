@@ -1,0 +1,113 @@
+[
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_how-to-share-data-via-pgp-encryption-chunk-0",
+        "name": "How to share data via PGP Encryption.txt - What is PGP?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section provides an overview of Pretty Good Privacy (PGP), which is a standard used for encrypting, decrypting, and digitally signing data. It explains that PGP was originally a proprietary standard but has become a de facto standard for secure email communication and verifying the identity of package repositories. The section also clarifies the difference between PGP, OpenPGP (an IETF standard), and GPG (GNU Privacy Guard, which is based on OpenPGP standards).",
+        "use_cases": [
+            "Secure email communication",
+            "Package repository identity verification",
+            "Secure data transfer",
+            "Digital signing of data"
+        ],
+        "capabilities": [
+            "Encryption",
+            "Decryption",
+            "Digital signing",
+            "Data transfer security",
+            "Email communication security",
+            "Package repository identity verification"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_how-to-share-data-via-pgp-encryption-chunk-1",
+        "name": "How to share data via PGP Encryption.txt - Why do we use PGP encryption?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section is meant to explain the reasons and motivations behind using PGP (Pretty Good Privacy) encryption. PGP is a widely used encryption method that allows secure communication and data sharing between parties by encrypting the data in a way that only the intended recipient can decrypt and access it.",
+        "use_cases": [
+            "Secure communication and data sharing between parties",
+            "Protecting sensitive or confidential information from unauthorized access",
+            "Ensuring data integrity and authenticity",
+            "Enabling secure file transfers and email communication"
+        ],
+        "capabilities": [
+            "Data encryption",
+            "Key management",
+            "Digital signatures",
+            "Authentication",
+            "Data integrity",
+            "Confidentiality"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_how-to-share-data-via-pgp-encryption-chunk-2",
+        "name": "How to share data via PGP Encryption.txt - How do we use it?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains how to use GPG (GNU Privacy Guard) encryption to securely transmit or receive sensitive data, such as SFTP secrets or any confidential communication. It provides step-by-step instructions for importing public keys, listing keys in the keyring, encrypting files using a recipient's public key, generating a new private-public key pair, listing all keys, and exporting one's own public key.",
+        "use_cases": [
+            "Transmitting or receiving SFTP secrets securely",
+            "Secure transmission of any confidential or clandestine communication",
+            "Encrypting files or data for specific recipients using their public keys",
+            "Generating and managing one's own private-public key pair for encryption and decryption"
+        ],
+        "capabilities": [
+            "Importing public keys",
+            "Listing keys in the keyring",
+            "Encrypting files using a recipient's public key",
+            "Generating new private-public key pairs",
+            "Listing all available keys",
+            "Exporting one's own public key"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_how-to-share-data-via-pgp-encryption-chunk-3",
+        "name": "How to share data via PGP Encryption.txt - Ref:-",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section provides references to external resources that explain PGP (Pretty Good Privacy) encryption, which is a method for securely sharing data. The references include articles from AT&T Cybersecurity and Red Hat that likely provide an introduction to PGP encryption, how it works, and how to use it for secure data sharing.",
+        "use_cases": [
+            "Securely sharing sensitive data or files",
+            "Encrypting email communications",
+            "Verifying the authenticity of received data or files",
+            "Ensuring data privacy and confidentiality"
+        ],
+        "capabilities": [
+            "Data encryption",
+            "Data decryption",
+            "Key generation",
+            "Key management",
+            "Digital signatures",
+            "Authentication"
+        ],
+        "references": [
+            "https://cybersecurity.att.com/blogs/security-essentials/explain-pgp-encryption-an-operational-introduction>",
+            "https://www.redhat.com/sysadmin/getting-started-gpg>"
+        ]
+    }
+]

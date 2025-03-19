@@ -1,0 +1,131 @@
+[
+    {
+        "id": "engineering_devops_processes_incident-management_clienttlsnegotiationerrors-playbook-chunk-0",
+        "name": "ClientTLSNegotiationErrors Playbook.txt - Useful Links",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section provides a useful link to a Vajra dashboard for monitoring metrics related to AWS Application Load Balancers (ALB) in the ap-south-1 region. The link allows users to access a pre-configured dashboard that displays various performance and health metrics for ALBs, enabling them to monitor and troubleshoot issues related to their load balancing infrastructure.",
+        "use_cases": [
+            "Monitoring the performance and health of AWS Application Load Balancers",
+            "Troubleshooting issues related to load balancing infrastructure",
+            "Analyzing metrics and trends for capacity planning and optimization"
+        ],
+        "capabilities": [
+            "Vajra dashboard",
+            "AWS Application Load Balancer metrics",
+            "Region-specific monitoring",
+            "Pre-configured dashboard"
+        ],
+        "references": [
+            "https://vajra.razorpay.com/d/oEn8Ln5Zz/aws-elb-application-load-balancer?orgId=1&var-region=ap-south-1>"
+        ]
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_clienttlsnegotiationerrors-playbook-chunk-1",
+        "name": "ClientTLSNegotiationErrors Playbook.txt - Initial Analysis",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section outlines the initial steps to analyze and identify the root cause of an alert triggered by an anomaly in the number of TLS negotiation errors. It suggests checking if the alert was triggered by an anomaly detection system that compares the current TLS error rate to the previous week's average, or if it was triggered by the percentage of TLS errors compared to the total requests to the Application Load Balancer (ALB). The section also instructs the reader to identify the specific ALB experiencing the errors from the alert and dashboard.",
+        "use_cases": [
+            "Monitoring and analyzing TLS negotiation errors",
+            "Identifying anomalies in TLS error rates",
+            "Troubleshooting issues related to Application Load Balancers (ALBs)",
+            "Analyzing the impact of TLS errors on overall system performance"
+        ],
+        "capabilities": [
+            "Anomaly detection for TLS errors",
+            "Monitoring TLS error rates",
+            "Comparing TLS error rates to historical data",
+            "Analyzing TLS errors in relation to total requests",
+            "Identifying specific ALBs experiencing issues",
+            "Dashboards for visualizing TLS error data"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_clienttlsnegotiationerrors-playbook-chunk-2",
+        "name": "ClientTLSNegotiationErrors Playbook.txt - Steps to follow",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section provides steps to analyze logs related to changes made to specific AWS resources like Load Balancers, ALB Listeners, and ACM Certificates. It includes commands to filter and count log entries based on certain criteria, such as the event name, application name, and user identity. This can help identify potential issues or unauthorized changes related to these resources.",
+        "use_cases": [
+            "Monitoring changes to Load Balancers and their attributes",
+            "Monitoring changes to ALB Listeners",
+            "Monitoring changes to ACM Certificates",
+            "Auditing and troubleshooting issues related to these resources"
+        ],
+        "capabilities": [
+            "Log filtering",
+            "Log analysis",
+            "Event name matching",
+            "User identity tracking",
+            "Resource attribute tracking"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_clienttlsnegotiationerrors-playbook-chunk-3",
+        "name": "ClientTLSNegotiationErrors Playbook.txt - Enable Connection Logs:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section explains the steps to enable connection logs for an Application Load Balancer (ALB) that is experiencing a higher than usual number of TLS negotiation errors. The connection logs can provide insights into the TLS versions being used in the failed connections, which can help diagnose and troubleshoot the issue. The logs are sent to a centralized logging platform (Coralogix) for analysis using a provided query.",
+        "use_cases": [
+            "Troubleshooting TLS negotiation errors in an Application Load Balancer",
+            "Analyzing TLS versions used in failed connections",
+            "Monitoring and diagnosing issues related to TLS connections"
+        ],
+        "capabilities": [
+            "Enable Connection Logs",
+            "Configure ALB Attributes",
+            "Integrate with Coralogix logging platform",
+            "Query and analyze logs",
+            "Filter logs by application name and subsystem",
+            "Group and aggregate logs by TLS protocol"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_clienttlsnegotiationerrors-playbook-chunk-4",
+        "name": "ClientTLSNegotiationErrors Playbook.txt - Enable Traffic mirroring for the ALB:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section explains how to enable traffic mirroring for an Application Load Balancer (ALB) in AWS to capture and analyze client TLS negotiation errors. It provides step-by-step instructions to set up a mirror session, including configuring a mirror EC2 instance, identifying the ALB network interface IP, and creating the mirror session with appropriate filters. By mirroring the traffic, it allows for deeper analysis of TLS errors, especially when the errors are coming from multiple client IPs or the cause is not immediately apparent.",
+        "use_cases": [
+            "Troubleshooting client TLS negotiation errors with an ALB",
+            "Analyzing TLS errors from multiple client IPs",
+            "Investigating TLS errors when the cause is unknown",
+            "Capturing and analyzing encrypted traffic for security or compliance purposes"
+        ],
+        "capabilities": [
+            "Traffic mirroring for ALB",
+            "Capturing encrypted traffic",
+            "Filtering mirrored traffic",
+            "Configuring mirror EC2 instance",
+            "Identifying ALB network interface IP",
+            "Creating mirror session with filters"
+        ],
+        "references": [
+            "https://sjakthol.github.io/posts/alb-vpc-traffic-mirroring/>"
+        ]
+    }
+]

@@ -1,0 +1,286 @@
+[
+    {
+        "id": "engineering_devops_run-books-and-sops_statsd-exporter-config-change-runbook-chunk-0",
+        "name": "Statsd exporter config change runbook.txt - Overview",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains a workaround to avoid downtime when updating the Statsd exporter configuration. Instead of using Terraform to apply the changes, which would recreate the EC2 instance and cause downtime, the instructions suggest logging into the existing instance via SSM and making the configuration changes manually.",
+        "use_cases": [
+            "Updating Statsd exporter configuration without downtime",
+            "Avoiding recreation of EC2 instances during configuration changes",
+            "Manual configuration changes on running instances"
+        ],
+        "capabilities": [
+            "SSM access to EC2 instances",
+            "Sudo access on EC2 instances",
+            "Manual configuration changes on Statsd exporter",
+            "Avoiding downtime during configuration updates",
+            "Workaround for Terraform-based configuration updates"
+        ],
+        "references": [
+            "https://github.com/razorpay/vishnu/pull/7872>"
+        ]
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_statsd-exporter-config-change-runbook-chunk-1",
+        "name": "Statsd exporter config change runbook.txt - Steps",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section appears to be providing information about a specific server instance (i-04c32530aa99d40da) named 'production-instrumentation-ubuntu-statsd-exporter-1'. It is described as a 'New Statsd exporter box' where the API is heavily sending metrics to. This suggests that it is a new server or instance that has been set up to receive and process metrics data from an API, likely for monitoring or analytics purposes.",
+        "use_cases": [
+            "Monitoring API performance and metrics",
+            "Collecting and analyzing application/system metrics",
+            "Centralized metrics ingestion and processing",
+            "Scaling metrics collection infrastructure"
+        ],
+        "capabilities": [
+            "Statsd exporter",
+            "Metrics ingestion",
+            "Metrics processing",
+            "Scalable infrastructure",
+            "API integration",
+            "Monitoring and analytics"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_statsd-exporter-config-change-runbook-chunk-2",
+        "name": "Statsd exporter config change runbook.txt - Step 1: SSM into the statsd exporter box",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section provides instructions for accessing a specific server instance (i-05132306d925f8049) named 'production-instrumentation-ubuntu-statsd-exporter-gateway', which is a statsd exporter box responsible for collecting and exporting metrics from some APIs. It also guides the user on how to retrieve a raw file URL containing configuration changes for the statsd exporter, and download the file to the server for further updates.",
+        "use_cases": [
+            "Accessing a specific server instance for maintenance or configuration updates",
+            "Retrieving configuration files from a remote repository",
+            "Updating the statsd exporter configuration on a server"
+        ],
+        "capabilities": [
+            "Server instance identification",
+            "Remote file retrieval",
+            "Configuration file management",
+            "Statsd exporter configuration updates"
+        ],
+        "references": [
+            "https://raw.githubusercontent.com/razorpay/vishnu/83bb433fc482064d58a390802c3db509a04540af/prod/instances/prod-statsd-exporter-ubuntu/statsd.yml.tpl?token=GHSAT0AAAAAABSM47J4ZKFKYBITBX5WLIQMZBCW4EQ"
+        ]
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_statsd-exporter-config-change-runbook-chunk-3",
+        "name": "Statsd exporter config change runbook.txt - Step 2: Get raw file URL of the file in the PR",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains how to download a raw file from a GitHub repository using the wget command. The file being downloaded is a configuration file (statsd.yml.tpl) for the Statsd exporter, which is a tool used for monitoring and collecting metrics. The file is being downloaded from a specific commit (83bb433fc482064d58a390802c3db509a04540af) in the 'vishnu' repository owned by the 'razorpay' organization on GitHub. The downloaded file is being saved as '/etc/statsd.yml-new-changes.yml' on the local machine.",
+        "use_cases": [
+            "Updating configuration files for monitoring tools",
+            "Retrieving files from version control systems like GitHub",
+            "Automating the deployment or update process for applications"
+        ],
+        "capabilities": [
+            "wget command",
+            "raw file download",
+            "GitHub repository access",
+            "file download from specific commit",
+            "local file saving"
+        ],
+        "references": [
+            "https://raw.githubusercontent.com/razorpay/vishnu/83bb433fc482064d58a390802c3db509a04540af/prod/instances/prod-statsd-exporter-ubuntu/statsd.yml.tpl?token=****"
+        ]
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_statsd-exporter-config-change-runbook-chunk-4",
+        "name": "Statsd exporter config change runbook.txt - Step 3: Download the file to /etc/statsd.yml-new-changes.yml",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains how to change the file permissions of a specific file (/etc/statsd.yml-new-changes.yml) to 644, which means the owner has read and write access, while others have read-only access. This step is likely part of a larger process related to updating or configuring the Statsd exporter.",
+        "use_cases": [
+            "Updating or configuring the Statsd exporter",
+            "Managing file permissions for configuration files",
+            "Ensuring proper access controls for sensitive files"
+        ],
+        "capabilities": [
+            "file_permission_management",
+            "configuration_file_updates",
+            "access_control"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_statsd-exporter-config-change-runbook-chunk-5",
+        "name": "Statsd exporter config change runbook.txt - Step 4: Change file permission",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains how to change the file permissions of a configuration file named '/etc/statsd.yml-new-changes.yml'. The 'chmod' command is used to modify the access rights of the file, allowing the owner to read and write, while granting read-only access to others. This step is likely part of a process to update or modify the configuration settings for the Statsd exporter.",
+        "use_cases": [
+            "Updating configuration files for Statsd exporter",
+            "Managing file permissions for system configuration files",
+            "Ensuring proper access control for sensitive configuration data"
+        ],
+        "capabilities": [
+            "file_permission_management",
+            "configuration_file_access_control",
+            "system_administration",
+            "statsd_exporter_configuration"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_statsd-exporter-config-change-runbook-chunk-6",
+        "name": "Statsd exporter config change runbook.txt - Step 5: Remove EOF lines and verify changes",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains the process of removing temporary lines added for editing a configuration file (/etc/statsd.yml) and verifying the changes made to the file. It involves removing the 'cat << EOF' and 'EOF' lines that were used to insert new content, and then comparing the modified file with the original file to ensure the desired changes have been made correctly.",
+        "use_cases": [
+            "Modifying configuration files for applications or services",
+            "Verifying changes made to configuration files",
+            "Maintaining and updating configuration files"
+        ],
+        "capabilities": [
+            "Removing temporary lines",
+            "File comparison",
+            "Change verification",
+            "Configuration file editing",
+            "Diff command usage"
+        ],
+        "references": [
+            "https://github.com/prometheus/statsd_exporter"
+        ]
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_statsd-exporter-config-change-runbook-chunk-7",
+        "name": "Statsd exporter config change runbook.txt - Step 6: Take backup of existing statsd config file",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section outlines the configuration for monitoring the latency of API transaction requests using a histogram metric. It specifies the metric name pattern, the type of metric (histogram), and the bucket boundaries for measuring the latency distribution.",
+        "use_cases": [
+            "Monitoring API performance",
+            "Analyzing latency distribution",
+            "Identifying performance bottlenecks",
+            "Optimizing API response times"
+        ],
+        "capabilities": [
+            "Histogram metric configuration",
+            "Metric name pattern matching",
+            "Bucket boundary specification",
+            "Latency distribution analysis"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_statsd-exporter-config-change-runbook-chunk-8",
+        "name": "Statsd exporter config change runbook.txt - Step 7: Replace existing statsd config file with the new one",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section appears to be adding or modifying configurations related to measuring the latency of API transactions. It specifies a new metric named 'api_transaction_va_request_latency_ms' and a pattern match for 'api_transaction_ca_request_latency_ms.*'. The 'timer_type: histogram' line suggests that these metrics will be recorded as histograms, which can provide detailed latency distributions.",
+        "use_cases": [
+            "Monitoring API performance and latency",
+            "Identifying bottlenecks or slow API endpoints",
+            "Tracking API latency trends over time",
+            "Setting latency budgets or targets for API responses"
+        ],
+        "capabilities": [
+            "Latency measurement",
+            "Histogram metrics",
+            "API performance monitoring",
+            "Metric configuration",
+            "Pattern matching for metrics"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_statsd-exporter-config-change-runbook-chunk-9",
+        "name": "Statsd exporter config change runbook.txt - Step 8: Restart statsd exporter",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section appears to be defining a configuration setting for monitoring the latency of API transactions. It specifies a list of bucket values (in milliseconds) that will be used to track the distribution of API request latencies. The name of the metric being configured is 'api_transaction_ca_request_latency_ms'.",
+        "use_cases": [
+            "Monitoring API performance",
+            "Tracking API request latency distribution",
+            "Identifying potential bottlenecks or performance issues"
+        ],
+        "capabilities": [
+            "Latency monitoring",
+            "Histogram buckets",
+            "Metric configuration",
+            "Performance analysis",
+            "Distributed tracing"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_statsd-exporter-config-change-runbook-chunk-10",
+        "name": "Statsd exporter config change runbook.txt - Step 9: Verify statsd is working fine",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains the process of taking a backup of the existing statsd configuration file before making any changes. It is a precautionary step to ensure that the current configuration can be restored if needed, in case any issues arise after modifying the configuration.",
+        "use_cases": [
+            "Backup existing configuration before making changes",
+            "Rollback to previous configuration if issues occur after changes",
+            "Maintain a history of configuration changes"
+        ],
+        "capabilities": [
+            "Configuration backup",
+            "Configuration restoration",
+            "Version control",
+            "Rollback mechanism"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_statsd-exporter-config-change-runbook-chunk-11",
+        "name": "Statsd exporter config change runbook.txt - Step 10: Ask dev to verify the metrics and merge the PR",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section outlines the steps to replace the existing Statsd exporter configuration file with a new version, restart the Statsd exporter service, and verify that the metrics are being collected correctly. It involves creating a backup of the current configuration file, moving the new configuration file into place, restarting the service, and checking if the metrics are appearing as expected. If everything looks good, the developer is asked to verify the metrics and merge the related pull request.",
+        "use_cases": [
+            "Updating Statsd exporter configuration",
+            "Verifying metric collection after configuration changes",
+            "Merging configuration changes after verification"
+        ],
+        "capabilities": [
+            "Configuration file backup",
+            "Configuration file replacement",
+            "Service restart",
+            "Metric verification",
+            "Pull request merge"
+        ],
+        "references": [
+            "http://localhost:9102/metrics"
+        ]
+    }
+]

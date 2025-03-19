@@ -1,0 +1,29 @@
+[
+    {
+        "id": "engineering_devops_architecture_kubernetes_github-user-accounts-used-for-infra-automation-purposes-chunk-0",
+        "name": "GitHub user accounts used for Infra Automation purposes.txt - Table",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section provides information about a GitHub user account named 'jarvis-rzp' that is used for infrastructure automation purposes, specifically for configuring Spinnaker, a continuous delivery platform. The account is utilized in the 'halconfig' (Halyard configuration) for Spinnaker instances running in production and canary environments, enabling connectivity between GitHub and Spinnaker.",
+        "use_cases": [
+            "Configuring Spinnaker instances in production and canary environments",
+            "Enabling connectivity between GitHub and Spinnaker",
+            "Automating infrastructure provisioning and deployment processes"
+        ],
+        "capabilities": [
+            "GitHub integration",
+            "Spinnaker configuration",
+            "Continuous delivery",
+            "Infrastructure automation",
+            "Production environment support",
+            "Canary environment support"
+        ],
+        "references": [
+            "https://github.com/razorpay/vishnu/blob/master/modules/applications/spinnaker/templates/halconfig.tpl#L2343"
+        ]
+    }
+]

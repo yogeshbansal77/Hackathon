@@ -1,0 +1,151 @@
+[
+    {
+        "id": "engineering_devops_security_eks-and-lb-ips-chunk-0",
+        "name": "EKS and LB IPs.txt - In-scope CDE clusters and ALBs / NLBs",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Security"
+        ],
+        "description": "This section appears to be empty, as there is no content provided within the code block. Without any information, it is difficult to provide a meaningful description or infer any use cases or capabilities.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_security_eks-and-lb-ips-chunk-1",
+        "name": "EKS and LB IPs.txt - cde-blue-eks - private EKS",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Security"
+        ],
+        "description": "This section appears to be about a private Elastic Kubernetes Service (EKS) cluster named 'cde-blue-eks'. EKS is a managed Kubernetes service provided by Amazon Web Services (AWS) that allows users to run and manage containerized applications on a cluster of Amazon Elastic Compute Cloud (EC2) instances. A private EKS cluster means that the Kubernetes control plane and worker nodes are not publicly accessible from the internet, providing an additional layer of security for sensitive workloads.",
+        "use_cases": [
+            "Deploying and managing containerized applications in a secure and isolated environment",
+            "Running sensitive or regulated workloads that require enhanced security measures",
+            "Hosting internal applications or services that should not be exposed to the public internet"
+        ],
+        "capabilities": [
+            "Private EKS cluster",
+            "Kubernetes control plane",
+            "Worker nodes",
+            "Containerized application deployment",
+            "Secure and isolated environment"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_security_eks-and-lb-ips-chunk-2",
+        "name": "EKS and LB IPs.txt - cde-green-eks - private EKS",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Security"
+        ],
+        "description": "This section appears to be about a private Elastic Kubernetes Service (EKS) cluster named 'cde-green-eks'. EKS is a managed Kubernetes service provided by Amazon Web Services (AWS) for running containerized applications. A private EKS cluster means that the Kubernetes control plane and worker nodes are not publicly accessible from the internet, providing an additional layer of security.",
+        "use_cases": [
+            "Deploying and managing containerized applications in a secure and isolated environment",
+            "Running mission-critical workloads that require enhanced security and privacy",
+            "Hosting applications that handle sensitive data or have strict compliance requirements"
+        ],
+        "capabilities": [
+            "Private EKS cluster",
+            "Secure and isolated environment",
+            "Managed Kubernetes service",
+            "Containerized application deployment",
+            "Enhanced security and privacy"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_security_eks-and-lb-ips-chunk-3",
+        "name": "EKS and LB IPs.txt - EKS OIDC endpoints:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Security"
+        ],
+        "description": "This section provides information about the OpenID Connect (OIDC) endpoints used by Amazon Elastic Kubernetes Service (EKS) clusters. These endpoints are Network Load Balancer (NLB) URLs and IP addresses that facilitate secure communication and authentication between the EKS control plane and worker nodes. The section mentions that these OIDC endpoints will eventually be replaced by EKS public endpoints once the OIDC namespace is removed from the EKS clusters.",
+        "use_cases": [
+            "Secure communication between EKS control plane and worker nodes",
+            "Authentication and authorization for EKS components",
+            "Facilitating secure access to EKS resources",
+            "Enabling secure communication within the EKS ecosystem"
+        ],
+        "capabilities": [
+            "OIDC endpoints",
+            "Network Load Balancer (NLB) URLs",
+            "IP addresses",
+            "EKS control plane",
+            "EKS worker nodes",
+            "EKS public endpoints"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_security_eks-and-lb-ips-chunk-4",
+        "name": "EKS and LB IPs.txt - External Load Balancers:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Security"
+        ],
+        "description": "This section appears to be about External Load Balancers, which are likely used to distribute incoming network traffic across multiple resources or instances in a cloud environment. However, since the section content is empty, it is difficult to provide a more detailed description.",
+        "use_cases": [
+            "Load balancing incoming traffic across multiple resources or instances",
+            "Improving application availability and scalability",
+            "Enabling high availability and fault tolerance"
+        ],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_security_eks-and-lb-ips-chunk-5",
+        "name": "EKS and LB IPs.txt - Blue:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Security"
+        ],
+        "description": "This section appears to be listing various IP addresses and URLs related to load balancers (LBs) and Elastic Kubernetes Service (EKS) clusters in the AWS ap-south-1 region. It seems to be providing information about the external Network Load Balancer (NLB) and Application Load Balancer (ALB) endpoints for two different EKS clusters, one named 'blue' and the other potentially named 'green'. The IP addresses and URLs listed are likely used for accessing services or applications running on these EKS clusters from outside the cluster.",
+        "use_cases": [
+            "Accessing services or applications running on EKS clusters from external clients",
+            "Load balancing incoming traffic to EKS clusters using NLBs and ALBs",
+            "Routing external traffic to different EKS clusters or environments (e.g., blue and green)"
+        ],
+        "capabilities": [
+            "External Network Load Balancer (NLB) endpoints",
+            "External Application Load Balancer (ALB) endpoints",
+            "IP addresses for accessing EKS cluster services",
+            "Domain names or URLs for accessing EKS cluster services",
+            "Separate environments or clusters (e.g., blue and green)"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_security_eks-and-lb-ips-chunk-6",
+        "name": "EKS and LB IPs.txt - Green:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Security"
+        ],
+        "description": "This section appears to be listing various Elastic Load Balancing (ELB) endpoints and IP addresses associated with different Kubernetes clusters and environments (Green and Blue) within the Razorpay infrastructure. These ELBs are likely used to distribute incoming traffic across multiple backend instances, providing load balancing and high availability for the applications or services running in these clusters.",
+        "use_cases": [
+            "Load balancing incoming traffic across multiple backend instances",
+            "Providing high availability for applications or services",
+            "Routing traffic to different environments (Green and Blue) for testing, staging, or production purposes",
+            "Enabling DNS-based routing with custom domain names (e.g., cde-green-ext.razorpay.com)"
+        ],
+        "capabilities": [
+            "Elastic Load Balancing (ELB)",
+            "Network Load Balancing (NLB)",
+            "Application Load Balancing (ALB)",
+            "Load balancing across multiple Availability Zones",
+            "DNS-based routing with custom domain names",
+            "Environment separation (Green and Blue)"
+        ],
+        "references": []
+    }
+]

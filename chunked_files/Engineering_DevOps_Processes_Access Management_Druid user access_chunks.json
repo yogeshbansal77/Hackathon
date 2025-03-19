@@ -1,0 +1,114 @@
+[
+    {
+        "id": "engineering_devops_processes_access-management_druid-user-access-chunk-0",
+        "name": "Druid user access.txt - Druid User Authentication/Authorisation",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management"
+        ],
+        "description": "This section appears to be about the authentication process in Druid, which is a crucial aspect of user access control. Authentication is the process of verifying the identity of a user or system before granting access to resources or services. It ensures that only authorized individuals or entities can access sensitive data or perform specific actions within the Druid system.",
+        "use_cases": [
+            "Controlling access to Druid resources and services",
+            "Ensuring data security and privacy",
+            "Enabling role-based access control",
+            "Facilitating auditing and compliance"
+        ],
+        "capabilities": [
+            "User authentication",
+            "Identity verification",
+            "Access control",
+            "Authorization mechanisms",
+            "Credential management",
+            "Integration with authentication providers"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_access-management_druid-user-access-chunk-1",
+        "name": "Druid user access.txt - Authentication",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management"
+        ],
+        "description": "This section explains how to create a new user and assign a password to that user for authentication in the Druid system. It provides command-line instructions using cURL to send HTTP requests to the Druid coordinator service, which handles user management and authentication. The process involves creating a new user entry and then setting a password for that user.",
+        "use_cases": [
+            "User management",
+            "Authentication and access control",
+            "Securing Druid cluster",
+            "Onboarding new users"
+        ],
+        "capabilities": [
+            "Create new user",
+            "Assign password to user",
+            "HTTP API for user management",
+            "Basic authentication",
+            "Coordinator service for user management"
+        ],
+        "references": [
+            "http://druid-coordinator:8081/druid-ext/basic-security/authentication/db/MyBasicAuthenticator/users/<username>",
+            "http://druid-coordinator:8081/druid-ext/basic-security/authentication/db/MyBasicAuthenticator/users/<username>/credentials"
+        ]
+    },
+    {
+        "id": "engineering_devops_processes_access-management_druid-user-access-chunk-2",
+        "name": "Druid user access.txt - Authorization",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management"
+        ],
+        "description": "This section explains how to set up user authorization and access control in Druid, a data analytics platform. It provides step-by-step instructions for creating roles, assigning permissions to roles, creating users, and assigning roles to users. This allows administrators to control which users can access and perform specific actions on data sources and other resources within the Druid system.",
+        "use_cases": [
+            "Managing user access and permissions in Druid",
+            "Implementing role-based access control (RBAC) in Druid",
+            "Securing sensitive data sources and resources in Druid",
+            "Controlling user actions and operations on data sources in Druid"
+        ],
+        "capabilities": [
+            "Creating roles",
+            "Assigning permissions to roles",
+            "Creating users",
+            "Assigning roles to users",
+            "Defining resource-level permissions",
+            "Defining action-level permissions (e.g., READ, WRITE)"
+        ],
+        "references": [
+            "http://druid-coordinator:8081/druid-ext/basic-security/authorization/db/MyBasicAuthorizer/roles/<rolename>",
+            "http://druid-coordinator:8081/druid-ext/basic-security/authorization/db/MyBasicAuthorizer/roles/<rolename>/permissions",
+            "http://druid-coordinator:8081/druid-ext/basic-security/authorization/db/MyBasicAuthorizer/users/<username>"
+        ]
+    },
+    {
+        "id": "engineering_devops_processes_access-management_druid-user-access-chunk-3",
+        "name": "Druid user access.txt - References",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management"
+        ],
+        "description": "This section provides a cURL command that allows an administrator to assign a specific role to a user in the Druid Basic Security extension. The command sends a POST request to the Druid Coordinator with the necessary authentication credentials, specifying the user and role names. This allows the administrator to manage user access and permissions within the Druid system.",
+        "use_cases": [
+            "Managing user roles and permissions in Druid",
+            "Assigning roles to users for access control",
+            "Configuring user authorization in Druid Basic Security extension"
+        ],
+        "capabilities": [
+            "User role assignment",
+            "Role-based access control",
+            "Druid Basic Security extension",
+            "Druid Coordinator API",
+            "cURL command execution",
+            "HTTP POST request"
+        ],
+        "references": [
+            "http://druid-coordinator:8081/druid-ext/basic-security/authorization/db/MyBasicAuthorizer/users/<username>/roles/<rolename>",
+            "https://druid.apache.org/docs/latest/development/extensions-core/druid-basic-security.html>"
+        ]
+    }
+]

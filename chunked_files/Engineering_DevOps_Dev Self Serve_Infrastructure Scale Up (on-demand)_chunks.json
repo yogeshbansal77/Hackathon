@@ -1,0 +1,87 @@
+[
+    {
+        "id": "engineering_devops_dev-self-serve_infrastructure-scale-up-(on-demand)-chunk-0",
+        "name": "Infrastructure Scale Up (on-demand).txt - Pre-warm your LBs",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section provides details about an upcoming event that will cause a significant increase in traffic to the load balancers (LBs) serving the Kubernetes clusters for production and development environments. It specifies the LB names, Kubernetes cluster names, event duration, expected traffic increase, SSL termination usage, availability zones, backend scaling plans, and traffic patterns. The event is related to the IPL (Indian Premier League) season, which will drive high traffic in bursts, particularly during certain time periods.",
+        "use_cases": [
+            "Infrastructure scale-up for high-traffic event",
+            "Load balancer pre-warming",
+            "Traffic pattern analysis for capacity planning"
+        ],
+        "capabilities": [
+            "Load balancer configuration",
+            "Kubernetes cluster management",
+            "Traffic forecasting",
+            "Availability zone distribution",
+            "SSL termination",
+            "Burst traffic handling"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_infrastructure-scale-up-(on-demand)-chunk-1",
+        "name": "Infrastructure Scale Up (on-demand).txt - Calculate the appropriate pod numbers for serving N TPS",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains how to determine the appropriate number of pods (containers) required to handle a specific transaction rate (TPS) for an application. It suggests running performance tests in a dedicated environment to measure the application's performance and capacity. Based on the test results, a suitable number of pods can be determined to serve the desired TPS. This process helps ensure that the application has sufficient resources to handle the expected load.",
+        "use_cases": [
+            "Scaling application resources based on performance requirements",
+            "Determining resource allocation for handling specific transaction rates",
+            "Capacity planning for applications based on load testing",
+            "Optimizing resource utilization and cost by right-sizing application deployments"
+        ],
+        "capabilities": [
+            "Performance testing",
+            "Load testing",
+            "Capacity planning",
+            "Resource allocation",
+            "Scaling applications",
+            "Optimizing resource utilization"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_infrastructure-scale-up-(on-demand)-chunk-2",
+        "name": "Infrastructure Scale Up (on-demand).txt - Scaling up",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains the process of scaling up infrastructure resources to handle higher transaction volumes (TPS). It involves executing a scale-up batch job via Spinnaker pipelines, which deploys a pod running a scaling script across clusters. The scaling process is initiated by selecting the desired TPS value and running a manual execution pipeline. The pipeline includes stages for approval, cleanup, and sequential scaling across clusters to avoid bottlenecks.",
+        "use_cases": [
+            "Scaling infrastructure resources on-demand to handle increased transaction volumes",
+            "Automating infrastructure scaling through pipelines and scripts",
+            "Controlling and approving scaling operations through a deployment pipeline"
+        ],
+        "capabilities": [
+            "Scale-up batch job",
+            "Spinnaker pipelines",
+            "Manual execution pipeline",
+            "TPS selection",
+            "Approval stage",
+            "Cleanup stages",
+            "Sequential cluster scaling"
+        ],
+        "references": [
+            "https://docs.google.com/spreadsheets/d/1wTjcg6eMFb_YL0tRNjhHq-UN2u69Bo1-Edrdfz601bM/edit#gid=0",
+            "https://docs.google.com/spreadsheets/d/1Sb9_HVvTlJ5aMs7qELqws29slKZtyN5LHd7M4jDhYes/edit#gid=0",
+            "https://alpha.razorpay.com/_static/file/53b90adb3cb22f171acbabec068e0790.png",
+            "https://alpha.razorpay.com/_static/file/b760edca4e67dd408e6d36bebf17a9c3.png",
+            "https://alpha.razorpay.com/_static/file/22a3675f780fab3b8c255f7b84d119d4.png",
+            "https://alpha.razorpay.com/_static/file/708a23ab7be9d3fd13380cdf3992caae.png",
+            "https://alpha.razorpay.com/_static/file/3651db88024237adba5b62219103c92c.png",
+            "https://github.com/razorpay/armory/tree/master/scaling-scripts>",
+            "https://deploy.razorpay.com/#/applications/ipl-scaling/executions>",
+            "https://deploy.razorpay.com/#/applications/ipl-scaling/executions/configure/7650bc1b-94ca-43ec-9c6a-2f9b7c8997a9>"
+        ]
+    }
+]

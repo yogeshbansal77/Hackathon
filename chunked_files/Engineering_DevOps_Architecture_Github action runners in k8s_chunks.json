@@ -1,0 +1,116 @@
+[
+    {
+        "id": "engineering_devops_architecture_github-action-runners-in-k8s-chunk-0",
+        "name": "Github action runners in k8s.txt - Context:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture"
+        ],
+        "description": "This section appears to be a placeholder or an empty section titled 'Context' in a documentation file about GitHub Action runners in Kubernetes (k8s). It does not provide any actual content or explanation.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_github-action-runners-in-k8s-chunk-1",
+        "name": "Github action runners in k8s.txt - Github runners basics concepts:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture"
+        ],
+        "description": "This section explains the basic concepts of GitHub runners, which are servers or machines that execute workflows and actions for GitHub repositories. It covers topics like how runners connect to the GitHub server, how workflows are triggered and executed on specific runners based on labels and groups, different types of runners (repository, organization, and enterprise), and authentication methods. It also mentions some problems with running runners directly on EC2 instances in an Auto Scaling Group (ASG).",
+        "use_cases": [
+            "Running workflows and actions for GitHub repositories on specific runners based on labels and groups",
+            "Restricting access to runners for certain repositories or organizations using runner groups",
+            "Scaling runners dynamically based on workload using Auto Scaling Groups (ASG)",
+            "Authenticating runners with GitHub server and public Docker Hub"
+        ],
+        "capabilities": [
+            "Runner labels",
+            "Runner groups",
+            "Repository runners",
+            "Organization runners",
+            "Enterprise runners",
+            "GitHub App credentials authentication",
+            "Public Docker Hub authentication"
+        ],
+        "references": [
+            "https://github.com/razorpay/vishnu/tree/master/.github/workflows",
+            "https://github.com/razorpay/vishnu/actions",
+            "https://github.com/razorpay/api/blob/78c7eec62b9eb4e6ad63e4a3d7d8e39deb225092/.github/workflows/features_3_test_suite.yml#L4C1-L5C1"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_github-action-runners-in-k8s-chunk-2",
+        "name": "Github action runners in k8s.txt - Problems with ASG runners:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture"
+        ],
+        "description": "This section discusses the problems faced with using Auto Scaling Groups (ASG) for running GitHub Actions runners on EC2 instances, and how migrating to Kubernetes (K8s) runners can solve these issues. It explains the limitations of ASG runners, such as lack of on-demand scaling, inefficient resource utilization, GitHub rate-limiting due to limited IP addresses, and difficulties in managing and updating runners. The section then highlights how K8s runners address these problems by providing on-demand scaling, better resource utilization through bin-packing, IP address recycling to avoid rate-limiting, and easier management of runners using custom resources.",
+        "use_cases": [
+            "Running GitHub Actions workflows efficiently",
+            "Scaling runners on-demand based on job queue",
+            "Avoiding GitHub rate-limiting due to limited IP addresses",
+            "Easier management and updating of runners"
+        ],
+        "capabilities": [
+            "On-demand scaling of runners",
+            "Efficient resource utilization through bin-packing",
+            "IP address recycling using proxy service",
+            "Visibility into outbound GitHub requests through proxy logs",
+            "Easy deployment and management of runners using custom resources"
+        ],
+        "references": [
+            "https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app/rate-limits-for-github-apps",
+            "https://razorpay.slack.com/archives/C02B75CA8V9/p1655979832997649",
+            "https://razorpay.atlassian.net/browse/INFRA-902"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_github-action-runners-in-k8s-chunk-3",
+        "name": "Github action runners in k8s.txt - How K8s runners solves it:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture"
+        ],
+        "description": "This section explains how Razorpay has set up GitHub Actions runners on Kubernetes (K8s) clusters. It describes the architecture, which includes runner pods running on public subnet nodes and a tinyproxy running on private subnet nodes. The runners are managed using the open-source actions-runner-controller project. The section also provides details on the RunnerDeployment custom resource, which is used to configure the runner pods, including the number of replicas, resource requests, and environment variables.",
+        "use_cases": [
+            "Running GitHub Actions workflows on a Kubernetes cluster",
+            "Scaling the number of runners based on demand",
+            "Customizing the runner environment and resources",
+            "Securing the runner communication with a proxy"
+        ],
+        "capabilities": [
+            "K8s runner architecture",
+            "actions-runner-controller",
+            "RunnerDeployment custom resource",
+            "Runner pod configuration",
+            "Resource requests and limits",
+            "Environment variable configuration",
+            "Proxy configuration",
+            "Runner image customization"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/b1856a31296b0ddba9e8bc85329d03a9.png",
+            "https://github.com/actions/actions-runner-controller",
+            "https://docs.google.com/document/d/1XV9vrzaetELM-gBER-SFuaAcYs7s-WX3beaELWWDfrI/edit?tab=t.0#heading=h.gjdgxs",
+            "https://github.com/razorpay/infra-tools/blob/master/k8s-runner/Dockerfile",
+            "https://github.com/actions/actions-runner-controller/blob/master/docs/managing-access-with-runner-groups.md#:\\~:text=will%20impact%20your-,rate%2Dlimit%20budget,-and%20so%20the",
+            "https://docs.google.com/spreadsheets/d/1uAkO6P5lo3ulyehY7Ws6R7NgXm08q8amklFz3st2gFQ/edit?gid=400504223#gid=400504223",
+            "https://github.com/razorpay/api/actions/workflows/report-rate-limit.yml",
+            "https://vajra.razorpay.com/d/W7sTTUyVk/github-action-controller-k8s?orgId=1&from=now-30m&to=now&viewPanel=3",
+            "https://github.com/actions/actions-runner-controller/blob/master/docs/authenticating-to-the-github-api.md#deploying-using-github-app-authentication",
+            "https://razorpay.slack.com/archives/C02B75CA8V9/p1655979832997649",
+            "https://razorpay.slack.com/archives/CBZD5BMUZ/p1687760778627239?thread_ts=1687756171.724829&cid=CBZD5BMUZ",
+            "https://docs.google.com/document/d/1XV9vrzaetELM-gBER-SFuaAcYs7s-WX3beaELWWDfrI/edit?tab=t.0#heading=h.ubiz61disoq1",
+            "https://github.com/razorpay/infra-tools/blob/master/k8s-runner/Dockerfile",
+            "http://proxy-service.actions-runner-system.svc.cluster.local:8888",
+            "https://razorpay.zoom.us/rec/share/5TzKfO4HfzjTJGorvVqFOqCKLfhzYlYAGPw0mN4JleL2i1QT9Xi5nuRAhDEEEvLj.0-auq_gu0DlhVKKX>"
+        ]
+    }
+]

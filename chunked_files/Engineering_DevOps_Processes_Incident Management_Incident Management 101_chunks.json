@@ -1,0 +1,123 @@
+[
+    {
+        "id": "engineering_devops_processes_incident-management_incident-management-101-chunk-0",
+        "name": "Incident Management 101.txt - ## Incident",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section explains that an incident refers to any disruption or interruption in an organization's services, ranging from affecting a single user to the entire business. It is an event that requires human or automated intervention to restore the services to their full operational status as quickly as possible. An incident can be considered as anything that hinders the continuity of business operations.",
+        "use_cases": [
+            "Service disruption affecting a single user",
+            "Service disruption affecting the entire business",
+            "Restoring services to full operational status",
+            "Ensuring business continuity"
+        ],
+        "capabilities": [
+            "Identifying incidents",
+            "Incident response",
+            "Service restoration",
+            "Automated intervention",
+            "Human intervention",
+            "Incident management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_incident-management-101-chunk-1",
+        "name": "Incident Management 101.txt - ## Goal",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section outlines the primary objective of the Incident Management process, which is to restore normal service operations as quickly as possible while minimizing the adverse impact on business operations and ensuring agreed service quality levels are maintained. It emphasizes the importance of using standardized methods and procedures for efficient and prompt response, analysis, documentation, ongoing management, and reporting of incidents.",
+        "use_cases": [
+            "Restoring normal service operations quickly",
+            "Minimizing adverse impact on business operations",
+            "Maintaining agreed service quality levels",
+            "Efficient and prompt incident response, analysis, documentation, management, and reporting"
+        ],
+        "capabilities": [
+            "Standardized methods and procedures",
+            "Efficient incident response",
+            "Prompt incident response",
+            "Incident analysis",
+            "Incident documentation",
+            "Ongoing incident management",
+            "Incident reporting"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_incident-management-101-chunk-2",
+        "name": "Incident Management 101.txt - ## Definitions",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section defines various terms and concepts related to Incident Management, which is the process of detecting, responding to, and resolving incidents or issues that impact the performance or availability of applications or systems. It covers the different stages of an incident lifecycle, from initial detection to recovery and mitigation, as well as the documentation and communication processes involved. The definitions aim to provide a common understanding of these concepts for effective incident management practices.",
+        "use_cases": [
+            "Improving visibility and communication of incidents to stakeholders",
+            "Aligning incident management activities with business priorities",
+            "Maintaining service level agreements (SLAs) for application services",
+            "Documenting and analyzing incidents for root cause analysis and mitigation"
+        ],
+        "capabilities": [
+            "Incident Detection",
+            "First Response",
+            "Incident Recovery",
+            "Root Cause Analysis (RCA)",
+            "Incident Mitigation",
+            "Incident Closure",
+            "Monitoring Metrics (MTTD, MTTR, Application Alerts)"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_incident-management-101-chunk-3",
+        "name": "Incident Management 101.txt - ## Categorization",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section explains the process of incident management, which involves categorizing incidents, prioritizing them based on severity, and following a lifecycle for detection, recovery, and root cause analysis (RCA). It covers different types of incidents, priority levels, incident notification models, triage and logging procedures, recovery steps, and RCA methodology. The section also mentions internal and external RCA documents and their respective templates and storage locations.",
+        "use_cases": [
+            "Categorizing incidents as internal or production incidents",
+            "Prioritizing incidents based on severity levels (P0, P1, P2)",
+            "Detecting incidents from various sources and assigning priorities",
+            "Conducting root cause analysis (RCA) and creating internal and external RCA documents"
+        ],
+        "capabilities": [
+            "Incident categorization",
+            "Incident prioritization",
+            "Incident detection and notification",
+            "Triage and logging",
+            "Incident recovery",
+            "Root cause analysis (RCA)",
+            "Internal and external RCA documentation",
+            "RCA meeting scheduling and process"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/devops-on-call-response#internal-incident",
+            "https://alpha.razorpay.com/repo/devops-on-call-response#production-incident",
+            "https://alpha.razorpay.com/repo/devops-on-call-response#production-incident",
+            "https://alpha.razorpay.com/_static/file/0b9d1d049185254f72989d64608bf0e1.png",
+            "https://alpha.razorpay.com/_static/file/3cb9661cd3ddc5d70b93a6784acede04.png",
+            "https://alpha.razorpay.com/repo/devops-on-call-response",
+            "https://docs.google.com/document/d/1atz7-e3ob40S7JKrZHvNYyuWjYq-gVRTdiXlwgsQAJ4/edit",
+            "https://drive.google.com/drive/folders/1aP4X3pK3CGjZn3JKNucqej_t7VCn0UJN",
+            "https://docs.google.com/document/d/1BS1CPaNcAWJ3FOZrvSWskzH1MeF-FcepRCEMIOPjbBo/",
+            "https://incidents-rca@razorpay.com",
+            "https://drive.google.com/drive/folders/1COBBSVXe-s35rHuLufQXFu-6lF0zfi_q",
+            "https://alpha.razorpay.com/repo/rca-process"
+        ]
+    }
+]

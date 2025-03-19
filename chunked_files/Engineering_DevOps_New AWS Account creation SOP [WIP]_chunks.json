@@ -1,0 +1,65 @@
+[
+    {
+        "id": "engineering_devops_new-aws-account-creation-sop-[wip]-chunk-0",
+        "name": "New AWS Account creation SOP [WIP].txt - Introduction",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section outlines the initial steps required for creating a new AWS account. It involves presenting the agenda and requirements to the relevant teams, such as DevOps, and obtaining approval from the Finance department by providing a cost estimation for the necessary services. This process ensures that all stakeholders are informed and aligned before proceeding with the account creation.",
+        "use_cases": [
+            "Obtaining approval from relevant teams for creating a new AWS account",
+            "Presenting cost estimation to Finance department for required services",
+            "Aligning stakeholders before account creation"
+        ],
+        "capabilities": [
+            "Agenda and requirement presentation",
+            "Cost estimation for services",
+            "Stakeholder alignment",
+            "Approval process"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_new-aws-account-creation-sop-[wip]-chunk-1",
+        "name": "New AWS Account creation SOP [WIP].txt - Process Steps",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section outlines the steps involved in creating a new AWS account within an organization. It involves requesting assistance from the root account credentials holder of the AWS production account (141592612890) to create the account within the organization. Additionally, it emphasizes the importance of collaborating with the DevOps Security team to remove any default vulnerable configurations and secure the account before proceeding with further actions. This process aims to ensure proper security measures are in place from the outset.",
+        "use_cases": [
+            "Creating a new AWS account within an organization",
+            "Securing the new AWS account by removing default vulnerable configurations",
+            "Collaborating with different teams (root account holder and DevOps Security) for account creation and security hardening"
+        ],
+        "capabilities": [
+            "AWS account creation within an organization",
+            "Removal of default vulnerable configurations",
+            "Security hardening of AWS accounts",
+            "Collaboration between teams",
+            "Customization of VPC and CIDR settings"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_new-aws-account-creation-sop-[wip]-chunk-2",
+        "name": "New AWS Account creation SOP [WIP].txt - Security Considerations",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section outlines important security considerations when creating a new AWS account. It emphasizes the need to configure multi-factor authentication (MFA) for the root user, which adds an extra layer of security to prevent unauthorized access. Additionally, it recommends removing default security group rules and enabling automatic encryption for new EBS volumes to enhance data protection and comply with security best practices.",
+        "use_cases": [
+            "Securing root user access with MFA",
+            "Hardening default security group configurations",
+            "Enabling data encryption for EBS volumes"
+        ],
+        "capabilities": [
+            "root MFA configuration",
+            "security group rule management",
+            "EBS volume encryption"
+        ],
+        "references": []
+    }
+]

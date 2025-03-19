@@ -1,0 +1,71 @@
+[
+    {
+        "id": "engineering_devops_architecture_aws_rds_postgres_create-database,-user-&-assign-user-privileges-chunk-0",
+        "name": "Create database, user & assign user privileges.txt - Create Database",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "RDS",
+            "POSTGRES"
+        ],
+        "description": "This section explains how to create a new database in PostgreSQL, a popular open-source relational database management system. The command 'CREATE DATABASE blah;' is used to create a new database named 'blah' within the PostgreSQL server. This is a fundamental step in setting up a database environment for storing and managing data.",
+        "use_cases": [
+            "Creating a new database for a new application or project",
+            "Setting up a separate database for testing or development purposes",
+            "Provisioning a database for a specific user or group",
+            "Organizing data into separate databases for better management and security"
+        ],
+        "capabilities": [
+            "Database creation",
+            "Naming databases",
+            "PostgreSQL command-line interface"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_aws_rds_postgres_create-database,-user-&-assign-user-privileges-chunk-1",
+        "name": "Create database, user & assign user privileges.txt - Create User",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "RDS",
+            "POSTGRES"
+        ],
+        "description": "This section appears to be empty, as there is no content provided within the code block. Without any information, it is difficult to provide a meaningful description or infer any use cases or capabilities.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_aws_rds_postgres_create-database,-user-&-assign-user-privileges-chunk-2",
+        "name": "Create database, user & assign user privileges.txt - Grant Privileges",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "RDS",
+            "POSTGRES"
+        ],
+        "description": "This section explains how to create a new user in PostgreSQL and grant that user full privileges (permissions) to access and manage a specific database. It involves two steps: first, creating a new user with an encrypted password, and second, granting that user all privileges on a particular database.",
+        "use_cases": [
+            "Creating a new user account in PostgreSQL",
+            "Granting full access privileges to a user for a specific database",
+            "Managing user permissions and access control in PostgreSQL",
+            "Setting up a new user with necessary privileges for database administration or development tasks"
+        ],
+        "capabilities": [
+            "User creation",
+            "Password encryption",
+            "Privilege management",
+            "Database access control",
+            "User-level permissions",
+            "Granting all privileges"
+        ],
+        "references": []
+    }
+]

@@ -1,0 +1,169 @@
+[
+    {
+        "id": "engineering_devops_business-units_payments_troubleshoot-pod-restart---crashloopbackoff-chunk-0",
+        "name": "Troubleshoot POD restart - CrashLoopBackOff.txt - Liveness probe failure",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section explains that a failure in the liveness probe, which is a mechanism used to check if a container is running properly, can cause the pod (a group of containers) to repeatedly restart and eventually enter a 'CrashLoopBackOff' status. This means the pod is stuck in a loop of crashing and restarting. In the context of Spinnaker, a continuous delivery platform, this issue may manifest as an error message indicating that the deployment exceeded its progress deadline.",
+        "use_cases": [
+            "Troubleshooting pod restarts",
+            "Identifying liveness probe failures",
+            "Understanding Spinnaker deployment errors"
+        ],
+        "capabilities": [
+            "Liveness probe monitoring",
+            "Pod restart handling",
+            "CrashLoopBackOff status detection",
+            "Spinnaker deployment progress tracking",
+            "Error message logging"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_business-units_payments_troubleshoot-pod-restart---crashloopbackoff-chunk-1",
+        "name": "Troubleshoot POD restart - CrashLoopBackOff.txt - Debugging steps",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section provides steps to debug a pod that is stuck in a CrashLoopBackOff state, where the pod keeps restarting continuously due to a failure. It suggests waiting for the manifest (the configuration file that defines the pod) to stabilize, and then describing the pod and checking the events in a specific Slack channel (#botkube-stage). The section mentions that a specific message in the events indicates a liveness probe failure, which is a common cause for the CrashLoopBackOff issue.",
+        "use_cases": [
+            "Troubleshooting pods stuck in CrashLoopBackOff state",
+            "Identifying liveness probe failures",
+            "Monitoring pod events in a Slack channel"
+        ],
+        "capabilities": [
+            "Waiting for manifest stabilization",
+            "Describing pods",
+            "Checking pod events",
+            "Identifying liveness probe failures",
+            "Monitoring pod events in Slack"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_business-units_payments_troubleshoot-pod-restart---crashloopbackoff-chunk-2",
+        "name": "Troubleshoot POD restart - CrashLoopBackOff.txt - Port mismatch",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section explains how to troubleshoot a situation where a container's main process is listening on a different port than the one specified in the liveness probe configuration. It suggests verifying the port on which the container's main process is listening and updating the liveness probe configuration to match that port. This ensures that the liveness probe can correctly check the container's health and prevent unnecessary restarts due to a port mismatch.",
+        "use_cases": [
+            "Troubleshooting container restarts due to liveness probe failures",
+            "Verifying the correct port for a container's main process",
+            "Updating liveness probe configuration to match the container's main process port"
+        ],
+        "capabilities": [
+            "Liveness probe configuration",
+            "Container port verification",
+            "Troubleshooting container health checks",
+            "Updating Kubernetes resource configurations"
+        ],
+        "references": [
+            "http://10.24.72.89:8080/:"
+        ]
+    },
+    {
+        "id": "engineering_devops_business-units_payments_troubleshoot-pod-restart---crashloopbackoff-chunk-3",
+        "name": "Troubleshoot POD restart - CrashLoopBackOff.txt - NOTE : You can remove the liveness probe for debugging, so that kubelet won't restart the container during debugging.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section explains how to troubleshoot a container that is stuck in a CrashLoopBackOff state, where the container keeps restarting due to a liveness probe failure. It suggests removing the liveness probe temporarily to prevent the container from restarting during debugging. Additionally, it mentions adding a preStop hook to check the listening ports if you don't have exec permission, which allows running shell commands before the container is terminated.",
+        "use_cases": [
+            "Troubleshooting a container stuck in a CrashLoopBackOff state",
+            "Debugging a container without it restarting",
+            "Checking listening ports before container termination"
+        ],
+        "capabilities": [
+            "Removing liveness probe",
+            "Preventing container restart",
+            "Adding preStop hook",
+            "Executing shell commands",
+            "Checking listening ports"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_business-units_payments_troubleshoot-pod-restart---crashloopbackoff-chunk-4",
+        "name": "Troubleshoot POD restart - CrashLoopBackOff.txt - Entrypoint process not running",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section appears to be a snippet of a Kubernetes deployment configuration file, specifically related to the container image and lifecycle hooks. It defines the container image to be used ('jkumarpa/demo_python:v3') and specifies that the image should be pulled from the registry only if it is not already present on the node ('imagePullPolicy: IfNotPresent'). Additionally, it includes a 'preStop' lifecycle hook, which is a command or script that will be executed before the container is terminated, allowing for graceful shutdown or cleanup tasks.",
+        "use_cases": [
+            "Deploying containerized applications on Kubernetes",
+            "Managing container lifecycle hooks",
+            "Configuring image pull policies"
+        ],
+        "capabilities": [
+            "Container image specification",
+            "Image pull policy configuration",
+            "Lifecycle hook definition (preStop)"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_business-units_payments_troubleshoot-pod-restart---crashloopbackoff-chunk-5",
+        "name": "Troubleshoot POD restart - CrashLoopBackOff.txt - Container process listening on localhost(127.0.0.1)",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section explains how to troubleshoot a container process that is listening on the localhost (127.0.0.1) address, which can cause issues with the container's ability to communicate with other services or the outside world. It provides a command to install network tools (net-tools) and use the netstat command to check the listening ports within the container's logs. This can help identify if the container process is incorrectly bound to the localhost address, preventing external communication.",
+        "use_cases": [
+            "Troubleshooting container processes that are unable to communicate with external services or the internet",
+            "Identifying processes that are incorrectly bound to the localhost address",
+            "Debugging networking issues within containers",
+            "Verifying container network configurations"
+        ],
+        "capabilities": [
+            "Installing network tools (net-tools) within the container",
+            "Checking listening ports using the netstat command",
+            "Viewing container logs to inspect network-related issues",
+            "Troubleshooting container networking configurations",
+            "Identifying processes bound to the localhost address"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_business-units_payments_troubleshoot-pod-restart---crashloopbackoff-chunk-6",
+        "name": "Troubleshoot POD restart - CrashLoopBackOff.txt - Check application logs",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section explains how to troubleshoot a container that is stuck in a CrashLoopBackOff state, where the container keeps restarting repeatedly. It suggests checking the application logs and the network configuration of the container. Specifically, it recommends verifying if the main process inside the container is listening on all interfaces (0.0.0.0) instead of just localhost (127.0.0.1), as the latter would prevent external access to the application. It also provides a command to check the application logs for the specific pod.",
+        "use_cases": [
+            "Troubleshooting containers stuck in CrashLoopBackOff state",
+            "Checking application logs for a specific pod",
+            "Verifying network configuration of a container"
+        ],
+        "capabilities": [
+            "Checking network configuration using netstat",
+            "Accessing application logs",
+            "Identifying container processes listening on localhost vs all interfaces",
+            "Modifying Dockerfile or codebase to change listening address"
+        ],
+        "references": []
+    }
+]

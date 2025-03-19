@@ -1,0 +1,74 @@
+[
+    {
+        "id": "engineering_devops_run-books-and-sops_dms-pod-count-alert-chunk-0",
+        "name": "DMS pod count alert.txt - Issue:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains that the number of pods (containers) for a deployment named 'sdlc' in the 'SDLC' namespace of a Kubernetes cluster has dropped to zero. This could indicate an issue with the deployment or the cluster itself, potentially causing downtime or service disruption for the application running in those pods.",
+        "use_cases": [
+            "Monitoring pod counts for critical deployments",
+            "Detecting potential service disruptions or outages",
+            "Troubleshooting deployment or cluster issues"
+        ],
+        "capabilities": [
+            "Pod count monitoring",
+            "Namespace monitoring",
+            "Deployment monitoring",
+            "Cluster monitoring",
+            "Alert generation"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_dms-pod-count-alert-chunk-1",
+        "name": "DMS pod count alert.txt - Debugging:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains that the issue of an incorrect DMS pod count alert could be caused by either an out-of-memory (OOM) situation or a node being unavailable in the ops-common cluster. It suggests that the root cause of the alert might be related to resource constraints or node availability problems within the cluster.",
+        "use_cases": [
+            "Troubleshooting DMS pod count alerts",
+            "Identifying resource constraints in a Kubernetes cluster",
+            "Monitoring node availability in a Kubernetes cluster"
+        ],
+        "capabilities": [
+            "OOM detection",
+            "Node availability monitoring",
+            "Cluster resource monitoring",
+            "Alert analysis",
+            "Debugging"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_dms-pod-count-alert-chunk-2",
+        "name": "DMS pod count alert.txt - Resolution:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section provides guidance on troubleshooting and resolving issues related to the DMS pod count alert. It suggests debugging by examining the pod logs and attempting to resolve the issue by rotating (restarting) the pod. Additionally, it provides a link to a monitoring dashboard for further investigation.",
+        "use_cases": [
+            "Troubleshooting DMS pod count alerts",
+            "Analyzing pod logs for debugging",
+            "Restarting or rotating pods to resolve issues",
+            "Monitoring DMS pods through a dashboard"
+        ],
+        "capabilities": [
+            "Pod log analysis",
+            "Pod rotation/restart",
+            "DMS pod monitoring",
+            "Debugging",
+            "Issue resolution"
+        ],
+        "references": [
+            "https://vajra.razorpay.com/d/Dxr0ybtIz/dms-monitoring?orgId=1>"
+        ]
+    }
+]

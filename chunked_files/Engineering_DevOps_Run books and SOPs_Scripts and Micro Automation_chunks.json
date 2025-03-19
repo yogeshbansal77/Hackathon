@@ -1,0 +1,216 @@
+[
+    {
+        "id": "engineering_devops_run-books-and-sops_scripts-and-micro-automation-chunk-0",
+        "name": "Scripts and Micro Automation.txt - Disclaimer",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section indicates that certain tools or software need to be installed on the user's computer system before proceeding with the scripts and micro-automation tasks described in the documentation. It serves as a prerequisite or requirement for the user to ensure they have the necessary tools or dependencies set up on their machine.",
+        "use_cases": [
+            "Setting up the required environment for running scripts and automation tasks",
+            "Ensuring compatibility and availability of necessary tools or software",
+            "Preparing the user's system for executing the instructions provided in the documentation"
+        ],
+        "capabilities": [
+            "Tool installation",
+            "System requirements",
+            "Prerequisites",
+            "Dependencies",
+            "Environment setup"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_scripts-and-micro-automation-chunk-1",
+        "name": "Scripts and Micro Automation.txt - Tools to be installed",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section lists various tools and utilities that need to be installed for working with scripts and micro-automation tasks. It provides links to download or install these tools, which include parallel processing, JSON data manipulation, AWS command-line interface, Kubernetes cluster management, infrastructure provisioning with Terraform, and an enhanced shell environment with context awareness for Kubernetes and AWS.",
+        "use_cases": [
+            "Automating tasks across multiple systems or servers using parallel processing",
+            "Working with JSON data and APIs",
+            "Managing and interacting with AWS resources from the command line",
+            "Deploying and managing applications on Kubernetes clusters"
+        ],
+        "capabilities": [
+            "Parallel processing",
+            "JSON data manipulation",
+            "AWS command-line interface",
+            "Kubernetes cluster management",
+            "Infrastructure provisioning with Terraform",
+            "Enhanced shell environment with context awareness"
+        ],
+        "references": [
+            "https://www.gnu.org/software/parallel/>",
+            "https://stedolan.github.io/jq/>",
+            "https://aws.amazon.com/cli/>",
+            "https://kubernetes.io/docs/tasks/tools/install-kubectl/>",
+            "https://github.com/tfutils/tfenv>",
+            "https://ohmyz.sh/>",
+            "https://github.com/denysdovhan/spaceship-prompt>"
+        ]
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_scripts-and-micro-automation-chunk-2",
+        "name": "Scripts and Micro Automation.txt - Important Pointers",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section provides important tips and recommendations for optimizing the performance of the ZSH (Z Shell) terminal environment. It suggests that installing too many packages or plugins in ZSH can slow it down. To address this issue, the section recommends following a guide to speed up the terminal by making specific configurations. Additionally, it advises using the '-j1' parameter with parallel commands to prevent potential issues caused by concurrency.",
+        "use_cases": [
+            "Optimizing the performance of the ZSH terminal environment",
+            "Speeding up the ZSH terminal by following a recommended guide",
+            "Preventing potential issues caused by concurrency in parallel commands"
+        ],
+        "capabilities": [
+            "Performance optimization",
+            "ZSH configuration",
+            "Concurrency management",
+            "Parallel command execution",
+            "Terminal environment customization"
+        ],
+        "references": [
+            "https://blog.jonlu.ca/posts/speeding-up-zsh"
+        ]
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_scripts-and-micro-automation-chunk-3",
+        "name": "Scripts and Micro Automation.txt - Kubernetes",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section provides guidance on working with Kubernetes (k8s), a popular open-source container orchestration system. It emphasizes the importance of being aware of the current context when running k8s commands, and recommends installing a tool called 'kubectx' to help manage multiple k8s environments more efficiently.",
+        "use_cases": [
+            "Managing multiple Kubernetes environments",
+            "Checking the current context in Kubernetes",
+            "Streamlining Kubernetes command execution"
+        ],
+        "capabilities": [
+            "Context awareness",
+            "Environment management",
+            "Command execution",
+            "Tool recommendation (kubectx)"
+        ],
+        "references": [
+            "https://github.com/ahmetb/kubectx>"
+        ]
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_scripts-and-micro-automation-chunk-4",
+        "name": "Scripts and Micro Automation.txt - Kubernetes Aliases",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section provides a set of command aliases for the Kubernetes command-line tool (kubectl) in the zsh shell. These aliases are designed to simplify and streamline common Kubernetes operations by providing shorter and more convenient commands. The aliases cover tasks such as viewing logs, retrieving secrets, ingress resources, config maps, services, pods across namespaces, sorting pods by creation time, and getting node information.",
+        "use_cases": [
+            "Streamlining Kubernetes operations with shorter and more convenient commands",
+            "Quickly retrieving information about Kubernetes resources like pods, services, ingress, and nodes",
+            "Viewing logs and secrets in a more efficient manner",
+            "Sorting and filtering pod information based on specific criteria"
+        ],
+        "capabilities": [
+            "kubectl logs",
+            "get secrets",
+            "get ingress",
+            "get config maps",
+            "get services",
+            "get pods across namespaces",
+            "sort pods by creation time",
+            "get pods with wide output",
+            "get nodes"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_scripts-and-micro-automation-chunk-5",
+        "name": "Scripts and Micro Automation.txt - Kubernetes Commands",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section provides a set of aliases and functions for interacting with Kubernetes clusters using the kubectl command-line tool. It includes shortcuts for retrieving deployment and pod images, executing commands within running pods, and switching between different Kubernetes configurations. Additionally, it provides examples for restarting deployments, deleting pods based on labels, and deleting batch jobs and API migration pods.",
+        "use_cases": [
+            "Quickly retrieving image information for deployments and pods",
+            "Executing commands within running pods",
+            "Switching between different Kubernetes configurations",
+            "Restarting deployments for rolling updates",
+            "Deleting pods based on labels",
+            "Deleting batch jobs and API migration pods"
+        ],
+        "capabilities": [
+            "Kubectl aliases",
+            "Kubectl functions",
+            "Pod execution",
+            "Configuration management",
+            "Deployment rollouts",
+            "Pod deletion",
+            "Batch job deletion",
+            "API migration pod deletion"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_scripts-and-micro-automation-chunk-6",
+        "name": "Scripts and Micro Automation.txt - Linux",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section provides a command that can be used to delete completed Kubernetes pods matching specific names ('batch' or 'prod-api-migration') in parallel. The command first retrieves a list of pods, filters for those with 'batch' or 'prod-api-migration' in their names and have a status of 'Completed', extracts the pod names, and then uses the 'parallel' command to delete those pods one by one using the 'kubectl delete pod' command.",
+        "use_cases": [
+            "Cleaning up completed batch jobs or migration tasks in a Kubernetes cluster",
+            "Automating the deletion of specific pods after they have completed their tasks",
+            "Managing resources in a Kubernetes cluster by removing completed pods",
+            "Scripting or automating Kubernetes cluster maintenance tasks"
+        ],
+        "capabilities": [
+            "Kubernetes pod management",
+            "Filtering pods by name and status",
+            "Parallel execution of commands",
+            "Scripting and automation",
+            "Resource cleanup",
+            "Cluster maintenance"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_scripts-and-micro-automation-chunk-7",
+        "name": "Scripts and Micro Automation.txt - Generate Password",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section provides instructions for generating secure passwords on Linux systems using the OpenSSL command-line tool. It emphasizes the importance of avoiding website-based password generators and recommends using a password manager like passwordstore.org for securely storing and managing passwords.",
+        "use_cases": [
+            "Generating strong, random passwords for various accounts and services",
+            "Securely storing and managing passwords using a password manager",
+            "Automating password generation using an alias command"
+        ],
+        "capabilities": [
+            "Password generation",
+            "Random password generation",
+            "Secure password storage",
+            "Password management",
+            "Command-line tools",
+            "Automation"
+        ],
+        "references": [
+            "https://kubernetes.io/docs/reference/kubectl/cheatsheet/>",
+            "https://www.passwordstore.org/>"
+        ]
+    }
+]

@@ -1,0 +1,182 @@
+[
+    {
+        "id": "engineering_devops_devops|infra-engineering-at-razorpay-chunk-0",
+        "name": "DevOps|Infra Engineering at Razorpay.txt - About Devops",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section provides an overview of the DevOps organization at Razorpay, which is responsible for ensuring the availability and uptime of Razorpay's services. They manage the cloud infrastructure, implement backup and redundancy measures, and facilitate the deployment of new applications or features. The organization has a flat structure, with members specializing in various components essential for maintaining Razorpay's operations.",
+        "use_cases": [
+            "Ensuring the availability and uptime of Razorpay's services",
+            "Managing cloud infrastructure",
+            "Implementing backup and redundancy measures",
+            "Facilitating the deployment of new applications or features"
+        ],
+        "capabilities": [
+            "Cloud infrastructure management",
+            "Backup and redundancy implementation",
+            "Application deployment",
+            "Flat organizational structure",
+            "Specialization in various components"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops|infra-engineering-at-razorpay-chunk-1",
+        "name": "DevOps|Infra Engineering at Razorpay.txt - Amazon Web Services (AWS)",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section discusses Razorpay's use of Amazon Web Services (AWS) as their primary Infrastructure as a Service (IaaS) solution. It highlights that Razorpay leverages AWS regions in India to comply with local regulations and provide the best experience for their customers. The section also mentions that Razorpay utilizes various managed services offered by AWS, such as AWS RDS, AWS ElastiCache, AWS Elasticsearch Service, and AWS Elastic Kubernetes Service.",
+        "use_cases": [
+            "Hosting applications and workloads on AWS",
+            "Ensuring compliance with local regulations by using AWS regions in India",
+            "Providing the best experience for customers by leveraging AWS regions in India",
+            "Utilizing managed services like AWS RDS, AWS ElastiCache, AWS Elasticsearch Service, and AWS Elastic Kubernetes Service"
+        ],
+        "capabilities": [
+            "AWS regions in India",
+            "AWS RDS",
+            "AWS ElastiCache",
+            "AWS Elasticsearch Service",
+            "AWS Elastic Kubernetes Service"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops|infra-engineering-at-razorpay-chunk-2",
+        "name": "DevOps|Infra Engineering at Razorpay.txt - Containers/Docker/Kubernetes",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section explains that Razorpay uses containerized applications to enable scalability across different platforms and programming languages. Containerization allows the use of a container orchestration tool like Kubernetes, which is open-source and highly customizable, to manage and deploy these containerized applications efficiently.",
+        "use_cases": [
+            "Scaling applications across different platforms and programming languages",
+            "Utilizing an open-source and customizable container orchestration tool (Kubernetes)",
+            "Efficient management and deployment of containerized applications"
+        ],
+        "capabilities": [
+            "Containerization of applications",
+            "Platform and language agnostic scalability",
+            "Container orchestration with Kubernetes",
+            "Open-source and customizable container management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops|infra-engineering-at-razorpay-chunk-3",
+        "name": "DevOps|Infra Engineering at Razorpay.txt - Observability",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section explains the concept of observability, which refers to the ability to understand the internal state of a system based on its external outputs. It highlights three key pillars of observability: logging (tools like EFK, Sumologic), monitoring (tools like Prometheus, Victoria Metrics, Alertmanager), and tracing (tools like OpenTelemetry, Jaeger). These pillars help in gathering and analyzing data from complex applications to gain insights into their behavior and performance.",
+        "use_cases": [
+            "Understanding system behavior",
+            "Identifying performance issues",
+            "Troubleshooting and debugging",
+            "Monitoring application health"
+        ],
+        "capabilities": [
+            "Logging",
+            "Monitoring",
+            "Tracing",
+            "EFK",
+            "Sumologic",
+            "Prometheus",
+            "Victoria Metrics",
+            "Alertmanager",
+            "OpenTelemetry",
+            "Jaeger"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops|infra-engineering-at-razorpay-chunk-4",
+        "name": "DevOps|Infra Engineering at Razorpay.txt - Networking/OS",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section discusses the application of networking and Linux system concepts in the DevOps/Infrastructure Engineering team at Razorpay. It explains that Kubernetes, a container orchestration platform, utilizes the existing networking infrastructure provided by AWS (Amazon Web Services) for functionalities like service discovery and communication between containers (pods). Additionally, the team manages custom networking setups required for integrations with banks.",
+        "use_cases": [
+            "Service discovery and inter-pod communication in Kubernetes",
+            "Custom networking setups for bank integrations",
+            "Managing networking infrastructure on AWS"
+        ],
+        "capabilities": [
+            "Networking",
+            "Linux Systems",
+            "Kubernetes",
+            "AWS Infrastructure",
+            "Service Discovery",
+            "Inter-pod Communication",
+            "Custom Networking Setups",
+            "Bank Integrations"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops|infra-engineering-at-razorpay-chunk-5",
+        "name": "DevOps|Infra Engineering at Razorpay.txt - Compliance/Security",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section discusses the compliance and security measures implemented at Razorpay, a fintech organization. It highlights the need to meet various compliance standards like PCI DSS and SOC2, which require the setup and management of tools for card scanning, file integrity monitoring, logging, and firewalls. Additionally, it mentions that data engineering platforms like Qubole and Looker are allowed on a separate AWS account for processing analytics, with restricted access to data and regular reviews.",
+        "use_cases": [
+            "Meeting compliance standards like PCI DSS and SOC2",
+            "Securing financial data and transactions",
+            "Monitoring file integrity and logging activities",
+            "Processing analytics data on separate platforms with restricted access"
+        ],
+        "capabilities": [
+            "Card scanning tools (e.g., CCSRCH)",
+            "File integrity monitors (e.g., Falco, AIDE)",
+            "Logging and audit/journal logs",
+            "Firewalls (e.g., AWS WAF)",
+            "Data engineering platforms (e.g., Qubole, Looker)",
+            "Restricted data access and regular reviews for analytics platforms"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops|infra-engineering-at-razorpay-chunk-6",
+        "name": "DevOps|Infra Engineering at Razorpay.txt - Data Engineering Platform",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section discusses the implementation of Continuous Integration and Continuous Deployment (CI/CD) practices at Razorpay. It mentions the use of tools like drone, GitHub Actions, and Spinnaker to establish a formal process for testing and deploying code changes to the production environment. These CI/CD solutions help ensure that code modifications go through necessary checks and validations before being released, promoting a more reliable and streamlined software delivery process.",
+        "use_cases": [
+            "Automated testing of code changes",
+            "Streamlined deployment of code to production",
+            "Ensuring code quality and reliability",
+            "Facilitating collaboration and code integration"
+        ],
+        "capabilities": [
+            "Continuous Integration",
+            "Continuous Deployment",
+            "Automated testing",
+            "Code validation",
+            "Formal deployment mechanism",
+            "Integration with tools like drone, GitHub Actions, and Spinnaker"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops|infra-engineering-at-razorpay-chunk-7",
+        "name": "DevOps|Infra Engineering at Razorpay.txt - Continuous Integration/Continuous Deployment",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section does not contain any content. It appears to be an empty section or a placeholder for future content related to Continuous Integration and Continuous Deployment practices at Razorpay.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    }
+]

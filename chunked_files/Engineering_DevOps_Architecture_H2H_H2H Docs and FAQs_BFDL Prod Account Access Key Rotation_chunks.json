@@ -1,0 +1,75 @@
+[
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_bfdl-prod-account-access-key-rotation-chunk-0",
+        "name": "BFDL Prod Account Access Key Rotation.txt - Bajaj Finance S3 Bucket Access",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains how to securely store and access the AWS S3 bucket credentials (access key and secret key) for the Bajaj Finance account. The credentials need to be added to a secure credential store called 'credstash-prod-ufh' under the keys 'aws_s3_bajaj_access_key' and 'aws_s3_bajaj_secret' respectively. This allows secure access to the Bajaj Finance S3 bucket without exposing the credentials in plaintext.",
+        "use_cases": [
+            "Accessing the Bajaj Finance S3 bucket",
+            "Securely storing and retrieving AWS credentials",
+            "Enabling secure data transfer to/from the Bajaj Finance S3 bucket",
+            "Implementing least privilege access to AWS resources"
+        ],
+        "capabilities": [
+            "Secure credential storage",
+            "AWS S3 bucket access",
+            "Credential rotation",
+            "Least privilege access",
+            "Centralized credential management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_bfdl-prod-account-access-key-rotation-chunk-1",
+        "name": "BFDL Prod Account Access Key Rotation.txt - Credstash Secrets",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be instructing the reader to provide specific instructions to the Bajaj team regarding certain tasks or procedures related to the BFDL Prod Account Access Key Rotation. However, the content provided does not provide any further details or context about what those instructions should entail.",
+        "use_cases": [
+            "Providing instructions to the Bajaj team",
+            "Procedures related to BFDL Prod Account Access Key Rotation"
+        ],
+        "capabilities": [
+            "Instructing external teams",
+            "Access key rotation",
+            "Credstash secrets management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_bfdl-prod-account-access-key-rotation-chunk-2",
+        "name": "BFDL Prod Account Access Key Rotation.txt - Instructions for Bajaj",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section provides instructions for Bajaj, likely a company or team, on how to rotate their access keys for the BFDL Prod Account. It outlines a process where Bajaj should generate a new pair of access keys, send them to the devops.team@razorpay.com email address, wait 24 hours for the new keys to be added to Razorpay's secret manager, and then deactivate or remove the old keys only after receiving confirmation from Razorpay.",
+        "use_cases": [
+            "Rotating access keys for security purposes",
+            "Updating access keys in a secure and controlled manner",
+            "Coordinating access key changes between different teams or organizations"
+        ],
+        "capabilities": [
+            "Access key generation",
+            "Access key deactivation/removal",
+            "Secure key management",
+            "Inter-team communication",
+            "Controlled key rotation process"
+        ],
+        "references": []
+    }
+]

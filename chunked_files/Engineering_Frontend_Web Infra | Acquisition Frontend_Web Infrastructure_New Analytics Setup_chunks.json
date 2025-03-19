@@ -1,0 +1,44 @@
+[
+    {
+        "id": "engineering_frontend_web-infra-|-acquisition-frontend_web-infrastructure_new-analytics-setup-chunk-0",
+        "name": "New Analytics Setup.txt - Local Analytics Service Layer",
+        "breadcrumb": [
+            "Engineering",
+            "Frontend",
+            "Web Infra | Acquisition Frontend",
+            "Web Infrastructure"
+        ],
+        "description": "This section provides a link to the GitHub repository for the Razorpay frontend-commander project, specifically the analytics service layer. This service layer is likely responsible for handling analytics-related functionality within the Razorpay platform, such as tracking user interactions, collecting data, and generating reports or insights.",
+        "use_cases": [
+            "Tracking user interactions and behavior within the Razorpay platform",
+            "Collecting and analyzing data related to platform usage and performance",
+            "Generating analytics reports and insights for internal or external stakeholders",
+            "Integrating with third-party analytics tools or services"
+        ],
+        "capabilities": [
+            "Analytics service layer",
+            "Data collection",
+            "Data analysis",
+            "Report generation",
+            "User behavior tracking",
+            "Platform performance monitoring"
+        ],
+        "references": [
+            "https://github.com/razorpay/frontend-commander/tree/master/commander-services/analytics>"
+        ]
+    },
+    {
+        "id": "engineering_frontend_web-infra-|-acquisition-frontend_web-infrastructure_new-analytics-setup-chunk-1",
+        "name": "New Analytics Setup.txt - @razorpay/commander-services/analytics",
+        "breadcrumb": [
+            "Engineering",
+            "Frontend",
+            "Web Infra | Acquisition Frontend",
+            "Web Infrastructure"
+        ],
+        "description": "This section appears to be empty or missing content. Without any text or information provided, it is difficult to determine what this section is intended to explain or describe.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    }
+]

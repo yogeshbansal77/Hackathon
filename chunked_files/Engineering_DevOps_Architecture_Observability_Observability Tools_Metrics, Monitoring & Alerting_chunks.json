@@ -1,0 +1,101 @@
+[
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_metrics,-monitoring-&-alerting-chunk-0",
+        "name": "Metrics, Monitoring & Alerting.txt - What are Metrics, Monitoring and Alerting?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools"
+        ],
+        "description": "This section explains that metrics are raw measurements or data points that represent the usage or behavior of resources within a system. These metrics can be low-level system metrics like CPU or memory usage, or higher-level application-specific metrics like requests per second or server pool membership. Some metrics are represented as a percentage of total capacity, while others are rates that indicate how busy a component is.",
+        "use_cases": [
+            "Monitoring system resource usage",
+            "Tracking application performance",
+            "Measuring component utilization",
+            "Analyzing system behavior"
+        ],
+        "capabilities": [
+            "Collecting low-level system metrics",
+            "Gathering application-specific metrics",
+            "Representing metrics as percentages of total capacity",
+            "Representing metrics as rates of activity",
+            "Observing resource usage",
+            "Observing component behavior"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_metrics,-monitoring-&-alerting-chunk-1",
+        "name": "Metrics, Monitoring & Alerting.txt - Metrics",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools"
+        ],
+        "description": "This section explains the concepts of metrics and monitoring in a system. Metrics are raw data points that provide insights into the behavior and health of a system, while monitoring is the process of collecting, aggregating, and analyzing these metrics to gain a holistic view of the system's performance, identify issues, and trigger automated responses. Metrics are the building blocks, and monitoring is the process of making sense of these metrics to understand trends, correlations, and changes in the system.",
+        "use_cases": [
+            "Understanding historic trends in system performance",
+            "Correlating diverse factors affecting system behavior",
+            "Measuring changes in performance, resource consumption, or error rates",
+            "Automating responses based on specific metric values or patterns"
+        ],
+        "capabilities": [
+            "Collecting metrics from various sources (operating system, custom applications)",
+            "Storing and managing historical metric data",
+            "Aggregating and sampling older metric data",
+            "Visualizing and analyzing metric data",
+            "Initiating automated responses based on metric values"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_metrics,-monitoring-&-alerting-chunk-2",
+        "name": "Metrics, Monitoring & Alerting.txt - Monitoring",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools"
+        ],
+        "description": "This section explains the importance of monitoring systems in managing and analyzing metrics from various components of an application or infrastructure. It discusses how monitoring systems provide visualizations to help identify trends and understand the interactions between different components. Additionally, it highlights the ability of monitoring systems to correlate data from multiple sources, enabling administrators to recognize patterns and relationships between events across different resources. The section also introduces the monitoring tools used at Razorpay, including Amazon CloudWatch, Prometheus, StatusCake, and Sumologic, and briefly describes their functionalities.",
+        "use_cases": [
+            "Visualizing metrics and trends for better understanding of system behavior",
+            "Correlating data from different sources to identify patterns and relationships between events",
+            "Defining and activating alerts based on specific conditions or thresholds",
+            "Monitoring external endpoints and website availability"
+        ],
+        "capabilities": [
+            "Data visualization (graphs, dashboards)",
+            "Data correlation and pattern recognition",
+            "Alert configuration and notification",
+            "Metrics collection and storage",
+            "External endpoint monitoring",
+            "Log analysis and management"
+        ],
+        "references": [
+            "https://lh3.googleusercontent.com/tnLHtfnFb2Aackzhm7H5T9ziUZZEqSy5sawTRYYR84Rto7t74m5O8dv1St-4UswGErl0m0rCF1p_RITbzZPAjzaOyX9yvNUDdAFNsPfyfZ31a5CQlZLUl4fcgxPHACVMWxH6_XS9",
+            "https://lh6.googleusercontent.com/vzWMzesEsBBrcdEOVcxZMWShq3qnOMqx5RPk_zb3tWw5WW6NWuV52J4NIRn8fAi38KvK2Z-TQuFbyQHS3cN8K9rKTQyl-ob6BQEVDCaehox24kvWg1pbjSr8UNyQ9EnI_aAmsGuN",
+            "https://lh3.googleusercontent.com/f60VvkbKNzw-zhv9je3NJuGh5qfR5LY6Lb-yn1pbo433u67DSzhmX2rkwQWrJlnbjukJdCYEahPHDc14t-OJfmhqGIzkVbcSoZ4XQ_g2YFgbr1bUoWBBk9AL6k4Mq89BOuvEtT4o",
+            "https://en.wikipedia.org/wiki/Logfile",
+            "https://en.wikipedia.org/wiki/Logfile",
+            "https://help.sumologic.com/05Search/Search-Cheat-Sheets/General-Search-Examples-Cheat-Sheet",
+            "https://help.sumologic.com/05Search/Search-Query-Language",
+            "https://alpha.razorpay.com/wp-content/uploads/2020/08/1597590238-51-a-sumo.png",
+            "https://alpha.razorpay.com/wp-content/uploads/2020/08/1597590364-51-c-sumo.png",
+            "https://vajra.razorpay.com",
+            "https://alpha.razorpay.com/wp-content/uploads/2020/08/1598434867-51-c-grafana.png",
+            "https://lh5.googleusercontent.com/yVkM8mephKkMff7OuPBunYjTDBQUDa986pCG52UPFnKkLRo6RSxD3o_JylP2ZpVa64rLpS4U_BnK6PM7PGbl8EhidVztNgJduMe-jYkt8sUoDOhURv9AooHil0IoCLC39ctB8Pw8",
+            "https://alpha.razorpay.com/wp-content/uploads/2020/08/1597590652-51-b-grafana.png",
+            "https://alpha.razorpay.com/wp-content/uploads/2020/08/1597592578-53-c.png",
+            "https://github.com/prometheus/alertmanager",
+            "https://alpha.razorpay.com/wp-content/uploads/2020/08/1597592701-Screenshot-2020-08-12-at-11.23.19-AM.png",
+            "https://lh5.googleusercontent.com/1PzqbjGIZNnJQMKiAxO4tetbuyjmuJ8ltWmX3DwpqFfnGE8lLFBDRr-XCda7vJ_BvvRk6ZEPPf4uL_iZMUIZxKXqsuykQ8x4jb54tmifp1g8GxHLF0LqpuG1rMF700xByELIeSnl",
+            "https://alpha.razorpay.com/wp-content/uploads/2020/08/1597590922-53-d.png"
+        ]
+    }
+]

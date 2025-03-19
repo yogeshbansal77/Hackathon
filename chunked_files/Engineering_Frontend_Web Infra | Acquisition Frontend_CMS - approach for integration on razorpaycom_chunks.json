@@ -1,0 +1,78 @@
+[
+    {
+        "id": "engineering_frontend_web-infra-|-acquisition-frontend_cms---approach-for-integration-on-razorpaycom-chunk-0",
+        "name": "CMS - approach for integration on razorpaycom.txt - Overview",
+        "breadcrumb": [
+            "Engineering",
+            "Frontend",
+            "Web Infra | Acquisition Frontend"
+        ],
+        "description": "This section explains the current approach being taken for the CMS integration with Razorpay. It involves using the Pug runtime to generate HTML from a pre-compiled template function, which is a work in progress.",
+        "use_cases": [
+            "Generating HTML content dynamically from templates",
+            "Integrating a Content Management System (CMS) with Razorpay",
+            "Previewing the editor content in real-time"
+        ],
+        "capabilities": [
+            "Pug runtime",
+            "Pre-compiled template function",
+            "HTML generation",
+            "Editor preview",
+            "CMS integration",
+            "Work in progress (WIP)"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_frontend_web-infra-|-acquisition-frontend_cms---approach-for-integration-on-razorpaycom-chunk-1",
+        "name": "CMS - approach for integration on razorpaycom.txt - Current approach",
+        "breadcrumb": [
+            "Engineering",
+            "Frontend",
+            "Web Infra | Acquisition Frontend"
+        ],
+        "description": "This section discusses the current approach for integrating a Content Management System (CMS) with the Razorpay website. It involves partially rewriting the website's templates to use data from template variables instead of hardcoded values. During the build process, the templates would fetch data from a content directory and generate HTML pages accordingly. The section also explores the possibility of having both templates and content in the same file, but notes that this may not be feasible due to limitations in the Netlify CMS. Additionally, it mentions plans to progressively migrate remaining templates to the CMS and build features like copying pages with different URLs, images, and migrating entire pages to the new system.",
+        "use_cases": [
+            "Integrating a Content Management System (CMS) with the Razorpay website",
+            "Updating website templates to use data from template variables instead of hardcoded values",
+            "Generating HTML pages from templates and content during the build process",
+            "Migrating remaining templates to the CMS"
+        ],
+        "capabilities": [
+            "Rewriting templates to use template variables",
+            "Fetching data from a content directory during build",
+            "Generating HTML pages from templates and content",
+            "Progressively migrating templates to CMS",
+            "Copying pages with different URLs and images",
+            "Migrating entire pages to the new CMS system"
+        ],
+        "references": [
+            "https://github.com/netlify/netlify-cms/issues/2757",
+            "https://www.netlifycms.org/docs/configuration-options/#extension-and-format"
+        ]
+    },
+    {
+        "id": "engineering_frontend_web-infra-|-acquisition-frontend_cms---approach-for-integration-on-razorpaycom-chunk-2",
+        "name": "CMS - approach for integration on razorpaycom.txt - Alternative approach (not doing)",
+        "breadcrumb": [
+            "Engineering",
+            "Frontend",
+            "Web Infra | Acquisition Frontend"
+        ],
+        "description": "This section discusses an alternative approach to integrating with the CMS (Content Management System) on razorpay.com, which involves migrating to a modern system backed by React, such as Gatsby or NextJS. It outlines the potential benefits of this approach, including better developer experience, reusability, and compatibility with other modern tools. However, it also acknowledges the drawbacks, such as the additional work required for setup and the need for a complete rewrite of the existing templates. Ultimately, the decision was made not to pursue this approach at the current time due to the desire to keep the scope limited to the CMS integration and the potential lack of reusability for the current work.",
+        "use_cases": [
+            "Integrating with a CMS on razorpay.com",
+            "Migrating to a modern system backed by React",
+            "Building static sites using frameworks like Gatsby or NextJS"
+        ],
+        "capabilities": [
+            "Reusability with other modern tools",
+            "Better developer experience (DX)",
+            "UI framework with React",
+            "WYSIWYG (What You See Is What You Get) for CMS or preview",
+            "Compatibility with design system and commander",
+            "Incremental migration to a modern system"
+        ],
+        "references": []
+    }
+]

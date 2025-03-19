@@ -1,0 +1,132 @@
+[
+    {
+        "id": "engineering_devops_architecture_kubernetes_oidc-proxy-cert-renewal-guide-chunk-0",
+        "name": "OIDC proxy cert renewal guide.txt - Mount production creds, since [razorpay.in](http://razorpay.in) is hosted in production account.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section provides a command to run a Docker container named 'certsviaroute53' from the 'mavfav/certsviaroute53' image. The container is used to renew or issue SSL/TLS certificates for a domain hosted on the Razorpay production account. The command mounts various directories from the host machine to the container, including the AWS credentials directory and directories related to Let's Encrypt SSL/TLS certificates.",
+        "use_cases": [
+            "Renewing SSL/TLS certificates for a domain hosted on the Razorpay production account",
+            "Issuing new SSL/TLS certificates for a domain hosted on the Razorpay production account",
+            "Automating the process of SSL/TLS certificate management for a production environment"
+        ],
+        "capabilities": [
+            "Docker container execution",
+            "Volume mounting",
+            "AWS credentials access",
+            "Let's Encrypt certificate management",
+            "SSL/TLS certificate renewal",
+            "SSL/TLS certificate issuance"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_oidc-proxy-cert-renewal-guide-chunk-1",
+        "name": "OIDC proxy cert renewal guide.txt - Run this inside the certsviaroute53 container to renew/issue the cert.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section provides commands to renew or issue SSL/TLS certificates for the OIDC (OpenID Connect) proxy domains *.oidc.razorpay.com and *.oidc.razorpay.in using the Certbot tool and the Route53 DNS plugin. The commands are specific to the production and staging environments, respectively. These certificates are necessary for secure communication between clients and the OIDC proxy servers.",
+        "use_cases": [
+            "Renewing SSL/TLS certificates for OIDC proxy domains",
+            "Issuing new SSL/TLS certificates for OIDC proxy domains",
+            "Securing communication between clients and OIDC proxy servers",
+            "Automating certificate management for OIDC proxy domains"
+        ],
+        "capabilities": [
+            "Certbot tool",
+            "Route53 DNS plugin",
+            "SSL/TLS certificate issuance",
+            "SSL/TLS certificate renewal",
+            "Automated certificate management",
+            "Environment-specific configuration (production and staging)"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_oidc-proxy-cert-renewal-guide-chunk-2",
+        "name": "OIDC proxy cert renewal guide.txt - Push the cert chain & key to kubestash",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section explains how to securely store the TLS certificate chain and private key for the OIDC proxy in a secure storage called Kubestash. It involves using a command-line tool called 'credstash' to store the certificate chain (fullchain.pem) under the key 'oidc/kube-oidc-proxy-tls/tls.crt' in the Kubestash storage environment named 'kubestash-stage'. The version of the stored value is incremented by 1 with the '-v{latestVersion+1}' option.",
+        "use_cases": [
+            "Securely storing TLS certificates and private keys for OIDC proxy",
+            "Centralized storage for sensitive credentials",
+            "Version control for stored credentials",
+            "Automating credential management for OIDC proxy"
+        ],
+        "capabilities": [
+            "Secure storage (Kubestash)",
+            "Command-line tool (credstash)",
+            "Key-value storage",
+            "Versioning",
+            "Environment-specific storage (kubestash-stage)"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_oidc-proxy-cert-renewal-guide-chunk-3",
+        "name": "OIDC proxy cert renewal guide.txt - Rotate the oidc-proxy pods",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section explains the process of rotating or updating the TLS (Transport Layer Security) key used by the oidc-proxy pods. The command shown uses a tool called 'credstash' to securely store the new private key in a versioned manner. This ensures that the oidc-proxy pods can access the latest TLS key for secure communication without exposing sensitive information.",
+        "use_cases": [
+            "Rotating TLS keys for enhanced security",
+            "Secure storage and retrieval of sensitive data (like TLS keys)",
+            "Versioning and tracking changes to sensitive data",
+            "Automating the process of updating oidc-proxy pods with new TLS keys"
+        ],
+        "capabilities": [
+            "TLS key rotation",
+            "Secure storage",
+            "Versioning",
+            "Automation",
+            "Sensitive data management",
+            "oidc-proxy pod configuration"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_oidc-proxy-cert-renewal-guide-chunk-4",
+        "name": "OIDC proxy cert renewal guide.txt - NOTE:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section provides instructions for troubleshooting and resolving issues related to the OIDC proxy certificate renewal process. It covers two specific scenarios: 1) When the certbot command fails due to an inability to find a Route53 hosted zone, it suggests exporting AWS keys temporarily and re-executing the command. 2) If the certificate has already expired, it recommends adding an 'insecure-skip-tls-verify' option to the cluster configuration to access the cluster.",
+        "use_cases": [
+            "Resolving certbot command failure due to Route53 hosted zone issue",
+            "Accessing the cluster when the certificate has expired",
+            "Troubleshooting OIDC proxy certificate renewal issues",
+            "Handling expired certificates in a Kubernetes cluster"
+        ],
+        "capabilities": [
+            "Exporting AWS keys temporarily",
+            "Re-executing certbot command",
+            "Adding 'insecure-skip-tls-verify' option to cluster config",
+            "Accessing cluster with expired certificate",
+            "Troubleshooting certificate renewal issues",
+            "Handling expired certificates"
+        ],
+        "references": [
+            "https://prod-white.oidc.razorpay.com.:443"
+        ]
+    }
+]

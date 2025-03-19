@@ -1,0 +1,101 @@
+[
+    {
+        "id": "engineering_devops_run-books-and-sops_high-number-of-pods-in-not-ready-state-chunk-0",
+        "name": "High Number of pods in Not Ready state.txt - Issue",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains that there is a high number of pods in an unavailable state, indicated by a 0/1 ratio, which means that none of the desired pods are running. This issue could be caused by spot instance termination or the Kyverno policy engine blocking the pod deployment. The section provides a link to a monitoring dashboard for the Kyverno usage in the EKS cluster.",
+        "use_cases": [
+            "Monitoring pod availability",
+            "Troubleshooting pod deployment issues",
+            "Investigating Kyverno policy violations"
+        ],
+        "capabilities": [
+            "Pod availability monitoring",
+            "Spot instance termination detection",
+            "Kyverno policy engine integration",
+            "Cluster monitoring dashboard"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/f3837355515650f46bc23165b56dabaf.png",
+            "https://vajra.razorpay.com/goto/xfNz81vNg?orgId=1"
+        ]
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_high-number-of-pods-in-not-ready-state-chunk-1",
+        "name": "High Number of pods in Not Ready state.txt - Debugging",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains that when there are fewer pods in a ready state, it can cause the application to malfunction or behave unexpectedly. This is because the application may not have enough resources or capacity to handle incoming requests or workloads, leading to errors or performance issues.",
+        "use_cases": [
+            "Monitoring application performance and stability",
+            "Ensuring high availability and reliability of applications",
+            "Troubleshooting and debugging application issues related to pod readiness"
+        ],
+        "capabilities": [
+            "Pod readiness monitoring",
+            "Application performance monitoring",
+            "Application stability analysis",
+            "Troubleshooting and debugging"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_high-number-of-pods-in-not-ready-state-chunk-2",
+        "name": "High Number of pods in Not Ready state.txt - Resolution",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section provides guidance on troubleshooting and resolving issues related to a high number of pods in a 'Not Ready' state. It suggests first examining the pod/deployment logs to identify the root cause of the failure. If the issue is due to a violation of Kyverno policies, which are Kubernetes cluster policies for validating, mutating, and generating configurations, the section recommends fixing the pod configuration based on the best practices mentioned in the pod events after describing them.",
+        "use_cases": [
+            "Troubleshooting pods in a 'Not Ready' state",
+            "Resolving Kyverno policy violations",
+            "Analyzing pod/deployment logs",
+            "Updating pod configurations based on best practices"
+        ],
+        "capabilities": [
+            "Debugging",
+            "Log analysis",
+            "Policy violation detection",
+            "Configuration management",
+            "Best practice implementation",
+            "Kubernetes cluster management"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/4e192a4c5ee6e2162f5e8d4e3f7a3775.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_high-number-of-pods-in-not-ready-state-chunk-3",
+        "name": "High Number of pods in Not Ready state.txt - Impact",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains the potential impact of not adhering to infrastructure and security best practices when configuring pods. If the configuration is not done correctly, it may prevent new pods from being created or 'spun up' successfully. This could lead to issues with application availability or functionality.",
+        "use_cases": [
+            "Ensuring proper pod configuration for application availability",
+            "Adhering to security best practices for pod deployment",
+            "Troubleshooting issues with pod creation or startup"
+        ],
+        "capabilities": [
+            "Pod configuration",
+            "Infrastructure best practices",
+            "Security best practices",
+            "Pod creation",
+            "Pod startup"
+        ],
+        "references": [
+            "https://razorpay.slack.com/archives/C021MURE99Q/p1695900175844709>"
+        ]
+    }
+]

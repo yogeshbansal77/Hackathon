@@ -1,0 +1,188 @@
+[
+    {
+        "id": "engineering_devops_processes_incident-management_slack-bot-contigency---central-dashboard-oncall-response-chunk-0",
+        "name": "Slack Bot Contigency - Central Dashboard Oncall Response.txt - Objective",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section outlines the purpose of the document, which is to provide step-by-step instructions for the Level 1 on-call engineer to manually execute standard operating procedures when they receive an alert from the Central Dashboard, and the Slack bot responsible for handling such alerts is not functioning properly, either due to an error or for unknown reasons. The document aims to empower the on-call engineer to take appropriate actions in the absence of an automated system.",
+        "use_cases": [
+            "Handling alerts from the Central Dashboard when the Slack bot is failing",
+            "Providing manual procedures for on-call engineers to follow",
+            "Enabling on-call engineers to respond to alerts without relying on automated systems"
+        ],
+        "capabilities": [
+            "Standard Operating Procedures",
+            "Manual Alert Handling",
+            "On-call Engineer Empowerment",
+            "Contingency Planning",
+            "Slack Bot Failure Mitigation"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_slack-bot-contigency---central-dashboard-oncall-response-chunk-1",
+        "name": "Slack Bot Contigency - Central Dashboard Oncall Response.txt - Target Audience",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section explains that the intended audience for the document is the Level 1 (L1) on-call engineer responsible for the Central Dashboard. In other words, the document is meant to provide guidance or instructions to the technical support personnel who are on-call and tasked with monitoring and responding to issues related to the Central Dashboard system.",
+        "use_cases": [
+            "Providing instructions for L1 on-call engineers to handle incidents or issues with the Central Dashboard",
+            "Serving as a reference guide for on-call support personnel responsible for the Central Dashboard",
+            "Outlining the roles and responsibilities of the L1 on-call engineer for the Central Dashboard",
+            "Defining the scope of the Central Dashboard system for which the on-call engineer is responsible"
+        ],
+        "capabilities": [
+            "L1 on-call support",
+            "Central Dashboard monitoring",
+            "Incident response",
+            "On-call engineer responsibilities"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_slack-bot-contigency---central-dashboard-oncall-response-chunk-2",
+        "name": "Slack Bot Contigency - Central Dashboard Oncall Response.txt - High Level Strategy",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section outlines the process of manually initiating escalation procedures and notifying relevant stakeholders when an alert is triggered from the Central Dashboard due to various failure scenarios. It serves as a guide for responding to critical incidents by providing steps to invoke appropriate actions and communicate with concerned parties.",
+        "use_cases": [
+            "Manually invoking escalation policies",
+            "Notifying stakeholders in case of alerts",
+            "Responding to failure scenarios identified by the Central Dashboard",
+            "Handling critical incidents and system failures"
+        ],
+        "capabilities": [
+            "Manual escalation policy invocation",
+            "Stakeholder notification",
+            "Alert identification from Central Dashboard",
+            "Failure scenario response",
+            "Critical incident handling",
+            "System failure management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_slack-bot-contigency---central-dashboard-oncall-response-chunk-3",
+        "name": "Slack Bot Contigency - Central Dashboard Oncall Response.txt - Failure Scenarios",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section is likely intended to outline various failure scenarios or potential issues that could arise with the Slack Bot Contingency - Central Dashboard Oncall Response system. However, the section content provided is empty, so there are no specific details or explanations included.",
+        "use_cases": [
+            "Identifying and documenting potential failure scenarios or issues with the system",
+            "Preparing for and mitigating risks associated with system failures",
+            "Troubleshooting and resolving issues that may arise during system operation"
+        ],
+        "capabilities": [
+            "Failure scenario documentation",
+            "Risk mitigation",
+            "Issue troubleshooting",
+            "System resilience"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_slack-bot-contigency---central-dashboard-oncall-response-chunk-4",
+        "name": "Slack Bot Contigency - Central Dashboard Oncall Response.txt - Case1: Incident Triggered, but Bot failed to trigger automatically.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section explains the steps to follow when an incident is triggered, but the Slack bot fails to automatically create a thread in the #potential_outages channel. It provides instructions on how to manually invoke the bot using the /incident command, fill in the necessary details about the incident, and submit the information to create a thread for the incident.",
+        "use_cases": [
+            "Manually triggering the Slack bot when it fails to create a thread automatically",
+            "Reporting and documenting incidents in the #potential_outages channel",
+            "Providing incident details such as incident ID and affected metric",
+            "Initiating the incident response process when the automated system fails"
+        ],
+        "capabilities": [
+            "Manual bot invocation",
+            "Incident reporting",
+            "Incident details input",
+            "Incident thread creation",
+            "Fallback mechanism for automated system failure",
+            "Centralized incident management"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/e646132c3295d788d5d1997e8b3f210d.png",
+            "https://alpha.razorpay.com/_static/file/d6cef66d15af2fce1fbd63031c9d7f75.png",
+            "https://alpha.razorpay.com/_static/file/fe702201dde720c2cbf33f6b525bfb97.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_slack-bot-contigency---central-dashboard-oncall-response-chunk-5",
+        "name": "Slack Bot Contigency - Central Dashboard Oncall Response.txt - Case2: Incident Triggered, but Bot failed to trigger manually",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section explains the steps to manually trigger an incident response process in case the automated Slack bot fails to initiate it. It guides the user through logging into the PagerDuty platform, locating the relevant incident alert, and reassigning it to the appropriate team or escalation policy for further action. The instructions are accompanied by visual aids to help navigate the PagerDuty interface.",
+        "use_cases": [
+            "Manually triggering an incident response process when the automated bot fails",
+            "Reassigning an incident alert to the relevant team or escalation policy",
+            "Navigating the PagerDuty platform to locate and manage incident alerts"
+        ],
+        "capabilities": [
+            "Login to PagerDuty platform",
+            "Locate incident alerts assigned to the user",
+            "View incident details and options",
+            "Reassign incident alerts to specific teams or escalation policies",
+            "Visual guidance with screenshots"
+        ],
+        "references": [
+            "https://app.pagerduty.com/",
+            "https://alpha.razorpay.com/_static/file/e6d458e26d3f474c14dd4b60f117fcd8.png",
+            "https://alpha.razorpay.com/_static/file/8d4684c172ecc0b4c2918c3356f239cb.png",
+            "https://alpha.razorpay.com/_static/file/6fc616b93b42cec4b6bcf7d154818e32.png",
+            "https://alpha.razorpay.com/_static/file/8bf6c6c1cf24549b1c0131a0f337aedd.png",
+            "https://alpha.razorpay.com/_static/file/53fb04426ce9e5083dfbbff60ba53e7f.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_slack-bot-contigency---central-dashboard-oncall-response-chunk-6",
+        "name": "Slack Bot Contigency - Central Dashboard Oncall Response.txt - Appendix",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section provides an overview of various monitoring and alerting configurations for different components of the Slack Bot Contingency - Central Dashboard system. It lists the sources (e.g., ALB, Traefik, Edge, API Service), alert names (e.g., 5xx, RPS, Error codes), and corresponding escalation policies for each source and alert type. This information helps in understanding the monitoring setup and escalation paths for different types of issues or anomalies in the system.",
+        "use_cases": [
+            "Monitoring and alerting for different components of the Slack Bot Contingency - Central Dashboard system",
+            "Understanding the escalation policies for different types of alerts",
+            "Identifying the sources and alert types being monitored",
+            "Troubleshooting and incident response based on the monitoring and alerting setup"
+        ],
+        "capabilities": [
+            "Monitoring and alerting",
+            "Escalation policies",
+            "Error monitoring (5xx, 4xx, error codes)",
+            "Performance monitoring (RPS, latency, response duration)",
+            "Success rate monitoring",
+            "Component-specific monitoring (ALB, Traefik, Edge, API Service, Dashboard backend)"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/02e14a3786de0af388bbe1549df64a0a.png"
+        ]
+    }
+]

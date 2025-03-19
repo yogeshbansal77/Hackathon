@@ -1,0 +1,131 @@
+[
+    {
+        "id": "engineering_devops_processes_hiring_questions-bank,-assignments-chunk-0",
+        "name": "Questions Bank, Assignments.txt - Screening round",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Hiring"
+        ],
+        "description": "This section outlines the screening process for potential candidates, which includes multiple rounds of evaluation. The screening round assesses the candidate's knowledge and skills in various areas such as DevOps leadership, Linux and networking, architectural exposure, AWS cloud, Kubernetes, Docker, and handling zombie processes. The machine/coding round tests the candidate's problem-solving approach by presenting them with multi-level questions related to either Linux or Kubernetes, based on their area of expertise. The Linux/networking round evaluates the candidate's understanding of the underlying systems of Linux and networking, which is crucial for troubleshooting incidents and designing systems.",
+        "use_cases": [
+            "Screening candidates for job roles",
+            "Assessing technical skills and knowledge",
+            "Evaluating problem-solving abilities",
+            "Testing Linux and networking expertise"
+        ],
+        "capabilities": [
+            "DevOps leadership assessment",
+            "Linux and networking knowledge evaluation",
+            "Architectural exposure assessment",
+            "AWS cloud, Kubernetes, and Docker expertise evaluation",
+            "Zombie process handling assessment",
+            "Machine/coding problem-solving evaluation",
+            "Linux filesystem, DNS, HTTP, and TLS knowledge assessment"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_hiring_questions-bank,-assignments-chunk-1",
+        "name": "Questions Bank, Assignments.txt - Machine/Coding Round",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Hiring"
+        ],
+        "description": "This section discusses the importance of evaluating a candidate's knowledge and experience with cloud platforms, particularly AWS, and various DevOps tools. It emphasizes the need for candidates to be familiar with AWS services like EC2, S3, and RDS, or at least have experience with other cloud providers, as the company heavily relies on cloud platforms. The section also aims to assess the candidate's ability to handle systems at scale by examining their experience with DevOps tools and the scale of use cases they have worked on.",
+        "use_cases": [
+            "Evaluating candidate's familiarity with AWS services like EC2, S3, RDS",
+            "Assessing candidate's potential to learn new cloud stacks",
+            "Analyzing candidate's experience with DevOps tools",
+            "Determining candidate's ability to handle systems at scale"
+        ],
+        "capabilities": [
+            "Cloud platform knowledge",
+            "AWS service experience",
+            "DevOps tool expertise",
+            "Scalability handling",
+            "Adaptability to new technologies"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_hiring_questions-bank,-assignments-chunk-2",
+        "name": "Questions Bank, Assignments.txt - Linux/Networking",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Hiring"
+        ],
+        "description": "This section discusses the importance of architectural design skills for senior team members. It emphasizes the need for experienced professionals who can guide the team in designing well-architected and secure infrastructure systems, such as logging/monitoring systems or secure infrastructure setups. The section suggests that these architectural exposure questions assess the candidate's thinking process, experience level, and potential contributions to the team.",
+        "use_cases": [
+            "Designing a logging/monitoring system",
+            "Designing a secure infrastructure",
+            "Assessing a candidate's architectural design skills",
+            "Evaluating a candidate's experience level and potential contributions"
+        ],
+        "capabilities": [
+            "Architectural design",
+            "Infrastructure design",
+            "Logging/monitoring system design",
+            "Secure infrastructure design",
+            "Guiding team members",
+            "Assessing candidate's thinking process",
+            "Evaluating candidate's experience level"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_hiring_questions-bank,-assignments-chunk-3",
+        "name": "Questions Bank, Assignments.txt - Cloud/Platform/Tools",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Hiring"
+        ],
+        "description": "This section appears to be an introduction or overview for a round of interviews or assessments aimed at evaluating a candidate's suitability for a specific role and organization. It suggests that the purpose of this round is to assess the candidate's fit within the company's culture and requirements.",
+        "use_cases": [
+            "Evaluating candidate fit for a role",
+            "Assessing candidate alignment with organizational culture",
+            "Determining candidate suitability for a position"
+        ],
+        "capabilities": [
+            "Candidate assessment",
+            "Role fitment evaluation",
+            "Organizational culture alignment"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_hiring_questions-bank,-assignments-chunk-4",
+        "name": "Questions Bank, Assignments.txt - Architectural Exposure",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Hiring"
+        ],
+        "description": "This section does not contain any content. It appears to be an empty section or a placeholder for future content related to 'Architectural Exposure' in the context of a Questions Bank or Assignments document.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_hiring_questions-bank,-assignments-chunk-5",
+        "name": "Questions Bank, Assignments.txt - Hiring Manager",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Hiring"
+        ],
+        "description": "This section does not contain any content or information. It appears to be an empty section or a placeholder for future content related to 'Hiring Manager' in the context of a Questions Bank or Assignments document.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    }
+]

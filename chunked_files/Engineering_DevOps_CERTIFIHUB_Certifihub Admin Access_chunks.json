@@ -1,0 +1,126 @@
+[
+    {
+        "id": "engineering_devops_certifihub_certifihub-admin-access-chunk-0",
+        "name": "Certifihub Admin Access.txt - Admin Access to edit fields",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "CERTIFIHUB"
+        ],
+        "description": "This section explains the editable fields available on the Certificates page of the Certifihub platform. It states that the Slack, BU Name, and Notes fields are editable for regular certificates. However, for ACM (Amazon Certificate Manager) certificates, only the Notes field can be edited.",
+        "use_cases": [
+            "Editing certificate details like Slack and BU Name for regular certificates",
+            "Adding notes to regular certificates",
+            "Adding notes to ACM certificates"
+        ],
+        "capabilities": [
+            "Editable Slack field for regular certificates",
+            "Editable BU Name field for regular certificates",
+            "Editable Notes field for regular certificates",
+            "Editable Notes field for ACM certificates"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_certifihub_certifihub-admin-access-chunk-1",
+        "name": "Certifihub Admin Access.txt - Informative fields",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "CERTIFIHUB"
+        ],
+        "description": "This section outlines the various informative fields associated with certificates stored in a secure credential management system called Credstash. It provides explanations for fields such as the secret name (how the certificate is identified in Credstash), common name, expiry date, subject alternative names, certificate type (PGP or SSL), and the table name where the certificate is stored.",
+        "use_cases": [
+            "Understanding the structure and organization of certificate data stored in Credstash",
+            "Retrieving and interpreting certificate information from Credstash",
+            "Managing and maintaining certificates stored in Credstash",
+            "Auditing and monitoring certificate data in Credstash"
+        ],
+        "capabilities": [
+            "Certificate storage and management",
+            "Secure credential management",
+            "Certificate metadata organization",
+            "Certificate expiry tracking",
+            "Support for PGP and SSL certificates",
+            "Subject alternative name (SAN) support"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_certifihub_certifihub-admin-access-chunk-2",
+        "name": "Certifihub Admin Access.txt - How to get access to Certifihub?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "CERTIFIHUB"
+        ],
+        "description": "This section explains how to obtain access to Certifihub, a platform used for managing SSL/TLS certificates. It mentions that everyone at Razorpay has read access to Certifihub, but for administrative access, a request needs to be raised through the MyAccess portal. The section also clarifies that alerts related to AWS Certificate Manager (ACM) certificates are handled by the DevOps team.",
+        "use_cases": [
+            "Obtaining read access to Certifihub for all Razorpay employees",
+            "Requesting administrative access to Certifihub through the MyAccess portal",
+            "Handling alerts related to ACM certificates by the DevOps team"
+        ],
+        "capabilities": [
+            "Read access to Certifihub",
+            "Administrative access to Certifihub",
+            "MyAccess portal for requesting access",
+            "ACM certificate management",
+            "Alert handling for ACM certificates"
+        ],
+        "references": [
+            "https://myaccess.microsoft.com/@razorpaysoftware.onmicrosoft.com#/access-packages/8c8dc0bb-dd26-4765-9d8f-fddf52d0d501"
+        ]
+    },
+    {
+        "id": "engineering_devops_certifihub_certifihub-admin-access-chunk-3",
+        "name": "Certifihub Admin Access.txt - Editable fields",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "CERTIFIHUB"
+        ],
+        "description": "This section explains the editable fields and access privileges for admin users in the Certifihub application. It specifies that users with admin access, typically leads and higher roles, can edit certain fields such as Slack_handle, BU Name, and Notes. Additionally, admin users have the capability to create JIRA tickets for rotating SSL certificates.",
+        "use_cases": [
+            "Editing user information fields like Slack_handle, BU Name, and Notes",
+            "Creating JIRA tickets for SSL certificate rotation",
+            "Managing access privileges for different user roles",
+            "Administering and maintaining the Certifihub application"
+        ],
+        "capabilities": [
+            "Edit Slack_handle field",
+            "Edit BU Name field",
+            "Edit Notes field",
+            "Create JIRA tickets",
+            "Rotate SSL certificates",
+            "Manage admin access privileges"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_certifihub_certifihub-admin-access-chunk-4",
+        "name": "Certifihub Admin Access.txt - How to update fields?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "CERTIFIHUB"
+        ],
+        "description": "This section explains how to update certain fields related to a certificate in the Certifihub Admin Access system. It mentions that to update these fields, one needs to have Admin access. The fields that can be updated include the Slack handle for expiry alerts, the PD service for routing critical alerts, the Business Unit (BU) name that manages the certificate, and any additional notes or related documentation links specific to the certificate.",
+        "use_cases": [
+            "Updating Slack handle for certificate expiry alerts",
+            "Updating PD service for routing critical certificate alerts",
+            "Updating Business Unit (BU) name managing a certificate",
+            "Adding or updating notes or related documentation links for a certificate"
+        ],
+        "capabilities": [
+            "Admin access",
+            "Update Slack handle",
+            "Update PD service",
+            "Update BU Name",
+            "Update Notes",
+            "Add related documentation links"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/7e7ebdcac2aab154129f8305552cf362.jpg"
+        ]
+    }
+]

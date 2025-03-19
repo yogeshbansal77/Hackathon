@@ -1,0 +1,160 @@
+[
+    {
+        "id": "engineering_devops_security_opa-gatekeeper-chunk-0",
+        "name": "OPA Gatekeeper.txt - OPA [Open Policy Agent]",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Security"
+        ],
+        "description": "This section introduces the Open Policy Agent (OPA), a general-purpose policy engine that allows you to separate policy logic from the underlying software system. It explains that OPA enables you to define and enforce policies without hardcoding them into the software itself. The OPA project was initiated in 2016 with the goal of unifying policy enforcement across different technologies and systems.",
+        "use_cases": [
+            "Decoupling policy logic from software services",
+            "Unifying policy enforcement across different technologies and systems",
+            "Avoiding hardcoding policies into software"
+        ],
+        "capabilities": [
+            "General-purpose policy engine",
+            "Policy decoupling",
+            "Policy unification",
+            "Policy enforcement"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_security_opa-gatekeeper-chunk-1",
+        "name": "OPA Gatekeeper.txt - How does OPA work?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Security"
+        ],
+        "description": "This section explains how Open Policy Agent (OPA) works and interacts with software services. OPA is a policy engine that allows services to make policy decisions by sending JSON data to OPA. OPA evaluates the data based on predefined policies written in a language called Rego and returns a decision. The service then enforces the decision made by OPA. The section also introduces OPA Gatekeeper, which is likely a specific implementation or use case of OPA.",
+        "use_cases": [
+            "Policy enforcement for software services",
+            "Centralized policy management",
+            "Flexible policy definition using Rego language"
+        ],
+        "capabilities": [
+            "Policy evaluation based on JSON input data",
+            "Policy decision-making using Rego language",
+            "Integration with software services for policy enforcement",
+            "Centralized policy management system"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/9a17ce06538746352d08f52392558ad8.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_security_opa-gatekeeper-chunk-2",
+        "name": "OPA Gatekeeper.txt - OPA Gatekeeper",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Security"
+        ],
+        "description": "This section explains that OPA (Open Policy Agent) is a general-purpose policy engine that can be integrated with various systems, including Kubernetes (K8s). Gatekeeper is a subproject of OPA that provides seamless integration between OPA and K8s. It includes a K8s admission controller that intercepts and inspects any K8s resource being added or updated on the cluster, ensuring it meets the required policies defined in OPA's rule language called Rego. This provides a preventative control mechanism for enforcing policies in a K8s environment.",
+        "use_cases": [
+            "Enforcing policies on K8s resources",
+            "Ensuring compliance with security and governance requirements",
+            "Implementing preventative controls in a K8s environment",
+            "Integrating OPA with K8s for policy management"
+        ],
+        "capabilities": [
+            "K8s admission controller",
+            "Intercepts and inspects K8s resources",
+            "Enforces policies defined in Rego language",
+            "Provides preventative control",
+            "Integration between OPA and K8s",
+            "Policy management for K8s"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_security_opa-gatekeeper-chunk-3",
+        "name": "OPA Gatekeeper.txt - What is OPA Gatekeeper?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Security"
+        ],
+        "description": "This section explains that in order to understand how OPA Gatekeeper works, we need to first understand how Kubernetes Admission Controllers and Custom Resource Definitions (CRDs) function. It provides an overview of the request flow in Kubernetes, which is a prerequisite for understanding the role of OPA Gatekeeper in the Kubernetes ecosystem.",
+        "use_cases": [
+            "Understanding the working of OPA Gatekeeper",
+            "Learning about Kubernetes Admission Controllers",
+            "Understanding Custom Resource Definitions (CRDs)"
+        ],
+        "capabilities": [
+            "Kubernetes request flow",
+            "Admission controllers",
+            "Custom Resources (CRs)",
+            "Custom Resource Definitions (CRDs)"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_security_opa-gatekeeper-chunk-4",
+        "name": "OPA Gatekeeper.txt - How does an admission controller work?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Security"
+        ],
+        "description": "This section explains how admission controllers work in Kubernetes. Admission controllers are plugins that intercept API requests and can either reject or mutate the request object before persisting it to the etcd database. Kubernetes has built-in admission controllers, but also supports custom admission controllers through webhooks. The OPA Gatekeeper is a validating admission webhook that enforces policies written in the Rego policy language. It allows defining policy templates (ConstraintTemplates) that can be parameterized to create specific policy instances (Constraints) to be enforced.",
+        "use_cases": [
+            "Enforcing policies on Kubernetes resources (e.g., ensuring all Pod images come from an internal registry)",
+            "Validating and mutating API requests before persisting to etcd",
+            "Extending Kubernetes functionality with custom admission controllers",
+            "Defining reusable and parameterized policy templates"
+        ],
+        "capabilities": [
+            "Admission controllers",
+            "Mutating admission webhooks",
+            "Validating admission webhooks",
+            "Custom Resource Definitions (CRDs)",
+            "Custom Resources (CRs)",
+            "ConstraintTemplates",
+            "Constraints",
+            "Rego policy language",
+            "Policy enforcement",
+            "Policy parameterization"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/a05401ffd50ced7ed31ad35f6b8dd37f.png",
+            "https://alpha.razorpay.com/_static/file/18fa72c7b75b8a22310b1f07958c15f1.png",
+            "http://c.rzp.io",
+            "https://alpha.razorpay.com/_static/file/853159ed46fab286279e513d03cb7dd4.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_security_opa-gatekeeper-chunk-5",
+        "name": "OPA Gatekeeper.txt - What are CR & CRDs?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Security"
+        ],
+        "description": "This section explains how OPA Gatekeeper works and how it can be used to enforce policies in a Kubernetes cluster. It describes the structure of a constraint template, which defines the Rego code and the schema for the parameters that the constraint will accept. The section also provides an example of a policy that enforces the use of a specific container registry for all pods in the cluster.",
+        "use_cases": [
+            "Enforcing pod security policies in a Kubernetes cluster",
+            "Restricting the use of certain container registries",
+            "Defining and enforcing custom policies based on specific requirements"
+        ],
+        "capabilities": [
+            "Constraint templates",
+            "Rego code for policy enforcement",
+            "OpenAPI schema for constraint parameters",
+            "Targeting specific Kubernetes resources",
+            "Violation messages for policy violations",
+            "Integration with other tools like Terraform"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/daf47c78c50feb99bd35726ea275fc29.png",
+            "http://c.rzp.io",
+            "https://alpha.razorpay.com/_static/file/177dbb2c1e1cab1e85fde78e981379c9.png",
+            "https://alpha.razorpay.com/_static/file/5bbc397ea0ed10bb10f714b144005161.png",
+            "https://docs.google.com/spreadsheets/d/1mwXwuXeiR3I0EIPwf-27xZf2DtIrLSJDNV589dNDYOU/edit?usp=sharing",
+            "https://github.com/razorpay/opa-gatekeeper>."
+        ]
+    }
+]

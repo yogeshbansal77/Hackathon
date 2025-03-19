@@ -1,0 +1,49 @@
+[
+    {
+        "id": "engineering_devops_architecture_kubernetes_adding-a-new-cluster-to-spinnaker--chunk-0",
+        "name": "Adding a new cluster to spinnaker .txt - Main Content",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section explains the process of adding a new Kubernetes cluster to the Spinnaker deployment management platform. It involves making changes to the Vishnu and Halyard pods, which are responsible for managing the Spinnaker configuration and deployment. The steps include creating a service account, cluster role, and cluster role binding for the new cluster, generating tokens, storing them in Credstash, and updating the Vishnu and Halyard configuration files. Additionally, it covers executing commands from the Halyard pod to apply the changes to Spinnaker, verifying the cluster access, and deploying a test application from the Spinnaker console.",
+        "use_cases": [
+            "Adding a new Kubernetes cluster to Spinnaker for deployment management",
+            "Configuring Spinnaker to access and manage a new cluster",
+            "Integrating a new cluster with Spinnaker for application deployments"
+        ],
+        "capabilities": [
+            "Creating service accounts, cluster roles, and cluster role bindings for new clusters",
+            "Generating and storing access tokens in Credstash",
+            "Updating Vishnu and Halyard configuration files for new clusters",
+            "Executing commands from the Halyard pod to apply configuration changes",
+            "Verifying cluster access and testing deployments from the Spinnaker console",
+            "Managing GitHub tokens used in Spinnaker for authentication and authorization"
+        ],
+        "references": [
+            "https://github.com/razorpay/vishnu/pull/9159/files",
+            "https://github.com/razorpay/vishnu/blob/master/prod/kubernetes/ops-eks/applications/canary-spinnaker/spinnaker.tf#L20",
+            "https://github.com/nandak522/",
+            "https://github.com/razorpay/vishnu/blob/master/prod/kubernetes/ops-eks/applications/canary-spinnaker/spinnaker.tf#L20",
+            "https://github.com/razorpay/vishnu/blob/master/prod/kubernetes/prod-green-eks/apps/spinnaker/spinnaker.tf#L20",
+            "https://github.com/jarvis-rzp",
+            "https://github.com/razorpay/vishnu/blob/master/prod/kubernetes/prod-green-eks/apps/spinnaker/spinnaker.tf#L20",
+            "https://github.com/jarvis-rzp",
+            "https://github.com/nandak522/",
+            "https://github.com/nandak522/",
+            "https://github.com/razorpay/vishnu/blob/master/prod/kubernetes/prod-green-eks/apps/spinnaker/spinnaker.tf#L20",
+            "https://github.com/razorpay/vishnu/blob/master/prod/kubernetes/prod-green-eks/apps/spinnaker/spinnaker.tf#L20",
+            "https://github.com/razorpay/vishnu/blob/master/prod/kubernetes/prod-green-eks/apps/spinnaker/spinnaker.tf#L20",
+            "https://github.com/jarvis-rzp",
+            "https://credstash-ui.razorpay.com/dist/>",
+            "https://credstash-ui.razorpay.com/dist/>",
+            "https://credstash-ui.razorpay.com/dist/>",
+            "https://credstash-ui.razorpay.com/dist/>",
+            "https://credstash-ui.razorpay.com/dist/>",
+            "https://credstash-ui.razorpay.com/dist/>",
+            "https://credstash-ui.razorpay.com/dist/>"
+        ]
+    }
+]

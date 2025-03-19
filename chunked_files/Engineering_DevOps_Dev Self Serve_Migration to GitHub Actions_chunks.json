@@ -1,0 +1,156 @@
+[
+    {
+        "id": "engineering_devops_dev-self-serve_migration-to-github-actions-chunk-0",
+        "name": "Migration to GitHub Actions.txt - Workflow References",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains that when running GitHub Actions workflows, it is recommended to use self-hosted runners instead of the default runners provided by GitHub. Self-hosted runners are machines or virtual machines within the organization's own infrastructure, such as an AWS account, that execute the workflow jobs. Using self-hosted runners allows for better control, security, and customization of the execution environment.",
+        "use_cases": [
+            "Running workflows on organization's own infrastructure",
+            "Ensuring security and control over the execution environment",
+            "Customizing the execution environment as per specific requirements",
+            "Utilizing existing infrastructure resources for running workflows"
+        ],
+        "capabilities": [
+            "Self-hosted runners",
+            "AWS account integration",
+            "Secure execution environment",
+            "Customizable execution environment",
+            "Infrastructure resource utilization"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_migration-to-github-actions-chunk-1",
+        "name": "Migration to GitHub Actions.txt - Always use self-hosted runners",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section emphasizes the importance of always using self-hosted runners for GitHub Actions workflows. It suggests creating a combined status check and updating it in a tool called Narayan, which is mandatory. Failing to do this might impact deployments. The section implies that self-hosted runners are more secure and reliable than shared runners provided by GitHub.",
+        "use_cases": [
+            "Migration to GitHub Actions",
+            "Secure and reliable CI/CD workflows",
+            "Integrating with internal tools like Narayan"
+        ],
+        "capabilities": [
+            "Self-hosted runners",
+            "Combined status checks",
+            "Integration with Narayan",
+            "Deployment impact monitoring"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/7d7f4f12687ac1a47606586b10a0a8af.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_migration-to-github-actions-chunk-2",
+        "name": "Migration to GitHub Actions.txt - Create a combined status check and update Narayan: (Mandatory)",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains the steps required to set up a combined status check and update the Narayan repository, which is a mandatory step for the status check validation to happen during deployment via Spinnaker. It involves modifying the CI workflow file in the Mozart repository and updating the repos.yml file in the Narayan repository with specific configurations. Additionally, it mentions the importance of adding a job to cancel same branch builds before any other job in the workflow.",
+        "use_cases": [
+            "Setting up a combined status check for deployment validation",
+            "Updating the Narayan repository with repository configurations",
+            "Ensuring proper status check validation during deployment via Spinnaker",
+            "Preventing multiple builds for the same branch"
+        ],
+        "capabilities": [
+            "Modifying CI workflow file",
+            "Updating repository configurations",
+            "Status check validation",
+            "Deployment via Spinnaker",
+            "Cancel same branch builds"
+        ],
+        "references": [
+            "https://github.com/razorpay/mozart/blob/master/.github/workflows/CI.yml#L154>",
+            "https://github.com/razorpay/narayan/blob/dca7ac771e8000b25cfed743e656f742b30d7cd1/repos.yml#L448>"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_migration-to-github-actions-chunk-3",
+        "name": "Migration to GitHub Actions.txt - Cancel Same Branch Builds",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains how to cancel redundant builds for the same branch in GitHub Actions. It provides a link to a specific workflow file that demonstrates how to set up a job to cancel any currently running workflows for the same branch. This helps optimize resource usage and avoid unnecessary builds. The section also mentions that other jobs should depend on this cancellation job, and lists the available secrets in the repository, including a Semgrep token for security analysis.",
+        "use_cases": [
+            "Canceling redundant builds for the same branch",
+            "Optimizing resource usage in GitHub Actions",
+            "Avoiding unnecessary builds",
+            "Running security analysis on commits using Semgrep"
+        ],
+        "capabilities": [
+            "Cancel running workflows",
+            "Conditional job dependencies",
+            "Secrets management",
+            "Security analysis integration",
+            "Workflow optimization"
+        ],
+        "references": [
+            "https://github.com/razorpay/api/blob/51a9534e2c58d09fa916900a7f99bc87f7c6d049/.github/workflows/unit-tests.yml#L3>"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_migration-to-github-actions-chunk-4",
+        "name": "Migration to GitHub Actions.txt - Secrets in repo",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains various secrets or credentials used in GitHub Actions workflows for different purposes. It lists environment variables containing sensitive information like API tokens, access keys, and passwords required to interact with various services and platforms like AWS S3, Docker registry, Jira, SonarQube, and Spinnaker. These secrets are used for tasks like caching, pushing/pulling Docker images, fetching code repositories, integrating with issue tracking and code quality tools, and deploying applications.",
+        "use_cases": [
+            "Caching build artifacts or dependencies on AWS S3",
+            "Pushing and pulling Docker images to/from a container registry",
+            "Fetching code repositories from GitHub",
+            "Integrating with Jira for issue tracking",
+            "Integrating with SonarQube for code quality analysis",
+            "Deploying applications using Spinnaker"
+        ],
+        "capabilities": [
+            "AWS S3 access",
+            "Docker registry access",
+            "GitHub repository access",
+            "Jira integration",
+            "SonarQube integration",
+            "Spinnaker integration"
+        ],
+        "references": [
+            "https://github.com/razorpay/api/blob/5ae2b1b921ded8fe47ca3ac5a4f3368cc84c459b/.github/workflows/unit-tests.yml#L738"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_migration-to-github-actions-chunk-5",
+        "name": "Migration to GitHub Actions.txt - Deprecated",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section discusses deprecated environment variables and AWS credentials that were previously used for authentication, caching, and Docker image management. It advises users to migrate to newer methods like GitHub Actions secrets and Harbor for these functionalities.",
+        "use_cases": [
+            "Authentication for Spinnaker",
+            "Caching build artifacts on AWS S3",
+            "Pushing and pulling Docker images from DockerHub"
+        ],
+        "capabilities": [
+            "Deprecated environment variables",
+            "AWS credentials",
+            "S3 bucket access",
+            "DockerHub authentication",
+            "Migration guidance",
+            "Contact information for reviews"
+        ],
+        "references": []
+    }
+]

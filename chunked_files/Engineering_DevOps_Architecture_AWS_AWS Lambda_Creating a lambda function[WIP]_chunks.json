@@ -1,0 +1,68 @@
+[
+    {
+        "id": "engineering_devops_architecture_aws_aws-lambda_creating-a-lambda-function[wip]-chunk-0",
+        "name": "Creating a lambda function[WIP].txt - Lambda execution role",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "AWS Lambda"
+        ],
+        "description": "This section explains the need for a resource-based policy to grant permissions for accessing or invoking a Lambda function. It allows you to control who or what can interact with your Lambda function by defining rules and conditions in the policy. This is an important security measure to ensure that only authorized entities can execute your Lambda code.",
+        "use_cases": [
+            "Granting access to other AWS services to invoke your Lambda function",
+            "Allowing specific IAM users or roles to invoke your Lambda function",
+            "Restricting access to your Lambda function based on conditions like IP address or VPC",
+            "Enabling cross-account access to your Lambda function"
+        ],
+        "capabilities": [
+            "Resource-based policy",
+            "Access control",
+            "Invoke permissions",
+            "Security",
+            "Authorization"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_aws_aws-lambda_creating-a-lambda-function[wip]-chunk-1",
+        "name": "Creating a lambda function[WIP].txt - Resource based policy to access/invoke your lambda",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "AWS Lambda"
+        ],
+        "description": "This section appears to be empty or incomplete, as there is no content provided within the code block. It is likely intended to explain how to set up a resource-based policy to control access and invocation of a Lambda function, but without any actual content, it is difficult to provide a meaningful description or extract use cases and capabilities.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_aws_aws-lambda_creating-a-lambda-function[wip]-chunk-2",
+        "name": "Creating a lambda function[WIP].txt - Ref",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "AWS Lambda"
+        ],
+        "description": "This section provides a reference link to the AWS Lambda Frequently Asked Questions (FAQs) page, which likely contains additional information and clarification about AWS Lambda, a serverless computing service offered by Amazon Web Services (AWS). This reference link could be useful for users who need further details or have specific queries regarding AWS Lambda.",
+        "use_cases": [
+            "Understanding common questions and concerns about AWS Lambda",
+            "Seeking additional information or clarification about AWS Lambda",
+            "Exploring potential use cases and applications of AWS Lambda"
+        ],
+        "capabilities": [
+            "Reference link",
+            "AWS Lambda FAQs",
+            "Additional information"
+        ],
+        "references": [
+            "https://aws.amazon.com/lambda/faqs/>"
+        ]
+    }
+]

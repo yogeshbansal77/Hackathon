@@ -1,0 +1,56 @@
+[
+    {
+        "id": "engineering_devops_security_tlsv12-migration-sumologic-queries-chunk-0",
+        "name": "TLSv12 Migration Sumologic Queries.txt - Identifying merchants using TLSv1.1",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Security"
+        ],
+        "description": "This section provides a Sumologic query to identify merchants who are still using the older TLS 1.1 protocol for secure communication. The query filters the API trace logs for a specific merchant ID, extracts relevant fields like the TLS version, merchant ID, route, and URL, and then counts the number of requests using TLS 1.1. This information can help identify merchants who need to migrate to the more secure TLS 1.2 protocol.",
+        "use_cases": [
+            "Identifying merchants using outdated TLS protocols",
+            "Monitoring TLS protocol usage for security compliance",
+            "Prioritizing merchants for TLS migration based on usage",
+            "Analyzing API traffic patterns based on TLS version"
+        ],
+        "capabilities": [
+            "Filtering logs by source category and merchant ID",
+            "Extracting relevant fields from JSON logs",
+            "Parsing URLs into components (domain, path)",
+            "Filtering logs based on TLS version",
+            "Aggregating and counting logs by multiple fields"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/5bad138513c98e4c547cd66105404dbf.png",
+            "https://*/*/*/*\""
+        ]
+    },
+    {
+        "id": "engineering_devops_security_tlsv12-migration-sumologic-queries-chunk-1",
+        "name": "TLSv12 Migration Sumologic Queries.txt - Identifying merchants using TLSv1.2 or above",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Security"
+        ],
+        "description": "This section explains a query that identifies merchants who are using TLSv1.2 or higher versions of the TLS protocol. The query extracts relevant fields like the TLS version, merchant ID, route name, and URL from the raw log data. It then filters out requests using TLSv1.1 and counts the number of requests grouped by merchant ID, TLS version, URL, and domain.",
+        "use_cases": [
+            "Monitoring TLS protocol usage across merchants",
+            "Identifying merchants who need to migrate to TLSv1.2 or higher",
+            "Analyzing TLS usage patterns by URL or domain",
+            "Tracking compliance with security standards or regulations"
+        ],
+        "capabilities": [
+            "JSON field extraction",
+            "URL parsing",
+            "Field concatenation",
+            "Filtering based on conditions",
+            "Grouping and counting by multiple fields"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/0279714358339d3135a00af643ec0b74.png",
+            "https://*/*/*/*\""
+        ]
+    }
+]

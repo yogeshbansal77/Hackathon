@@ -1,0 +1,124 @@
+[
+    {
+        "id": "engineering_devops_processes_access-management_aws_user-onboarding-to-landing-zone-aws-account-chunk-0",
+        "name": "User Onboarding to Landing Zone AWS Account.txt - Password Policy",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management",
+            "AWS"
+        ],
+        "description": "This section outlines the password policy requirements for the AWS account, which include having at least one uppercase letter, one lowercase letter, one number, and one non-alphanumeric character. It also provides instructions on how to enable Multi-Factor Authentication (MFA) for the AWS account by navigating to the user's security credentials section in the AWS console. These measures are implemented to enhance the security of the AWS account by enforcing strong password practices and adding an extra layer of authentication.",
+        "use_cases": [
+            "Enforcing strong password policies for AWS accounts",
+            "Enabling Multi-Factor Authentication (MFA) for AWS accounts",
+            "Enhancing security measures for AWS accounts",
+            "Providing step-by-step instructions for enabling MFA"
+        ],
+        "capabilities": [
+            "Password policy requirements",
+            "Uppercase letter requirement",
+            "Lowercase letter requirement",
+            "Numeric character requirement",
+            "Non-alphanumeric character requirement",
+            "Multi-Factor Authentication (MFA) enablement",
+            "AWS console navigation",
+            "User security credentials access"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_access-management_aws_user-onboarding-to-landing-zone-aws-account-chunk-1",
+        "name": "User Onboarding to Landing Zone AWS Account.txt - Enable MFA on AWS Account",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management",
+            "AWS"
+        ],
+        "description": "This section explains the process of enabling Multi-Factor Authentication (MFA) on an AWS account for enhanced security. It provides step-by-step instructions on how to set up a virtual MFA device using a compatible mobile application, scan a QR code, enter consecutive codes, and log in to the AWS console with the MFA password. Additionally, it mentions the ability to switch between different AWS accounts within the Landing Zone environment.",
+        "use_cases": [
+            "Enabling MFA on an AWS account for added security",
+            "Setting up a virtual MFA device using a mobile application",
+            "Switching between multiple AWS accounts within the Landing Zone"
+        ],
+        "capabilities": [
+            "Multi-Factor Authentication (MFA)",
+            "Virtual MFA Device",
+            "QR Code Scanning",
+            "One-Time MFA Password",
+            "AWS Account Switching",
+            "Landing Zone AWS Accounts"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/5dfd7ba3584b13d975df4136318a1219.png",
+            "https://aws.amazon.com/iam/features/mfa/>"
+        ]
+    },
+    {
+        "id": "engineering_devops_processes_access-management_aws_user-onboarding-to-landing-zone-aws-account-chunk-2",
+        "name": "User Onboarding to Landing Zone AWS Account.txt - Switch to other AWS accounts",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management",
+            "AWS"
+        ],
+        "description": "This section provides instructions on how to switch between different AWS accounts within an organization using AWS Single Sign-On (SSO) and AWS CLI. It includes a table with account names, account IDs, and direct sign-in URLs for various accounts like POC, Production, Data Engineering, Stage, and RedisLabs. The section also explains how to replace the {IAM_username} placeholder in the URLs with your actual IAM username, which is typically your email address before the '@' symbol. Additionally, it provides guidance on using the aws-vault tool to securely store and manage AWS credentials with multi-factor authentication (MFA) for the AWS CLI.",
+        "use_cases": [
+            "Switching between multiple AWS accounts within an organization",
+            "Accessing different environments like POC, Production, Stage, etc.",
+            "Managing AWS credentials and MFA for AWS CLI",
+            "Securely storing AWS access keys using aws-vault"
+        ],
+        "capabilities": [
+            "AWS Single Sign-On (SSO)",
+            "AWS account switching",
+            "AWS CLI integration",
+            "Multi-factor authentication (MFA)",
+            "Credential management with aws-vault",
+            "Keychain storage for AWS access keys"
+        ],
+        "references": [
+            "https://signin.aws.amazon.com/switchrole?account=257915852743&roleName=%7BIAM_username%7D&displayName=RZP-POC",
+            "https://signin.aws.amazon.com/switchrole?account=141592612890&roleName=%7BIAM_username%7D&displayName=RZP-PROD",
+            "https://signin.aws.amazon.com/switchrole?account=164294033593&roleName=%7BIAM_username%7D&displayName=RZP-QUBOLE",
+            "https://signin.aws.amazon.com/switchrole?account=101860328116&roleName=%7BIAM_username%7D&displayName=RZP-STAGE",
+            "https://signin.aws.amazon.com/switchrole?account=482075025519&roleName=%7BIAM_username%7D&displayName=RZP-REDIS",
+            "https://github.com/99designs/aws-vault/blob/master/USAGE.md>"
+        ]
+    },
+    {
+        "id": "engineering_devops_processes_access-management_aws_user-onboarding-to-landing-zone-aws-account-chunk-3",
+        "name": "User Onboarding to Landing Zone AWS Account.txt - Using AWS CLI with MFA with aws-vault",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management",
+            "AWS"
+        ],
+        "description": "This section explains how to use the aws-vault tool to securely manage AWS credentials and access multiple AWS accounts with Multi-Factor Authentication (MFA). It provides step-by-step instructions for setting up aws-vault, configuring MFA, and accessing different AWS accounts and roles using profiles. The section also covers configuring the Keychain password timeout and provides examples for common use cases like running AWS CLI commands, Terraform, and Python scripts with aws-vault.",
+        "use_cases": [
+            "Securely managing AWS credentials with MFA",
+            "Accessing multiple AWS accounts and roles using profiles",
+            "Running AWS CLI commands, Terraform, and scripts with aws-vault",
+            "Configuring Keychain password timeout for aws-vault"
+        ],
+        "capabilities": [
+            "AWS credential management",
+            "Multi-Factor Authentication (MFA) support",
+            "Profile-based access to multiple AWS accounts and roles",
+            "Integration with AWS CLI, Terraform, and scripting",
+            "Keychain password timeout configuration",
+            "Secure credential storage and retrieval"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/ae93137e84de4d33e9fea1a9f2465240.png",
+            "https://starship.rs/"
+        ]
+    }
+]

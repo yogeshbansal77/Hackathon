@@ -1,0 +1,218 @@
+[
+    {
+        "id": "engineering_devops_architecture_aws_rds_slowquery-logs-for-rds-(rdslogs)-chunk-0",
+        "name": "SlowQuery Logs for RDS (RDSLogs).txt - Introduction",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "RDS"
+        ],
+        "description": "This section explains that the company has forked an open-source project called 'rdslogs' from 'honeycombio/rdslogs' to 'razorpay/rdslogs' and made additional modifications like adding a formatter and using Redis for storing markers/trackers. The original project was not being maintained, so they forked it and made changes. The modified 'rdslogs' project runs as a deployment in their Kubernetes cluster, primarily on the 'ops-cluster' in the 'rdslogs' namespace. For each new set of RDS slow query logs, they create a new deployment.",
+        "use_cases": [
+            "Monitoring and analyzing RDS slow query logs",
+            "Tracking and storing markers/trackers for RDS logs",
+            "Deploying and managing RDS log analysis in a Kubernetes cluster"
+        ],
+        "capabilities": [
+            "Forked open-source project",
+            "Added formatter",
+            "Using Redis for storing markers/trackers",
+            "Runs as deployment in Kubernetes cluster",
+            "Creates new deployment for each set of new RDS slow query logs",
+            "Deployed on 'ops-cluster' in 'rdslogs' namespace"
+        ],
+        "references": [
+            "https://github.com/honeycombio/rdslogs",
+            "https://github.com/razorpay/rdslogs"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_aws_rds_slowquery-logs-for-rds-(rdslogs)-chunk-1",
+        "name": "SlowQuery Logs for RDS (RDSLogs).txt - RDSLogs Repository",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "RDS"
+        ],
+        "description": "This section explains that the RDSLogs system utilizes an IAM (Identity and Access Management) Role to access and retrieve slow query logs from an Amazon RDS (Relational Database Service) instance. The IAM Role is a secure way to grant permissions and access to AWS resources without directly sharing credentials. The section provides a code snippet, likely showing the specific permissions granted to this IAM Role for accessing the RDS slow query logs.",
+        "use_cases": [
+            "Accessing slow query logs from an Amazon RDS instance",
+            "Monitoring and analyzing database performance",
+            "Troubleshooting database issues",
+            "Optimizing database queries"
+        ],
+        "capabilities": [
+            "IAM Role",
+            "Permissions management",
+            "Access to RDS slow query logs",
+            "Code snippet showing permissions"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_aws_rds_slowquery-logs-for-rds-(rdslogs)-chunk-2",
+        "name": "SlowQuery Logs for RDS (RDSLogs).txt - RDSLogs Deployment",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "RDS"
+        ],
+        "description": "This section appears to be the beginning of a JSON policy document that defines permissions and access control for a specific resource or service. It sets the version of the policy language and starts listing statements that grant or deny certain actions or access rights.",
+        "use_cases": [
+            "Access control",
+            "Resource permissions",
+            "Security policy definition",
+            "Authorization management"
+        ],
+        "capabilities": [
+            "Policy versioning",
+            "Statement definition",
+            "Action specification",
+            "Resource targeting"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_aws_rds_slowquery-logs-for-rds-(rdslogs)-chunk-3",
+        "name": "SlowQuery Logs for RDS (RDSLogs).txt - IAM Role Permissions",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "RDS"
+        ],
+        "description": "This section outlines the necessary permissions required for an IAM (Identity and Access Management) role to access and manage RDS (Relational Database Service) log files, specifically the slow query logs. It allows the role to download portions of the log files, describe or list the available log files, and retrieve information about the RDS instances. This is essential for monitoring and troubleshooting database performance issues.",
+        "use_cases": [
+            "Monitoring database performance",
+            "Troubleshooting slow queries",
+            "Analyzing query execution times",
+            "Optimizing database performance"
+        ],
+        "capabilities": [
+            "Download log file portions",
+            "Describe log files",
+            "Describe RDS instances",
+            "IAM role permissions",
+            "RDS log management",
+            "Slow query log access"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_aws_rds_slowquery-logs-for-rds-(rdslogs)-chunk-4",
+        "name": "SlowQuery Logs for RDS (RDSLogs).txt - Set up SlowQuery Log for new RDS",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "RDS"
+        ],
+        "description": "This section explains how to set up a new deployment for SlowQuery Logs for an RDS (Relational Database Service) instance. It mentions that a Helm chart has already been created for managing RDS logs, and to set up a new deployment, you need to add a configuration under the 'values.yaml' file in the respective environment. The configuration includes the name of the deployment, which is specified as 'prod-rds-xyz' in the example.",
+        "use_cases": [
+            "Setting up a new deployment for SlowQuery Logs for an RDS instance",
+            "Configuring RDS log management using a pre-existing Helm chart",
+            "Customizing the deployment name for the RDS log management"
+        ],
+        "capabilities": [
+            "Helm chart for RDS log management",
+            "Configuration via values.yaml file",
+            "Deployment naming",
+            "Environment-specific configuration"
+        ],
+        "references": [
+            "https://github.com/razorpay/kube-manifests/tree/master/templates/rdslogs"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_aws_rds_slowquery-logs-for-rds-(rdslogs)-chunk-5",
+        "name": "SlowQuery Logs for RDS (RDSLogs).txt - Configuration Parameters",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "RDS"
+        ],
+        "description": "This section outlines the configuration parameters for deploying an application called 'rdslogs' that is responsible for managing and monitoring RDS (Relational Database Service) logs. It specifies details such as the number of replicas, the Docker image to use, node selector for Kubernetes deployment, resource requests (CPU and memory), the specific RDS instance identifier, and the arguments to pass to the application, including the AWS region, RDS instance name, output format, and log download directory.",
+        "use_cases": [
+            "Monitoring and analyzing RDS logs",
+            "Centralized log management for RDS instances",
+            "Automated log retrieval and processing",
+            "Integration with Kubernetes for deployment"
+        ],
+        "capabilities": [
+            "Replica management",
+            "Docker image specification",
+            "Node selection for Kubernetes",
+            "Resource allocation (CPU and memory)",
+            "RDS instance identification",
+            "Argument configuration (region, output format, log directory)",
+            "Log formatting and tracking"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_aws_rds_slowquery-logs-for-rds-(rdslogs)-chunk-6",
+        "name": "SlowQuery Logs for RDS (RDSLogs).txt - Additional Information",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "RDS"
+        ],
+        "description": "This section provides an overview of the basic Kubernetes configurations used in the deployment, such as the name of the deployment, the number of replicas, the container images, resource requests and limits, and other essential settings. It serves as a brief explanation of the fundamental parameters involved in configuring a Kubernetes deployment.",
+        "use_cases": [
+            "Understanding the basic configuration parameters for a Kubernetes deployment",
+            "Familiarizing with the essential settings required for deploying applications on Kubernetes"
+        ],
+        "capabilities": [
+            "name of the deployment",
+            "replicas",
+            "container images",
+            "resource requests",
+            "resource limits",
+            "basic Kubernetes configurations"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_aws_rds_slowquery-logs-for-rds-(rdslogs)-chunk-7",
+        "name": "SlowQuery Logs for RDS (RDSLogs).txt - Doubts",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "RDS"
+        ],
+        "description": "This section provides information about resolving doubts or seeking help related to the RDSLogs configuration. It mentions that the important configuration parameter is the 'db_identifier', which is the name of the RDS instance that can be found in the AWS console. It also provides links to the README files for more detailed information about the arguments and configuration options. Additionally, it suggests contacting the DevOps team or a specific person (Ankit Jain) on the #tech_devops Slack channel for any doubts or assistance.",
+        "use_cases": [
+            "Resolving doubts or seeking help related to RDSLogs configuration",
+            "Finding the 'db_identifier' parameter for an RDS instance",
+            "Accessing documentation for RDSLogs arguments and configuration options",
+            "Contacting the DevOps team or a specific person for assistance"
+        ],
+        "capabilities": [
+            "db_identifier configuration",
+            "README documentation",
+            "values.yaml configuration file",
+            "Slack channel support",
+            "DevOps team contact",
+            "Specific person contact"
+        ],
+        "references": [
+            "https://github.com/razorpay/rdslogs#readme",
+            "https://github.com/razorpay/kube-manifests/blob/master/templates/rdslogs/README.md",
+            "https://github.com/razorpay/kube-manifests/blob/master/ops/rdslogs/values.yaml"
+        ]
+    }
+]

@@ -1,0 +1,186 @@
+[
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_index-chunk-0",
+        "name": "Index.txt - What is H2H and how beam helps us do file transfers?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be a placeholder or a to-do item, indicating that it should explain what H2H (Host-to-Host) is and how the Beam technology helps with file transfers. However, the actual content is missing, and it needs to be filled in.",
+        "use_cases": [
+            "File transfers",
+            "Host-to-Host (H2H) communication"
+        ],
+        "capabilities": [
+            "Beam technology for file transfers",
+            "Host-to-Host (H2H) communication"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_index-chunk-1",
+        "name": "Index.txt - SFTP push (upload) and pull (download) for externally hosted SFTP service",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains how to upload (push) and download (pull) files using an externally hosted SFTP (Secure File Transfer Protocol) service. SFTP is a secure way to transfer files between computers over the internet, and this section likely provides instructions or information on how to utilize an external SFTP service for file transfers.",
+        "use_cases": [
+            "Uploading files to an external SFTP server",
+            "Downloading files from an external SFTP server",
+            "Securely transferring files over the internet",
+            "Utilizing third-party SFTP services for file transfers"
+        ],
+        "capabilities": [
+            "SFTP push (upload)",
+            "SFTP pull (download)",
+            "External SFTP service integration",
+            "Secure file transfer",
+            "File transfer over the internet"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_index-chunk-2",
+        "name": "Index.txt - SFTP push and pull for Razorpay's Internal SFTP service",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be empty or missing content. Without any text or information provided, it is difficult to provide a meaningful description or extract any use cases or capabilities.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_index-chunk-3",
+        "name": "Index.txt - Beam service/config/cron k8s deployment",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section provides a link to a configuration request for setting up an SFTP (Secure File Transfer Protocol) push-pull mechanism. It likely explains the process of configuring a secure file transfer service to automatically push or pull files to or from a remote server on a scheduled basis, which can be useful for tasks like data synchronization or backup.",
+        "use_cases": [
+            "Automated file transfer between servers",
+            "Data synchronization",
+            "Scheduled backups",
+            "Integration with external systems"
+        ],
+        "capabilities": [
+            "SFTP push",
+            "SFTP pull",
+            "Scheduled file transfers",
+            "Secure file transfer",
+            "Configuration management"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/sftp-push-pull-configuration-request>"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_index-chunk-4",
+        "name": "Index.txt - Troubleshooting",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be empty, as there is no content provided within the code block. Without any information or instructions, it is difficult to provide a meaningful description or infer any use cases or capabilities.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_index-chunk-5",
+        "name": "Index.txt - SPOC - Bank/Merchant",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section provides a link to a documentation page that explains how to set up an SFTP (Secure File Transfer Protocol) job to push data to Razorpay's repository. This process is likely used by banks or merchants to securely transfer financial transaction data or other sensitive information to Razorpay's systems for processing or analysis.",
+        "use_cases": [
+            "Securely transferring financial transaction data from banks or merchants to Razorpay",
+            "Automating the process of sending data to Razorpay's repository",
+            "Enabling banks or merchants to integrate their systems with Razorpay's platform",
+            "Facilitating data exchange between banks/merchants and Razorpay for various financial services"
+        ],
+        "capabilities": [
+            "SFTP push job",
+            "Secure data transfer",
+            "Automated data transfer",
+            "Integration with Razorpay's repository",
+            "Data exchange between banks/merchants and Razorpay"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/write-an-sftp-push-job>"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_index-chunk-6",
+        "name": "Index.txt - Push files manually",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be empty or missing content. Without any text or instructions provided, it is difficult to determine what this section is intended to explain or describe.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_index-chunk-7",
+        "name": "Index.txt - S3 bucket access",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section provides information and links related to accessing and managing files on S3 buckets, as well as troubleshooting issues with file transfers using the Beam service. It covers topics such as creating SFTP pull and push jobs, deploying configuration changes for the Beam service, troubleshooting failures in file transfers, and accessing S3 buckets for specific teams or members.",
+        "use_cases": [
+            "Accessing and managing files on S3 buckets",
+            "Creating and configuring SFTP pull and push jobs",
+            "Deploying configuration changes for the Beam service",
+            "Troubleshooting failures in file transfers using the Beam service"
+        ],
+        "capabilities": [
+            "SFTP pull job creation",
+            "SFTP push job creation",
+            "Beam service configuration deployment",
+            "Kubernetes deployment for Beam service",
+            "Troubleshooting for Beam pull failures",
+            "Troubleshooting for Beam push failures",
+            "S3 bucket access management"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/create-an-sftp-pull-job>",
+            "https://alpha.razorpay.com/repo/create-an-h2h-sftp-push-job-with-date-format>",
+            "https://alpha.razorpay.com/repo/beam-pull-failures>",
+            "https://alpha.razorpay.com/repo/beam-push-failures>",
+            "https://alpha.razorpay.com/repo/h2h-bank-merchant-support-contact>",
+            "https://alpha.razorpay.com/repo/how-to-do-manual-sftp-file-pushes-using-beam>",
+            "https://alpha.razorpay.com/repo/s3-bucket-access-for-finops-banking-alliance-members>"
+        ]
+    }
+]

@@ -1,0 +1,133 @@
+[
+    {
+        "id": "engineering_devops_harbor_harbor-image-lifecycle-management-chunk-0",
+        "name": "Harbor Image Lifecycle Management.txt - Default retention rule configuration",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Harbor"
+        ],
+        "description": "This section explains a default retention rule configuration in Harbor, which is an open-source cloud native registry that stores and distributes container images. The rule retains the most recent 500 pulled images, and it is triggered every Saturday at midnight. The cleanup process can take 6 to 10 hours, during which the Harbor database may experience high CPU usage alerts.",
+        "use_cases": [
+            "Managing storage space by automatically removing older or unused container images",
+            "Ensuring that only the most recent and frequently used images are retained",
+            "Scheduling regular cleanup tasks to optimize system performance and resource utilization"
+        ],
+        "capabilities": [
+            "Default retention rule configuration",
+            "Retain most recent pulled images",
+            "Scheduled cleanup process",
+            "Configurable retention policy",
+            "High CPU usage alerts during cleanup",
+            "Image lifecycle management"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/c0ec33b0d7d5ac401010a1873e9a6aa2.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_harbor_harbor-image-lifecycle-management-chunk-1",
+        "name": "Harbor Image Lifecycle Management.txt - Retention rule details",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Harbor"
+        ],
+        "description": "This section explains the retention rules for managing the lifecycle of Docker images in a repository. It mentions that if any rule specifies retaining an image, it will not be deleted. These rules are designed to prevent deleting images that are currently running in production environments. If a repository requires different retention rules, they can be added to an exclusion sheet. The section also mentions that old images for the API codebase are being deleted based on the default retention rule, and that similar rules will be configured for other repositories starting from May 1st. It provides an example of how the retention rule works for a repository with more than 500 images, retaining images pulled within the last 45 days and deleting the rest.",
+        "use_cases": [
+            "Preventing accidental deletion of Docker images currently running in production environments",
+            "Managing the lifecycle of Docker images in a repository based on predefined retention rules",
+            "Customizing retention rules for specific repositories by adding them to an exclusion sheet",
+            "Deleting old Docker images to free up storage space"
+        ],
+        "capabilities": [
+            "Retention rules",
+            "Exclusion sheet for custom rules",
+            "Image count tracking by repository",
+            "Automatic deletion of old images",
+            "Configurable retention period",
+            "Example of retention rule implementation"
+        ],
+        "references": [
+            "https://docs.google.com/spreadsheets/d/1bcLDJr3B7U9qFN8-KIG0j1ajt5U14lPEKVjsbKdYoWg/edit#gid=0",
+            "https://docs.google.com/document/d/1I2x6NpbdzdchvYgzniU-6Occyx727K_YeaPJPBjLphk/edit"
+        ]
+    },
+    {
+        "id": "engineering_devops_harbor_harbor-image-lifecycle-management-chunk-2",
+        "name": "Harbor Image Lifecycle Management.txt - Retention rule implementation",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Harbor"
+        ],
+        "description": "This section appears to be discussing the retention policy or communication strategy for a specific team or project. It mentions sending communication to the development team for a certain number of days (initially 30 days, later extended to 45 days) as a precautionary measure. However, the content itself does not provide clear details about the context or purpose of this retention policy.",
+        "use_cases": [
+            "Communication strategy for a development team",
+            "Retention policy for project-related information or data",
+            "Safe-side precaution for sensitive or critical information"
+        ],
+        "capabilities": [
+            "Retention rule implementation",
+            "Communication management",
+            "Team collaboration",
+            "Information retention policy"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/219c18da0a7e379995cf16405641e539.png",
+            "https://razorpay.slack.com/archives/C6QPQKVLZ/p1682328771463489>"
+        ]
+    },
+    {
+        "id": "engineering_devops_harbor_harbor-image-lifecycle-management-chunk-3",
+        "name": "Harbor Image Lifecycle Management.txt - Example of retention rule application",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Harbor"
+        ],
+        "description": "This section discusses the challenges faced with Harbor's initial versions that lacked image lifecycle management capabilities, leading to high storage costs on S3. It mentions the implementation of lifecycle rules to address this issue, but due to the large storage size, difficulties arose in applying these policies. The section suggests a solution involving identifying and deleting older images through scripts, and provides a link to a document outlining an optimization plan.",
+        "use_cases": [
+            "Managing storage costs for Harbor's S3 storage",
+            "Implementing image lifecycle policies in Harbor",
+            "Identifying and deleting older images to optimize storage",
+            "Automating storage optimization through scripts"
+        ],
+        "capabilities": [
+            "Harbor S3 Storage Optimization",
+            "Image Lifecycle Management",
+            "Lifecycle Policy Configuration",
+            "Older Image Identification",
+            "Scripted Image Deletion"
+        ],
+        "references": [
+            "https://docs.google.com/document/d/1I2x6NpbdzdchvYgzniU-6Occyx727K_YeaPJPBjLphk/edit#heading=h.c729mrcw1c2k>"
+        ]
+    },
+    {
+        "id": "engineering_devops_harbor_harbor-image-lifecycle-management-chunk-4",
+        "name": "Harbor Image Lifecycle Management.txt - Communication to dev team",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Harbor"
+        ],
+        "description": "This section does not provide any meaningful content or explanation. The section body consists of only blank lines and backslash characters, which do not convey any information about Harbor Image Lifecycle Management or communication to the development team.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_harbor_harbor-image-lifecycle-management-chunk-5",
+        "name": "Harbor Image Lifecycle Management.txt - Harbor S3 Storage Optimisation",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Harbor"
+        ],
+        "description": "This section appears to be empty or missing content. Without any text or information provided, it is difficult to provide a meaningful description or extract any use cases or capabilities.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    }
+]

@@ -1,0 +1,88 @@
+[
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_how-to-do-manual-sftp-file-pushes-using-beam-chunk-0",
+        "name": "How to do manual SFTP file pushes using BEAM.txt - Production",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section titled 'Production' with the subheading 'The HARD way' appears to be explaining a manual or alternative method for transferring files using SFTP (Secure File Transfer Protocol) and a tool called BEAM. It seems to be suggesting that this approach is more difficult or less desirable than the recommended method, hence the term 'The HARD way'.",
+        "use_cases": [
+            "Manually transferring files via SFTP",
+            "Using an alternative method to the recommended approach",
+            "Transferring files in a production environment"
+        ],
+        "capabilities": [
+            "SFTP file transfer",
+            "Manual file transfer",
+            "Alternative file transfer method",
+            "File transfer in production environment"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_how-to-do-manual-sftp-file-pushes-using-beam-chunk-1",
+        "name": "How to do manual SFTP file pushes using BEAM.txt - The HARD way",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains the manual process of transferring files via SFTP (Secure File Transfer Protocol) to a server called BEAM. It provides step-by-step instructions on how to identify the SFTP account credentials, download the file from a source (email, Slack, etc.), transfer it to a jump box server, and then finally upload it to the BEAM server using either a password or an SSH key authentication method. The process involves multiple steps of copying files between different servers before reaching the final destination.",
+        "use_cases": [
+            "Manually transferring files to the BEAM server",
+            "Securely uploading files using SFTP protocol",
+            "Authenticating with SFTP using password or SSH key"
+        ],
+        "capabilities": [
+            "SFTP file transfer",
+            "Password authentication",
+            "SSH key authentication",
+            "Secure file transfer",
+            "Multi-server file transfer",
+            "Jump box server"
+        ],
+        "references": [
+            "https://github.com/razorpay/beam/blob/master/conf/>",
+            "https://github.com/razorpay/beam/tree/master/keys>"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_how-to-do-manual-sftp-file-pushes-using-beam-chunk-2",
+        "name": "How to do manual SFTP file pushes using BEAM.txt - Easy way",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains an easy way to manually upload files to a remote SFTP server using BEAM, a tool developed by Razorpay. It provides step-by-step instructions on how to upload a file to a specific SFTP path defined in a BEAM job configuration. The process involves downloading the file, uploading it to an S3 bucket, and then calling the BEAM push API with the job name, bucket details, and file path. The response from the API indicates whether the file transfer was successful or not. The section also mentions an alternative method for testing on a stage environment and how to request access to the test bucket if needed.",
+        "use_cases": [
+            "Manually uploading files to a remote SFTP server",
+            "Testing file uploads in a stage environment",
+            "Requesting access to a test bucket for SFTP file uploads"
+        ],
+        "capabilities": [
+            "BEAM push API",
+            "S3 bucket file upload",
+            "SFTP file transfer",
+            "Stage environment testing",
+            "Test bucket access request",
+            "JIRA ticket creation"
+        ],
+        "references": [
+            "https://docs.google.com/document/d/1j-vNYM_cewdV8BBKQi5nNraZpGXHGRbBBwN_Fls39xM/edit?usp=sharing",
+            "https://alpha.razorpay.com/repo/how-to-a-raise-a-request-at-devops-jira-board-bad",
+            "https://www.ssh.com/academy/ssh/keygen#creating-an-ssh-key-pair-for-user-authentication",
+            "https://github.com/razorpay/beam/blob/master/conf/push_jobs.json#L184-L190>__",
+            "http://beam.razorpay.vpc/push",
+            "https://beam.stage.razorpay.in/push"
+        ]
+    }
+]

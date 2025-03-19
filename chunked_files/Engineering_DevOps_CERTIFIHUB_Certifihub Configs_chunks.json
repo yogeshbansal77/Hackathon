@@ -1,0 +1,54 @@
+[
+    {
+        "id": "engineering_devops_certifihub_certifihub-configs-chunk-0",
+        "name": "Certifihub Configs.txt - Credstash Tables",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "CERTIFIHUB"
+        ],
+        "description": "This section explains that Certifihub, a service or application, uses service authentication to read sensitive data stored in various Credstash tables hosted on AWS DynamoDB. It lists the specific tables that Certifihub reads data from, categorized by different services or products like RSPL, RZPX, Poshvine, Wallet, Switch, Capital, and Qubole. The section also provides instructions on how to update the list of Credstash tables that Certifihub should access, by modifying a secret stored in the kubestash-ops table, and updating the corresponding IAM role permissions.",
+        "use_cases": [
+            "Securely storing and retrieving sensitive data (e.g., credentials, certificates) for various services and products",
+            "Centralized management of access to sensitive data across multiple services and products",
+            "Updating and maintaining the list of Credstash tables that Certifihub can access",
+            "Ensuring proper IAM role permissions for Certifihub to access the required Credstash tables"
+        ],
+        "capabilities": [
+            "Service authentication",
+            "Reading data from Credstash tables",
+            "Storing sensitive data in AWS DynamoDB",
+            "Updating secrets in kubestash-ops table",
+            "Modifying IAM role permissions",
+            "Centralized access management"
+        ],
+        "references": [
+            "https://github.com/razorpay/vishnu/blob/master/prod/iam/ops/iam-data.tf#L617"
+        ]
+    },
+    {
+        "id": "engineering_devops_certifihub_certifihub-configs-chunk-1",
+        "name": "Certifihub Configs.txt - JIRA Intergration",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "CERTIFIHUB"
+        ],
+        "description": "This section explains that Certifihub, a software application, is integrated with the CORP JIRA board, which is a project management tool used for tracking issues and tasks. This integration allows users to create JIRA tickets directly from the Certifihub user interface, streamlining the process of reporting and managing issues or tasks related to the software.",
+        "use_cases": [
+            "Creating JIRA tickets from within the Certifihub UI",
+            "Tracking and managing software issues or tasks in JIRA",
+            "Integrating project management workflows between Certifihub and JIRA",
+            "Facilitating collaboration and communication between development and support teams"
+        ],
+        "capabilities": [
+            "JIRA integration",
+            "Ticket creation",
+            "Issue tracking",
+            "Task management",
+            "Workflow integration",
+            "Cross-platform collaboration"
+        ],
+        "references": []
+    }
+]

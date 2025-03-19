@@ -1,0 +1,64 @@
+[
+    {
+        "id": "engineering_devops_architecture_aws_eks_spot-instances-and-cluster-autoscaler-strategies-chunk-0",
+        "name": "Spot Instances and Cluster Autoscaler Strategies.txt - CA Enabled on Spot ASG",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "EKS"
+        ],
+        "description": "This section discusses strategies for managing Kubernetes clusters with a mix of on-demand and spot instances, using the Cluster Autoscaler (CA) tool. It explains how CA can be configured to run on either the on-demand or spot instance Auto Scaling Groups (ASGs), and the implications of each approach. The goal is to optimize cost by utilizing spot instances while ensuring sufficient capacity for running workloads.",
+        "use_cases": [
+            "Managing a Kubernetes cluster with a mix of on-demand and spot instances",
+            "Optimizing cost by utilizing spot instances while ensuring sufficient capacity",
+            "Handling scenarios where spot instances are not available or terminated",
+            "Preventing over-provisioning of on-demand instances when spot instances are available"
+        ],
+        "capabilities": [
+            "Cluster Autoscaler (CA) integration with AWS Auto Scaling Groups (ASGs)",
+            "CA enabled on spot ASG or on-demand ASG",
+            "Overprovisioning of spot instances",
+            "Node selector labels for CA to identify nodes",
+            "Customizable CA settings (e.g., node termination timeout)",
+            "Automatic scaling of on-demand instances when spot instances are unavailable",
+            "Automatic migration of pods between on-demand and spot instances"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_aws_eks_spot-instances-and-cluster-autoscaler-strategies-chunk-1",
+        "name": "Spot Instances and Cluster Autoscaler Strategies.txt - CA Enabled on On-Demand ASG",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "EKS"
+        ],
+        "description": "This section explains strategies for managing spot instances and on-demand instances in a Kubernetes cluster using the Cluster Autoscaler (CA). It discusses how to balance nodes across availability zones, handle spot instance terminations, schedule pods on specific instance types, and use over-provisioning to maintain high availability. The section also mentions using a node termination handler to gracefully drain nodes before termination and making API calls to remove terminated instances from the Auto Scaling group (ASG) to quickly replace them.",
+        "use_cases": [
+            "Balancing nodes across availability zones for high availability",
+            "Handling spot instance terminations and quickly replacing terminated instances",
+            "Scheduling pods on specific instance types (e.g., on-demand instances)",
+            "Maintaining high availability during spot instance terminations using over-provisioning"
+        ],
+        "capabilities": [
+            "Cluster Autoscaler (CA) for managing node groups",
+            "Balance similar node groups option in CA",
+            "Node affinity rules for scheduling pods on specific instance types",
+            "AWS Node Termination Handler for graceful node draining",
+            "Lambda function for removing terminated instances from ASG",
+            "Over-provisioning strategy for high availability"
+        ],
+        "references": [
+            "https://docs.aws.amazon.com/eks/latest/userguide/cluster-autoscaler.html",
+            "https://kubernetes.io/docs/tasks/configure-pod-container/assign-pods-nodes-using-node-affinity/",
+            "https://github.com/aws/aws-node-termination-handler",
+            "https://docs.google.com/document/d/1wyaW4qxUwktfQrkyX2JHgc_FS_Pfr1qlGljNZDCmTFY/edit#heading=h.ptipezq4pxh0",
+            "https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/FAQ.md#how-can-i-configure-overprovisioning-with-cluster-autoscaler",
+            "https://alpha.razorpay.com/_static/file/83f9b78b17be4d227a611a7cebec6a29.png"
+        ]
+    }
+]

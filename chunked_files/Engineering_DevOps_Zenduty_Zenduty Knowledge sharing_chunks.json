@@ -1,0 +1,50 @@
+[
+    {
+        "id": "engineering_devops_zenduty_zenduty-knowledge-sharing-chunk-0",
+        "name": "Zenduty Knowledge sharing.txt - Zoom Recording Link",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Zenduty"
+        ],
+        "description": "This section provides a Zoom recording link that allows users to access a shared video recording. The link likely contains a recording of a knowledge-sharing session or a training session related to the Zenduty platform. By clicking on the link, users can view the recorded content, which may include presentations, demonstrations, or discussions on various topics related to Zenduty's features and functionalities.",
+        "use_cases": [
+            "Accessing recorded knowledge-sharing sessions",
+            "Viewing training or onboarding materials",
+            "Revisiting recorded demonstrations or walkthroughs",
+            "Sharing recorded content with team members or colleagues"
+        ],
+        "capabilities": [
+            "Zoom recording sharing",
+            "Video content access",
+            "Knowledge dissemination",
+            "Training material distribution",
+            "Asynchronous learning"
+        ],
+        "references": [
+            "https://razorpay.zoom.us/rec/share/31SB9W9yzQnJwZ_v_vZvDgjrsEcb1KCt1QjBsw4QLH4hQ-Dn-mEeFCy6cyGxfEks.vvndPGCczvRcWDGN>"
+        ]
+    },
+    {
+        "id": "engineering_devops_zenduty_zenduty-knowledge-sharing-chunk-1",
+        "name": "Zenduty Knowledge sharing.txt - Passcode",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Zenduty"
+        ],
+        "description": "This section provides a passcode or access code, which is likely used for authentication or gaining access to a specific system, application, or resource related to Zenduty Knowledge sharing. The passcode consists of a combination of alphanumeric characters and symbols, suggesting a level of security and confidentiality.",
+        "use_cases": [
+            "Accessing a secure knowledge base or documentation repository",
+            "Authenticating users for sharing sensitive information or knowledge",
+            "Providing controlled access to specific resources or features within the Zenduty platform"
+        ],
+        "capabilities": [
+            "Authentication",
+            "Access Control",
+            "Security",
+            "Confidentiality"
+        ],
+        "references": []
+    }
+]

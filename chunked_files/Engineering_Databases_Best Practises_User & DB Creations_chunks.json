@@ -1,0 +1,74 @@
+[
+    {
+        "id": "engineering_databases_best-practises_user-&-db-creations-chunk-0",
+        "name": "User & DB Creations.txt - Have a separate user for each \"micro service - DB combination\"",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Best Practises"
+        ],
+        "description": "This section explains the importance of having separate database users for each microservice that accesses a particular database. It suggests creating individual users even if there are multiple microservices accessing the same database. This approach helps in identifying issues related to specific microservices, monitoring resource utilization, and ensuring that no microservice is overlooked during maintenance or planned activities.",
+        "use_cases": [
+            "Identifying resource-intensive queries or users",
+            "Tracking microservices accessing a database",
+            "Ensuring all microservices are informed during maintenance or planned activities",
+            "Isolating issues related to specific microservices"
+        ],
+        "capabilities": [
+            "Separate database users for each microservice-database combination",
+            "Monitoring CPU utilization and running queries per user",
+            "Identifying microservices accessing a database from user list",
+            "Separate users for read (slave) and write (master) operations"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_best-practises_user-&-db-creations-chunk-1",
+        "name": "User & DB Creations.txt - Have a separate user for Writer(Master) and Reader(Slave)",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Best Practises"
+        ],
+        "description": "This section explains the importance of having separate user accounts for writing (master) and reading (slave) databases. It helps in monitoring database performance, identifying issues during failover scenarios, and managing critical applications by moving them to the master database if the slave database is lagging. Additionally, it emphasizes the need to inform the DBOps team about new microservices or databases to ensure proper resource allocation and database server selection based on expected traffic and growth.",
+        "use_cases": [
+            "Monitoring database performance and failover scenarios",
+            "Identifying applications affecting database performance",
+            "Moving critical applications to the master database during slave database lag",
+            "Informing DBOps team about new microservices or databases for resource allocation"
+        ],
+        "capabilities": [
+            "Separate user accounts for write (master) and read (slave) databases",
+            "Failover monitoring",
+            "Slave database lag identification",
+            "Application criticality assessment",
+            "Application migration between master and slave databases",
+            "Database resource allocation based on expected traffic and growth"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_best-practises_user-&-db-creations-chunk-2",
+        "name": "User & DB Creations.txt - DB Instance Classification",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Best Practises"
+        ],
+        "description": "This section provides guidelines for creating and configuring database instances based on the anticipated traffic and usage patterns. It suggests creating separate database instances for microservices with high traffic, while consolidating databases for microservices with low traffic. Additionally, it recommends using compressed storage engines for databases primarily used for data storage with minimal data retrieval to optimize storage space.",
+        "use_cases": [
+            "Microservices with high traffic",
+            "Microservices with low/minimal traffic",
+            "Databases primarily used for data storage with minimal data retrieval"
+        ],
+        "capabilities": [
+            "Separate database instances",
+            "Consolidated database instances",
+            "Compressed storage engines",
+            "Storage space optimization",
+            "Traffic-based database configuration",
+            "Usage pattern-based database configuration"
+        ],
+        "references": []
+    }
+]

@@ -1,0 +1,135 @@
+[
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_beam-pull-failures-chunk-0",
+        "name": "Beam Pull failures.txt - Copy the request ID and run the following search query in sumologic",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section provides a search query to be run in the Sumologic tool, which is likely a log analysis platform. The query filters logs from the Docker container logs ('_source=\"Docker-logs\"') collected by the 'prod-beam' collector, containing a specific request ID ('3264ce1c-b37e-4c64-83ab-6aed52fabe88'), and having the word 'error' present. This query can be used to investigate errors related to a specific request or issue identified by the given request ID.",
+        "use_cases": [
+            "Troubleshooting errors or issues related to a specific request or process",
+            "Analyzing logs for a particular component or service (in this case, 'prod-beam')",
+            "Investigating errors or failures in Docker container logs",
+            "Utilizing log analysis tools like Sumologic for log search and analysis"
+        ],
+        "capabilities": [
+            "Log search and filtering",
+            "Log analysis",
+            "Error investigation",
+            "Request tracing",
+            "Docker log analysis",
+            "Sumologic integration"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_beam-pull-failures-chunk-1",
+        "name": "Beam Pull failures.txt - error log",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains an error log related to a Beam Pull failure for the 'yesbank_e_statements_pull' job. The error indicates an issue with connecting to a remote SFTP server, resulting in a 'bad gateway' error. The log provides details about the error code, internal error message, job name, job type, and request information. To troubleshoot the issue, it suggests manually testing the connectivity by fetching the SFTP IP address, port, and username from a specific GitHub repository.",
+        "use_cases": [
+            "Troubleshooting Beam Pull failures related to SFTP server connectivity issues",
+            "Analyzing error logs for Beam Pull jobs",
+            "Manually testing SFTP server connectivity for Beam Pull jobs"
+        ],
+        "capabilities": [
+            "Error logging",
+            "Error code and message details",
+            "Job information (name, type)",
+            "Request details (request ID, URI)",
+            "Connectivity testing instructions",
+            "Reference to external configuration repository"
+        ],
+        "references": [
+            "https://github.com/razorpay/beam/blob/master/conf/pull_jobs.json>"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_beam-pull-failures-chunk-2",
+        "name": "Beam Pull failures.txt - Test connectivity manually",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section provides instructions for manually testing the connectivity to a remote server (beam.razorpay.vpc) by retrieving the necessary credentials from a secure storage (credstash-prod-beam), adding your private key to the SSH agent, and attempting an SFTP connection. This process can be useful for troubleshooting connectivity issues or verifying access to the remote server.",
+        "use_cases": [
+            "Troubleshooting connectivity issues with a remote server",
+            "Verifying access to a remote server",
+            "Testing SFTP connectivity manually",
+            "Retrieving credentials from a secure storage"
+        ],
+        "capabilities": [
+            "Retrieving credentials from credstash-prod-beam",
+            "Adding private key to SSH agent",
+            "Establishing SSH connection",
+            "Attempting SFTP connection",
+            "Copying password to clipboard (pbcopy)"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_beam-pull-failures-chunk-3",
+        "name": "Beam Pull failures.txt - Possible reasons for failure",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains a potential reason for the failure of a Beam Pull operation, which is password expiry. It suggests that if the password associated with the account or system being accessed has expired, it could lead to the Beam Pull operation failing.",
+        "use_cases": [
+            "Troubleshooting failed Beam Pull operations",
+            "Identifying potential causes of authentication failures",
+            "Resolving password-related issues"
+        ],
+        "capabilities": [
+            "Password expiry detection",
+            "Authentication failure analysis",
+            "Beam Pull operation monitoring"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_beam-pull-failures-chunk-4",
+        "name": "Beam Pull failures.txt - Resolution",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains the steps to resolve an issue where the SFTP account used for pulling e-statements from a bank (Yes Bank) has an incorrect password. It involves temporarily disabling the cron job responsible for pulling the e-statements, contacting the bank's support team to reset the password, updating the new password in the credstash table, and then re-enabling the cron job.",
+        "use_cases": [
+            "Resolving SFTP account password issues with a bank for automated e-statement pulling",
+            "Temporarily disabling and re-enabling cron jobs",
+            "Updating sensitive credentials in a secure credstash table",
+            "Coordinating with a bank's support team for account-related issues"
+        ],
+        "capabilities": [
+            "Kubectl patch command to suspend/resume cron jobs",
+            "Credstash command to update sensitive credentials",
+            "Email communication with bank support team",
+            "Troubleshooting and resolving SFTP account password issues",
+            "Secure storage and management of sensitive credentials"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/h2h-bank-merchant-support-contact",
+            "https://alpha.razorpay.com/_static/file/1b97605e8fa5143432ee7929dedf6a48.png"
+        ]
+    }
+]

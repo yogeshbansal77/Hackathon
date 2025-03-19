@@ -1,0 +1,77 @@
+[
+    {
+        "id": "engineering_devops_dev-self-serve_environments-overview-chunk-0",
+        "name": "Environments Overview.txt - Staging Environments",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains the staging environment setup for a Kubernetes cluster running on an AWS account. It describes multiple environments (namespaces) within the staging cluster, each serving a different purpose like development testing, performance testing, build verification, and functional testing. Each environment runs multiple applications, and the same application can have different versions (images) running across environments, allowing independent testing by different teams.",
+        "use_cases": [
+            "Development testing of applications",
+            "Performance testing of applications",
+            "Build verification testing",
+            "Functional testing of applications"
+        ],
+        "capabilities": [
+            "Kubernetes cluster on AWS",
+            "Multiple environments (namespaces)",
+            "Different applications running in each environment",
+            "Same application with different versions across environments",
+            "Independent testing by different teams"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_environments-overview-chunk-1",
+        "name": "Environments Overview.txt - Production Environments",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains the production environment setup for a company's applications. It describes two separate Kubernetes clusters, one for applications handling card data (CDE) and another for applications not dealing with card data (Non-CDE). These clusters are hosted on AWS and run in separate subnets within the same VPC for security reasons. Each application runs in its own namespace within the respective cluster. The clusters are set up for redundancy and blue-green deployments, with color-coded names like 'cde-green' and 'prod-blue'.",
+        "use_cases": [
+            "Separating applications based on whether they handle sensitive card data or not",
+            "Ensuring redundancy and enabling blue-green deployments for applications",
+            "Isolating applications in their own namespaces within the respective clusters",
+            "Restricting access between CDE and Non-CDE applications using AWS security groups"
+        ],
+        "capabilities": [
+            "Production Kubernetes clusters",
+            "Card Data Environment (CDE)",
+            "Non-Card Data Environment (Non-CDE)",
+            "Blue-green deployments",
+            "Application namespaces",
+            "AWS VPC and subnets",
+            "AWS security groups"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_environments-overview-chunk-2",
+        "name": "Environments Overview.txt - Dev-Serve Environments",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains a development environment called 'Dev-Serve' that allows developers to create and test their applications before deploying them to a production environment. Each developer is given their own Kubernetes namespace, where they have complete control to create and manage various resources like databases, message queues, and cloud storage services using YAML configuration files. This environment enables developers to build and test their applications independently without relying on DevOps teams.",
+        "use_cases": [
+            "Providing a dedicated environment for developers to test their applications",
+            "Allowing developers to create and manage resources like databases, message queues, and cloud storage services",
+            "Enabling independent development and testing without relying on DevOps teams",
+            "Facilitating the deployment process by allowing developers to test their applications thoroughly before moving to production"
+        ],
+        "capabilities": [
+            "Kubernetes namespaces for each developer",
+            "Full control over assigned namespace",
+            "Creation of AWS resources (S3, DynamoDB, SQS, SNS) using YAML",
+            "Provisioning of databases (MySQL, PostgreSQL) and NoSQL (Redis) using YAML",
+            "Resource management without DevOps assistance",
+            "Independent application building and testing"
+        ],
+        "references": []
+    }
+]

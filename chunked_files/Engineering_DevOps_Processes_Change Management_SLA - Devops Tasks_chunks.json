@@ -1,0 +1,156 @@
+[
+    {
+        "id": "engineering_devops_processes_change-management_sla---devops-tasks-chunk-0",
+        "name": "SLA - Devops Tasks.txt - Introduction",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Change Management"
+        ],
+        "description": "This section introduces a Service Level Agreement (SLA) document that outlines the terms and conditions between the DevOps team and the various Developer teams representing different business units (BUs) of Razorpay. The SLA document aims to establish a clear understanding and agreement between these teams regarding the services, responsibilities, and expectations involved in their collaboration.",
+        "use_cases": [
+            "Defining the roles and responsibilities of the DevOps team and Developer teams",
+            "Establishing service level expectations and performance metrics",
+            "Facilitating effective communication and collaboration between teams",
+            "Ensuring accountability and transparency in service delivery"
+        ],
+        "capabilities": [
+            "Service Level Agreement",
+            "Team Collaboration",
+            "Service Delivery",
+            "Performance Metrics",
+            "Roles and Responsibilities"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_change-management_sla---devops-tasks-chunk-1",
+        "name": "SLA - Devops Tasks.txt - Definitions",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Change Management"
+        ],
+        "description": "This section provides definitions for two key terms related to service level agreements (SLAs) and operational performance metrics. It explains that SLA stands for Service Level Agreement, which is a commitment between a service provider and a client regarding the level of service that will be delivered. TAT stands for Turn Around Time, which likely refers to the time it takes to complete a task or resolve an issue.",
+        "use_cases": [
+            "Understanding the terminology used in SLAs and operational performance metrics",
+            "Establishing a common language for discussing service level commitments and performance",
+            "Providing a reference for interpreting SLA-related terms in documentation or reports",
+            "Setting the foundation for defining and measuring service level objectives"
+        ],
+        "capabilities": [
+            "Defining SLA terminology",
+            "Explaining operational performance metrics",
+            "Establishing a shared vocabulary",
+            "Providing a reference for key terms"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_change-management_sla---devops-tasks-chunk-2",
+        "name": "SLA - Devops Tasks.txt - Purpose",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Change Management"
+        ],
+        "description": "This section appears to outline the working hours and the role of a Production Engineer (PE) within a specific business unit (BU). The purpose seems to be defining the operational timeframe and the responsible personnel for handling certain tasks or processes related to the BU.",
+        "use_cases": [
+            "Defining the operational hours for a specific team or process",
+            "Identifying the designated personnel responsible for handling tasks within a business unit",
+            "Establishing the scope of responsibilities for a Production Engineer role",
+            "Providing context for the subsequent sections or tasks outlined in the document"
+        ],
+        "capabilities": [
+            "Working hours specification",
+            "Role definition",
+            "Personnel assignment",
+            "Business unit alignment"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_change-management_sla---devops-tasks-chunk-3",
+        "name": "SLA - Devops Tasks.txt - Parameters",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Change Management"
+        ],
+        "description": "This section outlines the parameters or guidelines that govern the Service Level Agreement (SLA) between the Developer teams and the DevOps team. It specifies the expected turnaround times (TATs) for acknowledging requests from the Developer teams and providing an estimated time of resolution (ETA) for those requests. The purpose is to establish clear expectations and timelines for the DevOps team's responsiveness in addressing the Developer teams' needs.",
+        "use_cases": [
+            "Defining the expected response times for acknowledging requests from Developer teams",
+            "Establishing timelines for providing estimated resolution times for requests",
+            "Setting service level expectations for the DevOps team's support to Developer teams"
+        ],
+        "capabilities": [
+            "TATs (Turnaround Times)",
+            "Acknowledgement of requests",
+            "ETA (Estimated Time of Resolution)",
+            "Service Level Agreement (SLA)",
+            "Request handling",
+            "Cross-team collaboration"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_change-management_sla---devops-tasks-chunk-4",
+        "name": "SLA - Devops Tasks.txt - Process",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Change Management"
+        ],
+        "description": "This section outlines the process for raising and managing DevOps requests within the organization. It provides guidelines on how to create Jira tickets for DevOps tasks, the different ticket states and their meanings, and the Service Level Agreement (SLA) for DevOps ticket resolution. The section also mentions the use of a Slack bot for raising DevOps requests and the assignment of requests to specific Production Engineering teams based on the business unit.",
+        "use_cases": [
+            "Raising DevOps requests through Jira tickets",
+            "Tracking the status and progress of DevOps requests",
+            "Assigning DevOps requests to the appropriate Production Engineering team",
+            "Monitoring the SLA for DevOps ticket resolution"
+        ],
+        "capabilities": [
+            "Jira ticket creation for DevOps tasks",
+            "Ticket status updates (Awaiting Info, Acknowledged, In Progress, Done, Close)",
+            "Slack bot integration for raising DevOps requests",
+            "Automatic assignment of requests to Production Engineering teams",
+            "Service Level Agreement (SLA) for DevOps ticket resolution",
+            "Collaboration between requestors and DevOps engineers"
+        ],
+        "references": [
+            "https://razorpay.atlassian.net/jira/software/c/projects/PE/boards/331"
+        ]
+    },
+    {
+        "id": "engineering_devops_processes_change-management_sla---devops-tasks-chunk-5",
+        "name": "SLA - Devops Tasks.txt - DevOps Jira ticket SLA",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Change Management"
+        ],
+        "description": "This section outlines the Service Level Agreements (SLAs) for various categories of DevOps tasks related to Jira tickets. It specifies the expected response times for acknowledging (ACK SLA) and resolving (TAT SLA) different types of tasks, both for production and non-production environments. The SLAs are defined in terms of business hours, which are from 10 AM to 6 PM. The section also mentions that the SLAs exclude high-priority tasks (P0 and P1) and provides a link to additional information for specific subcategories of tasks.",
+        "use_cases": [
+            "Managing SLAs for different types of DevOps tasks",
+            "Tracking response times for acknowledging and resolving Jira tickets",
+            "Differentiating SLAs for production and non-production environments",
+            "Handling exceptions for high-priority tasks"
+        ],
+        "capabilities": [
+            "SLA management",
+            "Task categorization",
+            "Response time tracking",
+            "Environment-specific SLAs",
+            "Priority-based exceptions",
+            "External documentation references"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/h2h-categories"
+        ]
+    }
+]

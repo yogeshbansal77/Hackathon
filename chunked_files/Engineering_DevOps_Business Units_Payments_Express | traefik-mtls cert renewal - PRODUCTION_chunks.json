@@ -1,0 +1,204 @@
+[
+    {
+        "id": "engineering_devops_business-units_payments_express-|-traefik-mtls-cert-renewal---production-chunk-0",
+        "name": "Express | traefik-mtls cert renewal - PRODUCTION.txt - Introduction",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section introduces the process of renewing SSL/TLS certificates for the Express application in a production environment. It mentions that certificates are issued with a one-year validity period, but they can be renewed for longer durations if needed. The section outlines that the steps for generating the certificate will be discussed with the help of the IT team.",
+        "use_cases": [
+            "Renewing SSL/TLS certificates for a production Express application",
+            "Generating certificates with the assistance of the IT team",
+            "Issuing certificates with a one-year validity period",
+            "Extending certificate validity beyond one year if required"
+        ],
+        "capabilities": [
+            "Certificate renewal",
+            "Certificate generation",
+            "Certificate validity management",
+            "Collaboration with IT team",
+            "Production environment support"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_business-units_payments_express-|-traefik-mtls-cert-renewal---production-chunk-1",
+        "name": "Express | traefik-mtls cert renewal - PRODUCTION.txt - Checking Domains",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section explains how to check the list of domains associated with the 'express.razorpay.com' domain using an OpenSSL command. The command connects to the domain over HTTPS (port 443) and retrieves the SSL/TLS certificate. It then extracts and displays the DNS names (domains) listed in the certificate's Subject Alternative Name (SAN) field. This is useful for verifying that all the required domains are included in the certificate, which is necessary for secure communication.",
+        "use_cases": [
+            "Verifying the domains included in an SSL/TLS certificate",
+            "Troubleshooting SSL/TLS certificate issues related to domain names",
+            "Auditing SSL/TLS certificate configurations for compliance or security purposes"
+        ],
+        "capabilities": [
+            "SSL/TLS certificate inspection",
+            "Domain name extraction",
+            "OpenSSL command-line tool usage",
+            "Certificate Subject Alternative Name (SAN) field parsing"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_business-units_payments_express-|-traefik-mtls-cert-renewal---production-chunk-2",
+        "name": "Express | traefik-mtls cert renewal - PRODUCTION.txt - Generating CSR",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section explains the process of generating a Certificate Signing Request (CSR) for obtaining a TLS/SSL certificate from the IT team. The CSR contains information about the domains or hostnames for which the certificate will be issued. The provided code snippet shows a configuration file that specifies the details to be included in the CSR, such as the common name (CN) and subject alternative names (SANs).",
+        "use_cases": [
+            "Obtaining a TLS/SSL certificate for securing web applications or services",
+            "Enabling HTTPS and secure communication for domains or hostnames",
+            "Implementing mutual TLS (mTLS) authentication for enhanced security"
+        ],
+        "capabilities": [
+            "Generating CSR",
+            "Specifying domain names",
+            "Configuring certificate details",
+            "Requesting TLS/SSL certificates",
+            "Enabling secure communication",
+            "Implementing mTLS authentication"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_business-units_payments_express-|-traefik-mtls-cert-renewal---production-chunk-3",
+        "name": "Express | traefik-mtls cert renewal - PRODUCTION.txt - Reviewing CSR",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section outlines the configuration for specifying the Subject Alternative Names (SANs) in a Certificate Signing Request (CSR). SANs are used to associate multiple domain names or IP addresses with a single SSL/TLS certificate. This allows a single certificate to be used for securing multiple hostnames or services, which is particularly useful in scenarios where multiple subdomains or services need to be secured under the same certificate.",
+        "use_cases": [
+            "Securing multiple subdomains or services with a single SSL/TLS certificate",
+            "Enabling HTTPS for various applications or services within an organization",
+            "Simplifying certificate management by consolidating multiple certificates into one"
+        ],
+        "capabilities": [
+            "Subject Alternative Name (SAN) configuration",
+            "Certificate Signing Request (CSR) generation",
+            "Multi-domain SSL/TLS certificate support",
+            "Secure communication for multiple hostnames or services"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_business-units_payments_express-|-traefik-mtls-cert-renewal---production-chunk-4",
+        "name": "Express | traefik-mtls cert renewal - PRODUCTION.txt - Creating CORP Ticket",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section explains the process of generating a Certificate Signing Request (CSR) that needs to be shared with the IT team. A CSR is a data file containing information about the entity requesting a digital certificate, such as the organization name, domain name, and public key. It is a crucial step in obtaining a digital certificate from a Certificate Authority (CA) for secure communication over the internet.",
+        "use_cases": [
+            "Obtaining a digital certificate for secure communication",
+            "Enabling mutual TLS (mTLS) authentication",
+            "Securing web applications and services",
+            "Establishing trust between client and server"
+        ],
+        "capabilities": [
+            "CSR generation",
+            "Public key sharing",
+            "Certificate request",
+            "Secure communication",
+            "mTLS authentication",
+            "Trust establishment"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_business-units_payments_express-|-traefik-mtls-cert-renewal---production-chunk-5",
+        "name": "Express | traefik-mtls cert renewal - PRODUCTION.txt - Verifying Certificate",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section explains the process of generating a Certificate Signing Request (CSR) and a private key for the domain 'express.razorpay.com'. The CSR is a file that contains information about the entity requesting a digital certificate, including the domains or subdomains to be secured. The private key is a sensitive file that should be kept confidential and is used in conjunction with the digital certificate for secure communication. The section also provides a command to review the CSR and verify that it includes all the required domains or subdomains.",
+        "use_cases": [
+            "Obtaining a digital certificate for securing a domain or subdomain",
+            "Enabling secure communication (e.g., HTTPS) for a website or web application",
+            "Verifying the information included in a Certificate Signing Request"
+        ],
+        "capabilities": [
+            "Generating a Certificate Signing Request (CSR)",
+            "Generating a private key",
+            "Reviewing and verifying the contents of a CSR",
+            "Securing domains and subdomains with digital certificates",
+            "Enabling secure communication with HTTPS"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_business-units_payments_express-|-traefik-mtls-cert-renewal---production-chunk-6",
+        "name": "Express | traefik-mtls cert renewal - PRODUCTION.txt - Combining Certificates",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section explains how to combine multiple SSL/TLS certificates into a single certificate file. It shows the output of a command that lists the requested extensions or domains included in a combined certificate. The combined certificate includes multiple domain names like api-mtls.razorpay.com, express.razorpay.com, and others, allowing it to be used for multiple subdomains or services.",
+        "use_cases": [
+            "Combining multiple SSL/TLS certificates into a single file",
+            "Using a single certificate for multiple subdomains or services",
+            "Renewing or managing SSL/TLS certificates for multiple domains",
+            "Configuring SSL/TLS certificates for load balancers or reverse proxies"
+        ],
+        "capabilities": [
+            "Certificate combination",
+            "Multi-domain certificate",
+            "Subject Alternative Name (SAN) extension",
+            "Certificate renewal",
+            "Certificate management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_business-units_payments_express-|-traefik-mtls-cert-renewal---production-chunk-7",
+        "name": "Express | traefik-mtls cert renewal - PRODUCTION.txt - Updating Secrets",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section explains the process of updating SSL/TLS certificates for the Express application in the Razorpay production environment. It involves obtaining new certificates from the IT team, verifying the Subject Alternative Names (SANs) in the certificates, combining the certificates into a single PEM file, updating the secrets in the Credstash table, rotating the Traefik-MTLS pods, and checking the certificate validity. The process aims to ensure secure communication with the Express application by using up-to-date and properly configured SSL/TLS certificates.",
+        "use_cases": [
+            "Renewing SSL/TLS certificates for the Express application in the production environment",
+            "Verifying the Subject Alternative Names (SANs) in the SSL/TLS certificates",
+            "Updating the SSL/TLS certificate secrets in the Credstash table",
+            "Rotating the Traefik-MTLS pods to apply the new SSL/TLS certificates"
+        ],
+        "capabilities": [
+            "SSL/TLS certificate renewal",
+            "Subject Alternative Name (SAN) verification",
+            "Certificate combination into PEM format",
+            "Secret management with Credstash",
+            "Pod rotation for certificate updates",
+            "Certificate validity checking"
+        ],
+        "references": [
+            "https://razorpay.atlassian.net/browse/CORP-3528>",
+            "https://razorpay.atlassian.net/browse/ICR-234>",
+            "https://razorpay.slack.com/archives/C0ZJSSQSV/p1687416082837789>",
+            "https://razorpay.atlassian.net/browse/PE-6635>"
+        ]
+    }
+]

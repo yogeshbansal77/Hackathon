@@ -1,0 +1,53 @@
+[
+    {
+        "id": "engineering_backend_guides_creating-sumo-<>-slack-alert-connections-chunk-0",
+        "name": "Creating Sumo <> Slack alert connections.txt - Note",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Guides"
+        ],
+        "description": "This section provides a note or warning about the practice of creating alerts from logs, suggesting that it is generally not recommended. It then outlines the steps to add a new alert connection, likely between Sumo and Slack, although the specific details are not provided in the given content.",
+        "use_cases": [
+            "Receiving alerts from logs in Slack",
+            "Integrating Sumo with Slack for alert notifications",
+            "Setting up alert connections between monitoring tools and communication channels"
+        ],
+        "capabilities": [
+            "Adding alert connections",
+            "Sending alerts from logs",
+            "Integrating Sumo with Slack",
+            "Configuring alert notifications"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_backend_guides_creating-sumo-<>-slack-alert-connections-chunk-1",
+        "name": "Creating Sumo <> Slack alert connections.txt - Steps to add a new alert connection:",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Guides"
+        ],
+        "description": "This section explains the steps to set up an alert connection between Sumo Logic, a cloud-based log management and analytics platform, and Slack, a popular team communication tool. It guides the user through creating an incoming webhook in Slack, copying the generated webhook URL, and then configuring a new connection in Sumo Logic using that URL. The goal is to enable Sumo Logic to send alert notifications to a specific Slack channel, allowing teams to receive real-time updates and collaborate more effectively.",
+        "use_cases": [
+            "Integrating Sumo Logic alerts with Slack for real-time notifications",
+            "Streamlining communication and collaboration between teams",
+            "Monitoring and responding to critical events or issues",
+            "Centralizing alerts from multiple sources in a single Slack channel"
+        ],
+        "capabilities": [
+            "Creating incoming webhooks in Slack",
+            "Configuring alert connections in Sumo Logic",
+            "Sending alert notifications to specific Slack channels",
+            "Testing the alert connection for proper setup",
+            "Customizing alert connection settings (e.g., naming, channel selection)"
+        ],
+        "references": [
+            "https://api.slack.com/apps/AGRC76YAF/incoming-webhooks",
+            "https://alpha.razorpay.com/_static/file/371773871c38d2c4816a5a49dea07471.png",
+            "https://service.in.sumologic.com/ui/#/alerts/connections",
+            "https://razorpay.slack.com/archives/C01DD7006MV/p1605540517000200"
+        ]
+    }
+]

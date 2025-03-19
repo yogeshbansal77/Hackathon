@@ -1,0 +1,51 @@
+[
+    {
+        "id": "engineering_devops_run-books-and-sops_high-tps-readiness-scripts-chunk-0",
+        "name": "High TPS Readiness Scripts.txt - Rotate all pods in a namespace",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains a command that can be used to restart or rotate all deployments (groups of running containers) in a specific namespace (a logical partition for resources) in a Kubernetes cluster. The command retrieves a list of deployments, extracts their names, and then uses the 'parallel' utility to restart each deployment concurrently. This can be useful for rolling out updates or changes to all applications within a namespace without having to manually restart each deployment individually.",
+        "use_cases": [
+            "Rolling out updates or changes to all applications within a namespace",
+            "Restarting all deployments for troubleshooting or maintenance purposes",
+            "Ensuring consistent state across all deployments in a namespace",
+            "Automating the process of restarting deployments at scale"
+        ],
+        "capabilities": [
+            "Retrieve list of deployments in a namespace",
+            "Extract deployment names",
+            "Restart deployments concurrently",
+            "Modify command to target specific deployments",
+            "Automate deployment restarts at scale"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_high-tps-readiness-scripts-chunk-1",
+        "name": "High TPS Readiness Scripts.txt - Deploy New Image to Deployments",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains a command that can be used to deploy a new Docker image to multiple Kubernetes deployments simultaneously. The command retrieves a list of deployment names, and then uses the 'parallel' utility to execute the 'kubectl set image' command for each deployment, updating the image to a specified new tag. This can be useful when you need to roll out a new version of an application across multiple deployments in an efficient manner.",
+        "use_cases": [
+            "Deploying a new version of an application to multiple Kubernetes deployments",
+            "Rolling out a new Docker image across a set of deployments",
+            "Updating the image tag for a set of deployments in a single command",
+            "Streamlining the process of updating deployments with a new image"
+        ],
+        "capabilities": [
+            "Retrieve list of deployment names",
+            "Parallel execution of commands",
+            "Update image for multiple deployments",
+            "Specify new image tag",
+            "Efficient deployment process",
+            "Kubernetes deployment management"
+        ],
+        "references": []
+    }
+]

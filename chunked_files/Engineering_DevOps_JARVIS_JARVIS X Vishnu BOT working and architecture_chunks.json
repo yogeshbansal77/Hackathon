@@ -1,0 +1,97 @@
+[
+    {
+        "id": "engineering_devops_jarvis_jarvis-x-vishnu-bot-working-and-architecture-chunk-0",
+        "name": "JARVIS X Vishnu BOT working and architecture.txt - Process",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section appears to be explaining the current process or workflow for creating resources, likely related to the JARVIS X Vishnu BOT system. However, there is no actual content provided within the code block, so it's difficult to provide a more detailed description without additional context.",
+        "use_cases": [
+            "Resource creation process documentation",
+            "Understanding the workflow for provisioning resources",
+            "Onboarding or training material for users or administrators"
+        ],
+        "capabilities": [
+            "Resource creation",
+            "Process documentation",
+            "Workflow management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_jarvis_jarvis-x-vishnu-bot-working-and-architecture-chunk-1",
+        "name": "JARVIS X Vishnu BOT working and architecture.txt - Current process for resource creation:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section outlines the current process for creating resources within the Vishnu repository. It involves raising a pull request (PR) with the required resource changes, running an Atlantis plan to validate the changes, raising a Jira ticket for approval from the BU DevOps team, running the Atlantis apply command after approval, and finally merging the PR. This process ensures proper review and approval before making changes to the resources.",
+        "use_cases": [
+            "Creating new resources in the Vishnu repository",
+            "Modifying existing resources in the Vishnu repository",
+            "Ensuring proper review and approval for resource changes",
+            "Maintaining a structured and controlled process for resource management"
+        ],
+        "capabilities": [
+            "Pull Request (PR) management",
+            "Atlantis plan and apply commands",
+            "Jira ticket creation and approval workflow",
+            "Resource creation and modification",
+            "Code review and merge process"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_jarvis_jarvis-x-vishnu-bot-working-and-architecture-chunk-2",
+        "name": "JARVIS X Vishnu BOT working and architecture.txt - Process via JARVIS:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section outlines the process of creating and managing resources using the JARVIS UI. It describes the steps involved, including raising a pull request (PR) with the required inputs, running Atlantis plan and apply commands, creating a JIRA ticket linked to the PR, notifying the DevOps team via Slack, and automatically merging the PR and closing the ticket once approved.",
+        "use_cases": [
+            "Creating and managing resources via JARVIS UI",
+            "Automating the deployment process using Atlantis",
+            "Integrating with JIRA for ticket management",
+            "Notifying the DevOps team through Slack"
+        ],
+        "capabilities": [
+            "Raising pull requests",
+            "Running Atlantis plan and apply commands",
+            "Creating JIRA tickets linked to PRs",
+            "Slack notifications",
+            "Automated PR merging and ticket closing"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_jarvis_jarvis-x-vishnu-bot-working-and-architecture-chunk-3",
+        "name": "JARVIS X Vishnu BOT working and architecture.txt - Architecture:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section provides an architectural overview of the JARVIS X Vishnu BOT system through a visual diagram. The diagram illustrates the various components and their interactions within the system's architecture. It aims to give a high-level understanding of how the different parts of the system work together to achieve its functionality.",
+        "use_cases": [
+            "Understanding the overall system architecture",
+            "Visualizing the components and their interactions",
+            "Gaining insights into the system's design and structure",
+            "Facilitating communication and knowledge sharing among stakeholders"
+        ],
+        "capabilities": [
+            "Architectural diagram",
+            "Component visualization",
+            "Interaction representation",
+            "High-level system overview",
+            "Design and structure illustration"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/187f4c45d587206a5afb932f6ffe2b58.png"
+        ]
+    }
+]

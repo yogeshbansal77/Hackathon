@@ -1,0 +1,90 @@
+[
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_logging_old-sumologic-logs-management-and-retrieval-chunk-0",
+        "name": "Old Sumologic logs Management and Retrieval.txt - Sumologic buckets and age of logs they hold are described below:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Logging"
+        ],
+        "description": "This section outlines the different Sumologic buckets used for storing logs at Razorpay, along with the age range of logs contained in each bucket. It provides a tabular representation of the bucket names and the corresponding time periods for which logs are stored in each bucket. Additionally, it mentions the use of a tool called 'querybook' to query and retrieve older logs, and provides a link to a self-serve documentation for retrieving older logs.",
+        "use_cases": [
+            "Retrieving and analyzing logs from different time periods",
+            "Querying and accessing older logs using the 'querybook' tool",
+            "Understanding the log storage and retention strategy at Razorpay"
+        ],
+        "capabilities": [
+            "Log storage in Sumologic buckets",
+            "Time-based log segregation",
+            "Querybook tool for log querying",
+            "Self-serve documentation for log retrieval",
+            "Tabular representation of bucket details"
+        ],
+        "references": [
+            "https://querybook.de.razorpay.com/",
+            "https://alpha.razorpay.com/repo/retrieve-older-logs"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_logging_old-sumologic-logs-management-and-retrieval-chunk-1",
+        "name": "Old Sumologic logs Management and Retrieval.txt - Logs before 2022-05-11 (3PM - 3.20PM IST):",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Logging"
+        ],
+        "description": "This section explains the management and retrieval process for old Sumologic logs (before 2022-05-11 3PM - 3.20PM IST). These logs are stored in an unpartitioned format in S3 buckets 'rzp-sumologic-logstore' and 'rzp-sumologic-logstore-2020'. Since Querybook cannot query unpartitioned logs, the DevOps team partitions these logs based on index and date while syncing them from the Sumologic bucket to the Querybook bucket 'rzp-1415-prod-sumo-partitioned-logs'. This syncing process is done on-demand by following a documented procedure.",
+        "use_cases": [
+            "Retrieving and querying old Sumologic logs",
+            "Partitioning unpartitioned logs for Querybook compatibility",
+            "On-demand syncing of old logs from Sumologic to Querybook buckets",
+            "Maintaining historical log data for analysis and compliance"
+        ],
+        "capabilities": [
+            "Unpartitioned log storage in S3 buckets",
+            "Partitioning of logs based on index and date",
+            "Syncing of logs from Sumologic to Querybook buckets",
+            "On-demand log syncing process",
+            "Documented procedure for log syncing",
+            "Querybook compatibility for partitioned logs"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/historical-log-sync-for-unpartitioned-to-partitioned-bucket",
+            "https://alpha.razorpay.com/_static/file/d080e5356df7549a74573482bec97aea.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_logging_old-sumologic-logs-management-and-retrieval-chunk-2",
+        "name": "Old Sumologic logs Management and Retrieval.txt - Logs after 2022-05-11 (3PM - 3.20PM IST):",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Logging"
+        ],
+        "description": "This section explains the process of managing and retrieving old Sumologic logs after 2022-05-11 (3PM - 3.20PM IST). The logs from this time period are written to an S3 bucket named 'rzp-1415-prod-sumologic-logstore-2022' in a partitioned format. The Querybook tool is configured to read logs directly from this S3 bucket, eliminating the need for manual syncing. If Querybook is unavailable, there is an alternative 'not recommended' method for log retrieval mentioned in a separate link.",
+        "use_cases": [
+            "Retrieving old Sumologic logs from a specific time period",
+            "Accessing logs directly from an S3 bucket using Querybook",
+            "Alternative method for log retrieval when Querybook is unavailable"
+        ],
+        "capabilities": [
+            "Partitioned log storage in S3 bucket",
+            "Querybook integration for direct log access",
+            "Self-serve log retrieval without DevOps involvement",
+            "Alternative log retrieval method"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/4102f3db8627678c3ab23a7766b6bc30.png",
+            "https://alpha.razorpay.com/repo/downloading-old-logs-from-s3-and-greping-strings"
+        ]
+    }
+]

@@ -1,0 +1,103 @@
+[
+    {
+        "id": "engineering_devops_run-books-and-sops_aws-runbooks_aws-ses-remove-mail-from-suppression-list-chunk-0",
+        "name": "AWS SES Remove Mail from suppression list.txt - Remove Mail from suppression list",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs",
+            "AWS Runbooks"
+        ],
+        "description": "This section explains how to remove an email address from the suppression list in the AWS SES (Simple Email Service) for a specific AWS account. The suppression list is a list of email addresses that are not allowed to receive emails from that account, and removing an address from this list allows emails to be sent to that address again.",
+        "use_cases": [
+            "Allowing emails to be sent to a previously suppressed email address",
+            "Managing the suppression list for an AWS SES account",
+            "Troubleshooting email delivery issues related to suppressed email addresses"
+        ],
+        "capabilities": [
+            "Remove email addresses from suppression list",
+            "Manage suppression list for AWS SES account",
+            "AWS SES service integration",
+            "Account-specific configuration"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_aws-runbooks_aws-ses-remove-mail-from-suppression-list-chunk-1",
+        "name": "AWS SES Remove Mail from suppression list.txt - To get Suppression list:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs",
+            "AWS Runbooks"
+        ],
+        "description": "This section explains how to retrieve the list of email addresses that have been suppressed or blocked from receiving emails through the AWS Simple Email Service (SES). It provides a command-line interface (CLI) command that can be used to fetch the suppression list, which is useful for monitoring and managing the email addresses that are not allowed to receive emails from your application or service.",
+        "use_cases": [
+            "Monitoring suppressed email addresses",
+            "Managing blocked email addresses",
+            "Troubleshooting email delivery issues",
+            "Maintaining email list hygiene"
+        ],
+        "capabilities": [
+            "Retrieve suppression list",
+            "AWS CLI command",
+            "Email suppression management",
+            "Email delivery monitoring"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_aws-runbooks_aws-ses-remove-mail-from-suppression-list-chunk-2",
+        "name": "AWS SES Remove Mail from suppression list.txt - To Search for particular mail-id there in suppressed mails use below aws cli command",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs",
+            "AWS Runbooks"
+        ],
+        "description": "This section explains how to use the AWS Command Line Interface (CLI) to list and retrieve suppressed email addresses from the Amazon Simple Email Service (SES). It provides the specific commands to execute, along with an example command to search for a particular email address that has been suppressed. This can be useful for troubleshooting or managing suppressed email addresses in your SES account.",
+        "use_cases": [
+            "Listing all suppressed email addresses in your SES account",
+            "Retrieving details of a specific suppressed email address",
+            "Troubleshooting or managing suppressed email addresses",
+            "Monitoring or auditing suppressed email addresses"
+        ],
+        "capabilities": [
+            "list-suppressed-destinations command",
+            "get-suppressed-destination command",
+            "AWS CLI integration",
+            "AWS SES suppression list management",
+            "Email address suppression retrieval"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/fb3ecb8a508fc75077643cdfa93817d0.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_aws-runbooks_aws-ses-remove-mail-from-suppression-list-chunk-3",
+        "name": "AWS SES Remove Mail from suppression list.txt - To Remove for particular mail-id there in suppressed mails use below aws cli command",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs",
+            "AWS Runbooks"
+        ],
+        "description": "This section explains how to remove a specific email address from the suppression list in AWS SES (Simple Email Service) using the AWS CLI (Command Line Interface). The suppression list contains email addresses that are temporarily or permanently blocked from receiving emails due to issues like bounces or complaints. By removing an email address from the suppression list, you can resume sending emails to that address.",
+        "use_cases": [
+            "Removing a specific email address from the suppression list in AWS SES",
+            "Resuming email delivery to an email address that was previously suppressed",
+            "Troubleshooting email delivery issues related to suppressed email addresses",
+            "Managing the suppression list in AWS SES"
+        ],
+        "capabilities": [
+            "AWS SES suppression list management",
+            "AWS CLI command for removing suppressed destinations",
+            "Identifying reasons for email suppression",
+            "Checking suppression status of email addresses",
+            "Troubleshooting email delivery issues"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/0ce51467701a89225edf49c6b3ca424a.png"
+        ]
+    }
+]

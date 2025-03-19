@@ -1,0 +1,103 @@
+[
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_self-managed-datastores_cassandra_roles-in-cassandra-chunk-0",
+        "name": "Roles in Cassandra.txt - List All Roles",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "Self Managed Datastores",
+            "Cassandra"
+        ],
+        "description": "This section explains how to list all the roles that have been created in a Cassandra database. It provides a command that can be used to retrieve a list of all the roles defined in the system. This command is useful for administrators or users who need to view and manage the roles assigned to different users or groups within the Cassandra environment.",
+        "use_cases": [
+            "Viewing all roles defined in the Cassandra system",
+            "Managing user access and permissions",
+            "Auditing and monitoring role assignments",
+            "Troubleshooting role-related issues"
+        ],
+        "capabilities": [
+            "List all roles",
+            "Retrieve role information",
+            "Role management",
+            "Access control",
+            "Auditing"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_self-managed-datastores_cassandra_roles-in-cassandra-chunk-1",
+        "name": "Roles in Cassandra.txt - Get privileges",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "Self Managed Datastores",
+            "Cassandra"
+        ],
+        "description": "This section explains how to create a new role in Cassandra with specific privileges. It provides a command to create a role named 'sys_admin' with a password 'IcanDoIt4ll'. The role is granted login access but not superuser privileges, which is recommended for most practical use cases to maintain a secure system.",
+        "use_cases": [
+            "Creating a new role with login access",
+            "Assigning a password to a role",
+            "Granting limited privileges to a role (non-superuser)"
+        ],
+        "capabilities": [
+            "Role creation",
+            "Password assignment",
+            "Login access control",
+            "Privilege management",
+            "Security best practices"
+        ],
+        "references": [
+            "https://docs.datastax.com/en/cql-oss/3.x/cql/cql_reference/cqlCreateRole.html"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_self-managed-datastores_cassandra_roles-in-cassandra-chunk-2",
+        "name": "Roles in Cassandra.txt - Add a role",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "Self Managed Datastores",
+            "Cassandra"
+        ],
+        "description": "This section explains how to grant privileges to roles in Cassandra, a popular distributed database management system. It describes two ways to grant privileges: either directly granting specific permissions like 'select' to a role, or creating a common role with read access and assigning that role to other roles. The example provided shows how to grant the 'select' permission on the 'kong' keyspace to the 'redash' role.",
+        "use_cases": [
+            "Granting specific permissions (e.g., select) to a role",
+            "Creating a common role with read access and assigning it to other roles",
+            "Managing access control and permissions for different roles"
+        ],
+        "capabilities": [
+            "Grant privileges",
+            "Assign roles",
+            "Keyspace access control",
+            "Role-based access control (RBAC)",
+            "Select permission"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_self-managed-datastores_cassandra_roles-in-cassandra-chunk-3",
+        "name": "Roles in Cassandra.txt - Grant Privileges",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "Self Managed Datastores",
+            "Cassandra"
+        ],
+        "description": "This section appears to be empty or missing content. Without any text or information provided, it is difficult to provide a meaningful description or extract any use cases or capabilities.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    }
+]

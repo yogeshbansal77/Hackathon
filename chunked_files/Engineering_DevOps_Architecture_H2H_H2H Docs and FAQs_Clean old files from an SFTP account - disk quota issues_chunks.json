@@ -1,0 +1,109 @@
+[
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_clean-old-files-from-an-sftp-account---disk-quota-issues-chunk-0",
+        "name": "Clean old files from an SFTP account - disk quota issues.txt - Introduction",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section introduces an error message that appears in the logs of a system called 'beam'. The error message is related to disk quota issues, which could potentially occur when there are too many old files occupying disk space on an SFTP (Secure File Transfer Protocol) account. The image provided shows an example of this error message, indicating that the disk quota has been exceeded.",
+        "use_cases": [
+            "Troubleshooting disk quota issues",
+            "Managing disk space on SFTP accounts",
+            "Monitoring and analyzing log files",
+            "Identifying and resolving errors related to file storage"
+        ],
+        "capabilities": [
+            "Error logging",
+            "Disk quota management",
+            "SFTP file storage",
+            "Visual representation of errors"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/2db43ea978ffe3d8244ef87d805a22cc.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_clean-old-files-from-an-sftp-account---disk-quota-issues-chunk-1",
+        "name": "Clean old files from an SFTP account - disk quota issues.txt - Error Examples",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section provides an example of an error that occurs when attempting a manual upload, likely due to disk quota issues. It then suggests logging into the SFTP account, listing all files, and deleting older files to free up space. The example code demonstrates how to delete files with a specific date prefix (202107) from the SFTP account.",
+        "use_cases": [
+            "Resolving disk quota issues on an SFTP account",
+            "Deleting old or unnecessary files from an SFTP account",
+            "Managing file storage and disk space on remote servers"
+        ],
+        "capabilities": [
+            "Error handling",
+            "File listing",
+            "File deletion",
+            "Date-based file filtering",
+            "SFTP account management",
+            "Disk space management"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/f6e15510cac7bf3a97a3ba7ccf2c6e0b.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_clean-old-files-from-an-sftp-account---disk-quota-issues-chunk-2",
+        "name": "Clean old files from an SFTP account - disk quota issues.txt - Deleting Files on SFTP",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains how to delete files from an SFTP (Secure File Transfer Protocol) account using a command-line interface. It provides a specific command to remove files with a certain naming pattern (axis_reversefeed_razorpay_202107*) from the SFTP server. The section also includes a screenshot that shows the expected output after executing the command, indicating the successful deletion of the specified files.",
+        "use_cases": [
+            "Deleting old or unnecessary files from an SFTP account",
+            "Managing disk space and quota on an SFTP server",
+            "Automating file cleanup tasks on remote servers",
+            "Maintaining an organized file structure on SFTP accounts"
+        ],
+        "capabilities": [
+            "SFTP file deletion",
+            "Wildcard pattern matching for file names",
+            "Command-line interface for SFTP operations",
+            "Visual confirmation of file deletion",
+            "Remote file management",
+            "Disk space management"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/342dc08819980fcdccb57084d82ccf08.png \"left-50\""
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_clean-old-files-from-an-sftp-account---disk-quota-issues-chunk-3",
+        "name": "Clean old files from an SFTP account - disk quota issues.txt - Tip",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section provides a tip for users who are trying to free up storage space on an SFTP account by deleting old files. It suggests that users should try deleting files from different dates until they have enough storage space available. However, it also mentions that there is no way to check the remaining storage space from the SFTP client, so users will need to use their best judgment to determine when they have freed up enough space.",
+        "use_cases": [
+            "Freeing up storage space on an SFTP account",
+            "Dealing with disk quota issues",
+            "Managing old files on an SFTP server"
+        ],
+        "capabilities": [
+            "Deleting old files from an SFTP account",
+            "Checking remaining storage space",
+            "Using best judgment to determine when enough space is freed up"
+        ],
+        "references": []
+    }
+]

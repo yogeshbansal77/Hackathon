@@ -1,0 +1,211 @@
+[
+    {
+        "id": "engineering_devops_dev-self-serve_razorpay-ips-(for-whitelisting)-chunk-0",
+        "name": "Razorpay IPs (for whitelisting).txt - README",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section provides guidance on whitelisting IP addresses for different environments (Test/UAT and Production) and use cases (inbound requests for webhooks, outbound requests for callbacks, and inbound requests for file transfers) when integrating with Razorpay's services. It suggests specific IP addresses or IP address ranges to whitelist based on the environment and use case, and also mentions the need to provide certain domains to Razorpay for outbound requests.",
+        "use_cases": [
+            "Whitelisting inbound IP addresses for receiving webhooks",
+            "Whitelisting outbound IP addresses for making callbacks",
+            "Whitelisting inbound IP addresses for file transfers (SFTP/H2H setups)"
+        ],
+        "capabilities": [
+            "IP whitelisting",
+            "Environment-specific IP addresses",
+            "Inbound IP whitelisting",
+            "Outbound IP whitelisting",
+            "Domain whitelisting",
+            "File transfer IP whitelisting"
+        ],
+        "references": [
+            "https://zeta-api-static.stage.razorpay.in/"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_razorpay-ips-(for-whitelisting)-chunk-1",
+        "name": "Razorpay IPs (for whitelisting).txt - Services whitelisting Razorpay Public IPs",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains that certain services, specifically billdesk and NPCI (UPI & RuPay), have whitelisted or allowed access to Razorpay's public IP addresses. Whitelisting IP addresses is a security measure that allows only trusted sources to access a service or system, preventing unauthorized access. By whitelisting Razorpay's IPs, these services have granted Razorpay the permission to communicate with them, likely for payment processing or other financial transactions.",
+        "use_cases": [
+            "Payment processing with billdesk",
+            "UPI and RuPay transactions through NPCI",
+            "Secure communication between Razorpay and whitelisted services"
+        ],
+        "capabilities": [
+            "IP whitelisting",
+            "Secure communication",
+            "Integration with billdesk",
+            "Integration with NPCI",
+            "UPI support",
+            "RuPay support"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_razorpay-ips-(for-whitelisting)-chunk-2",
+        "name": "Razorpay IPs (for whitelisting).txt - Razorpay Public IPs",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section appears to list two items, 'payzapp' and 'tokenex', which could potentially be related to Razorpay's public IP addresses. However, without additional context, it is difficult to determine the exact meaning or purpose of these items.",
+        "use_cases": [
+            "Whitelisting IP addresses for security purposes",
+            "Allowing access to specific services or resources",
+            "Configuring network settings or firewall rules"
+        ],
+        "capabilities": [
+            "IP address listing",
+            "Whitelisting",
+            "Access control"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_razorpay-ips-(for-whitelisting)-chunk-3",
+        "name": "Razorpay IPs (for whitelisting).txt - AWS",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section appears to be a list of items, possibly related to payment gateways or financial institutions. However, the content provided is too brief and lacks context to provide a meaningful explanation.",
+        "use_cases": [
+            "Integration with payment gateways or financial institutions",
+            "Whitelisting or allowing connections from specific sources"
+        ],
+        "capabilities": [
+            "kotak h2h",
+            "icici h2h"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_razorpay-ips-(for-whitelisting)-chunk-4",
+        "name": "Razorpay IPs (for whitelisting).txt - US-East",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section appears to list various services or platforms that are integrated or compatible with Razorpay's payment gateway. It includes online payment collection services offered by banks like Kotak and Yes Bank, cryptocurrency exchanges like Koinex and Zebpay, a logistics service provider (Ecom Express) for KYC verification, and a SMS gateway service (Karix). This information could be useful for businesses or developers looking to integrate Razorpay's payment solutions with these third-party services.",
+        "use_cases": [
+            "Online payment collection for businesses",
+            "Cryptocurrency exchange integration",
+            "KYC verification for logistics services",
+            "SMS gateway integration for notifications"
+        ],
+        "capabilities": [
+            "Payment gateway integration",
+            "Third-party service compatibility",
+            "Cryptocurrency support",
+            "KYC verification",
+            "SMS notifications"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_razorpay-ips-(for-whitelisting)-chunk-5",
+        "name": "Razorpay IPs (for whitelisting).txt - Singapore",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section appears to be listing the public IP addresses used by Razorpay, a payment gateway service, for their servers located in different regions. The section title 'Singapore' suggests that the IP addresses listed below are for Razorpay's servers hosted in the Singapore region. However, the content provided does not actually list any IP addresses for Singapore, but instead mentions 'AWS' and 'US-East', which could be referring to Razorpay's servers hosted on Amazon Web Services (AWS) in the US East region.",
+        "use_cases": [
+            "Whitelisting Razorpay's IP addresses for security purposes",
+            "Allowing incoming traffic from Razorpay's servers",
+            "Configuring firewall rules to permit connections from Razorpay's IP ranges"
+        ],
+        "capabilities": [
+            "Listing public IP addresses",
+            "Categorizing IP addresses by region",
+            "Identifying cloud service provider (AWS)"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_razorpay-ips-(for-whitelisting)-chunk-6",
+        "name": "Razorpay IPs (for whitelisting).txt - Mumbai",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section provides a list of IP addresses and their associated servers or services related to Razorpay's infrastructure in Mumbai. It includes IP addresses for various components such as payment gateways, NAT gateways, load balancers, and proxy instances. This information is likely intended for whitelisting purposes, allowing clients or partners to grant access to specific IP addresses for secure communication with Razorpay's services.",
+        "use_cases": [
+            "Whitelisting IP addresses for secure communication with Razorpay's payment gateways and services",
+            "Configuring network access controls for partners or clients to access Razorpay's infrastructure",
+            "Identifying IP addresses associated with specific Razorpay services or components",
+            "Monitoring and managing network traffic to Razorpay's infrastructure"
+        ],
+        "capabilities": [
+            "Payment Gateway Integration",
+            "Network Address Translation (NAT)",
+            "Load Balancing",
+            "Proxy Services",
+            "Infrastructure Segmentation",
+            "IP Whitelisting"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_razorpay-ips-(for-whitelisting)-chunk-7",
+        "name": "Razorpay IPs (for whitelisting).txt - Office",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section appears to be about providing IP addresses or network ranges associated with Razorpay's office locations. These IP addresses or ranges may need to be whitelisted or allowed access by clients or partners to enable communication with Razorpay's systems from their office networks.",
+        "use_cases": [
+            "Whitelisting IP addresses or ranges for Razorpay's office locations",
+            "Enabling communication between client/partner networks and Razorpay systems",
+            "Securing network access to Razorpay's infrastructure",
+            "Configuring firewall rules or network security policies"
+        ],
+        "capabilities": [
+            "IP address listing",
+            "Network range specification",
+            "Office location identification",
+            "Network access control",
+            "Security configuration guidance"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_razorpay-ips-(for-whitelisting)-chunk-8",
+        "name": "Razorpay IPs (for whitelisting).txt - MPI",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains that the list of Razorpay IP addresses for whitelisting has been moved to a new URL (https://alpha.razorpay.com/repo/razorpay-office-ip-address-list). It also mentions that for the MPI (Merchant Plug-in) service, the domain mpi.razorpay.com points to NAT (Network Address Translation) IP addresses, as required by Visa and MasterCard for sending requests to their Directory Server. The section suggests contacting specific individuals (@nemo or @vivek) for more information about MPI.",
+        "use_cases": [
+            "Whitelisting Razorpay IP addresses for security purposes",
+            "Configuring MPI service to comply with Visa/MasterCard requirements",
+            "Obtaining information about MPI service configuration"
+        ],
+        "capabilities": [
+            "IP address whitelisting",
+            "MPI service configuration",
+            "NAT IP address mapping",
+            "Directory Server communication",
+            "Compliance with payment network requirements"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/razorpay-office-ip-address-list>"
+        ]
+    }
+]

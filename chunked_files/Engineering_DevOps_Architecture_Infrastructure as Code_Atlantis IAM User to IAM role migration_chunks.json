@@ -1,0 +1,28 @@
+[
+    {
+        "id": "engineering_devops_architecture_infrastructure-as-code_atlantis-iam-user-to-iam-role-migration-chunk-0",
+        "name": "Atlantis IAM User to IAM role migration.txt - Main Content",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Infrastructure as Code"
+        ],
+        "description": "This section explains the process of migrating from using AWS IAM Access Keys to using IAM Roles for the Atlantis tool, which is used for managing Terraform workflows. The goal is to ensure that existing Terraform workflows that use Access Keys continue to work while also enabling the use of IAM Roles for new or updated workflows. The section provides details on setting up an IAM Role with a trust policy that allows the Atlantis pod to assume the role, and configuring the AWS credentials file and provider settings to support both Access Keys and IAM Roles.",
+        "use_cases": [
+            "1. Migrating from AWS IAM Access Keys to IAM Roles for Atlantis",
+            "2. Enabling Atlantis to use IAM Roles while supporting existing workflows that use Access Keys",
+            "3. Configuring Atlantis to assume an IAM Role with specific permissions",
+            "4. Setting up a trust policy for an IAM Role to allow the Atlantis pod to assume the role"
+        ],
+        "capabilities": [
+            "IAM Role setup",
+            "Trust policy configuration",
+            "AWS credentials file management",
+            "Terraform backend configuration",
+            "Atlantis pod integration with IAM Roles",
+            "Support for both Access Keys and IAM Roles in Terraform workflows"
+        ],
+        "references": []
+    }
+]

@@ -1,0 +1,153 @@
+[
+    {
+        "id": "engineering_frontend_web-infra-|-acquisition-frontend_image-retrieval-using-cloudfront-and-cloudinary-for-website-chunk-0",
+        "name": "Image retrieval using Cloudfront and Cloudinary for website.txt - Architecture Overview",
+        "breadcrumb": [
+            "Engineering",
+            "Frontend",
+            "Web Infra | Acquisition Frontend"
+        ],
+        "description": "This section outlines the architecture for image retrieval and delivery on a production website using Cloudfront, Cloudinary, and Amazon S3. It explains that images are initially stored in an S3 bucket, which is synced with the razorpay.com website. Cloudinary connects to this S3 bucket and lazily uploads images. Cloudfront, a content delivery network (CDN), caches and serves images fetched from Cloudinary to improve performance. On the local development environment, images are served directly from the /assets directory.",
+        "use_cases": [
+            "Image delivery on production website",
+            "Caching and performance optimization using CDN",
+            "Lazy uploading of images to Cloudinary",
+            "Local development environment image serving"
+        ],
+        "capabilities": [
+            "Cloudfront CDN",
+            "Cloudinary image management",
+            "Amazon S3 storage",
+            "Lazy image uploading",
+            "Local asset serving",
+            "Website and S3 bucket synchronization"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_frontend_web-infra-|-acquisition-frontend_image-retrieval-using-cloudfront-and-cloudinary-for-website-chunk-1",
+        "name": "Image retrieval using Cloudfront and Cloudinary for website.txt - Configuration",
+        "breadcrumb": [
+            "Engineering",
+            "Frontend",
+            "Web Infra | Acquisition Frontend"
+        ],
+        "description": "This section appears to be an introduction or overview, indicating that it will explain the configuration process for setting up three things related to image retrieval using Cloudfront and Cloudinary for a website. However, the specific details of what those three things are have not been provided in the given content.",
+        "use_cases": [
+            "Image retrieval for websites",
+            "Using Cloudfront and Cloudinary for image delivery"
+        ],
+        "capabilities": [
+            "Configuration setup",
+            "Involving three components or steps"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_frontend_web-infra-|-acquisition-frontend_image-retrieval-using-cloudfront-and-cloudinary-for-website-chunk-2",
+        "name": "Image retrieval using Cloudfront and Cloudinary for website.txt - Cloudinary",
+        "breadcrumb": [
+            "Engineering",
+            "Frontend",
+            "Web Infra | Acquisition Frontend"
+        ],
+        "description": "This section explains how to set up Cloudinary, a cloud-based image and video management service, to retrieve images from an Amazon S3 bucket on-demand. It provides step-by-step instructions for creating a Cloudinary account, configuring a 'cloud' (storage space) to fetch images from the S3 bucket, and setting up the necessary mapping between the Cloudinary cloud and the S3 bucket URL.",
+        "use_cases": [
+            "Serving images from an S3 bucket through Cloudinary for a website",
+            "On-demand image retrieval and delivery from S3 to Cloudinary",
+            "Integrating Cloudinary with an existing S3 bucket for image management",
+            "Leveraging Cloudinary's image transformation and optimization capabilities for images stored in S3"
+        ],
+        "capabilities": [
+            "Creating a Cloudinary account and cloud",
+            "Configuring Cloudinary to fetch images from an S3 bucket",
+            "Setting up auto-upload mapping between Cloudinary and S3",
+            "Specifying folder structure and URL prefix for S3 bucket",
+            "Integrating Cloudinary with an existing S3 bucket"
+        ],
+        "references": [
+            "https://cloudinary.com/",
+            "https://cloudinary.com/documentation/fetch_remote_images#auto_upload_remote_resources",
+            "https://github.com/razorpay/razorpay.com"
+        ]
+    },
+    {
+        "id": "engineering_frontend_web-infra-|-acquisition-frontend_image-retrieval-using-cloudfront-and-cloudinary-for-website-chunk-3",
+        "name": "Image retrieval using Cloudfront and Cloudinary for website.txt - S3",
+        "breadcrumb": [
+            "Engineering",
+            "Frontend",
+            "Web Infra | Acquisition Frontend"
+        ],
+        "description": "This section explains the steps required to configure an Amazon S3 bucket to work with Cloudinary, a cloud-based image and video management service. It involves whitelisting the S3 bucket to allow Cloudinary to upload files automatically, creating a specific file in the bucket to identify it as a Cloudinary-enabled bucket, granting Cloudinary read access to the private S3 bucket by adding a bucket policy, and providing the necessary bucket name and Cloudinary account details.",
+        "use_cases": [
+            "Enabling automatic file uploads from Cloudinary to an S3 bucket",
+            "Allowing Cloudinary to access and retrieve files from a private S3 bucket",
+            "Integrating Cloudinary's image and video management capabilities with an S3 bucket for a website or application"
+        ],
+        "capabilities": [
+            "Whitelisting an S3 bucket for Cloudinary",
+            "Creating a Cloudinary identification file in the S3 bucket",
+            "Granting read access to Cloudinary for a private S3 bucket",
+            "Configuring bucket policies for Cloudinary access",
+            "Integrating Cloudinary with Amazon S3"
+        ],
+        "references": [
+            "https://cloudinary.com/documentation/upload_images#private_storage_url",
+            "https://cloudinary.com/documentation/upload_images#how_to_set_read_access_on_a_private_amazon_s3_bucket",
+            "https://cloudinary.com/documentation/upload_images#how_to_set_read_access_on_a_private_amazon_s3_bucket"
+        ]
+    },
+    {
+        "id": "engineering_frontend_web-infra-|-acquisition-frontend_image-retrieval-using-cloudfront-and-cloudinary-for-website-chunk-4",
+        "name": "Image retrieval using Cloudfront and Cloudinary for website.txt - Cloudfront",
+        "breadcrumb": [
+            "Engineering",
+            "Frontend",
+            "Web Infra | Acquisition Frontend"
+        ],
+        "description": "This section explains how to set up Amazon CloudFront, a content delivery network (CDN) service, to distribute images from Cloudinary, a cloud-based image and video management platform. It provides a code snippet for configuring the CloudFront distribution's origin settings to connect to Cloudinary, allowing for efficient and fast delivery of images to end-users across different geographic locations.",
+        "use_cases": [
+            "Serving images from Cloudinary through CloudFront CDN",
+            "Improving website performance by caching and delivering images from edge locations",
+            "Enhancing user experience by reducing image load times",
+            "Offloading image delivery from the origin server"
+        ],
+        "capabilities": [
+            "CloudFront distribution setup",
+            "Origin configuration for Cloudinary",
+            "Content caching and delivery from edge locations",
+            "Improved website performance",
+            "Reduced image load times",
+            "Offloading image delivery"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_frontend_web-infra-|-acquisition-frontend_image-retrieval-using-cloudfront-and-cloudinary-for-website-chunk-5",
+        "name": "Image retrieval using Cloudfront and Cloudinary for website.txt - Testing",
+        "breadcrumb": [
+            "Engineering",
+            "Frontend",
+            "Web Infra | Acquisition Frontend"
+        ],
+        "description": "This section explains how to test the setup for retrieving images from Cloudinary using CloudFront. It provides an example URL that should work once the setup is complete, allowing images to be accessed through a custom domain like images.razorpay.com. Additionally, it mentions a temporary test setup on a personal account with a different CloudFront URL for reference.",
+        "use_cases": [
+            "Retrieving images from Cloudinary using CloudFront",
+            "Accessing images through a custom domain like images.razorpay.com",
+            "Testing the setup with a temporary URL on a personal account"
+        ],
+        "capabilities": [
+            "Image retrieval",
+            "CloudFront distribution",
+            "Cloudinary integration",
+            "Custom domain mapping",
+            "Temporary test setup",
+            "URL-based image access"
+        ],
+        "references": [
+            "https://images.razorpay.com/home/illustration-mobile.jpg`",
+            "https://dws5qk06ye37b.cloudfront.net/home/illustration-mobile.jpg`"
+        ]
+    }
+]

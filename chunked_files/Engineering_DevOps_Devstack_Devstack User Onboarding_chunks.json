@@ -1,0 +1,62 @@
+[
+    {
+        "id": "engineering_devops_devstack_devstack-user-onboarding-chunk-0",
+        "name": "Devstack User Onboarding.txt - 1. Onboarding Script",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Devstack"
+        ],
+        "description": "This section explains the process of running an onboarding script that enables access to a Kubernetes cluster and configures the necessary tools for running a development stack (devstack). The script sets up the local environment by configuring the kubectl command-line tool and installing required tools. It also provides instructions for validating the successful setup by running kubectl commands.",
+        "use_cases": [
+            "Enabling access to a Kubernetes cluster for developers",
+            "Configuring local development environment for working with devstack",
+            "Installing necessary tools for running devstack",
+            "Validating successful setup and access to the cluster"
+        ],
+        "capabilities": [
+            "kubectl access",
+            "local environment configuration",
+            "tool installation",
+            "VPN/WiFi connectivity",
+            "platform support (MacOS)",
+            "validation commands"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/deploying-applications-on-devstack",
+            "https://get-devstack.dev.razorpay.in/'"
+        ]
+    },
+    {
+        "id": "engineering_devops_devstack_devstack-user-onboarding-chunk-1",
+        "name": "Devstack User Onboarding.txt - 2. (Optional) Manual Steps for Getting Access - MacOS",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Devstack"
+        ],
+        "description": "This section provides instructions for manually configuring access to the Devstack cluster on macOS, in case the automated onboarding script fails or if access is needed for other operating systems like Windows or Linux. It covers steps like getting cluster access through a Spinnaker pipeline, configuring the local Kubernetes config file, setting up authentication using Azure OIDC, adding the Devserve cluster, and installing required tools like Helmfile for managing Kubernetes manifests and Devspace for enabling file sync.",
+        "use_cases": [
+            "Manually onboarding to the Devstack cluster on macOS",
+            "Troubleshooting failed automated onboarding script",
+            "Onboarding to the Devstack cluster on Windows or Linux"
+        ],
+        "capabilities": [
+            "Getting cluster access via Spinnaker pipeline",
+            "Configuring local Kubernetes config file",
+            "Setting up Azure OIDC authentication",
+            "Adding Devserve cluster to local config",
+            "Installing Helmfile for managing Kubernetes manifests",
+            "Installing Devspace for enabling file sync"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/devstack-troubleshooting-1",
+            "https://lh7-rt.googleusercontent.com/docsz/AD_4nXdCwOHDa5F6nan94ZVi0whYQED09T_X4lOdK1zA2N8UY7y2yaUO2S8lw6zUE9Mz35YI9KjKRuvFqnvrntKvzBsmRQLx1ShTVkR9s3C0CIx-c-r_PQOi7c5cmBy6EzE8ItLLArAsqDU-SajjUNpO2fQhJQ?key=PErkOiAyv45pWYBlwwGofg",
+            "https://brew.sh/",
+            "https://deploy.razorpay.com/#/applications/devserve-infra/executions>",
+            "https://4E62E957217005978539B1349C3726CA.sk1.ap-south-1.eks.amazonaws.com:443",
+            "https://github.com/loft-sh/devspace/releases/download/v5.18.5/devspace-darwin-amd64",
+            "https://github.com/loft-sh/devspace/releases/download/v5.18.5/devspace-darwin-arm64"
+        ]
+    }
+]

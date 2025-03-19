@@ -1,0 +1,46 @@
+Query: do you have github links ?
+
+Recommendation:
+Based on your request for GitHub-related information, the following services may be useful:
+
+### 1. **DevOps Onboarding Checklist: How to Get GitHub Access**
+   - **Why This Service?**  
+     If you are a new team member or need access to Razorpay's internal GitHub repositories, this guide provides step-by-step instructions on how to:  
+     - Create a GitHub account.  
+     - Raise a Jira ticket to request access.  
+     - Configure SSH keys for secure cloning of repositories.  
+     - Set up your development environment with Razorpay-specific repos.
+   - **How to Use It:**  
+     Follow these steps provided in the checklist:
+     - Create a GitHub account if you don’t already have one.
+     - Open Razorpay's Jira portal and submit a ticket requesting GitHub access.
+     - Generate SSH keys on your local system and update your GitHub account's SSH settings.
+     - Start working on the relevant repositories once access is granted.
+
+---
+
+### 2. **GitHub Actions Best Practices: Why & How to Create Effective GitHub Actions**
+   - **Why This Service?**  
+     If you're working on automating tasks in your repositories, such as CI/CD workflows, this guide highlights the best practices for creating efficient, secure, and reusable GitHub Actions workflows.  
+   - **How to Use It:**  
+     Use this as a reference when you:
+     - Define environment variables and securely store secrets (like access keys).  
+     - Test workflows locally to ensure they function perfectly before pushing to the repository.
+     - Set timeouts or conditions so jobs trigger only when needed.
+
+   - **Example:**  
+     Suppose you need to automate CI testing on pull requests. Use this best practice:
+     ```
+     on: pull_request:
+       branches:
+         - main
+     jobs:
+       test:
+         runs-on: ubuntu-latest
+         steps:
+           - uses: actions/checkout@v3
+           - name: Run Tests
+             run: npm test
+     ```
+
+Would you like me to provide further assistance with GitHub access or actions? Let me know!

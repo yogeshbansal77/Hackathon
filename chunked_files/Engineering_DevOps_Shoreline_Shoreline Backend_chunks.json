@@ -1,0 +1,100 @@
+[
+    {
+        "id": "engineering_devops_shoreline_shoreline-backend-chunk-0",
+        "name": "Shoreline Backend.txt - Shoreline Backend deployed in Dedicated AWS Account",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Shoreline"
+        ],
+        "description": "This section explains the architecture of the Shoreline Backend system, which is integrated with different environments and clusters. The production environment has two separate backends: one for non-CDE (non-cardholder data environment) and another dedicated backend for CDE (cardholder data environment). The CDE backend falls under the scope of PCI DSS (Payment Card Industry Data Security Standard) audits, and a dedicated backend for CDE is currently in the provisioning state.",
+        "use_cases": [
+            "Handling cardholder data in a secure and compliant manner",
+            "Separating environments for different data types (CDE and non-CDE)",
+            "Provisioning dedicated backend for CDE to meet compliance requirements",
+            "Integrating Shoreline Backend with multiple environments and clusters"
+        ],
+        "capabilities": [
+            "Multi-environment integration",
+            "Dedicated backend for CDE",
+            "PCI DSS compliance",
+            "Separation of CDE and non-CDE data",
+            "Provisioning of new backend instances"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_shoreline_shoreline-backend-chunk-1",
+        "name": "Shoreline Backend.txt - Architecture Diagram",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Shoreline"
+        ],
+        "description": "This section explains the architecture diagram of the Shoreline Backend system. It includes an image that depicts the overall architecture, likely showing the various components and their interactions. The text mentions that direct access to the backend Kubernetes (EKS) clusters is not granted to anyone. Instead, there is a dedicated provisioner EC2 instance within the Shoreline account itself, which needs to be started to perform any activities or upgrades on the backend clusters.",
+        "use_cases": [
+            "Accessing and managing the Shoreline Backend EKS clusters",
+            "Performing upgrades or maintenance on the backend clusters",
+            "Provisioning or configuring resources within the backend infrastructure"
+        ],
+        "capabilities": [
+            "Architecture Diagram",
+            "Restricted Access to EKS Clusters",
+            "Dedicated Provisioner EC2 Instance",
+            "Cluster Management",
+            "Cluster Upgrades",
+            "Infrastructure Provisioning"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/040ffa7db8bdeb9414b90bb981ad9419.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_shoreline_shoreline-backend-chunk-2",
+        "name": "Shoreline Backend.txt - Access to shoreline backend eks clusters",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Shoreline"
+        ],
+        "description": "This section explains the directory structure and deployment architecture for the Shoreline Backend application. It mentions that for the stage environment, there is a 'stage-shorelineBackend' directory, and for the production environment, there is a 'prod-shorelineBackend' directory. Additionally, it states that Shoreline agents, which are essential components of the application, are deployed as StatefulSets in the 'shoreline' namespace across all clusters specified in the architecture.",
+        "use_cases": [
+            "1. Deploying Shoreline Backend application in different environments (stage and production)",
+            "2. Managing and monitoring Shoreline agents across multiple clusters",
+            "3. Understanding the directory structure and organization of the Shoreline Backend codebase",
+            "4. Maintaining separate configurations and settings for different environments (stage and production)"
+        ],
+        "capabilities": [
+            "1. Environment-specific directory structure",
+            "2. Deployment of Shoreline agents as StatefulSets",
+            "3. Multi-cluster deployment",
+            "4. Namespace-based isolation",
+            "5. Separation of concerns (stage and production environments)"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_shoreline_shoreline-backend-chunk-3",
+        "name": "Shoreline Backend.txt - Shoreline Agents",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Shoreline"
+        ],
+        "description": "This section explains that the permissions for Shoreline agents are defined in the clusterrole and clusterrolebinding resources. These resources are used to manage access control and authorization for the agents within the Kubernetes cluster environment where the Shoreline Backend is deployed.",
+        "use_cases": [
+            "Managing access control and authorization for Shoreline agents",
+            "Defining permissions for Shoreline agents within a Kubernetes cluster",
+            "Securing and controlling the actions that Shoreline agents can perform"
+        ],
+        "capabilities": [
+            "clusterrole",
+            "clusterrolebinding",
+            "permissions management",
+            "access control",
+            "authorization",
+            "kubernetes integration"
+        ],
+        "references": []
+    }
+]

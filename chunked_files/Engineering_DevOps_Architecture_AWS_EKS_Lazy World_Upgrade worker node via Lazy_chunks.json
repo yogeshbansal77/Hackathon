@@ -1,0 +1,146 @@
+[
+    {
+        "id": "engineering_devops_architecture_aws_eks_lazy-world_upgrade-worker-node-via-lazy-chunk-0",
+        "name": "Upgrade worker node via Lazy.txt - Introduction",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "EKS",
+            "Lazy World"
+        ],
+        "description": "This section introduces the process of upgrading worker nodes in an Amazon Elastic Kubernetes Service (EKS) cluster using a custom container called 'Lazy'. It explains that DevOps teams can create their own Lazy container to upgrade the Auto Scaling Group (ASG) nodes whenever a new Amazon Machine Image (AMI) is released. The container logs will include the name of the user who created it, providing accountability.",
+        "use_cases": [
+            "Upgrading worker nodes in an EKS cluster",
+            "Automating the process of upgrading ASG nodes when a new AMI is released",
+            "Providing accountability by logging the user who created the Lazy container"
+        ],
+        "capabilities": [
+            "Custom container creation (Lazy)",
+            "Worker node upgrade",
+            "ASG node upgrade",
+            "AMI rollout",
+            "User logging",
+            "Container logging"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/lazy-startup>"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_aws_eks_lazy-world_upgrade-worker-node-via-lazy-chunk-1",
+        "name": "Upgrade worker node via Lazy.txt - Enter the container",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "EKS",
+            "Lazy World"
+        ],
+        "description": "This section explains how to access the container running on the Elastic Kubernetes Service (EKS) cluster, which needs to be upgraded. It provides the command to execute a bash shell inside the container, allowing the user to interact with the container's file system and run commands within it. Once inside the container, the user can navigate to the '/titus/kube-base' directory, where a script called 'lazy.sh' is present, which is likely used for the upgrade process.",
+        "use_cases": [
+            "Upgrading worker nodes in an EKS cluster",
+            "Accessing and interacting with containers running on EKS",
+            "Running scripts or commands within a specific container environment"
+        ],
+        "capabilities": [
+            "Docker container access",
+            "Bash shell execution",
+            "Container file system navigation",
+            "Script execution within containers"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_aws_eks_lazy-world_upgrade-worker-node-via-lazy-chunk-2",
+        "name": "Upgrade worker node via Lazy.txt - Perform Upgrade",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "EKS",
+            "Lazy World"
+        ],
+        "description": "This section explains how to use a script called 'lazy' to upgrade or update worker nodes in an Amazon Elastic Kubernetes Service (EKS) cluster. The script accepts two parameters: '-a' or '--action' to specify the action (upgrade_nodes or update_nodes), and '-t' or '--target' to specify the Auto Scaling Groups (ASGs) of the worker nodes to be upgraded or updated. The section provides examples of the command syntax and usage.",
+        "use_cases": [
+            "Upgrading worker nodes in an EKS cluster",
+            "Updating worker nodes in an EKS cluster",
+            "Managing worker nodes across multiple Auto Scaling Groups"
+        ],
+        "capabilities": [
+            "Upgrade worker nodes",
+            "Update worker nodes",
+            "Specify target Auto Scaling Groups",
+            "Command-line interface",
+            "Parameterized input"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/c76d5ad72541ed0df3678889deeddd8a.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_aws_eks_lazy-world_upgrade-worker-node-via-lazy-chunk-3",
+        "name": "Upgrade worker node via Lazy.txt - Seeking Approval",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "EKS",
+            "Lazy World"
+        ],
+        "description": "This section explains the process of seeking approval from the user during the upgrade of worker nodes in a Kubernetes cluster using the 'lazy' script. The script prompts the user for confirmation before initiating the upgrade process and provides two prompts at different stages for the user to proceed further. The user is expected to monitor the logs during the upgrade process. The section also mentions an 'input.json' file where the user can input certain keys or configurations for the upgrade process.",
+        "use_cases": [
+            "Upgrading worker nodes in a Kubernetes cluster",
+            "Seeking user approval during the upgrade process",
+            "Monitoring logs during the upgrade process",
+            "Configuring the upgrade process using an 'input.json' file"
+        ],
+        "capabilities": [
+            "Upgrade worker nodes",
+            "Seek user approval",
+            "Monitor logs",
+            "Configure upgrade process",
+            "Prompt for confirmation",
+            "Input configuration via JSON file"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/bcff2819113e697feb70f041c567e395.png",
+            "https://alpha.razorpay.com/_static/file/d83fa172475b40e03e42f9970a15d383.png",
+            "https://alpha.razorpay.com/_static/file/42f1bd011fcabcad0afb6a3948361c08.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_aws_eks_lazy-world_upgrade-worker-node-via-lazy-chunk-4",
+        "name": "Upgrade worker node via Lazy.txt - Post Job",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS",
+            "EKS",
+            "Lazy World"
+        ],
+        "description": "This section explains the process of running a script in the background that requires user confirmation at different stages. The script logs its progress, and upon completion, the logs are pushed to an S3 bucket for future reference. After 15 minutes of job completion, a cleanup job is triggered to remove the log file from the Docker container. The user needs to provide input options like 'yes' or 'no' by viewing the logs, and if no input is provided, the script enters a wait mode and does not proceed further.",
+        "use_cases": [
+            "Upgrading worker nodes in a cluster",
+            "Running scripts that require user confirmation at different stages",
+            "Logging script execution for future reference and backtracking",
+            "Automating log cleanup after a certain period"
+        ],
+        "capabilities": [
+            "Background script execution",
+            "User input confirmation",
+            "Wait mode for user input",
+            "Log generation",
+            "Log storage in S3 bucket",
+            "Automated log cleanup"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/cf1411623e2a2eee9a430cda269528ee.png \"left-50\""
+        ]
+    }
+]

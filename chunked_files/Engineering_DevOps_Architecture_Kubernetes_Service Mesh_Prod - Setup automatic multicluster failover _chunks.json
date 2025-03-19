@@ -1,0 +1,71 @@
+[
+    {
+        "id": "engineering_devops_architecture_kubernetes_service-mesh_prod---setup-automatic-multicluster-failover--chunk-0",
+        "name": "Prod - Setup automatic multicluster failover .txt - Exporting the services",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes",
+            "Service Mesh"
+        ],
+        "description": "This section explains the process of exporting services across multiple Kubernetes clusters to enable automatic failover of application traffic. It involves adding a label to the service in one cluster, which automatically creates a new service in the other cluster with a name derived from the original service and the cluster name. This new service routes traffic from the first cluster to the second cluster. The process is repeated in the second cluster to enable bi-directional failover. The section also mentions the need to export canary or baseline services if the application uses them.",
+        "use_cases": [
+            "Enabling automatic failover of application traffic between Kubernetes clusters",
+            "Routing traffic from one cluster to another in case of application issues or downtime",
+            "Providing high availability and disaster recovery for mission-critical applications"
+        ],
+        "capabilities": [
+            "Exporting services across clusters",
+            "Automatic creation of cross-cluster services",
+            "Naming convention for cross-cluster services",
+            "Support for canary/baseline deployments",
+            "Traffic splitting and failover using TrafficSplit SMI"
+        ],
+        "references": [
+            "https://docs.google.com/document/d/1PMLoinV99uGTYAN1ude2KbfxuIi5jy3McnnXENlzKNY/edit#heading=h.cshyx5e9e6kp",
+            "https://github.com/servicemeshinterface/smi-spec/blob/main/apis/traffic-split/v1alpha3/traffic-split.md"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_service-mesh_prod---setup-automatic-multicluster-failover--chunk-1",
+        "name": "Prod - Setup automatic multicluster failover .txt - Traffic Splitting",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes",
+            "Service Mesh"
+        ],
+        "description": "This section explains how to set up automatic failover and traffic splitting between two Kubernetes clusters (prod-green and prod-white) using Linkerd's TrafficSplit feature. It provides YAML configurations for creating TrafficSplit objects in both clusters, which define the primary service and backup services for routing traffic. When the primary service fails, Linkerd automatically updates the TrafficSplit to route traffic to the backup service in the other cluster, ensuring application availability without manual intervention.",
+        "use_cases": [
+            "Enabling automatic failover between multiple Kubernetes clusters",
+            "Implementing traffic splitting and load balancing across clusters",
+            "Ensuring high availability and resilience for mission-critical applications",
+            "Facilitating seamless failover without requiring changes to DNS or application code"
+        ],
+        "capabilities": [
+            "TrafficSplit configuration",
+            "Primary service designation",
+            "Backup service specification",
+            "Weight-based traffic routing",
+            "Automatic failover detection",
+            "Dynamic traffic redirection"
+        ],
+        "references": [
+            "https://github.com/razorpay/kube-manifests",
+            "https://alpha.razorpay.com/repo/prod-setup-automatic-multicluster-failover#cluster-mapping",
+            "https://alpha.razorpay.com/_static/file/a89729efa950e59b3a7bfa49c5e4ac62.png",
+            "https://github.com/razorpay/kube-manifests",
+            "https://jarvis.razorpay.com/jarvisKube",
+            "https://github.com/razorpay/kube-manifests/pull/11854/files>",
+            "https://deploy.razorpay.com/#/applications/podinfo-infra/executions?pipeline=podinfo-fallback>",
+            "https://vajra.razorpay.com/d/linkerd-health/linkerd-health?orgId=1>",
+            "https://vajra.razorpay.com/d/linkerd-multicluster/linkerd-multicluster?orgId=1&refresh=1m>",
+            "https://vajra.razorpay.com/d/linkerd-deployment-1/linkerd-app-deployment-latency-and-rate?orgId=1>",
+            "https://grafana.np.razorpay.in/d/linkerd-deployment/linkerd-deployment?orgId=1&refresh=1m>",
+            "https://grafana.np.razorpay.in/d/linkerd-multicluster/linkerd-multicluster?orgId=1>",
+            "https://grafana.np.razorpay.in/d/linkerd-health/linkerd-health?orgId=1>"
+        ]
+    }
+]

@@ -1,0 +1,488 @@
+[
+    {
+        "id": "engineering_devops_zenduty_team-movement-chunk-0",
+        "name": "Team movement.txt - Backend team:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Zenduty"
+        ],
+        "description": "This section appears to outline various backend services or components related to team movement within an organization. It lists several API-related services, such as those for risk assessment, growth tracking, care management, and dashboards. Additionally, it mentions services for incident response, disputes handling, and on-call support for a product or service called 'MX'. The section seems to provide an overview of the backend infrastructure supporting various operational aspects of the team's activities.",
+        "use_cases": [
+            "Risk assessment and management",
+            "Growth tracking and analysis",
+            "Care and support services",
+            "Operational dashboards and monitoring"
+        ],
+        "capabilities": [
+            "API services for risk, growth, care, and dashboards",
+            "Incident response and on-call support",
+            "Disputes handling",
+            "Backend services for dashboards and frontends"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_zenduty_team-movement-chunk-1",
+        "name": "Team movement.txt - DevOps :",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Zenduty"
+        ],
+        "description": "This section appears to be listing various tools and services related to DevOps practices, such as cloud infrastructure management (AWS), API development and monitoring, and continuous deployment pipelines. It seems to be a collection of keywords or topics relevant to DevOps operations within an organization.",
+        "use_cases": [
+            "API development and management",
+            "Cloud infrastructure provisioning and management (AWS)",
+            "Monitoring and alerting (Alertmanager)",
+            "Continuous deployment pipelines (cd-api-all-service)"
+        ],
+        "capabilities": [
+            "AWS cloud services",
+            "API development and management",
+            "Alerting and monitoring (Alertmanager)",
+            "Continuous deployment (cd-api-all-service)"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_zenduty_team-movement-chunk-2",
+        "name": "Team movement.txt - bvs -became identity and below services are in it :",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Zenduty"
+        ],
+        "description": "This section appears to list various cloud services and tools used by the team for infrastructure management and monitoring. It includes services like Cloudflare Tunnel for secure access to resources, Kubernetes for container orchestration, Redis Labs for in-memory data management, and StatusCake for website monitoring and uptime tracking.",
+        "use_cases": [
+            "Secure access to internal resources",
+            "Container orchestration and management",
+            "In-memory data caching and storage",
+            "Website monitoring and uptime tracking"
+        ],
+        "capabilities": [
+            "Secure tunneling",
+            "Kubernetes cluster management",
+            "Redis database management",
+            "Website monitoring",
+            "Uptime tracking"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_zenduty_team-movement-chunk-3",
+        "name": "Team movement.txt - capital : capital-api became capital",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Zenduty"
+        ],
+        "description": "This section explains that the 'bvs' service, which previously had the name 'capital-api', now encompasses several other services such as OCR (Optical Character Recognition), platform-onboarding, identity-service, and accounts-service. It suggests that these services have been consolidated or integrated under the 'bvs' umbrella.",
+        "use_cases": [
+            "Identity management and authentication services",
+            "Account management services",
+            "Onboarding services for new platforms or users",
+            "Optical character recognition (OCR) capabilities"
+        ],
+        "capabilities": [
+            "Identity service",
+            "Accounts service",
+            "Platform onboarding",
+            "OCR (Optical Character Recognition)",
+            "Service consolidation",
+            "Service integration"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_zenduty_team-movement-chunk-4",
+        "name": "Team movement.txt - data engineering :",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Zenduty"
+        ],
+        "description": "This section appears to be listing various components or services related to data engineering and financial data processing. It categorizes these components under two main headings: 'capital' and 'data engineering'. The 'capital' heading lists several services or APIs with the prefix 'Capital-', suggesting they are related to capital management or financial operations. The 'data engineering' heading does not provide any further details, but it implies that the components listed under it are related to data engineering tasks or processes.",
+        "use_cases": [
+            "Capital management",
+            "Financial data processing",
+            "Data engineering operations"
+        ],
+        "capabilities": [
+            "Capital-Api",
+            "Capital-Cards",
+            "Capital-Collections",
+            "Capital-Loc",
+            "Capital-Los",
+            "Capital-Onboarding",
+            "Capital-Scorecard",
+            "Financial-Data-Service"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_zenduty_team-movement-chunk-5",
+        "name": "Team movement.txt - all-recurring:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Zenduty"
+        ],
+        "description": "This section appears to list a set of recurring terms or concepts related to data processing and workflow management. The terms 'airflow', 'datasink', and 'datum' suggest that this section covers topics related to data pipelines, data ingestion, and data storage or repositories.",
+        "use_cases": [
+            "Data pipeline management",
+            "Data ingestion and processing",
+            "Data storage and retrieval",
+            "Workflow automation"
+        ],
+        "capabilities": [
+            "Airflow (likely referring to Apache Airflow, a workflow management platform)",
+            "Data sinks (destinations for storing or persisting data)",
+            "Data handling (processing and managing data entities or 'datums')"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_zenduty_team-movement-chunk-6",
+        "name": "Team movement.txt - fulcrum:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Zenduty"
+        ],
+        "description": "This section appears to list a set of software components or projects related to data processing and analysis. It mentions Kafka Connect, which is a tool for integrating external systems with Apache Kafka, a distributed streaming platform. Pinot is a distributed analytics data store designed for low-latency queries on large datasets. Querybook is likely a tool for managing and executing SQL queries, possibly against data stored in Pinot or other data sources.",
+        "use_cases": [
+            "Data ingestion and integration",
+            "Real-time analytics on large datasets",
+            "SQL query management and execution"
+        ],
+        "capabilities": [
+            "Kafka integration",
+            "Distributed analytics data store",
+            "Low-latency queries",
+            "SQL query management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_zenduty_team-movement-chunk-7",
+        "name": "Team movement.txt - security:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Zenduty"
+        ],
+        "description": "This section appears to outline a set of components or services related to security and data processing. It lists four items: trino, entity-processor, events-stream, and harvester. These could be different modules, services, or applications that handle tasks such as data ingestion, event processing, entity extraction, and potentially querying or analyzing data.",
+        "use_cases": [
+            "Data ingestion and processing",
+            "Event stream management",
+            "Entity extraction and analysis",
+            "Secure data handling and access"
+        ],
+        "capabilities": [
+            "Data ingestion",
+            "Event stream processing",
+            "Entity extraction",
+            "Data harvesting",
+            "Secure data handling",
+            "Data querying and analysis"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_zenduty_team-movement-chunk-8",
+        "name": "Team movement.txt - Observability:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Zenduty"
+        ],
+        "description": "This section appears to be discussing two tools or components related to observability in a team movement context. However, the content provided is very minimal and lacks context, making it difficult to infer a clear explanation. It seems to be a list of two items, 'lumberjack' and 'maxwell', which could potentially be names of observability tools or services.",
+        "use_cases": [
+            "Monitoring team movements",
+            "Tracking team activities",
+            "Analyzing team behavior patterns",
+            "Ensuring team coordination and collaboration"
+        ],
+        "capabilities": [
+            "Logging",
+            "Data streaming",
+            "Data processing",
+            "Observability",
+            "Monitoring",
+            "Analytics"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_zenduty_team-movement-chunk-9",
+        "name": "Team movement.txt - Madatehq:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Zenduty"
+        ],
+        "description": "This section appears to list various data-related services or components that are part of a centralized system or platform. It suggests the existence of a central dashboard, a schema registry for managing data schemas, a data hub for organizing and accessing data, and data streams for real-time data processing or integration.",
+        "use_cases": [
+            "Centralized data management",
+            "Data governance and schema management",
+            "Data discovery and access",
+            "Real-time data processing and integration"
+        ],
+        "capabilities": [
+            "Central dashboard",
+            "Schema registry",
+            "Data hub",
+            "Data streams"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_zenduty_team-movement-chunk-10",
+        "name": "Team movement.txt - payroll:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Zenduty"
+        ],
+        "description": "This section appears to be empty or missing content related to payroll. Without any information provided, it is difficult to determine what this section aims to explain or describe.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_zenduty_team-movement-chunk-11",
+        "name": "Team movement.txt - push-payments-apps:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Zenduty"
+        ],
+        "description": "This section appears to be related to recurring payment applications or services. It suggests that there is a specific application or feature called 'recurring-payments' that handles recurring or subscription-based payments for users or customers.",
+        "use_cases": [
+            "Subscription-based services",
+            "Recurring billing for customers",
+            "Automated payment processing",
+            "Recurring payment management"
+        ],
+        "capabilities": [
+            "recurring-payments",
+            "automated-billing",
+            "subscription-management",
+            "payment-scheduling",
+            "payment-processing",
+            "recurring-payment-tracking"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_zenduty_team-movement-chunk-12",
+        "name": "Team movement.txt - platform-growth:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Zenduty"
+        ],
+        "description": "This section appears to be related to services or components involved in facilitating digital payments and mandates. The 'upi-autopay' likely refers to a service or feature that enables automatic payments through the Unified Payments Interface (UPI), a popular digital payment system in India. The 'emandate-service' could be a service that handles electronic mandates or authorizations for recurring payments or subscriptions.",
+        "use_cases": [
+            "Enabling automatic recurring payments",
+            "Facilitating digital payment collection",
+            "Managing electronic mandates or authorizations",
+            "Integrating with UPI payment system"
+        ],
+        "capabilities": [
+            "upi-autopay",
+            "emandate-service",
+            "automatic payment processing",
+            "digital payment collection",
+            "electronic mandate management",
+            "upi integration"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_zenduty_team-movement-chunk-13",
+        "name": "Team movement.txt - database:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Zenduty"
+        ],
+        "description": "This section appears to be documenting a change or update related to a system or component called 'fulcrum'. The update suggests that 'fulcrum' has been renamed or rebranded to 'payments-card-authentication'. This could be a change in terminology, a renaming of a service or module, or a rebranding effort within the organization.",
+        "use_cases": [
+            "Tracking changes or updates to system components",
+            "Documenting rebranding or renaming efforts",
+            "Maintaining a record of terminology changes"
+        ],
+        "capabilities": [
+            "Tracking system component changes",
+            "Documenting rebranding efforts",
+            "Maintaining terminology updates"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_zenduty_team-movement-chunk-14",
+        "name": "Team movement.txt - Fts:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Zenduty"
+        ],
+        "description": "This section appears to be referring to a software component or service called 'emv-3ds-server'. Without additional context, it's difficult to provide a detailed description. However, based on the name, it seems to be related to EMV (Europay, Mastercard, and Visa) 3D Secure, which is a protocol used for secure online payment transactions. This server likely plays a role in facilitating or processing such transactions.",
+        "use_cases": [
+            "Secure online payment processing",
+            "EMV 3D Secure protocol implementation",
+            "Payment gateway integration",
+            "E-commerce transaction security"
+        ],
+        "capabilities": [
+            "emv-3ds-server",
+            "secure online payments",
+            "emv 3d secure protocol",
+            "payment processing",
+            "transaction security",
+            "e-commerce integration"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_zenduty_team-movement-chunk-15",
+        "name": "Team movement.txt - scrooge-settlements:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Zenduty"
+        ],
+        "description": "This section appears to contain a single word or code snippet 'otpelf2', which does not provide enough context to determine its meaning or purpose. Without additional information, it is difficult to provide a meaningful description or infer any use cases or capabilities.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_zenduty_team-movement-chunk-16",
+        "name": "Team movement.txt - payments-core:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Zenduty"
+        ],
+        "description": "This section appears to be related to security measures or protocols for a specific component or service called 'payments-core'. It mentions a security-related entity called 'Hackerone-Oncall-Ep', which could be a security team, incident response team, or a security monitoring service.",
+        "use_cases": [
+            "Handling security incidents or vulnerabilities related to the 'payments-core' component",
+            "Coordinating with a security team or service for incident response",
+            "Monitoring and addressing security threats or issues"
+        ],
+        "capabilities": [
+            "Security incident response",
+            "Security monitoring",
+            "Vulnerability management",
+            "Collaboration with security teams or services"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_zenduty_team-movement-chunk-17",
+        "name": "Team movement.txt - Magic-cx:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Zenduty"
+        ],
+        "description": "This section appears to be listing two components or modules related to security within a larger system or application. The first component is called 'Security-App', which likely refers to a security application or software responsible for managing security-related tasks. The second component is 'Security-Monitoring', which suggests a module or functionality dedicated to monitoring security events, logs, or activities within the system.",
+        "use_cases": [
+            "Implementing security measures within an application or system",
+            "Monitoring security events and activities",
+            "Logging and analyzing security-related data",
+            "Providing security oversight and management"
+        ],
+        "capabilities": [
+            "Security application",
+            "Security monitoring",
+            "Event logging",
+            "Activity tracking",
+            "Security management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_zenduty_team-movement-chunk-18",
+        "name": "Team movement.txt - pg-common-Platform:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Zenduty"
+        ],
+        "description": "This section appears to be related to security and observability aspects of a platform. Security-Network is likely a category or subsection focused on network security measures. Observability refers to the ability to monitor and gain insights into the system's behavior, performance, and potential issues. However, the provided content is minimal and lacks specific details.",
+        "use_cases": [
+            "Network security management",
+            "System monitoring and troubleshooting",
+            "Performance analysis and optimization",
+            "Compliance and auditing"
+        ],
+        "capabilities": [
+            "Network security controls",
+            "Monitoring tools",
+            "Logging and tracing",
+            "Metrics and dashboards",
+            "Alerting and notifications",
+            "Forensics and incident response"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_zenduty_team-movement-chunk-19",
+        "name": "Team movement.txt - stork:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Zenduty"
+        ],
+        "description": "This section appears to be listing two software components or technologies, 'hypertrace' and 'pinot'. However, without additional context, it is difficult to provide a detailed description of what this section explains. It seems to be a simple list of items related to team movement, but the purpose or functionality of these items is not clear.",
+        "use_cases": [
+            "Tracking team movement",
+            "Monitoring team activities",
+            "Analyzing team data"
+        ],
+        "capabilities": [
+            "Hypertrace",
+            "Pinot"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_zenduty_team-movement-chunk-20",
+        "name": "Team movement.txt - Payments-Card:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Zenduty"
+        ],
+        "description": "This section appears to be a list of various applications, services, and components related to payment processing, financial transactions, and associated systems. It categorizes different components under headings like 'payroll', 'push-payments-apps', 'platform-growth', 'database', and others. The section seems to provide an overview of the different modules or subsystems involved in handling payments, settlements, customer management, and related functionalities.",
+        "use_cases": [
+            "Payment processing and management",
+            "Payroll and employee compensation",
+            "Push payment applications and services",
+            "Platform growth and expansion"
+        ],
+        "capabilities": [
+            "Mandate handling",
+            "Customer management",
+            "Issuer integration",
+            "Payroll processing",
+            "QR code payments",
+            "Smart collection",
+            "Platform growth initiatives",
+            "Database management (MySQL, PostgreSQL)",
+            "Holiday service scheduling",
+            "Settlement and refund processing",
+            "Payment timeout handling",
+            "Shopify integration",
+            "Common platform services (Mozart, Beam, Express, UFH, DCS)",
+            "Reminders and notifications",
+            "Payment card vault",
+            "Fulcrum (possibly a payment processing component)"
+        ],
+        "references": []
+    }
+]

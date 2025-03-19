@@ -1,0 +1,77 @@
+[
+    {
+        "id": "engineering_devops_imagelens_for-managers---imagelens-alerts-and-todos-chunk-0",
+        "name": "FOR Managers - Imagelens alerts and Todos.txt - What are the slack alerts on #imagelens-alerts channel?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Imagelens"
+        ],
+        "description": "This section explains the purpose of the Slack alerts on the #imagelens-alerts channel. It clarifies that these alerts list out images that do not have a classification or a Point of Contact (PoC) assigned to them. If an image lacks a PoC, JIRA tickets will be created but not assigned to anyone. However, if an image lacks classification, no JIRA tickets will be generated. The section also mentions that ticket creation occurs in the CAG board.",
+        "use_cases": [
+            "Identifying unclassified images",
+            "Identifying images without a Point of Contact",
+            "Tracking JIRA ticket creation for unassigned images",
+            "Managing image classification and assignment tasks"
+        ],
+        "capabilities": [
+            "Slack alerts for unclassified/unassigned images",
+            "JIRA ticket creation for images without PoC",
+            "No ticket creation for unclassified images",
+            "Ticket management in CAG board"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_imagelens_for-managers---imagelens-alerts-and-todos-chunk-1",
+        "name": "FOR Managers - Imagelens alerts and Todos.txt - Ticket creation in CAG board.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Imagelens"
+        ],
+        "description": "This section explains the criteria and process for Imagelens to automatically create tickets in the CAG board. It outlines three specific conditions that trigger ticket creation: a significant version difference between the latest and current image, the presence of critical vulnerabilities, or the existence of end-of-life components. Tickets are automatically assigned to a designated point of contact (PoC) stored in the Imagelens database, but if no PoC is available, the ticket is created without assignment. Additionally, Imagelens sends weekly alerts on Slack for images without a PoC or classification, emphasizing the importance of providing this information for proper ticket management.",
+        "use_cases": [
+            "Automatic ticket creation for outdated or vulnerable images",
+            "Tracking and addressing end-of-life components",
+            "Assigning tickets to designated PoCs",
+            "Alerting for unclassified or unassigned images"
+        ],
+        "capabilities": [
+            "Ticket creation based on version difference",
+            "Ticket creation for critical vulnerabilities",
+            "Ticket creation for end-of-life components",
+            "Automatic ticket assignment to PoCs",
+            "Weekly alerts for unclassified/unassigned images",
+            "PoC and classification data management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_imagelens_for-managers---imagelens-alerts-and-todos-chunk-2",
+        "name": "FOR Managers - Imagelens alerts and Todos.txt - Todos -",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Imagelens"
+        ],
+        "description": "This section explains the process of reviewing and classifying images flagged by the Imagelens tool on the Jarvis platform. It guides managers on how to access the Imagelens interface, edit the classification of flagged images, and assign a point of contact (PoC) from the DevOps or security team. If an image is deemed safe or the risks are acceptable, it can be whitelisted to prevent unnecessary JIRA tickets from being created.",
+        "use_cases": [
+            "Reviewing and classifying images flagged by Imagelens",
+            "Whitelisting safe or acceptable images to avoid JIRA tickets",
+            "Assigning a PoC from DevOps or security team for further investigation"
+        ],
+        "capabilities": [
+            "Accessing Imagelens interface",
+            "Editing image classification",
+            "Whitelisting images",
+            "Assigning PoC",
+            "Preventing unnecessary JIRA tickets"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/ff67251d9379dc98a0727111b6db0e7d.png",
+            "https://alpha.razorpay.com/_static/file/3d14138f07d014327df10432cbca3c67.png",
+            "https://jarvis.razorpay.com/imagelens>and"
+        ]
+    }
+]

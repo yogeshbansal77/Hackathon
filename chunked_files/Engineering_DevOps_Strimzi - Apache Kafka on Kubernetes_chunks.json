@@ -1,0 +1,104 @@
+[
+    {
+        "id": "engineering_devops_strimzi---apache-kafka-on-kubernetes-chunk-0",
+        "name": "Strimzi - Apache Kafka on Kubernetes.txt - kafka cluster creation",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section explains the process of setting up an Apache Kafka cluster on Kubernetes using the Strimzi operator. It provides a warning about not deploying the Strimzi operator on a cluster that already has one, as it can cause severe issues. The section also includes links to relevant documentation and code repositories for provisioning AWS resources and deploying the Kafka components using Helm templates. Additionally, it covers topics like Kafka node rotation and certificate rotation.",
+        "use_cases": [
+            "Setting up an Apache Kafka cluster on Kubernetes",
+            "Provisioning AWS resources for Kafka cluster",
+            "Deploying Kafka components using Helm templates",
+            "Managing Kafka node rotation and certificate rotation"
+        ],
+        "capabilities": [
+            "Strimzi operator",
+            "AWS resource provisioning",
+            "Helm templates",
+            "Kafka node rotation",
+            "Kafka certificate rotation",
+            "Kubernetes cluster management"
+        ],
+        "references": [
+            "https://github.com/razorpay/vishnu/pull/4900/files",
+            "https://github.com/razorpay/kube-manifests/pull/2547",
+            "https://docs.google.com/document/d/1c84Qg8uO0vyqAxQPppSoSvdR5pPCU1qe6ZQQeedWFjA/edit",
+            "https://github.com/razorpay/vishnu/blob/master/third-party/kafka/manifests/prod/kafka-2.6.0/strimzi-cluster-operator-0.20.1.yaml>",
+            "https://alpha.razorpay.com/repo/eks-ami-rollout-worker-node-rotation>"
+        ]
+    },
+    {
+        "id": "engineering_devops_strimzi---apache-kafka-on-kubernetes-chunk-1",
+        "name": "Strimzi - Apache Kafka on Kubernetes.txt - Kafka node rotation",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section provides links to documentation related to Kafka certificate renewal and certificate expiry information for Kubernetes components in a production environment. It seems to be a reference section for administrators or operators responsible for managing Kafka clusters and certificates on a Kubernetes platform.",
+        "use_cases": [
+            "Renewing certificates for Kafka clusters",
+            "Monitoring certificate expiration for Kubernetes components",
+            "Managing certificates in a production Kafka environment on Kubernetes"
+        ],
+        "capabilities": [
+            "Kafka certificate renewal",
+            "Certificate expiry tracking",
+            "Kubernetes components certificate management"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/kafka-certificate-renewal-sop>",
+            "https://alpha.razorpay.com/repo/certificate-expiries-kubernetes-components>"
+        ]
+    },
+    {
+        "id": "engineering_devops_strimzi---apache-kafka-on-kubernetes-chunk-2",
+        "name": "Strimzi - Apache Kafka on Kubernetes.txt - Kafka certificate rotation",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section explains that any changes related to the Kafka cluster on Kubernetes need to be made through the Kafka Custom Resource Definition (CRD) resource, which is present in each Kafka cluster namespace. These changes can be submitted as a pull request (PR) to the kube-manifests repository, as demonstrated by the provided link.",
+        "use_cases": [
+            "Modifying the configuration or settings of a Kafka cluster on Kubernetes",
+            "Updating or upgrading the Kafka cluster version",
+            "Scaling the Kafka cluster by adding or removing nodes",
+            "Applying security patches or updates to the Kafka cluster"
+        ],
+        "capabilities": [
+            "Kafka CRD resource",
+            "Kubernetes namespaces",
+            "Pull requests",
+            "kube-manifests repository",
+            "Kafka cluster management",
+            "Configuration changes"
+        ],
+        "references": [
+            "https://github.com/razorpay/kube-manifests/pull/2547"
+        ]
+    },
+    {
+        "id": "engineering_devops_strimzi---apache-kafka-on-kubernetes-chunk-3",
+        "name": "Strimzi - Apache Kafka on Kubernetes.txt - Kafka  CRD resource Changes",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section explains the process of modifying the configuration of an existing Apache Kafka cluster running on Kubernetes, managed by the Strimzi operator. It shows how to retrieve the current state of the Kafka cluster, generate a new configuration file based on the desired changes, and apply those changes to the cluster. It also warns against manually modifying certain resources, as this could cause inconsistencies with the Strimzi operator's management of the cluster.",
+        "use_cases": [
+            "Scaling the number of Kafka brokers or ZooKeeper nodes in an existing cluster",
+            "Updating configuration parameters for the Kafka brokers or ZooKeeper nodes",
+            "Modifying resource requests or limits for the Kafka or ZooKeeper pods",
+            "Changing the storage configuration for the Kafka brokers"
+        ],
+        "capabilities": [
+            "Retrieving the current state of a Kafka cluster",
+            "Generating a new configuration file for the Kafka cluster",
+            "Applying configuration changes to an existing Kafka cluster",
+            "Monitoring the Strimzi operator logs during configuration changes",
+            "Avoiding manual modifications to certain resources managed by the Strimzi operator"
+        ],
+        "references": []
+    }
+]

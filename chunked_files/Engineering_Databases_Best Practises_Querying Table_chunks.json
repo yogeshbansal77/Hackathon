@@ -1,0 +1,191 @@
+[
+    {
+        "id": "engineering_databases_best-practises_querying-table-chunk-0",
+        "name": "Querying Table.txt - Define the column names in the select statement",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Best Practises"
+        ],
+        "description": "This section explains that when querying a database table using the SELECT statement, it is recommended to explicitly list the column names instead of using the wildcard (*) to select all columns. This practice helps ensure that future changes to the table structure, such as adding or removing columns, do not break existing queries. It also promotes better code maintainability and independence between database deployments and code deployments.",
+        "use_cases": [
+            "Querying data from a database table",
+            "Ensuring code maintainability and robustness",
+            "Decoupling database schema changes from application code",
+            "Promoting best practices in database querying"
+        ],
+        "capabilities": [
+            "Explicit column selection",
+            "Avoiding wildcard (*) usage",
+            "Resilience to database schema changes",
+            "Separation of database and code deployments",
+            "Code maintainability",
+            "Best practices for database querying"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_best-practises_querying-table-chunk-1",
+        "name": "Querying Table.txt - Functions on Column Names",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Best Practises"
+        ],
+        "description": "This section explains that when querying a MySQL database, it is recommended to avoid using functions like lower() or date() on column names. This is because MySQL does not support functional indexes on columns, meaning that even if an index is created on a column, if a function is applied to that column in a query, the index will not be utilized. Instead, a full table scan will occur, which can significantly increase CPU usage and degrade performance.",
+        "use_cases": [
+            "Querying a MySQL database",
+            "Optimizing database query performance",
+            "Avoiding unnecessary full table scans",
+            "Proper usage of indexes in MySQL"
+        ],
+        "capabilities": [
+            "Functional indexes",
+            "Full table scans",
+            "CPU usage optimization",
+            "Query performance optimization",
+            "Index utilization in MySQL"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_best-practises_querying-table-chunk-2",
+        "name": "Querying Table.txt - Do not search with '%' as first character",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Best Practises"
+        ],
+        "description": "This section explains that when querying tables using wildcard characters like '%' in MySQL, it's recommended to avoid placing the '%' at the beginning of the search pattern. This is because MySQL will perform a full table scan to find matches, which can be inefficient, especially for large tables. Instead, it's better to place the '%' at the end of the search pattern, as this allows MySQL to utilize indexes and perform more efficient searches.",
+        "use_cases": [
+            "Optimizing database queries for better performance",
+            "Searching for partial string matches in database tables",
+            "Utilizing wildcard characters for pattern matching in SQL queries"
+        ],
+        "capabilities": [
+            "Wildcard character support",
+            "Pattern matching",
+            "Full table scans",
+            "Index utilization",
+            "Query optimization",
+            "Performance considerations"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_best-practises_querying-table-chunk-3",
+        "name": "Querying Table.txt - Avoid IN clause when sub query is returning huge data",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Best Practises"
+        ],
+        "description": "This section explains that when using the 'IN' clause in a SQL query with a subquery that returns a large amount of data, MySQL can optimize the search by only considering values that start with the specified prefix. In the example provided, MySQL will only search for names starting with 't' instead of scanning the entire dataset, which can improve query performance.",
+        "use_cases": [
+            "Optimizing queries with large result sets",
+            "Improving performance of queries with 'IN' clause and subqueries",
+            "Utilizing MySQL's query optimization techniques"
+        ],
+        "capabilities": [
+            "Prefix-based search optimization",
+            "Query optimization for 'IN' clause with subqueries",
+            "Efficient handling of large result sets"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_best-practises_querying-table-chunk-4",
+        "name": "Querying Table.txt - Avoid using NOT LIKE, NOT IN conditions",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Best Practises"
+        ],
+        "description": "This section advises against using certain SQL conditions, specifically NOT LIKE and NOT IN, as they can lead to inefficient query execution. It suggests that these conditions should be avoided because they may not effectively utilize database indexes, resulting in slower performance. The section also mentions that the IN clause should be avoided when the subquery returns a large amount of data, as it can also negatively impact query performance. Instead, it recommends using a JOIN operation, which can be more efficient in such cases.",
+        "use_cases": [
+            "Optimizing SQL queries for better performance",
+            "Avoiding inefficient use of database indexes",
+            "Handling large result sets from subqueries"
+        ],
+        "capabilities": [
+            "Avoiding NOT LIKE condition",
+            "Avoiding NOT IN condition",
+            "Avoiding IN clause with large subquery results",
+            "Using JOIN instead of IN clause for better performance",
+            "Optimizing query execution",
+            "Utilizing database indexes effectively"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_best-practises_querying-table-chunk-5",
+        "name": "Querying Table.txt - Avoid Joins for different data type columns",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Best Practises"
+        ],
+        "description": "This section explains that certain types of SQL queries, specifically those with conditions like NOT IN, NOT LIKE, or LIKE '%value%', can cause a full table scan. A full table scan is a resource-intensive operation where the database has to examine every row in the table to find the matching records. This can lead to slower query execution times, especially for large tables, as it requires more CPU resources. The section suggests avoiding such queries or conditions to improve performance.",
+        "use_cases": [
+            "Optimizing SQL queries for better performance",
+            "Avoiding resource-intensive database operations",
+            "Improving query execution times for large tables"
+        ],
+        "capabilities": [
+            "Full table scan",
+            "Query optimization",
+            "Performance tuning",
+            "Resource utilization",
+            "Query execution time"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_best-practises_querying-table-chunk-6",
+        "name": "Querying Table.txt - Join Queries with derived tables if it is doing mrr scans",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Best Practises"
+        ],
+        "description": "This section advises against joining tables with columns of different data types, as it can lead to performance issues and inefficient query execution. It suggests using derived tables or subqueries instead, which can help optimize the query and improve overall database performance.",
+        "use_cases": [
+            "Optimizing database queries involving joins between tables with different column data types",
+            "Improving query performance for complex joins",
+            "Avoiding potential issues or errors when joining columns with mismatched data types"
+        ],
+        "capabilities": [
+            "Join optimization",
+            "Query performance tuning",
+            "Derived table usage",
+            "Subquery utilization",
+            "Data type compatibility handling"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_best-practises_querying-table-chunk-7",
+        "name": "Querying Table.txt - Avoid using Limit and Offset with high values",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Best Practises"
+        ],
+        "description": "This section discusses best practices for optimizing database queries, specifically related to join operations and the use of LIMIT and OFFSET clauses. It explains that joining columns with different data types can lead to performance issues due to data type conversions and additional filtering. It also suggests rewriting queries involving multi-range read (MRR) scans as derived tables to reduce disk seeks. Additionally, it cautions against using high values for LIMIT and OFFSET in parallel queries, as this can increase CPU load due to the sequential scanning required.",
+        "use_cases": [
+            "Optimizing database queries",
+            "Improving performance of join operations",
+            "Reducing disk seeks in MRR scan queries",
+            "Avoiding CPU load spikes with high LIMIT/OFFSET values"
+        ],
+        "capabilities": [
+            "Data type compatibility checks for join columns",
+            "Collation compatibility checks for join columns",
+            "Rewriting MRR scan queries as derived tables",
+            "Limiting the use of high LIMIT/OFFSET values",
+            "Parallel query execution",
+            "Sequential scanning for LIMIT/OFFSET"
+        ],
+        "references": []
+    }
+]

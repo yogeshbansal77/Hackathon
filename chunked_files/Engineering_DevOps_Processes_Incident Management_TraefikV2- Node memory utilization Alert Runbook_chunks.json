@@ -1,0 +1,130 @@
+[
+    {
+        "id": "engineering_devops_processes_incident-management_traefikv2--node-memory-utilization-alert-runbook-chunk-0",
+        "name": "TraefikV2- Node memory utilization Alert Runbook.txt - 1. **Identify Nodes with High Memory Utilization Using Grafana**",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section explains how to identify nodes in an Elastic Kubernetes Service (EKS) cluster that are experiencing high memory utilization, specifically for the 'eks-cde-blue-worker-traefikv2-multiarch' Auto Scaling Group (ASG). It provides a PromQL query that can be used in Grafana to filter nodes with memory utilization above 90%. The steps involve navigating to the relevant Grafana dashboard, executing the query, and noting down the instances or nodes that are experiencing high memory usage.",
+        "use_cases": [
+            "Monitoring node memory utilization in an EKS cluster",
+            "Identifying nodes with high memory usage",
+            "Troubleshooting performance issues related to memory consumption",
+            "Capacity planning and resource allocation for EKS nodes"
+        ],
+        "capabilities": [
+            "PromQL query for filtering nodes by memory utilization",
+            "Grafana dashboard for visualizing node metrics",
+            "Monitoring EKS node resources",
+            "Identifying resource-intensive workloads",
+            "Troubleshooting performance bottlenecks",
+            "Capacity planning for EKS clusters"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_traefikv2--node-memory-utilization-alert-runbook-chunk-1",
+        "name": "TraefikV2- Node memory utilization Alert Runbook.txt - 2. **Identify Pods Causing High Memory Utilization on the Node**",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section provides instructions to identify the Kubernetes pods running on a specific node that are consuming high memory resources. It explains how to list all the pods running on a given node and then check the memory usage of each pod. This can help diagnose and troubleshoot memory utilization issues on a node in a Kubernetes cluster.",
+        "use_cases": [
+            "Troubleshooting high memory utilization on a Kubernetes node",
+            "Identifying resource-intensive pods on a specific node",
+            "Monitoring and managing resource usage in a Kubernetes cluster",
+            "Optimizing resource allocation and scheduling in a Kubernetes environment"
+        ],
+        "capabilities": [
+            "List pods running on a specific node",
+            "Filter pods by node name",
+            "Check memory usage of individual pods",
+            "Kubernetes command-line interface (kubectl)",
+            "Field selector for filtering resources",
+            "Resource monitoring and diagnostics"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_traefikv2--node-memory-utilization-alert-runbook-chunk-2",
+        "name": "TraefikV2- Node memory utilization Alert Runbook.txt - 3. **Monitor Memory Utilization of the Pod**",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section explains how to monitor the memory utilization of pods running on a specific node in a Kubernetes cluster. It provides a command that retrieves a list of pods running on a given node and displays their memory usage. This can be useful for identifying pods that are consuming excessive memory resources, which may help in troubleshooting performance issues or optimizing resource allocation.",
+        "use_cases": [
+            "Monitoring memory usage of pods on a specific node",
+            "Identifying pods with high memory consumption",
+            "Troubleshooting performance issues related to memory utilization",
+            "Optimizing resource allocation based on memory usage"
+        ],
+        "capabilities": [
+            "Retrieve list of pods running on a specific node",
+            "Filter pods based on node name",
+            "Display memory usage for each pod",
+            "Namespace-aware monitoring",
+            "Command-line interface for monitoring"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_traefikv2--node-memory-utilization-alert-runbook-chunk-3",
+        "name": "TraefikV2- Node memory utilization Alert Runbook.txt - 4. **Adjust Memory Requests if Necessary**",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section provides instructions to connect to an EC2 instance using SSH, monitor memory utilization of running processes using the htop command, and observe the memory usage of a specific pod's process. It allows users to identify processes consuming excessive memory and take appropriate actions, such as adjusting memory requests for the pod if necessary.",
+        "use_cases": [
+            "Monitoring memory utilization of running processes",
+            "Identifying memory-intensive processes or pods",
+            "Adjusting memory requests for pods based on observed usage",
+            "Troubleshooting memory-related issues in a Kubernetes cluster"
+        ],
+        "capabilities": [
+            "SSH access to EC2 instances",
+            "Real-time memory monitoring with htop",
+            "Observing memory usage of specific pod processes",
+            "Adjusting memory requests for pods",
+            "Troubleshooting memory utilization issues"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_traefikv2--node-memory-utilization-alert-runbook-chunk-4",
+        "name": "TraefikV2- Node memory utilization Alert Runbook.txt - 5. **Check Pod Logs and Rotate Pods if Needed**",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section provides guidance on how to troubleshoot and mitigate high memory utilization issues in Kubernetes pods. It explains how to check pod logs for errors, rotate individual pods or entire deployments if necessary, and adjust memory requests for pods if their memory usage remains consistently high. The instructions are presented in a step-by-step manner with command examples for easy understanding and implementation.",
+        "use_cases": [
+            "Troubleshooting high memory utilization in Kubernetes pods",
+            "Rotating individual pods or entire deployments to mitigate issues",
+            "Adjusting memory requests for pods based on observed memory usage patterns",
+            "Monitoring and analyzing pod logs for errors or issues related to memory utilization"
+        ],
+        "capabilities": [
+            "Check pod logs",
+            "Rotate individual pods",
+            "Rotate entire deployments",
+            "Increase memory requests",
+            "Apply deployment configuration changes",
+            "Identify and mitigate memory utilization issues"
+        ],
+        "references": []
+    }
+]

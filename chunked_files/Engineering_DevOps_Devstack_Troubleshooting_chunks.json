@@ -1,0 +1,58 @@
+[
+    {
+        "id": "engineering_devops_devstack_troubleshooting-chunk-0",
+        "name": "Troubleshooting.txt - Main Content",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Devstack"
+        ],
+        "description": "This section explains common errors that occur when running devstack (a development environment setup) for the first time, and provides solutions to troubleshoot these errors. It covers issues related to access permissions, network connectivity, and configuration problems with the Kubernetes cluster.",
+        "use_cases": [
+            "Onboarding new developers to the devstack environment",
+            "Troubleshooting access and connectivity issues with the Kubernetes cluster",
+            "Verifying and updating Kubernetes client configuration"
+        ],
+        "capabilities": [
+            "Access provisioning",
+            "Network connectivity troubleshooting",
+            "Kubernetes client configuration",
+            "Error handling",
+            "Cluster verification",
+            "VPN connectivity"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/b2162703df7b232524ce4b8221c23482.png",
+            "https://alpha.razorpay.com/repo/devstack-onboarding",
+            "https://alpha.razorpay.com/repo/devstack-onboarding",
+            "https://alpha.razorpay.com/_static/file/e78215ae3d14c4868a85bb05d7f785dd.png",
+            "https://alpha.razorpay.com/repo/devstack-onboarding#1.-onboarding-script",
+            "https://alpha.razorpay.com/repo/devstack-onboarding#1.-onboarding-script",
+            "https://alpha.razorpay.com/_static/file/f4644962930ac4214ffa28da65908c61.png",
+            "https://alpha.razorpay.com/_static/file/2e16fc4566efe055bea86ed75cb988e4.png",
+            "https://alpha.razorpay.com/_static/file/aa99160c24c44617a040f149f54efdc2.png",
+            "https://docs.google.com/document/d/1BRTDh87ZPCoj-Vo-6nJ93hWApl9ct_EQEdzRAyZZWr0/edit#heading=h.ny230zgxx2ut",
+            "https://grafana.np.razorpay.in/d/jPoleizIk/base-service-health?orgId=1&var-cluster=dev-serve&var-namespace=capital-los&var-namespace=accounting-integrations&var-namespace=alertservice&var-base_deployment=All",
+            "https://grafana.np.razorpay.in/d/PxZdNWkIz/workload-health?orgId=1",
+            "https://deploy.razorpay.com/#/applications/deserve-infra/executions>",
+            "http://localhost:8080/version?timeout=32s>\":",
+            "https://dev-serve.oidc.razorpay.in>.:443/version?timeout=32s\":",
+            "https://4E62E957217005978539B1349C3726CA.sk1.ap-south-1.eks.amazonaws.com:443",
+            "https://support.apple.com/en-in/HT202491>",
+            "https://stackoverflow.com/questions/58985141/getting-kubectl-config-use-context-error-when-trying-to-switch-context>",
+            "https://dev-serve.oidc.razorpay.in.:443/version?timeout=32s\":",
+            "https://dev-serve.oidc.razorpay.in.:443/version\":",
+            "https://alpha.razorpay.com/repo/devstack-onboarding#1.-onboarding-script>",
+            "https://4E62E957217005978539B1349C3726CA.sk1.ap-south-1.eks.amazonaws.com:443/api/v1/namespaces/x/configmaps/werf-synchronization\":",
+            "https://4E62E957217005978539B1349C3726CA.sk1.ap-south-1.eks.amazonaws.com:443/api/v1/namespaces/dashboard/confi",
+            "http://localhost:8080/api/v1/namespaces/api/configmaps/werf-synchronization\":",
+            "https://alpha.razorpay.com/repo/devstack-onboarding#1.-onboarding-script>",
+            "https://github.com/loft-sh/devspace/releases/tag/v5.18.X>==**",
+            "https://github.com/loft-sh/devspace/releases/download/v5.18.5/devspace-darwin-arm64",
+            "https://github.com/loft-sh/devspace/releases/download/v5.18.5/devspace-darwin-amd64",
+            "https://support.apple.com/en-in/HT202491>",
+            "https://laravel.com/docs/8.x/routing#route-caching>",
+            "https://razorpay-non-prod.app.cx180.coralogix.com/#/query-new/archive-logs?id=46oPjxe7KWC&page=0&archiveQueryType=cx-data>"
+        ]
+    }
+]

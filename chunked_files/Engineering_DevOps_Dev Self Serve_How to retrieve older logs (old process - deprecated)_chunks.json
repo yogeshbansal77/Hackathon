@@ -1,0 +1,37 @@
+[
+    {
+        "id": "engineering_devops_dev-self-serve_how-to-retrieve-older-logs-(old-process---deprecated)-chunk-0",
+        "name": "How to retrieve older logs (old process - deprecated).txt - Main Content",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains the deprecated process of retrieving older logs from Sumo Logic that have crossed their retention period (30-90 days). It provides step-by-step instructions on how to use the Querybook tool to query and retrieve these logs based on the source category, index name, and date range. The process involves finding the Sumo Logic index/partition name, constructing a query with the index name and date range, and executing it in Querybook. For logs before a certain date, it also explains how to use a Spinnaker pipeline to fetch logs from the Sumo Logic S3 bucket to the Querybook S3 bucket.",
+        "use_cases": [
+            "Retrieving older logs that have crossed their retention period in Sumo Logic",
+            "Querying and analyzing logs from a specific source category or index",
+            "Fetching logs from a specific date range"
+        ],
+        "capabilities": [
+            "Querybook tool for querying and retrieving logs",
+            "Finding Sumo Logic index/partition names",
+            "Constructing queries with index name and date range",
+            "Spinnaker pipeline for fetching logs from Sumo Logic S3 bucket",
+            "Retrieving logs from specific source categories",
+            "Retrieving logs from specific date ranges"
+        ],
+        "references": [
+            "https://querybook.de.razorpay.com/",
+            "https://service.in.sumologic.com/ui/#/logs-config/partitions-page",
+            "https://alpha.razorpay.com/_static/file/34153b2381a88f5156dc14b9bfe7e545.png",
+            "https://querybook.de.razorpay.com/prod/adhoc/",
+            "https://alpha.razorpay.com/_static/file/acc645d8e6f944b6f195a1b357f73eac.png",
+            "https://jarvis.razorpay.com/sumoOldLogRetrieval",
+            "https://querybook.de.razorpay.com/prod/adhoc/",
+            "https://alpha.razorpay.com/_static/file/337bb197a82bee95f1301cc2281e2094.png",
+            "https://alpha.razorpay.com/repo/old-sumologic-logs-management",
+            "https://alpha.razorpay.com/repo/retrieve-older-logs>"
+        ]
+    }
+]

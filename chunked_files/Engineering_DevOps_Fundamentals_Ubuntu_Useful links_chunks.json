@@ -1,0 +1,94 @@
+[
+    {
+        "id": "engineering_devops_fundamentals_ubuntu_useful-links-chunk-0",
+        "name": "Useful links.txt - To search Ubuntu Packages",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Fundamentals",
+            "Ubuntu"
+        ],
+        "description": "This section provides a link to the CVE (Common Vulnerabilities and Exposures) tracker for Ubuntu, which is a database that tracks and reports on security vulnerabilities in Ubuntu packages. This resource can be useful for users, developers, and system administrators to stay informed about potential security risks and take appropriate measures to mitigate them.",
+        "use_cases": [
+            "Checking for known security vulnerabilities in Ubuntu packages",
+            "Monitoring security updates and patches for installed packages",
+            "Assessing the security risk level of a particular package or version",
+            "Staying informed about the latest security advisories and vulnerabilities"
+        ],
+        "capabilities": [
+            "CVE tracking",
+            "Security vulnerability database",
+            "Ubuntu package security information",
+            "Vulnerability reporting",
+            "Security advisories"
+        ],
+        "references": [
+            "https://ubuntu.com/security/cve>"
+        ]
+    },
+    {
+        "id": "engineering_devops_fundamentals_ubuntu_useful-links-chunk-1",
+        "name": "Useful links.txt - CVE tracker",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Fundamentals",
+            "Ubuntu"
+        ],
+        "description": "This section provides a link to the official Ubuntu cloud images for Amazon Elastic Kubernetes Service (EKS). These images are pre-configured and optimized for running containerized applications on the EKS platform, which is a managed Kubernetes service provided by Amazon Web Services (AWS). The link allows users to access documentation and resources related to these canonical images, which can help streamline the deployment and management of Kubernetes clusters on EKS.",
+        "use_cases": [
+            "Deploying containerized applications on Amazon EKS",
+            "Setting up and managing Kubernetes clusters on AWS",
+            "Utilizing pre-configured and optimized Ubuntu images for EKS"
+        ],
+        "capabilities": [
+            "Canonical Ubuntu images",
+            "Amazon EKS compatibility",
+            "Pre-configured and optimized images",
+            "Documentation and resources"
+        ],
+        "references": [
+            "https://cloud-images.ubuntu.com/docs/aws/eks/>"
+        ]
+    },
+    {
+        "id": "engineering_devops_fundamentals_ubuntu_useful-links-chunk-2",
+        "name": "Useful links.txt - EKS canonical Images",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Fundamentals",
+            "Ubuntu"
+        ],
+        "description": "This section provides a link to the Ubuntu Cloud Images locator, which is a resource for finding and accessing Ubuntu cloud images. These images are pre-configured virtual machine images designed for use in cloud environments, making it easier to deploy Ubuntu-based systems in the cloud.",
+        "use_cases": [
+            "Deploying Ubuntu-based virtual machines in cloud environments",
+            "Building and configuring cloud infrastructure with Ubuntu",
+            "Automating the provisioning of Ubuntu instances in the cloud"
+        ],
+        "capabilities": [
+            "Ubuntu Cloud Images",
+            "Cloud Image Locator",
+            "Pre-configured Virtual Machine Images",
+            "Cloud Deployment",
+            "Ubuntu-based Cloud Infrastructure"
+        ],
+        "references": [
+            "https://cloud-images.ubuntu.com/locator/>"
+        ]
+    },
+    {
+        "id": "engineering_devops_fundamentals_ubuntu_useful-links-chunk-3",
+        "name": "Useful links.txt - Ubuntu Cloud Images",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Fundamentals",
+            "Ubuntu"
+        ],
+        "description": "This section appears to be empty, as there is no content provided within the code block. Without any information, it is difficult to provide a meaningful description or infer any use cases or capabilities related to Ubuntu Cloud Images.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    }
+]

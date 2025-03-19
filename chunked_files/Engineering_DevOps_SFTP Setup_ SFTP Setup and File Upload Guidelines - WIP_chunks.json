@@ -1,0 +1,174 @@
+[
+    {
+        "id": "engineering_devops_sftp-setup_-sftp-setup-and-file-upload-guidelines---wip-chunk-0",
+        "name": " SFTP Setup and File Upload Guidelines - WIP.txt - Introduction",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "SFTP Setup"
+        ],
+        "description": "This section introduces the purpose of the document, which is to outline the process for uploading files to an SFTP (Secure File Transfer Protocol) server as requested by the finance team. It covers two scenarios: uploading files using a predefined job and manually logging in to the SFTP server for file upload/download. The section sets the context for the rest of the document, which will provide detailed instructions for these two scenarios.",
+        "use_cases": [
+            "Uploading files to the SFTP server using a predefined job",
+            "Manually logging in to the SFTP server for file upload/download"
+        ],
+        "capabilities": [
+            "SFTP server setup",
+            "Secure file transfer",
+            "Predefined job configuration",
+            "Manual SFTP login",
+            "File upload",
+            "File download"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_sftp-setup_-sftp-setup-and-file-upload-guidelines---wip-chunk-1",
+        "name": " SFTP Setup and File Upload Guidelines - WIP.txt - Scenario 1: Upload Files to SFTP Server with Predefined Job",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "SFTP Setup"
+        ],
+        "description": "This section appears to be explaining a scenario where files need to be uploaded to an SFTP server using a predefined job or process. It likely outlines the steps or requirements for this file transfer process, which could be useful for users who need to securely transfer files over the SFTP protocol.",
+        "use_cases": [
+            "Uploading files to an SFTP server",
+            "Automating file transfers using predefined jobs or processes",
+            "Securely transferring files over the SFTP protocol",
+            "Integrating with existing file transfer workflows"
+        ],
+        "capabilities": [
+            "SFTP file upload",
+            "Predefined job configuration",
+            "Secure file transfer",
+            "Automation",
+            "Integration with existing workflows"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_sftp-setup_-sftp-setup-and-file-upload-guidelines---wip-chunk-2",
+        "name": " SFTP Setup and File Upload Guidelines - WIP.txt - Request Details",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "SFTP Setup"
+        ],
+        "description": "This section outlines the process for the finance team to upload a file to an SFTP server using a predefined job. It suggests that there is a specific procedure or set of steps that need to be followed to accomplish this task.",
+        "use_cases": [
+            "File transfer from finance team to SFTP server",
+            "Automated file upload using predefined job",
+            "Secure file transfer using SFTP protocol",
+            "Centralized file management and storage"
+        ],
+        "capabilities": [
+            "SFTP server access",
+            "Predefined job configuration",
+            "File upload automation",
+            "Secure file transfer",
+            "Finance team file management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_sftp-setup_-sftp-setup-and-file-upload-guidelines---wip-chunk-3",
+        "name": " SFTP Setup and File Upload Guidelines - WIP.txt - Procedure",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "SFTP Setup"
+        ],
+        "description": "This section outlines the procedure for uploading a file to an S3 bucket and executing a Beam push API command to process the file. It involves requesting a job name from the finance team, uploading the file to a specific S3 bucket location, accessing a Beam pod using kubectl, and executing a curl command with the job name and file name to trigger the Beam push API. This process seems to be part of a workflow for handling and processing files related to financial data or transactions.",
+        "use_cases": [
+            "File upload and processing workflow",
+            "Integration with S3 bucket for file storage",
+            "Executing commands on Kubernetes pods",
+            "Triggering API endpoints for data processing"
+        ],
+        "capabilities": [
+            "S3 bucket file upload",
+            "Kubernetes pod access and command execution",
+            "API endpoint invocation",
+            "Job and file name parameterization",
+            "Beam push API integration"
+        ],
+        "references": [
+            "https://github.com/razorpay/beam/blob/master/conf/push_jobs.json",
+            "http://localhost/push"
+        ]
+    },
+    {
+        "id": "engineering_devops_sftp-setup_-sftp-setup-and-file-upload-guidelines---wip-chunk-4",
+        "name": " SFTP Setup and File Upload Guidelines - WIP.txt - Scenario 2: SFTP Login and File Upload/download or without using beam job",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "SFTP Setup"
+        ],
+        "description": "This section explains a scenario where users can log in to an SFTP (Secure File Transfer Protocol) server and perform file upload or download operations without using a beam job. It provides instructions or guidelines for users who need to interact with an SFTP server directly, rather than through an automated process or job.",
+        "use_cases": [
+            "Manually uploading files to an SFTP server",
+            "Manually downloading files from an SFTP server",
+            "Accessing an SFTP server without using an automated job or process",
+            "Transferring files securely over an SFTP connection"
+        ],
+        "capabilities": [
+            "SFTP login",
+            "File upload",
+            "File download",
+            "Secure file transfer",
+            "Manual file operations"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_sftp-setup_-sftp-setup-and-file-upload-guidelines---wip-chunk-5",
+        "name": " SFTP Setup and File Upload Guidelines - WIP.txt - Request Details",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "SFTP Setup"
+        ],
+        "description": "This section explains that the finance team needs a way to manually check if a file is present or upload/download a file, in case the automated process (Beam job) is not configured or for some other reason. This manual intervention is required for situations where the automated file transfer process is not working as expected.",
+        "use_cases": [
+            "Manually checking file presence",
+            "Manually uploading a file",
+            "Manually downloading a file",
+            "Handling scenarios where the automated file transfer process (Beam job) is not configured or not working as expected"
+        ],
+        "capabilities": [
+            "File presence check",
+            "Manual file upload",
+            "Manual file download",
+            "Handling exceptions in automated file transfer process"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_sftp-setup_-sftp-setup-and-file-upload-guidelines---wip-chunk-6",
+        "name": " SFTP Setup and File Upload Guidelines - WIP.txt - Procedure",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "SFTP Setup"
+        ],
+        "description": "This section provides step-by-step instructions for setting up and using an SFTP (Secure File Transfer Protocol) client to upload and download files to and from a remote server. It covers two authentication methods: key-based and password-based. The instructions include executing commands on a Kubernetes pod, installing the SFTP CLI, authenticating with the provided credentials, navigating to the desired location on the SFTP server, and transferring files between the local system and the remote server using various commands.",
+        "use_cases": [
+            "Securely transferring files between a local system and a remote server",
+            "Uploading files to an SFTP server",
+            "Downloading files from an SFTP server",
+            "Copying files from a local system to a Kubernetes pod, and vice versa"
+        ],
+        "capabilities": [
+            "Key-based authentication",
+            "Password-based authentication",
+            "Executing commands on a Kubernetes pod",
+            "Installing SFTP CLI",
+            "Navigating to specific locations on the SFTP server",
+            "Uploading files to the SFTP server",
+            "Downloading files from the SFTP server",
+            "Copying files between local system and Kubernetes pod"
+        ],
+        "references": []
+    }
+]

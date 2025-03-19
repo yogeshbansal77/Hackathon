@@ -1,0 +1,159 @@
+[
+    {
+        "id": "engineering_devops_architecture_kubernetes_k8s-clusters-management-chunk-0",
+        "name": "K8S Clusters Management.txt - Introduction",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section explains that the organization has decided to migrate their Kubernetes clusters to Amazon's Elastic Kubernetes Service (EKS), where the control plane (the core components that manage the cluster) is fully managed by AWS. This decision was made due to various reasons, which are not explicitly stated. The section also provides a link to a concept note that outlines the thought process behind this migration to EKS and the use of Ubuntu as the operating system.",
+        "use_cases": [
+            "Migrating Kubernetes clusters to a managed service (EKS)",
+            "Offloading the management of the Kubernetes control plane to a cloud provider (AWS)",
+            "Adopting a specific operating system (Ubuntu) for the worker nodes"
+        ],
+        "capabilities": [
+            "Managed Kubernetes control plane",
+            "Elastic Kubernetes Service (EKS)",
+            "Ubuntu operating system",
+            "Cloud-based Kubernetes cluster management"
+        ],
+        "references": [
+            "https://docs.google.com/document/d/1_-7ZHlZxKozyR_ZSQCvjb2Z3KLYnS9e1tdLE3jX1w7w/edit#heading=h.66uitkye71a1\""
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_k8s-clusters-management-chunk-1",
+        "name": "K8S Clusters Management.txt - Concept Note: Move to EKS and Ubuntu",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section explains that the organization manages its Kubernetes clusters using a tool called Kubectl, which is a command-line interface for interacting with Kubernetes clusters. It provides a configuration guide for setting up and using Kubectl to manage the clusters.",
+        "use_cases": [
+            "Managing Kubernetes clusters",
+            "Configuring Kubectl for cluster management",
+            "Administering and maintaining Kubernetes infrastructure"
+        ],
+        "capabilities": [
+            "Kubernetes cluster management",
+            "Kubectl configuration",
+            "Command-line interface for Kubernetes"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_k8s-clusters-management-chunk-2",
+        "name": "K8S Clusters Management.txt - Kubectl configuration guide",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section appears to provide guidance on configuring kubectl, a command-line tool for managing Kubernetes clusters, with OIDC (OpenID Connect) authentication. OIDC is an authentication protocol that allows users to securely access applications and services using a single set of credentials. The section likely explains how to set up kubectl to authenticate with an OIDC provider, enabling secure access and management of Kubernetes clusters.",
+        "use_cases": [
+            "Configuring kubectl for secure access to Kubernetes clusters using OIDC authentication",
+            "Enabling single sign-on (SSO) for Kubernetes cluster management",
+            "Integrating Kubernetes cluster management with an existing OIDC identity provider",
+            "Enhancing security and access control for Kubernetes cluster operations"
+        ],
+        "capabilities": [
+            "OIDC authentication",
+            "Kubectl configuration",
+            "Kubernetes cluster management",
+            "Single sign-on (SSO)",
+            "Identity provider integration",
+            "Access control"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_k8s-clusters-management-chunk-3",
+        "name": "K8S Clusters Management.txt - Kubectl and OIDC configuration guides",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section provides information about configuring kubectl (a command-line tool for managing Kubernetes clusters) and OIDC (OpenID Connect, an authentication protocol) for accessing and managing Kubernetes clusters. It mentions that to gain access to the clusters, you need to set up RBAC (Role-Based Access Control) rules, which involves earning or gaining the necessary permissions.",
+        "use_cases": [
+            "Configuring kubectl for managing Kubernetes clusters",
+            "Setting up OIDC authentication for accessing Kubernetes clusters",
+            "Implementing RBAC rules to control access to Kubernetes clusters",
+            "Earning or gaining permissions to access Kubernetes clusters"
+        ],
+        "capabilities": [
+            "kubectl configuration",
+            "OIDC configuration",
+            "RBAC setup",
+            "Access control",
+            "User authentication",
+            "Cluster management"
+        ],
+        "references": [
+            "https://wiki.rzp.io/DevOps/kubernetes/User-authentication-on-EKS\""
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_k8s-clusters-management-chunk-4",
+        "name": "K8S Clusters Management.txt - Access to clusters",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section provides links to documentation resources that explain how to access and configure Kubernetes (K8s) clusters. It covers the process of obtaining access credentials and setting up the kubectl command-line tool to interact with the clusters. This information is useful for developers and administrators who need to manage and deploy applications on K8s clusters.",
+        "use_cases": [
+            "Accessing K8s clusters",
+            "Configuring kubectl for K8s clusters",
+            "Managing and deploying applications on K8s clusters",
+            "Administering K8s clusters"
+        ],
+        "capabilities": [
+            "Access credentials",
+            "kubectl configuration",
+            "Cluster management",
+            "Application deployment",
+            "Documentation resources"
+        ],
+        "references": [
+            "https://write.razorpay.com/doc/access-nkGIGRZlsx\"",
+            "https://write.razorpay.com/doc/eks-kubectl-configuration-57eUMv9sb3\""
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_k8s-clusters-management-chunk-5",
+        "name": "K8S Clusters Management.txt - Kubectl Cheat Sheet",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section provides a link to the official Kubernetes documentation for the 'kubectl' command-line tool cheat sheet. The cheat sheet serves as a quick reference guide for commonly used kubectl commands, which are essential for managing and interacting with Kubernetes clusters. It offers a concise and easily accessible way to look up and recall various kubectl commands and their usage, making it a valuable resource for both experienced and novice Kubernetes users.",
+        "use_cases": [
+            "Managing Kubernetes clusters",
+            "Interacting with Kubernetes resources",
+            "Troubleshooting and debugging Kubernetes environments",
+            "Learning and referencing kubectl commands"
+        ],
+        "capabilities": [
+            "Quick reference",
+            "Command lookup",
+            "Usage examples",
+            "Comprehensive command coverage",
+            "Accessible documentation",
+            "Kubernetes cluster management"
+        ],
+        "references": [
+            "https://kubernetes.io/docs/reference/kubectl/cheatsheet/\""
+        ]
+    }
+]

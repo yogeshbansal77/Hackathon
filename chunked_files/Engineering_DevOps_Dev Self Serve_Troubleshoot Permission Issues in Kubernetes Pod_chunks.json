@@ -1,0 +1,78 @@
+[
+    {
+        "id": "engineering_devops_dev-self-serve_troubleshoot-permission-issues-in-kubernetes-pod-chunk-0",
+        "name": "Troubleshoot Permission Issues in Kubernetes Pod.txt - Some of the commonly faced issues while using KIAM:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section outlines some common issues that users may encounter while using KIAM (Kubernetes IAM Authenticator Module) to manage permissions and access to AWS resources from within Kubernetes pods. It lists three specific problems: inability to locate credentials, unauthorized errors when trying to access AWS resources, and permission issues despite having the necessary KIAM annotations set on the pod or namespace. These issues can arise due to misconfiguration, incorrect permissions, or other factors related to the integration between Kubernetes and AWS IAM.",
+        "use_cases": [
+            "Managing permissions and access to AWS resources from within Kubernetes pods",
+            "Troubleshooting authentication and authorization issues with KIAM",
+            "Integrating Kubernetes with AWS IAM for secure access to cloud resources"
+        ],
+        "capabilities": [
+            "Credential management",
+            "Access control",
+            "Permission handling",
+            "Error handling",
+            "Kubernetes-AWS integration",
+            "Annotation-based configuration"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_troubleshoot-permission-issues-in-kubernetes-pod-chunk-1",
+        "name": "Troubleshoot Permission Issues in Kubernetes Pod.txt - How do we troubleshoot the problem?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains the steps to troubleshoot permission issues faced by a Kubernetes pod when accessing AWS resources. It suggests using the iam-troubleshooter feature in Jarvis, checking the required permissions in the IAM role, and raising a PR or ticket if permissions are missing. If the issue persists despite correct permissions, it could be related to KIAM (Kubernetes IAM Authenticator) and requires further investigation.",
+        "use_cases": [
+            "Troubleshooting permission issues for Kubernetes pods accessing AWS resources",
+            "Verifying and managing IAM role permissions for Kubernetes pods",
+            "Investigating KIAM-related issues when accessing AWS resources from Kubernetes pods"
+        ],
+        "capabilities": [
+            "iam-troubleshooter",
+            "AWS Read access",
+            "IAM role permissions management",
+            "PR and ticket creation for missing permissions",
+            "KIAM (Kubernetes IAM Authenticator) troubleshooting"
+        ],
+        "references": [
+            "https://jarvis.razorpay.com/iamTroubleshooter",
+            "https://razorpay.slack.com/archives/C0432SCD5/p1673863894023619"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_troubleshoot-permission-issues-in-kubernetes-pod-chunk-2",
+        "name": "Troubleshoot Permission Issues in Kubernetes Pod.txt - How do we fix the problem?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains how to fix the permission issues faced by applications running in Kubernetes pods. It recommends migrating from KIAM (Kubernetes IAM Authenticator) to Service Accounts (SA) for accessing AWS IAM roles. The migration is suggested as a permanent solution to stabilize the applications and resolve the permission-related problems.",
+        "use_cases": [
+            "Resolving permission issues in Kubernetes pods",
+            "Migrating from KIAM to Service Accounts for accessing AWS IAM roles",
+            "Stabilizing applications running in Kubernetes pods",
+            "Providing a permanent solution for permission-related problems"
+        ],
+        "capabilities": [
+            "Rotating pods",
+            "Accessing IAM roles via Service Accounts",
+            "Migrating from KIAM to Service Accounts",
+            "Referring to documentation for migration steps",
+            "Reaching out to DevOps for assistance"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/creating-service-accounts-for-k8s-cluster-namespaces"
+        ]
+    }
+]

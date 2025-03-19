@@ -1,0 +1,57 @@
+[
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_self-managed-datastores_cassandra_connect-to-edge-cassandra-cluster-chunk-0",
+        "name": "Connect to Edge Cassandra Cluster.txt - SSL Certificate for Cassandra",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "Self Managed Datastores",
+            "Cassandra"
+        ],
+        "description": "This section provides instructions for creating an SSL certificate file for connecting to a Cassandra cluster. It explains that you need to connect to a specific server (datastore jump box) and create a certificate file named 'kong_CLIENT.cer.pem' in your home directory. The path to this certificate file needs to be exported using a command. This certificate is likely required for secure communication with the Cassandra cluster.",
+        "use_cases": [
+            "Connecting to a Cassandra cluster",
+            "Establishing secure communication with a Cassandra cluster",
+            "Setting up SSL/TLS encryption for Cassandra",
+            "Configuring client authentication for Cassandra"
+        ],
+        "capabilities": [
+            "SSL/TLS certificate creation",
+            "Certificate file management",
+            "Path export for certificate file",
+            "Secure communication setup",
+            "Client authentication configuration"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_self-managed-datastores_cassandra_connect-to-edge-cassandra-cluster-chunk-1",
+        "name": "Connect to Edge Cassandra Cluster.txt - Steps to Connect to Cassandra",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "Self Managed Datastores",
+            "Cassandra"
+        ],
+        "description": "This section provides instructions on how to connect to a Cassandra cluster securely using SSL encryption. It involves exporting the SSL certificate file path as an environment variable, and then using the 'cqlsh' command with the appropriate parameters to establish a secure connection to the Cassandra cluster. This allows users to interact with the Cassandra database in a secure manner, ensuring data privacy and integrity.",
+        "use_cases": [
+            "Connecting to a Cassandra cluster securely using SSL encryption",
+            "Interacting with a Cassandra database in a secure manner",
+            "Ensuring data privacy and integrity when accessing Cassandra"
+        ],
+        "capabilities": [
+            "SSL encryption",
+            "Secure connection",
+            "Environment variable configuration",
+            "cqlsh command",
+            "Cassandra cluster access"
+        ],
+        "references": []
+    }
+]

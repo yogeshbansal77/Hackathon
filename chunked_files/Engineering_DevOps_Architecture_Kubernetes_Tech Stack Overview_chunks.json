@@ -1,0 +1,146 @@
+[
+    {
+        "id": "engineering_devops_architecture_kubernetes_tech-stack-overview-chunk-0",
+        "name": "Tech Stack Overview.txt - Summary",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section provides an overview of the document's purpose, which is to explain the existing infrastructure at Razorpay. It aims to give a comprehensive understanding of the various components and technologies used in their infrastructure setup. The section serves as an introduction to the document, setting the stage for a more detailed exploration of Razorpay's infrastructure.",
+        "use_cases": [
+            "Understanding Razorpay's existing infrastructure",
+            "Gaining insights into the components and technologies used in Razorpay's infrastructure",
+            "Serving as a reference for infrastructure-related information at Razorpay"
+        ],
+        "capabilities": [
+            "Infrastructure overview",
+            "Component explanation",
+            "Technology overview"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_tech-stack-overview-chunk-1",
+        "name": "Tech Stack Overview.txt - High-Level Overview",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section provides an overview of the company's production infrastructure, which is divided into CDE (environments with access to cardholder and PCI-related information) and Non-CDE environments. It explains the use of blue/green deployments, Kubernetes for container orchestration, and various AWS services like EC2, Auto Scaling Groups, Security Groups, IAM Roles, NAT Gateways, RDS, ElastiCache, and RedisLabs for different components of their infrastructure.",
+        "use_cases": [
+            "Segregating environments based on access to sensitive data (CDE and Non-CDE)",
+            "Blue/green deployments for seamless application updates",
+            "Scaling workloads using Auto Scaling Groups",
+            "Securing communication between applications and AWS services using Security Groups and IAM Roles"
+        ],
+        "capabilities": [
+            "Kubernetes for container orchestration",
+            "AWS EC2 for virtual machine instances",
+            "AWS Auto Scaling Groups for scaling workloads",
+            "AWS Security Groups for controlling network traffic",
+            "AWS IAM Roles for granting access to AWS services",
+            "AWS NAT Gateway for outbound internet access",
+            "AWS RDS for databases",
+            "AWS ElastiCache (Redis) for caching",
+            "RedisLabs for session management and mutex workloads"
+        ],
+        "references": [
+            "https://martinfowler.com/bliki/BlueGreenDeployment.html"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_tech-stack-overview-chunk-2",
+        "name": "Tech Stack Overview.txt - Workloads on AWS",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section explains Kubernetes, an open-source container orchestration tool developed by Google. It manages containerized applications across a distributed cluster of nodes, providing features like zero downtime deployment, automatic rollback, scaling, and self-healing of containers. Kubernetes hides the complexity of managing containers by providing APIs for various functionalities. It can run on different cloud platforms or bare metal machines, and in this case, it runs on AWS EC2 instances.",
+        "use_cases": [
+            "Managing microservices or containerized applications across a distributed cluster",
+            "Providing a highly resilient infrastructure with zero downtime deployment capabilities",
+            "Automatic scaling and self-healing of containers based on metrics like CPU and memory"
+        ],
+        "capabilities": [
+            "Container orchestration",
+            "Automatic deployment",
+            "Automatic rollback",
+            "Scaling",
+            "Self-healing",
+            "Service discovery",
+            "Multi-cloud and on-premises support",
+            "API for managing containers"
+        ],
+        "references": [
+            "https://kubernetes.io/docs/concepts/overview/what-is-kubernetes",
+            "https://github.com/docker/docker",
+            "https://github.com/coreos/rkt",
+            "https://lh4.googleusercontent.com/y5IDbnLYQnifbsYb3TY-IihuAIRkY4eHqx01g3BHgscEJkQ6oqXtl4I-C3mo7qv5UJqhRfZxjp7tojk8RYSBgFU9fkSNNKs1vryxN71QsRypOUKS_EHhdvPxEMnqRlAyGFe0BlB-",
+            "http://kubernetes.io/docs/admin/high-availability/",
+            "http://kubernetes.io/docs/admin/node/",
+            "https://github.com/docker/docker",
+            "https://github.com/coreos/rkt",
+            "https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/",
+            "https://kubernetes.io/docs/concepts/cluster-administration/networking/",
+            "https://kubernetes.io/docs/reference/command-line-tools-reference/kube-proxy/"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_tech-stack-overview-chunk-3",
+        "name": "Tech Stack Overview.txt - Kubernetes Architecture",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section provides an overview of the Kubernetes architecture and explains key concepts and components involved in running and managing containerized applications on a Kubernetes cluster. It covers the core concepts like Pods, ReplicaSets, Services, Volumes, Namespaces, and Deployments, as well as the master components like etcd cluster, Kube-API Server, Kube-Controller-Manager, Kube-Scheduler, and Cloud-Controller-Manager. The section aims to help non-experts understand the fundamental building blocks and terminology used in Kubernetes.",
+        "use_cases": [
+            "Managing and scaling containerized applications",
+            "Ensuring high availability and load balancing of services",
+            "Isolating resources and enforcing resource quotas across teams or projects",
+            "Automating deployment and rolling updates of applications"
+        ],
+        "capabilities": [
+            "Pod management and scheduling",
+            "Service discovery and load balancing",
+            "Persistent storage management",
+            "Resource isolation and quota enforcement",
+            "Automated deployment and rollout management",
+            "Centralized cluster data storage and configuration management"
+        ],
+        "references": [
+            "https://lh3.googleusercontent.com/jj-rktR9L4lyxYjI1gu6pFgMVgKZgFTb1sI4f021xSghyAr2r0FbmRlROu_7_QElGc_bIDKSdTp-RNR0gVwXVqHUN2MC40Hx9Uo4p3NdF9ZZQw6VJhGtn4cgMlwj1qqjgIiytunY",
+            "https://kubernetes.io/docs/concepts/workloads/pods/pod-overview/",
+            "https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/#why-containers",
+            "https://kubernetes.io/docs/concepts/services-networking/service/",
+            "https://kubernetes.io/docs/concepts/storage/volumes/",
+            "https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/",
+            "https://kubernetes.io/docs/concepts/policy/resource-quotas/",
+            "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/",
+            "https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/",
+            "https://kubernetes.io/docs/reference/generated/kube-apiserver/",
+            "https://kubernetes.io/docs/reference/generated/kube-controller-manager/",
+            "https://kubernetes.io/docs/concepts/overview/components/#cloud-controller-manager",
+            "https://kubernetes.io/docs/reference/generated/kube-scheduler/",
+            "https://kubernetes.io/docs/reference/generated/kubelet/",
+            "https://kubernetes.io/docs/reference/generated/kube-proxy/",
+            "https://github.com/projectcalico/cni-plugin",
+            "https://github.com/uswitch/kiam",
+            "https://coredns.io/",
+            "https://github.com/kubernetes-incubator/bootkube",
+            "https://github.com/razorpay/kalki",
+            "https://github.com/razorpay/vishnu/",
+            "https://www.terraform.io/",
+            "http://coreos.com/",
+            "https://github.com/razorpay/brahma",
+            "https://x-team.com/blog/introduction-kubernetes-architecture/>"
+        ]
+    }
+]

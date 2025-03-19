@@ -1,0 +1,133 @@
+[
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_create-an-h2h-sftp-push-job-with-date-format-chunk-0",
+        "name": "Create an H2H SFTP Push Job with date format.txt - Introduction",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains the default behavior of beam's SFTP push operation. It identifies the necessary components involved in the process, such as the SFTP host, the S3 bucket where the file is stored, and the file itself within that bucket. This information is extracted from the request payload sent to initiate the push operation. The section provides an overview of how beam handles the initial setup for transferring files from an S3 bucket to an SFTP server.",
+        "use_cases": [
+            "Transferring files from an S3 bucket to an SFTP server",
+            "Automating file transfers between cloud storage and remote servers",
+            "Integrating with third-party SFTP services for data exchange"
+        ],
+        "capabilities": [
+            "Identifying SFTP host",
+            "Identifying S3 bucket",
+            "Identifying file in S3 bucket",
+            "Extracting required information from request payload"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_create-an-h2h-sftp-push-job-with-date-format-chunk-1",
+        "name": "Create an H2H SFTP Push Job with date format.txt - Default SFTP Push Behavior",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains the default behavior of an SFTP Push Job, which involves downloading a file from a source S3 bucket and pushing (writing or creating) an identical copy of that file to an SFTP host. It also mentions that sometimes the recipient might want additional information, such as a date/time component, added to the file or directory to help identify or categorize the files. The section suggests two ways to achieve this: either by managing it at the source (e.g., using a date/time format to create files in a reporting tool) or by configuring the SFTP Push Job to add the date/time component.",
+        "use_cases": [
+            "Pushing files from an S3 bucket to an SFTP host",
+            "Adding date/time information to files or directories to help identify or categorize them",
+            "Configuring SFTP Push Jobs to add date/time components",
+            "Using reporting tools or other sources to create files with date/time formats"
+        ],
+        "capabilities": [
+            "Default SFTP Push Behavior",
+            "Downloading files from S3 bucket",
+            "Pushing files to SFTP host",
+            "Creating identical file copies",
+            "Adding date/time components to files/directories",
+            "Managing date/time formats at source",
+            "Configuring SFTP Push Jobs"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_create-an-h2h-sftp-push-job-with-date-format-chunk-2",
+        "name": "Create an H2H SFTP Push Job with date format.txt - Adding Date/Time Format to Files/Directories",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains an alternative approach to adding date/time formatting to files or directories created by the system. Instead of relying on external tools or manual processes, the system itself (referred to as 'beam') can be configured to automatically include date/time information in the names of generated files or directories. This feature can be useful for organizing and managing data based on creation timestamps.",
+        "use_cases": [
+            "Organizing files or directories based on creation date/time",
+            "Automating date/time formatting for generated data",
+            "Timestamping data for auditing or tracking purposes",
+            "Facilitating data archiving or retention policies based on creation dates"
+        ],
+        "capabilities": [
+            "date/time formatting",
+            "file/directory naming",
+            "beam configuration",
+            "automated data organization",
+            "timestamp generation"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_create-an-h2h-sftp-push-job-with-date-format-chunk-3",
+        "name": "Create an H2H SFTP Push Job with date format.txt - Example Config: Creating Files with Date/Time Format",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains how to configure the file naming convention and date format for files being pushed via an SFTP job. The file name will be 'Custom_Settlement_Report_<DATE_PATTERN>.txt', where <DATE_PATTERN> is replaced by the date in the specified format (02012006 in this case) and timezone (Asia/Kolkata). This allows for dynamic file naming based on the date and time of file creation.",
+        "use_cases": [
+            "Generating dated reports or files for archival or compliance purposes",
+            "Automating file transfers with unique file names based on creation date/time",
+            "Organizing files in a date-based directory structure on the remote SFTP server"
+        ],
+        "capabilities": [
+            "Dynamic file naming",
+            "Date/time formatting",
+            "Timezone specification",
+            "SFTP file transfer",
+            "Remote path configuration"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_create-an-h2h-sftp-push-job-with-date-format-chunk-4",
+        "name": "Create an H2H SFTP Push Job with date format.txt - Example Config: Creating Directories with Date/Time Format",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains how to configure an SFTP job to create directories with a date/time format on a remote server. It provides an example configuration with settings like the remote host, port, username, authentication type, and a specific pattern for naming the directories based on the date and timezone. This allows for organizing files or data in a structured manner, making it easier to manage and access based on the date or time.",
+        "use_cases": [
+            "Organizing files or data on a remote server based on date/time",
+            "Automating the creation of date/time-based directory structures",
+            "Streamlining data management and archiving processes",
+            "Facilitating easier retrieval and access to files based on date/time"
+        ],
+        "capabilities": [
+            "SFTP job configuration",
+            "Remote directory creation",
+            "Date/time pattern formatting",
+            "Timezone specification",
+            "Automated directory naming"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/01da6b1f1e66ca3cace142cf211a7c61.png"
+        ]
+    }
+]

@@ -1,0 +1,167 @@
+[
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_monitoring_monitoring-stack-overview-chunk-0",
+        "name": "Monitoring Stack Overview.txt - Objective:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Monitoring"
+        ],
+        "description": "This section introduces Prometheus as the monitoring tool used for infrastructure and applications. It suggests that Prometheus is the chosen solution for monitoring needs, without providing further details on its specific capabilities or use cases.",
+        "use_cases": [
+            "Monitoring infrastructure",
+            "Monitoring applications"
+        ],
+        "capabilities": [
+            "Infrastructure monitoring",
+            "Application monitoring",
+            "Prometheus"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_monitoring_monitoring-stack-overview-chunk-1",
+        "name": "Monitoring Stack Overview.txt - Solutions:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Monitoring"
+        ],
+        "description": "This section outlines the two main aspects that need to be addressed for effective monitoring: data collection (scraping) and data analysis/alerting (querying/alerting). It suggests that the monitoring solution should be able to gather relevant data from various sources and then process and analyze that data to identify potential issues and trigger alerts when necessary.",
+        "use_cases": [
+            "Data collection from multiple sources",
+            "Data analysis and processing",
+            "Alerting on identified issues",
+            "Centralized monitoring solution"
+        ],
+        "capabilities": [
+            "Scraping",
+            "Data ingestion",
+            "Querying",
+            "Alerting",
+            "Data processing",
+            "Centralized monitoring"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_monitoring_monitoring-stack-overview-chunk-2",
+        "name": "Monitoring Stack Overview.txt - Scraping:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Monitoring"
+        ],
+        "description": "This section explains how the monitoring infrastructure is designed to handle a large volume of data points (over 900K per second) being scraped from various sources. To address the memory and computational challenges of processing such a massive amount of data in a single Prometheus instance, the infrastructure is split into multiple layers. There are separate Prometheus instances dedicated to monitoring infrastructure components (like nodes, pods, and Kubernetes metrics) and application metrics, with the latter further divided into multiple parts.",
+        "use_cases": [
+            "Monitoring infrastructure components (nodes, pods, Kubernetes metrics)",
+            "Monitoring application metrics",
+            "Handling large volumes of scraped data points (over 900K per second)"
+        ],
+        "capabilities": [
+            "Splitting monitoring infrastructure into multiple layers",
+            "Dedicated Prometheus instances for infrastructure and application monitoring",
+            "Scaling out application monitoring by dividing it into multiple parts",
+            "Efficient handling of large volumes of scraped data points",
+            "Separating concerns for better resource utilization and performance"
+        ],
+        "references": [
+            "https://lh4.googleusercontent.com/Bpp7V9OxQZ4AYXBGZN584UibLU3WWynrx3os6Kz5sBqtGwe-g0i0rbWEPJanGGOER_k2LtS8et6Ww_10pZk_Eyl0EoyKHa9a6td177ESMnQnohBN0NNywH2A8HJ230Z1bUNgt7kZ\""
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_monitoring_monitoring-stack-overview-chunk-3",
+        "name": "Monitoring Stack Overview.txt - Application Prometheus Split:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Monitoring"
+        ],
+        "description": "This section explains the division of Prometheus monitoring system based on business units and application components. Each business unit or Statsd exporter has a separate Prometheus instance to monitor its metrics. This approach helps in isolating metrics and reducing the impact of issues, as problems in one area won't affect the monitoring of other areas.",
+        "use_cases": [
+            "Monitoring metrics from different business units or application components separately",
+            "Reducing the blast radius of monitoring issues by isolating metrics",
+            "Scaling monitoring resources based on the requirements of individual business units or components"
+        ],
+        "capabilities": [
+            "Application Prometheus Split",
+            "Separate Prometheus instances for business units",
+            "Separate Prometheus instances for Statsd exporters",
+            "Metrics isolation",
+            "Blast radius reduction",
+            "Scalability of monitoring resources"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_monitoring_monitoring-stack-overview-chunk-4",
+        "name": "Monitoring Stack Overview.txt - Infra Prometheus Split:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Monitoring"
+        ],
+        "description": "This section discusses the decision to split the Infra Prometheus monitoring system into separate instances for each Kubernetes cluster. Previously, there was a single Infra Prometheus instance monitoring all clusters, which posed risks of being a single point of failure and scaling limitations. By splitting Prometheus into per-cluster instances hosted within the respective EKS clusters, the system gains flexibility, scalability, and resilience.",
+        "use_cases": [
+            "Enable/disable monitoring for new or deprovisioned clusters easily",
+            "Faster recovery from failures due to reduced data points in each Prometheus instance",
+            "Simplified addition of new component monitoring through templated configurations"
+        ],
+        "capabilities": [
+            "Per-cluster Prometheus instances",
+            "Hosted within respective EKS clusters",
+            "Templated configurations for easy monitoring additions",
+            "Horizontal scaling across nodes",
+            "Reduced single point of failure risk",
+            "Faster recovery time in case of failures"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_monitoring_monitoring-stack-overview-chunk-5",
+        "name": "Monitoring Stack Overview.txt - Querying (Victoria Metrics):",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Monitoring"
+        ],
+        "description": "This section explains the architecture and deployment of Victoria Metrics, a monitoring system used for storing and querying time-series metrics data. It describes the three main components: VM Insert (responsible for inserting data from remote Prometheus instances), VM Select (fetches and merges data from storage for querying), and VM Storage (central stateful component for storing metrics). The deployment involves running VM Insert and VM Select as Kubernetes Deployments, and VM Storage as a StatefulSet with multiple replicas for high availability. The section also mentions configuring retention periods, backup/restore strategies, monitoring dashboards, and cost considerations for running the components on a mix of spot and on-demand nodes.",
+        "use_cases": [
+            "Centralized storage and querying of time-series metrics data from multiple Prometheus instances",
+            "Monitoring and alerting based on the stored metrics data",
+            "Visualizing metrics data using Grafana dashboards",
+            "Configuring retention periods and backup/restore strategies for historical data"
+        ],
+        "capabilities": [
+            "Remote write from Prometheus instances",
+            "Distributed storage and querying",
+            "High availability through replicated storage",
+            "Multi-tenancy and capacity management",
+            "Monitoring dashboards for Victoria Metrics components",
+            "Cost optimization through spot and on-demand node usage"
+        ],
+        "references": [
+            "https://lh4.googleusercontent.com/dAmLi3HbGMT0L26rk5Y66A31LU9HTCI06wfhRrBe_erhw_s-rx4Znw913xsb2QCmAXZwvFt2AVNFH1bDPyA-zd-j0eY_nvHYiY-MM_x4zRv9rLX2JM-6fkrOQdtz4OOFHP6OIr-g\"",
+            "https://github.com/VictoriaMetrics/VictoriaMetrics/tree/cluster\"",
+            "https://vajra.razorpay.com/d/oS7Bi_0Wz/victoriametrics-cluster?orgId=1\""
+        ]
+    }
+]

@@ -1,0 +1,78 @@
+[
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_add-new-sftp-user-chunk-0",
+        "name": "Add new SFTP user.txt - Locations",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains how SFTP locations are configured to grant access permissions to users. It defines a JSON object with a key 'sib-internal-push' that represents an SFTP location. The 'bucket' and 'path' keys specify the S3 bucket and folder path where files can be accessed. The 'permissions' key determines whether the user has read ('get') or write ('put') access to that location. The actual values for these configurations are defined in a separate file called 'variables.tf'. Additionally, it shows how the 'actions' variable maps the 'get' and 'put' permissions to specific S3 actions.",
+        "use_cases": [
+            "Granting read-only access to specific S3 locations for SFTP users",
+            "Granting write access to specific S3 locations for SFTP users",
+            "Configuring multiple SFTP locations with different access permissions",
+            "Centralizing the configuration of SFTP location permissions in a separate file"
+        ],
+        "capabilities": [
+            "SFTP location configuration",
+            "S3 bucket and path specification",
+            "Read ('get') and write ('put') access permissions",
+            "Mapping of permissions to S3 actions",
+            "Centralized configuration management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_add-new-sftp-user-chunk-1",
+        "name": "Add new SFTP user.txt - Users",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains how to add a new SFTP user with specific permissions to access certain locations (paths) in an S3 bucket. It provides an example of how to define a new module for an SFTP user called 'sib-internal' with access to the 'sib-internal-push' location. The user's public SSH key is also specified in the module configuration.",
+        "use_cases": [
+            "Adding a new SFTP user with access to specific S3 locations",
+            "Granting permissions to an SFTP user for uploading or downloading files to/from specific S3 paths",
+            "Managing SFTP user access and permissions using Terraform modules"
+        ],
+        "capabilities": [
+            "SFTP user management",
+            "Granular access control for S3 locations",
+            "Terraform module for SFTP user configuration",
+            "SSH public key authentication for SFTP users",
+            "Defining user permissions based on S3 locations"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_add-new-sftp-user-chunk-2",
+        "name": "Add new SFTP user.txt - PS",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section discusses the potential for automating the process of granting SFTP user permissions at Razorpay. It suggests that users should be able to request access by specifying the 'locations' they need access to, and the rest of the fields should be handled automatically. This could streamline the process of managing SFTP user permissions and reduce manual effort.",
+        "use_cases": [
+            "Automating the process of granting SFTP user permissions",
+            "Allowing users to request access by specifying required 'locations'",
+            "Automating the handling of other fields related to SFTP user permissions",
+            "Streamlining the management of SFTP user permissions"
+        ],
+        "capabilities": [
+            "SFTP user permissions management",
+            "Automated user access request handling",
+            "Automated field handling for user permissions",
+            "Streamlined user permissions management process"
+        ],
+        "references": []
+    }
+]

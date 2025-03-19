@@ -1,0 +1,154 @@
+[
+    {
+        "id": "engineering_devops_run-books-and-sops_spinnaker-runbooks_spinnaker-component-deployment-management-guide-chunk-0",
+        "name": "Spinnaker Component Deployment Management Guide.txt - Introduction",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs",
+            "Spinnaker Runbooks"
+        ],
+        "description": "This section introduces the purpose of the document, which is to outline the process for making changes to the deployment of Spinnaker components, and consequently, to Spinnaker itself. It provides context and sets the stage for the subsequent sections that will delve into the specifics of this process.",
+        "use_cases": [
+            "Managing and updating the deployment of Spinnaker components",
+            "Modifying or upgrading Spinnaker itself",
+            "Understanding the process for making changes to Spinnaker's deployment"
+        ],
+        "capabilities": [
+            "Deployment management",
+            "Component updates",
+            "Spinnaker upgrades",
+            "Change management process"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_spinnaker-runbooks_spinnaker-component-deployment-management-guide-chunk-1",
+        "name": "Spinnaker Component Deployment Management Guide.txt - Context",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs",
+            "Spinnaker Runbooks"
+        ],
+        "description": "This section outlines the key components of the Spinnaker deployment management system, which is deployed in the 'prod-green-eks' Kubernetes cluster within the 'spinnaker' namespace. It describes the various services and their responsibilities, such as managing configurations, caching cloud data, handling read/write operations, providing the web interface, managing notifications and events, controlling access, storing metadata, serving as the API gateway, integrating with CI systems, performing canary analysis, and orchestrating pipelines and tasks.",
+        "use_cases": [
+            "Managing and deploying applications and infrastructure across multiple cloud providers",
+            "Continuous integration and deployment (CI/CD) workflows",
+            "Canary analysis and progressive delivery",
+            "Access control and authorization management for Spinnaker users"
+        ],
+        "capabilities": [
+            "Configuration management",
+            "Cloud resource caching",
+            "Read/write operations on cloud resources",
+            "Web user interface",
+            "Notifications and event management",
+            "Authorization and access control",
+            "Metadata storage",
+            "API gateway",
+            "CI system integration",
+            "Canary analysis",
+            "Pipeline orchestration"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_spinnaker-runbooks_spinnaker-component-deployment-management-guide-chunk-2",
+        "name": "Spinnaker Component Deployment Management Guide.txt - Background",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs",
+            "Spinnaker Runbooks"
+        ],
+        "description": "This section provides an overview of two key components in the Spinnaker deployment management system. The first component, spin-rosco, is a bakery service responsible for creating machine images (like AMIs in AWS) as part of the deployment pipeline. The second component, spin-sleeve, is a custom component used for implementing additional features such as security, SSL termination, or other middleware functionalities.",
+        "use_cases": [
+            "Creating machine images as part of the deployment pipeline",
+            "Implementing additional features like security, SSL termination, or other middleware functionalities"
+        ],
+        "capabilities": [
+            "Machine image creation (e.g., AMIs in AWS)",
+            "Security feature implementation",
+            "SSL termination",
+            "Middleware functionality implementation"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_spinnaker-runbooks_spinnaker-component-deployment-management-guide-chunk-3",
+        "name": "Spinnaker Component Deployment Management Guide.txt - Procedure for Making Changes",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs",
+            "Spinnaker Runbooks"
+        ],
+        "description": "This section provides background information on how changes to the Spinnaker application are managed. It explains that Terraform is used to manage the configurations, which are stored in the 'vishnu' repository. The configuration files for Spinnaker components are located in a specific directory, and their values are set through different Terraform files in another directory.",
+        "use_cases": [
+            "Managing changes to the Spinnaker application",
+            "Storing and maintaining Spinnaker configurations",
+            "Utilizing Terraform for infrastructure as code",
+            "Separating configuration files and values across different directories"
+        ],
+        "capabilities": [
+            "Terraform-based configuration management",
+            "Version control for configurations",
+            "Modular configuration structure",
+            "Separation of configuration files and values",
+            "Infrastructure as code approach"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_spinnaker-runbooks_spinnaker-component-deployment-management-guide-chunk-4",
+        "name": "Spinnaker Component Deployment Management Guide.txt - Overview",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs",
+            "Spinnaker Runbooks"
+        ],
+        "description": "This section provides an overview of the process for making changes to the Spinnaker deployment managed by Terraform. It explains that Terraform directly manages the Halyard and Spin-sleeve components, while other components are indirectly managed by updating configuration parameters. To migrate components to a different Auto Scaling Group (ASG), the node selectors need to be updated in the 'spinnaker.tf' file's 'environment_settings' block.",
+        "use_cases": [
+            "Managing Spinnaker components deployed using Terraform",
+            "Migrating Spinnaker components to a different Auto Scaling Group (ASG)",
+            "Updating configuration parameters for Spinnaker components",
+            "Understanding the scope of Terraform's direct management in a Spinnaker deployment"
+        ],
+        "capabilities": [
+            "Terraform management of Halyard and Spin-sleeve components",
+            "Updating node selectors in 'spinnaker.tf' file",
+            "Configuring 'environment_settings' block parameters",
+            "Indirect management of non-Halyard and non-Spin-sleeve components",
+            "Migrating components to different Auto Scaling Groups (ASGs)"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_spinnaker-runbooks_spinnaker-component-deployment-management-guide-chunk-5",
+        "name": "Spinnaker Component Deployment Management Guide.txt - Steps",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs",
+            "Spinnaker Runbooks"
+        ],
+        "description": "This section outlines the steps involved in updating and deploying changes to the Spinnaker component, which is a continuous delivery platform used for managing and deploying applications. The process involves modifying the Terraform configuration, raising a pull request, reviewing and applying changes, verifying configurations, and deploying the updates using Halyard, a tool for managing Spinnaker. The section emphasizes the importance of systematic updates, monitoring, and verification to ensure operational stability.",
+        "use_cases": [
+            "Updating and deploying changes to the Spinnaker component",
+            "Managing and deploying applications using Spinnaker",
+            "Ensuring operational stability during updates and deployments",
+            "Collaborating and reviewing changes through pull requests"
+        ],
+        "capabilities": [
+            "Terraform configuration management",
+            "Pull request and code review process",
+            "Atlantis plan and apply for deployment",
+            "Halyard configuration and deployment",
+            "Kubernetes secret management",
+            "Pod status monitoring"
+        ],
+        "references": []
+    }
+]

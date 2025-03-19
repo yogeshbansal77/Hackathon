@@ -1,0 +1,162 @@
+[
+    {
+        "id": "engineering_devops_dev-self-serve_faqs-from-dev-team-chunk-0",
+        "name": "FAQs from Dev Team.txt - How to set up SQS Autoscaler on a worker?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains how to set up SQS Autoscaler on a worker node in a Kubernetes environment. SQS Autoscaler is a tool that automatically scales the number of worker nodes based on the number of messages in an Amazon Simple Queue Service (SQS) queue. The setup process involves raising a pull request (PR) with the necessary Kubernetes manifest files, which can be found in the provided GitHub repository link containing examples.",
+        "use_cases": [
+            "Automatically scaling worker nodes based on SQS queue length",
+            "Optimizing resource utilization and cost in a Kubernetes environment",
+            "Handling fluctuating workloads efficiently"
+        ],
+        "capabilities": [
+            "SQS Autoscaler",
+            "Kubernetes manifest configuration",
+            "Pull request (PR) process",
+            "GitHub repository examples",
+            "Worker node scaling",
+            "Resource optimization"
+        ],
+        "references": [
+            "https://github.com/razorpay/kube-manifests/search?q=sqsautoscaler&type=code>"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_faqs-from-dev-team-chunk-1",
+        "name": "FAQs from Dev Team.txt - How to set up HPA on a worker?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains how to set up Horizontal Pod Autoscaling (HPA) for worker nodes in a Kubernetes cluster. HPA automatically scales the number of pods based on resource utilization, ensuring efficient resource allocation. The section provides examples of HPA configurations from the Razorpay GitHub repository, which can be used as references for setting up HPA for different services like FTS, Mozart, and Payment Links.",
+        "use_cases": [
+            "Automatically scaling worker nodes based on resource utilization",
+            "Efficient resource allocation for services like FTS, Mozart, and Payment Links",
+            "Raising a Pull Request (PR) to update HPA configurations in the Kubernetes manifests repository"
+        ],
+        "capabilities": [
+            "Horizontal Pod Autoscaling (HPA)",
+            "Kubernetes manifests",
+            "GitHub repository",
+            "Pull Request (PR)",
+            "Resource utilization monitoring",
+            "Automatic scaling of worker nodes"
+        ],
+        "references": [
+            "https://github.com/razorpay/kube-manifests/blob/73311fb0570ae120a02d51dc8929ffef2dce2811/templates/payment-links/templates/sqsautoscalers.yaml>",
+            "https://github.com/razorpay/kube-manifests/tree/master/templates/fts/templates>",
+            "https://github.com/razorpay/kube-manifests/blob/master/templates/fts/templates/hpa-fts-live-default-worker.yml>",
+            "https://github.com/razorpay/kube-manifests/blob/master/templates/reminders/templates/reminders-worker-hpa.yaml>"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_faqs-from-dev-team-chunk-2",
+        "name": "FAQs from Dev Team.txt - How to remove an unused IAM annotation in Kubemanifest?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains how to handle unused IAM (Identity and Access Management) annotations in Kubernetes manifests. IAM annotations are used to grant permissions to resources in a Kubernetes cluster running on AWS. If an IAM annotation is present in the manifest but not associated with any IAM role, it can cause errors in the AWS CloudTrail service. The development team has the option to either add the missing IAM role to AWS IAM or remove the unused IAM annotation from the Kubernetes manifests and Spinnaker pipelines.",
+        "use_cases": [
+            "Removing unused IAM annotations from Kubernetes manifests",
+            "Adding missing IAM roles to AWS IAM",
+            "Troubleshooting CloudTrail errors related to IAM annotations"
+        ],
+        "capabilities": [
+            "IAM annotation management",
+            "Kubernetes manifest editing",
+            "Spinnaker pipeline editing",
+            "AWS IAM role management",
+            "CloudTrail error handling"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_faqs-from-dev-team-chunk-3",
+        "name": "FAQs from Dev Team.txt - Can you please add these secrets into prod Credstash?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains that developers can now add secrets to the production environment's Credstash (a secure credential storage system) without needing DevOps intervention. However, developers cannot copy secrets from one environment to another, and only leads or managers have the necessary permissions to perform such actions. The section also mentions that the process of adding secrets to production is now self-serve for developers.",
+        "use_cases": [
+            "Adding new secrets to the production environment's Credstash",
+            "Copying secrets from one environment to another (requires lead/manager permissions)",
+            "Self-serve secret management for developers in the production environment"
+        ],
+        "capabilities": [
+            "Self-serve secret addition",
+            "Restricted secret copying",
+            "Role-based access control",
+            "Secure credential storage (Credstash)",
+            "Environment separation"
+        ],
+        "references": [
+            "https://github.com/razorpay/kube-manifests/pull/1495/files>",
+            "https://github.com/razorpay/vishnu/pull/4899/files>"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_faqs-from-dev-team-chunk-4",
+        "name": "FAQs from Dev Team.txt - Why should we migrate alerts from Grafana into Alert Manager?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains the advantages of migrating alerts from Grafana to AlertManager, a component of the Prometheus monitoring system. AlertManager provides better alert handling, filtering, and notification capabilities compared to Grafana. It allows silencing and snoozing alerts, suppressing redundant notifications, and managing alert configurations through version-controlled repositories.",
+        "use_cases": [
+            "Avoiding alert spam during maintenance or known repetitive alerts",
+            "Suppressing lower-severity alerts when a higher-severity alert is already firing",
+            "Temporarily snoozing alerts from the AlertManager dashboard",
+            "Centralized management of alert configurations through version-controlled repositories"
+        ],
+        "capabilities": [
+            "Silencing alerts",
+            "Inhibition rules to suppress redundant notifications",
+            "Snoozing alerts",
+            "Sending alerts to different channels (Slack, PagerDuty, Webhooks)",
+            "Version-controlled alert configurations",
+            "Centralized alert management"
+        ],
+        "references": [
+            "https://credstash-ui.concierge.stage.razorpay.in/dist/>-",
+            "https://credstash-ui.razorpay.com/>",
+            "https://github.com/razorpay/alert-rules/blob/master/README.md>",
+            "https://alpha.razorpay.com/repo/fts-alertmanager>"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_faqs-from-dev-team-chunk-5",
+        "name": "FAQs from Dev Team.txt - Need help in reviewing and merging PR regarding dev user access for qa-tests and perf1",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section provides guidance on the process of reviewing and merging pull requests (PRs) related to granting development user access for QA testing and performance testing environments. It emphasizes that access requests should not be raised as separate tickets, as they are automatically created within the PR itself. The review and approval of such PRs should be handled by managers or leads, while the DevOps team can assist in case of any failures or syntax errors during the process.",
+        "use_cases": [
+            "Granting development user access for QA testing environments",
+            "Granting development user access for performance testing environments",
+            "Reviewing and merging PRs related to user access management",
+            "Seeking assistance from DevOps team for any issues or errors during the PR review process"
+        ],
+        "capabilities": [
+            "Automatic access request creation within PRs",
+            "PR review and approval by managers or leads",
+            "DevOps team support for troubleshooting failures or syntax errors",
+            "Streamlined process for managing development user access",
+            "Collaboration between development and DevOps teams"
+        ],
+        "references": [
+            "https://github.com/razorpay/alert-rules/blob/master/rules/prod-rules/stork_rules.yaml>"
+        ]
+    }
+]

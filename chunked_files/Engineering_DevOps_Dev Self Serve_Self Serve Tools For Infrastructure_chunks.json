@@ -1,0 +1,192 @@
+[
+    {
+        "id": "engineering_devops_dev-self-serve_self-serve-tools-for-infrastructure-chunk-0",
+        "name": "Self Serve Tools For Infrastructure.txt - Secrets Management",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains that engineers at the company now have self-service access to manage secrets (sensitive information like passwords, API keys, etc.) across all environments through a tool called 'credstash-ui'. However, copying secrets from one table to another is still a manual process. It also mentions that developers have the flexibility to test their applications on a self-serve Kubernetes cluster, where they can launch their own namespace and required services like databases and caches.",
+        "use_cases": [
+            "Managing and accessing secrets (passwords, API keys, etc.) across different environments",
+            "Testing applications on a self-serve Kubernetes cluster",
+            "Launching required services like databases and caches within a developer's namespace on the cluster"
+        ],
+        "capabilities": [
+            "Self-serve secrets management via credstash-ui",
+            "Exception for copying secrets between tables",
+            "Self-serve Kubernetes cluster for testing",
+            "Dedicated namespace for each developer",
+            "Ability to launch services like databases and caches within a namespace"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/secrets-management-at-razorpay>"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_self-serve-tools-for-infrastructure-chunk-1",
+        "name": "Self Serve Tools For Infrastructure.txt - Self Serve Cluster",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains two self-service tools, Botkube and Atlantis, that allow developers and engineers to interact with and manage infrastructure resources without direct cluster access. Botkube is a service running on the clusters that enables users to retrieve information about running pods, services, and ingress resources through a Slack channel. Atlantis is a tool that facilitates the creation and management of AWS resources by allowing users to submit Terraform code changes as pull requests, perform plan operations, and obtain approvals from DevOps/SRE teams before applying the changes.",
+        "use_cases": [
+            "Retrieving information about running pods, services, and ingress resources without direct cluster access",
+            "Creating and managing AWS resources through Terraform code changes",
+            "Collaborating with DevOps/SRE teams for infrastructure code reviews and approvals",
+            "Automating infrastructure provisioning and deployment processes"
+        ],
+        "capabilities": [
+            "Botkube: Interact with clusters through Slack channels",
+            "Botkube: Retrieve information about pods, services, and ingress resources",
+            "Atlantis: Submit Terraform code changes as pull requests",
+            "Atlantis: Perform plan operations on pull requests",
+            "Atlantis: Obtain approvals from DevOps/SRE teams",
+            "Atlantis: Apply approved Terraform code changes"
+        ],
+        "references": [
+            "https://www.botkube.io/usage/"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_self-serve-tools-for-infrastructure-chunk-2",
+        "name": "Self Serve Tools For Infrastructure.txt - Botkube",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains the process of creating Kafka topics and users within the organization's infrastructure using Kubernetes manifests and Spinnaker, a continuous delivery platform. It outlines the steps to create a pull request with the necessary code changes, trigger a plan to validate the changes, and then deploy the changes through Spinnaker's deployment pipeline.",
+        "use_cases": [
+            "Creating new Kafka topics and users for applications",
+            "Onboarding new applications that require Kafka topics and users",
+            "Validating and deploying Kafka topic and user changes through a continuous delivery pipeline"
+        ],
+        "capabilities": [
+            "Kafka topic creation",
+            "Kafka user creation",
+            "Kubernetes manifest management",
+            "Spinnaker integration",
+            "GitHub Actions for plan validation",
+            "Continuous delivery pipeline for Kafka entities"
+        ],
+        "references": [
+            "https://github.com/razorpay/kube-manifests/tree/master/templates/kafka-entity>."
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_self-serve-tools-for-infrastructure-chunk-3",
+        "name": "Self Serve Tools For Infrastructure.txt - Atlantis",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section provides a link to the Kafka entity stage pipeline on the deploy.razorpay.com platform, which is likely a tool or interface for managing and monitoring the deployment of Kafka-related infrastructure components. The link seems to be a self-service tool that allows users to access and interact with the deployment process for Kafka entities in a staging environment.",
+        "use_cases": [
+            "Monitoring the deployment process of Kafka entities",
+            "Accessing self-service tools for managing Kafka infrastructure",
+            "Tracking the execution status of Kafka-related deployment pipelines",
+            "Interacting with the staging environment for Kafka components"
+        ],
+        "capabilities": [
+            "Self-service deployment tools",
+            "Kafka infrastructure management",
+            "Deployment pipeline monitoring",
+            "Staging environment access",
+            "Kafka entity deployment"
+        ],
+        "references": [
+            "https://deploy.razorpay.com/#/applications/kafka/executions?pipeline=kafka-entity-stage-pipeline>."
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_self-serve-tools-for-infrastructure-chunk-4",
+        "name": "Self Serve Tools For Infrastructure.txt - Kafka Topic Creation",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains the process of creating and managing Kafka topics, which are essential for handling real-time data streams within the infrastructure. It provides a link to a deployment pipeline for creating Kafka topics in the production environment, as well as a tool (Kafdrop) for confirming the creation of Kafka users and topics in the staging environment. Additionally, it mentions the ability to provision applications and databases through GitHub Actions and a dedicated repository (kube-manifests).",
+        "use_cases": [
+            "Creating and managing Kafka topics for real-time data streaming",
+            "Provisioning applications to staging and production environments",
+            "Provisioning databases and database users"
+        ],
+        "capabilities": [
+            "Kafka topic creation pipeline",
+            "Kafdrop tool for monitoring Kafka topics and users",
+            "Application provisioning via kube-manifests repository",
+            "Database and user provisioning via GitHub Actions"
+        ],
+        "references": [
+            "https://deploy.razorpay.com/#/applications/kafka/executions?pipeline=kafka-entity-prod-pipeline>",
+            "https://kafdrop.concierge.stage.razorpay.in/>",
+            "https://github.com/razorpay/kube-manifests/blob/master/dba/README.md>",
+            "https://wiki.rzp.io/DevOps/kubernetes/kubestash>"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_self-serve-tools-for-infrastructure-chunk-5",
+        "name": "Self Serve Tools For Infrastructure.txt - Kube-Manifests(Application Provisioning)",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section provides links to documentation resources related to managing secrets and accessing the EKS (Elastic Kubernetes Service) development cluster. It seems to be a part of a larger guide on self-service tools for infrastructure management, specifically focusing on application provisioning using Kubernetes manifests.",
+        "use_cases": [
+            "Managing and storing sensitive credentials or secrets securely",
+            "Accessing and interacting with the Kubernetes development cluster",
+            "Provisioning and deploying applications on the Kubernetes cluster"
+        ],
+        "capabilities": [
+            "Credstash Secret Addition",
+            "EKS dev cluster access",
+            "Kubernetes manifest management",
+            "Application provisioning",
+            "Infrastructure self-service tools"
+        ],
+        "references": [
+            "https://wiki.rzp.io/DevOps/guides/dev/Credstash-Secret-Addition>",
+            "https://wiki.rzp.io/EKS-dev-serve-cluster-access>"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_self-serve-tools-for-infrastructure-chunk-6",
+        "name": "Self Serve Tools For Infrastructure.txt - Database creation",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section appears to be a list of links related to various tools and resources used for infrastructure management and deployment at Razorpay. It includes links to documentation on topics like deploying applications on Kubernetes, using AWS services, managing Kafka clusters, and provisioning AWS resources. The section seems to be a collection of references for self-service tools and processes related to infrastructure operations.",
+        "use_cases": [
+            "Deploying applications on Kubernetes",
+            "Managing and operating Kafka clusters",
+            "Provisioning and managing AWS resources",
+            "Automating infrastructure deployment and management"
+        ],
+        "capabilities": [
+            "Application deployment",
+            "Kubernetes management",
+            "AWS resource provisioning",
+            "Kafka cluster management",
+            "Infrastructure as Code",
+            "Automation"
+        ],
+        "references": [
+            "https://docs.google.com/document/d/1rrnDbAsuHvR_UsS4Z6WYV8dQmRD9vZlvmB29UKhK8yk/edit",
+            "https://wiki.rzp.io/app-endpoint-on-dev-serve>",
+            "https://wiki.rzp.io/AWS-K8s-Service-Operator>",
+            "https://www.botkube.io/usage/>",
+            "https://wiki.rzp.io/DevOps/Atlantis>",
+            "https://github.com/razorpay/kube-manifests/tree/master/templates/kafka-entity>",
+            "https://github.com/razorpay/kube-manifests>"
+        ]
+    }
+]

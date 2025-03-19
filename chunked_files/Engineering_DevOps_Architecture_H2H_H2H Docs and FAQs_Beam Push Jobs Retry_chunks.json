@@ -1,0 +1,78 @@
+[
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_beam-push-jobs-retry-chunk-0",
+        "name": "Beam Push Jobs Retry.txt - Find the following details for your JOB",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section outlines the essential details required to retry a Beam job that processes a file stored in an S3 bucket. It provides a list of key information needed, such as the job name, the bucket name and region where the file is located, the full S3 file path, and the environment in which the job needs to be retried. This information is crucial for identifying and rerunning a specific job that failed during its initial execution.",
+        "use_cases": [
+            "Retrying a failed Beam job that processes files from an S3 bucket",
+            "Identifying the necessary details to rerun a specific Beam job",
+            "Troubleshooting and debugging issues with Beam jobs that process S3 files"
+        ],
+        "capabilities": [
+            "Beam job identification",
+            "S3 bucket and file location details",
+            "Environment specification for job retries",
+            "Job retry facilitation",
+            "Error handling and recovery"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_beam-push-jobs-retry-chunk-1",
+        "name": "Beam Push Jobs Retry.txt - Pipeline for push job retry",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section provides a link to a pipeline for retrying push jobs in the production environment of the Beam application. It cautions the user to run this pipeline carefully since it involves the production environment. The pipeline is hosted on the Razorpay deployment platform and can be accessed through the provided URL.",
+        "use_cases": [
+            "Retrying failed push jobs in the production environment",
+            "Handling errors or issues with push job execution",
+            "Manually triggering the retry process for push jobs"
+        ],
+        "capabilities": [
+            "Pipeline for push job retry",
+            "Production environment access",
+            "Hosted on Razorpay deployment platform",
+            "Accessible via provided URL"
+        ],
+        "references": [
+            "https://deploy.razorpay.com/#/applications/beam/executions?pipeline=retry-push-prod>"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_beam-push-jobs-retry-chunk-2",
+        "name": "Beam Push Jobs Retry.txt - Sample params in the below picture",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section provides a visual representation of the sample parameters required for configuring a Beam Push Job Retry. The image displays various fields and options that need to be set or selected when setting up the retry mechanism for a failed job. It serves as a reference guide for users to understand the different parameters involved in the process.",
+        "use_cases": [
+            "Configuring retry settings for failed Beam Push Jobs",
+            "Understanding the parameters required for job retry setup",
+            "Referencing the sample parameter values for job retry configuration"
+        ],
+        "capabilities": [
+            "Visual representation of sample parameters",
+            "Reference guide for job retry configuration",
+            "Explanation of different parameter fields and options"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/a178a4d7a64ebf2f38ac0f8262101846.png"
+        ]
+    }
+]

@@ -1,0 +1,126 @@
+[
+    {
+        "id": "engineering_devops_devops-onboarding_on-call-engineer's-guide-chunk-0",
+        "name": "On-call Engineer's Guide.txt - What does being on-call really mean",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section provides an overview of the on-call responsibilities and processes at Razorpay. It emphasizes that the on-call practices are constantly evolving, and it is the team's duty to improve the documentation and processes continuously. The section includes links to resources that explain incident response, triage, escalation matrix, monitoring and alerting systems, and incident management guidelines.",
+        "use_cases": [
+            "Understanding the on-call responsibilities and processes",
+            "Familiarizing with the monitoring and alerting systems",
+            "Learning about incident response, triage, and escalation procedures",
+            "Comprehending incident management practices, such as severity assessment and root cause analysis"
+        ],
+        "capabilities": [
+            "Incident response",
+            "Triage",
+            "Escalation matrix",
+            "Monitoring and alerting systems",
+            "Incident management",
+            "Root cause analysis"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/devops-on-call-response>",
+            "https://alpha.razorpay.com/repo/metrics-monitoring-alerting>",
+            "https://alpha.razorpay.com/repo/incident-management-101>"
+        ]
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_on-call-engineer's-guide-chunk-1",
+        "name": "On-call Engineer's Guide.txt - An on-call engineer should have a certain level of familiarity about things that ties razorpay services together.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section explains the importance of having well-documented runbooks and a centralized dashboard for on-call engineers at Razorpay. Runbooks provide clear instructions to quickly mitigate issues when alerts are triggered, reducing the mean time to resolution (MTTR). The Central Dashboard serves as a single source of truth for monitoring critical metrics, payments, success rates, and overall system health. It helps engineers quickly identify and respond to potential issues.",
+        "use_cases": [
+            "Quickly mitigating issues when alerts are triggered",
+            "Monitoring critical metrics, payments, and success rates",
+            "Assessing overall system health",
+            "Reducing mean time to resolution (MTTR)"
+        ],
+        "capabilities": [
+            "Easy-to-read runbooks",
+            "Clear instructions in runbooks",
+            "Pinning runbooks to alerts",
+            "Central Dashboard for monitoring",
+            "Tracking mission-critical traffic metrics",
+            "Tracking payments and success rates"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/alert-run-books>",
+            "https://alpha.razorpay.com/repo/run-books-2>",
+            "https://vajra.razorpay.com/d/LA4p4o77k/central-dashboard>",
+            "https://alpha.razorpay.com/repo/central-dashboard>"
+        ]
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_on-call-engineer's-guide-chunk-2",
+        "name": "On-call Engineer's Guide.txt - Incident response, triaging an incident, escalation matrix and setting expectations for an on-call person",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section appears to be empty or missing content. Without any text provided, it is not possible to provide a meaningful description, use cases, or capabilities related to incident response, triaging incidents, escalation matrices, or setting expectations for on-call personnel.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_on-call-engineer's-guide-chunk-3",
+        "name": "On-call Engineer's Guide.txt - Familiarise yourselves with the eco-system of notifications/alerting/monitoring.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section appears to be empty or missing content. Without any provided information, it is difficult to provide a meaningful description or extract use cases and capabilities.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_on-call-engineer's-guide-chunk-4",
+        "name": "On-call Engineer's Guide.txt - What constitutes an incident ?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section does not provide any content or explanation about what constitutes an incident for an on-call engineer. The section is empty, and no information is given.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_on-call-engineer's-guide-chunk-5",
+        "name": "On-call Engineer's Guide.txt - Easy-to-read run books with clear instructions works all the time.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section appears to be empty, as there is no content provided within the code block. Without any information or instructions, it is difficult to provide a meaningful description or identify any use cases or capabilities.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_on-call-engineer's-guide-chunk-6",
+        "name": "On-call Engineer's Guide.txt - The Central Dashboard",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section appears to be empty or missing content. Without any text or details provided, it is difficult to provide a meaningful description or extract any specific use cases or capabilities.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    }
+]

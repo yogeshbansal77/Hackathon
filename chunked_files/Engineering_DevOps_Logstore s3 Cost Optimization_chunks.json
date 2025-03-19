@@ -1,0 +1,114 @@
+[
+    {
+        "id": "engineering_devops_logstore-s3-cost-optimization-chunk-0",
+        "name": "Logstore s3 Cost Optimization.txt - Abstract",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section provides an overview of the current state of the S3 buckets used for storing logs from Sumologic and Coralogix, which are log analytics platforms. It mentions that after the default retention period set for the index in Sumologic and log storage in Coralogix, the logs are stored in S3 buckets. The section also indicates that the document will explore cost optimization opportunities for this use case, as the amount of logs stored is expected to increase over time.",
+        "use_cases": [
+            "Storing logs from Sumologic and Coralogix in S3 buckets",
+            "Cost optimization for log storage in S3 buckets",
+            "Managing log retention periods in Sumologic and Coralogix"
+        ],
+        "capabilities": [
+            "Log storage",
+            "Log analytics",
+            "Cost optimization",
+            "Retention period management",
+            "S3 bucket management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_logstore-s3-cost-optimization-chunk-1",
+        "name": "Logstore s3 Cost Optimization.txt - What's the current state ?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section explains the current state of log storage in S3 buckets. Logs are stored in different buckets for each year, with the first three months in a queryable format, the next year in standard S3 storage, and after that, they should be moved to Glacier storage. However, there is a compliance requirement to retain logs for at least 10 years. Currently, all logs are stored in standard mode indefinitely, without any lifecycle policies to transition them to Glacier after the expected one-year duration.",
+        "use_cases": [
+            "Compliance and regulatory requirements for log retention",
+            "Technical support team accessing logs for investigating support tickets",
+            "Application team accessing recent logs (up to 1 month old)"
+        ],
+        "capabilities": [
+            "S3 bucket storage for logs",
+            "Queryable log format for recent logs",
+            "Warm storage (S3 Standard) for logs up to 1 year old",
+            "Cold storage (Glacier) for logs older than 1 year",
+            "Lifecycle policies for transitioning logs to different storage tiers"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_logstore-s3-cost-optimization-chunk-2",
+        "name": "Logstore s3 Cost Optimization.txt - Who are all the stakeholders ?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section discusses the stakeholders involved in the log storage and optimization process, including the application team responsible for generating logs and the tech support team that utilizes the logs for investigations. It also provides context on the current log volume and number of log objects, which will be used as a baseline for cost optimization calculations. The section then hints at the current costs associated with storing logs in the Standard mode.",
+        "use_cases": [
+            "Log generation by application teams",
+            "Log analysis for investigations by tech support teams",
+            "Cost optimization for log storage"
+        ],
+        "capabilities": [
+            "Log storage",
+            "Log volume tracking",
+            "Log object counting",
+            "Cost calculation for log storage",
+            "Standard storage mode"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_logstore-s3-cost-optimization-chunk-3",
+        "name": "Logstore s3 Cost Optimization.txt - What's the current cost ?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section explains the current storage cost for a logstore on Amazon S3. It provides a formula to calculate the monthly storage cost based on the amount of data stored. The cost is divided into tiers, with the first 50 TB charged at $0.025 per GB per month, the next 450 TB charged at $0.024 per GB per month, and anything over 500 TB charged at $0.023 per GB per month. The section implies that the current storage usage is 50,000 GB (50 TB) and 350,000 GB (350 TB), resulting in a monthly storage cost of $9,650.",
+        "use_cases": [
+            "Cost optimization for large-scale data storage on Amazon S3",
+            "Budgeting and cost forecasting for cloud storage expenses",
+            "Evaluating storage requirements and associated costs for data-intensive applications"
+        ],
+        "capabilities": [
+            "Tiered pricing model for Amazon S3 storage",
+            "Cost calculation based on storage usage",
+            "Cost optimization opportunities for large-scale data storage"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_logstore-s3-cost-optimization-chunk-4",
+        "name": "Logstore s3 Cost Optimization.txt - What's the cost optimisation opportunity ?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section discusses various cost optimization opportunities for storing logs in Amazon S3 by transitioning them to different storage classes based on access patterns and retention requirements. It compares the costs and implications of using S3 Intelligent Tiering, S3 Standard Infrequent Access, S3 One Zone-Infrequent Access, S3 Glacier Instant Retrieval, and other Glacier modes. The goal is to reduce storage costs while ensuring compliance and accessibility for logs that need to be retained for a certain period.",
+        "use_cases": [
+            "Compliance and investigation purposes",
+            "Storing and retaining logs for a specific duration",
+            "Occasional need to retrieve old logs for technical support or compliance audits",
+            "Cost optimization for large volumes of log data"
+        ],
+        "capabilities": [
+            "S3 Intelligent Tiering",
+            "S3 Standard Infrequent Access",
+            "S3 One Zone-Infrequent Access",
+            "S3 Glacier Instant Retrieval",
+            "Other Glacier storage modes",
+            "Cost calculations for different storage classes",
+            "Lifecycle transition costs",
+            "Data retrieval costs"
+        ],
+        "references": []
+    }
+]

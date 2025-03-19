@@ -1,0 +1,110 @@
+[
+    {
+        "id": "engineering_databases_working-guides_re-arch-(cards-&-pg_router)-merge-to-tidb-chunk-0",
+        "name": "Router) merge to TiDB.txt - Data Copy to API (MySQL)",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Working Guides",
+            "Re-arch (Cards & PG"
+        ],
+        "description": "This section appears to be empty or missing content. Without any text or information provided, it is difficult to provide a meaningful description or identify any use cases or capabilities.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_working-guides_re-arch-(cards-&-pg_router)-merge-to-tidb-chunk-1",
+        "name": "Router) merge to TiDB.txt - Dump from TiDB:",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Working Guides",
+            "Re-arch (Cards & PG"
+        ],
+        "description": "This section explains the process of taking a data dump from a TiDB database instance for two specific databases: 'prod_pg_router' and 'pgpayments_card_live'. The data dump is required to be restored on a different instance, referred to as the 'harvester instance'. The section provides the necessary commands to perform the data dump from TiDB.",
+        "use_cases": [
+            "Data migration from one TiDB instance to another",
+            "Backup and restore of TiDB databases",
+            "Replicating data across different TiDB instances"
+        ],
+        "capabilities": [
+            "Data dump from TiDB",
+            "Database backup",
+            "Data restoration",
+            "Cross-instance data transfer"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_working-guides_re-arch-(cards-&-pg_router)-merge-to-tidb-chunk-2",
+        "name": "Router) merge to TiDB.txt - Restore the database to Harvester",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Working Guides",
+            "Re-arch (Cards & PG"
+        ],
+        "description": "This section provides instructions for exporting data from a TiDB database and restoring it to a Harvester database. It involves using the mysqldump utility to create SQL dump files for specific tables from two different databases (prod_pg_router and pgpayments_card_live). These dump files can then be used to restore the data to the Harvester database.",
+        "use_cases": [
+            "Migrating data from TiDB to Harvester",
+            "Backing up specific tables from a database",
+            "Restoring data from SQL dump files"
+        ],
+        "capabilities": [
+            "Data export using mysqldump",
+            "Selective table export",
+            "Database restoration from SQL dump files",
+            "Remote database access",
+            "Authentication with username and password"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_working-guides_re-arch-(cards-&-pg_router)-merge-to-tidb-chunk-3",
+        "name": "Router) merge to TiDB.txt - Data Preparation and Copy",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Working Guides",
+            "Re-arch (Cards & PG"
+        ],
+        "description": "This section provides instructions for connecting to a new Harvester Instance, which is likely a software or service related to data management or processing. The brevity of the content suggests that this is a preliminary step before performing further actions or configurations.",
+        "use_cases": [
+            "Establishing a connection to a data management system",
+            "Preparing for data processing or analysis tasks",
+            "Accessing a new instance or environment for data-related operations"
+        ],
+        "capabilities": [
+            "Connecting to a Harvester Instance",
+            "Accessing a new data management environment",
+            "Preparing for data-related tasks"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_working-guides_re-arch-(cards-&-pg_router)-merge-to-tidb-chunk-4",
+        "name": "Router) merge to TiDB.txt - Payments Cards  to Api Cards",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Working Guides",
+            "Re-arch (Cards & PG"
+        ],
+        "description": "This section explains the process of migrating payment card data from an existing database to a new API database. It involves creating temporary tables, extracting card data from a JSON column, cleaning up the data, and inserting it into the new 'api.cards' table. The steps include creating a temporary table, inserting data from the existing 'payments' table while extracting JSON fields, trimming quotes from string fields, and finally inserting the cleaned data into the 'api.cards' table.",
+        "use_cases": [
+            "Migrating payment card data from an existing database to a new API database",
+            "Consolidating and restructuring payment card data for better organization and accessibility",
+            "Preparing payment card data for integration with a new API or application"
+        ],
+        "capabilities": [
+            "Creating temporary tables",
+            "Extracting data from JSON columns",
+            "Data cleaning and transformation",
+            "Inserting data into new tables",
+            "Handling different data types (strings, integers, etc.)",
+            "Trimming unwanted characters from string fields"
+        ],
+        "references": []
+    }
+]

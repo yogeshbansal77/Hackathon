@@ -1,0 +1,100 @@
+[
+    {
+        "id": "engineering_devops_dev-self-serve_how-to-a-raise-a-ticket-at-devops-jira-board-chunk-0",
+        "name": "How to a raise a ticket at DevOps JIRA board.txt - Before you raise a request",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains an alternative way to raise a request or ticket on the DevOps JIRA board without directly accessing the JIRA website. It suggests using a Slack command (/devops-jira) from any Slack channel, which will summon a JIRA bot. The bot will then ask for details required to create the ticket, making the process more convenient and accessible from within the Slack workspace.",
+        "use_cases": [
+            "Raising a request or ticket on the DevOps JIRA board",
+            "Accessing JIRA functionality from within Slack",
+            "Interacting with a JIRA bot to provide ticket details"
+        ],
+        "capabilities": [
+            "Slack command (/devops-jira) to summon JIRA bot",
+            "JIRA bot prompts for ticket details",
+            "Ability to raise JIRA requests without leaving Slack"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_how-to-a-raise-a-ticket-at-devops-jira-board-chunk-1",
+        "name": "How to a raise a ticket at DevOps JIRA board.txt - If that doesn't serve your purpose",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section provides guidance on how to effectively create a ticket on the DevOps JIRA board. It emphasizes the importance of crafting a catchy title that grabs attention and a detailed summary that thoroughly explains the issue or request. The goal is to ensure that the ticket stands out and provides sufficient information for the DevOps team to understand and address the matter efficiently.",
+        "use_cases": [
+            "Creating a new ticket on the DevOps JIRA board",
+            "Reporting an issue or requesting a feature related to DevOps processes or tools",
+            "Ensuring that the ticket is attention-grabbing and informative",
+            "Providing comprehensive details to facilitate efficient resolution"
+        ],
+        "capabilities": [
+            "Crafting a catchy title",
+            "Providing a detailed summary",
+            "Capturing attention",
+            "Conveying comprehensive information",
+            "Facilitating efficient ticket resolution",
+            "Streamlining communication with the DevOps team"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_how-to-a-raise-a-ticket-at-devops-jira-board-chunk-2",
+        "name": "How to a raise a ticket at DevOps JIRA board.txt - It will ask for details like",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains the process of raising a ticket on the DevOps JIRA board. It provides details on the required fields to be filled out, such as the Environment (Production, Stage, or Perf), Business Unit (BU), and Category. These fields are presented as drop-down menus for easy selection. Additionally, it mentions that if the user is unsure about the BU or Category, they can seek assistance from their team or manager. The section also includes screenshots to visually guide the user through the process and illustrate the expected outcome, which is a notification sent to the respective DevOps Slack group.",
+        "use_cases": [
+            "Raising a ticket on the DevOps JIRA board",
+            "Seeking assistance for selecting the appropriate BU or Category",
+            "Receiving notifications in the DevOps Slack group"
+        ],
+        "capabilities": [
+            "Drop-down menus for Environment, BU, and Category selection",
+            "Ability to raise tickets",
+            "Slack integration for notifications",
+            "Visual guidance with screenshots",
+            "Support from team or manager for field selection"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/c3c8a6627be492ae56ebb2610ee09e2f.png",
+            "https://alpha.razorpay.com/_static/file/02f1ccf05152ce4198e7e221b544e3cd.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_how-to-a-raise-a-ticket-at-devops-jira-board-chunk-3",
+        "name": "How to a raise a ticket at DevOps JIRA board.txt - None",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section does not contain any content or explanation. It appears to be an empty section, possibly a placeholder or a section that has not been filled out yet.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_how-to-a-raise-a-ticket-at-devops-jira-board-chunk-4",
+        "name": "How to a raise a ticket at DevOps JIRA board.txt - None",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section does not contain any content or explanation. It appears to be an empty section, possibly a placeholder or a section that has not been filled out yet.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    }
+]

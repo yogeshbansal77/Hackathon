@@ -1,0 +1,197 @@
+[
+    {
+        "id": "engineering_devops_devops-champions-runbooks_devops-champion-session-recordings-chunk-0",
+        "name": "DevOps Champion session recordings.txt - Overall overview of Razorpay infra- AWS, K8s",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Champions runbooks"
+        ],
+        "description": "This section provides an overview of Razorpay's infrastructure, which includes Amazon Web Services (AWS) and Kubernetes (K8s). It offers recordings and presentation links related to understanding Razorpay's infrastructure setup and troubleshooting Kubernetes issues. The content seems aimed at developers or IT professionals working with Razorpay's systems.",
+        "use_cases": [
+            "Understanding Razorpay's infrastructure setup on AWS and Kubernetes",
+            "Troubleshooting Kubernetes issues",
+            "Training or knowledge sharing for developers/IT professionals"
+        ],
+        "capabilities": [
+            "AWS infrastructure",
+            "Kubernetes infrastructure",
+            "Infrastructure overview",
+            "Kubernetes troubleshooting",
+            "Video recordings",
+            "Presentation slides"
+        ],
+        "references": [
+            "https://razorpay.zoom.us/rec/share/FLVT1sNyoeSkhLkKpf2OstgEdKRAtoWsJ_dLIbqTEFY_aQmXgz9FT993L5s1rGOh.Etge93c1AnLLoMRf",
+            "https://docs.google.com/presentation/d/1Mch9Mx2qWbXvMMRIJiHFjC0htkLF0vWK8LxeylxMJX8/edit#slide=id.g13e9f98c319_0_0",
+            "https://razorpay.zoom.us/rec/share/4DlZAxzpSbj8jgaZzUHaXCcZdIsQKxz0MrXq_oJO9e3fqkh0sVOsTnJhqSQMNrbm.UKJAe_WtBSYD5e9J",
+            "https://docs.google.com/presentation/d/1Ed8sdZYnnM2gwnilMgzitjG6UeuVZ-1BNvSvFFDRQVk/edit?usp=sharing"
+        ]
+    },
+    {
+        "id": "engineering_devops_devops-champions-runbooks_devops-champion-session-recordings-chunk-1",
+        "name": "DevOps Champion session recordings.txt - Kubernetes troubleshooting",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Champions runbooks"
+        ],
+        "description": "This section provides links to video recordings and presentation slides related to two topics: 'FinOps-DevOps: know-how' and 'Kube-Manifest'. The recordings and slides cover knowledge sharing and troubleshooting related to Kubernetes, a popular open-source container orchestration system used in DevOps practices. The content seems to be aimed at individuals interested in learning about financial operations (FinOps) and DevOps methodologies, as well as those seeking guidance on working with Kubernetes manifests.",
+        "use_cases": [
+            "Learning about FinOps and DevOps practices",
+            "Troubleshooting Kubernetes issues",
+            "Understanding Kubernetes manifests",
+            "Gaining knowledge on container orchestration with Kubernetes"
+        ],
+        "capabilities": [
+            "Video recordings",
+            "Presentation slides",
+            "Knowledge sharing",
+            "Kubernetes troubleshooting",
+            "Kubernetes manifest handling",
+            "FinOps and DevOps methodologies"
+        ],
+        "references": [
+            "https://razorpay.zoom.us/rec/share/RYSltbkuXNxjG4o8XFnLE1WXS2lMR54p5hbEyNLeqiPECu5dWc9QN2FJsksP6MQ1.JoNWA3xpoR7lIO_i",
+            "https://docs.google.com/presentation/d/1T4lgjmYg2WFas_x4tviLbb1Mhgy1LTEV4KMpalomTW0/edit#slide=id.g13e9f98c319_0_0",
+            "https://razorpay.zoom.us/rec/share/Km9w7HvuLMkRKATzGA1aio1Ow7I_SRfVE2PhAo4VfHdrW71eoNzjDRzkiSmRLdOP.eioa0CuZv7gFgPsg",
+            "https://docs.google.com/presentation/d/1WpOsTnxk8QlbiLihqZ2ApPB9BDfC2_i-h78opKLsMJw/edit#slide=id.g2199071c08b_1_100"
+        ]
+    },
+    {
+        "id": "engineering_devops_devops-champions-runbooks_devops-champion-session-recordings-chunk-2",
+        "name": "DevOps Champion session recordings.txt - FinOps-DevOps : know-how",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Champions runbooks"
+        ],
+        "description": "This section provides information about two recorded sessions from a DevOps Champion event. The first session covers topics related to FinOps and DevOps, including certificate monitoring, secrets management, and access management. The second session focuses on infrastructure changes and navigating them within the context of Vishnu, which seems to be a specific system or platform.",
+        "use_cases": [
+            "Monitoring certificates and managing their lifecycle",
+            "Securing and managing access to sensitive information (secrets)",
+            "Managing and controlling access to resources and systems",
+            "Understanding and adapting to infrastructure changes in a specific system (Vishnu)"
+        ],
+        "capabilities": [
+            "Certificate monitoring",
+            "Secrets management",
+            "Access management",
+            "Infrastructure change management",
+            "Recorded sessions",
+            "Presentation materials"
+        ],
+        "references": [
+            "https://razorpay.zoom.us/rec/share/6t4dZ06PCk3TY_ygVk3bKjuKr5IL8X2lnS4sR_XoVT_SezX4cETj-b8vNLjh0haF.cooGDoyLma2YLzT7",
+            "https://docs.google.com/presentation/d/1s5Us-GovcKYv6mC54aekfyelntthP3rFr_UCbK8fpRI/edit#slide=id.g1b69008c75b_0_93",
+            "https://razorpay.zoom.us/rec/share/rahNsc_qDUG9x70LOV3_2X6FQTUDKCWsn3uaY-HCKwZmM93_lhet2T-nTQ_4kqMq.Zecfccd_pbfQ37q5",
+            "https://docs.google.com/presentation/d/15igymMiDs_sW1fY_FEHUoXGOFUG-I5zVLBlO_iMjSKg/edit#slide=id.g21620930bfe_0_0"
+        ]
+    },
+    {
+        "id": "engineering_devops_devops-champions-runbooks_devops-champion-session-recordings-chunk-3",
+        "name": "DevOps Champion session recordings.txt - Kube-Manifest",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Champions runbooks"
+        ],
+        "description": "This section provides links to video recordings and presentation slides related to two topics: Strimzi Kafka and Monitoring. The recordings are from DevOps Champion sessions, likely internal training or knowledge-sharing sessions. The Strimzi Kafka recording covers the deployment and management of Apache Kafka using the Strimzi Kafka Operator on Kubernetes. The Monitoring recording discusses monitoring practices and tools for Kubernetes environments.",
+        "use_cases": [
+            "Learning about Strimzi Kafka Operator for deploying and managing Apache Kafka on Kubernetes",
+            "Understanding monitoring practices and tools for Kubernetes environments",
+            "Internal training or knowledge-sharing sessions for DevOps teams",
+            "Referencing recorded sessions and presentation materials for self-paced learning"
+        ],
+        "capabilities": [
+            "Strimzi Kafka Operator",
+            "Apache Kafka deployment",
+            "Kubernetes monitoring",
+            "Video recordings",
+            "Presentation slides",
+            "Internal training sessions"
+        ],
+        "references": [
+            "https://razorpay.zoom.us/rec/share/109Y8TD1L4edQSquvf76DFVK7-QM9bZVvfuD9ehlEdb9niROc6FosE_J2x8IRbkS.pgvCzT2jqLXDD46H",
+            "https://docs.google.com/presentation/d/1U3gDQ-r87K3-ja98o5b2sd7UBr5FIx_CaJCMW3B_N7E/edit#slide=id.g1f6d7bb15ce_0_0",
+            "https://razorpay.zoom.us/rec/share/JVXNrm5ndlaBYzWs0fhF304yY8eMoPCZRPswsATTxXW-kvIOUcyAWoRIq6m2xs0.jwe1mBUkmmtn8FVA",
+            "https://docs.google.com/presentation/d/1TXq0QoG5Xz8Wh9cZsr_7FrkuTwen4hbHljwKWgDmArQ/edit?usp=sharing"
+        ]
+    },
+    {
+        "id": "engineering_devops_devops-champions-runbooks_devops-champion-session-recordings-chunk-4",
+        "name": "DevOps Champion session recordings.txt - Cert monitoring, Secrets, Access management",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Champions runbooks"
+        ],
+        "description": "This section provides a link to a recording of an EKS (Amazon Elastic Kubernetes Service) Immersion Day session. The recording is hosted on the Zoom platform and requires a passcode to access. It likely covers topics related to Kubernetes and container orchestration on AWS, aimed at providing hands-on experience and training for developers and DevOps professionals.",
+        "use_cases": [
+            "Training and knowledge sharing for DevOps teams",
+            "Hands-on learning of Kubernetes and container orchestration",
+            "Upskilling developers and IT professionals on cloud-native technologies"
+        ],
+        "capabilities": [
+            "Video recording",
+            "Secure access with passcode",
+            "Sharing of educational content",
+            "Cloud-based hosting (Zoom)"
+        ],
+        "references": [
+            "https://razorpay.zoom.us/rec/share/bpQK7ViIkMtK_k8v8LrrFJylifikwA-YriDzkiSVGwmaG1cGDXuJF5DywaBMkP8g.AlXxF-CSfZ7KC93Q"
+        ]
+    },
+    {
+        "id": "engineering_devops_devops-champions-runbooks_devops-champion-session-recordings-chunk-5",
+        "name": "DevOps Champion session recordings.txt - Infrastructure and Beyond: Navigating Changes in Vishnu",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Champions runbooks"
+        ],
+        "description": "This section appears to be empty or missing content. Without any meaningful text or information provided, it is difficult to provide a concise description, identify use cases, or list capabilities or features.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops-champions-runbooks_devops-champion-session-recordings-chunk-6",
+        "name": "DevOps Champion session recordings.txt - Strimzi Kafka",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Champions runbooks"
+        ],
+        "description": "This section appears to be empty or missing content related to Strimzi Kafka, which is likely a component or tool used in DevOps or cloud computing environments. Without any actual content, it is difficult to provide a meaningful description or infer any specific use cases or capabilities.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops-champions-runbooks_devops-champion-session-recordings-chunk-7",
+        "name": "DevOps Champion session recordings.txt - Monitoring",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Champions runbooks"
+        ],
+        "description": "This section does not contain any content related to monitoring. It appears to be an empty section, possibly a placeholder or a section that has not been filled out yet in the documentation.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops-champions-runbooks_devops-champion-session-recordings-chunk-8",
+        "name": "DevOps Champion session recordings.txt - EKS Immersion day",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Champions runbooks"
+        ],
+        "description": "This section appears to be empty or missing content related to the EKS Immersion day topic. Without any text or details provided, it is difficult to provide a meaningful description or extract any specific use cases or capabilities.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    }
+]

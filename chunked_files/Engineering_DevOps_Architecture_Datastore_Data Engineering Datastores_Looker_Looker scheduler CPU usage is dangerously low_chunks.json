@@ -1,0 +1,107 @@
+[
+    {
+        "id": "engineering_devops_architecture_datastore_data-engineering-datastores_looker_looker-scheduler-cpu-usage-is-dangerously-low-chunk-0",
+        "name": "Looker scheduler CPU usage is dangerously low.txt - Login to Qubole sub account",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Data Engineering Datastores",
+            "Looker"
+        ],
+        "description": "This section provides instructions on how to log in to the Qubole sub-account, which is likely a cloud-based data processing platform. It includes a screenshot that appears to be the login page for the Qubole sub-account. The instructions suggest finding the 'scheduler node' after logging in, which may be a specific component or feature within the Qubole platform related to managing or monitoring scheduled tasks or processes.",
+        "use_cases": [
+            "Accessing a cloud-based data processing platform (Qubole)",
+            "Monitoring or managing scheduled tasks or processes within the platform",
+            "Troubleshooting or analyzing issues related to CPU usage or performance"
+        ],
+        "capabilities": [
+            "Login to Qubole sub-account",
+            "Access scheduler node",
+            "View or manage scheduled tasks or processes",
+            "Analyze CPU usage or performance metrics"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/282100c953aa4a338cd9bd5db5af8a54.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_datastore_data-engineering-datastores_looker_looker-scheduler-cpu-usage-is-dangerously-low-chunk-1",
+        "name": "Looker scheduler CPU usage is dangerously low.txt - Find the scheduler node",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Data Engineering Datastores",
+            "Looker"
+        ],
+        "description": "This section provides instructions for accessing the scheduler node, which is a critical component in the Looker system. It guides the user to first connect to the Qubole Jump Box, which is a secure gateway for accessing the system's resources. Once connected to the Jump Box, the user is then instructed to establish an SSH connection to the scheduler node itself.",
+        "use_cases": [
+            "Troubleshooting issues related to the Looker scheduler",
+            "Monitoring the performance and resource utilization of the scheduler node",
+            "Performing maintenance tasks or updates on the scheduler node",
+            "Accessing logs or configuration files specific to the scheduler node"
+        ],
+        "capabilities": [
+            "SSH access",
+            "Remote server access",
+            "Secure gateway (Jump Box)",
+            "Scheduler node management",
+            "System administration"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_datastore_data-engineering-datastores_looker_looker-scheduler-cpu-usage-is-dangerously-low-chunk-2",
+        "name": "Looker scheduler CPU usage is dangerously low.txt - Check looker service status",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Data Engineering Datastores",
+            "Looker"
+        ],
+        "description": "This section demonstrates how to check the status of the Looker service using the systemctl command. It shows the output of the command, which indicates that the Looker service has failed and is not currently running. This information can be useful for troubleshooting issues with the Looker application or monitoring its health.",
+        "use_cases": [
+            "Troubleshooting Looker application issues",
+            "Monitoring the health and status of the Looker service",
+            "Identifying if the Looker service needs to be restarted or further investigated"
+        ],
+        "capabilities": [
+            "systemctl command",
+            "service status",
+            "service health monitoring",
+            "service failure detection",
+            "process information"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_datastore_data-engineering-datastores_looker_looker-scheduler-cpu-usage-is-dangerously-low-chunk-3",
+        "name": "Looker scheduler CPU usage is dangerously low.txt - Start the looker service status",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Data Engineering Datastores",
+            "Looker"
+        ],
+        "description": "This section provides a command to start the Looker service on a system. It explains how to initiate the Looker application, which is likely a data analysis or visualization tool, by running the 'systemctl start looker' command. This command is typically used in Linux or Unix-based operating systems to manage system services.",
+        "use_cases": [
+            "Starting the Looker service after installation or system reboot",
+            "Restarting the Looker service after making configuration changes",
+            "Troubleshooting issues with the Looker service by restarting it"
+        ],
+        "capabilities": [
+            "systemctl command",
+            "service management",
+            "start service",
+            "Looker service"
+        ],
+        "references": []
+    }
+]

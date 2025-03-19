@@ -1,0 +1,71 @@
+[
+    {
+        "id": "engineering_devops_devops-onboarding_devops-imp-docs-and-sheets-chunk-0",
+        "name": "DevOps Imp Docs and sheets.txt - Name",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section does not provide any content or explanation. It appears to be an empty section with no information regarding the 'Name' topic.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_devops-imp-docs-and-sheets-chunk-1",
+        "name": "DevOps Imp Docs and sheets.txt - Owner",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "The section titled 'Owner' does not contain any content, which suggests that it may be a placeholder or a section that has not been filled out yet in the documentation. Without any information provided, it is difficult to determine the purpose or explanation of this section.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_devops-imp-docs-and-sheets-chunk-2",
+        "name": "DevOps Imp Docs and sheets.txt - link",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section appears to be empty or missing content. Without any information provided, it is difficult to determine what this section is intended to explain or describe.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_devops-imp-docs-and-sheets-chunk-3",
+        "name": "DevOps Imp Docs and sheets.txt - Remark",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section provides a list of important Google Sheets documents related to various DevOps operations and processes. These sheets serve as trackers, repositories, and documentation for tasks such as migrating applications to Kubernetes, managing Virtual Private Clouds (VPCs) and IP address ranges, tracking on-call issues, and maintaining a list of AWS accounts and Kubernetes clusters.",
+        "use_cases": [
+            "Tracking the migration of applications from one platform to Kubernetes",
+            "Documenting and managing VPCs and IP address ranges",
+            "Logging and monitoring on-call issues and incidents",
+            "Maintaining an inventory of AWS accounts and Kubernetes clusters"
+        ],
+        "capabilities": [
+            "Beam migration tracker",
+            "VPC and CIDR list",
+            "On-call issue tracking",
+            "AWS account and Kubernetes cluster inventory",
+            "Centralized documentation",
+            "Collaboration and sharing"
+        ],
+        "references": [
+            "https://docs.google.com/spreadsheets/d/1R9cuetooPgu1XxgbJpZlr2L1Qts3ZWE1LMTbcsGep90/edit#gid=0>",
+            "https://docs.google.com/spreadsheets/d/1CZWNM0LgxGbNd-pjym3yDw3hmAYxP8sc6g76WUgZXa8/edit#gid=0>",
+            "https://docs.google.com/spreadsheets/d/1rRcfUSL2Dgdn1c-hhNJGACuHicuIhFw41O0GRTB6fxU/edit#gid=1209258808>",
+            "https://docs.google.com/spreadsheets/d/1XM1bbtyeUE3zXR7ZfyoYxQy6ZlUwPX9X05l8euo8J7k/edit#gid=0>"
+        ]
+    }
+]

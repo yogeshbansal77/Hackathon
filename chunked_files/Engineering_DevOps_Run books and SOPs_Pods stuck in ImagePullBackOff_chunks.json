@@ -1,0 +1,76 @@
+[
+    {
+        "id": "engineering_devops_run-books-and-sops_pods-stuck-in-imagepullbackoff-chunk-0",
+        "name": "Pods stuck in ImagePullBackOff.txt - [Harbor] [ops-common] ImagepullbackOff Count more than 30",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains an alert that is triggered when more than 30 pods across production clusters are in the ImagePullBackOff state, which means they are unable to pull the required container images. This issue can occur due to incorrect image tags, deleted images, or Harbor (the container registry) IAM (Identity and Access Management) issues. The section provides a link to a monitoring dashboard that shows the ImagePullBackOff count across clusters and suggests checking if a particular cluster is facing the issue and troubleshooting the image availability for the affected service.",
+        "use_cases": [
+            "Monitoring container image pull failures across production clusters",
+            "Identifying clusters or services affected by image pull issues",
+            "Troubleshooting image availability and IAM issues with the container registry"
+        ],
+        "capabilities": [
+            "Alert for ImagePullBackOff count exceeding a threshold",
+            "Monitoring dashboard for ImagePullBackOff count across clusters",
+            "Identifying affected clusters and services",
+            "Troubleshooting image availability",
+            "Troubleshooting container registry IAM issues"
+        ],
+        "references": [
+            "https://vajra.razorpay.com/d/Chkv50UWkE/harbor-overview?orgId=1&viewPanel=63&from=now-7d&to=now>"
+        ]
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_pods-stuck-in-imagepullbackoff-chunk-1",
+        "name": "Pods stuck in ImagePullBackOff.txt - If it's harbor issue when ever this alert got triggered shoreline notebook will invoke it will do below actions, just look at  #vajra_alerts shoreline notification.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains the actions taken by the Shoreline notebook when an alert is triggered due to an issue with the Harbor registry. It monitors the logs of the Harbor registry pods for S3 access denied errors. If such errors are found, it deletes the affected pod. It also sends a notification to the #vajra_alerts Slack channel with details about the error count and specifics across the Harbor registry pods. If the issue persists after a certain time, it suggests performing a rollout restart of the Harbor registry deployment in the ops-common cluster's Harbor namespace or reaching out to a specific person (@raja).",
+        "use_cases": [
+            "Monitoring and troubleshooting issues with the Harbor registry",
+            "Automated pod management and recovery",
+            "Centralized notification and alerting system",
+            "Cluster management and deployment rollouts"
+        ],
+        "capabilities": [
+            "Log monitoring",
+            "Pod deletion",
+            "Slack notifications",
+            "Error tracking and reporting",
+            "Deployment rollouts",
+            "Cluster management"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/11437d05731aecf88d289495c77eaa11.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_pods-stuck-in-imagepullbackoff-chunk-2",
+        "name": "Pods stuck in ImagePullBackOff.txt - Wait 5-10 min if the count is still not going down and it's across the clusters, do a rollout restart on harbor-registry deployment in ops-common cluster harbor namespace / reachout @raja.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section provides instructions for troubleshooting a scenario where Pods are stuck in the ImagePullBackOff state. It suggests waiting for 5-10 minutes to see if the issue resolves itself. If the issue persists across multiple clusters, it recommends performing a rollout restart on the harbor-registry deployment in the ops-common cluster's harbor namespace. Additionally, it suggests reaching out to someone named Raja for further assistance.",
+        "use_cases": [
+            "Troubleshooting Pods stuck in ImagePullBackOff state",
+            "Restarting harbor-registry deployment",
+            "Seeking assistance from a specific individual"
+        ],
+        "capabilities": [
+            "Monitoring Pod status",
+            "Performing rollout restarts",
+            "Identifying cluster-wide issues",
+            "Escalating issues to subject matter experts"
+        ],
+        "references": []
+    }
+]

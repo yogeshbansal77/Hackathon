@@ -1,0 +1,82 @@
+[
+    {
+        "id": "engineering_frontend_onboarding-a-new-frontend-engineer-chunk-0",
+        "name": "Onboarding a new Frontend Engineer.txt - General",
+        "breadcrumb": [
+            "Engineering",
+            "Frontend"
+        ],
+        "description": "This section outlines the initial steps and recommendations for a new Frontend Engineer joining the team. It covers assigning a buddy and mentor, setting up meetings, joining relevant communication channels, understanding the products, setting up development environments, and installing necessary applications. The goal is to provide guidance and resources to help the new engineer smoothly integrate into the team and start contributing effectively.",
+        "use_cases": [
+            "Onboarding a new Frontend Engineer",
+            "Facilitating smooth integration into the team",
+            "Providing resources and guidance for new engineers",
+            "Setting up development environments and tools"
+        ],
+        "capabilities": [
+            "Assigning a buddy and mentor",
+            "Setting up meetings with manager and mentor",
+            "Joining relevant Slack channels",
+            "Understanding Razorpay products",
+            "Setting up SSH and cloning repositories",
+            "Installing recommended applications (VSCode, Firefox, XCode)"
+        ],
+        "references": [
+            "https://calendar.google.com/calendar/u/0/r",
+            "https://razorpay.slack.com/archives/C06A4HA8G3D/p1712230408996119",
+            "https://razorpay.enterprise.slack.com/archives/C2309Q91T",
+            "https://razorpay.enterprise.slack.com/archives/CA4BD4TAT",
+            "https://razorpay.enterprise.slack.com/archives/C05JBQ1GQ1H",
+            "https://alpha.razorpay.com/learn/product-kt-videos",
+            "https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent"
+        ]
+    },
+    {
+        "id": "engineering_frontend_onboarding-a-new-frontend-engineer-chunk-1",
+        "name": "Onboarding a new Frontend Engineer.txt - Access",
+        "breadcrumb": [
+            "Engineering",
+            "Frontend"
+        ],
+        "description": "This section outlines the steps required for a new Frontend Engineer to gain access to various tools, platforms, and resources necessary for their role at Razorpay. It covers requesting access to email groups, software packages, applications, development environments, GitHub repositories, and learning resources. The section also provides tips on using the Kubernetes CLI and monitoring pods in the development environment.",
+        "use_cases": [
+            "Onboarding a new Frontend Engineer",
+            "Granting access to development tools and resources",
+            "Setting up the development environment",
+            "Joining internal communities and learning platforms"
+        ],
+        "capabilities": [
+            "Access to email groups (developers@razorpay.com, frontend@razorpay.com)",
+            "Access to software packages (Amplitude, Coralogix, GitHub, Grafana, Figma, Jira, Querybook, Redash, Zenduty)",
+            "Access to applications (Sentry, Greenhouse, Segment)",
+            "Access to development environment (devstack, devstack-alpha-doc)",
+            "Access to GitHub repositories (Frontend team)",
+            "Access to Sentry organization (rzp)",
+            "Access to Slack user group (@frontend)",
+            "Access to learning platforms (CSS for JavaScript Developers, Books)",
+            "Access to internal community (Frontend Discussions)",
+            "Kubernetes CLI and helmfile familiarity",
+            "Monitoring pods in development environment"
+        ],
+        "references": [
+            "https://razorpay.enterprise.slack.com/archives/CBZD5BMUZ",
+            "https://razorpay.slack.com/archives/C0432SCD5/p1624258183165400",
+            "https://alpha.razorpay.com/repo/devstack-onboarding",
+            "https://github.com/orgs/razorpay/teams/frontend",
+            "https://rzp.sentry.io/settings/members/",
+            "https://razorpay.enterprise.slack.com/admin/user_groups",
+            "https://docs.google.com/document/d/15KBvtGsy4qlPe9wuOUwLja9uFXXALPfK0pLIjQ1JmxA/edit?usp=sharing",
+            "https://docs.google.com/document/d/1gxZfejX5zajrvfRr0D-1B82NOq1UU6ZK87y2tdCc7IE/edit#heading=h.c3w6tt759hnl",
+            "https://docs.google.com/document/d/135gWwg6n_obnaDDQaD0JVhoQiQ8eirJGGz3VDXVXupE/edit?usp=sharing",
+            "https://razorpay.slack.com/archives/CA4BD4TAT/p1627899809002200",
+            "https://marketplace.visualstudio.com/items?itemName=cseas.razorpay-blade-intellisense",
+            "https://courses.joshwcomeau.com/css-for-js",
+            "https://razorpay.slack.com/archives/CA4BD4TAT/p1725267278978629",
+            "https://kubernetes.io/docs/reference/kubectl/",
+            "https://myaccess.microsoft.com/@razorpaysoftware.onmicrosoft.com#/access-packages>:",
+            "https://myapplications.microsoft.com/>:",
+            "https://github.com/settings/emails>.",
+            "https://github.com/settings/tokens>"
+        ]
+    }
+]

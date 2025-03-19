@@ -1,0 +1,47 @@
+[
+    {
+        "id": "engineering_devops_s3-lifecycle-policy-compliance-requirement-chunk-0",
+        "name": "S3 Lifecycle Policy Compliance Requirement.txt - Scope:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section outlines the scope of the S3 Lifecycle Policy Compliance Requirement, which applies to all Amazon S3 buckets used for storing old logs required for compliance purposes and technical support investigations. It specifies that the policy governs the management and retention of these log files stored in S3 buckets.",
+        "use_cases": [
+            "Compliance log storage",
+            "Technical support investigation log storage",
+            "Long-term log retention",
+            "Log lifecycle management"
+        ],
+        "capabilities": [
+            "S3 bucket management",
+            "Log storage",
+            "Compliance requirements",
+            "Technical support investigations",
+            "Lifecycle policies",
+            "Data retention"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_s3-lifecycle-policy-compliance-requirement-chunk-1",
+        "name": "S3 Lifecycle Policy Compliance Requirement.txt - Requirement:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section discusses the need to enable Multi-Factor Authentication (MFA) delete on S3 buckets due to a previous compliance requirement. However, the current plan is to apply lifecycle management policies for transitioning data to lower-cost storage tiers, rather than deleting data permanently. The section seeks clarification from the compliance team on whether MFA delete is still necessary, given that no data will be permanently deleted.",
+        "use_cases": [
+            "Cost optimization by transitioning data to lower-cost storage tiers",
+            "Compliance with data retention and deletion policies",
+            "Enabling MFA delete for added security on S3 buckets"
+        ],
+        "capabilities": [
+            "S3 Lifecycle Management Policies",
+            "S3 Bucket MFA Delete",
+            "Data Transition to Lower-Cost Storage Tiers",
+            "Compliance Requirement Verification"
+        ],
+        "references": []
+    }
+]

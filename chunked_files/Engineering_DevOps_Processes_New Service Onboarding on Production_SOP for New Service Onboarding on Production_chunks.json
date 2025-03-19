@@ -1,0 +1,30 @@
+[
+    {
+        "id": "engineering_devops_processes_new-service-onboarding-on-production_sop-for-new-service-onboarding-on-production-chunk-0",
+        "name": "SOP for New Service Onboarding on Production.txt - Pre Onboarding Steps:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "New Service Onboarding on Production"
+        ],
+        "description": "This section provides a link to a Google Document containing detailed documentation related to the Standard Operating Procedure (SOP) for onboarding new services on the production environment. The link serves as a reference for anyone involved in the onboarding process to access the comprehensive guidelines and instructions outlined in the document.",
+        "use_cases": [
+            "Onboarding new services to the production environment",
+            "Referring to the SOP documentation for the onboarding process",
+            "Accessing centralized documentation for service onboarding",
+            "Ensuring adherence to established procedures and best practices"
+        ],
+        "capabilities": [
+            "Centralized documentation",
+            "Standardized operating procedures",
+            "Service onboarding guidelines",
+            "Production environment integration",
+            "Documentation accessibility",
+            "Process reference"
+        ],
+        "references": [
+            "https://docs.google.com/document/d/1qnFbBkvKEPqHUu08dW52QGD9KYjRXzo5wucxms4OOVo/edit"
+        ]
+    }
+]

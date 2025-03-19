@@ -1,0 +1,125 @@
+[
+    {
+        "id": "engineering_devops_run-books-and-sops_hitachi-tunnel-down-chunk-0",
+        "name": "Hitachi tunnel down.txt - Resolving Hitachi Tunnel Down Alert",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains the steps to resolve a Hitachi Tunnel Down Alert, which is related to a VPN connection between AWS and Hitachi. It involves identifying the active and inactive VPN tunnels, modifying the static routes associated with the tunnels to redirect traffic from the down tunnel to the active tunnel, and ensuring that the IP addresses are correctly configured in the static routes.",
+        "use_cases": [
+            "Resolving VPN tunnel downtime issues",
+            "Redirecting network traffic between VPN tunnels",
+            "Managing static routes for VPN connections",
+            "Troubleshooting and maintaining AWS site-to-site VPN connections"
+        ],
+        "capabilities": [
+            "AWS site-to-site VPN connections",
+            "VPN tunnel management",
+            "Static route configuration",
+            "IP address management",
+            "Traffic redirection between VPN tunnels",
+            "Hitachi VPN connection support"
+        ],
+        "references": [
+            "https://ap-south-1.console.aws.amazon.com/vpc/home?region=ap-south-1#VpnConnections:"
+        ]
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_hitachi-tunnel-down-chunk-1",
+        "name": "Hitachi tunnel down.txt - Static Routes IPs",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section lists a set of IP addresses with subnet masks, which appear to be static routes configured for network communication. Static routes are manually defined paths for data to travel between networks or devices, ensuring reliable connectivity even when dynamic routing protocols fail or are not available. These IP addresses likely represent specific destinations or gateways that network traffic needs to reach.",
+        "use_cases": [
+            "Establishing reliable network connectivity",
+            "Failover or backup routing when dynamic protocols fail",
+            "Controlling traffic flow to specific destinations",
+            "Securing network access by defining explicit routes"
+        ],
+        "capabilities": [
+            "Static route configuration",
+            "IP addressing",
+            "Subnet masking",
+            "Network routing",
+            "Traffic management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_hitachi-tunnel-down-chunk-2",
+        "name": "Hitachi tunnel down.txt - Additional Notes",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section provides additional troubleshooting steps to resolve payment failures related to the Mozart service. If switching the VPN does not resolve the issue, it suggests rotating (restarting or replacing) the Mozart service pods. It emphasizes the importance of monitoring the pods for stability after the rotation process to ensure the issue is resolved.",
+        "use_cases": [
+            "Troubleshooting payment failures",
+            "Resolving issues with the Mozart service",
+            "Rotating or restarting service pods",
+            "Monitoring service pod stability"
+        ],
+        "capabilities": [
+            "VPN switching",
+            "Service pod rotation",
+            "Service pod monitoring",
+            "Payment failure resolution"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_hitachi-tunnel-down-chunk-3",
+        "name": "Hitachi tunnel down.txt - Modify Dashboard/Alert after change",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains that if none of the Hitachi tunnels are operational, you need to contact the Hitachi support team to investigate and resolve the issue. It suggests that in the event of a complete failure of the Hitachi tunnel system, the user should escalate the matter to the vendor's support personnel for troubleshooting and resolution.",
+        "use_cases": [
+            "Monitoring the status of Hitachi tunnels",
+            "Escalating issues related to Hitachi tunnel failures",
+            "Contacting Hitachi support for assistance with tunnel-related problems"
+        ],
+        "capabilities": [
+            "Monitoring Hitachi tunnels",
+            "Detecting tunnel failures",
+            "Contacting Hitachi support",
+            "Escalating issues",
+            "Troubleshooting tunnel problems"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_hitachi-tunnel-down-chunk-4",
+        "name": "Hitachi tunnel down.txt - Steps to Fix Alert",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains how to modify a Grafana dashboard and alert settings after a change in the VPN tunnel configuration. It provides step-by-step instructions to access the relevant dashboard, edit the query to point to the new tunnel details, and save the changes to resolve the alert and display the updated data graphs.",
+        "use_cases": [
+            "Updating Grafana dashboards and alerts after VPN tunnel configuration changes",
+            "Monitoring VPN tunnel data throughput",
+            "Resolving alerts related to VPN tunnel issues"
+        ],
+        "capabilities": [
+            "Grafana dashboard editing",
+            "VPN tunnel data visualization",
+            "Alert management",
+            "Query modification",
+            "Data source configuration"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/27d9f5d878b532bfe24bbb3ccb2c4434.png",
+            "https://vajra.razorpay.com/d/000000072/vpn?orgId=1&viewPanel=5>"
+        ]
+    }
+]

@@ -1,0 +1,52 @@
+[
+    {
+        "id": "engineering_backend_guides_debugging-canary-analysis-for-route-chunk-0",
+        "name": "Debugging Canary analysis for Route.txt - ERROR_RESPONSE_DATA | json auto nodrop | where %request.route_name=\"virtual_accounts\" AND %context.http_status_code=500 | count by _sourceCategory",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Guides"
+        ],
+        "description": "This section describes a query or filter used to analyze error responses and exceptions related to a specific route ('virtual_accounts') in a Kubernetes cluster. It combines data from two sources: error response data and exception data. The query filters the data based on the route name and HTTP status code, and then joins the two data sources to provide a consolidated view of the error details, including the request ID, URI, route name, exception class, and error message.",
+        "use_cases": [
+            "Debugging and troubleshooting errors related to a specific route",
+            "Analyzing error patterns and trends for a particular route",
+            "Correlating error responses with exceptions for root cause analysis",
+            "Monitoring and alerting on critical errors or exceptions for a specific route"
+        ],
+        "capabilities": [
+            "Filtering data based on specific conditions (route name, HTTP status code, etc.)",
+            "Joining data from multiple sources (error response data and exception data)",
+            "Extracting relevant fields (request ID, URI, route name, exception class, error message)",
+            "Aggregating and counting data based on specific fields or categories",
+            "JSON data parsing and manipulation",
+            "Querying and analyzing log data from Kubernetes clusters"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_backend_guides_debugging-canary-analysis-for-route-chunk-1",
+        "name": "Debugging Canary analysis for Route.txt - (\"ERROR_EXCEPTION\" OR \"ERROR_RESPONSE_DATA\") AND (_sourceCategory=\"k8s/kluster/api-canary/api/trace\" )  | json auto nodrop | join (where %code=\"ERROR_RESPONSE_DATA\"  | where %request.route_name=\"payment_calculate_fees\" | json auto keys \"request.request_id\",\"request.uri\",\"request.route_name\" AS rid,uri,route) as t1, (where %code=\"ERROR_EXCEPTION\"  | json auto keys \"request.request_id\",\"context.class\",\"context.message\" as rid,class,msg) as t2 on t1.rid=t2.rid  | fields t1_rid,t2_class,t2_msg",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Guides"
+        ],
+        "description": "This section appears to be a query or filter used to analyze log data related to errors or exceptions occurring in a specific route ('payment_calculate_fees') of an API. It combines data from two different sources: one containing error response data and another containing exception details. The query filters the log data based on specific conditions and joins the relevant fields from both sources to provide a consolidated view of the errors or exceptions.",
+        "use_cases": [
+            "Debugging and troubleshooting errors or exceptions in a specific API route",
+            "Analyzing error patterns or trends for a particular API endpoint",
+            "Correlating error response data with exception details for root cause analysis",
+            "Monitoring and alerting for critical errors or exceptions in an API"
+        ],
+        "capabilities": [
+            "Filtering log data based on specific conditions",
+            "Joining data from multiple sources",
+            "Extracting relevant fields from log data",
+            "Analyzing errors or exceptions in API routes",
+            "Correlating error response data with exception details",
+            "Monitoring and debugging API errors"
+        ],
+        "references": []
+    }
+]

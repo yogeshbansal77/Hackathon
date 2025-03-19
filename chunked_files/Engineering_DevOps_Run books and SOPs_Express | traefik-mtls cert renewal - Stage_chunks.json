@@ -1,0 +1,153 @@
+[
+    {
+        "id": "engineering_devops_run-books-and-sops_express-|-traefik-mtls-cert-renewal---stage-chunk-0",
+        "name": "Express | traefik-mtls cert renewal - Stage.txt - Launch [certsviaroute53](https://hub.docker.com/r/mavfav/certsviaroute53) container.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains how to launch a Docker container called 'certsviaroute53' which is used to obtain and renew SSL/TLS certificates from Let's Encrypt using AWS Route53 as the DNS provider. It involves creating directories to store the certificates and running the container with environment variables for AWS credentials and volume mounts to persist the certificates.",
+        "use_cases": [
+            "Obtaining SSL/TLS certificates from Let's Encrypt",
+            "Renewing SSL/TLS certificates using AWS Route53 as the DNS provider",
+            "Automating certificate management for web applications or services",
+            "Securing web traffic with SSL/TLS encryption"
+        ],
+        "capabilities": [
+            "Docker container execution",
+            "AWS credentials configuration",
+            "Volume mounts for persistent certificate storage",
+            "Let's Encrypt certificate issuance",
+            "AWS Route53 DNS integration",
+            "Automated certificate renewal"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_express-|-traefik-mtls-cert-renewal---stage-chunk-1",
+        "name": "Express | traefik-mtls cert renewal - Stage.txt - Issue cert. via certbot",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains the process of obtaining a TLS (Transport Layer Security) certificate using the Certbot tool. The certificate is issued for multiple subdomains (*.bvt.razorpay.in, *.func.razorpay.in, *.perf1.razorpay.in, *.perf.razorpay.in, *.qa.razorpay.in) under the razorpay.in domain. The command uses the DNS Route 53 plugin to automatically configure DNS records for domain validation. The issued certificate can be used to secure communication between clients and servers, ensuring data privacy and integrity.",
+        "use_cases": [
+            "Securing web applications and services with TLS encryption",
+            "Enabling HTTPS for subdomains under razorpay.in",
+            "Automating certificate issuance and renewal process",
+            "Validating domain ownership via DNS challenge"
+        ],
+        "capabilities": [
+            "TLS certificate issuance",
+            "Wildcard domain support",
+            "DNS Route 53 integration",
+            "Automated domain validation",
+            "Email notification for certificate expiration"
+        ],
+        "references": [
+            "https://crt.sh/?q=.razorpay.in"
+        ]
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_express-|-traefik-mtls-cert-renewal---stage-chunk-2",
+        "name": "Express | traefik-mtls cert renewal - Stage.txt - Add the newly issued cert. and the key to kubestash-stage table, this should be run with stage account credentials.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains the process of adding a newly issued SSL/TLS certificate and its corresponding private key to a secure storage system called 'kubestash-stage' table. This storage system is likely used to manage and distribute certificates for various subdomains (e.g., *.stage-blue.razorpay.in, *.stage-green.razorpay.in) within the 'stage' environment of the Razorpay platform. The instructions emphasize that this process should be carried out using credentials specific to the 'stage' account, ensuring proper access controls and separation of environments.",
+        "use_cases": [
+            "Secure management and distribution of SSL/TLS certificates for subdomains within the 'stage' environment",
+            "Maintaining separate credentials and access controls for different environments (e.g., 'stage', 'production')",
+            "Versioning and updating of SSL/TLS certificates in a secure storage system",
+            "Enabling secure communication (HTTPS) for various subdomains within the 'stage' environment"
+        ],
+        "capabilities": [
+            "Secure storage system ('kubestash-stage' table)",
+            "Versioning of SSL/TLS certificates",
+            "Environment-specific access controls (stage account credentials)",
+            "Management of SSL/TLS certificates for multiple subdomains",
+            "Automated certificate renewal process (implied)",
+            "Secure communication (HTTPS) for subdomains"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_express-|-traefik-mtls-cert-renewal---stage-chunk-3",
+        "name": "Express | traefik-mtls cert renewal - Stage.txt - Wait for a kubestash run, usually this takes ~20 mins on stage.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains how to check the latest version of a secret, which is likely related to certificate renewal or management in a Kubernetes environment. It suggests that the user should wait for a specific process called 'kubestash run' to complete, which typically takes around 20 minutes in the stage environment.",
+        "use_cases": [
+            "Certificate management in Kubernetes",
+            "Monitoring secret versions",
+            "Tracking certificate renewal processes",
+            "Troubleshooting certificate-related issues"
+        ],
+        "capabilities": [
+            "Checking secret versions",
+            "Waiting for kubestash run",
+            "Monitoring process duration",
+            "Environment-specific configurations (stage)"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_express-|-traefik-mtls-cert-renewal---stage-chunk-4",
+        "name": "Express | traefik-mtls cert renewal - Stage.txt - Check that the secrets are the correctly sync'd & only then rotate the traefik-mtls pods.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains the process of renewing SSL/TLS certificates for the Traefik load balancer in a Kubernetes environment. It involves retrieving the new certificate files, storing them securely in a credential store (credstash), waiting for the secrets to sync across the cluster, and then verifying that the new certificates are correctly applied before rotating the Traefik pods. The verification steps include checking the certificate dates, subject, and ensuring the certificate and private key match.",
+        "use_cases": [
+            "Renewing SSL/TLS certificates for Traefik load balancer",
+            "Securely storing and distributing sensitive credentials (certificates, keys) across a Kubernetes cluster",
+            "Verifying and validating the applied certificates before rotating pods",
+            "Automating certificate renewal and distribution process"
+        ],
+        "capabilities": [
+            "credstash",
+            "kubestash",
+            "certificate management",
+            "secret management",
+            "kubernetes secrets",
+            "ssl/tls certificate renewal",
+            "certificate verification",
+            "pod rotation"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_express-|-traefik-mtls-cert-renewal---stage-chunk-5",
+        "name": "Express | traefik-mtls cert renewal - Stage.txt - Perform a final check from the *outside.*",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains how to perform a final check on the renewed TLS/SSL certificate for the express.stage.razorpay.in domain from outside the Kubernetes cluster. It first shows how to retrieve the modulus of the renewed certificate stored as a Kubernetes secret and compares it with the expected value. Then, it triggers a rolling restart of the traefik-mtls deployment to pick up the renewed certificate. Finally, it demonstrates how to connect to the express.stage.razorpay.in domain over TLS and verify the certificate's validity dates and subject.",
+        "use_cases": [
+            "TLS/SSL certificate renewal",
+            "Kubernetes secret management",
+            "External TLS connectivity verification"
+        ],
+        "capabilities": [
+            "Certificate modulus retrieval",
+            "Base64 decoding",
+            "OpenSSL command-line usage",
+            "Kubernetes deployment rollout",
+            "TLS client connection",
+            "Certificate validity period check",
+            "Certificate subject verification"
+        ],
+        "references": []
+    }
+]

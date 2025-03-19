@@ -1,0 +1,106 @@
+[
+    {
+        "id": "engineering_databases_poc_flyway---db-versioning-tool-chunk-0",
+        "name": "Flyway - DB Versioning Tool.txt - Configuration:",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "POC"
+        ],
+        "description": "This section explains the configuration settings required for running Flyway, a database versioning tool. It provides details on mandatory parameters like the database URL, driver, user credentials, and locations of migration files. The configuration can be specified in a file or passed via command line arguments.",
+        "use_cases": [
+            "Setting up Flyway for database migrations",
+            "Configuring database connection details for Flyway",
+            "Specifying the location and naming conventions for migration files",
+            "Enabling or disabling specific Flyway features like schema cleaning or validation"
+        ],
+        "capabilities": [
+            "Database URL configuration",
+            "JDBC driver specification",
+            "User credentials for database access",
+            "Migration file location",
+            "Migration file naming conventions",
+            "Schema cleaning control",
+            "Migration validation control"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_poc_flyway---db-versioning-tool-chunk-1",
+        "name": "Flyway - DB Versioning Tool.txt - How Flyway works :",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "POC"
+        ],
+        "description": "This section explains the working mechanism of Flyway, a database versioning tool. It describes how Flyway maintains a history table to track deployed versions, executes SQL statements from version files in a transactional manner, handles errors and rollbacks, and validates checksums to detect changes in already deployed files. The process involves comparing deployed versions with those in the directory, executing pending versions sequentially, and updating the history table accordingly.",
+        "use_cases": [
+            "Tracking and managing database schema changes across multiple environments",
+            "Automating database migrations and deployments",
+            "Ensuring consistent and reliable database updates",
+            "Maintaining a history of database schema changes"
+        ],
+        "capabilities": [
+            "Version tracking",
+            "Transactional execution",
+            "Error handling and rollbacks",
+            "Checksum validation",
+            "History table maintenance",
+            "Sequential version execution",
+            "Auto-detection of database driver"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_poc_flyway---db-versioning-tool-chunk-2",
+        "name": "Flyway - DB Versioning Tool.txt - Initiation:",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "POC"
+        ],
+        "description": "This section explains the initial setup process for using Flyway, a database versioning tool, with an existing database. It describes how to create a baseline version by running the 'flyway baseline' command, which creates a metadata table and inserts a row representing the current state of the database as the baseline version. Subsequent database changes can then be versioned and applied using Flyway's migration scripts.",
+        "use_cases": [
+            "Versioning an existing database",
+            "Establishing a baseline version for an existing database",
+            "Tracking database schema changes over time"
+        ],
+        "capabilities": [
+            "Baseline creation",
+            "Metadata table management",
+            "Database versioning",
+            "Migration script execution",
+            "Schema change tracking"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_poc_flyway---db-versioning-tool-chunk-3",
+        "name": "Flyway - DB Versioning Tool.txt - Migration:",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "POC"
+        ],
+        "description": "This section explains the different commands and functionalities provided by Flyway, a database versioning tool. It describes how Flyway manages database migrations, which are changes to the database schema. Flyway keeps track of the migration history and applies new migrations in a transactional manner. It also provides commands for validating, repairing, and undoing migrations, as well as cleaning the entire database schema. The section covers the naming conventions for migration files and the information stored in the schema history table.",
+        "use_cases": [
+            "Managing database schema changes",
+            "Tracking migration history",
+            "Validating and repairing failed migrations",
+            "Rolling back migrations (enterprise edition)"
+        ],
+        "capabilities": [
+            "Migrate database schema changes",
+            "Validate deployed migrations",
+            "Repair failed migrations",
+            "View migration history",
+            "Clean/drop entire database schema",
+            "Undo migrations (enterprise edition)",
+            "Out-of-order migration execution",
+            "Integration with build tools (Maven, Gradle, etc.)"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/3237efe50aea7098f77824ab7c9861b6.png"
+        ]
+    }
+]

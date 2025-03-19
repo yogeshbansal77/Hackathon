@@ -1,0 +1,98 @@
+[
+    {
+        "id": "engineering_devops_dev-self-serve_elasticache-vs-redislabs-chunk-0",
+        "name": "Elasticache vs Redislabs.txt - One line answer :",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section provides a high-level recommendation on whether to use Amazon ElastiCache or Redis Labs for caching services. It suggests that services within the CDE (Cloud Development Environment) should use ElastiCache, while for other services, Redis Labs offers better control, operational efficiency, and a more managed experience compared to ElastiCache.",
+        "use_cases": [
+            "Caching services within the CDE environment",
+            "Caching services outside the CDE environment",
+            "Scenarios where better control and managed experience are required",
+            "Scenarios where operational efficiency is a priority"
+        ],
+        "capabilities": [
+            "Control",
+            "Managed experience",
+            "Operational efficiency (OpEx)",
+            "Environment-specific recommendations (CDE vs non-CDE)"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_elasticache-vs-redislabs-chunk-1",
+        "name": "Elasticache vs Redislabs.txt - Is your service in CDE?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains the concept of a Cardholder Data Environment (CDE), which is a system or network that processes, stores, or transmits cardholder data or sensitive payment authentication data. It states that the Payment Card Industry Data Security Standard (PCI DSS) security requirements apply to all components within or connected to the CDE. The section implies that services handling cardholder data, regardless of whether they directly handle card data or not, should use Elastic Cache for compliance with PCI DSS.",
+        "use_cases": [
+            "Handling cardholder data or sensitive payment authentication data",
+            "Ensuring compliance with PCI DSS security requirements",
+            "Processing, storing, or transmitting cardholder data",
+            "Implementing secure systems or networks for payment data"
+        ],
+        "capabilities": [
+            "Cardholder Data Environment (CDE)",
+            "Payment Card Industry Data Security Standard (PCI DSS)",
+            "Cardholder data processing",
+            "Cardholder data storage",
+            "Cardholder data transmission",
+            "Sensitive payment authentication data handling"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_elasticache-vs-redislabs-chunk-2",
+        "name": "Elasticache vs Redislabs.txt - What if your service is not CDE but talks to to CDE service over http (ingress or egress)?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains that if a service communicates with a CDE (Cardholder Data Environment) service over HTTP, it becomes a non-CDE-in-scope service, which means it falls under PCI (Payment Card Industry) compliance requirements. However, since it's not a direct CDE service, the compliance requirements are less stringent, allowing the use of non-PCI-compliant infrastructure components like RedisLabs.",
+        "use_cases": [
+            "Services communicating with CDE services over HTTP",
+            "Handling PCI compliance for non-CDE-in-scope services",
+            "Using non-PCI-compliant infrastructure components for non-CDE-in-scope services"
+        ],
+        "capabilities": [
+            "CDE service communication",
+            "Non-CDE-in-scope service classification",
+            "Relaxed PCI compliance requirements",
+            "Use of non-PCI-compliant infrastructure"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_elasticache-vs-redislabs-chunk-3",
+        "name": "Elasticache vs Redislabs.txt - Network segmentation between CDE and non CDE environment",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains the need for network segmentation between environments that handle sensitive data (CDE) and non-sensitive data (non-CDE) for compliance purposes. It discusses how this segmentation is currently achieved using AWS subnets and security groups, allowing control over communication between these environments. The key point is that non-CDE applications should not directly access CDE data stores or exchange sensitive data with the CDE environment.",
+        "use_cases": [
+            "Ensuring compliance with data privacy and security regulations",
+            "Separating environments that handle sensitive data (e.g., payment card information) from non-sensitive environments",
+            "Controlling communication and data exchange between CDE and non-CDE environments"
+        ],
+        "capabilities": [
+            "Network segmentation",
+            "Subnet isolation",
+            "Security group rules",
+            "Network access policies",
+            "Communication control between environments",
+            "Data isolation between CDE and non-CDE environments"
+        ],
+        "references": [
+            "https://write.razorpay.com/doc/elasticache-vs-redislabs-Hz3n8NGk43>"
+        ]
+    }
+]

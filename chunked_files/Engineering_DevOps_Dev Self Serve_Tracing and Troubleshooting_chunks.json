@@ -1,0 +1,125 @@
+[
+    {
+        "id": "engineering_devops_dev-self-serve_tracing-and-troubleshooting-chunk-0",
+        "name": "Tracing and Troubleshooting.txt - Using HTTP Codes",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section provides guidelines for proper handling of HTTP response codes and logging in applications. It emphasizes the importance of using appropriate HTTP status codes to indicate client-side or server-side errors, rather than forwarding raw error traces from underlying services. Additionally, it highlights the significance of configuring logging correctly to facilitate troubleshooting and enable infrastructure components to parse, store, and search logs effectively.",
+        "use_cases": [
+            "Proper handling of HTTP response codes in applications",
+            "Effective logging for troubleshooting and analysis",
+            "Enabling infrastructure components to parse and search logs"
+        ],
+        "capabilities": [
+            "HTTP response code management",
+            "Client-side error handling",
+            "Server-side error handling",
+            "Logging configuration",
+            "Log parsing",
+            "Log storage",
+            "Log searchability"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_tracing-and-troubleshooting-chunk-1",
+        "name": "Tracing and Troubleshooting.txt - Logging",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section provides guidelines for effective logging practices in applications. It emphasizes the importance of using structured logging with JSON formatting, avoiding unnecessary logs, maintaining consistent data types for log keys, and excluding status endpoint logs used for probes. The goal is to optimize log size, searchability, storage, and cost-effectiveness.",
+        "use_cases": [
+            "Application logging",
+            "Log management",
+            "Log analysis",
+            "Cost optimization"
+        ],
+        "capabilities": [
+            "Structured logging",
+            "JSON formatting",
+            "Log size optimization",
+            "Consistent data types",
+            "Excluding status endpoint logs"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_tracing-and-troubleshooting-chunk-2",
+        "name": "Tracing and Troubleshooting.txt - Metrics",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains the importance of monitoring and managing metrics in an application, particularly in terms of keeping the cardinality low, initializing metrics properly, using appropriate metric types, and separating metrics from the main application traffic. It emphasizes the need to avoid overburdening the underlying metrics system and provides guidelines for efficient metric management.",
+        "use_cases": [
+            "Monitoring application performance, latency, and availability",
+            "Tracking and analyzing application metrics",
+            "Optimizing metric collection and storage",
+            "Separating metrics from main application traffic"
+        ],
+        "capabilities": [
+            "Cardinality management",
+            "Metric initialization",
+            "Metric type selection (e.g., histogram buckets)",
+            "Dedicated metrics endpoint",
+            "Monitoring system integration",
+            "Metric visualization and alerting"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_tracing-and-troubleshooting-chunk-3",
+        "name": "Tracing and Troubleshooting.txt - DNS",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains best practices for optimizing DNS queries, which are crucial for efficient communication in applications. It suggests adding a dot at the end of domain names to avoid unnecessary traversal of the search path, and disabling IPv6 lookups to reduce latency caused by resolving both IPv4 and IPv6 records.",
+        "use_cases": [
+            "Reducing unnecessary load on DNS resolvers",
+            "Improving application performance by optimizing DNS queries",
+            "Avoiding racy conditions and latency caused by IPv6 lookups"
+        ],
+        "capabilities": [
+            "DNS query optimization",
+            "Endpoint domain resolution",
+            "IPv4/IPv6 record resolution",
+            "Search path traversal",
+            "Latency reduction",
+            "Load balancing on DNS resolvers"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_tracing-and-troubleshooting-chunk-4",
+        "name": "Tracing and Troubleshooting.txt - Secrets",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section provides guidelines for handling sensitive information, such as passwords and API keys, in a secure manner. It recommends using environment variables to store these secrets, following the standard practice on Unix-like systems. Additionally, it suggests implementing a safety check during the application's startup process to ensure that all required secrets are present, preventing the application from running without the necessary sensitive data.",
+        "use_cases": [
+            "Securely storing and accessing sensitive information like passwords and API keys",
+            "Ensuring the application has all required secrets before starting",
+            "Preventing manual errors related to missing secrets",
+            "Avoiding serving traffic without the necessary sensitive data"
+        ],
+        "capabilities": [
+            "Accepting secrets as environment variables",
+            "Enforcing the use of uppercase for environment variable names (following Unix standard)",
+            "Panic the application at bootstrap if required secrets are missing",
+            "Preventing application from starting without required secrets",
+            "Avoiding manual errors related to missing secrets",
+            "Ensuring application has all necessary sensitive data before serving traffic"
+        ],
+        "references": []
+    }
+]

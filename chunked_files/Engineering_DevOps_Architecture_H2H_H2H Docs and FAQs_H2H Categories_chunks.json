@@ -1,0 +1,330 @@
+[
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_h2h-categories-chunk-0",
+        "name": "H2H Categories.txt - Task",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be a table header that outlines different aspects related to task categorization or management. It suggests that tasks can be self-served by engineers or other teams like banking, finance, reporting, and business analytics. The table also includes columns for specifying the teams responsible for a task and a corresponding JIRA category, which is likely a project management tool used for tracking and organizing tasks.",
+        "use_cases": [
+            "Task categorization and management for engineering teams",
+            "Self-service task management for non-engineering teams like banking, finance, reporting, and business analytics",
+            "Assigning tasks to specific teams",
+            "Mapping tasks to JIRA categories for project management"
+        ],
+        "capabilities": [
+            "Self-serve task management",
+            "Team assignment",
+            "JIRA category mapping",
+            "Task categorization"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_h2h-categories-chunk-1",
+        "name": "H2H Categories.txt - Write beam push jobs",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be a placeholder or a template for content that is yet to be filled in. The section title 'Write beam push jobs' suggests that it should provide information or instructions on how to write and execute beam push jobs, which are likely related to data processing or analysis tasks. However, the content itself is just a line of dashes, indicating that the actual content is missing or needs to be added.",
+        "use_cases": [
+            "Writing and executing beam push jobs",
+            "Providing a template or structure for documenting beam push job processes"
+        ],
+        "capabilities": [
+            "Placeholder for content",
+            "Section heading or title"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_h2h-categories-chunk-2",
+        "name": "H2H Categories.txt - Write beam pull jobs",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section provides information about write beam push jobs, which are likely related to data processing or integration tasks. It specifies that certain teams or roles (rx-finops, finops, settlements, reporting, post-payments) are involved in these jobs, and that a PR review or configuration change is required.",
+        "use_cases": [
+            "Data processing",
+            "Data integration",
+            "Financial operations",
+            "Reporting",
+            "Post-payment processing"
+        ],
+        "capabilities": [
+            "Write beam push jobs",
+            "Team/role assignment",
+            "PR review",
+            "Configuration changes"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_h2h-categories-chunk-3",
+        "name": "H2H Categories.txt - Create lambda & s3 triggers for beam pull jobs",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section outlines the process of creating Lambda functions and S3 triggers for Beam pull jobs, which are used to extract data from various sources (rx-finops, finops, settlements, reporting, post-payments) for further processing or analysis. The process involves writing the necessary code for the Beam pull jobs and requires either a peer review or a configuration change before implementation.",
+        "use_cases": [
+            "Data extraction from multiple sources (rx-finops, finops, settlements, reporting, post-payments)",
+            "Data processing or analysis",
+            "Automation of data extraction and processing tasks"
+        ],
+        "capabilities": [
+            "Create Lambda functions",
+            "Set up S3 triggers",
+            "Write Beam pull jobs",
+            "Peer review process",
+            "Configuration change management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_h2h-categories-chunk-4",
+        "name": "H2H Categories.txt - Troubleshooting SFTP file transfer failures",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be a table row or entry related to creating a Lambda function and S3 triggers for a process called 'beam pull jobs'. It indicates that this task is applicable to certain categories like finops, settlements, reporting, and post-payments. The '==PR review==' part suggests that this entry or task requires a pull request review before implementation.",
+        "use_cases": [
+            "Automating file transfers or data ingestion processes",
+            "Triggering Lambda functions based on S3 events",
+            "Handling financial operations (finops) data",
+            "Processing data related to settlements, reporting, and post-payments"
+        ],
+        "capabilities": [
+            "Create lambda functions",
+            "Set up S3 triggers",
+            "Beam pull jobs",
+            "Category tagging",
+            "Pull request review process"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_h2h-categories-chunk-5",
+        "name": "H2H Categories.txt - Beam IP whitelisting (communication with bank)",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be providing information related to troubleshooting issues with SFTP file transfers, specifically for certain teams or processes such as finops, settlements, reporting, and post-payments. It suggests that there may be guidance or steps outlined for resolving failures or errors encountered during the transfer of files over SFTP, which is a secure file transfer protocol commonly used for exchanging data between systems or organizations.",
+        "use_cases": [
+            "Troubleshooting SFTP file transfer failures",
+            "Resolving issues with file transfers for finops, settlements, reporting, and post-payments teams"
+        ],
+        "capabilities": [
+            "SFTP file transfer",
+            "Troubleshooting",
+            "Error handling",
+            "File transfer monitoring",
+            "Team-specific access or permissions"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_h2h-categories-chunk-6",
+        "name": "H2H Categories.txt - SFTP initial setup failures and navigating other challenges",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section discusses the process of whitelisting IP addresses for secure communication between the Beam platform and banks. It appears to be related to setting up SFTP (Secure File Transfer Protocol) connections for various financial operations such as reconciliation, settlements, reporting, and post-payment processes. The section implies that there may be challenges or failures during the initial setup phase, and it provides information to navigate through those issues.",
+        "use_cases": [
+            "Secure communication with banks",
+            "SFTP setup for financial operations",
+            "IP whitelisting for data transfers",
+            "Troubleshooting SFTP setup failures"
+        ],
+        "capabilities": [
+            "Beam IP whitelisting",
+            "Communication with bank",
+            "SFTP setup",
+            "Reconciliation",
+            "Settlements",
+            "Reporting",
+            "Post-payments"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_h2h-categories-chunk-7",
+        "name": "H2H Categories.txt - Manual file uploads",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be discussing a specific scenario related to file uploads via SFTP (Secure File Transfer Protocol) and the potential challenges or failures that may arise during the initial setup process. It also mentions navigating other difficulties that could occur. The context suggests that this information is relevant for teams or individuals involved in finance operations (finops), settlements, reporting, and post-payment processes.",
+        "use_cases": [
+            "Handling SFTP initial setup failures",
+            "Navigating challenges related to file uploads",
+            "Troubleshooting issues in finance operations, settlements, reporting, and post-payment processes"
+        ],
+        "capabilities": [
+            "SFTP file uploads",
+            "Initial setup procedures",
+            "Error handling",
+            "Troubleshooting",
+            "Finance operations support",
+            "Settlements support",
+            "Reporting support",
+            "Post-payment support"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_h2h-categories-chunk-8",
+        "name": "H2H Categories.txt - Manual file removals",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains a manual process for uploading files to specific categories or teams within the system. It allows authorized personnel to manually write or upload files on a case-by-case basis for certain teams or operations, such as finance, settlements, reporting, and post-payments. This manual file operation seems to be a specialized feature for handling specific file uploads that cannot be done through the regular automated processes.",
+        "use_cases": [
+            "Manually uploading files for finance operations (finops)",
+            "Manually uploading files for settlements operations",
+            "Manually uploading files for reporting operations",
+            "Manually uploading files for post-payments operations"
+        ],
+        "capabilities": [
+            "Manual file uploads",
+            "Case-by-case file write access",
+            "Admin-dashboard access for manual file operations",
+            "Targeted file uploads for specific teams/categories",
+            "H2H file operation"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_h2h-categories-chunk-9",
+        "name": "H2H Categories.txt - s3 bucket access requests",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section outlines the access permissions for manual file removals from an S3 bucket. It specifies that manual file removals are not allowed for certain teams (rx-finops, finops, settlements, reporting, post-payments) and that this operation is categorized as an 'H2H file operation'.",
+        "use_cases": [
+            "Managing access permissions for file operations on S3 buckets",
+            "Controlling which teams can perform manual file removals",
+            "Categorizing file operations for auditing or tracking purposes"
+        ],
+        "capabilities": [
+            "Manual file removals",
+            "Team-based access control",
+            "Operation categorization",
+            "S3 bucket access management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_h2h-categories-chunk-10",
+        "name": "H2H Categories.txt - Lambda trigger failure troubleshooting",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be a table or matrix that outlines access permissions related to various categories or components within a system. It specifies that the 's3 bucket access requests' category does not require access for certain roles or groups like 'rx-finops', 'finops', 'settlements', 'reporting', and 'post-payments'. The 'Access Management' keyword suggests that this table is related to managing access controls or permissions within the system.",
+        "use_cases": [
+            "Managing access controls",
+            "Defining permissions for different roles or groups",
+            "Controlling access to specific resources or components",
+            "Auditing or reviewing access privileges"
+        ],
+        "capabilities": [
+            "Access control matrix",
+            "Role-based access control",
+            "Resource-level permissions",
+            "Access management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_h2h-categories-chunk-11",
+        "name": "H2H Categories.txt - Razorpay Internal SFTP account creation",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be related to troubleshooting issues with a Lambda trigger failure, specifically in the context of a limited visibility scenario. It suggests that certain teams or roles (rx-finops, finops, settlements, reporting, post-payments) may be involved in the troubleshooting process.",
+        "use_cases": [
+            "Troubleshooting Lambda trigger failures",
+            "Handling limited visibility scenarios",
+            "Involving relevant teams or roles in the troubleshooting process"
+        ],
+        "capabilities": [
+            "Lambda trigger failure troubleshooting",
+            "Limited visibility handling",
+            "Team or role involvement in troubleshooting"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_h2h-categories-chunk-12",
+        "name": "H2H Categories.txt - Communication with bank",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section outlines the process and requirements for communication with banks, which is a crucial aspect of financial operations. It suggests that certain teams, such as finops, settlements, reporting, and post-payments, are involved in this process. The section also indicates that communication with banks is categorized as a non-SLA (Service Level Agreement) task, implying that it may not have strict time constraints or performance metrics.",
+        "use_cases": [
+            "Facilitating communication between Razorpay and banks",
+            "Coordinating financial operations and settlements",
+            "Reporting and post-payment processes",
+            "Involving relevant teams in bank communication"
+        ],
+        "capabilities": [
+            "Communication with banks",
+            "Financial operations",
+            "Settlements",
+            "Reporting",
+            "Post-payments processes",
+            "Team coordination"
+        ],
+        "references": []
+    }
+]

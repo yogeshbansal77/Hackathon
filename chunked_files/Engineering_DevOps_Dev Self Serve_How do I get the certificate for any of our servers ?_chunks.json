@@ -1,0 +1,48 @@
+[
+    {
+        "id": "engineering_devops_dev-self-serve_how-do-i-get-the-certificate-for-any-of-our-servers-?-chunk-0",
+        "name": "How do I get the certificate for any of our servers ?.txt - Hello True Believers,",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains how to obtain the SSL/TLS certificate for Razorpay's servers, which is often required by clients or banks for whitelisting purposes. It provides a direct link to download the certificate for the main API endpoint (api.razorpay.com) and also includes a script using the OpenSSL tool to retrieve the certificate for any specific endpoint or domain.",
+        "use_cases": [
+            "Whitelisting Razorpay's servers by clients or banks",
+            "Obtaining SSL/TLS certificates for security or compliance purposes",
+            "Verifying the authenticity of Razorpay's servers"
+        ],
+        "capabilities": [
+            "Downloading SSL/TLS certificate",
+            "Retrieving certificate for specific endpoints",
+            "Using OpenSSL tool for certificate retrieval",
+            "Providing documentation and instructions"
+        ],
+        "references": [
+            "https://razorpay.com/docs/whitelists/>,"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_how-do-i-get-the-certificate-for-any-of-our-servers-?-chunk-1",
+        "name": "How do I get the certificate for any of our servers ?.txt - Script",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section provides a command-line script that allows users to extract the SSL/TLS certificate from a server. The script uses the OpenSSL tool to convert the certificate into a readable format and save it to a file. It's important to note that this script only retrieves the server's certificate and not any intermediate or root certificates from the certificate chain. This process can be useful for troubleshooting or verifying the server's certificate.",
+        "use_cases": [
+            "Retrieving a server's SSL/TLS certificate",
+            "Troubleshooting SSL/TLS certificate issues",
+            "Verifying a server's certificate"
+        ],
+        "capabilities": [
+            "Certificate extraction",
+            "Certificate conversion",
+            "Certificate file output",
+            "OpenSSL command-line tool usage"
+        ],
+        "references": []
+    }
+]

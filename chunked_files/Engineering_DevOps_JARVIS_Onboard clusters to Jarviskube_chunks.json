@@ -1,0 +1,55 @@
+[
+    {
+        "id": "engineering_devops_jarvis_onboard-clusters-to-jarviskube-chunk-0",
+        "name": "Onboard clusters to Jarviskube.txt - About Jarviskube:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section introduces Jarviskube, a tool that allows access to Razorpay's Kubernetes clusters across different environments, including production. It provides a brief overview of Jarviskube and includes a link for further exploration. The section also poses a question about how to onboard a new cluster to Jarviskube, suggesting that the tool supports adding new clusters.",
+        "use_cases": [
+            "Accessing Razorpay's Kubernetes clusters on production and other environments",
+            "Onboarding new clusters to Jarviskube",
+            "Exploring and getting hands-on experience with Jarviskube"
+        ],
+        "capabilities": [
+            "Access Kubernetes clusters",
+            "Onboard new clusters",
+            "Explore Jarviskube",
+            "Hands-on experience with Jarviskube"
+        ],
+        "references": [
+            "https://jarvis.razorpay.com/jarvisKube"
+        ]
+    },
+    {
+        "id": "engineering_devops_jarvis_onboard-clusters-to-jarviskube-chunk-1",
+        "name": "Onboard clusters to Jarviskube.txt - How to Onboard a new cluster to Jarviskube?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section outlines the steps to onboard a new Kubernetes cluster to the Jarviskube platform. It involves deploying the Jarviskube application on the cluster using a Helm chart, exposing it via an ingress route, verifying the deployment by accessing the welcome message, and finally sharing the endpoint with the DevOps team to integrate it with the Jarvis frontend for user access.",
+        "use_cases": [
+            "Onboarding new Kubernetes clusters to the Jarviskube platform",
+            "Exposing Jarviskube application via ingress routes",
+            "Verifying successful deployment of Jarviskube",
+            "Integrating Jarviskube endpoints with the Jarvis frontend"
+        ],
+        "capabilities": [
+            "Deploying Jarviskube using Helm charts",
+            "Exposing applications via ingress routes",
+            "Endpoint creation and management",
+            "Integration with Jarvis frontend",
+            "Deployment verification",
+            "Collaboration between DevOps and development teams"
+        ],
+        "references": [
+            "https://github.com/razorpay/kube-manifests/tree/master/templates/jarviskube",
+            "https://github.com/razorpay/vishnu/blob/0e2cf0891480083bb1f4c0bed100a3a8137bd075/prod/dns/records.tf#L1057",
+            "https://jarviskube-CLUSTER.razorpay.com/"
+        ]
+    }
+]

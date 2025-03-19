@@ -1,0 +1,26 @@
+[
+    {
+        "id": "engineering_devops_devops-champions-runbooks_collated-list-of-docs-or-process-chunk-0",
+        "name": "Collated list of docs or process.txt - Why not prometheus:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Champions runbooks"
+        ],
+        "description": "This section provides a link to a Google Document that likely explains the reasons for not using Prometheus, a popular open-source monitoring and alerting system, in a particular context. The document may outline the limitations or drawbacks of Prometheus, or it may suggest alternative solutions that better fit the specific requirements or constraints of the project or organization.",
+        "use_cases": [
+            "Evaluating the suitability of Prometheus for a specific monitoring and alerting scenario",
+            "Comparing Prometheus with other monitoring tools or solutions",
+            "Understanding the trade-offs and considerations when choosing a monitoring system"
+        ],
+        "capabilities": [
+            "Explanation of Prometheus limitations or drawbacks",
+            "Comparison of Prometheus with alternative monitoring solutions",
+            "Analysis of specific requirements or constraints",
+            "Evaluation of monitoring tool features and capabilities"
+        ],
+        "references": [
+            "https://docs.google.com/document/d/1BReESyvP8UzTIMtgpaOAxLr1FlQEvREYJfcCD42qeSk/edit?usp=sharing"
+        ]
+    }
+]

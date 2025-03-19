@@ -1,0 +1,83 @@
+[
+    {
+        "id": "engineering_devops_processes_access-management_s3-bucket-access-for-finops|banking-{ops|alliance|solutions}-chunk-0",
+        "name": "s3 bucket access for finops|banking {ops|alliance|solutions}.txt - Default channel for S3 bucket access request",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management"
+        ],
+        "description": "This section outlines the required information that needs to be provided when submitting a request for access to an S3 bucket. Specifically, it mentions that the requester's email address and IAM (Identity and Access Management) user name, which should follow the format 'firstname.lastname', must be included in the request, whether it is submitted via email or through a JIRA ticket.",
+        "use_cases": [
+            "Requesting access to an S3 bucket",
+            "Submitting access requests via email or JIRA",
+            "Providing required information for access requests"
+        ],
+        "capabilities": [
+            "Requester's email address",
+            "IAM user name format",
+            "Email or JIRA submission"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_access-management_s3-bucket-access-for-finops|banking-{ops|alliance|solutions}-chunk-1",
+        "name": "s3 bucket access for finops|banking {ops|alliance|solutions}.txt - Information needed in the email/JIRA",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management"
+        ],
+        "description": "This section outlines the information required when requesting access to an S3 bucket for financial operations, banking operations, or solutions teams. It explains how to derive the IAM username from an email address and emphasizes the need for manager approval. The section also specifies the typical access methods (GET and LIST) and prohibits PUT access unless a separate SFTP account is requested. It provides guidance on how to obtain the bucket location and file path information from engineering teams if it is unknown. Additionally, it addresses the scenario where no policy exists for the requested bucket location.",
+        "use_cases": [
+            "Requesting access to S3 buckets for financial operations teams",
+            "Requesting access to S3 buckets for banking operations teams",
+            "Requesting access to S3 buckets for solutions teams",
+            "Obtaining information about S3 bucket locations and file paths"
+        ],
+        "capabilities": [
+            "Manager approval",
+            "GET access (download files)",
+            "LIST access (list files)",
+            "Restricted PUT access (upload files)",
+            "Internal SFTP account for file uploads",
+            "Obtaining bucket location and file path information from engineering teams"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_access-management_s3-bucket-access-for-finops|banking-{ops|alliance|solutions}-chunk-2",
+        "name": "s3 bucket access for finops|banking {ops|alliance|solutions}.txt - If there is no policy available for the bucket location",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management"
+        ],
+        "description": "This section outlines the steps to create and configure AWS Identity and Access Management (IAM) resources, such as policies, groups, and users, to grant access to an S3 bucket. It provides examples from a GitHub repository for creating these resources using Terraform code. The process involves creating an IAM policy document, an IAM policy, an IAM group, attaching the policy to the group, creating an IAM user, and adding the user to the group. This setup allows for controlled access to the S3 bucket based on the defined policies and group membership.",
+        "use_cases": [
+            "Granting access to an S3 bucket for specific users or roles",
+            "Implementing least privilege access principles for S3 bucket access",
+            "Managing and controlling access to S3 buckets using IAM policies and groups",
+            "Automating the creation and configuration of IAM resources using Terraform"
+        ],
+        "capabilities": [
+            "IAM policy document creation",
+            "IAM policy creation",
+            "IAM group creation",
+            "Attaching IAM policies to IAM groups",
+            "IAM user creation",
+            "Adding IAM users to IAM groups"
+        ],
+        "references": [
+            "https://github.com/razorpay/vishnu/blob/master/iam-data.tf#L1031-L1065>",
+            "https://github.com/razorpay/vishnu/blob/master/iam-policy.tf#L207-L210>",
+            "https://github.com/razorpay/vishnu/blob/master/iam-groups.tf#L65-L67>",
+            "https://github.com/razorpay/vishnu/blob/master/iam-group-policy-attachment.tf#L164-L167>",
+            "https://github.com/razorpay/vishnu/blob/master/iam-user.tf#L62-L65>",
+            "https://github.com/razorpay/vishnu/blob/master/iam-user.tf#L176>"
+        ]
+    }
+]

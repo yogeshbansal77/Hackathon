@@ -1,0 +1,300 @@
+[
+    {
+        "id": "engineering_devops_run-books-and-sops_cloudflare-tunnel-alerts-chunk-0",
+        "name": "Cloudflare Tunnel Alerts.txt - Clusters",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section introduces the 'cloudflare-tunnel' namespace, which is likely a logical grouping or categorization used within the Cloudflare Tunnel service. A namespace is a way to organize and isolate resources or configurations within a larger system or platform. In this context, it suggests that the subsequent content or configurations will be specific to the Cloudflare Tunnel service.",
+        "use_cases": [
+            "Organizing and managing resources related to Cloudflare Tunnel",
+            "Isolating configurations and settings for Cloudflare Tunnel from other services",
+            "Providing a logical separation or boundary for Cloudflare Tunnel within a larger system or platform"
+        ],
+        "capabilities": [
+            "Namespace",
+            "Resource organization",
+            "Configuration isolation",
+            "Logical separation"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_cloudflare-tunnel-alerts-chunk-1",
+        "name": "Cloudflare Tunnel Alerts.txt - Namespace",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section provides links to Grafana dashboards for monitoring Cloudflare Tunnel metrics and node metrics. The Cloudflare Tunnel is a service that allows secure access to private resources from the internet, and these dashboards help visualize and analyze the performance and health of the tunnel and the nodes running it.",
+        "use_cases": [
+            "Monitoring Cloudflare Tunnel performance and health",
+            "Monitoring node performance and health for nodes running Cloudflare Tunnel",
+            "Troubleshooting issues with Cloudflare Tunnel or its nodes",
+            "Analyzing resource utilization and capacity planning for Cloudflare Tunnel infrastructure"
+        ],
+        "capabilities": [
+            "Grafana dashboards",
+            "Cloudflare Tunnel metrics",
+            "Node metrics",
+            "Performance monitoring",
+            "Health monitoring",
+            "Resource utilization monitoring"
+        ],
+        "references": [
+            "https://vajra.razorpay.com/d/TjLJZuP7z/cloudflare-tunnel?orgId=1",
+            "https://vajra.razorpay.com/d/CajXn3rMk/node-exporter-server-metrics?orgId=1&var-workers=eks-cde-blue-worker-cloudflare-tunnel&from=1667318673313&to=1667319665656"
+        ]
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_cloudflare-tunnel-alerts-chunk-2",
+        "name": "Cloudflare Tunnel Alerts.txt - Grafana",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section discusses the potential impact of a Cloudflare tunnel acting as a proxy for payment pages of some merchants. It mentions that not all merchants have opted for the custom domain linking feature, and at the time of writing, only 5 merchants had enabled this feature. The section implies that the Cloudflare tunnel is used to handle sensitive payment data for these merchants.",
+        "use_cases": [
+            "Proxying payment pages for merchants",
+            "Handling sensitive payment data",
+            "Custom domain linking for merchants"
+        ],
+        "capabilities": [
+            "Cloudflare tunnel",
+            "Proxy for payment pages",
+            "Custom domain linking",
+            "Merchant-specific configuration"
+        ],
+        "references": [
+            "https://razorpay.slack.com/archives/C2NVBTWF6/p1658909710034839"
+        ]
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_cloudflare-tunnel-alerts-chunk-3",
+        "name": "Cloudflare Tunnel Alerts.txt - Potential Impact",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section appears to be providing information about the communication channels and architectural documentation related to a specific feature or process. It mentions a Slack channel (#custom_domain_payment_pages) that seems to be used for communication or support related to custom domain payment pages. Additionally, it includes a link to a documentation page that describes the architecture or technical details of custom domain linking.",
+        "use_cases": [
+            "Communication and support related to custom domain payment pages",
+            "Accessing architectural documentation for custom domain linking"
+        ],
+        "capabilities": [
+            "Slack channel for communication",
+            "Documentation link for architecture details"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/custom-domain-linking-architecture"
+        ]
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_cloudflare-tunnel-alerts-chunk-4",
+        "name": "Cloudflare Tunnel Alerts.txt - Slack",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section appears to provide information about the Point of Contact (POC) for Cloudflare Tunnel Alerts. It mentions a specific person's name, '@nijilraj.t', which suggests that this individual is the designated contact or responsible party for any issues or inquiries related to Cloudflare Tunnel Alerts.",
+        "use_cases": [
+            "Contacting the designated POC for Cloudflare Tunnel Alerts",
+            "Escalating or reporting issues related to Cloudflare Tunnel Alerts",
+            "Seeking assistance or guidance on Cloudflare Tunnel Alerts"
+        ],
+        "capabilities": [
+            "Point of Contact (POC)",
+            "Designated responsible party",
+            "Contact for Cloudflare Tunnel Alerts"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_cloudflare-tunnel-alerts-chunk-5",
+        "name": "Cloudflare Tunnel Alerts.txt - Architecture",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section appears to be empty or missing content. Without any text or information provided, it is difficult to provide a meaningful description or extract any use cases or capabilities.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_cloudflare-tunnel-alerts-chunk-6",
+        "name": "Cloudflare Tunnel Alerts.txt - POC",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains that the terms 'Pool' and 'Origin' are jargon used by Cloudflare, and provides a comparison to help understand their meaning. 'Pool' is similar to a target group in AWS, while 'Origin' is similar to a target in AWS. This clarification is intended to help readers who may not be familiar with Cloudflare's terminology.",
+        "use_cases": [
+            "Understanding Cloudflare's terminology for non-experts",
+            "Comparing Cloudflare's concepts to similar concepts in AWS for better comprehension",
+            "Providing context for the upcoming alerts related to Pools and Origins"
+        ],
+        "capabilities": [
+            "Terminology clarification",
+            "Concept comparison",
+            "Context setting"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_cloudflare-tunnel-alerts-chunk-7",
+        "name": "Cloudflare Tunnel Alerts.txt - Possible alerts",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains a specific alert that may be triggered when using Cloudflare Tunnel, which is a service that allows secure access to private resources from the public internet. The alert, named 'Load Balancing Health Alert', indicates an issue with the origin server or pool configuration, where the response code received from the origin does not match the expected response code. This alert helps identify potential problems with the load balancing setup or the origin server's health.",
+        "use_cases": [
+            "Monitoring the health and availability of origin servers",
+            "Troubleshooting issues with load balancing configurations",
+            "Ensuring proper response codes from origin servers"
+        ],
+        "capabilities": [
+            "Load balancing health monitoring",
+            "Response code mismatch detection",
+            "Alert generation for specific issues"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_cloudflare-tunnel-alerts-chunk-8",
+        "name": "Cloudflare Tunnel Alerts.txt - Alert1",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains an alert related to the failure of a health check for a Cloudflare client running on one of the clusters (cde-green). It suggests that there is another cluster handling the job, so it's not a critical issue. The section provides steps to troubleshoot the issue, such as checking the status of pods, analyzing Cloudflare Load Balancer Analytics for errors, and verifying the configuration of the 'Monitor HealthCheck' at the Cloudflare Load Balancer side.",
+        "use_cases": [
+            "Monitoring the health of Cloudflare clients running on different clusters",
+            "Troubleshooting and resolving issues related to failed health checks",
+            "Analyzing Cloudflare Load Balancer Analytics for errors",
+            "Verifying and updating the configuration of 'Monitor HealthCheck' at the Cloudflare Load Balancer side"
+        ],
+        "capabilities": [
+            "Health check monitoring",
+            "Cluster management",
+            "Load balancing analytics",
+            "Configuration management",
+            "Troubleshooting",
+            "Logging and monitoring"
+        ],
+        "references": [
+            "https://vajra.razorpay.com/d/TjLJZuP7z/cloudflare-tunnel?viewPanel=11&orgId=1&from=now-30m&to=now",
+            "https://docs.google.com/document/d/1vSy219aYlxf3aEypqoKCKCgCdLKRDzZyt1RBDCwnLM0/edit?usp=sharing"
+        ]
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_cloudflare-tunnel-alerts-chunk-9",
+        "name": "Cloudflare Tunnel Alerts.txt - Alert2",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains a very critical alert that indicates both origins under a Pool have failed, suggesting that both tunnels may be down. It provides a description of the severity level and the potential issue, which is that both tunnels connecting to the origins are not functioning properly. The action items for resolving this alert are mentioned to be similar to those for a previous alert (Alert1).",
+        "use_cases": [
+            "Monitoring the status of tunnels and origins",
+            "Identifying critical failures in tunnel connectivity",
+            "Troubleshooting and resolving tunnel-related issues"
+        ],
+        "capabilities": [
+            "Severity level classification",
+            "Tunnel and origin status monitoring",
+            "Alert description and explanation",
+            "Action item recommendations"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_cloudflare-tunnel-alerts-chunk-10",
+        "name": "Cloudflare Tunnel Alerts.txt - Alert3",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains an alert triggered when the number of Cloudflare Tunnel pods running in one or both of the CDE clusters falls below 2. This alert has a high severity level, indicating a potential issue with the Cloudflare Tunnel service. The description suggests that a reduced pod count could be caused by someone performing an activity that brought down the pods. The recommended action is to investigate any recent activities that might have impacted the pod count.",
+        "use_cases": [
+            "Monitoring the health and availability of Cloudflare Tunnel pods",
+            "Detecting potential issues or disruptions in the Cloudflare Tunnel service",
+            "Troubleshooting and investigating the root cause of reduced pod counts"
+        ],
+        "capabilities": [
+            "Alerting",
+            "Monitoring",
+            "Cluster management",
+            "Pod management",
+            "Incident response",
+            "Troubleshooting"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_cloudflare-tunnel-alerts-chunk-11",
+        "name": "Cloudflare Tunnel Alerts.txt - How to Check Cloudflare Loadbalancer Analytics",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section provides instructions on how to access and view the load balancing analytics for a website hosted on Cloudflare. It explains that users need to log into their Cloudflare account, navigate to the specific website's domain (in this case, razorpay.com), expand the 'Traffic' section in the left sidebar, and then click on 'Load Balancing Analytics' to view the load balancing data and metrics for that website.",
+        "use_cases": [
+            "Monitoring website traffic and load balancing",
+            "Analyzing website performance and identifying potential bottlenecks",
+            "Optimizing website infrastructure and resource allocation",
+            "Troubleshooting website issues related to load balancing"
+        ],
+        "capabilities": [
+            "Cloudflare console access",
+            "Website domain management",
+            "Traffic analytics",
+            "Load balancing analytics",
+            "Sidebar navigation",
+            "Metric visualization"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_cloudflare-tunnel-alerts-chunk-12",
+        "name": "Cloudflare Tunnel Alerts.txt - Side notes",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains that certain error logs related to failed QUIC stream connections and response header writing errors can be safely ignored as they are expected behaviors. It mentions that Cloudflare's pod establishes 4 connections to the Cloudflare datacenter, and if some of these connections fail, the errors will be logged but quickly recovered. Additionally, it clarifies that the response header writing error is expected for the health check endpoint but should be investigated if seen for other endpoints.",
+        "use_cases": [
+            "Understanding and triaging expected error logs in Cloudflare Tunnel",
+            "Monitoring and troubleshooting Cloudflare Tunnel connections",
+            "Configuring health checks for Cloudflare Load Balancer"
+        ],
+        "capabilities": [
+            "QUIC stream connection handling",
+            "Connection recovery",
+            "Liveness probe configuration",
+            "Error logging",
+            "Health check configuration",
+            "Load balancer integration"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/3dbbb121bc9ef29db31199ac4f7eca3c.png",
+            "https://github.com/cloudflare/argo-tunnel-examples/blob/master/named-tunnel-k8s/cloudflared.yaml#:\\~:text=%23%20it%20has%20an%20active%20connection%20to%20the%20edge.",
+            "http://localhost:2000"
+        ]
+    }
+]

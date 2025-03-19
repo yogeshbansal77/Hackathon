@@ -1,0 +1,569 @@
+[
+    {
+        "id": "engineering_devops_devops-onboarding_knowledge-sharing-sessions-chunk-0",
+        "name": "Knowledge Sharing Sessions.txt - Infrastructure Overview",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section appears to be a table header or a template for organizing information related to Knowledge Sharing Sessions. It includes columns for serial number, topic, Zoom link for the session, a column for slides or documents associated with the session, and a column for the presenter's name. This table structure is likely used to provide an overview or schedule of upcoming or past Knowledge Sharing Sessions, making it easier to access relevant information about each session.",
+        "use_cases": [
+            "Organizing and scheduling Knowledge Sharing Sessions",
+            "Providing access to session materials (slides, documents)",
+            "Tracking session details (topic, presenter)",
+            "Facilitating virtual attendance through Zoom links"
+        ],
+        "capabilities": [
+            "Tabular format",
+            "Session tracking",
+            "Content organization",
+            "Virtual session access",
+            "Session material access"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_knowledge-sharing-sessions-chunk-1",
+        "name": "Knowledge Sharing Sessions.txt - Onggi Overview",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section does not provide any meaningful content or explanation. The provided text appears to be an incomplete or empty table structure, likely intended for formatting purposes within the larger document.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_knowledge-sharing-sessions-chunk-2",
+        "name": "Knowledge Sharing Sessions.txt - Observability",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section provides access to resources related to an Infrastructure Overview session. It includes a link to a Zoom recording of the session, as well as a link to the presentation slides used during the session. The resources seem to be intended for knowledge sharing and training purposes, likely aimed at providing an overview of the infrastructure setup or architecture.",
+        "use_cases": [
+            "Knowledge sharing and training",
+            "Infrastructure overview and architecture understanding",
+            "Onboarding and upskilling of team members",
+            "Documentation and reference material"
+        ],
+        "capabilities": [
+            "Video recording access",
+            "Presentation slides access",
+            "Asynchronous learning resources",
+            "Centralized knowledge repository"
+        ],
+        "references": [
+            "https://razorpay.zoom.us/rec/share/osh-dYDW_HtOXavnyFj7fOl6Nd_5aaa823dPr6YKmYNcLH3ypH9WEw7IKbX-FtE",
+            "https://docs.google.com/presentation/d/1LS0krDRKM0vhNln7C1K8HF5_31PXyHT-ZjI7prdu_s4/edit#slide=id.g7d183702d2_0_5"
+        ]
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_knowledge-sharing-sessions-chunk-3",
+        "name": "Knowledge Sharing Sessions.txt - Kube Manifests",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section provides information about a Knowledge Sharing Session titled 'Onggi Overview'. It includes links to a Zoom recording of the session and a set of slides used during the presentation. The recording can be accessed with a password, and the slides are hosted on Google Slides. This section serves as a reference for anyone interested in learning about the Onggi Overview session or revisiting the content covered during the presentation.",
+        "use_cases": [
+            "Accessing recorded Knowledge Sharing Sessions",
+            "Reviewing presentation materials from past sessions",
+            "Learning about specific topics or technologies covered in the sessions"
+        ],
+        "capabilities": [
+            "Zoom recording access",
+            "Password-protected recordings",
+            "Google Slides integration",
+            "Centralized documentation",
+            "Knowledge sharing",
+            "Session archiving"
+        ],
+        "references": [
+            "https://razorpay.zoom.us/rec/play/vZx7Irqqpjg3GoWdsQSDUKQrW468f6isgyUX_fEPmEayW3QLYFDwbrtDZeDOxmrf1kOQF4Dw0uRl2HnZ",
+            "https://docs.google.com/presentation/d/123EijFQwVOlP92ZwClpt00rF5bTJYRciBUZla2ylkGo/edit#slide=id.p"
+        ]
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_knowledge-sharing-sessions-chunk-4",
+        "name": "Knowledge Sharing Sessions.txt - Victoria Metrics",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section provides information about a Knowledge Sharing Session on Observability, specifically focusing on Victoria Metrics. It includes a Zoom recording link and a password to access the recorded session, as well as a link to the presentation slides used during the session. The session likely covered topics related to monitoring and observing systems or applications using Victoria Metrics, a open-source monitoring solution.",
+        "use_cases": [
+            "Monitoring and observing systems or applications",
+            "Learning about Victoria Metrics, an open-source monitoring solution",
+            "Accessing recorded knowledge sharing sessions for reference or training purposes",
+            "Reviewing presentation slides from the knowledge sharing session"
+        ],
+        "capabilities": [
+            "Zoom recording",
+            "Presentation slides",
+            "Knowledge sharing sessions",
+            "Observability",
+            "Monitoring",
+            "Victoria Metrics"
+        ],
+        "references": [
+            "https://razorpay.zoom.us/rec/share/5pFYCZDoqFNJfav17GbvY7U6B4Xgaaa8hyYa-vQLzR56YJbfQpCF3GOAbT531GQk",
+            "https://docs.google.com/presentation/d/1AXbXSVeWx1JeUJHuAGZRtSRa_b9bjzecSm2lxQsu6Rg"
+        ]
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_knowledge-sharing-sessions-chunk-5",
+        "name": "Knowledge Sharing Sessions.txt - ThirdEye",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section provides a Zoom recording link for a Knowledge Sharing Session on Kube Manifests, which are configuration files used to define and deploy Kubernetes resources such as pods, services, and deployments. The recording is likely a presentation or discussion on best practices, tools, and techniques for managing and working with Kube Manifests in a Kubernetes environment.",
+        "use_cases": [
+            "Learning about Kubernetes Manifests",
+            "Understanding best practices for managing Kubernetes resources",
+            "Gaining insights into tools and techniques for working with Kube Manifests",
+            "Sharing knowledge and experiences within a team or organization"
+        ],
+        "capabilities": [
+            "Zoom recording",
+            "Knowledge sharing",
+            "Kube Manifests",
+            "Kubernetes resource management",
+            "Best practices",
+            "Tools and techniques"
+        ],
+        "references": [
+            "https://razorpay.zoom.us/rec/share/vMtlCrzJ-zhJQ9LC8HnNAYR7J471T6a8hycc_adYzBwOp7dy5_8BfOuvqT7NtC43"
+        ]
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_knowledge-sharing-sessions-chunk-6",
+        "name": "Knowledge Sharing Sessions.txt - **Monitoring n **",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section provides a recording link for a Knowledge Sharing Session on Victoria Metrics, which is a monitoring tool. The recording is likely a presentation or discussion about the features, use cases, and capabilities of Victoria Metrics, aimed at educating the audience about this monitoring solution.",
+        "use_cases": [
+            "Monitoring applications or systems",
+            "Analyzing and visualizing metrics data",
+            "Alerting and incident management"
+        ],
+        "capabilities": [
+            "Recording and storage of time-series data",
+            "Data visualization and dashboards",
+            "Alerting and notification system",
+            "Integration with various data sources",
+            "Scalable and high-performance monitoring"
+        ],
+        "references": [
+            "https://razorpay.slack.com/files/U99EBKA7N/F015WSUE9PG/zoom_0.mp4"
+        ]
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_knowledge-sharing-sessions-chunk-7",
+        "name": "Knowledge Sharing Sessions.txt - **K8S HPA/CA**",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section appears to provide a link to a recording of a knowledge sharing session on the topic of Kubernetes Horizontal Pod Autoscaler (HPA) and Cluster Autoscaler (CA). These are features in Kubernetes that allow for automatic scaling of resources based on workload demands. The recording is likely a presentation or discussion explaining how these autoscaling mechanisms work and how they can be utilized effectively.",
+        "use_cases": [
+            "Automatically scaling application resources based on traffic or load",
+            "Optimizing resource utilization and cost efficiency",
+            "Handling sudden spikes or fluctuations in demand",
+            "Ensuring application availability and responsiveness"
+        ],
+        "capabilities": [
+            "Kubernetes Horizontal Pod Autoscaler (HPA)",
+            "Kubernetes Cluster Autoscaler (CA)",
+            "Automatic scaling of pods/containers",
+            "Automatic scaling of cluster nodes/worker machines",
+            "Resource utilization monitoring",
+            "Defining scaling policies and thresholds"
+        ],
+        "references": [
+            "https://drive.google.com/file/d/1tH9Ql7wNHQynJ3oWsgJrwrQVPb_vx6zo/view"
+        ]
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_knowledge-sharing-sessions-chunk-8",
+        "name": "Knowledge Sharing Sessions.txt - Bake AMI's",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section appears to be a table entry related to a Knowledge Sharing Session on the topic of 'Monitoring n'. It provides a link to a Zoom recording of the session, along with a password to access the recording. The session seems to have taken place on December 3rd, 2020.",
+        "use_cases": [
+            "Accessing recorded Knowledge Sharing Sessions",
+            "Learning about monitoring practices",
+            "Reviewing past training or knowledge sharing sessions"
+        ],
+        "capabilities": [
+            "Zoom recording",
+            "Password-protected access",
+            "Indexed Knowledge Sharing Sessions"
+        ],
+        "references": [
+            "https://razorpay.zoom.us/rec/share/whvG0Bnz2YLkovwy0u1rGh-fDayzQxPn9Lg7mTfDJN16y7hj2anObn7hIKLdZDXj.NQR8AKG8NgGPYB-T"
+        ]
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_knowledge-sharing-sessions-chunk-9",
+        "name": "Knowledge Sharing Sessions.txt - Kube Manifests DB",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section appears to be a table entry documenting a Knowledge Sharing Session on Kubernetes Horizontal Pod Autoscaler (HPA) and Cluster Autoscaler (CA). It provides a link to a Zoom recording of the session, along with a password to access the recording. The session likely covered topics related to automatically scaling Kubernetes resources based on workload demands.",
+        "use_cases": [
+            "Automatically scaling Kubernetes pods based on resource utilization",
+            "Automatically scaling Kubernetes clusters by adding or removing nodes",
+            "Optimizing resource utilization and cost in Kubernetes environments",
+            "Handling fluctuating workloads in Kubernetes applications"
+        ],
+        "capabilities": [
+            "Kubernetes Horizontal Pod Autoscaler (HPA)",
+            "Kubernetes Cluster Autoscaler (CA)",
+            "Automatic scaling of Kubernetes resources",
+            "Resource utilization monitoring",
+            "Workload demand tracking",
+            "Cluster node management"
+        ],
+        "references": [
+            "https://razorpay.zoom.us/rec/share/dMn9EwgWqF0cU2mqhYnpwaLHWHN4C-C_XspZ1OVPo2m2V_GV4fQ8widtvtygjrqH.tIIp0BHz-WvaZRbe"
+        ]
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_knowledge-sharing-sessions-chunk-10",
+        "name": "Knowledge Sharing Sessions.txt - K8S Over Provisioning",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section appears to be a table entry related to a Knowledge Sharing Session on 'Bake AMI's' held on January 7th, 2021. It provides a link to the Zoom recording of the session, along with a password to access the recording. The term 'AMI' likely refers to Amazon Machine Images, which are pre-configured virtual machine images used in cloud computing environments like Amazon Web Services (AWS).",
+        "use_cases": [
+            "Sharing knowledge and best practices among team members",
+            "Documenting and archiving technical sessions for future reference",
+            "Enabling remote collaboration and learning through recorded sessions"
+        ],
+        "capabilities": [
+            "Knowledge Sharing Sessions",
+            "Zoom Recordings",
+            "Password-protected Access",
+            "AMI Baking",
+            "Cloud Computing"
+        ],
+        "references": [
+            "https://razorpay.zoom.us/rec/share/DSW2F2p27Nx4vrFZmclp7oZGayLbi4RadcztbXImI1zJAIzzcry0ymdpsqiPXvfG.D6vg1IQTiq1X0kEB"
+        ]
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_knowledge-sharing-sessions-chunk-11",
+        "name": "Knowledge Sharing Sessions.txt - EFK",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section provides a link to a Zoom recording of a Knowledge Sharing Session on Kube Manifests DB, which took place on January 27, 2021. The recording is likely a presentation or discussion on the topic of Kubernetes Manifests Database, which is a way to manage and store configuration files for Kubernetes resources. The passcode for accessing the recording is also provided.",
+        "use_cases": [
+            "Knowledge sharing and training on Kubernetes Manifests Database",
+            "Accessing recorded sessions or presentations on technical topics",
+            "Collaboration and knowledge transfer within an organization"
+        ],
+        "capabilities": [
+            "Zoom recording",
+            "Passcode-protected access",
+            "Knowledge Sharing Sessions",
+            "Kube Manifests DB",
+            "Kubernetes resource configuration management"
+        ],
+        "references": [
+            "https://razorpay.zoom.us/rec/share/1sHbJT4foJc6t5ZzJfCuWD3FVTmFafaH_vdxpUJJ58yVD6c7a6Q_mF65sI4OV8PT.Encx8g1vTBJO3bi8"
+        ]
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_knowledge-sharing-sessions-chunk-12",
+        "name": "Knowledge Sharing Sessions.txt - Cert Monitoring KT/PD integration",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section appears to be a table entry or row, likely from a larger table or document. It provides a link to a recording related to 'K8S Over Provisioning' on February 3, 2021. The recording seems to be a knowledge sharing session or training material on the topic of Kubernetes (K8S) over-provisioning, which is a technique used to ensure sufficient resources are available for applications running on a Kubernetes cluster.",
+        "use_cases": [
+            "Knowledge sharing or training on Kubernetes cluster management",
+            "Understanding resource allocation and over-provisioning strategies in Kubernetes",
+            "Optimizing resource utilization and cost in Kubernetes environments"
+        ],
+        "capabilities": [
+            "Knowledge sharing sessions",
+            "Video recordings",
+            "Kubernetes (K8S) resource management",
+            "Over-provisioning",
+            "Resource allocation"
+        ],
+        "references": [
+            "https://drive.google.com/file/d/1I5wap6a0aCj_xYD3MZrtfGtRXPCCsn3j/view?usp=sharing"
+        ]
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_knowledge-sharing-sessions-chunk-13",
+        "name": "Knowledge Sharing Sessions.txt - Self Serve Alert Management",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section appears to provide a link to a Zoom recording of a Knowledge Sharing Session on the topic of 'EFK' (which likely stands for Elasticsearch, Fluentd, and Kibana - a popular log management stack). The recording is dated February 4th, 2021, and a password is provided to access the recording. This suggests that the session covered information related to self-serve alert management using the EFK stack, which allows users to monitor and manage alerts from various systems in a centralized manner.",
+        "use_cases": [
+            "Centralized log management and monitoring",
+            "Self-serve alert management for various systems",
+            "Knowledge sharing and training on EFK stack",
+            "Troubleshooting and analysis of system logs and alerts"
+        ],
+        "capabilities": [
+            "Zoom recording",
+            "Password-protected access",
+            "Knowledge sharing sessions",
+            "EFK stack",
+            "Log management",
+            "Alert management"
+        ],
+        "references": [
+            "https://razorpay.zoom.us/rec/share/xy3-pYByWQ5O-7A4_9Y2bNmIP5Y4G_gftP4idiukrvCHLv0WLs5v576bN3AQ0u3h.9mBYkUtvJpnoWhhF"
+        ]
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_knowledge-sharing-sessions-chunk-14",
+        "name": "Knowledge Sharing Sessions.txt - Onggi  - Docker Image baker",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section appears to be a table entry or a row from a larger table, possibly documenting various Knowledge Sharing Sessions. It provides information about a specific session titled 'Cert Monitoring KT/PD integration'. The entry includes a link to a recorded video of the session, along with a password to access the recording. Additionally, it mentions the name 'Giridaran', which could be the presenter or a relevant person associated with the session.",
+        "use_cases": [
+            "Documenting and sharing knowledge from internal sessions or meetings",
+            "Providing access to recorded sessions for reference or training purposes",
+            "Tracking and organizing session details, such as titles, presenters, and topics"
+        ],
+        "capabilities": [
+            "Recording sessions",
+            "Sharing recorded session links",
+            "Password protection for recorded sessions",
+            "Tracking session details (title, presenter)",
+            "Organizing session information in a tabular format"
+        ],
+        "references": [
+            "https://razorpay.zoom.us/rec/share/4f8AP6cGtEURpp1t94LTb3L4-AsYXxTeiHMWrZFJ3kvwny56_tFmRjzlOmyGQQUT.aFjNCDzT5GN-dTD6"
+        ]
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_knowledge-sharing-sessions-chunk-15",
+        "name": "Knowledge Sharing Sessions.txt - TLS",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section appears to provide a link to a recorded session or webinar titled 'Self Serve Alert Management' held on March 18, 2021. The link is a Zoom recording, and a password ('z2j&6Hch') is provided to access the recording. This suggests that the recording contains information or a presentation related to self-service alert management, which could be a feature or functionality within a software or platform.",
+        "use_cases": [
+            "Accessing recorded sessions or webinars",
+            "Learning about self-service alert management",
+            "Reviewing presentations or demonstrations"
+        ],
+        "capabilities": [
+            "Zoom recording sharing",
+            "Password-protected access to recordings",
+            "Self-service alert management functionality"
+        ],
+        "references": [
+            "https://razorpay.zoom.us/rec/share/KIrfcIK8RnhZ7nxtVBUFSj0aWPIsHBZzi9mkJc22-Y1sHtyIBovtnbuwboB4M7h2.cBMtC5UfUI7qPGAK"
+        ]
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_knowledge-sharing-sessions-chunk-16",
+        "name": "Knowledge Sharing Sessions.txt - H2H SFTP session",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section appears to be a log or record of a knowledge sharing session conducted on May 6, 2021. The session was presented by Onggi, who discussed the topic of 'Docker Image baker'. The section provides a link to the recording of the session, along with a password to access it. This suggests that the knowledge sharing sessions are recorded and made available for future reference or for those who missed the live session.",
+        "use_cases": [
+            "Sharing knowledge and expertise among team members or employees",
+            "Providing a platform for subject matter experts to present and discuss specific topics",
+            "Enabling remote access and participation in knowledge sharing sessions",
+            "Maintaining a repository of recorded sessions for future reference"
+        ],
+        "capabilities": [
+            "Recording knowledge sharing sessions",
+            "Sharing recorded session links",
+            "Password-protected access to recorded sessions",
+            "Tracking session details (presenter, date, topic)"
+        ],
+        "references": [
+            "https://razorpay.zoom.us/rec/share/U6JuaBKWRuZTxpIJAwSwJY6oO7zXVJgl3cw4iiFfAVfxu8WAsM-gnYebQR7CJgFv.jwTpOslCjEIK0x5M"
+        ]
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_knowledge-sharing-sessions-chunk-17",
+        "name": "Knowledge Sharing Sessions.txt - DE Infra Overview",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section appears to be a list of recorded knowledge sharing sessions or presentations on various technical topics related to infrastructure, databases, cloud services, and tools used at the organization. Each entry includes the session number, title, date, a link to the recording, and a password to access it. The sessions cover a wide range of subjects such as TLS, SFTP, GitHub Actions, Aurora Serverless, TiDB, CredStash, Kong, Jupiter Platform, HPA/CA, API DB, Lambda, AWS Vault, Linkerd ServiceMesh, Kafka, Priority Expander, DDoS Troubleshooting, Concierge, and Terraform SDLC.",
+        "use_cases": [
+            "Knowledge sharing and training on various technical topics",
+            "Documenting and archiving recorded sessions for future reference",
+            "Facilitating collaboration and knowledge transfer across teams",
+            "Upskilling and continuous learning for employees"
+        ],
+        "capabilities": [
+            "Recording and sharing technical sessions",
+            "Access control with passwords",
+            "Covering diverse topics related to infrastructure, databases, cloud services, and tools",
+            "Facilitating knowledge sharing and learning",
+            "Archiving and documenting sessions for future reference",
+            "Collaboration and knowledge transfer across teams"
+        ],
+        "references": [
+            "https://razorpay.zoom.us/rec/share/GnSYPYtrimc2XrVo0ivu2C3k6BJQki9dx8ECnHz6cypl9gMCciQyBxphHQ0QqaIa.RRDtmeizgtY6BLX4",
+            "https://razorpay.zoom.us/rec/share/pg2BV3FFMMfTM2CPS4d51V5Or8-HCrvhxPBNVLuvbFAZGuVaSfk6V8qomAEDReU.4HR_kpcbASf0LEVl",
+            "https://razorpay.zoom.us/rec/share/X7mr14RNw5I9ux5f_Hm1dXbE2nL_S-H6UnIz6BgjtWaobsr97wkGSWuG_BKCh3rW.K_oehPnH9tJZfTXg",
+            "https://razorpay.zoom.us/rec/share/3yWcuKNKhURlqANAF8Y89HWQrFq0WS7WFHUE-90rM4B3oZc2Jz8klspIxGds0BZB.89KqmOOb5B9nmyGw",
+            "https://razorpay.zoom.us/rec/share/kcGXVN0SkgrluyQc56TupGCt2TIN0oXnN68BAZfj8favUZILvv3nVbT_azneWorI.3dfnQnz33ZPio5aa",
+            "https://razorpay.zoom.us/rec/share/uObABnr-pJMkIDFrhl48uhZW5DEVw0LDDEDjUU54_Nf_f-22cflrvoFSXqFN8ZG6.tz0KOCKodkd2r1yn",
+            "https://razorpay.zoom.us/rec/share/JuMwSYusK8P05bQN0_Rydw9VpIJr_e0hn_sSMKINsaSbXy5CK1hdrTPUwhP19Pmi.D9vgcleHJ4441KU3",
+            "https://razorpay.zoom.us/rec/share/ECMi9aTmzNcAPY3Rd2TdfL9Azy2d9E7HhMw_dOzsEv1e1WZ5yawgReFdb4afmViK.87a1XhrC5M8NrUhv",
+            "https://razorpay.zoom.us/rec/share/S37autKYNKUncd--66ZMweghCFuLt6hm8DctLjiJrt-cgqfkHkFl-sax6B1lHVPN.FdGSurcw9QxqKfU5",
+            "https://drive.google.com/drive/folders/1Y9qz_wyRMbmjJiyQXceCiRcTbnr8ZIj-",
+            "https://razorpay.zoom.us/rec/share/0r3tXur7nvClgZAkYbxxnu4lq6sL3MRWFAgQC-vQciop6NX8I3Ycq2ZdxG2njA-f.zTQp7U0st8ygFIIp",
+            "https://razorpay.zoom.us/rec/share/hVuUVWj4ertnRKUL631XpKxpzQMx4UgqaYPG0uSFVSqTrPnFKVtjr1hazGFPrDoJ.TJ3rDNgd5hDg-Wo-",
+            "https://razorpay.zoom.us/rec/share/PD3chOG3xS1FJTPu9sb4Nrfn6Y9293gx4uP7AvZj40kbyl2wFDZTcjWNh2T9fQmU.ylJekrmo787edf7J",
+            "https://razorpay.zoom.us/rec/share/McQav2qjXJsDh2JNa5r-Va4CyONVB1lSItN-6S_YFijHwo50Uz9ehxdOBZQ4vBWy.AjiJ08Wt9m1yc5Xp",
+            "https://razorpay.zoom.us/rec/share/NKHpC5FPNTm9W7FzWNM3Marys6d6blaNmI4PsDs1tnN7fETGvMt4odEafdIkpTfx.7T8aybbQthTsg1qF",
+            "https://razorpay.zoom.us/rec/share/m3pTp3MKOiTY0JS2J9pNgvqp97GJxUsp3o424xumJHzqxyqvhU2kIafMkT6mH1f1.VTT5W9fYUPG8KSEE",
+            "https://razorpay.zoom.us/rec/share/pcV36vC1fzlALQJlgmj1MpjKSNRZ4mfvldhUVZZeOjQ30F6tACAGYstr5T7rUDRs.N2CYhzBKyQnqKkvU",
+            "https://razorpay.zoom.us/rec/share/WRadA_oINPQx8QOeXElm6Ne4wVSEUthHxAnqPg_8s7AyOi3bb3YiZ0eqEA92o8pV.FqAzLQO-bWq7RPFv",
+            "https://razorpay.zoom.us/rec/share/U-KlyuTGYluwsta9brvtn-2OhOSjYuQFD7HeikU7pgeJTXVHfKd-6tgnhpndXkUK.kb7_0APv8c5e6vya",
+            "https://razorpay.zoom.us/rec/share/0dzvWAhAbmTgsh1doqTTgBhvXXftBwBBnNqzqzGTX5tYld051hsk6T0j8pSxWxMT.7R9KKorMn5QGz03t",
+            "https://razorpay.zoom.us/rec/play/IJK48bhhHXKIbl_JYpqB6Mllv0am_Xc302zjHdM1QrSxurKzge2OI1OWt8U5YJD3pthgs3uiFdOznQRr.sJMb5MVnZq5PXE-j?autoplay=true&continueMode=true&startTime=1654251047000",
+            "https://razorpay.zoom.us/rec/share/q7XekleY8BLNdcc3UfzfEbmc5MottBDCUNeD5-ZWB39aH9EeYoJ7SDzpJm3j7uSE.IUV6jqLeXmUiRd6d",
+            "https://docs.google.com/document/d/1ILfjReAg4WcizApQdTXk0VB0OVWXU0c64or1USR6O-c/edit#",
+            "https://razorpay.zoom.us/rec/share/c7BtvWLocmuRpZ125Mo5Iptsq6jHabTu4DwX64HpUAoXmP1iud6d0_MhVRPS8zcx.6DsQ2zUHsEjb7xRE",
+            "https://docs.google.com/document/d/13AiBwuMYLrJJdDVEhes-Sf4EkHyS7scVEGoXaOM6wJQ/edit#heading=h.ftang19l746b",
+            "https://docs.google.com/document/d/16HZ1cqaI2SiA5Jpm0nS9LcJuwnR3Rmb-rXvTYxcmg5o/edit",
+            "https://alpha.razorpay.com/repo/setup-linkerd-automatic-multicluster-failover-for-your-application",
+            "https://drive.google.com/file/d/1SnC419e7v4Px5dawxRZ3MhYkOpfQjBmj/view?usp=sharing",
+            "https://alpha.razorpay.com/repo/retrieve-older-logs",
+            "https://razorpay.zoom.us/rec/share/kRGAj7IvcT48g7EWWITw8jQpin7m5lTBscUHmWP_bPvh-8rMlXPKSaz_8uyzA6go.Ok71dxVvm0qzFkLb",
+            "https://razorpay.zoom.us/rec/share/arqklAWqsW6X0b1C8E3G-Z45PevBCdQTu4GvIPTU3W53qSwytlRByQb3AZN1Hu5z.Q2oBHSKTPDk6C8Ox",
+            "https://razorpay.zoom.us/rec/share/YtrVbULgqSMoybQOUNAyXefaLjTlz_MPI2y9nWiCw9SzxH8Y4Ktr4ESCKY3hRNdK.9HCF7695o_iFVseh",
+            "https://razorpay.zoom.us/rec/share/xKbBRajjsayPXfym7wkwoKOLfS81wwhSjohJ7-VieeuCbSWy3uy8h6Puw6YvOo3u.Pk8_39XYuoqxUAYS",
+            "https://drive.google.com/drive/u/1/folders/1OVK2GUv_gVbP5M-4-JV_riJIx2sJZDk0",
+            "https://drive.google.com/drive/u/1/folders/1FT6QsrhI-QFLHqjkbKtaY8RrSl_mA1Ta",
+            "https://razorpay.zoom.us/rec/share/Q9DY9SX63y-wVTZPizJ_wk9lPdyHN1hBHm97JvSpQamWjXHCGid47OgIHthJKbet.JQ5Ka9Z8KkJyoUPJ",
+            "https://drive.google.com/file/d/12LvrByV7MUjzEvFqxIA1K1z8BLpAjUj9/view?usp=sharing",
+            "https://razorpay.zoom.us/rec/share/55wqsHSnxec5SBf1fBEaiZDyojxQEv1WgT0Cx_kaBwoueCZ2yHIWcB0kq4yqgZnr.yLCmyDIg_7e8o2od",
+            "https://razorpay.zoom.us/rec/share/59eoaiWsG-aIkI5OD1KT5oD7-QrNQUZ__jN58SGd0wVp7q4IYEaTElYmTek516F_.DD7-KFQ4Ur8M49zB",
+            "https://razorpay.zoom.us/rec/play/AIQxECJReJ7XaPEJ2zr8uV8VBgIDG4LEHlvVnB1eL6Zs5p75Vu-jiCk6kXUbMn9N7K1Y6U1RDbR4d2w.SsQHhNKplSc-Ix92?autoplay=true&continueMode=true&startTime=1658309757000",
+            "https://razorpay.zoom.us/rec/share/By9DmpAIrmv2_KbGIxEpG88xBegIH3NCpyRC_Pk-5srpIE2dEsiapGEIXnqm6yOo.hy-O9SQgquE-50UX",
+            "https://razorpay.zoom.us/rec/share/J1DRGepcpNMR-qu3NVXtISt8vYyft796z6X7jTSSUaeZGvIro4TtF484eE650j7F.6_gTGq36wi3wVqau",
+            "https://razorpay.zoom.us/rec/share/DtomjAQhiB7yk6jpgVUaM8vEYAfkXZIN6prByvcJmJjIUSKwpnrBZMW_sn_7ofh_.IJqqktGFciC66xr4",
+            "https://drive.google.com/file/d/1xI7wFN5F4_EbmUHhUIP28mXYl6mmc-lj/view?usp=sharing",
+            "https://razorpay.zoom.us/rec/share/-g1wC7xin88zlNEQXty6sxpMg-W4GieF_-9y7WcSwCkJ0uxjs1DT23mCmY0KO1ri.bKBsaIAgTuhIqEQJ",
+            "https://drive.google.com/file/d/1g5wsSlTuOXoy5tKHq_rvZR9MYn5i55Q_/view",
+            "https://drive.google.com/file/d/1c1uZZdyMyNOgIbb_MrKLxdXujgeHb9b2/view",
+            "https://drive.google.com/drive/u/1/folders/14qFcD4zjUhK-JcpUHzBz725Xv2ghWoM3",
+            "https://razorpay.zoom.us/rec/share/5TzKfO4HfzjTJGorvVqFOqCKLfhzYlYAGPw0mN4JleL2i1QT9Xi5nuRAhDEEEvLj.0-auq_gu0DlhVKKX",
+            "https://alpha.razorpay.com/repo/github-action-runners-in-k8s",
+            "https://razorpay.zoom.us/rec/share/Qye-axUJPEMudOdXFxODs0y3YXY6I3lUSu9YRY7Qi93_xhmPgY_5MlzKWWXUipya.Vomzd9APcMHsvIF9",
+            "https://alpha.razorpay.com/repo/custom-domain-linking-architecture",
+            "https://razorpay.zoom.us/rec/share/d67GaCaNUGPzsdzGRq8Ekj9EyOfvJYWFYqujtbXY7tGm7mcs_jMvvMnCVIJVnKmS.HJZVDjrQyxBgLXxz",
+            "https://alpha.razorpay.com/repo/velero-architecture",
+            "https://drive.google.com/file/d/10NaWhimF4wd89gadQDnZhtGn_pmSbWvk/view",
+            "https://docs.google.com/document/d/1hnos9TwdMBce2FJ4vPG5iEh0YODv74Ol8_ePEoeXKVM/edit#heading=h.fxjv0mr8r09d",
+            "https://drive.google.com/file/d/1ZhenycaDPHnOEs9NlMI_QJej5X8SAAlx/view?usp=drive_link",
+            "https://docs.google.com/spreadsheets/d/1mXc4X6ToWT6BBW7RLyiPRMiVm_9RYJosYNR9jQIZAnA/edit#gid=0",
+            "https://docs.google.com/document/d/1vjew2uiklsWRcoo5XMQDhDVzhR7vnEG6Ukdm37svOwk/edit#heading=h.cxf7sj9rl0w",
+            "https://docs.google.com/document/d/1mbcf8O6NeDYvSiXAnm-Eq83pJEJX04CzxKN0KtD3D50/edit",
+            "https://drive.google.com/drive/folders/1zllvVN36e2anCH7Rz8VMHxjcCzcDfFtN",
+            "https://docs.google.com/document/d/15BOtfeFdFSvStrIwtCJLAm4uAwBetrJCdUsTvNWxo-o/edit#heading=h.gjdgxs",
+            "https://drive.google.com/file/d/1yUDlJDZo6Q7CPZdn8HhTmwExYaH-tYS8/view?usp=drive_link",
+            "https://drive.google.com/file/d/11LXn79LLylGGx0hxxLSl2DiFl0mxPRwb/view?usp=drive_link",
+            "https://drive.google.com/file/d/1HL8D2BQB6uS8TyQv2rKGtIgiYCGvp2_H/view?usp=drive_link",
+            "https://drive.google.com/file/d/1p5Odd6IA7L_6qIiHWy_iutupVU-gekUb/view?usp=drive_link",
+            "https://drive.google.com/drive/u/0/folders/1z5H9Dpef8csGJava0Lr6frUoABnXrnd_",
+            "https://docs.google.com/document/d/1pGNt7rwRE9JOyo8nb5chXaQR4Qj4RXBhl29kbJ2Cv20/edit",
+            "https://razorpay.zoom.us/rec/share/8c9wZAIkdyIKDnqQ13trKGS89npOu47W6zixKQxW3vpsne9sVNc7QDT3rCITNe6u.t8r3qu_xvBhmPcbk",
+            "https://razorpay.zoom.us/rec/share/idFFQMw5aozDxXKIwuE6i83osDxus0wh_iAmTCX5nA67k9ArpOSYFmQC3HaGwfI4.ONtaMFIlymN2oZu3",
+            "https://razorpay.zoom.us/rec/share/B6bric-lB5rMCM7VMY5Kwr8LmYlaUM8livnUvTYv8qwcXExrWTzavTArisMja_7U._fzw8xJaLPal1vA6",
+            "https://drive.google.com/drive/u/1/folders/1zBO_TBlklSwUjOGnykSm6gJsWgfbycUe",
+            "https://razorpay.zoom.us/rec/share/QAHENjQLp29_I1KCfsNqLP0XmIL94kW6N1-sqcLHErm0Lj4UPVsVRFUiAceSenta.lCux8AzPpAAUmDF0",
+            "https://drive.google.com/file/d/1LkpzHgzJN-xhkKEcNexhWiLEpCuGfhh-/view",
+            "https://razorpay.zoom.us/rec/share/wSxPOREZ3j7oQwFh9fTLGZpZ3-k-waUz8UuhNmTMlUie4ziQzDFFaZPsEztRL1So.0iIswJFT_JdlJ3QT",
+            "https://razorpay.zoom.us/rec/share/-yhYcxFsv9Swo5xL45KRPTRoFfVQ-x8xQMUAaQ6_AS3QrRmlBiaTcWC4l-GZkAA.zcvG3QoeB8ofWm3I",
+            "https://razorpay.zoom.us/rec/share/fwojMh8yb-UqjfIDXKRKJYpINpv3ZlBeP5qjT8XUFQFHg5V6YfwNMy5CRXBjqRu7.1GlRI21VNgSLQfDq",
+            "https://razorpay.zoom.us/rec/share/wKwaAS9rwbIgTq_WTGHABUC5dKwVJPFQ0gbDYjw15eK690G1s1CJzBhBkekpFsLv.iiUMclDSgSkOw_qZ",
+            "https://razorpay.zoom.us/rec/share/ozYMOSGYc6PLy9i--bb2MQxKuy1xxcE2b1WVHDhsSDAl6bzKpnXicTEy-77Bp_Lj.ej_RqJHoZEhUEhrE",
+            "https://drive.google.com/drive/u/1/folders/14qFcD4zjUhK-JcpUHzBz725Xv2ghWoM3",
+            "https://drive.google.com/file/d/1DBl7zYOzgwDQ6vRBeQnLCJOGVUxUEzgw/view?usp=sharing",
+            "https://drive.google.com/file/d/1AgscpF1CZCuA_4mSftQ9kuXS67-vRp2D/view?usp=drive_link",
+            "https://drive.google.com/drive/u/1/folders/1l_sa-rCUWo0E7SGTtkbETI9_GNaq6aOM",
+            "https://mail.google.com/mail/u/0/#inbox/FMfcgzQZTVmtCDPXlFfTqkRNmXLGmjNw?projector=1",
+            "https://us02web.zoom.us/rec/share/Xpqw00QcY3KRpMnm4A96fpI5b6CpRIg0adhFyqLe66vo2jqVe85QHdUlEM2iOa39.bmCOBw5CzBbEnhWG",
+            "https://sumologic.zoom.us/rec/share/3MTeZxdj_kMsbxAel8qAdZrerH5--pIf6VQ0U6TDyQytIlGHRD9Eh822H40cWMsf.TCdPdQ7jyKVBHKgT",
+            "https://sumologic.zoom.us/rec/share/J1stEYV_jjvIpf3O2_ME-hnsUev7kAewN88FiQVS4vqB5eWkmQ9wCGgQcvP_jTRh.otXq0YZ3dgma9oGb",
+            "https://scalr.zoom.us/rec/share/Wlx_OtVwt6ZpA5BhFyPeNXawZTBC4NMH09dJ3ndBLAYa4JbxEjyWCd01JfupNO11.nQjYmGrnDlwmoQMW",
+            "https://drive.google.com/file/d/1ZGkwTJJfYmqEVtrFT9pfa30M173lzS6W/view?usp=sharing",
+            "https://drive.google.com/file/d/12sE3gsslWD31-NEQujV59FqrDfl3zTzA/view?usp=sharing",
+            "https://drive.google.com/file/d/1acF-BdSkY3JypbPeKI5zZNrN7IY9t2Lb/view?usp=sharing",
+            "https://drive.google.com/file/d/1q1XgV5CjXS6gaNDgdhX8B3HEHoTsoX-3/view?usp=sharing",
+            "https://drive.google.com/file/d/1i2XoO7bIYwK0mBhVmxzgusrWcKJYuNww/view?usp=sharing",
+            "https://razorpay.zoom.us/rec/share/Nt0swqvJuYKdSg8HSUSH-V_Sh8YRvv-QgIa5I_dUKXLplCluhxBrFPbh9lO5_eQQ.Znxx_8UheEQG-IaM?startTime=1661403655000",
+            "https://razorpay.zoom.us/rec/share/XOda6JacrI6kEuPSgwu6sjkiUNNhdDM1X_QOt_NyjWIUAoxB6bwQs420nEQDMezB.MWpeVscK8ZrT9mHW?startTime=1662100814000",
+            "https://coralogix.zoom.us/rec/share/1OAZL4bP37g_sTUlI5VP9-9GfzU_EqEIW00avd3M9h6rk9p86oRPTLvjHHHx0OtC.t-H1FmZY0D9VQHZY",
+            "https://drive.google.com/drive/folders/1WmP5xQqQYJxwzztTk8Bs4Tgb9qPWbD2r?usp=share_link",
+            "https://zoom.us/rec/play/e_6L-xB-x4K4vYqK8YJpxDIs4MCI7mmilstDAtaudZshKkFeFJegWhKDafZfrB3WuqGvSq1x3OBVOCk.YumHKuLBr12YR-at?canPlayFromShare=true&from=share_recording_detail&continueMode=true&iet=malLZtd5HRdj5V02BISQF2kKSBHerbr-M-1KMdPyXaY.AG.3BlYOchgRa8jK3T1Twvyxsqn8tzL8z2EUGI4D15MDIze0CKScbAkNclaVAjzkvxoLxnh4Um0B3S35AmsaDHP4B-F1j9rfv5vmJKgo2i1URMH4SY7nIFWPvR4kbZ9O6ArOgV1gQ._UDLLeQ4fpu2lKLy7wiRCw.EnHPaN2fsRk5nsx_&componentName=rec-play&originRequestUrl=https%3A%2F%2Fzoom.us%2Frec%2Fshare%2F-uheo9rKZJiVjVuulHAW6tbJuRgqbWOIW4jj8LAnqT4sOlwt3uM3CkVqzqsq86sI.K3SWq54Dx3XlAtQP%3Fiet%3DmalLZtd5HRdj5V02BISQF2kKSBHerbr-M-1KMdPyXaY.AG.3BlYOchgRa8jK3T1Twvyxsqn8tzL8z2EUGI4D15MDIze0CKScbAkNclaVAjzkvxoLxnh4Um0B3S35AmsaDHP4B-F1j9rfv5vmJKgo2i1URMH4SY7nIFWPvR4kbZ9O6ArOgV1gQ._UDLLeQ4fpu2lKLy7wiRCw.EnHPaN2fsRk5nsx_",
+            "https://zoom.us/rec/play/e_6L-xB-x4K4vYqK8YJpxDIs4MCI7mmilstDAtaudZshKkFeFJegWhKDafZfrB3WuqGvSq1x3OBVOCk.YumHKuLBr12YR-at?canPlayFromShare=true&from=share_recording_detail&continueMode=true&iet=malLZtd5HRdj5V02BISQF2kKSBHerbr-M-1KMdPyXaY.AG.3BlYOchgRa8jK3T1Twvyxsqn8tzL8z2EUGI4D15MDIze0CKScbAkNclaVAjzkvxoLxnh4Um0B3S35AmsaDHP4B-F1j9rfv5vmJKgo2i1URMH4SY7nIFWPvR4kbZ9O6ArOgV1gQ._UDLLeQ4fpu2lKLy7wiRCw.EnHPaN2fsRk5nsx_&componentName=rec-play&originRequestUrl=https%3A%2F%2Fzoom.us%2Frec%2Fshare%2F-uheo9rKZJiVjVuulHAW6tbJuRgqbWOIW4jj8LAnqT4sOlwt3uM3CkVqzqsq86sI.K3SWq54Dx3XlAtQP%3Fiet%3DmalLZtd5HRdj5V02BISQF2kKSBHerbr-M-1KMdPyXaY.AG.3BlYOchgRa8jK3T1Twvyxsqn8tzL8z2EUGI4D15MDIze0CKScbAkNclaVAjzkvxoLxnh4Um0B3S35AmsaDHP4B-F1j9rfv5vmJKgo2i1URMH4SY7nIFWPvR4kbZ9O6ArOgV1gQ._UDLLeQ4fpu2lKLy7wiRCw.EnHPaN2fsRk5nsx_",
+            "https://docs.nirmata.io/docs/n4k/",
+            "https://nirmata.zoom.us/rec/share/c_JEpSR8CrVoqaQf7r4x-S2ZZ2lTXGV4ZUMP4Sb8vyuHPso_wivY9Nm-8ph6LdPM.Cgd5zne0HtUuuSTk?startTime=1738840168000",
+            "https://docs.google.com/presentation/d/1jcoKAAMjt-Icbt7fA9aVpYaDKxhixmcV/edit?usp=drive_link&ouid=110552706542654078086&rtpof=true&sd=true",
+            "https://razorpay.zoom.us/rec/share/Nt0swqvJuYKdSg8HSUSH-V_Sh8YRvv-QgIa5I_dUKXLplCluhxBrFPbh9lO5_eQQ.Znxx_8UheEQG-IaM?startTime=1661403655000",
+            "https://razorpay.zoom.us/rec/share/XOda6JacrI6kEuPSgwu6sjkiUNNhdDM1X_QOt_NyjWIUAoxB6bwQs420nEQDMezB.MWpeVscK8ZrT9mHW?startTime=1662100814000",
+            "https://razorpay.zoom.us/rec/share/Oonu-pl0pHiE5ExKf7lsZsat8qTazwzllxQ3rJow7TpzIbHayIX45Ig-xVv7wc0.SziX5BW6JV5-a3CS?startTime=1660885267000",
+            "https://razorpay.zoom.us/rec/share/JMx7K-On7DbQZxhg0oR9aKZ7itnwvJ8WBv4cLvj1bpTD_-scrICDZ532qr4JYVnZ.PjmtqEa_pTOsOxPc?startTime=1661144487000",
+            "https://razorpay.zoom.us/rec/share/l9pXOAxrz5JsK5q0EpOx4qJR1Gxd3IPt0vbBPONGOwJCoImTaNHJ6f6ehanM0ZbI.hDsRXElS8TBtEoqB?startTime=1661232348000",
+            "https://razorpay.zoom.us/rec/share/07vQjALkF2XgmrJ8g7_HRlUW9Fu5HQCUKcrF3gqAMyzBeGtJ1YZYuzBum7lSn4jC.YsYGdXmYzMX32BAa?startTime=1662024645000",
+            "https://razorpay.zoom.us/rec/share/RIWCeRDiRLAHm4UsighGD-mORf1j7yVkGAlAdFr3bwwZ9AHI2UFyQxZWpViOlmwi.wmS17ms_ZlHHksZy",
+            "https://razorpay.zoom.us/rec/share/qruPImfV01vaq92-snt0YjE3PvZ1L4Azm2WauGOTz3YDNHgw7wbzRHy0EAfWt_Xj.SHegYZKojUAhbYQV",
+            "https://alpha.razorpay.com/repo/github-action-runners-in-k8s>",
+            "https://alpha.razorpay.com/repo/custom-domain-linking-architecture>",
+            "https://alpha.razorpay.com/repo/credstash-v2>",
+            "https://alpha.razorpay.com/repo/credstash-v2-access-management-guide>",
+            "https://alpha.razorpay.com/repo/hitachi-tunnel-goes-down>",
+            "https://alpha.razorpay.com/repo/certifihub>",
+            "https://docs.google.com/document/d/1kbTVSpOa9krY98fW779laLOemiyN_EolPLmfvW_MFEY/edit?usp=sharing>",
+            "https://docs.google.com/document/d/1MLThCOVxZBfhNXHoNOzLoQwsPz7l4oBCRPZ4ej9IYBA/edit?tab=t.uxk2fv57rygw>",
+            "https://razorpay.zoom.us/rec/share/31SB9W9yzQnJwZ_v_vZvDgjrsEcb1KCt1QjBsw4QLH4hQ-Dn-mEeFCy6cyGxfEks.vvndPGCczvRcWDGN>"
+        ]
+    }
+]

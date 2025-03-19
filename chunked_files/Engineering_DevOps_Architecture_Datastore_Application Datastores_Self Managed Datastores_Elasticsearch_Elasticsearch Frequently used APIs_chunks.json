@@ -1,0 +1,199 @@
+[
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_self-managed-datastores_elasticsearch_elasticsearch-frequently-used-apis-chunk-0",
+        "name": "Elasticsearch Frequently used APIs.txt - List snapshot repositories",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "Self Managed Datastores",
+            "Elasticsearch"
+        ],
+        "description": "This section explains how to list the snapshot repositories available in an Elasticsearch cluster using a curl command. A snapshot repository is a location where Elasticsearch can store backups of data and cluster state. Listing the repositories allows users to view the available backup locations before taking a snapshot or restoring data.",
+        "use_cases": [
+            "Viewing available snapshot repositories",
+            "Preparing to take a snapshot",
+            "Preparing to restore data from a snapshot",
+            "Monitoring backup locations"
+        ],
+        "capabilities": [
+            "List snapshot repositories",
+            "Take snapshots",
+            "Restore data from snapshots",
+            "Manage backup locations"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_self-managed-datastores_elasticsearch_elasticsearch-frequently-used-apis-chunk-1",
+        "name": "Elasticsearch Frequently used APIs.txt - Take a snapshot",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "Self Managed Datastores",
+            "Elasticsearch"
+        ],
+        "description": "This section explains how to create a snapshot of the Elasticsearch data and retrieve the status or progress of the snapshot creation process. A snapshot is a backup of the Elasticsearch data at a specific point in time, which can be used for data recovery or migration purposes.",
+        "use_cases": [
+            "Data backup",
+            "Data migration",
+            "Disaster recovery",
+            "Archiving data"
+        ],
+        "capabilities": [
+            "Creating snapshots",
+            "Monitoring snapshot progress",
+            "Snapshot repository management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_self-managed-datastores_elasticsearch_elasticsearch-frequently-used-apis-chunk-2",
+        "name": "Elasticsearch Frequently used APIs.txt - Get snapshot status (progress)",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "Self Managed Datastores",
+            "Elasticsearch"
+        ],
+        "description": "This section explains how to retrieve the status or progress of a snapshot operation in Elasticsearch using a curl command. The command allows you to check the details of a specific snapshot, such as its current state (in progress, successful, or failed), the number of files processed, and other relevant information. This can be useful for monitoring long-running snapshot operations or troubleshooting issues.",
+        "use_cases": [
+            "Monitoring snapshot progress",
+            "Checking snapshot status",
+            "Troubleshooting snapshot issues",
+            "Verifying successful snapshot completion"
+        ],
+        "capabilities": [
+            "Get snapshot status",
+            "Get snapshot details",
+            "Check snapshot progress",
+            "Monitor snapshot operation"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_self-managed-datastores_elasticsearch_elasticsearch-frequently-used-apis-chunk-3",
+        "name": "Elasticsearch Frequently used APIs.txt - Get snapshot details",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "Self Managed Datastores",
+            "Elasticsearch"
+        ],
+        "description": "This section provides a command to retrieve details of a specific snapshot stored in an Elasticsearch snapshot repository. It allows users to view information about a snapshot, such as its creation date, size, and the indices included in the snapshot. This can be useful for monitoring and managing snapshots, which are backups of Elasticsearch data for disaster recovery or migration purposes.",
+        "use_cases": [
+            "Monitoring snapshots",
+            "Managing snapshots",
+            "Disaster recovery",
+            "Data migration"
+        ],
+        "capabilities": [
+            "Get snapshot details",
+            "View snapshot creation date",
+            "View snapshot size",
+            "View indices included in snapshot",
+            "Retrieve snapshot information from repository"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_self-managed-datastores_elasticsearch_elasticsearch-frequently-used-apis-chunk-4",
+        "name": "Elasticsearch Frequently used APIs.txt - Restore a snapshot",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "Self Managed Datastores",
+            "Elasticsearch"
+        ],
+        "description": "This section explains how to restore a previously taken snapshot of an Elasticsearch cluster from a specified snapshot repository. The provided command is a cURL request that initiates the restore process by sending a POST request to the Elasticsearch cluster's API endpoint. The restore operation retrieves the data from the specified snapshot and restores it to the cluster, effectively recovering the cluster's state to the point when the snapshot was taken.",
+        "use_cases": [
+            "Recovering data after a disaster or system failure",
+            "Migrating data between Elasticsearch clusters",
+            "Testing or development purposes, where a known state of the cluster is required",
+            "Reverting changes or rolling back to a previous version of the data"
+        ],
+        "capabilities": [
+            "Restore a snapshot",
+            "Specify snapshot repository",
+            "Specify snapshot name",
+            "Cluster health monitoring"
+        ],
+        "references": [
+            "https://xx.xx.xx.xx/_snapshot/snap-shot-repository/snapshot-name/_restore?pretty\"`"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_self-managed-datastores_elasticsearch_elasticsearch-frequently-used-apis-chunk-5",
+        "name": "Elasticsearch Frequently used APIs.txt - Cluster Health",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "Self Managed Datastores",
+            "Elasticsearch"
+        ],
+        "description": "This section provides a command to check the overall health status of an Elasticsearch cluster. It also mentions two potential use cases: retrieving the health status of a single index, and draining a node (possibly for maintenance or load balancing purposes).",
+        "use_cases": [
+            "Monitoring cluster health",
+            "Checking health of a specific index",
+            "Draining a node for maintenance or load balancing"
+        ],
+        "capabilities": [
+            "Cluster health monitoring",
+            "Index-level health monitoring",
+            "Node draining",
+            "Command-line interface"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_self-managed-datastores_elasticsearch_elasticsearch-frequently-used-apis-chunk-6",
+        "name": "Elasticsearch Frequently used APIs.txt - Snapshot only 1 index.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "Self Managed Datastores",
+            "Elasticsearch"
+        ],
+        "description": "This section appears to be empty, as there is no content provided within the code block. Without any information, it is difficult to provide a meaningful description or infer any use cases or capabilities related to the topic of 'Snapshot only 1 index' in Elasticsearch.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_self-managed-datastores_elasticsearch_elasticsearch-frequently-used-apis-chunk-7",
+        "name": "Elasticsearch Frequently used APIs.txt - Drain a node",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "Self Managed Datastores",
+            "Elasticsearch"
+        ],
+        "description": "This section appears to be empty or missing content. Without any text or code samples, it is difficult to provide a meaningful description or extract any use cases or capabilities related to draining a node in Elasticsearch.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    }
+]

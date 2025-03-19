@@ -1,0 +1,166 @@
+[
+    {
+        "id": "engineering_devops_run-books-and-sops_the-native-way:-how-to-download-and-parse-old-logs-from-s3-chunk-0",
+        "name": "The native way: How to Download and Parse old logs from S3.txt - Recommending to use querybook",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains that there is a dedicated instance named 'sumologs-suspended-account' specifically created for the purpose of downloading and storing old logs from S3. This instance has an attached EBS (Elastic Block Store) volume located at '/search-suspended' where the logs are intended to be downloaded and stored.",
+        "use_cases": [
+            "Downloading and storing old logs from S3",
+            "Dedicated instance for log management",
+            "Utilizing EBS volumes for log storage"
+        ],
+        "capabilities": [
+            "Instance provisioning",
+            "EBS volume attachment",
+            "Log storage",
+            "Log retrieval from S3"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_the-native-way:-how-to-download-and-parse-old-logs-from-s3-chunk-1",
+        "name": "The native way: How to Download and Parse old logs from S3.txt - Instance and EBS Volume Details",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section provides information about a Python script that can be used to download and retrieve old log files from an Amazon S3 (Simple Storage Service) bucket. The script is hosted on GitHub and can be accessed through the provided link. The section suggests following the steps outlined in the script to download and synchronize the log files locally.",
+        "use_cases": [
+            "Downloading and retrieving old log files from an Amazon S3 bucket",
+            "Synchronizing log files from S3 to a local machine",
+            "Accessing and analyzing historical log data stored in S3"
+        ],
+        "capabilities": [
+            "Python script",
+            "S3 log file download",
+            "Local synchronization",
+            "GitHub repository access"
+        ],
+        "references": [
+            "https://github.com/razorpay/infra-tools/blob/master/older-log-s3-sync/get_files_s3_local_sync.py"
+        ]
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_the-native-way:-how-to-download-and-parse-old-logs-from-s3-chunk-2",
+        "name": "The native way: How to Download and Parse old logs from S3.txt - Steps to Download Logs",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section provides instructions on how to download and parse old log files from an Amazon S3 bucket. It involves connecting to a specific instance named 'sumologs-suspended-account' via SSH, navigating to the '/search-suspended' directory, and executing a Python script called 'get_file_s3_sync.py' with appropriate command-line arguments. The script helps in retrieving and processing log files stored in an S3 bucket.",
+        "use_cases": [
+            "Retrieving and parsing old log files from an Amazon S3 bucket",
+            "Analyzing historical log data for troubleshooting or auditing purposes",
+            "Extracting valuable insights from archived log files"
+        ],
+        "capabilities": [
+            "SSH access to a specific instance",
+            "Navigating to a designated directory",
+            "Executing a Python script with command-line arguments",
+            "Downloading log files from an Amazon S3 bucket",
+            "Parsing and processing log data"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_the-native-way:-how-to-download-and-parse-old-logs-from-s3-chunk-3",
+        "name": "The native way: How to Download and Parse old logs from S3.txt - Example Command",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section provides an example command to download and parse old log files from an Amazon S3 bucket using a Python script called 'get_file_s3_sync.py'. The command specifies the date range, log file prefixes, S3 bucket name, and local destination directory for the downloaded log files. It explains that logs before 2020 are located in a different S3 bucket named 'rzp-sumologic-logstore', and users should modify the script arguments according to their needs.",
+        "use_cases": [
+            "Downloading and parsing old log files from an Amazon S3 bucket",
+            "Retrieving log files for a specific date range",
+            "Filtering log files based on prefixes or patterns",
+            "Storing downloaded log files in a local directory"
+        ],
+        "capabilities": [
+            "Specifying start and end dates for log file retrieval",
+            "Filtering log files by prefix or pattern",
+            "Downloading log files from an Amazon S3 bucket",
+            "Parsing log files using a Python script",
+            "Storing downloaded log files in a local directory",
+            "Handling log files from different S3 buckets"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_the-native-way:-how-to-download-and-parse-old-logs-from-s3-chunk-4",
+        "name": "The native way: How to Download and Parse old logs from S3.txt - S3 Bucket Details",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section provides information about the Amazon S3 bucket where log files from the year 2020 onwards are stored. It specifies the name of the S3 bucket, 'rzp-sumologic-logstore-2020', which contains log data starting from January 1, 2020. This information is useful for anyone who needs to access or analyze log data from that time period.",
+        "use_cases": [
+            "Accessing log data from 2020 onwards",
+            "Analyzing log data stored in the specified S3 bucket",
+            "Retrieving log files for a specific time period or event",
+            "Monitoring or troubleshooting issues by examining log entries"
+        ],
+        "capabilities": [
+            "S3 bucket name",
+            "Log storage",
+            "Log retrieval",
+            "Log analysis",
+            "Time-based log access"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_the-native-way:-how-to-download-and-parse-old-logs-from-s3-chunk-5",
+        "name": "The native way: How to Download and Parse old logs from S3.txt - Searching Logs",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains how to search for specific strings within compressed log files (*.gz) that have been downloaded from an S3 bucket to a local directory. It provides a command (zgrep) that allows you to search for multiple strings simultaneously using regular expressions, and redirects the output containing those strings to a specified file for future reference or analysis.",
+        "use_cases": [
+            "Searching for specific error messages or patterns within large compressed log files",
+            "Filtering log data based on certain keywords or identifiers",
+            "Extracting relevant log entries for debugging or troubleshooting purposes",
+            "Analyzing log data for specific events or activities"
+        ],
+        "capabilities": [
+            "Searching compressed log files",
+            "Using regular expressions for pattern matching",
+            "Searching for multiple strings simultaneously",
+            "Redirecting search output to a file",
+            "Filtering and extracting relevant log data"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_the-native-way:-how-to-download-and-parse-old-logs-from-s3-chunk-6",
+        "name": "The native way: How to Download and Parse old logs from S3.txt - Note",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains that when downloading large log files from S3, it's important to ensure that the storage volume has enough available space to accommodate the logs. Specifically, it mentions that even a single day's worth of logs can be as large as 1TB, so it's crucial to check the size of the EBS volume and expand it if necessary before starting the download process. The section provides a command to check the available space on the mounted volume.",
+        "use_cases": [
+            "Downloading large log files from S3",
+            "Ensuring sufficient storage space for log files",
+            "Monitoring and managing storage volumes"
+        ],
+        "capabilities": [
+            "Checking available storage space",
+            "Expanding storage volumes",
+            "Handling large log file downloads",
+            "Managing S3 log storage"
+        ],
+        "references": []
+    }
+]

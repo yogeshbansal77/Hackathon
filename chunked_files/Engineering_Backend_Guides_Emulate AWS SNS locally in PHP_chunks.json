@@ -1,0 +1,109 @@
+[
+    {
+        "id": "engineering_backend_guides_emulate-aws-sns-locally-in-php-chunk-0",
+        "name": "Emulate AWS SNS locally in PHP.txt - Run (Docker Version)",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Guides"
+        ],
+        "description": "This section provides instructions for running a Docker container that emulates the AWS SNS (Simple Notification Service) locally on your machine. It allows developers to test and debug their applications that integrate with AWS SNS without incurring any costs or relying on the actual AWS service. The instructions involve pulling a pre-built Docker image and running a container based on that image, which exposes the emulated SNS service on port 4100.",
+        "use_cases": [
+            "Testing applications that integrate with AWS SNS",
+            "Debugging AWS SNS-related issues locally",
+            "Developing and experimenting with AWS SNS functionality without incurring costs",
+            "Simulating AWS SNS behavior in a controlled environment"
+        ],
+        "capabilities": [
+            "Docker container",
+            "Emulate AWS SNS",
+            "Local testing",
+            "Cost-effective",
+            "Controlled environment",
+            "Port mapping"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_backend_guides_emulate-aws-sns-locally-in-php-chunk-1",
+        "name": "Emulate AWS SNS locally in PHP.txt - Setup AWS CLI to connect to the AWS server",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Guides"
+        ],
+        "description": "This section provides instructions on how to configure the AWS Command Line Interface (CLI) tool to connect to the AWS server. It guides the user through entering their AWS Access Key ID, AWS Secret Access Key, preferred AWS region, and output format. This process is necessary to authenticate and interact with AWS services from the command line.",
+        "use_cases": [
+            "Accessing AWS services from the command line",
+            "Automating AWS tasks and workflows",
+            "Managing AWS resources programmatically",
+            "Testing and debugging AWS applications locally"
+        ],
+        "capabilities": [
+            "AWS CLI configuration",
+            "AWS authentication",
+            "AWS region selection",
+            "Output format customization"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_backend_guides_emulate-aws-sns-locally-in-php-chunk-2",
+        "name": "Emulate AWS SNS locally in PHP.txt - Integration in PHP Code",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Guides"
+        ],
+        "description": "This section demonstrates how to integrate the AWS SDK for PHP into a PHP application to interact with the Amazon Simple Notification Service (SNS) locally. It involves configuring the AWS SDK with specific settings, such as the endpoint URL, timeout values, region, version, and credentials. This allows developers to emulate and test the SNS functionality without relying on the actual AWS infrastructure during development or testing phases.",
+        "use_cases": [
+            "Local development and testing of applications that utilize AWS SNS",
+            "Simulating AWS SNS functionality in a controlled environment",
+            "Debugging and troubleshooting issues related to AWS SNS integration",
+            "Facilitating continuous integration and deployment workflows"
+        ],
+        "capabilities": [
+            "AWS SDK configuration",
+            "SNS client creation",
+            "Endpoint customization",
+            "Timeout settings",
+            "Region specification",
+            "Credential management"
+        ],
+        "references": [
+            "http://192.168.43.238:4100',"
+        ]
+    },
+    {
+        "id": "engineering_backend_guides_emulate-aws-sns-locally-in-php-chunk-3",
+        "name": "Emulate AWS SNS locally in PHP.txt - Common CLI Commands",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Guides"
+        ],
+        "description": "This section provides common command-line interface (CLI) commands for interacting with Amazon Web Services (AWS) Simple Notification Service (SNS) and Simple Queue Service (SQS) locally using a local endpoint. It allows developers to create queues, list subscriptions and topics, create topics, and subscribe a queue to a topic without using the actual AWS services, which can be useful for testing and development purposes.",
+        "use_cases": [
+            "Testing and development of applications that use AWS SNS and SQS",
+            "Simulating AWS SNS and SQS functionality locally",
+            "Learning and experimenting with AWS SNS and SQS commands",
+            "Debugging and troubleshooting issues related to AWS SNS and SQS"
+        ],
+        "capabilities": [
+            "Create Queue",
+            "List Subscriptions",
+            "List Topics",
+            "Create Topic",
+            "Subscribe Queue to Topic",
+            "Local Endpoint Emulation"
+        ],
+        "references": [
+            "http://localhost:4100",
+            "http://localhost:4100",
+            "http://localhost:4100",
+            "http://localhost:4100",
+            "http://localhost:4100",
+            "http://localhost:4100/queue/my_queue`"
+        ]
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "id": "engineering_devops_certifihub_rotating|buying-ssl-certificates--chunk-0",
+        "name": "Rotating|Buying SSL certificates .txt - Steps to rotate/buy Public Signed Certificates",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "CERTIFIHUB"
+        ],
+        "description": "This section explains the steps to generate or rotate SSL certificates for a domain. It covers generating a Certificate Signing Request (CSR), obtaining the certificate files from the IT team, creating a .pfx file, converting it to base64, storing the certificate and password in a secure credential store (credstash), generating a public key from the certificate, and updating the credentials and rotating the application pods.",
+        "use_cases": [
+            "Obtaining a new SSL certificate for a domain",
+            "Rotating or renewing an existing SSL certificate",
+            "Securely storing and managing SSL certificates and credentials"
+        ],
+        "capabilities": [
+            "Generating CSR",
+            "Creating .pfx file",
+            "Base64 encoding",
+            "Secure credential storage (credstash)",
+            "Public key generation",
+            "Certificate rotation",
+            "Pod rotation"
+        ],
+        "references": [
+            "https://certifihub.razorpay.com/certificates?page=1",
+            "https://alpha.razorpay.com/_static/file/3aba8ea71becd50772dddf52e7c66fa5.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_certifihub_rotating|buying-ssl-certificates--chunk-1",
+        "name": "Rotating|Buying SSL certificates .txt - Steps to rotate Self Signed Certificates",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "CERTIFIHUB"
+        ],
+        "description": "This section explains the steps to rotate or renew self-signed SSL certificates, which are used to secure communication between a web server and clients. It provides a command to generate a new private key and certificate signing request (CSR), and instructions to submit the CSR to the IT team for obtaining a new SSL certificate. The process ensures that the website or application maintains a valid SSL certificate, which is crucial for secure data transmission and establishing trust with users.",
+        "use_cases": [
+            "Renewing or rotating self-signed SSL certificates",
+            "Securing communication between a web server and clients",
+            "Obtaining a new SSL certificate from the IT team",
+            "Maintaining a valid SSL certificate for a website or application"
+        ],
+        "capabilities": [
+            "Generating private key",
+            "Generating certificate signing request (CSR)",
+            "Submitting CSR to IT team",
+            "Providing subject information for SSL certificate",
+            "Specifying domain URL for SSL certificate"
+        ],
+        "references": [
+            "http://example.com/",
+            "https://razorpay.atlassian.net/browse/CORP-2824>"
+        ]
+    }
+]

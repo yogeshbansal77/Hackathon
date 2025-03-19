@@ -1,0 +1,345 @@
+[
+    {
+        "id": "engineering_databases_working-guides_postgres-cdc-set-up-chunk-0",
+        "name": "Postgres CDC set up.txt - Check wal_level and max_replication_slots Postgres property",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Working Guides"
+        ],
+        "description": "This section demonstrates how to check the values of two important PostgreSQL configuration parameters: wal_level and max_replication_slots. These parameters are crucial for setting up Change Data Capture (CDC) in PostgreSQL, which allows tracking and replicating changes made to the database in real-time. By running the provided commands, users can verify if these parameters are set correctly for their CDC setup.",
+        "use_cases": [
+            "Setting up Change Data Capture (CDC) in PostgreSQL",
+            "Verifying configuration for database replication",
+            "Monitoring database changes in real-time",
+            "Ensuring data consistency across multiple database instances"
+        ],
+        "capabilities": [
+            "Checking wal_level parameter",
+            "Checking max_replication_slots parameter",
+            "Verifying PostgreSQL configuration",
+            "Enabling Change Data Capture",
+            "Enabling database replication",
+            "Real-time data monitoring"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_working-guides_postgres-cdc-set-up-chunk-1",
+        "name": "Postgres CDC set up.txt - Create a user with replication permission",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Working Guides"
+        ],
+        "description": "This section explains how to set up a user with replication permissions in PostgreSQL, which is necessary for enabling Change Data Capture (CDC) functionality. It involves checking if the wal_level parameter is set to 'logical' in the PostgreSQL configuration file, and if not, setting it to 'logical' and restarting the database. It then provides the SQL commands to create a new user role with a password and grant that role the 'rds_replication' permission, which allows the user to access the database's write-ahead log for replication purposes.",
+        "use_cases": [
+            "Setting up Change Data Capture (CDC) in PostgreSQL",
+            "Enabling replication capabilities in PostgreSQL",
+            "Creating a user with specific permissions for accessing the write-ahead log"
+        ],
+        "capabilities": [
+            "wal_level configuration",
+            "database restart",
+            "user role creation",
+            "password assignment",
+            "permission granting",
+            "rds_replication permission"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_working-guides_postgres-cdc-set-up-chunk-2",
+        "name": "Postgres CDC set up.txt - Switch to target database",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Working Guides"
+        ],
+        "description": "This section appears to be intentionally left blank, as it contains only a backslash character. Without any meaningful content, it is difficult to provide a concise description or infer any use cases or capabilities from this section.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_working-guides_postgres-cdc-set-up-chunk-3",
+        "name": "Postgres CDC set up.txt - Create a debezium heartbeat table",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Working Guides"
+        ],
+        "description": "This section appears to be instructing the user to add a username and password to a specific location called 'kubestash-stage' under certain keys. However, the section content is incomplete and does not provide further details on what these credentials are for or how to add them.",
+        "use_cases": [
+            "Configuring authentication credentials for a service or application",
+            "Securing access to sensitive data or resources",
+            "Setting up a development or staging environment"
+        ],
+        "capabilities": [
+            "credential management",
+            "access control",
+            "environment configuration"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_working-guides_postgres-cdc-set-up-chunk-4",
+        "name": "Postgres CDC set up.txt - Provide replication user permission to insert/update the table",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Working Guides"
+        ],
+        "description": "This section provides the credentials (username and password) required for the replication user to access the Postgres database and perform operations like inserting or updating data in the specified table. These credentials are stored as secrets in a secure location, represented by the paths 'datum/datahub/PG_DB_STREAM_USERNAME' and 'datum/datahub/PG_DB_STREAM_PASSWORD'. This setup allows for controlled access and data replication from the Postgres database to other systems or applications.",
+        "use_cases": [
+            "Replicating data from Postgres database to other systems",
+            "Enabling controlled access to Postgres database for data operations",
+            "Integrating Postgres database with external applications or services",
+            "Synchronizing data across multiple systems or environments"
+        ],
+        "capabilities": [
+            "Secure storage of database credentials",
+            "Replication user access control",
+            "Data insertion and update operations",
+            "Integration with Postgres database",
+            "Credential management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_working-guides_postgres-cdc-set-up-chunk-5",
+        "name": "Postgres CDC set up.txt - Set replica identity to FULL for all tables",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Working Guides"
+        ],
+        "description": "This section provides a single line of code that instructs the user to switch to the terminal's database in the context of setting up PostgreSQL Change Data Capture (CDC). It is a crucial step in the overall process of configuring CDC for capturing data changes in real-time.",
+        "use_cases": [
+            "Setting up PostgreSQL Change Data Capture (CDC)",
+            "Enabling real-time data replication",
+            "Monitoring database changes",
+            "Building data pipelines"
+        ],
+        "capabilities": [
+            "Switching databases",
+            "Terminal commands",
+            "Database management",
+            "Change data capture",
+            "Data replication"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_working-guides_postgres-cdc-set-up-chunk-6",
+        "name": "Postgres CDC set up.txt - Create a publication",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Working Guides"
+        ],
+        "description": "This section provides instructions for connecting to a specific database and creating a Debezium heartbeat table, which is a necessary step in setting up Change Data Capture (CDC) with Postgres and Debezium. The heartbeat table is used to monitor the replication process and ensure that data changes are being captured and propagated correctly.",
+        "use_cases": [
+            "Setting up Change Data Capture (CDC) with Postgres and Debezium",
+            "Monitoring data replication process",
+            "Ensuring data consistency and integrity"
+        ],
+        "capabilities": [
+            "Connecting to a specific Postgres database",
+            "Creating a Debezium heartbeat table",
+            "Enabling Change Data Capture (CDC)",
+            "Monitoring data replication",
+            "Ensuring data consistency and integrity"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_working-guides_postgres-cdc-set-up-chunk-7",
+        "name": "Postgres CDC set up.txt - Check if the publication is created and registered for all tables",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Working Guides"
+        ],
+        "description": "This section demonstrates how to create a heartbeat table in PostgreSQL, which is a table used by Debezium, a change data capture (CDC) tool, to monitor the replication process. The heartbeat table helps ensure that the CDC process is running smoothly and can detect any issues or delays in data replication.",
+        "use_cases": [
+            "Monitoring the CDC process for any issues or delays",
+            "Ensuring data consistency between the source and target databases",
+            "Troubleshooting and debugging the CDC setup"
+        ],
+        "capabilities": [
+            "Creating a heartbeat table",
+            "Monitoring data replication",
+            "Detecting replication issues",
+            "Ensuring data consistency",
+            "Troubleshooting CDC setup"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_working-guides_postgres-cdc-set-up-chunk-8",
+        "name": "Postgres CDC set up.txt - Create replication slot",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Working Guides"
+        ],
+        "description": "This section explains how to grant permissions to a replication user (deb_db_pg_stream) to access and modify a specific table (debezium_heartbeat) in a PostgreSQL database. This is a necessary step in setting up Change Data Capture (CDC) for PostgreSQL using Debezium, which allows capturing data changes in real-time and streaming them to other systems. By granting the appropriate permissions, the replication user can read, insert, and update data in the debezium_heartbeat table, which is used by Debezium for monitoring and managing the replication process.",
+        "use_cases": [
+            "Setting up Change Data Capture (CDC) for PostgreSQL using Debezium",
+            "Streaming data changes from PostgreSQL to other systems in real-time",
+            "Monitoring and managing the replication process"
+        ],
+        "capabilities": [
+            "Granting permissions to a user",
+            "Allowing read, insert, and update operations on a specific table",
+            "Configuring replication user for Debezium CDC"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_working-guides_postgres-cdc-set-up-chunk-9",
+        "name": "Postgres CDC set up.txt - Check replication slot",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Working Guides"
+        ],
+        "description": "This section explains how to set up replication for tables in a PostgreSQL database. It involves setting the 'REPLICA IDENTITY' property of each table to 'FULL', which allows the entire row data to be replicated, including any updates or changes made to the table. This is necessary for certain types of replication scenarios, such as Change Data Capture (CDC), where changes made to the database need to be captured and propagated to other systems or databases.",
+        "use_cases": [
+            "Change Data Capture (CDC)",
+            "Database replication",
+            "Data synchronization between systems",
+            "Backup and recovery"
+        ],
+        "capabilities": [
+            "Setting REPLICA IDENTITY for tables",
+            "Enabling full row replication",
+            "Configuring PostgreSQL for CDC"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_working-guides_postgres-cdc-set-up-chunk-10",
+        "name": "Postgres CDC set up.txt - Check if messages are pushed to replication slot",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Working Guides"
+        ],
+        "description": "This section explains how to create a publication in PostgreSQL that captures changes (CDC) for all tables in a database, and how to verify if the publication was created successfully. A publication is a way to define a set of tables whose data changes should be captured and streamed to subscribers. Creating a publication is a necessary step in setting up Change Data Capture (CDC) in PostgreSQL using logical replication.",
+        "use_cases": [
+            "Setting up Change Data Capture (CDC) in PostgreSQL",
+            "Streaming data changes from PostgreSQL to other systems",
+            "Building real-time data pipelines",
+            "Implementing event-driven architectures"
+        ],
+        "capabilities": [
+            "Creating a publication for CDC",
+            "Capturing changes for all tables",
+            "Verifying publication creation",
+            "Logical replication in PostgreSQL",
+            "Change Data Capture (CDC) setup"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_working-guides_postgres-cdc-set-up-chunk-11",
+        "name": "Postgres CDC set up.txt - Check if there are any records returned from the replication slot",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Working Guides"
+        ],
+        "description": "This section explains how to check if there are any tables or publications set up for replication in a PostgreSQL database. The provided command 'select * from pg_publication_tables;' retrieves information about all the tables that are part of a publication, which is a set of tables that can be replicated to other databases or systems.",
+        "use_cases": [
+            "Monitoring replication setup",
+            "Verifying publication configuration",
+            "Troubleshooting replication issues",
+            "Auditing database changes"
+        ],
+        "capabilities": [
+            "Listing publication tables",
+            "Checking replication slot status",
+            "Verifying logical replication setup",
+            "Monitoring database changes"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_working-guides_postgres-cdc-set-up-chunk-12",
+        "name": "Postgres CDC set up.txt - List out the Slots and sizes of each",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Working Guides"
+        ],
+        "description": "This section explains how to create a replication slot in PostgreSQL, which is a mechanism that allows streaming of changes (inserts, updates, and deletes) from a PostgreSQL database to external consumers, such as other databases or data processing systems. Replication slots are used in logical replication, which is a method of replicating data objects or logical data, rather than taking a complete backup or replicating entire files.",
+        "use_cases": [
+            "Setting up Change Data Capture (CDC) for PostgreSQL databases",
+            "Replicating data from a PostgreSQL database to another database or data processing system",
+            "Building real-time data pipelines or data streaming applications",
+            "Implementing high availability or disaster recovery solutions"
+        ],
+        "capabilities": [
+            "Creating replication slots",
+            "Logical replication",
+            "Change data capture (CDC)",
+            "Data streaming",
+            "Real-time data integration"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_working-guides_postgres-cdc-set-up-chunk-13",
+        "name": "Postgres CDC set up.txt - Drop the slot",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Working Guides"
+        ],
+        "description": "This section explains how to drop or remove a logical replication slot named 'db_test_debezium_slot' from a PostgreSQL database. A logical replication slot is used for capturing changes in the database and streaming them to other systems, such as data warehouses or caching layers. Dropping the slot is a necessary step when you no longer need to replicate data from that particular slot.",
+        "use_cases": [
+            "Removing an obsolete or unused logical replication slot",
+            "Cleaning up resources after completing a data replication process",
+            "Reconfiguring or modifying the replication setup"
+        ],
+        "capabilities": [
+            "Dropping logical replication slots",
+            "Managing PostgreSQL replication",
+            "Configuring PostgreSQL output plugins",
+            "Removing database resources"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_working-guides_postgres-cdc-set-up-chunk-14",
+        "name": "Postgres CDC set up.txt - Subscription",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Working Guides"
+        ],
+        "description": "This section explains the process of setting up and managing a logical replication subscription in PostgreSQL, which allows data changes from one database (the publisher) to be replicated to another database (the subscriber). It covers steps like creating a replication slot, checking if messages are being pushed to the slot, monitoring the lag in the replication slot, dropping the slot, creating a subscription, advancing the replication origin, enabling the subscription, and managing sequence values during cutover.",
+        "use_cases": [
+            "Setting up logical replication between PostgreSQL databases",
+            "Monitoring replication lag and slot status",
+            "Managing sequence values during database migration or cutover",
+            "Troubleshooting replication issues using log messages"
+        ],
+        "capabilities": [
+            "Creating replication slots",
+            "Checking replication slot status",
+            "Inserting data into heartbeat table",
+            "Retrieving binary changes from replication slot",
+            "Listing replication slots and their lag",
+            "Dropping replication slots",
+            "Creating logical replication subscriptions",
+            "Advancing replication origin",
+            "Enabling/disabling subscriptions",
+            "Setting default transaction read-only mode",
+            "Retrieving and setting sequence values"
+        ],
+        "references": []
+    }
+]

@@ -1,0 +1,29 @@
+[
+    {
+        "id": "engineering_devops_run-books-and-sops_pd-alert-run-books_incident-prep-book-chunk-0",
+        "name": "Incident Prep Book.txt - Metrics Monitoring Alerting",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs",
+            "PD Alert Run-books"
+        ],
+        "description": "This section provides a link to a resource related to metrics monitoring and alerting, which is likely a documentation or guide on how to monitor and set up alerts for various metrics and performance indicators within the Razorpay system. This resource could help users or administrators understand how to track and receive notifications about important system metrics, enabling them to proactively identify and address potential issues or performance bottlenecks.",
+        "use_cases": [
+            "Monitoring system performance and health",
+            "Setting up alerts for critical metrics",
+            "Identifying and troubleshooting performance issues",
+            "Proactive incident management and response"
+        ],
+        "capabilities": [
+            "Metrics monitoring",
+            "Alerting",
+            "Performance tracking",
+            "Incident management",
+            "System health monitoring"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/metrics-monitoring-alerting>"
+        ]
+    }
+]

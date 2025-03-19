@@ -1,0 +1,131 @@
+[
+    {
+        "id": "engineering_devops_dev-self-serve_credstash-v2---access-management-guide-chunk-0",
+        "name": "Credstash V2 - Access Management Guide.txt - Introduction",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section introduces guidelines that need to be considered when granting access to associates for using Credstash. It aims to provide an overview of the access management process, ensuring that proper measures are taken to secure sensitive information stored in Credstash.",
+        "use_cases": [
+            "Granting access to associates for using Credstash",
+            "Securing sensitive information stored in Credstash",
+            "Implementing access control measures for Credstash"
+        ],
+        "capabilities": [
+            "Access management",
+            "Security guidelines",
+            "Credstash access control"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_credstash-v2---access-management-guide-chunk-1",
+        "name": "Credstash V2 - Access Management Guide.txt - What is Credstash?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section introduces Credstash, a user interface tool developed by the DevOps team for managing secrets across various microservices. It highlights the high privilege level of this tool and the need for efficient handling of its features, which is why a Standard Operating Procedure (SOP) guide is provided for the IT team.",
+        "use_cases": [
+            "Secret management for microservices",
+            "Centralized access control for sensitive information",
+            "Secure storage and retrieval of credentials"
+        ],
+        "capabilities": [
+            "UI interface",
+            "High privilege access",
+            "Secret management",
+            "SOP guide for IT team"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_credstash-v2---access-management-guide-chunk-2",
+        "name": "Credstash V2 - Access Management Guide.txt - Access Management",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains the access management process for the Credstash V2 system. It mentions that different Google groups have different levels of access and permissions to perform various actions within the system. The section emphasizes that each individual should belong to only one Google group at a time, and if their designation changes, they should be removed from their current group before being added to a new one.",
+        "use_cases": [
+            "Controlling access and permissions for different user groups",
+            "Managing user group memberships based on job roles or designations",
+            "Ensuring users belong to only one access group at a time"
+        ],
+        "capabilities": [
+            "Access management",
+            "User group management",
+            "Role-based access control",
+            "Permission management",
+            "Group membership management"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/credstash-v2#permissions-and-invocations>"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_credstash-v2---access-management-guide-chunk-3",
+        "name": "Credstash V2 - Access Management Guide.txt - Stage Credstash [ Testing Platform ]",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section provides information about accessing the Credstash testing platform, which is a secure credential management system. It mentions that access is granted by adding associates to specific Google Groups. The section includes a link to the Credstash UI for the testing platform and lists three Google Groups: developers@razorpay.com, credstash-devs@razorpay.com, and credstash-dev-admins@razorpay.com. Associates should be added as members to these groups to gain access to the testing platform.",
+        "use_cases": [
+            "Secure credential management for testing and development environments",
+            "Access control and management for associates working on the Credstash platform",
+            "Centralized access management using Google Groups",
+            "Providing a testing platform for Credstash before production deployment"
+        ],
+        "capabilities": [
+            "Credstash UI for testing platform",
+            "Access management using Google Groups",
+            "Membership management for associates",
+            "Differentiated access levels (developers, dev-admins)",
+            "Centralized access control",
+            "Secure credential storage and retrieval"
+        ],
+        "references": [
+            "https://groups.google.com/my-groups?hl=en>",
+            "https://credstash-ui.concierge.stage.razorpay.in/dist/>",
+            "https://groups.google.com/a/razorpay.com/g/credstash-devs/members?hl=en>",
+            "https://groups.google.com/a/razorpay.com/g/credstash-dev-admins/members?hl=en>"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_credstash-v2---access-management-guide-chunk-4",
+        "name": "Credstash V2 - Access Management Guide.txt - Production Credstash",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section provides information about the production environment of Credstash, a tool used for securely storing and retrieving credentials. It lists the URLs for accessing the Credstash user interface in different clusters (Main Production, DE Cluster, and RazorpayX Cluster). It also mentions the Google Groups associated with different roles (Developers, Tech Leads, and Engineering Managers) for accessing and managing Credstash.",
+        "use_cases": [
+            "Accessing the Credstash user interface in the production environment",
+            "Managing access to Credstash based on roles and responsibilities",
+            "Collaborating and communicating within teams through Google Groups"
+        ],
+        "capabilities": [
+            "Production Credstash URLs",
+            "Role-based access management",
+            "Google Groups integration",
+            "Cluster-specific Credstash instances",
+            "Documentation link for Credstash V2"
+        ],
+        "references": [
+            "https://credstash-ui.razorpay.com/dist/>",
+            "https://credstash-ui.de.razorpay.com/dist/>",
+            "https://credstash-ui.razorpayx.com/dist/>",
+            "https://groups.google.com/a/razorpay.com/g/credstash-developers/members?hl=en>",
+            "https://groups.google.com/a/razorpay.com/g/credstash-devs/members?hl=en>",
+            "https://groups.google.com/a/razorpay.com/g/credstash-dev-admins/members?hl=en>",
+            "https://alpha.razorpay.com/repo/credstash-v2>"
+        ]
+    }
+]

@@ -1,0 +1,185 @@
+[
+    {
+        "id": "engineering_devops_banking-devops_[upiswitch]-[prod]-[axis-bank]-devops-handbook-chunk-0",
+        "name": "[UPISwitch] [PROD] [AXIS Bank] DevOps Handbook.txt - AWS Cloud",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Banking Devops"
+        ],
+        "description": "This section provides information about the AWS (Amazon Web Services) cloud account and region used for hosting the infrastructure related to the UPISwitch AXIS Bank project. It specifies the account ID and the primary data center region, which is Mumbai (ap-south-1). This information is crucial for accessing and managing the cloud resources associated with the project.",
+        "use_cases": [
+            "Accessing and managing cloud resources for the UPISwitch AXIS Bank project",
+            "Identifying the primary data center region for the project's infrastructure",
+            "Verifying the account ID for authentication and authorization purposes",
+            "Referencing the account and region details for any cloud-related operations or troubleshooting"
+        ],
+        "capabilities": [
+            "AWS Cloud",
+            "Account ID",
+            "Region",
+            "Data Center",
+            "Infrastructure Management",
+            "Resource Identification"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_banking-devops_[upiswitch]-[prod]-[axis-bank]-devops-handbook-chunk-1",
+        "name": "[UPISwitch] [PROD] [AXIS Bank] DevOps Handbook.txt - AWS ReadOnly Access - Developers",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Banking Devops"
+        ],
+        "description": "This section provides instructions for developers to obtain read-only access to AWS resources, likely for monitoring or auditing purposes. It outlines the steps to request and activate the necessary access package from Microsoft MyAccess and the Azure portal.",
+        "use_cases": [
+            "Granting read-only access to AWS resources for developers",
+            "Monitoring or auditing AWS resources",
+            "Accessing AWS resources for non-production purposes"
+        ],
+        "capabilities": [
+            "AWS read-only access",
+            "Access package management",
+            "Azure portal integration",
+            "Microsoft MyAccess integration"
+        ],
+        "references": [
+            "https://myaccess.microsoft.com/@razorpaysoftware.onmicrosoft.com#/access-packages",
+            "https://docs.google.com/document/d/13zRHQDUwYLo1DNi8x8MtqnI2L00XDy9ghhXGml_Ar_w/edit#heading=h.4qlauldorlvp"
+        ]
+    },
+    {
+        "id": "engineering_devops_banking-devops_[upiswitch]-[prod]-[axis-bank]-devops-handbook-chunk-2",
+        "name": "[UPISwitch] [PROD] [AXIS Bank] DevOps Handbook.txt - Domains",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Banking Devops"
+        ],
+        "description": "This section explains the different domains or URLs used for accessing the UPISwitch service provided by Razorpay for AXIS Bank. It distinguishes between the external domain, which is accessible from the internet, and the internal domain, which is likely used within the organization's network. The external domain is *.prod.axis.razorpayupis.com, while the internal domain is *.int.prod.axis.razorpayupis.com. This information is useful for configuring access to the service and understanding the different environments or deployment setups.",
+        "use_cases": [
+            "Accessing the UPISwitch service from the internet",
+            "Accessing the UPISwitch service from within the organization's network",
+            "Configuring access to different environments (e.g., production, staging)",
+            "Understanding the deployment architecture and network segmentation"
+        ],
+        "capabilities": [
+            "External domain access",
+            "Internal domain access",
+            "Domain separation for different environments",
+            "Network segmentation",
+            "Environment-specific configurations"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_banking-devops_[upiswitch]-[prod]-[axis-bank]-devops-handbook-chunk-3",
+        "name": "[UPISwitch] [PROD] [AXIS Bank] DevOps Handbook.txt - Tools",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Banking Devops"
+        ],
+        "description": "This section provides an overview of various tools and platforms used for monitoring, visualizing, and managing secrets in the production environment of the UPISwitch system for Axis Bank. It lists the URLs for accessing Grafana (a data visualization tool), CredstashUI (a Kubernetes secret management tool), and Coralogix (a log and trace management platform).",
+        "use_cases": [
+            "Monitoring and visualizing system metrics and logs",
+            "Managing and securing sensitive information (secrets) in a Kubernetes environment",
+            "Centralized log and trace management for troubleshooting and analysis"
+        ],
+        "capabilities": [
+            "Data visualization",
+            "Kubernetes secret management",
+            "Log management",
+            "Trace management",
+            "Monitoring",
+            "Centralized access to tools"
+        ],
+        "references": [
+            "https://grafana.con.prod.axis.razorpayupis.com/",
+            "https://credstash-ui.con.prod.axis.razorpayupis.com/dist/",
+            "https://upisw-axis-prod.app.coralogix.in/"
+        ]
+    },
+    {
+        "id": "engineering_devops_banking-devops_[upiswitch]-[prod]-[axis-bank]-devops-handbook-chunk-4",
+        "name": "[UPISwitch] [PROD] [AXIS Bank] DevOps Handbook.txt - Terraform",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Banking Devops"
+        ],
+        "description": "This section provides links to two web-based tools used in the production environment for the AXIS Bank project at Razorpay. Redash is a business intelligence (BI) tool that allows users to query and visualize data from various sources. KafkaUI is a user interface for managing and monitoring Apache Kafka, a distributed streaming platform used for building real-time data pipelines and streaming applications.",
+        "use_cases": [
+            "Data analysis and reporting",
+            "Data visualization",
+            "Monitoring and managing Kafka clusters",
+            "Building real-time data pipelines"
+        ],
+        "capabilities": [
+            "Redash: BI tool for data querying and visualization",
+            "KafkaUI: User interface for Apache Kafka management",
+            "Web-based access to tools",
+            "Hosted in the production environment"
+        ],
+        "references": [
+            "https://redash.con.prod.axis.razorpayupis.com/",
+            "https://kafkaui.con.prod.axis.razorpayupis.com/"
+        ]
+    },
+    {
+        "id": "engineering_devops_banking-devops_[upiswitch]-[prod]-[axis-bank]-devops-handbook-chunk-5",
+        "name": "[UPISwitch] [PROD] [AXIS Bank] DevOps Handbook.txt - GitOps",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Banking Devops"
+        ],
+        "description": "This section provides a link to the Vishnu repository on GitHub, which contains Terraform configuration files for managing infrastructure resources related to the UPISwitch PROD environment for AXIS Bank in the ap-south-1 AWS region. Terraform is an open-source infrastructure as code (IaC) tool that allows you to define and provision cloud resources using declarative configuration files.",
+        "use_cases": [
+            "Infrastructure as Code (IaC)",
+            "Cloud resource provisioning",
+            "Configuration management",
+            "Version control for infrastructure"
+        ],
+        "capabilities": [
+            "Terraform configuration files",
+            "GitHub repository",
+            "Infrastructure management",
+            "Cloud resource management",
+            "AWS ap-south-1 region",
+            "AXIS Bank UPISwitch PROD environment"
+        ],
+        "references": [
+            "https://github.com/razorpay/vishnu/tree/master/upiswitch/prod/axis-bank/ap-south-1>"
+        ]
+    },
+    {
+        "id": "engineering_devops_banking-devops_[upiswitch]-[prod]-[axis-bank]-devops-handbook-chunk-6",
+        "name": "[UPISwitch] [PROD] [AXIS Bank] DevOps Handbook.txt - Alerts",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Banking Devops"
+        ],
+        "description": "This section provides information about various repositories and resources related to the DevOps infrastructure for the UPISwitch AXIS Bank production environment. It includes links to repositories for managing infrastructure manifests, GitOps workflows, and alert rules. The section seems to serve as a centralized reference for developers and operations teams to access and maintain different components of the DevOps setup.",
+        "use_cases": [
+            "Managing infrastructure manifests for the UPISwitch AXIS Bank production environment",
+            "Implementing GitOps workflows for continuous deployment and management",
+            "Configuring and maintaining alert rules for monitoring and incident response",
+            "Providing a centralized reference for DevOps resources and repositories"
+        ],
+        "capabilities": [
+            "Infrastructure Manifest Management",
+            "GitOps Workflow",
+            "Alert Rule Configuration",
+            "Centralized Repository Reference"
+        ],
+        "references": [
+            "https://github.com/razorpay/vishnu/pull/12924/files>",
+            "https://github.com/razorpay/infra-kube-manifests/tree/master/envs/upiswitch/prod/axis-bank/ap-south-1>",
+            "https://github.com/razorpay/fluxcd/tree/master/clusters/upiswitch/prod/axis-bank/ap-south-1>",
+            "https://github.com/razorpay/alert-rules/tree/master/rules/rzpx-prod/upisw-axis-prod>"
+        ]
+    }
+]

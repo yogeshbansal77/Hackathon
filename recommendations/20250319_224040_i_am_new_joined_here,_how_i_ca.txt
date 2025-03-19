@@ -1,0 +1,50 @@
+Query: i am new joined here, how i can get the jira access ?
+
+Recommendation:
+Based on your request regarding **gaining Jira access**, the following services are recommended:
+
+---
+
+### **1. DevOps Onboarding Checklist**
+   - **Reason:**  
+     This guide explains the overall onboarding process and includes steps to gain Jira access. As a new joiner, this ensures you're set up with all critical tools seamlessly.
+   - **How To Use It:**  
+     1. Head over to the #tech_it Slack channel.  
+     2. Post a message saying, "Hi team, I'm a new joiner and need Jira access. Could someone please assist me with the setup? @officeit."  
+     3. Once your request is processed, you can log into Jira via the Microsoft Apps portal.
+
+   - Slack channel: `#tech_it`
+
+---
+
+### **2. Access Requests Guide**
+   - **Reason:**  
+     This guide is specific to Jira access and provides step-by-step instructions, including using SSO and logging in through the Microsoft Apps portal.
+   - **How To Use It:**  
+     1. Go to the Microsoft Apps portal: [https://myapplications.microsoft.com](https://myapplications.microsoft.com).  
+     2. Try to log into Jira. If you encounter a lack of access, follow these steps:  
+       - Open the Slack channel `#tech_it`.  
+       - Mention `@officeit` and request Jira access.  
+     3. Wait for confirmation from the IT team. Once approved, log out and log back in after 30 minutes to access Jira.
+
+---
+
+### **3. Vajra Dashboard Access Process**
+   - **Reason:**  
+     This guide indirectly addresses Jira access by mentioning that requests related to certain dashboards (e.g., Vajra) require Jira. It also refers to the process of requesting Jira access through Slack.
+   - **How To Use It:**  
+     Use the same Slack process described above if your request is for specific projects like Vajra on Jira.
+
+---
+
+### **Example Slack Message for Jira Access**
+Here’s a template you can use in the `#tech_it` channel:
+
+> Hi team,  
+> I am a new joiner in the [Your Team/Department] team, and I currently do not have Jira access.  
+> Could someone please assist me in getting access?  
+> Thanks in advance!  
+
+---
+
+Would you like me to further assist with crafting your message or navigating Slack for this? Let me know!

@@ -1,0 +1,56 @@
+[
+    {
+        "id": "engineering_frontend_guides_recaptcha-chunk-0",
+        "name": "Recaptcha.txt - Main Content",
+        "breadcrumb": [
+            "Engineering",
+            "Frontend",
+            "Guides"
+        ],
+        "description": "This section provides information about various reCAPTCHA configurations used by Razorpay for different applications and environments. It lists the reCAPTCHA names, types (e.g., v2 Invisible, v2 Checkbox, v3), domains or package IDs where they are used, and the corresponding site keys. This information is likely intended for developers or administrators who need to integrate or manage reCAPTCHA implementations within Razorpay's systems.",
+        "use_cases": [
+            "Protecting Razorpay's dashboard and web applications from bot attacks and spam",
+            "Securing the signup process for new Razorpay users",
+            "Validating support ticket submissions on Razorpay's website",
+            "Implementing reCAPTCHA in Razorpay's Android app for ePOS"
+        ],
+        "capabilities": [
+            "reCAPTCHA v2 Invisible",
+            "reCAPTCHA v2 Checkbox",
+            "reCAPTCHA v3",
+            "reCAPTCHA for Android apps",
+            "Separate reCAPTCHA configurations for production and staging environments",
+            "Access to reCAPTCHA statistics and administration through a dedicated Slack user group"
+        ],
+        "references": [
+            "https://www.google.com/recaptcha/admin/site/432727181/settings",
+            "http://delta-dashboard.stage.razorpay.in",
+            "https://www.google.com/recaptcha/admin/site/318872428",
+            "http://dashboard.razorpay.combetadashboard.razorpay.combankofbaroda.razorpay.comhdfc.razorpay.comaxis.razorpay.combajaj.razorpay.comcitibank.razorpay.comaxisbank.razorpay.comjkbank.razorpay.comx.razorpay.comicicibank.razorpay.comrazorpay.com",
+            "http://hsbc.razorpay.com",
+            "http://ndmlpaygov.razorpay.com",
+            "https://www.google.com/recaptcha/admin/site/432914002/settings",
+            "http://dashboard.razorpay.combankofbaroda.razorpay.comhdfc.razorpay.comaxis.razorpay.combajaj.razorpay.comcitibank.razorpay.comaxisbank.razorpay.comjkbank.razorpay.comx.razorpay.comicicibank.razorpay.com",
+            "http://hsbc.razorpay.com",
+            "http://ndmlpaygov.razorpay.com",
+            "http://sib.razorpay.com",
+            "http://rize-new-concierge.razorpay.com",
+            "http://rize-new.razorpay.com",
+            "http://razorpay.com",
+            "http://next.razorpay.com",
+            "http://prod-static-website.razorpay.com",
+            "http://dashboard-test.razorpay.com",
+            "https://www.google.com/recaptcha/admin/site/432727159/settings",
+            "http://delta-dashboard.stage.razorpay.incharlie-dashboard.stage.razorpay.indashboard.razorpay.inbeta-dashboard.stage.razorpay.in",
+            "https://www.google.com/recaptcha/admin/site/343195174/settings",
+            "http://razorpay.com",
+            "https://www.google.com/recaptcha/admin/site/349985153/settings",
+            "https://www.google.com/recaptcha/admin/site/347974555",
+            "http://dashboard.razorpay.comrazorpay.combankofbaroda.razorpay.comhdfc.razorpay.comaxis.razorpay.combajaj.razorpay.comcitibank.razorpay.comaxisbank.razorpay.com",
+            "http://hsbc.razorpay.com",
+            "http://ndmlpaygov.razorpay.com",
+            "https://www.google.com/recaptcha/admin/site/342899223/settings",
+            "http://razorpay.com"
+        ]
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "id": "engineering_databases_onboarding_tools-links-chunk-0",
+        "name": "Tools Links.txt - Tool Links",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Onboarding"
+        ],
+        "description": "This section provides a list of tools and their corresponding links. These tools seem to be related to monitoring, data visualization, and alerting systems used within the organization. The tools mentioned include Grafana (for data visualization and monitoring), PMM (Percona Monitoring and Management for database monitoring), Redash (for data visualization and querying), and AlertManager (for managing alerts). The links provided allow access to these tools in both production and staging environments.",
+        "use_cases": [
+            "Monitoring system performance and health",
+            "Visualizing and analyzing data",
+            "Managing and responding to alerts",
+            "Accessing tools in different environments (production and staging)"
+        ],
+        "capabilities": [
+            "Data visualization",
+            "Monitoring",
+            "Alerting",
+            "Database management",
+            "Data querying",
+            "Environment separation (production and staging)"
+        ],
+        "references": [
+            "https://vajra.razorpay.com/>",
+            "https://pmm.concierge.stage.razorpay.in/>",
+            "https://pmm.razorpay.com/>",
+            "https://redash.concierge.stage.razorpay.in/>",
+            "https://alertmanager-ui.razorpay.com/>",
+            "https://grafana.np.razorpay.in/>",
+            "https://redash.razorpay.com/>"
+        ]
+    }
+]

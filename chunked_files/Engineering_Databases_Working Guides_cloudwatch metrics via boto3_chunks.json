@@ -1,0 +1,96 @@
+[
+    {
+        "id": "engineering_databases_working-guides_cloudwatch-metrics-via-boto3-chunk-0",
+        "name": "cloudwatch metrics via boto3.txt - connections",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Working Guides"
+        ],
+        "description": "This section demonstrates how to use the boto3 library in Python to retrieve the maximum number of database connections for an Amazon Relational Database Service (RDS) instance over a specific time period. It involves creating a CloudWatch client, specifying the RDS namespace and metric name, providing the instance identifier as a dimension, and setting the start and end times for the desired time range.",
+        "use_cases": [
+            "Monitoring database connections for an RDS instance",
+            "Analyzing connection usage patterns",
+            "Identifying potential connection bottlenecks",
+            "Capacity planning for database resources"
+        ],
+        "capabilities": [
+            "Retrieving CloudWatch metrics",
+            "Filtering metrics by namespace and metric name",
+            "Specifying dimensions for metric filtering",
+            "Defining time range for metric data retrieval"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_working-guides_cloudwatch-metrics-via-boto3-chunk-1",
+        "name": "cloudwatch metrics via boto3.txt - Write Latency",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Working Guides"
+        ],
+        "description": "This section explains how to retrieve the maximum write latency metric for a given instance using the boto3 library in Python. It defines a function called 'get_write_latency' that takes an instance name as input and retrieves the maximum write latency value from Amazon CloudWatch over a specified time period. The function uses the CloudWatch client from boto3 to fetch the metric data and returns the maximum value rounded to two decimal places.",
+        "use_cases": [
+            "Monitoring write performance of a database or storage system",
+            "Identifying potential bottlenecks or performance issues",
+            "Setting up alerts or notifications based on write latency thresholds",
+            "Analyzing historical write latency trends for capacity planning"
+        ],
+        "capabilities": [
+            "Retrieving CloudWatch metrics using boto3",
+            "Filtering CloudWatch metrics by statistic (e.g., Maximum)",
+            "Specifying time period for metric data retrieval",
+            "Rounding metric values to desired precision",
+            "Returning metric data as a function output"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_working-guides_cloudwatch-metrics-via-boto3-chunk-2",
+        "name": "cloudwatch metrics via boto3.txt - CPU utilization",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Working Guides"
+        ],
+        "description": "This section demonstrates how to use the boto3 library in Python to retrieve CloudWatch metrics for an Amazon Relational Database Service (RDS) instance. It creates a CloudWatch client and initiates a request to fetch metric statistics for the 'AWS/RDS' namespace, which contains metrics related to RDS instances. This code snippet can be useful for monitoring the performance and health of an RDS database by retrieving metrics such as CPU utilization, memory usage, or disk I/O.",
+        "use_cases": [
+            "Monitoring RDS instance performance",
+            "Tracking resource utilization of RDS databases",
+            "Setting up alerts or notifications based on RDS metrics",
+            "Analyzing historical RDS metrics for capacity planning"
+        ],
+        "capabilities": [
+            "Creating a CloudWatch client using boto3",
+            "Retrieving metric statistics for a specific namespace (AWS/RDS)",
+            "Fetching CloudWatch metrics for Amazon RDS instances",
+            "Monitoring resource utilization and performance of RDS databases"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_working-guides_cloudwatch-metrics-via-boto3-chunk-3",
+        "name": "cloudwatch metrics via boto3.txt - Instances Filter by engine",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Working Guides"
+        ],
+        "description": "This section explains how to use the boto3 library in Python to retrieve and filter CloudWatch metrics for Amazon RDS instances. It provides a function to get the write latency metric for a specific RDS instance, and then iterates over all RDS instances with the 'postgres' engine to print out the instance identifier, availability zone, multi-AZ status, current write latency, and previous write latency.",
+        "use_cases": [
+            "Monitoring write latency for PostgreSQL RDS instances",
+            "Comparing current and historical write latency metrics",
+            "Identifying RDS instances with high write latency",
+            "Tracking performance changes in RDS instances over time"
+        ],
+        "capabilities": [
+            "Retrieving CloudWatch metrics using boto3",
+            "Filtering RDS instances by engine type",
+            "Accessing RDS instance metadata",
+            "Calculating and formatting metric values",
+            "Printing instance details and metrics"
+        ],
+        "references": []
+    }
+]

@@ -1,0 +1,87 @@
+[
+    {
+        "id": "engineering_devops_architecture_kubernetes_service-mesh_setup-automatic-multi-cluster-failover(don't-use-this)--chunk-0",
+        "name": "Setup Automatic Multi-cluster Failover(Don't use this) .txt - Linkerd service mesh will be used for automatic failover.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes",
+            "Service Mesh"
+        ],
+        "description": "This section explains how to set up automatic failover between two Kubernetes clusters using the Linkerd service mesh. It involves injecting the Linkerd proxy into a sample deployment called 'podinfo' in the 'test' namespace, ensuring that the service and deployment configurations are the same across both clusters ('stage-white-eks' and 'dev-serve'). The Linkerd proxy is injected by adding an annotation ('linkerd.io/inject: enabled') to the deployment specification.",
+        "use_cases": [
+            "Multi-cluster failover",
+            "High availability",
+            "Disaster recovery",
+            "Load balancing across clusters"
+        ],
+        "capabilities": [
+            "Linkerd service mesh",
+            "Automatic failover",
+            "Proxy injection",
+            "Consistent deployment configuration",
+            "Multi-cluster support"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_service-mesh_setup-automatic-multi-cluster-failover(don't-use-this)--chunk-1",
+        "name": "Setup Automatic Multi-cluster Failover(Don't use this) .txt - Inject Linkerd proxy to your deployment",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes",
+            "Service Mesh"
+        ],
+        "description": "This section explains how to inject the Linkerd proxy into your Kubernetes deployment by adding an annotation to the deployment specification. It demonstrates the process by showing the deployment specification before and after adding the annotation. Before adding the annotation, there is only one container running inside the pod. After adding the annotation, the Linkerd proxy is automatically injected, resulting in two containers running inside the pod. This allows the application to benefit from the features provided by the Linkerd service mesh, such as traffic management, observability, and security.",
+        "use_cases": [
+            "Enabling service mesh capabilities for your application",
+            "Improving observability and monitoring of your application",
+            "Enhancing security and traffic management for your application"
+        ],
+        "capabilities": [
+            "Automatic injection of Linkerd proxy",
+            "Monitoring with Prometheus integration",
+            "Traffic management",
+            "Observability",
+            "Security"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_service-mesh_setup-automatic-multi-cluster-failover(don't-use-this)--chunk-2",
+        "name": "Setup Automatic Multi-cluster Failover(Don't use this) .txt - Skip Protocol Detection",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes",
+            "Service Mesh"
+        ],
+        "description": "This section explains how to skip protocol detection for certain protocols that interact poorly with Linkerd's automatic protocol detection mechanism. It provides a list of common protocols like SMTP, MySQL, Redis, etc., that should be skipped. It also explains how to skip these protocols by adding an annotation to the deployment specification. This is important to ensure that applications using these protocols work as expected when using Linkerd.",
+        "use_cases": [
+            "Enabling Linkerd to work with protocols that interact poorly with its automatic protocol detection mechanism",
+            "Ensuring applications using protocols like SMTP, MySQL, Redis, etc., work as expected when using Linkerd",
+            "Configuring Linkerd to skip protocol detection for specific ports used by applications"
+        ],
+        "capabilities": [
+            "Skip protocol detection",
+            "Annotation to skip outbound ports",
+            "Support for common protocols like SMTP, MySQL, Redis, etc.",
+            "Ability to specify custom ports to skip",
+            "Testing in canary/baseline environments before production deployment"
+        ],
+        "references": [
+            "https://linkerd.io/2.12/features/protocol-detection/",
+            "https://docs.google.com/document/d/1PMLoinV99uGTYAN1ude2KbfxuIi5jy3McnnXENlzKNY/edit#heading=h.cshyx5e9e6kp",
+            "https://github.com/servicemeshinterface/smi-spec/blob/main/apis/traffic-split/v1alpha3/traffic-split.md",
+            "https://github.com/razorpay/kube-manifests",
+            "https://razorpay.slack.com/archives/C012RFFR6G2/p1663048824128949>",
+            "https://grafana.np.razorpay.in/d/linkerd-deployment/linkerd-deployment?orgId=1&refresh=1m>",
+            "https://grafana.np.razorpay.in/d/linkerd-multicluster/linkerd-multicluster?orgId=1>",
+            "https://grafana.np.razorpay.in/d/linkerd-health/linkerd-health?orgId=1>"
+        ]
+    }
+]

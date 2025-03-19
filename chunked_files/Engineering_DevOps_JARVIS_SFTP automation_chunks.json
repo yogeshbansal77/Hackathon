@@ -1,0 +1,149 @@
+[
+    {
+        "id": "engineering_devops_jarvis_sftp-automation-chunk-0",
+        "name": "SFTP automation.txt - Problem :question:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section explains that various teams within Razorpay, such as tech-support, developers, operations, and banking teams, require SFTP user accounts to be created on the company's SFTP server (sftp.razorpay.com). Currently, this process involves raising a Jira ticket and waiting for the DevOps team to handle the request. However, there have been instances where tasks could not be completed promptly due to the DevOps team being on leave or unavailable, leading to escalations.",
+        "use_cases": [
+            "Tech-support teams require SFTP user accounts",
+            "Developers require SFTP user accounts",
+            "Operations teams require SFTP user accounts",
+            "Banking teams require SFTP user accounts"
+        ],
+        "capabilities": [
+            "SFTP user account creation",
+            "Jira ticketing system",
+            "DevOps team management of SFTP user accounts",
+            "Escalation process for delayed SFTP user account creation"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_jarvis_sftp-automation-chunk-1",
+        "name": "SFTP automation.txt - Solution :magic_wand:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section explains a new SFTP automation system that allows users to create SFTP accounts without relying on DevOps. Users can request an SFTP account through the Jarvis platform, and their manager can approve the request. Once approved, the SFTP account is instantly created and ready to use. This process aims to make the lives of SFTP stakeholders easier by removing the dependency on DevOps for account creation.",
+        "use_cases": [
+            "Streamlining SFTP account creation process",
+            "Enabling self-service SFTP account requests",
+            "Reducing dependency on DevOps for SFTP account management",
+            "Providing a centralized platform (Jarvis) for SFTP account requests and approvals"
+        ],
+        "capabilities": [
+            "Request SFTP account through Jarvis platform",
+            "Manager approval for SFTP account requests",
+            "Instant SFTP account creation upon approval",
+            "SFTP actions and approvals tabs on Jarvis platform"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_jarvis_sftp-automation-chunk-2",
+        "name": "SFTP automation.txt - How to navigate to SFTP actions and approvals tab on jarvis :mag:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section provides visual guidance on how to navigate to the SFTP actions and approvals tab within the Jarvis platform. It includes two screenshots: one showing the path to access the SFTP actions, and another displaying the SFTP approvals interface. The purpose is to help users locate and utilize the SFTP-related functionalities offered by the platform.",
+        "use_cases": [
+            "Accessing SFTP actions within the Jarvis platform",
+            "Viewing and managing SFTP approvals",
+            "Automating SFTP-related tasks",
+            "Monitoring SFTP activities and approvals"
+        ],
+        "capabilities": [
+            "SFTP actions navigation",
+            "SFTP approvals interface",
+            "Visual guidance with screenshots",
+            "Centralized SFTP management",
+            "SFTP automation capabilities"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/96a48c7c912de29503996ab0dd9f3c04.png",
+            "https://alpha.razorpay.com/_static/file/790ee0958a0638c5326fa7fe9d54667c.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_jarvis_sftp-automation-chunk-3",
+        "name": "SFTP automation.txt - SFTP Approval Conditions :hourglass_flowing_sand:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section outlines the approval process and IP whitelisting requirements for granting SFTP access to new merchants or banks. Managers and designated individuals can approve or reject SFTP access requests, and upon approval, the user's IP address range will be whitelisted on the SFTP server to allow access.",
+        "use_cases": [
+            "Granting SFTP access to new merchants or banks",
+            "Approving or rejecting SFTP access requests",
+            "Whitelisting IP address ranges for approved SFTP users"
+        ],
+        "capabilities": [
+            "SFTP access approval process",
+            "SFTP admin roles",
+            "Approve and reject buttons for SFTP requests",
+            "IP whitelisting for approved SFTP users",
+            "Support for multiple IP-CIDR ranges",
+            "Automated user creation and IP whitelisting after approval"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/e472ef9e2e1dae8071955d6788e576ef.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_jarvis_sftp-automation-chunk-4",
+        "name": "SFTP automation.txt - IP whitelisting :white_circle:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section provides information about sharing SFTP access details with banks or merchants once a user account has been created. It suggests that after setting up a user account, certain credentials or access details can be shared with external parties to allow them to access the SFTP server. This is likely part of a process for securely transferring files or data between organizations.",
+        "use_cases": [
+            "Sharing SFTP access details with banks or merchants",
+            "Enabling external parties to access an SFTP server",
+            "Securely transferring files or data between organizations",
+            "Providing access credentials after creating a user account"
+        ],
+        "capabilities": [
+            "User account creation",
+            "SFTP access details sharing",
+            "External party access to SFTP server",
+            "Secure file or data transfer"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_jarvis_sftp-automation-chunk-5",
+        "name": "SFTP automation.txt - SFTP access details :information_source:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section provides the necessary details for establishing an SFTP (Secure File Transfer Protocol) connection to a specific server, likely for the purpose of automating file transfers or data exchange. It includes information such as the hostname, port number, authentication method (using a private key), the path for accessing files or directories on the server, and the username required for authentication. These details are crucial for setting up secure remote access and enabling automated processes to interact with the server.",
+        "use_cases": [
+            "Automating file transfers between local systems and the specified SFTP server",
+            "Enabling secure remote access to files or directories on the server",
+            "Integrating with third-party applications or services that require SFTP connectivity",
+            "Implementing automated backup or synchronization processes involving the SFTP server"
+        ],
+        "capabilities": [
+            "SFTP server connection",
+            "Private key authentication",
+            "Secure file transfer",
+            "Remote file access",
+            "Automated processes",
+            "Integration with third-party systems"
+        ],
+        "references": []
+    }
+]

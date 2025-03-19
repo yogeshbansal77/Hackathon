@@ -1,0 +1,186 @@
+[
+    {
+        "id": "engineering_databases_onboarding_access-requests-chunk-0",
+        "name": "Access Requests.txt - JIRA Access",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Onboarding"
+        ],
+        "description": "This section explains the process of gaining access to the Jira issue tracking system used within the organization. It mentions that access is granted through a Single Sign-On (SSO) system, and users can log in to Jira through the Microsoft Apps portal. Initially, after logging in, users may not have access to view or create Jira issues. To obtain access, users need to request it by contacting the IT team through the #tech_it Slack channel and mentioning @officeit. Once the IT team confirms the access, users need to log out and log back in after 30 minutes to gain access to Jira and be able to view and create new issues.",
+        "use_cases": [
+            "Gaining access to Jira issue tracking system",
+            "Requesting Jira access from IT team",
+            "Logging in to Jira through SSO",
+            "Viewing and creating Jira issues"
+        ],
+        "capabilities": [
+            "Single Sign-On (SSO) access to Jira",
+            "Microsoft Apps portal for Jira login",
+            "Slack channel for requesting Jira access",
+            "IT team approval for granting Jira access",
+            "Ability to view and create Jira issues"
+        ],
+        "references": [
+            "https://myapplications.microsoft.com/"
+        ]
+    },
+    {
+        "id": "engineering_databases_onboarding_access-requests-chunk-1",
+        "name": "Access Requests.txt - Adding in email groups",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Onboarding"
+        ],
+        "description": "This section explains the process for a new member of the DBOPS team at Razorpay to get added to the necessary Google/email groups. It mentions two specific email groups (devops.team@razorpay.com and devops@razorpay.com) that the new member needs to be added to. The section provides two methods to achieve this: either by pinging the #tech_it Slack group and tagging @officeit, or by raising a Jira ticket under the 'IT support project' with the option 'Google Group ID' and selecting 'Adding members to Google Groups'.",
+        "use_cases": [
+            "Onboarding a new member to the DBOPS team at Razorpay",
+            "Adding a team member to necessary email groups",
+            "Requesting access to specific Google/email groups",
+            "Utilizing Slack or Jira for IT support requests"
+        ],
+        "capabilities": [
+            "Adding members to email groups",
+            "Requesting IT support via Slack",
+            "Raising Jira tickets for IT support",
+            "Accessing specific Google Groups",
+            "Onboarding process for new team members",
+            "IT support for email group management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_onboarding_access-requests-chunk-2",
+        "name": "Access Requests.txt - POC Account Access",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Onboarding"
+        ],
+        "description": "This section explains that Razorpay has a separate AWS account dedicated for conducting Proof of Concept (POC) demonstrations or trials. To gain access to this POC account, a request needs to be submitted through the 'My Access' portal provided by Microsoft. The section provides an example link to a service desk ticket, likely related to requesting POC account access.",
+        "use_cases": [
+            "Conducting Proof of Concept (POC) demonstrations or trials",
+            "Accessing a dedicated AWS account for POC purposes",
+            "Requesting access to the POC account through the 'My Access' portal"
+        ],
+        "capabilities": [
+            "Separate AWS account for POC",
+            "Access request process",
+            "My Access portal",
+            "Service desk ticketing system"
+        ],
+        "references": [
+            "https://myaccess.microsoft.com/#/",
+            "https://razorpay.atlassian.net/servicedesk/customer/portal/1/ITS-6701>"
+        ]
+    },
+    {
+        "id": "engineering_databases_onboarding_access-requests-chunk-3",
+        "name": "Access Requests.txt - Stage Jump Server Access",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Onboarding"
+        ],
+        "description": "This section explains the process of obtaining access to the stage and production servers through a jump server. It involves raising two Jira tickets, one for obtaining a Duo account and another for bastion (jump server) access. Once approved, the user needs to install the Duo Mobile app on their phone and use the provided QR code to onboard to the Duo service, which is a two-factor authentication system required for accessing the servers.",
+        "use_cases": [
+            "Accessing stage and production servers",
+            "Obtaining secure remote access through a jump server",
+            "Setting up two-factor authentication (2FA) with Duo Mobile app",
+            "Raising Jira tickets for access requests"
+        ],
+        "capabilities": [
+            "Jira ticketing system",
+            "Duo two-factor authentication",
+            "Duo Mobile app",
+            "Jump server (bastion server)",
+            "Stage and production server access",
+            "Access approval process"
+        ],
+        "references": [
+            "https://myapplications.microsoft.com/"
+        ]
+    },
+    {
+        "id": "engineering_databases_onboarding_access-requests-chunk-4",
+        "name": "Access Requests.txt - Stage AWS Access",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Onboarding"
+        ],
+        "description": "This section appears to provide information or instructions related to obtaining temporary access to AWS resources for staging or testing purposes within the Razorpay organization. It includes links to specific tickets or requests (INFRA-490 and INFRA-2176) that may serve as examples or references for the process.",
+        "use_cases": [
+            "Granting temporary AWS access for staging or testing environments",
+            "Managing access requests for AWS resources within the organization",
+            "Referencing or tracking specific access request tickets or cases"
+        ],
+        "capabilities": [
+            "AWS access management",
+            "Temporary access provisioning",
+            "Access request tracking",
+            "Ticketing system integration"
+        ],
+        "references": [
+            "https://jira.corp.razorpay.com/browse/INFRA-490>/",
+            "https://razorpay.atlassian.net/browse/INFRA-2176>"
+        ]
+    },
+    {
+        "id": "engineering_databases_onboarding_access-requests-chunk-5",
+        "name": "Access Requests.txt - Prod AWS Access",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Onboarding"
+        ],
+        "description": "This section explains the process of requesting access to AWS stage and production environments. For the stage environment, users can request read-only or admin roles through the My Access portal. For the production environment, a DBOPS Jira request needs to be created and approved by the Director of DevOps, along with a background verification confirmation from HR.",
+        "use_cases": [
+            "Requesting access to AWS stage environment",
+            "Requesting read-only or admin roles for AWS stage environment",
+            "Requesting access to AWS production environment",
+            "Obtaining approval and background verification for AWS production access"
+        ],
+        "capabilities": [
+            "AWS stage environment access",
+            "AWS stage read-only role",
+            "AWS stage admin role",
+            "AWS production environment access",
+            "DBOPS Jira request",
+            "Director of DevOps approval",
+            "Background verification by HR"
+        ],
+        "references": [
+            "https://myaccess.microsoft.com/#/",
+            "https://razorpay.atlassian.net/browse/DBOPS-3291>"
+        ]
+    },
+    {
+        "id": "engineering_databases_onboarding_access-requests-chunk-6",
+        "name": "Access Requests.txt - github Access",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Onboarding"
+        ],
+        "description": "This section outlines the process for obtaining access to Razorpay's GitHub repositories. It explains that after getting approval from the DBOPS team, an INFRA ticket should be raised with the approved DBOPS ticket attached. The DevOps team will then assist in granting production access. To access GitHub, users need to log in via Single Sign-On (SSO). After that, the DevOps team needs to be requested to provide access to the specific repositories.",
+        "use_cases": [
+            "Obtaining access to Razorpay's GitHub repositories",
+            "Requesting production access from the DevOps team",
+            "Logging into GitHub via SSO",
+            "Requesting access to specific repositories from the DevOps team"
+        ],
+        "capabilities": [
+            "DBOPS ticket approval process",
+            "INFRA ticket board for requesting access",
+            "DevOps team assistance for production access",
+            "GitHub SSO login",
+            "DevOps team granting repository access"
+        ],
+        "references": [
+            "https://razorpay.atlassian.net/browse/INFRA-2316>",
+            "https://github.com/razorpay>"
+        ]
+    }
+]

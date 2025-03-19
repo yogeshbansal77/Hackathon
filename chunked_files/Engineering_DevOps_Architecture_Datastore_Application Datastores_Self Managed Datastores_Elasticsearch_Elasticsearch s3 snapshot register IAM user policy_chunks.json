@@ -1,0 +1,56 @@
+[
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_self-managed-datastores_elasticsearch_elasticsearch-s3-snapshot-register-iam-user-policy-chunk-0",
+        "name": "Elasticsearch s3 snapshot register IAM user policy.txt - IAM PassRole Policy",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "Self Managed Datastores",
+            "Elasticsearch"
+        ],
+        "description": "This section outlines an IAM (Identity and Access Management) policy that grants permission to the 'PassRole' action. PassRole allows an AWS service or resource to assume a specific role, enabling it to perform actions and access resources permitted by that role. This policy is likely used to grant Elasticsearch the necessary permissions to assume a role with access to an S3 bucket for snapshot operations.",
+        "use_cases": [
+            "Elasticsearch S3 snapshot operations",
+            "Granting AWS services/resources cross-account access",
+            "Enabling secure data transfer between AWS services"
+        ],
+        "capabilities": [
+            "IAM PassRole permission",
+            "Role assumption",
+            "Cross-service/account access control",
+            "Secure data transfer",
+            "Elasticsearch snapshot management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_self-managed-datastores_elasticsearch_elasticsearch-s3-snapshot-register-iam-user-policy-chunk-1",
+        "name": "Elasticsearch s3 snapshot register IAM user policy.txt - ElasticsearchHttpPut Policy",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "Self Managed Datastores",
+            "Elasticsearch"
+        ],
+        "description": "This section outlines an IAM policy that grants permissions for an Elasticsearch service to perform specific actions. It allows the service to assume a role named 'es-snapshot-role' and perform the 'ESHttpPut' action on a specific Elasticsearch domain. This policy enables the Elasticsearch service to upload data or snapshots to the specified domain.",
+        "use_cases": [
+            "Configuring IAM permissions for Elasticsearch service",
+            "Enabling Elasticsearch to upload data or snapshots",
+            "Securing access to Elasticsearch domains"
+        ],
+        "capabilities": [
+            "IAM role assumption",
+            "Elasticsearch HTTP PUT operation",
+            "Resource-level access control",
+            "Elasticsearch domain management",
+            "Snapshot management"
+        ],
+        "references": []
+    }
+]

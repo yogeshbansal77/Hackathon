@@ -1,0 +1,79 @@
+[
+    {
+        "id": "engineering_devops_processes_incident-management_incident-notifier-bot-chunk-0",
+        "name": "Incident Notifier Bot.txt - Problem",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section explains the problem that existed before the introduction of the Incident Notifier Bot at Razorpay. The IM Team had to constantly monitor critical Slack channels for any cross-postings or incidents reported by developers or bots, apart from those reported by Pager Duty. This manual monitoring process was difficult and time-consuming, as it required someone to be available 24/7 to initiate an incident and engage stakeholders to resolve the issue.",
+        "use_cases": [
+            "Monitoring critical Slack channels for incidents or issues",
+            "Initiating incidents and engaging stakeholders for issue resolution",
+            "Automating the process of incident notification and stakeholder engagement"
+        ],
+        "capabilities": [
+            "Monitoring Slack channels",
+            "Detecting cross-postings and incidents",
+            "Initiating incidents",
+            "Engaging stakeholders",
+            "Automating incident notification",
+            "Reducing manual effort"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_incident-notifier-bot-chunk-1",
+        "name": "Incident Notifier Bot.txt - Solution",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section explains that Incident Notifier Bots are automated systems designed to instantly notify a team (IM Team) whenever a user or bot posts a message in specific channels. These bots can also initiate a Zoom bridge to facilitate immediate collaboration among stakeholders. This solution has been implemented for multiple critical channels, such as #potential-outages and #financial-outages, to ensure prompt response and resolution of potential incidents.",
+        "use_cases": [
+            "Notifying the IM Team about messages posted in critical channels",
+            "Initiating a Zoom bridge for stakeholder collaboration",
+            "Monitoring and responding to potential outages",
+            "Monitoring and responding to financial outages"
+        ],
+        "capabilities": [
+            "Message monitoring",
+            "Instant notification",
+            "Zoom bridge initiation",
+            "Stakeholder engagement",
+            "Incident response",
+            "Outage monitoring"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_incident-notifier-bot-chunk-2",
+        "name": "Incident Notifier Bot.txt - Future Updates",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section outlines the future plans for enhancing the Incident Notifier Bot by creating a more generalized bot with additional functionalities. The new bot will have features like auto-documentation, ticket creation, and stakeholder engagement. Furthermore, the Incident Notifier Bot will be integrated with this generalized bot, allowing the Incident Notifier Bot to leverage the enhanced insights provided by the generalized bot for better incident management.",
+        "use_cases": [
+            "Automated documentation",
+            "Ticket creation",
+            "Stakeholder engagement",
+            "Enhanced incident insights"
+        ],
+        "capabilities": [
+            "Generalized bot",
+            "Auto-documentation",
+            "Ticket creation",
+            "Stakeholder engagement",
+            "Integration with Incident Notifier Bot",
+            "Enhanced incident insights"
+        ],
+        "references": []
+    }
+]

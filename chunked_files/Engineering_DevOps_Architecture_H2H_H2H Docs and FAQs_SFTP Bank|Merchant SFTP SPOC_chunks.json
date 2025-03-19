@@ -1,0 +1,587 @@
+[
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-bank|merchant-sftp-spoc-chunk-0",
+        "name": "SFTP Bank|Merchant SFTP SPOC.txt - BANK/Merchant",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be a table header that outlines the columns for listing contact information of banks or merchants involved in an integration or specific function. It suggests that the table will contain details such as the bank/merchant name, the integration or function they are involved in, the name of a single point of contact (SPOC) person, their email address, and phone number.",
+        "use_cases": [
+            "Maintaining a centralized repository of contact information for banks and merchants involved in various integrations or functions",
+            "Facilitating communication and coordination with specific banks or merchants for a particular integration or function",
+            "Providing a quick reference for locating the appropriate contact person and their details based on the integration or function"
+        ],
+        "capabilities": [
+            "Bank/Merchant identification",
+            "Integration/Function mapping",
+            "Single Point of Contact (SPOC) details",
+            "Email contact information",
+            "Phone contact information"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-bank|merchant-sftp-spoc-chunk-1",
+        "name": "SFTP Bank|Merchant SFTP SPOC.txt - Yesbank",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section provides information about the SFTP (Secure File Transfer Protocol) setup for Yes Bank, a financial institution in India. It specifies that Yes Bank uses SFTP for transferring e-statements (electronic statements) to merchants or customers. The section lists the contact person, Sapana Shahapur, and her email address for coordinating the SFTP setup and operations.",
+        "use_cases": [
+            "Secure file transfer of e-statements from Yes Bank to merchants or customers",
+            "Coordination and setup of SFTP operations with Yes Bank",
+            "Obtaining support or assistance for SFTP-related issues with Yes Bank"
+        ],
+        "capabilities": [
+            "SFTP file transfer",
+            "E-statement delivery",
+            "Contact person for SFTP operations",
+            "Email communication channel"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-bank|merchant-sftp-spoc-chunk-2",
+        "name": "SFTP Bank|Merchant SFTP SPOC.txt - AXIS",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to provide contact information for specific services or products offered by Axis Bank. It lists 'VAS' (potentially Value-Added Services) with a contact person's name and email address. It also mentions 'PowerAccess' and 'Transfer/Beneficiary' services, although without any contact details.",
+        "use_cases": [
+            "Contacting the bank's representative for Value-Added Services (VAS)",
+            "Inquiring about or accessing the bank's PowerAccess service",
+            "Inquiring about or accessing the bank's Transfer/Beneficiary service"
+        ],
+        "capabilities": [
+            "Value-Added Services (VAS)",
+            "PowerAccess",
+            "Transfer/Beneficiary"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-bank|merchant-sftp-spoc-chunk-3",
+        "name": "SFTP Bank|Merchant SFTP SPOC.txt - CITIBANK",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section provides information about the SFTP (Secure File Transfer Protocol) setup for Citibank, which is a financial institution. It specifies that Citibank uses the NACH (National Automated Clearing House) wrapper for file transfers, and lists Seema Shaw as the point of contact, providing her email address. This information is likely intended for merchants or businesses that need to exchange files securely with Citibank, perhaps for financial transactions or data exchange.",
+        "use_cases": [
+            "Secure file transfer between merchants/businesses and Citibank",
+            "Financial transactions",
+            "Data exchange"
+        ],
+        "capabilities": [
+            "SFTP (Secure File Transfer Protocol)",
+            "NACH (National Automated Clearing House) wrapper",
+            "Point of contact information"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-bank|merchant-sftp-spoc-chunk-4",
+        "name": "SFTP Bank|Merchant SFTP SPOC.txt - ICICI",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be a table or matrix with a single row labeled 'ICICI'. However, there is no additional information provided, making it difficult to determine the purpose or context of this table.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-bank|merchant-sftp-spoc-chunk-5",
+        "name": "SFTP Bank|Merchant SFTP SPOC.txt - RBL",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be listing contact information for individuals associated with RBL Bank and BharatPe, likely related to SFTP (Secure File Transfer Protocol) operations or support. It provides names, email addresses, and potentially roles or departments for these contacts.",
+        "use_cases": [
+            "SFTP support or operations for RBL Bank",
+            "SFTP support or operations for BharatPe",
+            "Contacting specific individuals for SFTP-related matters",
+            "Maintaining a contact list for SFTP stakeholders"
+        ],
+        "capabilities": [
+            "Contact information",
+            "Email addresses",
+            "Names",
+            "Roles or departments",
+            "Association with specific organizations (RBL Bank, BharatPe)"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-bank|merchant-sftp-spoc-chunk-6",
+        "name": "SFTP Bank|Merchant SFTP SPOC.txt - BHARATPE",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be a table or matrix with a single row containing the text 'SBI'. It is likely related to a banking or financial institution, possibly the State Bank of India (SBI). However, without additional context, it is difficult to determine the specific purpose or meaning of this table.",
+        "use_cases": [
+            "Potentially related to banking or financial services",
+            "Possibly a reference to the State Bank of India (SBI)",
+            "May be part of a larger document or system related to banking operations or transactions"
+        ],
+        "capabilities": [
+            "Tabular data representation",
+            "Abbreviation or acronym usage (SBI)"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-bank|merchant-sftp-spoc-chunk-7",
+        "name": "SFTP Bank|Merchant SFTP SPOC.txt - SBI",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be a table or a section header with a single row containing the text 'PNB'. It does not provide any meaningful information or explanation.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-bank|merchant-sftp-spoc-chunk-8",
+        "name": "SFTP Bank|Merchant SFTP SPOC.txt - PNB",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be a table or data structure with two columns: 'UBI' and 'recon'. However, there is no further information provided, so it's difficult to determine the exact context or purpose of this table.",
+        "use_cases": [
+            "Tracking or reconciling financial transactions",
+            "Mapping unique bank identifiers (UBI) to reconciliation data"
+        ],
+        "capabilities": [
+            "Data storage",
+            "Data organization",
+            "Potentially related to banking or financial systems"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-bank|merchant-sftp-spoc-chunk-9",
+        "name": "SFTP Bank|Merchant SFTP SPOC.txt - UBI",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be a table or a data structure with a single row containing the abbreviations 'AUSF' and 'recon'. Without additional context, it is difficult to determine the exact meaning or purpose of this section. However, it may be related to some kind of reconciliation process or data exchange involving an entity or system referred to as 'AUSF'.",
+        "use_cases": [
+            "Data reconciliation",
+            "Data exchange",
+            "System integration"
+        ],
+        "capabilities": [
+            "Reconciliation process",
+            "Data transfer",
+            "Abbreviation usage"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-bank|merchant-sftp-spoc-chunk-10",
+        "name": "SFTP Bank|Merchant SFTP SPOC.txt - AUSF",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be a table or matrix with a single row containing the abbreviation 'JKB' and several empty columns. Without additional context, it is difficult to determine the purpose or meaning of this table.",
+        "use_cases": [
+            "Displaying an abbreviation or code related to a specific entity or concept",
+            "Representing a table or matrix structure for organizing data",
+            "Providing placeholders or empty columns for potential future data entry or expansion"
+        ],
+        "capabilities": [
+            "Table or matrix representation",
+            "Abbreviation or code display",
+            "Empty column placeholders"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-bank|merchant-sftp-spoc-chunk-11",
+        "name": "SFTP Bank|Merchant SFTP SPOC.txt - JKB",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be a table or matrix with a single row containing the text 'FIRSTDATA(Fiserv)'. It is likely related to a financial institution or payment processor called FIRSTDATA, which is now owned by Fiserv. However, without additional context, it is difficult to determine the specific purpose or meaning of this table.",
+        "use_cases": [
+            "Financial transactions",
+            "Payment processing",
+            "Banking operations",
+            "Merchant services"
+        ],
+        "capabilities": [
+            "FIRSTDATA integration",
+            "Fiserv integration",
+            "Payment processing capabilities",
+            "Financial data management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-bank|merchant-sftp-spoc-chunk-12",
+        "name": "SFTP Bank|Merchant SFTP SPOC.txt - FIRSTDATA(Fiserv)",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be a table or a placeholder for a table related to MFU (Merchant File Upload), which is likely a file transfer process or mechanism used by FIRSTDATA (Fiserv) for exchanging data with merchants or financial institutions. However, the table itself is empty, suggesting that no specific details or information are provided in this particular section.",
+        "use_cases": [
+            "File transfer between FIRSTDATA (Fiserv) and merchants or financial institutions",
+            "Data exchange related to merchant transactions or financial operations"
+        ],
+        "capabilities": [
+            "MFU (Merchant File Upload)",
+            "File transfer mechanism",
+            "Data exchange"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-bank|merchant-sftp-spoc-chunk-13",
+        "name": "SFTP Bank|Merchant SFTP SPOC.txt - MFU",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be a table or a placeholder for information related to NSDL (National Securities Depository Limited), which is a central securities depository in India. However, the table is empty, and no specific details are provided.",
+        "use_cases": [
+            "Potential use cases cannot be inferred from the limited information provided."
+        ],
+        "capabilities": [
+            "No specific capabilities or features are described in this section."
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-bank|merchant-sftp-spoc-chunk-14",
+        "name": "SFTP Bank|Merchant SFTP SPOC.txt - NSDL",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be a table or matrix with a single row containing the text 'FreeCharge'. It is likely related to some aspect of the SFTP Bank/Merchant SFTP SPOC documentation, but without additional context, it is difficult to determine the specific purpose or meaning of this table.",
+        "use_cases": [
+            "Potentially related to FreeCharge, a digital payments platform",
+            "Possibly a configuration or mapping table for SFTP connections or file transfers",
+            "Could be a placeholder or example section in the documentation"
+        ],
+        "capabilities": [
+            "Tabular data representation",
+            "Single row/entry",
+            "Textual content"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-bank|merchant-sftp-spoc-chunk-15",
+        "name": "SFTP Bank|Merchant SFTP SPOC.txt - FreeCharge",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be a table or a list containing a single entry 'TATA AIA'. It is unclear from the provided content what this entry represents or what the context is. Without additional information, it is difficult to provide a meaningful description.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-bank|merchant-sftp-spoc-chunk-16",
+        "name": "SFTP Bank|Merchant SFTP SPOC.txt - TATA AIA",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be a table or a list containing a single entry 'MTNL', which could potentially be an abbreviation or an acronym related to the SFTP Bank or Merchant SFTP SPOC documentation. However, without additional context, it is difficult to provide a meaningful description of what this section explains.",
+        "use_cases": [
+            "Listing or tabulating entities related to SFTP Bank or Merchant SFTP SPOC",
+            "Providing an overview or reference to entities involved in the SFTP process"
+        ],
+        "capabilities": [
+            "Listing entities",
+            "Tabular data representation"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-bank|merchant-sftp-spoc-chunk-17",
+        "name": "SFTP Bank|Merchant SFTP SPOC.txt - MTNL",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be a table or a placeholder for credentials related to MTNL (Mahanagar Telephone Nigam Limited), which is an Indian telecommunications service provider. However, the table is empty, and no specific information about credentials is provided.",
+        "use_cases": [
+            "Storing or referencing credentials for MTNL",
+            "Documenting SFTP (Secure File Transfer Protocol) access for MTNL",
+            "Providing a template or structure for credential information"
+        ],
+        "capabilities": [
+            "Credential management",
+            "SFTP access",
+            "Documentation template"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-bank|merchant-sftp-spoc-chunk-18",
+        "name": "SFTP Bank|Merchant SFTP SPOC.txt - CRED",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be related to a specific entity or organization named 'COURSERA'. However, the content provided is minimal and does not provide enough context to determine the purpose or explanation of this section.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-bank|merchant-sftp-spoc-chunk-19",
+        "name": "SFTP Bank|Merchant SFTP SPOC.txt - COURSERA",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be a table or list containing a single entry 'SPORTA(dream11)'. It is unclear from the provided content what this entry represents or what its purpose is within the context of the SFTP Bank|Merchant SFTP SPOC documentation.",
+        "use_cases": [
+            "Listing or referencing a specific entity or service",
+            "Providing an example or sample entry",
+            "Documenting a configuration or setup detail"
+        ],
+        "capabilities": [
+            "Tabular data representation",
+            "Entity or service identification"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-bank|merchant-sftp-spoc-chunk-20",
+        "name": "SFTP Bank|Merchant SFTP SPOC.txt - SPORTA(dream11)",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be a table or a section header related to Dream11, which is likely a merchant or a service provider. However, the provided content is minimal and does not provide enough information to fully understand the context or purpose of this section.",
+        "use_cases": [
+            "Potentially related to Dream11's integration or services with the SFTP Bank/Merchant system",
+            "Possibly a section header or a placeholder for additional information about Dream11"
+        ],
+        "capabilities": [
+            "Dream11 integration",
+            "Dream11 services"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-bank|merchant-sftp-spoc-chunk-21",
+        "name": "SFTP Bank|Merchant SFTP SPOC.txt - DREAM11",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be a table or list containing a single entry 'JIOMART'. However, there is no additional information provided, making it difficult to determine the context or purpose of this section.",
+        "use_cases": [
+            "Listing or referencing a specific entity or service named 'JIOMART'",
+            "Potentially a placeholder or template for future content related to 'JIOMART'"
+        ],
+        "capabilities": [
+            "Displaying a single entry or item",
+            "Potentially intended for tabular or list-based data representation"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-bank|merchant-sftp-spoc-chunk-22",
+        "name": "SFTP Bank|Merchant SFTP SPOC.txt - JIOMART",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be a placeholder or a section heading without any substantial content. The single line '| PLAYGAMES |    |    |    |    |' does not provide any meaningful information or explanation.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-bank|merchant-sftp-spoc-chunk-23",
+        "name": "SFTP Bank|Merchant SFTP SPOC.txt - PLAYGAMES",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be a table or list containing a single entry 'AJIO', which could potentially be related to a specific merchant or service provider. However, without additional context, it is difficult to provide a more detailed explanation.",
+        "use_cases": [
+            "Listing or referencing merchants or service providers",
+            "Categorizing or grouping merchants or services",
+            "Providing a reference or index for further information"
+        ],
+        "capabilities": [
+            "Merchant or service listing",
+            "Categorization",
+            "Indexing"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-bank|merchant-sftp-spoc-chunk-24",
+        "name": "SFTP Bank|Merchant SFTP SPOC.txt - AJIO",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be a table or matrix with a single row containing the word 'WIRECARD'. It is likely related to a payment gateway or financial service provider called Wirecard, but without additional context, it is difficult to determine the specific purpose or meaning of this table.",
+        "use_cases": [
+            "Payment gateway integration",
+            "Financial service provider integration",
+            "Merchant account setup",
+            "Transaction processing"
+        ],
+        "capabilities": [
+            "Wirecard integration",
+            "Payment processing",
+            "Financial services"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-bank|merchant-sftp-spoc-chunk-25",
+        "name": "SFTP Bank|Merchant SFTP SPOC.txt - WIRECARD",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be a placeholder or a template for a section related to Facebook, as it only contains a single line with the word 'FACEBOOK' enclosed in vertical bars. Without any additional context or content, it is difficult to provide a meaningful description of what this section explains.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-bank|merchant-sftp-spoc-chunk-26",
+        "name": "SFTP Bank|Merchant SFTP SPOC.txt - FACEBOOK",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be a table or list containing information about a specific entity, likely a company or organization named 'BAJAJ FINSERV'. It provides details such as the type of reports they receive, a contact person's name (Sagar Talele), and their email address (sagar.talele@bajajfinserv.in). This information could be related to the SFTP (Secure File Transfer Protocol) setup or configuration for exchanging files or reports between the mentioned entity and the bank or merchant.",
+        "use_cases": [
+            "Facilitating secure file transfer between the bank/merchant and BAJAJ FINSERV",
+            "Exchanging reports or data between the two parties",
+            "Maintaining contact information for SFTP-related communication",
+            "Documenting the SFTP setup or configuration for BAJAJ FINSERV"
+        ],
+        "capabilities": [
+            "SFTP file transfer",
+            "Report exchange",
+            "Contact information management",
+            "SFTP configuration documentation"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sftp-bank|merchant-sftp-spoc-chunk-27",
+        "name": "SFTP Bank|Merchant SFTP SPOC.txt - BAJAJ FINSERV",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be a placeholder or a template for content that is yet to be filled in. It does not provide any meaningful information or explanation.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    }
+]

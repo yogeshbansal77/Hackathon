@@ -1,0 +1,74 @@
+[
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_create-an-h2h-sftp-push-job-chunk-0",
+        "name": "Create an H2H SFTP Push Job.txt - Beam push config file changes:-",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains the process of configuring and deploying an SFTP push job in the Beam application. It provides instructions on how to add a new push job configuration to the push_jobs.json file in the Beam repository, and how to securely store the authentication credentials (password, passphrase, or private key) in the credstash secret management system. It also outlines the steps to deploy the updated configuration to the production or staging environment using the CI/CD pipeline.",
+        "use_cases": [
+            "Adding a new SFTP push job configuration to the Beam application",
+            "Securely storing and managing authentication credentials for SFTP push jobs",
+            "Deploying updated push job configurations to production or staging environments"
+        ],
+        "capabilities": [
+            "Configuring SFTP push jobs",
+            "Storing secrets in credstash",
+            "Password-based authentication",
+            "Key-based authentication",
+            "Continuous Integration and Deployment (CI/CD)",
+            "Deployment pipeline"
+        ],
+        "references": [
+            "https://deploy.razorpay.com/#/applications/beam/executions?pipeline=Prod%20Beam%20Deployment",
+            "https://alpha.razorpay.com/_static/file/44764ce68b52e8ce6e079fe3fe060b17.png",
+            "https://github.com/razorpay/beam>",
+            "https://github.com/razorpay/beam/pull/607/files>",
+            "https://github.com/razorpay/beam/blob/master/conf/push_jobs.json>"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_create-an-h2h-sftp-push-job-chunk-1",
+        "name": "Create an H2H SFTP Push Job.txt - Deploying your push config changes:-",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains the process of deploying configuration changes for an SFTP push job. It involves running a pipeline by providing the latest commit ID and clicking the 'Start manual Execution' button. Additionally, it mentions that in certain cases, banks or merchants may request Proof of Concept (POC) details from Razorpay, and the section provides guidance on the types of personnel information that can be shared in such scenarios.",
+        "use_cases": [
+            "Deploying configuration changes for an SFTP push job",
+            "Running a pipeline with the latest commit ID",
+            "Providing Proof of Concept (POC) details to banks or merchants upon request"
+        ],
+        "capabilities": [
+            "Manual execution of a pipeline",
+            "Providing commit ID for deployment",
+            "Sharing personnel information (Account Manager, Team Manager, Support Manager/Finops Manager) for POC scenarios"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/f07461cc1f93d66946506c61af048c74.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_create-an-h2h-sftp-push-job-chunk-2",
+        "name": "Create an H2H SFTP Push Job.txt - None",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section does not contain any content or explanation. It appears to be an empty section, possibly a placeholder or a section that has not been filled out yet.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    }
+]

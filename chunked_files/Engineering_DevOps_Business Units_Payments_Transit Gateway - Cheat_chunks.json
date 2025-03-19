@@ -1,0 +1,173 @@
+[
+    {
+        "id": "engineering_devops_business-units_payments_transit-gateway---cheat-chunk-0",
+        "name": "Transit Gateway - Cheat.txt - Transit Gateway",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section appears to be an introduction to the concept of Transit Gateway, which is likely a networking service or feature offered by a cloud provider. However, since the content provided is minimal, it's difficult to provide a detailed explanation. The introduction section typically sets the context and provides an overview of the topic being discussed.",
+        "use_cases": [
+            "The use cases are not explicitly mentioned or implied in the given content."
+        ],
+        "capabilities": [
+            "The capabilities or features are not described in the given content."
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_business-units_payments_transit-gateway---cheat-chunk-1",
+        "name": "Transit Gateway - Cheat.txt - Introduction",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section introduces the concept of AWS Transit Gateway, which is a centralized network hub that simplifies connectivity between Virtual Private Clouds (VPCs) and on-premises networks. It acts as a cloud router, eliminating the need for complex peering relationships by allowing new connections to be made only once. Transit Gateway can scale elastically based on network traffic volume, and Inter-Region peering enables connecting Transit Gateways across different AWS Regions using the AWS global network.",
+        "use_cases": [
+            "Connecting multiple VPCs and on-premises networks through a central hub",
+            "Simplifying network architecture and reducing complex peering relationships",
+            "Enabling elastic scaling based on network traffic volume",
+            "Facilitating Inter-Region connectivity between Transit Gateways"
+        ],
+        "capabilities": [
+            "Network transit hub",
+            "Centralized connectivity",
+            "Elastic scaling",
+            "Inter-Region peering",
+            "Cloud router",
+            "Simplified network architecture"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/21307efcca5f070c219950b7e1f73942.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_business-units_payments_transit-gateway---cheat-chunk-2",
+        "name": "Transit Gateway - Cheat.txt - Components",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section appears to be introducing the concept of 'Attachments' in the context of Transit Gateway, which is a networking service offered by cloud providers. It suggests that various resources or components can be 'attached' to the Transit Gateway, allowing for connectivity and communication between them. However, the section does not provide specific details about what types of resources can be attached.",
+        "use_cases": [
+            "Enabling communication between different resources or components within a cloud environment",
+            "Establishing connectivity between on-premises networks and cloud resources",
+            "Facilitating communication between resources across different accounts or virtual private clouds (VPCs)",
+            "Implementing a centralized networking hub for managing and controlling network traffic"
+        ],
+        "capabilities": [
+            "Attachments",
+            "Connectivity",
+            "Communication",
+            "Centralized networking",
+            "Resource integration",
+            "Network traffic management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_business-units_payments_transit-gateway---cheat-chunk-3",
+        "name": "Transit Gateway - Cheat.txt - Attachments: We can attach the following",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section outlines the various components that can be attached to a Transit Gateway, which acts as a central hub for interconnecting different network resources. It allows connecting Virtual Private Clouds (VPCs), Direct Connect Gateways for on-premises connectivity, other Transit Gateways through peering, and VPN Connections for secure remote access.",
+        "use_cases": [
+            "Centralized network connectivity and routing between VPCs",
+            "Hybrid cloud connectivity with on-premises data centers",
+            "Secure remote access for remote users or sites",
+            "Interconnecting multiple Transit Gateways for large-scale networking"
+        ],
+        "capabilities": [
+            "VPC attachment",
+            "Direct Connect Gateway attachment",
+            "Transit Gateway peering",
+            "VPN Connection attachment"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_business-units_payments_transit-gateway---cheat-chunk-4",
+        "name": "Transit Gateway - Cheat.txt - Transit Gateway Route Table:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section explains that a Transit Gateway has a default route table, and it can have additional route tables. By default, all Transit Gateway attachments (such as VPCs or VPNs) are associated with the default route table. This allows for routing traffic between the attached resources through the Transit Gateway.",
+        "use_cases": [
+            "Routing traffic between VPCs and on-premises networks",
+            "Centralized routing for hybrid cloud architectures",
+            "Simplifying network management by using a single routing table"
+        ],
+        "capabilities": [
+            "Default route table",
+            "Additional route tables",
+            "Associating attachments with route tables"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_business-units_payments_transit-gateway---cheat-chunk-5",
+        "name": "Transit Gateway - Cheat.txt - Associations:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section likely explains the concept of 'Associations' in the context of Transit Gateway, which is a networking service provided by cloud providers like AWS. Associations refer to the connections or links established between different resources or components within the Transit Gateway architecture. This allows for efficient routing and communication between various network components, enabling seamless integration and connectivity across different environments.",
+        "use_cases": [
+            "Connecting Virtual Private Clouds (VPCs) to the Transit Gateway",
+            "Establishing communication between on-premises data centers and cloud resources",
+            "Enabling secure and efficient data transfer between different AWS regions or accounts",
+            "Facilitating hybrid cloud deployments by integrating on-premises infrastructure with cloud resources"
+        ],
+        "capabilities": [
+            "Associating VPCs with Transit Gateway",
+            "Associating Direct Connect gateways or VPNs with Transit Gateway",
+            "Configuring routing tables and route propagation",
+            "Enabling cross-account and cross-region connectivity",
+            "Providing centralized network management and monitoring",
+            "Supporting high availability and fault tolerance"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_business-units_payments_transit-gateway---cheat-chunk-6",
+        "name": "Transit Gateway - Cheat.txt - Route Propagation:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section explains how different network resources (VPCs, VPN connections, Direct Connect gateways, and peering attachments) can propagate routes to a Transit Gateway route table. It describes the different mechanisms used by each resource to propagate routes, such as dynamic propagation using BGP for VPN connections and Direct Connect gateways, and static routes for VPCs and peering attachments.",
+        "use_cases": [
+            "Connecting VPCs to on-premises networks via Transit Gateway",
+            "Establishing hybrid cloud connectivity using Transit Gateway",
+            "Enabling communication between VPCs through Transit Gateway peering attachments",
+            "Centralized routing and traffic control using Transit Gateway route tables"
+        ],
+        "capabilities": [
+            "Route propagation",
+            "Static routes",
+            "Dynamic routing (BGP)",
+            "VPC attachments",
+            "VPN connections",
+            "Direct Connect gateways",
+            "Peering attachments"
+        ],
+        "references": []
+    }
+]

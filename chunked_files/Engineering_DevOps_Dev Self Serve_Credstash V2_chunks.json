@@ -1,0 +1,186 @@
+[
+    {
+        "id": "engineering_devops_dev-self-serve_credstash-v2-chunk-0",
+        "name": "Credstash V2.txt - Introduction",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section introduces two tools, Credstash and Kubestash, used for managing secrets in different application environments at Razorpay. Credstash is a utility tool that stores secret values in a DynamoDB table, making it easier for developers and DevOps teams to manage sensitive information. Kubestash, on the other hand, is a tool that runs periodically (every 10 minutes) in various environments, retrieving secrets from DynamoDB tables and pushing them to Kubernetes secrets, ensuring that applications have access to the necessary secrets.",
+        "use_cases": [
+            "Securely storing and managing sensitive information (secrets) for applications across different environments",
+            "Automating the process of retrieving and distributing secrets to applications running in Kubernetes clusters",
+            "Providing a centralized and controlled way of managing secrets for development and production environments"
+        ],
+        "capabilities": [
+            "Credstash: Storing secret values in DynamoDB tables",
+            "Kubestash: Retrieving secrets from DynamoDB tables",
+            "Kubestash: Pushing secrets to Kubernetes secrets",
+            "Kubestash: Periodic execution (every 10 minutes) to keep secrets up-to-date",
+            "Centralized secrets management for applications",
+            "Separation of concerns between secrets storage (Credstash) and distribution (Kubestash)"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_credstash-v2-chunk-1",
+        "name": "Credstash V2.txt - Secrets Convention",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains the convention or format for storing secrets in Credstash UI and kubestash tables. The format is 'namespace/secret-name/KEY', where KEY is in capital letters and follows a specific regex pattern. This convention ensures that secrets are stored in a consistent and organized manner, making it easier to manage and retrieve them.",
+        "use_cases": [
+            "Storing secrets in Credstash UI",
+            "Storing secrets in kubestash tables",
+            "Retrieving secrets from Credstash UI or kubestash tables",
+            "Maintaining consistency and organization of secrets"
+        ],
+        "capabilities": [
+            "Defining a convention for storing secrets",
+            "Enforcing a specific format for secret names",
+            "Validating secret names against a regex pattern",
+            "Separating secrets into namespace, name, and key components",
+            "Ensuring consistency across Credstash UI and kubestash tables"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_credstash-v2-chunk-2",
+        "name": "Credstash V2.txt - Why V2?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains the motivation behind the development of Credstash V2. The previous version (V1) had limited functionality, only allowing users to add or update secrets. However, as the number of applications grew, different use cases emerged, leading to increased overhead for DevOps teams in managing secrets. The V2 version aims to address these diverse use cases and streamline the secret management process.",
+        "use_cases": [
+            "Managing secrets across multiple applications",
+            "Handling different requirements for secret management",
+            "Reducing overhead for DevOps teams"
+        ],
+        "capabilities": [
+            "Adding secrets",
+            "Updating existing secrets",
+            "Addressing diverse use cases for secret management",
+            "Streamlining secret management process"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_credstash-v2-chunk-3",
+        "name": "Credstash V2.txt - Permissions and Invocations",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section appears to be introducing a new version of Credstash (V2) that aims to empower developers by providing them with self-service capabilities and reducing their reliance on DevOps teams. It suggests that Credstash V2 will enable developers to manage and access credentials or secrets more independently, thereby unblocking them and allowing them to continue their work without delays caused by dependencies on other teams.",
+        "use_cases": [
+            "Enabling developer self-service for credential/secret management",
+            "Reducing developer reliance on DevOps teams",
+            "Accelerating developer workflows by removing bottlenecks",
+            "Providing a more streamlined and efficient credential/secret management process"
+        ],
+        "capabilities": [
+            "Self-service credential/secret management for developers",
+            "Reduced dependency on DevOps teams",
+            "Faster unblocking of developers",
+            "Streamlined credential/secret management process",
+            "Improved developer productivity",
+            "Efficient credential/secret access and management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_credstash-v2-chunk-4",
+        "name": "Credstash V2.txt - Production Environment",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section outlines the access management guidelines for Credstash, a tool used to securely store and manage sensitive information (secrets) in a production environment. It explains that access to Credstash is granted by the IT team, and developers need to raise a JIRA ticket to request access. The section then describes four Google Groups (Credstash Developers, Credstash Tech Leads, Credstash Managers, and DevOps) and their respective permissions for performing various actions on secrets, such as listing, adding, updating, and comparing secrets.",
+        "use_cases": [
+            "Securely storing and managing sensitive information (secrets) in a production environment",
+            "Controlling access to sensitive information based on roles and responsibilities",
+            "Auditing and tracking changes to sensitive information",
+            "Collaborating on sensitive information management across teams"
+        ],
+        "capabilities": [
+            "Access management via Google Groups",
+            "Role-based access control (RBAC)",
+            "Listing secrets",
+            "Adding secrets",
+            "Updating secrets",
+            "Comparing secrets"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/credstash-v2-access-management-guide>"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_credstash-v2-chunk-5",
+        "name": "Credstash V2.txt - Stage Environment",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section outlines the access controls and permissions for different user groups in the Stage environment of the Credstash V2 system. It explains that there are four main groups: developers, Credstash Tech Leads, Credstash Managers, and the DevOps team. Each group has varying levels of access to perform actions such as transferring secrets, reading secrets, and deleting secrets. The section also mentions that when reading secrets, the values for any key will be hashed to base64.",
+        "use_cases": [
+            "Managing access controls for different user groups",
+            "Transferring and managing secrets in the Stage environment",
+            "Reading and retrieving secrets with base64 hashing",
+            "Deleting secrets (for specific groups)"
+        ],
+        "capabilities": [
+            "Transfer Secrets",
+            "Bulk Transfer Secret",
+            "Read Secrets",
+            "Delete Secrets",
+            "Access control based on user groups",
+            "Base64 hashing for secret values"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_credstash-v2-chunk-6",
+        "name": "Credstash V2.txt - Accessibility",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section outlines the accessibility and functionality of Credstash, a tool for securely storing and managing secrets across different environments. It provides a table that summarizes the available operations (e.g., listing, adding, updating, comparing, transferring, reading, and deleting secrets) and their compatibility with different environments or clusters. Additionally, it mentions some important notes regarding the handling of secret keys and their case sensitivity. The section also includes a list of URLs for accessing Credstash endpoints in various environments, such as stage, production, Singapore, and specific clusters like DE and Wallet.",
+        "use_cases": [
+            "Securely storing and managing sensitive information (secrets) across different environments",
+            "Accessing and managing secrets from different clusters or environments",
+            "Transferring secrets between environments or clusters",
+            "Comparing secrets across environments or clusters"
+        ],
+        "capabilities": [
+            "List secrets",
+            "Add secrets",
+            "Update secrets",
+            "Compare secrets",
+            "Transfer secrets",
+            "Bulk transfer secrets",
+            "Read secrets",
+            "Delete secrets",
+            "Case-insensitive key handling (in specific environments)",
+            "Base64 hashing of secret values (when reading)"
+        ],
+        "references": [
+            "https://credstash-ui.concierge.stage.razorpay.in/dist/>",
+            "https://credstash-ui.razorpay.com/dist/>",
+            "https://credstash-sg-ui.razorpay.com/dist/>",
+            "https://credstash-ui.razorpayx.com/dist/>",
+            "https://credstash-ui.de.razorpay.com/dist/>",
+            "https://credstash-ui.razorpaywallet.com/dist/>",
+            "https://credstash-capital-ui.razorpay.com/dist/>"
+        ]
+    }
+]

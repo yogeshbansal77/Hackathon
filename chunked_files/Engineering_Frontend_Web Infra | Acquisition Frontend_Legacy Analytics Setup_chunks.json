@@ -1,0 +1,55 @@
+[
+    {
+        "id": "engineering_frontend_web-infra-|-acquisition-frontend_legacy-analytics-setup-chunk-0",
+        "name": "Legacy Analytics Setup.txt - This is the analytics setup in <https://github.com/razorpay/razorpay.com>",
+        "breadcrumb": [
+            "Engineering",
+            "Frontend",
+            "Web Infra | Acquisition Frontend"
+        ],
+        "description": "This section provides a visual representation of the analytics setup used on the Razorpay.com website, which is hosted on GitHub. The image shows the configuration or architecture of the analytics system employed by Razorpay to track and analyze user interactions, behavior, and data on their website. This setup likely involves various analytics tools and services integrated into their website to gather insights and metrics for improving user experience and business operations.",
+        "use_cases": [
+            "Website analytics",
+            "User behavior tracking",
+            "Data analysis for business insights",
+            "Optimizing user experience"
+        ],
+        "capabilities": [
+            "Visual representation of analytics setup",
+            "Integration with analytics tools and services",
+            "Tracking user interactions and behavior",
+            "Gathering data and metrics",
+            "Providing insights for website optimization"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/9759cbbdb15676b9d67305b010fd77d2.png"
+        ]
+    },
+    {
+        "id": "engineering_frontend_web-infra-|-acquisition-frontend_legacy-analytics-setup-chunk-1",
+        "name": "Legacy Analytics Setup.txt - The setup in the new infra <https://github.com/razorpay/frontend-website> is different from this. Checkout <https://alpha.razorpay.com/repo/new-analytics-setup> for new setup",
+        "breadcrumb": [
+            "Engineering",
+            "Frontend",
+            "Web Infra | Acquisition Frontend"
+        ],
+        "description": "This section explains that the setup process for the legacy analytics system is different from the new infrastructure setup. It provides a link to the GitHub repository for the new frontend website, and another link to an internal Razorpay resource that contains information about the new analytics setup. This section implies that the documentation is for the legacy system, and users should refer to the provided resources for information on the new setup.",
+        "use_cases": [
+            "Migrating from the legacy analytics setup to the new infrastructure",
+            "Setting up the new analytics system in the new infrastructure",
+            "Referencing the new frontend website repository",
+            "Accessing internal Razorpay resources for the new analytics setup"
+        ],
+        "capabilities": [
+            "Legacy analytics setup",
+            "New infrastructure",
+            "Frontend website repository",
+            "Internal Razorpay resources",
+            "New analytics setup"
+        ],
+        "references": [
+            "https://github.com/razorpay/frontend-website>",
+            "https://alpha.razorpay.com/repo/new-analytics-setup>"
+        ]
+    }
+]

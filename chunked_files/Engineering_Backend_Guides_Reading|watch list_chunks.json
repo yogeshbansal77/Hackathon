@@ -1,0 +1,208 @@
+[
+    {
+        "id": "engineering_backend_guides_reading|watch-list-chunk-0",
+        "name": "Reading|watch list.txt - Go",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Guides"
+        ],
+        "description": "This section appears to provide an introduction or overview on how to get started with a particular technology or tool related to reading or managing a watch list. It likely explains the initial steps, prerequisites, or setup required to begin using the software or service effectively.",
+        "use_cases": [
+            "Reading or managing a watch list",
+            "Setting up or configuring a watch list application or tool",
+            "Learning how to use a watch list management system"
+        ],
+        "capabilities": [
+            "Getting started guide",
+            "Initial setup instructions",
+            "Prerequisites or requirements",
+            "Introductory overview",
+            "Onboarding process"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_backend_guides_reading|watch-list-chunk-1",
+        "name": "Reading|watch list.txt - Getting started",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Guides"
+        ],
+        "description": "This section provides two essential links to help beginners get started with the Go programming language. The first link is a tour that introduces the language's syntax and features through interactive coding exercises. The second link is the official Go FAQ, which answers common questions and addresses potential concerns for those new to Go.",
+        "use_cases": [
+            "Learning Go programming language",
+            "Understanding Go syntax and features",
+            "Addressing common questions and concerns about Go"
+        ],
+        "capabilities": [
+            "Interactive coding exercises",
+            "Introduction to Go syntax",
+            "Frequently Asked Questions (FAQ)",
+            "Beginner-friendly resources"
+        ],
+        "references": [
+            "https://tour.golang.org/welcome/1>",
+            "https://golang.org/doc/faq>"
+        ]
+    },
+    {
+        "id": "engineering_backend_guides_reading|watch-list-chunk-2",
+        "name": "Reading|watch list.txt - Getting going",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Guides"
+        ],
+        "description": "This section provides a list of resources to learn about two important concepts in Go programming language: Structs and Interfaces, and Concurrency. Structs and Interfaces are fundamental building blocks in Go that allow developers to create custom data types and define behavior through interfaces. Concurrency is a key feature of Go that enables writing efficient and scalable concurrent programs.",
+        "use_cases": [
+            "Learning about Structs and Interfaces in Go",
+            "Understanding Concurrency in Go",
+            "Exploring advanced Go programming concepts",
+            "Improving Go programming skills"
+        ],
+        "capabilities": [
+            "Structs",
+            "Interfaces",
+            "Concurrency",
+            "Data Types",
+            "Behavior Definition",
+            "Efficient Programming",
+            "Scalable Programming"
+        ],
+        "references": [
+            "https://www.calhoun.io/how-do-interfaces-work-in-go/>",
+            "https://www.integralist.co.uk/posts/go-interfaces/>",
+            "https://bencane.com/2021/02/15/golangs-interfaces-explained-with-mocks/>"
+        ]
+    },
+    {
+        "id": "engineering_backend_guides_reading|watch-list-chunk-3",
+        "name": "Reading|watch list.txt - Being idiomatic",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Guides"
+        ],
+        "description": "This section provides resources to learn about idiomatic practices in Go programming language. It emphasizes the importance of understanding and following idiomatic patterns and conventions to write clean, maintainable, and efficient Go code. The resources cover topics like effective use of context, concurrency patterns, and general best practices.",
+        "use_cases": [
+            "Learning idiomatic Go programming practices",
+            "Understanding effective use of context in Go",
+            "Exploring concurrency patterns and best practices in Go",
+            "Improving code quality and maintainability in Go projects"
+        ],
+        "capabilities": [
+            "context",
+            "concurrency",
+            "best practices",
+            "idiomatic patterns",
+            "code quality",
+            "maintainability"
+        ],
+        "references": [
+            "https://blog.golang.org/context>",
+            "https://www.youtube.com/watch?v=KBZlN0izeiY>",
+            "https://www.oreilly.com/library/view/concurrency-in-go/9781491941294/ch04.html>"
+        ]
+    },
+    {
+        "id": "engineering_backend_guides_reading|watch-list-chunk-4",
+        "name": "Reading|watch list.txt - Getting real",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Guides"
+        ],
+        "description": "This section provides valuable resources for learning and improving Go programming skills. It recommends reading the 'Effective Go' documentation and the 'Code Review Comments' wiki from the official Go project. Additionally, it suggests following the 'The Go Programming Language' book, which is well-organized and offers long-term value for learning Go.",
+        "use_cases": [
+            "Learning Go programming",
+            "Improving Go coding practices",
+            "Understanding Go code review guidelines",
+            "Gaining in-depth knowledge of Go language"
+        ],
+        "capabilities": [
+            "Effective Go documentation",
+            "Code Review Comments wiki",
+            "The Go Programming Language book",
+            "Well-organized learning resource",
+            "Long-term value for Go learning"
+        ],
+        "references": [
+            "https://golang.org/doc/effective_go.html>",
+            "https://github.com/golang/go/wiki/CodeReviewComments>",
+            "https://www.gopl.io>"
+        ]
+    },
+    {
+        "id": "engineering_backend_guides_reading|watch-list-chunk-5",
+        "name": "Reading|watch list.txt - Infra",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Guides"
+        ],
+        "description": "This section titled 'Getting real' seems to be an introduction or preface to a more detailed explanation about implementing or deploying the 'Reading|watch list.txt' functionality in a real-world or production environment. It likely sets the context for the subsequent sections that will provide more specific details on the infrastructure, configuration, and operational aspects required to make this feature or application work in a practical setting.",
+        "use_cases": [
+            "Deploying the 'Reading|watch list.txt' feature in a production environment",
+            "Configuring infrastructure for the 'Reading|watch list.txt' application",
+            "Operational considerations for running the 'Reading|watch list.txt' application"
+        ],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_backend_guides_reading|watch-list-chunk-6",
+        "name": "Reading|watch list.txt - Docker",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Guides"
+        ],
+        "description": "This section provides a link to the GitHub repository for the Go Foundation project by Razorpay. The purpose seems to be to understand the project layout or structure, which could be useful for developers who want to contribute to the project or learn from its codebase.",
+        "use_cases": [
+            "Understanding project structure and organization",
+            "Contributing to open-source projects",
+            "Learning from well-structured codebases"
+        ],
+        "capabilities": [
+            "Project layout",
+            "Open-source",
+            "Go programming language"
+        ],
+        "references": [
+            "https://github.com/razorpay/go-foundation/>"
+        ]
+    },
+    {
+        "id": "engineering_backend_guides_reading|watch-list-chunk-7",
+        "name": "Reading|watch list.txt - K8s",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Guides"
+        ],
+        "description": "This section provides a list of resources related to Docker and Kubernetes (K8s). It includes links to websites, GitHub repositories, and YouTube videos that offer tutorials, examples, and patterns for learning and working with these technologies. The resources cover topics such as Docker labs, Kubernetes by example, and Go programming patterns.",
+        "use_cases": [
+            "Learning Docker and Kubernetes",
+            "Exploring examples and patterns for Docker and Kubernetes",
+            "Studying Go programming patterns for building applications",
+            "Finding educational resources for infrastructure technologies"
+        ],
+        "capabilities": [
+            "Docker labs",
+            "Kubernetes tutorials",
+            "Go programming patterns",
+            "Educational videos",
+            "Example implementations",
+            "Open-source resources"
+        ],
+        "references": [
+            "https://github.com/tmrts/go-patterns>",
+            "https://dockerlabs.collabnix.com/>",
+            "https://www.youtube.com/watch?v=YFl2mCHdv24>",
+            "https://kubernetesbyexample.com/>",
+            "https://www.youtube.com/watch?v=X48VuDVv0do&t=18s>"
+        ]
+    }
+]

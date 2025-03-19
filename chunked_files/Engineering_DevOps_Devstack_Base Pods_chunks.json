@@ -1,0 +1,102 @@
+[
+    {
+        "id": "engineering_devops_devstack_base-pods-chunk-0",
+        "name": "Base Pods.txt - Introduction",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Devstack"
+        ],
+        "description": "This section explains that Base Pods are stable and continuously running deployments of services on the devstack environment. They provide a reliable testing environment for teams to quickly test their workflows without needing to redeploy their services every time. Base Pods offer a stable foundation for teams to collaborate and test their integrations with upstream and downstream services.",
+        "use_cases": [
+            "Providing a stable testing environment for teams",
+            "Enabling quick testing of workflows without redeploying services",
+            "Facilitating collaboration and integration testing between teams"
+        ],
+        "capabilities": [
+            "Stable deployments",
+            "Always running",
+            "Provide stable environment",
+            "Base Pod Routing"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devstack_base-pods-chunk-1",
+        "name": "Base Pods.txt - Base Pod Routing",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Devstack"
+        ],
+        "description": "This section explains Devstack's intelligent routing system, which ensures that incoming requests are handled by ephemeral deployments (temporary deployments created for specific services) whenever they are available. If an ephemeral deployment is not present, the request is handled by the base pod (a stable, long-running deployment). This allows developers to focus on creating ephemeral deployments only for the services they are working on, while relying on the base pods for all other dependencies.",
+        "use_cases": [
+            "Handling incoming requests for services with ephemeral deployments",
+            "Handling incoming requests for services without ephemeral deployments",
+            "Allowing developers to create ephemeral deployments only for services they are working on",
+            "Providing a stable base pod for handling requests for dependency services"
+        ],
+        "capabilities": [
+            "Intelligent routing",
+            "Ephemeral deployments",
+            "Base pods",
+            "Handling incoming requests",
+            "Dependency management",
+            "Guidelines for maintaining stable base pods"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/edf6f29ed17c31c46b5365815e983d62.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_devstack_base-pods-chunk-2",
+        "name": "Base Pods.txt - Base Pod Guidelines",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Devstack"
+        ],
+        "description": "This section provides guidelines and instructions for deploying base pods, which are fundamental components or building blocks for services in the Devstack environment. It likely explains the process, best practices, and considerations for setting up and configuring these base pods, which serve as a foundation for running and managing various services or applications.",
+        "use_cases": [
+            "Deploying base pods for a new service",
+            "Setting up a development or testing environment",
+            "Configuring base pods for specific service requirements",
+            "Scaling or updating existing base pod deployments"
+        ],
+        "capabilities": [
+            "Base pod deployment",
+            "Service configuration",
+            "Environment setup",
+            "Scaling and updating",
+            "Best practices",
+            "Guidelines"
+        ],
+        "references": [
+            "https://docs.google.com/document/d/1j3NSSJgBMPoAog0EyGkffknzQbjKYZTGsnheHFiMQys/edit?usp=sharing"
+        ]
+    },
+    {
+        "id": "engineering_devops_devstack_base-pods-chunk-3",
+        "name": "Base Pods.txt - Deploying Base Pods for a Service",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Devstack"
+        ],
+        "description": "This section explains the process of deploying the base pods (initial version) of a service for the first time, and how to update the base pods to the latest version running on the master branch. It involves setting specific labels and configurations in the local Helmfile, and updating the Spinnaker pipeline to automatically patch the deployments whenever the production pipeline runs.",
+        "use_cases": [
+            "Deploying the initial version (base pods) of a service",
+            "Updating the base pods to the latest version running on the master branch",
+            "Automating the update process for base pods using Spinnaker pipelines"
+        ],
+        "capabilities": [
+            "Local Helmfile configuration",
+            "Setting devstack_label and ttl values",
+            "Spinnaker pipeline integration",
+            "Automated deployment patching",
+            "Base pod deployment",
+            "Version updates for base pods"
+        ],
+        "references": []
+    }
+]

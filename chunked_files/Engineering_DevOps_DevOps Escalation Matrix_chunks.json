@@ -1,0 +1,59 @@
+[
+    {
+        "id": "engineering_devops_devops-escalation-matrix-chunk-0",
+        "name": "DevOps Escalation Matrix.txt - Guidelines for better collaboration between DevOps and BUs",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section outlines the guidelines for better collaboration between the DevOps team and various Business Units (BUs) within the organization. It emphasizes the importance of submitting all requests (planned and ad-hoc) through Jira tickets and using a dedicated Slackbot for automation and accountability. The section also encourages open communication and transparency by utilizing the #tech_devops Slack channel for discussions and queries. Additionally, it provides an escalation matrix with contact information for different levels of support within the DevOps team, organized by BU-specific pods.",
+        "use_cases": [
+            "Submitting DevOps requests (planned and ad-hoc) via Jira tickets and a dedicated Slackbot",
+            "Facilitating open communication and transparency through the #tech_devops Slack channel",
+            "Escalating issues or queries to the appropriate DevOps team members based on the BU and pod structure",
+            "Accessing information on engagement processes and Service Level Agreements (SLAs) for DevOps tasks"
+        ],
+        "capabilities": [
+            "Jira ticket submission",
+            "Slackbot integration",
+            "Dedicated Slack channel for DevOps communication",
+            "Escalation matrix with contact information",
+            "BU-specific pod structure within the DevOps team",
+            "Access to SLA documentation"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/sla-devops-tasks",
+            "https://razorpay.slack.com/archives/C0ZJSSQSV",
+            "https://razorpay.slack.com/archives/C0ZJSSQSV",
+            "https://razorpay.slack.com/archives/C0ZJSSQSV",
+            "https://razorpay.slack.com/archives/C0ZJSSQSV",
+            "https://razorpay.slack.com/archives/C0ZJSSQSV"
+        ]
+    },
+    {
+        "id": "engineering_devops_devops-escalation-matrix-chunk-1",
+        "name": "DevOps Escalation Matrix.txt - DevOps Team > Vertical",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section outlines the DevOps team structure and escalation matrix for various infrastructure and engineering teams at Razorpay. It provides contact information, Slack channels, and email addresses for different pods or sub-teams within the DevOps team, such as Production Engineering, Cloud Platform, Security, Databases, Tools, and Dev Productivity. Each pod is responsible for specific tasks, issues, and projects related to their respective domains.",
+        "use_cases": [
+            "Escalating DevOps requests or issues related to banking integrations/projects",
+            "Addressing AWS availability, Kubernetes maintenance/upgrades, and long-term infrastructure projects",
+            "Handling compliance, audits, security issues, and web application firewall (WAF) related tasks",
+            "Managing database-related tasks, issues, and projects"
+        ],
+        "capabilities": [
+            "DevOps team structure",
+            "Escalation matrix",
+            "Contact information (email, phone, Slack)",
+            "Pod/sub-team responsibilities",
+            "Slack channels for communication",
+            "Escalation process"
+        ],
+        "references": [
+            "https://razorpay.slack.com/archives/C0ZJSSQSV"
+        ]
+    }
+]

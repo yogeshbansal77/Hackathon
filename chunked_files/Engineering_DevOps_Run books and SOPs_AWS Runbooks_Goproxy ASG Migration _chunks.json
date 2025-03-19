@@ -1,0 +1,32 @@
+[
+    {
+        "id": "engineering_devops_run-books-and-sops_aws-runbooks_goproxy-asg-migration--chunk-0",
+        "name": "Goproxy ASG Migration .txt - Goproxy Node Selector Migration Steps:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs",
+            "AWS Runbooks"
+        ],
+        "description": "This section outlines the steps to migrate the Goproxy application to a new Auto Scaling Group (ASG) with a new node selector. Goproxy is used to bypass API rate limits imposed by registry apps. The process involves creating a new ASG, deploying a new Goproxy instance with a new node selector, sharing the new node selector with developers, verifying that the old ASG is no longer being used, and finally decommissioning the old ASG and deployments in phases.",
+        "use_cases": [
+            "Bypassing API rate limits imposed by registry apps",
+            "Migrating an application to a new infrastructure environment",
+            "Phased decommissioning of old infrastructure components"
+        ],
+        "capabilities": [
+            "Auto Scaling Group (ASG) management",
+            "Node selector configuration",
+            "Horizontal Pod Autoscaler (HPA) setup",
+            "Application deployment and scaling",
+            "Infrastructure migration and decommissioning",
+            "Developer collaboration and communication"
+        ],
+        "references": [
+            "https://razorpay.slack.com/archives/C058JF8AGAX/p1707130069239419?thread_ts=1707118378.382879&cid=C058JF8AGAX",
+            "https://razorpay.slack.com/archives/C058JF8AGAX/p1709528559716969?thread_ts=1707118378.382879&cid=C058JF8AGAX",
+            "https://razorpay.slack.com/archives/C058JF8AGAX/p1715151396288219?thread_ts=1707118378.382879&cid=C058JF8AGAX",
+            "https://razorpay.slack.com/archives/C058JF8AGAX/p1715154599387319?thread_ts=1707118378.382879&cid=C058JF8AGAX"
+        ]
+    }
+]

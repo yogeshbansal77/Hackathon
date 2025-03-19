@@ -1,0 +1,63 @@
+[
+    {
+        "id": "engineering_devops_dev-self-serve_setting-up-your-ssh-access-to-ec2-instances-chunk-0",
+        "name": "Setting up your SSH access to EC2 instances.txt - Pre-Approval",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains the process of obtaining SSH access to EC2 instances at Razorpay. It involves raising a JIRA ticket, generating an SSH key pair, getting approval from the manager and DevOps team, setting up two-factor authentication (2FA) using Duo, and accessing the bastion hosts (hagrid.razorpay.com and prod.ds.jump.razorpay.vpc) using SSH key forwarding. The process aims to ensure secure access to the company's infrastructure.",
+        "use_cases": [
+            "Accessing EC2 instances for administrative tasks",
+            "Connecting to production databases",
+            "Troubleshooting and maintenance activities",
+            "Remote development or testing"
+        ],
+        "capabilities": [
+            "JIRA ticketing system",
+            "SSH key generation",
+            "Manager approval workflow",
+            "Two-factor authentication (2FA) with Duo",
+            "Bastion hosts for secure access",
+            "SSH key forwarding",
+            "VPN connectivity"
+        ],
+        "references": [
+            "https://razorpay.atlassian.net/browse/PE-614",
+            "https://www.ssh.com/academy/ssh/keygen#creating-an-ssh-key-pair-for-user-authentication",
+            "https://duo.com",
+            "http://hagrid.razorpay.com",
+            "https://concierge.razorpay.com/resources/aws/sg-712d8418/jump",
+            "https://guide.duo.com/android>",
+            "https://guide.duo.com/iphone>",
+            "https://www.ssh.com/academy/ssh/agent>",
+            "https://www.ssh.com/academy/ssh/add>"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_setting-up-your-ssh-access-to-ec2-instances-chunk-1",
+        "name": "Setting up your SSH access to EC2 instances.txt - Post-Approval",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section outlines the step-by-step process for logging into EC2 instances using SSH. It involves adding an RSA private key to the SSH agent, logging into an external bastion server, and then logging into an internal datastore bastion server within the company's VPC. The section also provides important information about two-factor authentication requirements, account lockout policies, and account deactivation due to inactivity.",
+        "use_cases": [
+            "Accessing EC2 instances securely using SSH",
+            "Implementing multi-factor authentication for SSH access",
+            "Managing SSH access for employees or contractors",
+            "Securing access to internal servers or resources within a VPC"
+        ],
+        "capabilities": [
+            "SSH access",
+            "RSA private key authentication",
+            "Bastion server access",
+            "Two-factor authentication",
+            "Account lockout policy",
+            "Account deactivation due to inactivity"
+        ],
+        "references": []
+    }
+]

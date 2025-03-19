@@ -1,0 +1,127 @@
+[
+    {
+        "id": "engineering_devops_business-units_payments_setup-hashicorp-vault-token-chunk-0",
+        "name": "Setup Hashicorp vault token.txt - Info",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section informs the reader that the instructions or information provided are specific to the RZP-STAGE account, which is likely a staging or testing environment for a product or service called RZP.",
+        "use_cases": [
+            "Setting up or configuring Hashicorp Vault token in the RZP-STAGE account",
+            "Understanding the context or environment in which the instructions are applicable",
+            "Differentiating between production and staging/testing environments"
+        ],
+        "capabilities": [
+            "Account-specific configuration",
+            "Staging/testing environment",
+            "Environment differentiation"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_business-units_payments_setup-hashicorp-vault-token-chunk-1",
+        "name": "Setup Hashicorp vault token.txt - Get Root Token Value",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section explains that the root token for the Hashicorp Vault is stored in a table called 'credstash-perf-vault'. The root token is a highly privileged token that never expires. Instead of using the root token directly, which is a security risk, the recommendation is to generate a new token from the root token. This new token can have specific permissions and an expiration date, making it safer to use for day-to-day operations.",
+        "use_cases": [
+            "Securely storing and managing sensitive data",
+            "Generating temporary credentials with specific permissions",
+            "Implementing least privilege access control",
+            "Rotating and revoking credentials periodically"
+        ],
+        "capabilities": [
+            "Root token storage",
+            "Token generation",
+            "Token permissions management",
+            "Token expiration control",
+            "Credential rotation",
+            "Credential revocation"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_business-units_payments_setup-hashicorp-vault-token-chunk-2",
+        "name": "Setup Hashicorp vault token.txt - Get Newly Generated Token Value",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section explains how to retrieve the value of the Root token for the Hashicorp Vault using the 'credstash' command-line tool. The Root token is a highly privileged credential that provides full access to the Vault, and it is typically used for administrative tasks or initial setup. The command shown retrieves the Root token value from a secure storage location called 'credstash-perf-vault'.",
+        "use_cases": [
+            "Retrieving the Root token for Hashicorp Vault",
+            "Performing administrative tasks or initial setup in Hashicorp Vault",
+            "Accessing sensitive data or configurations stored in Hashicorp Vault",
+            "Automating processes that require the Root token"
+        ],
+        "capabilities": [
+            "credstash",
+            "Root token retrieval",
+            "Hashicorp Vault",
+            "Secure storage",
+            "Command-line interface"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_business-units_payments_setup-hashicorp-vault-token-chunk-3",
+        "name": "Setup Hashicorp vault token.txt - Steps to Generate a New Token",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section explains the steps to generate a new token for Hashicorp Vault, which is a secure storage system for sensitive data. It involves accessing the Vault pod, checking the existing token and its policies, creating a new token with a specific policy and time-to-live (TTL), and updating the new token value in a secure storage table called 'kubestash-stage'. The process ensures that applications can access the latest valid token for authentication and authorization with Vault.",
+        "use_cases": [
+            "Generating a new token for Hashicorp Vault",
+            "Updating the token value in a secure storage system",
+            "Authenticating and authorizing applications with Vault using the new token",
+            "Managing token policies and expiration"
+        ],
+        "capabilities": [
+            "Token generation",
+            "Token lookup",
+            "Policy management",
+            "Token expiration configuration",
+            "Secure storage integration",
+            "Application restart"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_business-units_payments_setup-hashicorp-vault-token-chunk-4",
+        "name": "Setup Hashicorp vault token.txt - Hashicorp Link",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section provides a link to the Hashicorp Vault documentation page that explains how to create a new authentication token. This token is used to securely access and interact with the Hashicorp Vault, which is a tool for securely storing and managing sensitive data like passwords, API keys, and certificates.",
+        "use_cases": [
+            "Creating a new authentication token for Hashicorp Vault",
+            "Accessing and managing sensitive data stored in Hashicorp Vault",
+            "Securing and controlling access to sensitive information"
+        ],
+        "capabilities": [
+            "Token creation",
+            "Authentication",
+            "Access control",
+            "Sensitive data management",
+            "Documentation reference"
+        ],
+        "references": [
+            "https://www.vaultproject.io/docs/commands/token/create>"
+        ]
+    }
+]

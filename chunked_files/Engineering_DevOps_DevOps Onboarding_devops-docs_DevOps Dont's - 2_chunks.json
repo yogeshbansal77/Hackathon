@@ -1,0 +1,60 @@
+[
+    {
+        "id": "engineering_devops_devops-onboarding_devops-docs_devops-dont's---2-chunk-0",
+        "name": "DevOps Dont's - 2.txt - Terraform Bug",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding",
+            "devops-docs"
+        ],
+        "description": "This section appears to be providing background information or context for a specific issue or bug related to Terraform. However, since the content is empty, it is difficult to provide a detailed description or infer any specific use cases or capabilities.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_devops-docs_devops-dont's---2-chunk-1",
+        "name": "DevOps Dont's - 2.txt - Background",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding",
+            "devops-docs"
+        ],
+        "description": "This section explains an issue that occurred when modifying the path patterns associated with a Lambda function in a CloudFront distribution. Due to a drift between Terraform and external changes made by a GitHub Action, the order of the path patterns was changed, and Terraform ended up removing the Lambda function association unexpectedly. The root cause was identified as an issue with the AWS SDK used by Terraform.",
+        "use_cases": [
+            "Managing path patterns and behaviors in CloudFront distributions",
+            "Handling drift between Terraform and external changes",
+            "Troubleshooting issues related to Terraform and AWS SDK"
+        ],
+        "capabilities": [
+            "CloudFront distribution management",
+            "Path pattern configuration",
+            "Lambda function association",
+            "Terraform drift handling",
+            "GitHub Actions integration",
+            "AWS SDK issue identification"
+        ],
+        "references": [
+            "http://razorpay.com",
+            "https://github.com/razorpay/vishnu/tree/master/prod/cloudfront/main-site",
+            "https://github.com/razorpay/frontend-website",
+            "https://alpha.razorpay.com/_static/file/84d6675ad37f47bb0cfa3a4adf739ff0.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_devops-docs_devops-dont's---2-chunk-2",
+        "name": "DevOps Dont's - 2.txt - Don't Do",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding",
+            "devops-docs"
+        ],
+        "description": "This section appears to be intentionally left blank, suggesting that it does not provide any specific guidance or recommendations. It may serve as a placeholder or a section to be filled in later with relevant content.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    }
+]

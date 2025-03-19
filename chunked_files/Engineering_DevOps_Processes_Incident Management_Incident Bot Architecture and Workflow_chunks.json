@@ -1,0 +1,257 @@
+[
+    {
+        "id": "engineering_devops_processes_incident-management_incident-bot-architecture-and-workflow-chunk-0",
+        "name": "Incident Bot Architecture and Workflow.txt - Incident-bot Overview",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section provides an overview of the Incident Bot's core functionality and infrastructure setup. It outlines the bot's ability to create dedicated channels for incident discussions, engage relevant stakeholders by providing a summary, and optionally involve other teams as needed. Additionally, it mentions the bot's infrastructure and setup, suggesting that it covers the technical aspects of deploying and configuring the bot.",
+        "use_cases": [
+            "Centralized incident management and communication",
+            "Automated stakeholder engagement and notification",
+            "Collaboration and coordination across teams",
+            "Streamlined incident response and resolution"
+        ],
+        "capabilities": [
+            "Create dedicated incident channels",
+            "Provide incident summaries",
+            "Engage metric owners",
+            "Page other teams",
+            "Infra and setup management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_incident-bot-architecture-and-workflow-chunk-1",
+        "name": "Incident Bot Architecture and Workflow.txt - Infra & Setup",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section provides information about the infrastructure setup and code repositories related to the Incident Bot system. It includes links to the Git repositories containing the Incident Bot code, Helm charts for deployment, and environment-specific configuration overrides. Additionally, it mentions an alert rules repository that likely integrates with the Incident Bot for monitoring and incident management.",
+        "use_cases": [
+            "Deployment of Incident Bot across different environments (production and staging)",
+            "Configuration management for Incident Bot deployments",
+            "Integration with monitoring and alerting systems",
+            "Version control and code management for Incident Bot"
+        ],
+        "capabilities": [
+            "Git repositories",
+            "Helm charts",
+            "Environment-specific configuration overrides",
+            "Alert rules integration",
+            "Code management",
+            "Deployment across multiple environments"
+        ],
+        "references": [
+            "https://github.com/razorpay/infra-tools/tree/incident-bot/slack",
+            "https://github.com/razorpay/infra-tools/branches/all?query=incid>",
+            "https://github.com/razorpay/kube-manifests/tree/master/templates/devops-incident-bot>",
+            "https://github.com/razorpay/kube-manifests/blob/master/ops/devops-incident-bot/values.yaml>",
+            "https://github.com/razorpay/kube-manifests/blob/master/stage/devops-incident-bot/values.yaml>",
+            "https://github.com/razorpay/alert-rules/blob/master/rules/prod-rules/central_dashboard_deviation_rules.yaml>"
+        ]
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_incident-bot-architecture-and-workflow-chunk-2",
+        "name": "Incident Bot Architecture and Workflow.txt - Mapping of escalation policy with service for prod",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section explains how the escalation policy for different services in the production environment is mapped within the Incident Bot system. It provides a link to the GitHub repository where this mapping configuration is defined. This mapping allows the Incident Bot to automatically escalate incidents to the appropriate teams or individuals based on the service affected, ensuring efficient incident response and resolution.",
+        "use_cases": [
+            "Automated incident escalation based on service",
+            "Efficient incident response and resolution",
+            "Centralized configuration for escalation policy mapping",
+            "Integration with version control system (GitHub) for configuration management"
+        ],
+        "capabilities": [
+            "Escalation policy mapping",
+            "Service-specific incident routing",
+            "Production environment support",
+            "Manual invocation from Slack channel",
+            "Configuration management via GitHub repository"
+        ],
+        "references": [
+            "https://github.com/razorpay/kube-manifests/blob/9851b9cc7f13113cabedd5500dc30012605772a9/ops/devops-incident-bot/values.yaml#L15>"
+        ]
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_incident-bot-architecture-and-workflow-chunk-3",
+        "name": "Incident Bot Architecture and Workflow.txt - PagerDuty Terraform config for service alerts mappings",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section provides information about configuring PagerDuty, a service for managing alerts and incidents, using Terraform. It also mentions a document that explains how to add alerts to a central dashboard. The section suggests reading about how PagerDuty works and following the provided documentation for onboarding alerts.",
+        "use_cases": [
+            "Configuring PagerDuty using Terraform",
+            "Understanding how PagerDuty works",
+            "Onboarding alerts to a central dashboard",
+            "Managing alerts and incidents"
+        ],
+        "capabilities": [
+            "PagerDuty configuration",
+            "Terraform integration",
+            "Alert onboarding",
+            "Central dashboard",
+            "Incident management",
+            "Alert mapping"
+        ],
+        "references": [
+            "https://razorpay.slack.com/archives/C02GUKL2MS6/p1652965159649009?thread_ts=1652943264.926749&cid=C02GUKL2MS6",
+            "https://alpha.razorpay.com/repo/adding-central-dashboard-alerts"
+        ]
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_incident-bot-architecture-and-workflow-chunk-4",
+        "name": "Incident Bot Architecture and Workflow.txt - Spinnaker Pipelines for the incident-bot deployment",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section appears to be about configuring PagerDuty alerts and mappings using Terraform, which is a tool for managing infrastructure as code. It likely explains how to set up alerts and notifications for various services or components within the Incident Bot Architecture.",
+        "use_cases": [
+            "Configuring PagerDuty alerts and notifications",
+            "Mapping alerts to specific services or components",
+            "Managing infrastructure as code using Terraform",
+            "Automating alert and notification setup"
+        ],
+        "capabilities": [
+            "PagerDuty integration",
+            "Terraform configuration",
+            "Service alerts mapping",
+            "Infrastructure as code",
+            "Automated alert setup"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_incident-bot-architecture-and-workflow-chunk-5",
+        "name": "Incident Bot Architecture and Workflow.txt - To setup the infra locally/stage for testing",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section provides links to GitHub repositories and a Spinnaker pipeline related to the setup and deployment of the Incident Bot infrastructure. It seems to be intended for developers or operations teams who need to access the source code and deployment pipelines for local or staging environments, likely for testing or development purposes.",
+        "use_cases": [
+            "Setting up the Incident Bot infrastructure locally or in a staging environment for testing",
+            "Accessing the source code for the Incident Bot infrastructure",
+            "Accessing the deployment pipeline for the Incident Bot infrastructure",
+            "Deploying or updating the Incident Bot infrastructure in a local or staging environment"
+        ],
+        "capabilities": [
+            "GitHub repositories for Incident Bot infrastructure",
+            "Spinnaker pipeline for Incident Bot deployment",
+            "Local/staging environment setup",
+            "Infrastructure as Code (IaC)",
+            "Continuous Integration/Continuous Deployment (CI/CD)"
+        ],
+        "references": [
+            "https://github.com/razorpay/vishnu/blob/master/pagerduty/central-dashboard/pagerduty.tf>",
+            "https://github.com/razorpay/vishnu/blob/master/pagerduty/non-cde-services/capital-cards/pagerduty.tf>",
+            "https://deploy.razorpay.com/#/applications/devops-incident-bot/executions>"
+        ]
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_incident-bot-architecture-and-workflow-chunk-6",
+        "name": "Incident Bot Architecture and Workflow.txt - Workflow Diagram",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section provides instructions for setting up the infrastructure locally or in a staging environment for testing purposes. It includes a link to a Google Document with detailed steps and a video recording to help understand the complex setup process. Additionally, it presents a workflow diagram that illustrates the process when an alert is triggered with a specific label. The alert is then posted to designated channels by a monitoring service called PagerDuty.",
+        "use_cases": [
+            "Setting up a local or staging environment for testing the incident management system",
+            "Understanding the workflow for handling alerts with a specific label",
+            "Integrating with a monitoring service like PagerDuty for alert notifications"
+        ],
+        "capabilities": [
+            "Local/staging environment setup",
+            "Detailed documentation",
+            "Video tutorials",
+            "Workflow diagrams",
+            "Alert labeling and routing",
+            "Integration with monitoring services"
+        ],
+        "references": [
+            "https://docs.google.com/document/d/1DsIw926tEDc5RJX7gFo2Dszva-YXgDVYSQ430fXBtaE/edit",
+            "https://alpha.razorpay.com/_static/file/bb7d8edcc88d60b43fc5c997bf6df2c7.png",
+            "https://drive.google.com/drive/folders/1_5VOEXKyeLSfJPi9dBZsaXVsDkL4ZyLy>"
+        ]
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_incident-bot-architecture-and-workflow-chunk-7",
+        "name": "Incident Bot Architecture and Workflow.txt - Incident bot Code walkthrough",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section explains the workflow of an Incident Bot that is triggered when a message is posted by PagerDuty in a specific Slack channel (#potential-outages). The bot receives the event from Slack, parses the information, and then creates an incident message in the same channel. Additionally, it automates the creation of a Jira ticket, a new Slack channel, and a Zoom meeting link for the incident.",
+        "use_cases": [
+            "Automating incident response and management",
+            "Integrating with various tools like Slack, Jira, and Zoom",
+            "Streamlining communication and collaboration during incidents",
+            "Centralizing incident-related information and resources"
+        ],
+        "capabilities": [
+            "Event Subscription",
+            "Webhook Trigger",
+            "Message Parsing",
+            "Incident Message Creation",
+            "Jira Ticket Creation",
+            "Slack Channel Creation",
+            "Zoom Meeting Link Generation"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_incident-management_incident-bot-architecture-and-workflow-chunk-8",
+        "name": "Incident Bot Architecture and Workflow.txt - Few Issues Links",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Incident Management"
+        ],
+        "description": "This section provides a code walkthrough link for the Incident Bot and a list of issue links that might be helpful for newcomers to work on new issues related to the Incident Bot. The code walkthrough link is a Google Drive link that likely contains documentation or a video explaining the codebase and architecture of the Incident Bot. The issue links are URLs pointing to specific issues or tasks related to the Incident Bot, hosted on Razorpay's Atlassian platform.",
+        "use_cases": [
+            "Onboarding new developers or team members to the Incident Bot project",
+            "Providing a starting point for developers to understand the codebase and architecture",
+            "Assigning or referring to specific issues or tasks related to the Incident Bot"
+        ],
+        "capabilities": [
+            "Code walkthrough",
+            "Issue tracking",
+            "Task assignment",
+            "Documentation",
+            "Onboarding",
+            "Knowledge sharing"
+        ],
+        "references": [
+            "https://drive.google.com/file/d/1nOIhDPMU9OQAoU4hQDNs_NRQkK2QihUT/view?usp=sharing",
+            "https://razorpay.atlassian.net/browse/PE-310>",
+            "https://razorpay.atlassian.net/browse/PE-374>",
+            "https://razorpay.atlassian.net/browse/PE-337>",
+            "https://razorpay.atlassian.net/browse/PE-395>"
+        ]
+    }
+]

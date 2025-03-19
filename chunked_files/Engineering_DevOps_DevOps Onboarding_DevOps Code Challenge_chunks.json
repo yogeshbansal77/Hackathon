@@ -1,0 +1,100 @@
+[
+    {
+        "id": "engineering_devops_devops-onboarding_devops-code-challenge-chunk-0",
+        "name": "DevOps Code Challenge.txt - Requirements",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section outlines the requirements for designing a scalable and secure three-tier architecture for a Python application. The application code will be provided, and it may require some modifications. Upon successful execution, the application's home page should display an image stored in the repository. Additionally, a POC (Proof of Concept) account will be provided for setting up the infrastructure.",
+        "use_cases": [
+            "Designing a scalable architecture",
+            "Designing a secure architecture",
+            "Deploying a three-tier Python application",
+            "Modifying and fixing the provided application code"
+        ],
+        "capabilities": [
+            "Scalability",
+            "Security",
+            "Three-tier architecture",
+            "Python application deployment",
+            "Image rendering",
+            "Infrastructure setup using a POC account"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_devops-code-challenge-chunk-1",
+        "name": "DevOps Code Challenge.txt - Considerations",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section outlines the key considerations and requirements for a DevOps code challenge involving the deployment of a web application on AWS. It emphasizes the need for proper network segmentation, containerization, infrastructure as code provisioning, fault tolerance, zero-downtime deployments, and the ability to deploy the solution on AWS.",
+        "use_cases": [
+            "Deploying a web application on AWS",
+            "Implementing network segmentation for security",
+            "Containerizing applications for portability and scalability",
+            "Automating infrastructure provisioning using Terraform"
+        ],
+        "capabilities": [
+            "Network segmentation",
+            "Containerization",
+            "Kubernetes compatibility",
+            "Infrastructure as Code (IaC)",
+            "Fault tolerance",
+            "Zero-downtime deployments",
+            "AWS deployment"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_devops-code-challenge-chunk-2",
+        "name": "DevOps Code Challenge.txt - Bonus",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section outlines additional requirements or bonus features that should be implemented in the DevOps project. It emphasizes the need for self-hosted monitoring and logging tools, continuous deployment using a tool like Fluxcd for Kubernetes deployments, ensuring zero downtime during application upgrades or rollouts, and self-hosting the database with regular backups. The key focus is on maintaining control, reliability, and data integrity throughout the development and deployment process.",
+        "use_cases": [
+            "Implementing self-hosted monitoring and logging tools",
+            "Enabling continuous deployment with zero downtime",
+            "Self-hosting and regularly backing up the database"
+        ],
+        "capabilities": [
+            "Self-provisioned monitoring tools",
+            "Self-provisioned logging tools",
+            "Continuous deployment",
+            "Zero downtime during application upgrades/rollouts",
+            "Self-hosted database",
+            "Regular database backups"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_devops-code-challenge-chunk-3",
+        "name": "DevOps Code Challenge.txt - Notes",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section outlines the key requirements and best practices for developing and deploying a system in a DevOps environment. It emphasizes the use of lightweight Kubernetes clusters, self-provisioned open-source monitoring and logging tools, and continuous deployment practices. The overall goal is to develop the system following industry best practices as soon as possible.",
+        "use_cases": [
+            "Deploying applications on a lightweight Kubernetes cluster",
+            "Implementing monitoring and logging using self-provisioned open-source tools",
+            "Enabling continuous deployment for the system"
+        ],
+        "capabilities": [
+            "Lightweight Kubernetes cluster deployment",
+            "Self-provisioned open-source monitoring tools",
+            "Self-provisioned open-source logging tools",
+            "Continuous deployment",
+            "Best practices for system development"
+        ],
+        "references": []
+    }
+]

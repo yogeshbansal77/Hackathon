@@ -1,0 +1,100 @@
+[
+    {
+        "id": "engineering_devops_databricks-secrests-chunk-0",
+        "name": "Databricks secrests.txt - Databricks CLI Configuration",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section explains how to configure the Databricks CLI (Command Line Interface) with an authentication token, which is required to access Databricks resources from the command line. It mentions that the Databricks token expires every 90 days, and provides instructions on how to set up the token using either a text editor or a command. The instructions are specific to a non-production environment profile called 'nonprod-db'.",
+        "use_cases": [
+            "Accessing Databricks resources from the command line",
+            "Authenticating with Databricks using a token",
+            "Managing authentication tokens for different environments (e.g., non-production)"
+        ],
+        "capabilities": [
+            "Databricks CLI configuration",
+            "Token-based authentication",
+            "Token expiration management",
+            "Environment-specific profiles"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_databricks-secrests-chunk-1",
+        "name": "Databricks secrests.txt - Databricks Secrets Management",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section appears to be providing instructions or commands related to configuring Databricks, a cloud-based data engineering platform, for different environments or profiles. It involves setting up authentication tokens and listing available clusters across different profiles like production, non-production, and repository. The section also includes a link to the official Databricks documentation on secrets management, suggesting that these commands may be related to managing secrets or sensitive information within the Databricks platform.",
+        "use_cases": [
+            "Configuring authentication tokens for different Databricks environments or profiles",
+            "Listing available clusters in Databricks for different environments",
+            "Managing secrets or sensitive information in Databricks"
+        ],
+        "capabilities": [
+            "Databricks configuration",
+            "Authentication token management",
+            "Profile management",
+            "Cluster listing",
+            "Secrets management",
+            "Environment separation"
+        ],
+        "references": [
+            "https://docs.databricks.com/en/security/secrets/index.html>"
+        ]
+    },
+    {
+        "id": "engineering_devops_databricks-secrests-chunk-2",
+        "name": "Databricks secrests.txt - Databricks File System (DBFS)",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section explains how to manage secrets in Databricks using the Databricks CLI (Command Line Interface). It provides commands to list, create, and store secrets in different scopes within the Databricks environment. Secrets are sensitive data like passwords, API keys, or database credentials that need to be securely stored and accessed by applications or services.",
+        "use_cases": [
+            "Securely storing and accessing sensitive data like database credentials, API keys, or passwords in Databricks",
+            "Managing and organizing secrets in different scopes or contexts within Databricks",
+            "Automating the process of creating and updating secrets using the Databricks CLI",
+            "Controlling access to secrets by specifying manage principals (users or groups) for each scope"
+        ],
+        "capabilities": [
+            "List secrets in a specific scope",
+            "Create a new scope for storing secrets",
+            "Store a new secret (key-value pair) in a scope",
+            "Update an existing secret value",
+            "Specify a profile (e.g., prod-db) for different environments",
+            "Manage access to secrets by setting manage principals"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_databricks-secrests-chunk-3",
+        "name": "Databricks secrests.txt - Databricks CLI Help",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section explains how to use the Databricks CLI (Command Line Interface) to interact with Databricks secrets, file system (DBFS), and other resources. It provides examples of commands to list secrets, access files on DBFS, and get help with the Databricks CLI. The section assumes familiarity with Databricks and AWS S3 bucket structure.",
+        "use_cases": [
+            "Managing Databricks secrets and access control lists (ACLs)",
+            "Accessing and managing files on the Databricks File System (DBFS)",
+            "Navigating and exploring AWS S3 buckets used by Databricks",
+            "Getting help and documentation for the Databricks CLI"
+        ],
+        "capabilities": [
+            "Databricks CLI",
+            "Secrets management",
+            "Access control lists (ACLs)",
+            "Databricks File System (DBFS)",
+            "AWS S3 integration",
+            "Command-line interface"
+        ],
+        "references": [
+            "https://s3.console.aws.amazon.com/s3/buckets/rzp-prod-db-root",
+            "https://s3.console.aws.amazon.com/s3/buckets/rzp-prod-db-root?prefix=mumbai-prod/",
+            "https://s3.console.aws.amazon.com/s3/buckets/rzp-prod-db-root?prefix=mumbai-prod/4745776473542049/"
+        ]
+    }
+]

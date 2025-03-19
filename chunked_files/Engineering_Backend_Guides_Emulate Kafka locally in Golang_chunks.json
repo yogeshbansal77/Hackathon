@@ -1,0 +1,129 @@
+[
+    {
+        "id": "engineering_backend_guides_emulate-kafka-locally-in-golang-chunk-0",
+        "name": "Emulate Kafka locally in Golang.txt - Run (Brew Version)",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Guides"
+        ],
+        "description": "This section provides instructions for installing and running Apache Kafka and Zookeeper locally on a macOS system using the Homebrew package manager. It explains how to install the necessary dependencies, including the OpenJDK Java runtime and Zookeeper, and then start the Kafka and Zookeeper services using the 'brew services' command. This allows developers to emulate a Kafka environment on their local machine for testing and development purposes.",
+        "use_cases": [
+            "Local development and testing of Kafka-based applications",
+            "Learning and experimenting with Kafka",
+            "Prototyping and proof-of-concept projects involving Kafka"
+        ],
+        "capabilities": [
+            "Local installation of Kafka and Zookeeper",
+            "Starting and stopping Kafka and Zookeeper services",
+            "Dependency management using Homebrew"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_backend_guides_emulate-kafka-locally-in-golang-chunk-1",
+        "name": "Emulate Kafka locally in Golang.txt - Testing on Local",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Guides"
+        ],
+        "description": "This section provides instructions for testing Apache Kafka locally on a Mac using Homebrew. It explains how to verify if Kafka and Zookeeper services are running, create a topic, produce messages to the topic, and consume messages from the topic. The instructions are presented in a step-by-step manner with examples, making it easy for users to follow along and test Kafka locally.",
+        "use_cases": [
+            "Testing Apache Kafka locally on a Mac",
+            "Creating topics in Kafka",
+            "Producing messages to a Kafka topic",
+            "Consuming messages from a Kafka topic"
+        ],
+        "capabilities": [
+            "Verifying Kafka and Zookeeper service status",
+            "Creating Kafka topics",
+            "Specifying topic replication factor and partitions",
+            "Producing messages to a Kafka topic",
+            "Consuming messages from a Kafka topic",
+            "Providing examples for each command"
+        ],
+        "references": [
+            "https://medium.com/@Ankitthakur/apache-kafka-installation-on-mac-using-homebrew-a367cdefd273>"
+        ]
+    },
+    {
+        "id": "engineering_backend_guides_emulate-kafka-locally-in-golang-chunk-2",
+        "name": "Emulate Kafka locally in Golang.txt - Integration in Golang Code",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Guides"
+        ],
+        "description": "This section explains how to integrate a Golang application with a Kafka message broker using the 'goutils/worker' package from Razorpay. It provides a sample code snippet that demonstrates how to configure and initialize a Kafka worker instance, which can be used to consume messages from a Kafka topic. The configuration includes details such as the Kafka broker address, topic name, group ID, and TLS settings.",
+        "use_cases": [
+            "Consuming messages from a Kafka topic in a Golang application",
+            "Building event-driven or message-based systems in Golang",
+            "Integrating Golang applications with distributed messaging systems like Kafka",
+            "Implementing reliable message processing with configurable retry mechanisms"
+        ],
+        "capabilities": [
+            "Kafka integration",
+            "Message consumption",
+            "Worker configuration",
+            "TLS support",
+            "Retries and backoff",
+            "Distributed messaging"
+        ],
+        "references": [
+            "https://github.com/razorpay/goutils/tree/master/worker>"
+        ]
+    },
+    {
+        "id": "engineering_backend_guides_emulate-kafka-locally-in-golang-chunk-3",
+        "name": "Emulate Kafka locally in Golang.txt - Common CLI Commands",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Guides"
+        ],
+        "description": "This section appears to be a code snippet from a Golang program that sets up a Kafka worker. It initializes an exponential retrier for the worker, creates a new worker manager with the provided configuration and queues, and registers a Kafka worker handler. The code handles potential errors that may occur during the initialization process.",
+        "use_cases": [
+            "Setting up a Kafka worker in a Golang application",
+            "Configuring retries for the Kafka worker",
+            "Registering handlers for the Kafka worker"
+        ],
+        "capabilities": [
+            "Exponential retrier",
+            "Worker manager",
+            "Error handling",
+            "Worker configuration",
+            "Queue management",
+            "Handler registration"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_backend_guides_emulate-kafka-locally-in-golang-chunk-4",
+        "name": "Emulate Kafka locally in Golang.txt - Troubleshoot common issues",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Guides"
+        ],
+        "description": "This section provides troubleshooting steps and solutions for common issues that may arise when working with Apache Kafka locally. It covers two main problems: 'Group Coordinator Not Available' error and 'Cluster ID mismatch' error during Kafka startup. The explanations are accompanied by code snippets, command-line instructions, and references to external resources for further information.",
+        "use_cases": [
+            "Resolving 'Group Coordinator Not Available' error when working with Kafka consumer groups",
+            "Fixing 'Cluster ID mismatch' error during Kafka server startup",
+            "Cleaning up and resetting Kafka topic data",
+            "Configuring Kafka server properties for local development"
+        ],
+        "capabilities": [
+            "Stopping and starting Kafka and Zookeeper services",
+            "Listing and describing Kafka topics",
+            "Creating Kafka topics with specified replication factor and partitions",
+            "Updating Kafka server configuration files",
+            "Deleting and cleaning up Kafka topic data directories",
+            "Troubleshooting and resolving common Kafka errors"
+        ],
+        "references": [
+            "https://stackoverflow.com/questions/50952081/kafka-broker-group-coordinator-not-available>",
+            "https://stackoverflow.com/questions/59592518/kafka-broker-doesnt-find-cluster-id-and-creates-new-one-after-docker-restart>"
+        ]
+    }
+]

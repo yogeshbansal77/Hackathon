@@ -1,0 +1,170 @@
+[
+    {
+        "id": "engineering_devops_architecture_aws_aws-services-overview-chunk-0",
+        "name": "AWS Services Overview.txt - Compute",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS"
+        ],
+        "description": "This section outlines various AWS services related to compute resources. It covers serverless computing options like AWS Lambda and AWS Batch, as well as managed services like Elastic Beanstalk and Serverless Application Repository. It also mentions AWS Outposts, which allows running AWS services on-premises, and EC2 Image Builder for automating the creation of virtual machine images. The section seems to provide an overview of different compute offerings from AWS, ranging from fully managed to self-managed options.",
+        "use_cases": [
+            "Serverless computing",
+            "Batch processing",
+            "Managed application deployment",
+            "On-premises AWS services",
+            "Virtual machine image management"
+        ],
+        "capabilities": [
+            "Serverless functions (Lambda)",
+            "Batch job scheduling and management",
+            "Managed application platform (Elastic Beanstalk)",
+            "Serverless application deployment",
+            "On-premises AWS infrastructure (Outposts)",
+            "Automated virtual machine image creation (EC2 Image Builder)"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_aws_aws-services-overview-chunk-1",
+        "name": "AWS Services Overview.txt - Amazon Elastic Cloud Compute (EC2)",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS"
+        ],
+        "description": "This section explains Amazon Elastic Cloud Compute (EC2), a cloud computing service provided by Amazon Web Services (AWS) that allows users to rent virtual computers (instances) on which they can run their applications. EC2 instances can be scaled up or down based on demand, providing flexibility and cost-effectiveness. The section also mentions that the organization is extensively using EC2 instances, with or without Auto Scaling groups, and with different instance classes and types.",
+        "use_cases": [
+            "Deploying on-demand virtual machines (instances) with varying performance capabilities",
+            "Scaling compute resources up or down based on demand",
+            "Running applications on EC2 instances",
+            "Using Auto Scaling groups with EC2 instances"
+        ],
+        "capabilities": [
+            "On-demand instances",
+            "Wide array of instance types and classes",
+            "Scalability (scaling up and down)",
+            "Integration with Auto Scaling groups",
+            "Extensive usage within the organization"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_aws_aws-services-overview-chunk-2",
+        "name": "AWS Services Overview.txt - AWS Lambda",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS"
+        ],
+        "description": "This section explains AWS Lambda, a serverless computing service that allows running custom code in response to events or triggers without provisioning servers. It highlights Lambda's use with Python for automating tasks like snapshots, redirection, and notifications across AWS regions. The section also mentions AWS storage services for backup, archiving, and disaster recovery.",
+        "use_cases": [
+            "Taking EBS volume snapshots",
+            "Taking RDS snapshots",
+            "Redirection",
+            "Notifications"
+        ],
+        "capabilities": [
+            "Event-driven triggers",
+            "Highly available",
+            "Scalable",
+            "Serverless environment",
+            "Low-cost data storage",
+            "Backup",
+            "Archiving",
+            "Disaster recovery",
+            "High availability",
+            "Durability"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_aws_aws-services-overview-chunk-3",
+        "name": "AWS Services Overview.txt - Storage",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS"
+        ],
+        "description": "This section provides an overview of various storage services offered by Amazon Web Services (AWS). It covers different types of storage solutions, including object storage, file storage, and backup services, designed to meet various data storage and management needs.",
+        "use_cases": [
+            "Object storage (S3)",
+            "File storage (EFS, FSx)",
+            "Data archiving (S3 Glacier)",
+            "Hybrid cloud storage (Storage Gateway)",
+            "Data backup and recovery (AWS Backup)"
+        ],
+        "capabilities": [
+            "Object storage (S3)",
+            "Elastic file system (EFS)",
+            "File system service (FSx)",
+            "Low-cost archival storage (S3 Glacier)",
+            "Hybrid cloud storage integration (Storage Gateway)",
+            "Centralized data backup and recovery (AWS Backup)"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_aws_aws-services-overview-chunk-4",
+        "name": "AWS Services Overview.txt - Amazon Simple Storage Service (S3)",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS"
+        ],
+        "description": "This section explains Amazon Simple Storage Service (S3), which is a highly scalable and durable object storage service provided by Amazon Web Services (AWS). It allows users to store and retrieve any amount of data from anywhere, making it suitable for various applications such as websites, mobile apps, corporate applications, and Internet of Things (IoT) devices. The section also mentions that S3 is widely used for storing logs, media files, and serving static data from S3 buckets.",
+        "use_cases": [
+            "Storing logs",
+            "Storing application-related data like media and files",
+            "Serving static data from S3 buckets",
+            "Storage for websites, mobile apps, corporate applications, and IoT devices"
+        ],
+        "capabilities": [
+            "Object storage model",
+            "Highly scalable",
+            "Highly durable",
+            "Accessible from anywhere",
+            "Supports storing and retrieving any amount of data",
+            "Largest ecosystem support"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_aws_aws-services-overview-chunk-5",
+        "name": "AWS Services Overview.txt - Database",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "AWS"
+        ],
+        "description": "This section provides an overview of various database services offered by AWS, including relational databases (RDS), NoSQL databases (DynamoDB), and caching solutions (ElastiCache). It explains the purpose and key features of each service, and mentions some specific use cases within the organization. The section also briefly touches upon networking and content delivery services like VPC, CloudFront, and Route 53.",
+        "use_cases": [
+            "Running production databases (MySQL, PostgreSQL) on RDS",
+            "Storing application credentials and configurations in DynamoDB (Credstash/Kubestash)",
+            "Using AWS Redis (ElastiCache) for production cluster caching",
+            "Hosting static content and serving as a reverse proxy for packagist using CloudFront",
+            "Managing DNS routing to AWS resources/applications via Route 53"
+        ],
+        "capabilities": [
+            "Relational Database Service (RDS) for setting up, operating, and scaling relational databases",
+            "DynamoDB as a fast, fully managed, and flexible NoSQL database",
+            "ElastiCache for high-performance, cost-effective, and scalable caching solutions (Memcached, Redis)",
+            "Virtual Private Cloud (VPC) for defining a virtual network within AWS cloud",
+            "CloudFront as a fast content delivery network (CDN) for low latency and high transfer speeds",
+            "Route 53 as a highly available and scalable Domain Name System (DNS) web service"
+        ],
+        "references": [
+            "https://lh3.googleusercontent.com/QCLAAGdPDb8BZLK7UsmL6FbswmsvM47w0OX5ujceaiyTEjc5kHRrScxqYJ4UgIJoAZhRj8asL9oKsUN0B7s1GXTumOPcwdMFdmIskvi-lXu6104LOJWjBmcNCQ39CXQGZyWd1p-p",
+            "https://hub.docker.com/",
+            "https://goharbor.io/",
+            "https://quay.io/",
+            "https://jfrog.com/"
+        ]
+    }
+]

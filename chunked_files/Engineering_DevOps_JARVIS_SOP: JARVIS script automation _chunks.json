@@ -1,0 +1,111 @@
+[
+    {
+        "id": "engineering_devops_jarvis_sop:-jarvis-script-automation--chunk-0",
+        "name": "SOP: JARVIS script automation .txt - Use-case :pencil2: :",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section introduces the purpose and scope of the JARVIS script automation tool. It suggests that if you have a script in mind that can automate various DevOps tasks like troubleshooting, resource provisioning, or security checks, then this tool is designed to help you implement and execute that script. The section implies that the tool provides a framework or platform for automating custom scripts tailored to specific use cases.",
+        "use_cases": [
+            "DevOps troubleshooting automation",
+            "Resource provisioning automation",
+            "Security check automation",
+            "Automating any custom script for various tasks"
+        ],
+        "capabilities": [
+            "Automation framework",
+            "Custom script integration",
+            "DevOps task automation",
+            "Resource management automation",
+            "Security automation"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_jarvis_sop:-jarvis-script-automation--chunk-1",
+        "name": "SOP: JARVIS script automation .txt - Walk-through :footprints: :",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section appears to be a placeholder or a template for explaining different types of automation scripts or processes. It does not provide any specific details or content, but rather serves as a structure or outline for documenting various automation scenarios.",
+        "use_cases": [
+            "Documenting different types of automation scripts or processes",
+            "Providing a standardized format for explaining automation workflows",
+            "Serving as a template or outline for technical documentation"
+        ],
+        "capabilities": [
+            "Categorizing automation scripts or processes into different types",
+            "Allowing for structured documentation of automation scenarios",
+            "Providing a consistent format for technical writing"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_jarvis_sop:-jarvis-script-automation--chunk-2",
+        "name": "SOP: JARVIS script automation .txt - Type 1:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section outlines the process for creating a new automation script within the JARVIS framework. It involves cloning a repository, setting up a Flask application with endpoints, authentication, logging, and integrating a custom script. The script is then containerized, and a CI pipeline is configured for automated builds and deployments. Finally, a frontend interface is created to interact with the deployed service.",
+        "use_cases": [
+            "Jarviskube",
+            "IAM-Troubleshooter",
+            "Any new automation script or tool"
+        ],
+        "capabilities": [
+            "Flask application",
+            "Endpoints",
+            "Authentication",
+            "Logging",
+            "Script integration",
+            "Containerization",
+            "CI/CD pipeline",
+            "Frontend integration"
+        ],
+        "references": [
+            "https://github.com/razorpay/infra-tools"
+        ]
+    },
+    {
+        "id": "engineering_devops_jarvis_sop:-jarvis-script-automation--chunk-3",
+        "name": "SOP: JARVIS script automation .txt - Type 2:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section outlines the process for automating tasks that involve reading data from a source, processing it, and writing the processed information to an S3 bucket. It provides step-by-step instructions for setting up the automation script, building a Docker image, creating a Kubernetes deployment or cron job, configuring the necessary manifests and values files, and deploying the service to the desired environment using Spinnaker. The automation service can then be integrated with JARVIS, allowing developers to access the processed data from the S3 bucket.",
+        "use_cases": [
+            "Driftmanager automation",
+            "Redislab migration automation",
+            "Any automation that reads data from a source, processes it, and writes the processed information to an S3 bucket"
+        ],
+        "capabilities": [
+            "Automating data processing tasks",
+            "Writing processed data to S3 buckets",
+            "Building Docker images for automation scripts",
+            "Creating Kubernetes deployments or cron jobs",
+            "Configuring manifests and values files for different environments",
+            "Deploying automation services using Spinnaker",
+            "Integrating automation services with JARVIS"
+        ],
+        "references": [
+            "https://github.com/razorpay/infra-tools/blob/master/.github/workflows/ci_iam_troubleshooter.yml",
+            "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/",
+            "https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/",
+            "https://github.com/razorpay/kube-manifests/tree/master/templates/iam-troubleshooter",
+            "https://github.com/razorpay/kube-manifests/tree/master/stage/iam-troubleshooter",
+            "https://github.com/razorpay/kube-manifests/tree/master/ops/iam-troubleshooter",
+            "https://github.com/razorpay/kube-manifests/tree/master/prod/iam-troubleshooter",
+            "https://github.com/razorpay/kube-manifests/tree/master/cde/iam-troubleshooter",
+            "https://deploy.razorpay.com/#/applications/iam-troubleshooter/executions",
+            "https://alpha.razorpay.com/repo/onboarding-devops-automations-to-jarvis>"
+        ]
+    }
+]

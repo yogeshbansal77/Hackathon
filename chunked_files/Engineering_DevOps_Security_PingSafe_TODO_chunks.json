@@ -1,0 +1,16 @@
+[
+    {
+        "id": "engineering_devops_security_pingsafe_todo-chunk-0",
+        "name": "TODO.txt - Add a policy to not allow SG inbound rules on 0/0",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Security",
+            "PingSafe"
+        ],
+        "description": "This section appears to be incomplete or missing content. It does not provide any meaningful information or explanation about adding a policy to restrict inbound security group rules to specific IP addresses instead of allowing access from anywhere (0.0.0.0/0).",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    }
+]

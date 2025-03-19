@@ -1,0 +1,40 @@
+[
+    {
+        "id": "engineering_devops_run-books-and-sops_spinnaker-redis-issue-chunk-0",
+        "name": "Spinnaker Redis issue.txt - When spinnaker starts lagging due to redis cache getting full",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section appears to be empty or missing content. Without any text or information provided, it is difficult to provide a meaningful description, identify use cases, or list capabilities or features.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_spinnaker-redis-issue-chunk-1",
+        "name": "Spinnaker Redis issue.txt - Steps to clear the cache",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section provides step-by-step instructions to clear the cache of the Spinnaker Redis instance running on the prod-green-eks cluster. It involves creating a temporary Redis client pod, fetching the Redis password from a secure credential store, and executing the FLUSHALL command on the Redis instance to clear its cache. The instructions also mention how to handle cases where the Redis endpoint might have changed.",
+        "use_cases": [
+            "Clearing the cache of a Redis instance used by Spinnaker",
+            "Troubleshooting or resetting the state of a Spinnaker deployment",
+            "Performing maintenance tasks on the Spinnaker Redis instance",
+            "Accessing and managing Redis instances running on a Kubernetes cluster"
+        ],
+        "capabilities": [
+            "Kubernetes pod creation",
+            "Redis client interaction",
+            "Credential retrieval from secure store",
+            "Redis cache flushing",
+            "Handling dynamic Redis endpoint changes",
+            "Cluster and namespace management"
+        ],
+        "references": []
+    }
+]

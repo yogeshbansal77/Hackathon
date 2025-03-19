@@ -1,0 +1,148 @@
+[
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_self-managed-datastores_elasticsearch_snapshots-(aws-managed)-chunk-0",
+        "name": "Snapshots (AWS Managed).txt - Automated snapshots are enabled for an AWS managed elasticsearch when created. However, this can only be used for cluster recovery, i.e to restore your domain in the event of red cluster status or data loss. So, it is good practise to create a separate snapshot registry. This would come in handy if you are looking for manual index/cluster restores or when you've planned a migration to a different cluster (version upgrades for eg.)",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "Self Managed Datastores",
+            "Elasticsearch"
+        ],
+        "description": "This section explains the steps to enable S3 (Amazon Simple Storage Service) backed snapshots for an AWS Managed Elasticsearch cluster. It provides instructions to create an IAM (Identity and Access Management) user with specific permissions to allow the Elasticsearch cluster to access and store snapshots in an S3 bucket. This is a recommended practice to create a separate snapshot repository for manual index/cluster restores or migrations, as the automated snapshots provided by AWS are only intended for cluster recovery in case of data loss or red cluster status.",
+        "use_cases": [
+            "Manual index/cluster restores",
+            "Planned migrations to a different cluster (e.g., version upgrades)",
+            "Backup and restore of Elasticsearch data",
+            "Data archiving and long-term retention"
+        ],
+        "capabilities": [
+            "S3 backed snapshots",
+            "IAM user creation",
+            "IAM policy assignment",
+            "Elasticsearch snapshot repository configuration",
+            "Elasticsearch cluster data backup",
+            "Elasticsearch cluster data restore"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_self-managed-datastores_elasticsearch_snapshots-(aws-managed)-chunk-1",
+        "name": "Snapshots (AWS Managed).txt - Steps to enable s3 backed snapshot:-",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "Self Managed Datastores",
+            "Elasticsearch"
+        ],
+        "description": "This section outlines the steps to enable S3 (Amazon Simple Storage Service) backed snapshots for an Elasticsearch cluster. It involves creating an IAM (Identity and Access Management) policy and role with the necessary permissions, and then registering an S3 bucket as a snapshot repository for the Elasticsearch cluster. The process requires accessing a jumpbox (a secure entry point) within the VPC (Virtual Private Cloud) where the Elasticsearch cluster is hosted, and running a Python script to register the S3 repository.",
+        "use_cases": [
+            "Backing up Elasticsearch data to S3 for disaster recovery",
+            "Migrating Elasticsearch data between environments",
+            "Archiving historical Elasticsearch data for compliance or long-term storage"
+        ],
+        "capabilities": [
+            "IAM policy and role management",
+            "S3 bucket configuration",
+            "Elasticsearch snapshot repository registration",
+            "Python scripting",
+            "VPC and jumpbox access"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/elasticsearch-s3-snapshot-register-iam-user-policy>",
+            "https://alpha.razorpay.com/repo/elasticsearch-snapshot-register-s3>"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_self-managed-datastores_elasticsearch_snapshots-(aws-managed)-chunk-2",
+        "name": "Snapshots (AWS Managed).txt - To take a snapshot manually:-",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "Self Managed Datastores",
+            "Elasticsearch"
+        ],
+        "description": "This section provides a command-line instruction to manually initiate a snapshot of an Amazon Elasticsearch Service domain. The snapshot captures the current state of the domain's data and metadata, allowing you to restore or recover the domain to that point in time if needed. The command uses the curl utility to send an HTTP PUT request to the domain's endpoint, specifying the snapshot repository name and a timestamp for the snapshot.",
+        "use_cases": [
+            "Backing up data for disaster recovery or migration purposes",
+            "Capturing a consistent state of the domain before making changes or updates",
+            "Archiving data for compliance or long-term storage requirements",
+            "Cloning or replicating a domain for testing or development purposes"
+        ],
+        "capabilities": [
+            "Manual snapshot creation",
+            "Command-line interface",
+            "Snapshot repository configuration",
+            "Timestamp-based snapshot naming",
+            "Domain endpoint specification"
+        ],
+        "references": [
+            "https://vpc-name.ap-south-1.es.amazonaws.com/_snapshot/snapshot-registry-name/2021-05-10'"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_self-managed-datastores_elasticsearch_snapshots-(aws-managed)-chunk-3",
+        "name": "Snapshots (AWS Managed).txt - To check the status of your snapshot:-",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "Self Managed Datastores",
+            "Elasticsearch"
+        ],
+        "description": "This section provides a simple code snippet to check the status of a snapshot operation in AWS. The code snippet returns a JSON response indicating whether the snapshot request was accepted or not. This can be useful for monitoring the progress of a snapshot operation and ensuring that it was successfully initiated.",
+        "use_cases": [
+            "Monitoring snapshot operations",
+            "Verifying successful snapshot initiation",
+            "Troubleshooting snapshot issues",
+            "Automating snapshot status checks"
+        ],
+        "capabilities": [
+            "Snapshot status checking",
+            "JSON response",
+            "Accepted/rejected status indication"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_self-managed-datastores_elasticsearch_snapshots-(aws-managed)-chunk-4",
+        "name": "Snapshots (AWS Managed).txt - Run this python script as a lambda + a  cloudwatch trigger for automated snapshots:-",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "Self Managed Datastores",
+            "Elasticsearch"
+        ],
+        "description": "This section provides instructions for automating the process of taking snapshots of an AWS Elasticsearch Service domain. It includes a curl command to check the status of a snapshot, a link to a Python script that can be run as an AWS Lambda function triggered by a CloudWatch event to automate snapshot creation, and a reference link to the AWS documentation for managing snapshots of Elasticsearch domains.",
+        "use_cases": [
+            "Automating the creation of snapshots for an AWS Elasticsearch Service domain",
+            "Monitoring the status of snapshots for an AWS Elasticsearch Service domain",
+            "Scheduling snapshot creation using CloudWatch events"
+        ],
+        "capabilities": [
+            "Checking snapshot status using curl",
+            "Automating snapshot creation using Python script",
+            "Running Python script as AWS Lambda function",
+            "Triggering Lambda function with CloudWatch event",
+            "Scheduling snapshot creation using CloudWatch events"
+        ],
+        "references": [
+            "https://vpc-prod-payment-links-es-svnyy5u7ajutefg34e277yn3pi.ap-south-1.es.amazonaws.com/_snapshot/prod-payment-links-es/2021-07-12/_status?pretty",
+            "https://alpha.razorpay.com/repo/elasticsearch-snapshot-script-aws>",
+            "https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-managedomains-snapshots.html>"
+        ]
+    }
+]

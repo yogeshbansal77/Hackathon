@@ -1,0 +1,110 @@
+[
+    {
+        "id": "engineering_devops_dev-self-serve_kubernetes-ndots-and-dnspolicy--why-it-may-negatively-affect-your-application-performances-chunk-0",
+        "name": "Kubernetes ndots and dnsPolicy  Why it may negatively affect your application performances.txt - DNS resolution inside a container",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains how DNS resolution works inside a Kubernetes container. It describes the contents of the /etc/resolv.conf file, which includes the nameserver IP addresses, search domains, and the ndots option. The ndots option determines how many dots in a domain name are required for it to be considered a fully qualified domain name (FQDN). The section also explains the difference between FQDNs and non-FQDNs, and how non-FQDNs are resolved using the search domains specified in the resolv.conf file.",
+        "use_cases": [
+            "Understanding how DNS resolution works in Kubernetes containers",
+            "Configuring DNS settings for applications running in Kubernetes",
+            "Troubleshooting DNS-related issues in Kubernetes applications"
+        ],
+        "capabilities": [
+            "DNS resolution",
+            "Fully qualified domain names (FQDNs)",
+            "Non-FQDNs resolution",
+            "Search domains",
+            "ndots option",
+            "/etc/resolv.conf configuration"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_kubernetes-ndots-and-dnspolicy--why-it-may-negatively-affect-your-application-performances-chunk-1",
+        "name": "Kubernetes ndots and dnsPolicy  Why it may negatively affect your application performances.txt - What is a fully qualified name(FQDN)?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains the concept of a fully qualified domain name (FQDN) and how it relates to DNS resolution in the context of Kubernetes. It discusses how the 'ndots' option affects the way a system attempts to resolve a hostname, either as an absolute name or by going through local search domains first. The section aims to clarify this behavior, which can impact application performance.",
+        "use_cases": [
+            "Understanding DNS resolution behavior in Kubernetes",
+            "Troubleshooting application connectivity issues related to DNS",
+            "Optimizing application performance by configuring DNS settings correctly",
+            "Learning about the 'ndots' option and its impact on DNS resolution"
+        ],
+        "capabilities": [
+            "DNS resolution",
+            "Fully qualified domain names (FQDN)",
+            "ndots option",
+            "Local search domains",
+            "Absolute name resolution",
+            "Application connectivity",
+            "Performance optimization"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_kubernetes-ndots-and-dnspolicy--why-it-may-negatively-affect-your-application-performances-chunk-2",
+        "name": "Kubernetes ndots and dnsPolicy  Why it may negatively affect your application performances.txt - How non fully qualified name resolution is performed?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains how the 'ndots' setting in Kubernetes affects the way domain names are resolved. It describes the process of resolving a domain name when 'ndots' is set to 5 (the default in Kubernetes). If a domain name has fewer than 5 dots, the system will attempt to resolve it by appending various search domains before trying to resolve it as an absolute name. This can lead to unnecessary DNS queries and negatively impact application performance, especially for applications that make many external requests.",
+        "use_cases": [
+            "Understanding the impact of 'ndots' setting on application performance in Kubernetes",
+            "Optimizing DNS resolution for applications with frequent external traffic",
+            "Reducing unnecessary load on CoreDNS pods in Kubernetes clusters"
+        ],
+        "capabilities": [
+            "ndots setting",
+            "DNS resolution",
+            "search domains",
+            "absolute name resolution",
+            "application performance",
+            "CoreDNS load"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_kubernetes-ndots-and-dnspolicy--why-it-may-negatively-affect-your-application-performances-chunk-3",
+        "name": "Kubernetes ndots and dnsPolicy  Why it may negatively affect your application performances.txt - Why ndots:5 can negatively affect application performances?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains how the ndots and dnsPolicy settings in Kubernetes can impact the performance of applications by affecting the way DNS resolution is handled. It discusses the benefits of setting ndots to a lower value (like 1) and using the ClusterFirst dnsPolicy, which can significantly reduce the number of DNS requests made to external DNS servers (like AWS) and improve latency by caching and prefetching DNS entries within the Kubernetes cluster's CoreDNS service.",
+        "use_cases": [
+            "Improving application performance by reducing DNS resolution latency",
+            "Reducing the load on external DNS servers by caching and prefetching within the Kubernetes cluster",
+            "Optimizing DNS resolution for applications that make frequent connections to external domains",
+            "Avoiding throttling or failures due to exceeding DNS request limits imposed by external DNS providers"
+        ],
+        "capabilities": [
+            "ndots setting to control DNS resolution behavior",
+            "dnsPolicy to specify DNS resolution strategy (Default, ClusterFirst)",
+            "dnsConfig to customize DNS settings for specific deployments/pods",
+            "CoreDNS as the DNS service within Kubernetes clusters",
+            "DNS caching and prefetching within CoreDNS",
+            "Fully Qualified Domain Names (FQDN) for explicit DNS resolution"
+        ],
+        "references": [
+            "https://vajra.razorpay.com/d/200ac8fdbfbb74b39aff88118e4d1c2c/kubernetes-node-pods",
+            "https://alpha.razorpay.com/_static/file/a61e6a995b1f4cf6ed04a1bf9c6f42fb.png",
+            "https://kubernetes.io/docs/tasks/administer-cluster/dns-custom-nameservers",
+            "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-dns.html#vpc-dns-limits",
+            "https://github.com/razorpay/kube-manifests",
+            "https://github.com/razorpay/kube-manifests/blob/master/templates/mozart/templates/deployment.yaml",
+            "https://github.com/razorpay/kube-manifests/blob/master/templates/mozart/templates/deployment.yaml#L111",
+            "https://github.com/razorpay/kube-manifests/blob/master/templates/mozart/templates/deployment.yaml#L112"
+        ]
+    }
+]

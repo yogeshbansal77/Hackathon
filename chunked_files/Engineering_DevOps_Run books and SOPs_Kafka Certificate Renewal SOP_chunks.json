@@ -1,0 +1,212 @@
+[
+    {
+        "id": "engineering_devops_run-books-and-sops_kafka-certificate-renewal-sop-chunk-0",
+        "name": "Kafka Certificate Renewal SOP.txt - Take backup of certs (secrets) and users of kafka resource yaml which is to be changed",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains the process of taking a backup of the certificates (secrets) and user configurations associated with a Kafka resource in a Kubernetes cluster. It involves creating a directory to store the backup files and using the 'kubectl' command to retrieve the secrets from the Kafka namespace and save them in a YAML file. This backup is essential before making any changes to the Kafka resource, as it allows for restoring the certificates and user configurations if needed.",
+        "use_cases": [
+            "Backup of Kafka certificates and user configurations before making changes",
+            "Restoration of Kafka certificates and user configurations from backup",
+            "Maintaining a secure and consistent state of Kafka cluster",
+            "Facilitating seamless updates or migrations of Kafka resources"
+        ],
+        "capabilities": [
+            "Backup of Kafka secrets (certificates)",
+            "Backup of Kafka user configurations",
+            "Storing backups in a designated directory",
+            "Retrieving secrets from Kubernetes namespace",
+            "Saving secrets in YAML format"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_kafka-certificate-renewal-sop-chunk-1",
+        "name": "Kafka Certificate Renewal SOP.txt - Keep a user cert and key and CA cert ready in separate files and update the secret/deployment in python script. [BACKUP STEP -- preparation for testing]",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains how to extract and save the necessary certificates and keys from Kubernetes secrets into separate files. These files can then be used for testing or backup purposes related to Kafka certificate renewal. The process involves using kubectl commands to retrieve the CA certificate, client CA certificate, user certificate, and user key from their respective Kubernetes secrets, and saving them as individual files.",
+        "use_cases": [
+            "Backup of Kafka certificates and keys",
+            "Testing or validating Kafka certificate renewal process",
+            "Preparing for certificate rotation or renewal",
+            "Troubleshooting certificate-related issues in Kafka"
+        ],
+        "capabilities": [
+            "Extracting certificates and keys from Kubernetes secrets",
+            "Decoding base64-encoded data",
+            "Saving certificates and keys as separate files",
+            "Accessing Kubernetes resources using kubectl",
+            "Specifying context and namespace for Kubernetes resources",
+            "Retrieving data from Kubernetes secrets using JSONPath expressions"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_kafka-certificate-renewal-sop-chunk-2",
+        "name": "Kafka Certificate Renewal SOP.txt - Set Both clientsCA and clusterCA to true [Actual renewal step]",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains the process of renewing the SSL/TLS certificates used for secure communication in a Kafka cluster. It involves retrieving the current Kafka configuration as a YAML file and then modifying the 'clientsCA' and 'clusterCA' settings to 'true'. These settings enable the renewal of the client and cluster certificates, respectively. This step is crucial for maintaining secure communication and preventing potential security vulnerabilities due to expired certificates.",
+        "use_cases": [
+            "Renewing SSL/TLS certificates for Kafka clusters",
+            "Maintaining secure communication in Kafka clusters",
+            "Preventing security vulnerabilities due to expired certificates"
+        ],
+        "capabilities": [
+            "Retrieving Kafka configuration as YAML",
+            "Modifying Kafka configuration settings",
+            "Enabling certificate renewal for client and cluster certificates",
+            "Ensuring secure communication in Kafka clusters",
+            "Preventing security risks from expired certificates"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_kafka-certificate-renewal-sop-chunk-3",
+        "name": "Kafka Certificate Renewal SOP.txt - Check if the certs are renewed, if not annotate the secret to force-renew.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains how to check if the certificates used by Kafka have been renewed, and if not, how to force a renewal. It provides commands to check the expiration dates of the certificates used by the Kafka cluster, clients, and brokers. If the certificates are nearing expiration, the section suggests annotating the Kubernetes secrets to trigger a renewal process.",
+        "use_cases": [
+            "Monitoring and renewing Kafka certificates before expiration",
+            "Ensuring secure communication within the Kafka cluster and with clients",
+            "Automating certificate renewal process for Kafka components"
+        ],
+        "capabilities": [
+            "Certificate expiration date verification",
+            "Certificate renewal annotation",
+            "Kafka cluster certificate management",
+            "Client certificate management",
+            "Broker certificate management"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/a5e9416f1342f43e24346e8a5a89bef1.png",
+            "https://strimzi.io/docs/operators/in-development/configuring.html#proc-renewing-ca-certs-manually-str>"
+        ]
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_kafka-certificate-renewal-sop-chunk-4",
+        "name": "Kafka Certificate Renewal SOP.txt - Rollback:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section provides instructions on how to rollback or revert changes made during the Kafka certificate renewal process. It suggests running a specific command if the date obtained from the previous command is not as expected, implying that there might have been an issue with the renewal process.",
+        "use_cases": [
+            "Reverting or undoing changes made during the Kafka certificate renewal process",
+            "Troubleshooting or resolving issues encountered during the certificate renewal process",
+            "Ensuring the correct date is set for the renewed certificates"
+        ],
+        "capabilities": [
+            "Rollback",
+            "Troubleshooting",
+            "Date verification",
+            "Command execution"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_kafka-certificate-renewal-sop-chunk-5",
+        "name": "Kafka Certificate Renewal SOP.txt - Testing:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains the process of testing the renewal of security certificates used by Kafka and its clients. It involves annotating the Kubernetes secrets containing the CA certificates with a specific annotation that triggers the renewal process. After executing these commands, one needs to wait for the Kafka pods to restart and then verify if the secrets have been updated with the renewed certificates as expected.",
+        "use_cases": [
+            "Renewing Kafka cluster CA certificates",
+            "Renewing Kafka client CA certificates",
+            "Testing the certificate renewal process",
+            "Verifying the successful renewal of certificates"
+        ],
+        "capabilities": [
+            "Annotating Kubernetes secrets",
+            "Triggering certificate renewal",
+            "Restarting Kafka pods",
+            "Verifying secret updates",
+            "Handling Kafka security certificates",
+            "Testing certificate management processes"
+        ],
+        "references": [
+            "http://strimzi.io/force-renew=true",
+            "http://strimzi.io/force-renew=true"
+        ]
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_kafka-certificate-renewal-sop-chunk-6",
+        "name": "Kafka Certificate Renewal SOP.txt - Stage 2",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section does not contain any content or explanation. The section is empty, with only the section title 'Stage 2' provided. Without any actual content, it is not possible to provide a meaningful description, use cases, or capabilities related to this section.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_kafka-certificate-renewal-sop-chunk-7",
+        "name": "Kafka Certificate Renewal SOP.txt - 2.1 Get the certificate",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section provides instructions for rolling back and testing the certificate renewal process in a Kafka deployment. It suggests that both the new and old certificates should work with clients during the rollback process. For testing, it recommends using a specific deployment configuration, although the details of this configuration are not provided.",
+        "use_cases": [
+            "Certificate renewal in Kafka",
+            "Rollback of certificate changes",
+            "Testing certificate changes"
+        ],
+        "capabilities": [
+            "Certificate rollback",
+            "Certificate testing",
+            "Deployment configuration"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_kafka-certificate-renewal-sop-chunk-8",
+        "name": "Kafka Certificate Renewal SOP.txt - 2.2 Application certificate update",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains the process of updating the application certificates used by client applications to connect to the Kafka cluster. It provides commands to retrieve the CA certificate, user certificate, and user key from the Kubernetes secrets, which need to be updated in the application clients before redeploying them. This ensures that the applications can securely connect to the Kafka cluster after the certificate renewal.",
+        "use_cases": [
+            "Updating application certificates for secure Kafka client connections",
+            "Renewing expired or soon-to-expire certificates used by Kafka client applications",
+            "Maintaining secure communication between Kafka clients and the Kafka cluster"
+        ],
+        "capabilities": [
+            "Retrieving CA certificate from Kubernetes secrets",
+            "Retrieving user certificate from Kubernetes secrets",
+            "Retrieving user key from Kubernetes secrets",
+            "Updating application clients with new certificates",
+            "Redeploying application clients with updated certificates",
+            "Maintaining secure Kafka client connections"
+        ],
+        "references": [
+            "https://drive.google.com/file/d/14-tGWuqmY2UhqKhq6Rgz7o4sLTRC1xl-/view?usp=sharing",
+            "https://github.com/razorpay/infra-tools/blob/kafka_livy_scripts/scripts/kafka-client-test.yaml>",
+            "https://github.com/razorpay/infra-tools/blob/kafka_livy_scripts/scripts/kafka-client.py>"
+        ]
+    }
+]

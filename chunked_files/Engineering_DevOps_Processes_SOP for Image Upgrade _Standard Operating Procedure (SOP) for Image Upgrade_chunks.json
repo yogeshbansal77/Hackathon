@@ -1,0 +1,380 @@
+[
+    {
+        "id": "engineering_devops_processes_sop-for-image-upgrade-_standard-operating-procedure-(sop)-for-image-upgrade-chunk-0",
+        "name": "Standard Operating Procedure (SOP) for Image Upgrade.txt - Objective",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "SOP for Image Upgrade "
+        ],
+        "description": "This section outlines the objective of maintaining infrastructure components at a supported version that is no more than two major releases behind the latest version. The upgrade process should be thoroughly tested in a staging environment before deploying to production to ensure stability and compatibility. This is a general guideline, and specific applications may require their own Standard Operating Procedures (SOPs) created by their respective owners.",
+        "use_cases": [
+            "Maintaining infrastructure components at a supported version",
+            "Ensuring components are not at End-of-Life (EoL) versions",
+            "Testing upgrades in a staging environment before production rollout",
+            "Creating application-specific SOPs for upgrades"
+        ],
+        "capabilities": [
+            "Maintaining N-2 version (major release)",
+            "Ensuring up-to-date components",
+            "Avoiding End-of-Life (EoL) versions",
+            "Thorough testing in staging environment",
+            "Ensuring stability and compatibility",
+            "Application-specific SOP creation"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_sop-for-image-upgrade-_standard-operating-procedure-(sop)-for-image-upgrade-chunk-1",
+        "name": "Standard Operating Procedure (SOP) for Image Upgrade.txt - CAB Approval",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "SOP for Image Upgrade "
+        ],
+        "description": "This section explains that for any critical or high-priority (P0/P1) components, it is mandatory to obtain approval from the Change Advisory Board (CAB) before proceeding with an image upgrade. This approval process involves proper testing on a staging environment to ensure the upgrade's stability and compatibility before deploying it to production systems.",
+        "use_cases": [
+            "Upgrading critical or high-priority software components",
+            "Ensuring stability and compatibility of software upgrades",
+            "Obtaining approval from a governing body (CAB) for critical changes",
+            "Testing software upgrades in a staging environment before production deployment"
+        ],
+        "capabilities": [
+            "CAB Approval",
+            "Critical Component Upgrade",
+            "Staging Environment Testing",
+            "P0/P1 Component Prioritization"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_sop-for-image-upgrade-_standard-operating-procedure-(sop)-for-image-upgrade-chunk-2",
+        "name": "Standard Operating Procedure (SOP) for Image Upgrade.txt - Image repositories",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "SOP for Image Upgrade "
+        ],
+        "description": "This section explains the importance of using a private image registry (Harbor) to host Docker images for the organization's Kubernetes cluster. It addresses the issue of Dockerhub rate limiting, which can cause downtime due to ImagePullBackOff errors. The section also mentions that images for the kube-system namespace can be pulled from public registries like registry.k8s.io and Amazon ECR, as these are critical components. Additionally, it provides a link to a security team's SOP for uploading images to Harbor.",
+        "use_cases": [
+            "Mitigating Dockerhub rate limiting issues",
+            "Hosting internal Docker images in a private registry",
+            "Ensuring uninterrupted image pulls for critical Kubernetes components",
+            "Following security best practices for image management"
+        ],
+        "capabilities": [
+            "Private image registry (Harbor)",
+            "Self-hosted Harbor deployment",
+            "Image upload SOP",
+            "Whitelisting public registries for critical components",
+            "Preventing ImagePullBackOff errors",
+            "Secure image management"
+        ],
+        "references": [
+            "https://docs.google.com/document/d/1cbDj_aMULZIFaoMga8LMopCgErn9_SNx_3VkaNcl1jI/edit?usp=sharing"
+        ]
+    },
+    {
+        "id": "engineering_devops_processes_sop-for-image-upgrade-_standard-operating-procedure-(sop)-for-image-upgrade-chunk-3",
+        "name": "Standard Operating Procedure (SOP) for Image Upgrade.txt - Pre-Upgrade Steps",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "SOP for Image Upgrade "
+        ],
+        "description": "This section appears to be introducing instructions or guidelines for upgrading open-source images, which are likely software or firmware images used in a system or device. However, the provided content is incomplete and does not provide any specific details or steps.",
+        "use_cases": [
+            "Upgrading open-source software or firmware images",
+            "Maintaining and updating systems or devices with open-source components"
+        ],
+        "capabilities": [
+            "Open-source image upgrade",
+            "Software/firmware update",
+            "System maintenance"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_sop-for-image-upgrade-_standard-operating-procedure-(sop)-for-image-upgrade-chunk-4",
+        "name": "Standard Operating Procedure (SOP) for Image Upgrade.txt - 1 For Open-source images:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "SOP for Image Upgrade "
+        ],
+        "description": "This section explains the initial step of assessing the current version of the software or system being used, and identifying the available versions that can be upgraded to. This assessment helps determine if an upgrade is necessary and what versions are compatible for the upgrade process.",
+        "use_cases": [
+            "Evaluating the need for an upgrade",
+            "Identifying compatible upgrade versions",
+            "Comparing current and available versions",
+            "Planning for an upgrade"
+        ],
+        "capabilities": [
+            "Version assessment",
+            "Compatibility check",
+            "Upgrade planning",
+            "Version tracking",
+            "Software inventory management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_sop-for-image-upgrade-_standard-operating-procedure-(sop)-for-image-upgrade-chunk-5",
+        "name": "Standard Operating Procedure (SOP) for Image Upgrade.txt - 1.1 Assess Current and Available Versions",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "SOP for Image Upgrade "
+        ],
+        "description": "This section outlines the steps to assess the current version of a software component and identify the available versions for an upgrade. It emphasizes the importance of checking compatibility with existing infrastructure and dependencies, as well as considering the language version used to build the new releases. The section also highlights the need to review release notes for any breaking changes or deprecated features that may require migration planning.",
+        "use_cases": [
+            "Upgrading software components",
+            "Compatibility checks for new software versions",
+            "Planning for migration due to deprecated features",
+            "Adhering to language version lifecycle"
+        ],
+        "capabilities": [
+            "Identify current version",
+            "Check available versions",
+            "Check language version",
+            "Compatibility check",
+            "Review release notes",
+            "Identify breaking changes",
+            "Identify deprecated features"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_sop-for-image-upgrade-_standard-operating-procedure-(sop)-for-image-upgrade-chunk-6",
+        "name": "Standard Operating Procedure (SOP) for Image Upgrade.txt - 1.2 Review Release Notes",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "SOP for Image Upgrade "
+        ],
+        "description": "This section outlines the steps involved in reviewing release notes and updating internal images for an application. It emphasizes understanding new features and improvements in the updated versions. Additionally, it provides guidance on updating language versions, changing base images to the latest Razorpay golden image, and checking for and resolving any CVE vulnerabilities.",
+        "use_cases": [
+            "Reviewing new features and improvements in updated versions",
+            "Updating language versions in dependency files",
+            "Changing base images to the latest Razorpay golden image",
+            "Checking and resolving CVE vulnerabilities"
+        ],
+        "capabilities": [
+            "New features and improvements review",
+            "Language version update",
+            "Base image update",
+            "CVE vulnerability check",
+            "CVE vulnerability resolution"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_sop-for-image-upgrade-_standard-operating-procedure-(sop)-for-image-upgrade-chunk-7",
+        "name": "Standard Operating Procedure (SOP) for Image Upgrade.txt - 2 For internal images",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "SOP for Image Upgrade "
+        ],
+        "description": "This section appears to be introducing the process of upgrading the software or firmware on a staging environment, which is typically a separate environment used for testing and validating changes before deploying them to a production environment. The section heading suggests that the instructions provided are specific to upgrading internal images, which could refer to proprietary software or firmware components.",
+        "use_cases": [
+            "Testing and validating software or firmware upgrades in a non-production environment",
+            "Ensuring compatibility and stability of upgrades before deploying to production",
+            "Allowing for controlled rollouts and rollbacks of upgrades"
+        ],
+        "capabilities": [
+            "Staging environment setup",
+            "Software/firmware upgrade process",
+            "Internal image handling",
+            "Testing and validation procedures"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_sop-for-image-upgrade-_standard-operating-procedure-(sop)-for-image-upgrade-chunk-8",
+        "name": "Standard Operating Procedure (SOP) for Image Upgrade.txt - Staging Environment Upgrade",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "SOP for Image Upgrade "
+        ],
+        "description": "This section outlines the preparatory steps for upgrading the software or system in a staging environment, which is a replica of the production environment used for testing purposes. It emphasizes the importance of ensuring that the staging environment closely mirrors the production environment, and recommends creating a backup of the current state before proceeding with the upgrade. This allows for thorough testing and validation of the upgrade process without impacting the live production system.",
+        "use_cases": [
+            "Testing software upgrades or system changes in a staging environment before deploying to production",
+            "Validating the upgrade process and identifying potential issues in a controlled environment",
+            "Ensuring minimal downtime and disruption to the live production system during upgrades",
+            "Maintaining a backup of the current state for rollback or recovery purposes"
+        ],
+        "capabilities": [
+            "Cloning production setup",
+            "Environment mirroring",
+            "Backup creation",
+            "Staging environment management",
+            "Upgrade testing",
+            "Rollback or recovery"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_sop-for-image-upgrade-_standard-operating-procedure-(sop)-for-image-upgrade-chunk-9",
+        "name": "Standard Operating Procedure (SOP) for Image Upgrade.txt - 3. Setup Staging Environment",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "SOP for Image Upgrade "
+        ],
+        "description": "This section outlines the steps involved in upgrading software images in a staging environment. It provides instructions for pushing external and internal images to the appropriate Harbor repositories, and directs the reader to follow specific upgrade procedures for the component being upgraded.",
+        "use_cases": [
+            "Upgrading external software images in a staging environment",
+            "Upgrading internal software images in a staging environment",
+            "Following security best practices for image upgrades",
+            "Referring to component-specific upgrade procedures"
+        ],
+        "capabilities": [
+            "Image upgrade",
+            "Harbor repository management",
+            "External image handling",
+            "Internal image handling",
+            "Security best practices",
+            "Component-specific upgrade procedures"
+        ],
+        "references": [
+            "https://docs.google.com/document/d/1cbDj_aMULZIFaoMga8LMopCgErn9_SNx_3VkaNcl1jI/edit?usp=sharing"
+        ]
+    },
+    {
+        "id": "engineering_devops_processes_sop-for-image-upgrade-_standard-operating-procedure-(sop)-for-image-upgrade-chunk-10",
+        "name": "Standard Operating Procedure (SOP) for Image Upgrade.txt - 4. Perform Upgrade",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "SOP for Image Upgrade "
+        ],
+        "description": "This section outlines the steps to perform an image upgrade and subsequent testing. It suggests updating any necessary configuration files before restarting the services to apply the new version. After the upgrade, it recommends conducting a sanity check to ensure the basic functionality is working as expected.",
+        "use_cases": [
+            "Upgrading software or firmware images",
+            "Applying configuration changes",
+            "Restarting services after an upgrade",
+            "Performing post-upgrade testing and validation"
+        ],
+        "capabilities": [
+            "Configuration update",
+            "Service restart",
+            "Sanity testing",
+            "Basic functionality verification"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_sop-for-image-upgrade-_standard-operating-procedure-(sop)-for-image-upgrade-chunk-11",
+        "name": "Standard Operating Procedure (SOP) for Image Upgrade.txt - 5. Testing",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "SOP for Image Upgrade "
+        ],
+        "description": "This section outlines the testing procedures that should be carried out before deploying a software update or new version. It emphasizes the importance of thoroughly testing the complete workflow of the software to ensure it functions as intended, as well as conducting performance tests to verify there is no degradation in performance compared to the previous version. The section serves as a reminder to thoroughly validate the software before rolling it out to production environments.",
+        "use_cases": [
+            "Validating the end-to-end functionality of the software",
+            "Ensuring the software performs as expected under various load conditions",
+            "Identifying and resolving any issues or regressions before production deployment",
+            "Establishing a baseline for performance metrics to compare against future releases"
+        ],
+        "capabilities": [
+            "Workflow Testing",
+            "Performance Testing",
+            "Software Validation",
+            "Regression Testing",
+            "Load Testing",
+            "Benchmarking"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_sop-for-image-upgrade-_standard-operating-procedure-(sop)-for-image-upgrade-chunk-12",
+        "name": "Standard Operating Procedure (SOP) for Image Upgrade.txt - Production Rollout",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "SOP for Image Upgrade "
+        ],
+        "description": "This section emphasizes the importance of scheduling the image upgrade process during a designated maintenance window to minimize potential disruptions or downtime. By carefully planning and executing the upgrade during a predetermined maintenance period, the impact on regular operations and end-users can be minimized, ensuring a smooth transition to the new image version.",
+        "use_cases": [
+            "Minimizing service disruptions during software upgrades",
+            "Scheduling maintenance activities to avoid impacting regular operations",
+            "Coordinating software upgrades with stakeholders and end-users"
+        ],
+        "capabilities": [
+            "Maintenance window scheduling",
+            "Impact minimization",
+            "Upgrade planning"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_sop-for-image-upgrade-_standard-operating-procedure-(sop)-for-image-upgrade-chunk-13",
+        "name": "Standard Operating Procedure (SOP) for Image Upgrade.txt - 6. Prepare for Rollout",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "SOP for Image Upgrade "
+        ],
+        "description": "This section emphasizes the importance of notifying relevant stakeholders about the planned image upgrade and its potential impact on their operations. It suggests informing all concerned parties, such as teams, departments, or external partners, who might be affected by the upgrade process. This step ensures transparency, allows stakeholders to prepare for any disruptions, and facilitates smooth coordination during the upgrade.",
+        "use_cases": [
+            "Informing internal teams or departments about the planned upgrade",
+            "Notifying external partners or customers who may be impacted by the upgrade",
+            "Coordinating with stakeholders to minimize disruptions during the upgrade process",
+            "Ensuring transparency and clear communication about the upgrade plan"
+        ],
+        "capabilities": [
+            "Stakeholder notification",
+            "Impact assessment",
+            "Upgrade planning",
+            "Communication",
+            "Coordination",
+            "Transparency"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_sop-for-image-upgrade-_standard-operating-procedure-(sop)-for-image-upgrade-chunk-14",
+        "name": "Standard Operating Procedure (SOP) for Image Upgrade.txt - 7. Backup and Rollback Plan",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "SOP for Image Upgrade "
+        ],
+        "description": "This section outlines the steps involved in upgrading an image or software component in a production environment. It emphasizes the importance of having a backup plan and a rollback strategy in case the upgrade fails. The section also covers the actual upgrade procedure, post-upgrade testing, documentation, and regular maintenance to ensure the system remains up-to-date.",
+        "use_cases": [
+            "Upgrading software or image components in a production environment",
+            "Ensuring system stability and continuity during upgrades",
+            "Maintaining documentation and gathering feedback for process improvement",
+            "Scheduling regular upgrades and monitoring for new updates"
+        ],
+        "capabilities": [
+            "Backup and rollback plan",
+            "Upgrade procedure",
+            "Configuration updates",
+            "Service restarts",
+            "Post-upgrade testing (sanity check, workflow testing, monitoring)",
+            "Documentation and review",
+            "Regular maintenance and update monitoring"
+        ],
+        "references": []
+    }
+]

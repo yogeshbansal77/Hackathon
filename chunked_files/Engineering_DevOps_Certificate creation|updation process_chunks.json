@@ -1,0 +1,52 @@
+[
+    {
+        "id": "engineering_devops_certificate-creation|updation-process-chunk-0",
+        "name": "Certificate creation|updation process.txt - Prerequisites",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section outlines the prerequisites for creating or updating a digital certificate. It explains that you need to have a domain name and generate a Certificate Signing Request (CSR) using the OpenSSL command-line tool. The CSR generation process involves providing details like the private key name, country, state, organization, and most importantly, the fully qualified domain name (FQDN) that should match the domain for which the certificate is being created or updated.",
+        "use_cases": [
+            "Creating a new digital certificate",
+            "Updating an existing digital certificate",
+            "Generating a Certificate Signing Request (CSR) for a domain",
+            "Providing required information for CSR generation"
+        ],
+        "capabilities": [
+            "Domain name ownership",
+            "CSR generation",
+            "Private key creation",
+            "Providing certificate details",
+            "Matching FQDN with certificate domain",
+            "OpenSSL command-line usage"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_certificate-creation|updation-process-chunk-1",
+        "name": "Certificate creation|updation process.txt - Next Steps",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section outlines the next steps involved in the certificate creation or update process. It explains the workflow of creating a JIRA ticket with the certificate details, requesting the certificate from a Certificate Authority (CA) through the IT team, receiving the CA certificate bundle, and finally sharing the certificate with relevant entities and updating the keys in Credstash by the application team.",
+        "use_cases": [
+            "Certificate creation",
+            "Certificate updation",
+            "Sharing certificates with external/internal entities",
+            "Updating keys in Credstash"
+        ],
+        "capabilities": [
+            "JIRA ticket creation",
+            "Certificate Signing Request (CSR) generation",
+            "Certificate request through SslStore",
+            "Certificate Authority (CA) integration",
+            "Certificate bundle retrieval",
+            "Key management in Credstash"
+        ],
+        "references": [
+            "https://razorpay.atlassian.net/browse/CORP-2852>__"
+        ]
+    }
+]

@@ -1,0 +1,93 @@
+[
+    {
+        "id": "engineering_devops_run-books-and-sops_shifting-traffic-from-one-k8s-cluster-to-another-cluster-chunk-0",
+        "name": "Shifting traffic from one k8s cluster to another cluster.txt - Background",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section provides an overview of the Kubernetes cluster setup in the production environment. It explains that there are two active-active Kubernetes clusters, one for the CDE (Customer Data Environment) and another for the non-CDE environment. Each environment has separate load balancers for external, internal, and concierge traffic. The load balancers are named with prefixes indicating the environment (CDE or non-CDE), cluster color (green or blue/white), and the type of traffic (external, internal, or concierge).",
+        "use_cases": [
+            "Managing traffic routing between active-active Kubernetes clusters",
+            "Separating CDE and non-CDE environments for security and compliance",
+            "Load balancing external, internal, and concierge traffic across clusters",
+            "Enabling blue/green or canary deployments for seamless application updates"
+        ],
+        "capabilities": [
+            "Active-active Kubernetes clusters",
+            "Separate load balancers for external, internal, and concierge traffic",
+            "Environment separation (CDE and non-CDE)",
+            "Blue/green or canary deployment support",
+            "Load balancing across multiple clusters",
+            "Cluster naming conventions based on environment, color, and traffic type"
+        ],
+        "references": [
+            "https://ap-south-1.console.aws.amazon.com/ec2/home?region=ap-south-1#LoadBalancer:loadBalancerArn=arn:aws:elasticloadbalancing:ap-south-1:141592612890:loadbalancer/app/eks-prod-green-ext-tv2-alb/a411c6bf66f18486;tab=listeners",
+            "https://ap-south-1.console.aws.amazon.com/ec2/home?region=ap-south-1#LoadBalancer:loadBalancerArn=arn:aws:elasticloadbalancing:ap-south-1:141592612890:loadbalancer/app/eks-prod-white-ext-tv2-alb/acf1e236c71b3b9f;tab=listeners",
+            "https://ap-south-1.console.aws.amazon.com/ec2/home?region=ap-south-1#LoadBalancer:loadBalancerArn=arn:aws:elasticloadbalancing:ap-south-1:141592612890:loadbalancer/app/eks-prod-green-int-tv2-alb/ba6a139a8255ef78;tab=listeners",
+            "https://ap-south-1.console.aws.amazon.com/ec2/home?region=ap-south-1#LoadBalancer:loadBalancerArn=arn:aws:elasticloadbalancing:ap-south-1:141592612890:loadbalancer/app/eks-prod-white-int-tv2-alb/d48988f1cb1d9792;tab=listeners",
+            "https://ap-south-1.console.aws.amazon.com/ec2/home?region=ap-south-1#LoadBalancer:loadBalancerArn=arn:aws:elasticloadbalancing:ap-south-1:141592612890:loadbalancer/app/eks-prod-green-conc-tv2-alb/bf274e420e57c35b;tab=listeners",
+            "https://ap-south-1.console.aws.amazon.com/ec2/home?region=ap-south-1#LoadBalancer:loadBalancerArn=arn:aws:elasticloadbalancing:ap-south-1:141592612890:loadbalancer/app/eks-prod-white-conc-tv2-alb/de4ec1c63217e373;tab=listeners",
+            "https://ap-south-1.console.aws.amazon.com/ec2/home?region=ap-south-1#LoadBalancer:loadBalancerArn=arn:aws:elasticloadbalancing:ap-south-1:141592612890:loadbalancer/app/eks-cde-green-ext-tv2-alb/3c22bdaf6d93e746;tab=listeners",
+            "https://ap-south-1.console.aws.amazon.com/ec2/home?region=ap-south-1#LoadBalancer:loadBalancerArn=arn:aws:elasticloadbalancing:ap-south-1:141592612890:loadbalancer/app/eks-cde-blue-ext-tv2-alb/2f855f0c067ffb7c;tab=listeners",
+            "https://ap-south-1.console.aws.amazon.com/ec2/home?region=ap-south-1#LoadBalancer:loadBalancerArn=arn:aws:elasticloadbalancing:ap-south-1:141592612890:loadbalancer/app/eks-cde-green-int-tv2-alb/b48c892f51bdc501;tab=listeners",
+            "https://ap-south-1.console.aws.amazon.com/ec2/home?region=ap-south-1#LoadBalancer:loadBalancerArn=arn:aws:elasticloadbalancing:ap-south-1:141592612890:loadbalancer/app/eks-cde-blue-int-tv2-alb/7e63f10b1701d450;tab=listeners",
+            "https://ap-south-1.console.aws.amazon.com/ec2/home?region=ap-south-1#LoadBalancer:loadBalancerArn=arn:aws:elasticloadbalancing:ap-south-1:141592612890:loadbalancer/app/eks-cde-green-conc-tv2-alb/5f708c66f04d091e;tab=listeners",
+            "https://ap-south-1.console.aws.amazon.com/ec2/home?region=ap-south-1#LoadBalancer:loadBalancerArn=arn:aws:elasticloadbalancing:ap-south-1:141592612890:loadbalancer/app/eks-cde-blue-conc-tv2-alb/30dffa188ccd57da;tab=listeners"
+        ]
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_shifting-traffic-from-one-k8s-cluster-to-another-cluster-chunk-1",
+        "name": "Shifting traffic from one k8s cluster to another cluster.txt - Clusters",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains that there are two Kubernetes clusters named 'prod-green' and 'prod-white', which are likely used for production workloads. The purpose of mentioning these clusters is to provide context for shifting traffic between them, possibly for load balancing, failover, or rolling updates.",
+        "use_cases": [
+            "Load balancing between two production clusters",
+            "Failover from one production cluster to another",
+            "Rolling updates or deployments across multiple production clusters",
+            "Separating production workloads across different clusters"
+        ],
+        "capabilities": [
+            "Multiple Kubernetes clusters",
+            "Production-grade clusters",
+            "Traffic shifting between clusters",
+            "Cluster naming convention"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_shifting-traffic-from-one-k8s-cluster-to-another-cluster-chunk-2",
+        "name": "Shifting traffic from one k8s cluster to another cluster.txt - Shift Traffic From Prod-green cluster to Prod-white",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains the process of shifting traffic from one Kubernetes (k8s) cluster to another in the Razorpay production environment. It provides step-by-step instructions for updating DNS records in the Route53 hosted zone to redirect external, internal, and concierge traffic from one cluster to another. The process involves changing the DNS record values to point to the new cluster's load balancer, verifying the changes, and monitoring the load balancer metrics to ensure successful traffic redirection.",
+        "use_cases": [
+            "Migrating traffic from one production cluster to another",
+            "Failover or disaster recovery scenarios",
+            "Rolling out new cluster versions or updates",
+            "Load balancing or traffic distribution across multiple clusters"
+        ],
+        "capabilities": [
+            "DNS record management",
+            "Traffic redirection",
+            "Load balancer integration",
+            "Traffic monitoring",
+            "Cluster failover",
+            "Rolling updates"
+        ],
+        "references": [
+            "https://us-east-1.console.aws.amazon.com/route53/v2/hostedzones?region=ap-south-1#/ListRecordSets/Z1VOLCDLU87LHA",
+            "https://us-east-1.console.aws.amazon.com/route53/v2/hostedzones?region=ap-south-1#/ListRecordSets/Z1VOLCDLU87LHA",
+            "https://us-east-1.console.aws.amazon.com/route53/v2/hostedzones?region=ap-south-1#/ListRecordSets/Z1VOLCDLU87LHA",
+            "https://us-east-1.console.aws.amazon.com/route53/v2/hostedzones?region=ap-south-1#/ListRecordSets/Z1VOLCDLU87LHA"
+        ]
+    }
+]

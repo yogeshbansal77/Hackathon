@@ -1,0 +1,44 @@
+[
+    {
+        "id": "engineering_devops_run-books-and-sops_aws-runbooks_install-aws-cli-chunk-0",
+        "name": "Install aws-cli.txt - Alpine",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs",
+            "AWS Runbooks"
+        ],
+        "description": "This section provides a command to install the AWS Command Line Interface (AWS CLI) on Alpine Linux, a lightweight and secure Linux distribution. The command first installs Python3 and pip (a package installer for Python) using the Alpine package manager 'apk'. It then upgrades pip to the latest version and installs the AWS CLI package using pip. Finally, it cleans up the package cache to save disk space.",
+        "use_cases": [
+            "Installing AWS CLI on Alpine Linux",
+            "Setting up a development environment for AWS on Alpine Linux",
+            "Automating AWS tasks using scripts on Alpine Linux"
+        ],
+        "capabilities": [
+            "Install Python3",
+            "Install pip",
+            "Upgrade pip",
+            "Install AWS CLI",
+            "Clean package cache"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_aws-runbooks_install-aws-cli-chunk-1",
+        "name": "Install aws-cli.txt - Ubuntu",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs",
+            "AWS Runbooks"
+        ],
+        "description": "This section appears to be intended for providing instructions on how to install the AWS Command Line Interface (aws-cli) on Ubuntu, a popular Linux distribution. However, the section content is currently empty, with no actual steps or information provided.",
+        "use_cases": [
+            "Installing aws-cli on Ubuntu Linux",
+            "Setting up AWS command line tools on Ubuntu",
+            "Configuring AWS CLI on Ubuntu"
+        ],
+        "capabilities": [],
+        "references": []
+    }
+]

@@ -1,0 +1,229 @@
+[
+    {
+        "id": "engineering_devops_architecture_kubernetes_rotating-kiam-certs-chunk-0",
+        "name": "Rotating Kiam Certs.txt - Introduction",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section provides instructions for rotating the TLS certificates used by Kiam, a Kubernetes Initialization Admission Webhooks server. It explains how to download the necessary JSON files containing certificate configurations, install the cfssl tool for generating certificates, and run the commands to create new certificates. The instructions seem to be tailored for a specific organization (Razorpay) and reference their specific JSON files.",
+        "use_cases": [
+            "Rotating TLS certificates for Kiam",
+            "Generating new TLS certificates for Kiam",
+            "Updating Kiam's certificate configurations"
+        ],
+        "capabilities": [
+            "Downloading certificate configuration files",
+            "Installing cfssl tool",
+            "Generating TLS certificates",
+            "Rotating certificates",
+            "Updating certificate configurations"
+        ],
+        "references": [
+            "https://github.com/uswitch/kiam/blob/master/docs/TLS.md#generate-certs",
+            "https://raw.githubusercontent.com/uswitch/kiam/master/docs/ca.json",
+            "https://raw.githubusercontent.com/uswitch/kiam/master/docs/server.json",
+            "https://raw.githubusercontent.com/uswitch/kiam/master/docs/agent.json"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_rotating-kiam-certs-chunk-1",
+        "name": "Rotating Kiam Certs.txt - Steps to Generate Certificates",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section provides instructions for generating SSL/TLS certificates using the CFSSL (Cloudflare's PKI and TLS toolkit) command-line tool. It covers creating a Certificate Authority (CA) certificate, server and agent certificates, and configuring certificate expiration periods. The steps involve generating certificate signing requests, signing them with the CA, and outputting the resulting certificates and keys in a specific format.",
+        "use_cases": [
+            "Securing communication between servers and clients using TLS/SSL certificates",
+            "Authenticating and authorizing servers and agents in a distributed system",
+            "Rotating or renewing SSL/TLS certificates periodically for security purposes",
+            "Configuring certificate validity periods based on organizational requirements"
+        ],
+        "capabilities": [
+            "Certificate generation",
+            "Certificate signing",
+            "Certificate Authority (CA) management",
+            "Certificate expiration configuration",
+            "Server certificate generation",
+            "Agent certificate generation"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_rotating-kiam-certs-chunk-2",
+        "name": "Rotating Kiam Certs.txt - Add Certificates to Kubernetes",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section explains how to rename the certificate files generated for Kiam (a Kubernetes Initialization Access Manager) and add them to the Kubernetes cluster. The first set of commands renames the certificate files to more descriptive names, such as kiam-ca.crt for the Certificate Authority (CA) certificate, kiam-server.crt and kiam-server.key for the server certificate and key, and kiam-agent.crt and kiam-agent.key for the agent certificate and key. The second part implies that these renamed certificate files need to be added to the Kubernetes cluster, likely as Kubernetes secrets or ConfigMaps, for Kiam to function properly.",
+        "use_cases": [
+            "Securing communication between Kiam components (server and agents) within a Kubernetes cluster",
+            "Enabling Kiam to authenticate and authorize access to AWS resources from within a Kubernetes cluster",
+            "Rotating or updating Kiam certificates periodically for security purposes",
+            "Configuring Kiam with custom-generated certificates instead of using default or self-signed certificates"
+        ],
+        "capabilities": [
+            "Certificate management",
+            "Kubernetes integration",
+            "Secure communication",
+            "Authentication",
+            "Authorization",
+            "Configuration management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_rotating-kiam-certs-chunk-3",
+        "name": "Rotating Kiam Certs.txt - Automate Certificate Rotation",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section explains how to create a Kubernetes secret named 'kiam-server-tls' in the 'kube-system' namespace. This secret is likely used to store TLS certificates for secure communication between components of the Kiam system, which is a tool for managing AWS credentials and permissions for Kubernetes workloads. Creating this secret is a necessary step in the process of rotating or updating the TLS certificates used by Kiam.",
+        "use_cases": [
+            "Rotating or updating TLS certificates for Kiam",
+            "Securing communication between Kiam components",
+            "Managing AWS credentials and permissions for Kubernetes workloads",
+            "Automating the process of certificate rotation"
+        ],
+        "capabilities": [
+            "Creating Kubernetes secrets",
+            "Storing TLS certificates",
+            "Securing communication with TLS",
+            "Managing Kiam system components",
+            "Automating certificate rotation"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_rotating-kiam-certs-chunk-4",
+        "name": "Rotating Kiam Certs.txt - Warning",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section explains the importance of automating the process of rotating Kiam certificates and setting up a calendar reminder to avoid any potential incidents. Kiam is a Kubernetes Initialization Manager that provides a secure way to retrieve credentials from AWS metadata service. The certificates used by Kiam for secure communication need to be rotated periodically before they expire. The section provides commands to create Kubernetes secrets for the Kiam server and agent certificates. It also emphasizes the need to automate these steps using a cron job and set up a Google Calendar reminder two weeks before the certificate expiry date. The calendar invite should include details like the cluster name and certificate location to ensure timely renewal.",
+        "use_cases": [
+            "Automating the rotation of Kiam certificates",
+            "Setting up calendar reminders for certificate expiry",
+            "Ensuring timely renewal of Kiam certificates",
+            "Avoiding potential incidents due to expired certificates"
+        ],
+        "capabilities": [
+            "Kiam certificate rotation",
+            "Kubernetes secret management",
+            "Cron job automation",
+            "Google Calendar integration",
+            "Certificate expiry tracking",
+            "Incident prevention"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_rotating-kiam-certs-chunk-5",
+        "name": "Rotating Kiam Certs.txt - server.json",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section provides a configuration file (server.json) that specifies the settings for the Kiam server. The configuration includes the Common Name (CN) for the server certificate, and a list of hostnames or IP addresses that the server will listen on. This allows the Kiam server to be accessed and identified correctly within the network.",
+        "use_cases": [
+            "Configuring the Kiam server for secure communication",
+            "Specifying the hostnames or IP addresses that the Kiam server will listen on",
+            "Setting up the server certificate with the appropriate Common Name"
+        ],
+        "capabilities": [
+            "Server certificate configuration",
+            "Hostname/IP address binding",
+            "Common Name (CN) specification"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_rotating-kiam-certs-chunk-6",
+        "name": "Rotating Kiam Certs.txt - ca.json",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section appears to be a configuration snippet related to setting up a certificate authority (CA) for the Kiam server, which is likely a component responsible for managing authentication and authorization in a Kubernetes cluster. The configuration specifies the server name, the algorithm and key size for generating the certificate, and the organization name associated with the certificate.",
+        "use_cases": [
+            "Setting up a certificate authority for the Kiam server",
+            "Configuring authentication and authorization in a Kubernetes cluster",
+            "Generating and managing SSL/TLS certificates"
+        ],
+        "capabilities": [
+            "Certificate authority configuration",
+            "Server name specification",
+            "Algorithm and key size selection",
+            "Organization name association"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_rotating-kiam-certs-chunk-7",
+        "name": "Rotating Kiam Certs.txt - agent.json",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section appears to be providing code snippets related to the configuration files 'agent.json' and 'ca.json' used in the Kiam (Kubernetes Identity and Access Management) system. These files likely contain settings for the Kiam agent and the Certificate Authority (CA) used for authentication and authorization within the Kubernetes cluster.",
+        "use_cases": [
+            "Configuring the Kiam agent for authentication and authorization in a Kubernetes cluster",
+            "Setting up a Certificate Authority (CA) for issuing and managing certificates within the Kubernetes environment",
+            "Enabling secure communication and access control within the Kubernetes cluster"
+        ],
+        "capabilities": [
+            "agent.json configuration",
+            "ca.json configuration",
+            "Certificate Authority (CA) setup",
+            "Kubernetes authentication",
+            "Kubernetes authorization",
+            "Secure communication"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_rotating-kiam-certs-chunk-8",
+        "name": "Rotating Kiam Certs.txt - Creating the temporary admin policy",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section explains the process of rotating Kiam certificates in a Kubernetes cluster without disrupting applications. It involves creating a temporary admin policy, attaching it to node roles, deleting and recreating the Kiam agent, and verifying the AWS role assumption calls. This in-place upgrade/rotation reduces the effort of switching DNS for each application manually.",
+        "use_cases": [
+            "Rotating Kiam certificates in a Kubernetes cluster",
+            "Performing in-place upgrades/rotations without disrupting applications",
+            "Avoiding manual DNS switching for each application"
+        ],
+        "capabilities": [
+            "Creating temporary admin policies",
+            "Attaching/detaching policies to node roles",
+            "Deleting and recreating Kiam agent",
+            "Verifying AWS role assumption calls",
+            "Handling AWS role assume calls for pods",
+            "Minimizing cron failures during rotation"
+        ],
+        "references": []
+    }
+]

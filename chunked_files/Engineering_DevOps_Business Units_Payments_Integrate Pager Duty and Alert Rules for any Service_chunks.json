@@ -1,0 +1,160 @@
+[
+    {
+        "id": "engineering_devops_business-units_payments_integrate-pager-duty-and-alert-rules-for-any-service-chunk-0",
+        "name": "Integrate Pager Duty and Alert Rules for any Service.txt - Introduction",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section introduces the process of setting up alert rules for any service and integrating them with PagerDuty, a popular incident management platform. It aims to provide a step-by-step guide to help users configure alerts and notifications for their services, ensuring that they are promptly notified in case of any issues or incidents.",
+        "use_cases": [
+            "Setting up alert rules for various services",
+            "Integrating alert rules with PagerDuty for incident management",
+            "Receiving timely notifications for service-related issues or incidents",
+            "Streamlining incident response and resolution processes"
+        ],
+        "capabilities": [
+            "Alert rule configuration",
+            "PagerDuty integration",
+            "Incident notification",
+            "Service monitoring",
+            "Incident management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_business-units_payments_integrate-pager-duty-and-alert-rules-for-any-service-chunk-1",
+        "name": "Integrate Pager Duty and Alert Rules for any Service.txt - Process Steps",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section outlines the process of integrating a service with PagerDuty, a platform used for incident management and on-call scheduling. It involves granting access to developers to configure PagerDuty and submitting code changes (Pull Requests) to enable the integration. The steps mentioned are meant to be followed in a specific order to ensure a successful onboarding of the service with PagerDuty.",
+        "use_cases": [
+            "Integrating a service with PagerDuty for incident management and on-call scheduling",
+            "Granting access to developers to configure PagerDuty",
+            "Submitting code changes (Pull Requests) to enable the PagerDuty integration"
+        ],
+        "capabilities": [
+            "Access management for developers",
+            "Pull Request submission",
+            "Service onboarding",
+            "PagerDuty integration",
+            "Incident management",
+            "On-call scheduling"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_business-units_payments_integrate-pager-duty-and-alert-rules-for-any-service-chunk-2",
+        "name": "Integrate Pager Duty and Alert Rules for any Service.txt - Access To Oncall folks",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section explains the process of obtaining access to PagerDuty, a tool used for monitoring and alerting systems. It outlines the steps required for developers to gain access, including submitting a JIRA ticket request, logging into PagerDuty, and configuring personal contact information. Additionally, it mentions the creation of alert rules using Prometheus for monitoring specific services based on the team's requirements.",
+        "use_cases": [
+            "Granting access to PagerDuty for developers responsible for addressing alerts",
+            "Configuring personal contact information in PagerDuty",
+            "Creating alert rules for monitoring services using Prometheus"
+        ],
+        "capabilities": [
+            "Access management for PagerDuty",
+            "JIRA ticket submission for access requests",
+            "SSO login to PagerDuty",
+            "Personal profile configuration in PagerDuty",
+            "Alert rule creation using Prometheus",
+            "Service monitoring based on team requirements"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/4789fc0b51526ee1d669170d3ad2e01e.png",
+            "https://razorpay.atlassian.net/browse/CORP-1338>",
+            "https://razorpay.pagerduty.com/incidents>"
+        ]
+    },
+    {
+        "id": "engineering_devops_business-units_payments_integrate-pager-duty-and-alert-rules-for-any-service-chunk-3",
+        "name": "Integrate Pager Duty and Alert Rules for any Service.txt - Alert Rules - Prometheus",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section explains how to set up alert rules in Prometheus and integrate them with PagerDuty. It mentions that certain labels need to be provided with each alert rule, and provides a link to documentation on how to tag alerts for AlertManager. It also includes a sample pull request as a reference. The section emphasizes that developers should ensure that the 'service' and 'live' values in the alert rules match the corresponding values defined in the PagerDuty global event rule.",
+        "use_cases": [
+            "Integrating Prometheus alert rules with PagerDuty",
+            "Setting up alert tagging for AlertManager",
+            "Ensuring consistency between alert rule labels and PagerDuty event rule definitions"
+        ],
+        "capabilities": [
+            "Alert rule configuration",
+            "Alert tagging",
+            "Integration with PagerDuty",
+            "Consistency checking",
+            "Documentation references",
+            "Sample code references"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/alert-tagging-alertmanager>",
+            "https://github.com/razorpay/alert-rules/pull/2166/files>"
+        ]
+    },
+    {
+        "id": "engineering_devops_business-units_payments_integrate-pager-duty-and-alert-rules-for-any-service-chunk-4",
+        "name": "Integrate Pager Duty and Alert Rules for any Service.txt - PagerDuty",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section explains the process of setting up PagerDuty integration for alerting and on-call schedules within the Razorpay infrastructure. It involves creating an on-call schedule, escalation policy, and PagerDuty service by raising a pull request (PR) on the Vishnu repository. The section provides step-by-step instructions, including commands and code snippets, to create these components and integrate them with PagerDuty.",
+        "use_cases": [
+            "Setting up PagerDuty integration for alerting and on-call schedules",
+            "Creating an on-call schedule for a specific service or team",
+            "Defining an escalation policy for handling alerts",
+            "Integrating PagerDuty with the Razorpay infrastructure"
+        ],
+        "capabilities": [
+            "Creating on-call schedules",
+            "Defining escalation policies",
+            "Integrating PagerDuty services",
+            "Managing user assignments for on-call schedules",
+            "Automating the setup process using Terraform and Atlantis",
+            "Providing step-by-step instructions and code snippets"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/8defe4289f07ee0e6ee086c1eef63cbb.png",
+            "https://alpha.razorpay.com/_static/file/03f0d4acc665abcd26d7a05c14216713.png",
+            "https://github.com/razorpay/vishnu/pull/8130/files>",
+            "https://github.com/razorpay/vishnu/blob/master/pagerduty/non-cde-services/1-example/pagerduty.tf#L11>",
+            "https://github.com/razorpay/vishnu/blob/master/pagerduty/non-cde-services/1-example/pagerduty.tf#L18>",
+            "https://github.com/razorpay/vishnu/blob/master/pagerduty/non-cde-services/1-example/pagerduty.tf#L83>.",
+            "https://github.com/razorpay/vishnu/blob/master/pagerduty/non-cde-services/1-example/pagerduty.tf#L37>",
+            "https://razorpay.pagerduty.com/users>.",
+            "https://github.com/razorpay/vishnu/pull/8130#issuecomment-1516099788>",
+            "https://github.com/razorpay/vishnu/pull/8130>"
+        ]
+    },
+    {
+        "id": "engineering_devops_business-units_payments_integrate-pager-duty-and-alert-rules-for-any-service-chunk-5",
+        "name": "Integrate Pager Duty and Alert Rules for any Service.txt - Last Steps:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section does not contain any content or explanation. It appears to be an empty section, possibly intended for future updates or additional information related to the integration of PagerDuty and alert rules for services.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    }
+]

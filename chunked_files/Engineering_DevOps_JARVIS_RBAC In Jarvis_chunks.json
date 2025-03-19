@@ -1,0 +1,104 @@
+[
+    {
+        "id": "engineering_devops_jarvis_rbac-in-jarvis-chunk-0",
+        "name": "RBAC In Jarvis.txt - 1. Problem\u2753",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "As Jarvis grows and incorporates more automations, there is a need to implement a system that restricts user access to specific resources based on their team or role. This is to ensure that only authorized personnel can access certain resources within Jarvis. To address this requirement, the decision was made to implement a Role-Based Access Control (RBAC) system, which will allow for the restriction of team-specific resources inside Jarvis.",
+        "use_cases": [
+            "Limiting access to resources based on user's team or role",
+            "Ensuring only authorized personnel can access certain resources within Jarvis",
+            "Implementing access control as Jarvis grows and incorporates more automations",
+            "Restricting team-specific resources inside Jarvis"
+        ],
+        "capabilities": [
+            "Role-Based Access Control (RBAC)",
+            "User access restriction",
+            "Resource access control",
+            "Team-specific resource management",
+            "Access control for automations",
+            "Scalable access control system"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_jarvis_rbac-in-jarvis-chunk-1",
+        "name": "RBAC In Jarvis.txt - 2. Solution",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section appears to be introducing the idea or concept that will be discussed in the subsequent sections. However, since there is no content provided, it is difficult to provide a meaningful description of what this section explains.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_jarvis_rbac-in-jarvis-chunk-2",
+        "name": "RBAC In Jarvis.txt - 2.1 Idea",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section explains how Jarvis, a platform developed by Razorpay, implements role-based access control (RBAC) using Google's OpenID Connect (OIDC) authentication and authorization system. It describes the idea behind using Google groups as roles to restrict access to certain resources based on a user's group membership. The section also mentions that Jarvis passes user group information to upstream URLs, allowing access control based on these groups. An example image illustrates how developers are denied access to the 'Tok/Detok' tab, while DevOps users can access it.",
+        "use_cases": [
+            "Restricting access to certain resources or operations based on a user's role or group membership.",
+            "Implementing role-based access control (RBAC) in a web application or platform.",
+            "Integrating with Google's OIDC authentication and authorization system.",
+            "Passing user group information to upstream URLs for access control."
+        ],
+        "capabilities": [
+            "Google OIDC integration",
+            "User authentication",
+            "User authorization",
+            "Role-based access control (RBAC)",
+            "Passing user group information",
+            "Access control based on user groups",
+            "Upstream URL access control"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/ec07fcfcd667722ec5988870863f3def.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_jarvis_rbac-in-jarvis-chunk-3",
+        "name": "RBAC In Jarvis.txt - 2.2 Implementation (For Google OAuth only)",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section explains the implementation of Role-Based Access Control (RBAC) for Google OAuth in Jarvis. It outlines the steps to expose a backend API that sends user information, access the groups headers from the API response, and use these headers to restrict access to specific Google groups. The section also provides a contact for onboarding services or automations with RBAC in Jarvis.",
+        "use_cases": [
+            "Restricting access to specific Google groups",
+            "Onboarding services or automations with RBAC in Jarvis"
+        ],
+        "capabilities": [
+            "Exposing a backend API for user information",
+            "Accessing groups headers from API response",
+            "Restricting access based on Google groups",
+            "Onboarding services with RBAC"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/7b90415824906b6f3851cd75f9e0c5b2.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_jarvis_rbac-in-jarvis-chunk-4",
+        "name": "RBAC In Jarvis.txt - 3. How to Onboard services/automations with RBAC in Jarvis\u2753",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section does not contain any content. It appears to be an empty section or a placeholder for future content related to onboarding services or automations with RBAC (Role-Based Access Control) in Jarvis.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    }
+]

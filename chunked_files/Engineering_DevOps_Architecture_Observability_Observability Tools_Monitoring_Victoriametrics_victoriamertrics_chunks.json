@@ -1,0 +1,249 @@
+[
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_monitoring_victoriametrics_victoriamertrics-chunk-0",
+        "name": "victoriamertrics.txt - What is victoriametrics cluster?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Monitoring",
+            "Victoriametrics"
+        ],
+        "description": "This section explains that VictoriaMetrics cluster is a system designed to store and retrieve time-series data from monitoring tools like Prometheus. It consists of multiple components that work together to provide long-term storage and data management capabilities for time-series metrics. The cluster architecture allows for scalable and reliable storage and retrieval of monitoring data.",
+        "use_cases": [
+            "Long-term storage of time-series data from monitoring tools like Prometheus",
+            "Scalable and reliable storage and retrieval of monitoring data",
+            "Data management for time-series metrics"
+        ],
+        "capabilities": [
+            "Stores time-series data from Prometheus or similar components",
+            "Long-term storage",
+            "Cluster architecture with multiple components",
+            "Data storage and retrieval",
+            "Scalability",
+            "Reliability"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_monitoring_victoriametrics_victoriamertrics-chunk-1",
+        "name": "victoriamertrics.txt - What are the components of Victoriametrics cluster?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Monitoring",
+            "Victoriametrics"
+        ],
+        "description": "This section outlines the three main components that make up a VictoriaMetrics cluster: vmagent, vmselect, and vminsert. These components work together to collect, process, and store time-series data efficiently. A non-expert can understand this as a distributed system where different parts handle different tasks related to managing and analyzing large amounts of monitoring data.",
+        "use_cases": [
+            "Monitoring and analyzing time-series data at scale",
+            "Building a distributed monitoring system",
+            "Handling high ingestion rates of metrics",
+            "Efficient storage and querying of time-series data"
+        ],
+        "capabilities": [
+            "Distributed architecture",
+            "Time-series data collection",
+            "Data processing",
+            "Data storage",
+            "Query handling",
+            "Scalability"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_monitoring_victoriametrics_victoriamertrics-chunk-2",
+        "name": "victoriamertrics.txt - vmagent",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Monitoring",
+            "Victoriametrics"
+        ],
+        "description": "This section explains vmagent, which is a lightweight component that serves as a replacement for Prometheus. It is responsible for collecting metrics from various applications and infrastructure components. The section highlights that vmagent is significantly more lightweight compared to Prometheus, making it a more efficient option for metric collection.",
+        "use_cases": [
+            "Collecting metrics from applications and infrastructure components",
+            "Replacing Prometheus for metric collection",
+            "Lightweight metric collection solution"
+        ],
+        "capabilities": [
+            "Drop-in replacement for Prometheus",
+            "Collects metrics from various sources",
+            "Lightweight compared to Prometheus"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_monitoring_victoriametrics_victoriamertrics-chunk-3",
+        "name": "victoriamertrics.txt - vmselect",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Monitoring",
+            "Victoriametrics"
+        ],
+        "description": "This section explains that vmselect is a stateless component that is deployed across different clusters (ops common, stage, prod, cde) based on its function. It is used for monitoring infrastructure metrics like node exporter and cadvisor metrics, where the vmselect deployed in the ops common cluster is used. For scraping metrics from applications, the vmselect deployed in the respective cluster is utilized.",
+        "use_cases": [
+            "Monitoring infrastructure metrics (node exporter, cadvisor)",
+            "Scraping metrics from applications",
+            "Deployment across multiple clusters (ops common, stage, prod, cde)"
+        ],
+        "capabilities": [
+            "Stateless component",
+            "Deployed across multiple clusters",
+            "Monitoring infrastructure metrics",
+            "Scraping application metrics",
+            "Cluster-specific deployment for application monitoring"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_monitoring_victoriametrics_victoriamertrics-chunk-4",
+        "name": "victoriamertrics.txt - vminsert",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Monitoring",
+            "Victoriametrics"
+        ],
+        "description": "This section explains the functionality of 'vmselect', which is a component responsible for retrieving time-series data from configured 'vmstorage' pods. It operates on worker-monitoring nodes within the 'ops-common' environment, acting as a data retrieval layer for accessing and querying the stored time-series information.",
+        "use_cases": [
+            "Retrieving time-series data from storage pods",
+            "Querying and accessing stored time-series information",
+            "Serving as a data retrieval layer for monitoring systems"
+        ],
+        "capabilities": [
+            "Retrieves timeseries data",
+            "Connects to vmstorage pods",
+            "Runs on worker-monitoring nodes",
+            "Operates in ops-common environment"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_monitoring_victoriametrics_victoriamertrics-chunk-5",
+        "name": "victoriamertrics.txt - vmstorage",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Monitoring",
+            "Victoriametrics"
+        ],
+        "description": "This section explains that 'vmstorage' is a stateless component of VictoriaMetrics, which is a high-performance, cost-effective monitoring solution. A stateless component means that it does not store any data locally and relies on external storage for data persistence. This makes it easier to scale and maintain the system.",
+        "use_cases": [
+            "High-performance monitoring",
+            "Cost-effective monitoring",
+            "Scalable monitoring",
+            "Stateless architecture for easy maintenance"
+        ],
+        "capabilities": [
+            "Stateless component",
+            "Relies on external storage",
+            "Designed for scalability",
+            "High performance",
+            "Cost-effective"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_monitoring_victoriametrics_victoriamertrics-chunk-6",
+        "name": "victoriamertrics.txt - vmalert",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Monitoring",
+            "Victoriametrics"
+        ],
+        "description": "This section explains vmalert, which is a component of the VictoriaMetrics monitoring system. It describes vmalert as a stateless component that distributes incoming time-series data from vmagent or Prometheus to available vmstorage pods. The section implies that vmalert plays a role in load balancing and distributing data across multiple storage nodes for scalability and high availability.",
+        "use_cases": [
+            "Load balancing and distributing time-series data across multiple storage nodes",
+            "Scaling the monitoring system by adding more storage nodes",
+            "High availability and fault tolerance for time-series data storage"
+        ],
+        "capabilities": [
+            "Spreads incoming timeseries data",
+            "Stateless component",
+            "Runs on worker-monitoring nodes"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_monitoring_victoriametrics_victoriamertrics-chunk-7",
+        "name": "victoriamertrics.txt - Architecture",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Monitoring",
+            "Victoriametrics"
+        ],
+        "description": "This section explains the architecture of VictoriaMetrics, which consists of two main components: vmstorage and vmalert. vmstorage is a stateful component responsible for storing time-series data, and it runs on worker-vm-storage nodes in the ops-common environment. The vmstorage nodes do not communicate with each other. vmalert is responsible for evaluating configured alert rules or recording rules against a data source and sending alert notifications to Alertmanager.",
+        "use_cases": [
+            "Storing time-series data",
+            "Evaluating alert rules",
+            "Sending alert notifications",
+            "Monitoring and alerting"
+        ],
+        "capabilities": [
+            "Time-series data storage",
+            "Stateful component",
+            "Distributed architecture",
+            "Alert rule evaluation",
+            "Recording rule evaluation",
+            "Alert notification delivery"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_monitoring_victoriametrics_victoriamertrics-chunk-8",
+        "name": "victoriamertrics.txt - promxy",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Monitoring",
+            "Victoriametrics"
+        ],
+        "description": "This section explains Promxy, a tool that combines time-series data from multiple sources like Prometheus and VictoriaMetrics, providing a unified view. It is horizontally scalable and runs on worker-monitoring nodes in the ops-common cluster. Promxy merges data from different VictoriaMetrics instances in the vm and vm-new namespaces, allowing for a consolidated view of metrics.",
+        "use_cases": [
+            "Consolidating time-series data from multiple sources",
+            "Scaling monitoring infrastructure horizontally",
+            "Providing a unified view of metrics across different VictoriaMetrics instances"
+        ],
+        "capabilities": [
+            "Horizontal scaling",
+            "Merging time-series data",
+            "Unified result from multiple sources",
+            "Querying VictoriaMetrics instances",
+            "Deployed on worker-monitoring nodes"
+        ],
+        "references": [
+            "https://alpha.razorpay.comhttps://alpha.razorpay.com/_static/file/0cd5e26cbd493707d84259a0abb3d9da.png",
+            "https://alpha.razorpay.com/_static/file/0cd5e26cbd493707d84259a0abb3d9da.png"
+        ]
+    }
+]

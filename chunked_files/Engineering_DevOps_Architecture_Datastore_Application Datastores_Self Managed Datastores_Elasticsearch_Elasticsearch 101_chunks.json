@@ -1,0 +1,131 @@
+[
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_self-managed-datastores_elasticsearch_elasticsearch-101-chunk-0",
+        "name": "Elasticsearch 101.txt - Elasticsearch core concepts:-",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "Self Managed Datastores",
+            "Elasticsearch"
+        ],
+        "description": "This section aims to introduce the fundamental building blocks of Elasticsearch, a popular open-source search and analytics engine. It is intended to provide a high-level overview of the core concepts that underlie Elasticsearch's functionality, making it accessible to readers without prior expertise in the field.",
+        "use_cases": [
+            "Search and analytics",
+            "Data indexing and retrieval",
+            "Log analysis",
+            "Application monitoring"
+        ],
+        "capabilities": [
+            "Distributed search and analytics",
+            "Full-text search",
+            "Near real-time data ingestion",
+            "Scalability and high availability",
+            "Data aggregation and visualization",
+            "RESTful API"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_self-managed-datastores_elasticsearch_elasticsearch-101-chunk-1",
+        "name": "Elasticsearch 101.txt - Node",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "Self Managed Datastores",
+            "Elasticsearch"
+        ],
+        "description": "This section appears to be about the concept of a 'Node' in Elasticsearch, which is a single server that is part of a cluster. A node is a running instance of Elasticsearch that stores data and participates in the cluster's indexing and search capabilities. However, since the section content is empty, it does not provide any further details or explanations.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_self-managed-datastores_elasticsearch_elasticsearch-101-chunk-2",
+        "name": "Elasticsearch 101.txt - Cluster",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "Self Managed Datastores",
+            "Elasticsearch"
+        ],
+        "description": "This section appears to be about the concept of a 'cluster' in Elasticsearch, which is a collection of one or more nodes (servers) that together hold the entire data and provide indexing and search capabilities across all nodes. A cluster provides scalability, fault tolerance, and high availability for Elasticsearch operations.",
+        "use_cases": [
+            "Handling large volumes of data",
+            "Providing high availability and fault tolerance",
+            "Scaling out search and indexing capabilities"
+        ],
+        "capabilities": [
+            "Distributed data storage",
+            "Scalable indexing and search",
+            "Fault tolerance and high availability",
+            "Load balancing across nodes"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_self-managed-datastores_elasticsearch_elasticsearch-101-chunk-3",
+        "name": "Elasticsearch 101.txt - Index (noun and verb)",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "Self Managed Datastores",
+            "Elasticsearch"
+        ],
+        "description": "This section appears to explain the concept of an 'index' in Elasticsearch, which can refer to both a noun (a data structure) and a verb (the action of storing data). An index in Elasticsearch is a collection of documents that have similar characteristics, and it serves as a way to organize and store data for efficient searching and retrieval.",
+        "use_cases": [
+            "Organizing and storing data in a structured way",
+            "Enabling efficient searching and retrieval of data",
+            "Handling large volumes of data",
+            "Providing a centralized data store for various applications"
+        ],
+        "capabilities": [
+            "Data indexing",
+            "Full-text search",
+            "Near real-time search",
+            "Distributed architecture",
+            "Scalability",
+            "Fault tolerance"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_self-managed-datastores_elasticsearch_elasticsearch-101-chunk-4",
+        "name": "Elasticsearch 101.txt - Shards (Primary and Replica)",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "Self Managed Datastores",
+            "Elasticsearch"
+        ],
+        "description": "This section appears to be about explaining the concept of shards in Elasticsearch, which are the fundamental units of data storage and distribution. Shards can be either primary or replica, where primary shards hold the original data, and replica shards are copies of the primary shards for redundancy and high availability.",
+        "use_cases": [
+            "Data distribution and scalability",
+            "High availability and fault tolerance",
+            "Load balancing and parallel processing"
+        ],
+        "capabilities": [
+            "Primary shards",
+            "Replica shards",
+            "Data redundancy",
+            "Horizontal scaling",
+            "Fault tolerance",
+            "Parallel processing"
+        ],
+        "references": []
+    }
+]

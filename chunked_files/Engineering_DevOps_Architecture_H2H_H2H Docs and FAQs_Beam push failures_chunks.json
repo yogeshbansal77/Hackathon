@@ -1,0 +1,28 @@
+[
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_beam-push-failures-chunk-0",
+        "name": "Beam push failures.txt - To check file push failures",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section provides a query to search for error logs related to file push failures in a Docker environment. The query filters logs from the 'Docker-logs' source and 'prod-beam' collector, extracts the 'level' field from the JSON-formatted logs, and then filters for logs with an 'error' level and a 'push' job type. This can help identify and troubleshoot issues when pushing files or images to a Docker registry.",
+        "use_cases": [
+            "Troubleshooting Docker file push failures",
+            "Monitoring Docker registry operations",
+            "Analyzing Docker log data",
+            "Identifying errors in CI/CD pipelines involving Docker"
+        ],
+        "capabilities": [
+            "Filtering logs by source and collector",
+            "Parsing JSON-formatted logs",
+            "Filtering logs by log level",
+            "Filtering logs by job type",
+            "Querying log data"
+        ],
+        "references": []
+    }
+]

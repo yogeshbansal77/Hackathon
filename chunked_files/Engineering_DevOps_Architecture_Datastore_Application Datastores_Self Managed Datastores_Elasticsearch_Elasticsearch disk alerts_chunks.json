@@ -1,0 +1,184 @@
+[
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_self-managed-datastores_elasticsearch_elasticsearch-disk-alerts-chunk-0",
+        "name": "Elasticsearch disk alerts.txt - Introduction",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "Self Managed Datastores",
+            "Elasticsearch"
+        ],
+        "description": "This section provides instructions for troubleshooting disk alerts related to Elasticsearch clusters. It suggests that if a disk alert is received, the user should open a specific link (vajra link) provided in the alert description. The section includes a screenshot, likely demonstrating the location or appearance of the vajra link.",
+        "use_cases": [
+            "Troubleshooting disk alerts for Elasticsearch clusters",
+            "Accessing a specific link (vajra link) for further investigation or resolution",
+            "Identifying the location or appearance of the vajra link through a provided screenshot"
+        ],
+        "capabilities": [
+            "Disk alert monitoring",
+            "Elasticsearch cluster management",
+            "Alert description with link",
+            "Visual aid (screenshot)"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/b93800dda757de56465e3a63e4c45c1e.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_self-managed-datastores_elasticsearch_elasticsearch-disk-alerts-chunk-1",
+        "name": "Elasticsearch disk alerts.txt - Alert Trigger Condition",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "Self Managed Datastores",
+            "Elasticsearch"
+        ],
+        "description": "This section explains that an alert will be triggered when any of the nodes in the Elasticsearch cluster has less than 20% of its total disk space available. This alert is designed to notify administrators or users about potential disk space issues, allowing them to take necessary actions to prevent data loss or system failures caused by insufficient disk space.",
+        "use_cases": [
+            "Monitoring disk space usage in an Elasticsearch cluster",
+            "Proactive alerting for potential disk space issues",
+            "Preventing data loss or system failures due to insufficient disk space",
+            "Capacity planning and resource management for Elasticsearch nodes"
+        ],
+        "capabilities": [
+            "Disk space monitoring",
+            "Threshold-based alerting",
+            "Node-level disk space tracking",
+            "Percentage-based disk space threshold",
+            "Cluster-wide disk space monitoring"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_self-managed-datastores_elasticsearch_elasticsearch-disk-alerts-chunk-2",
+        "name": "Elasticsearch disk alerts.txt - Possible Actions",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "Self Managed Datastores",
+            "Elasticsearch"
+        ],
+        "description": "This section outlines two potential actions to address disk space issues in Elasticsearch. The first action suggests looking for and purging old log files that may be consuming unnecessary disk space. The second action recommends increasing the size of the Elastic Block Store (EBS) volume where the Elasticsearch shards are stored, as the issue may be caused by bloated and ever-growing data that is not being properly managed through lifecycle management processes.",
+        "use_cases": [
+            "Managing disk space usage in Elasticsearch",
+            "Purging old log files",
+            "Increasing storage capacity for Elasticsearch shards",
+            "Handling data growth and lifecycle management"
+        ],
+        "capabilities": [
+            "Log file management",
+            "Disk space monitoring",
+            "Storage capacity expansion",
+            "Data lifecycle management",
+            "Elasticsearch shard storage"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_self-managed-datastores_elasticsearch_elasticsearch-disk-alerts-chunk-3",
+        "name": "Elasticsearch disk alerts.txt - Purging Old Logs",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "Self Managed Datastores",
+            "Elasticsearch"
+        ],
+        "description": "This section explains how to purge or delete old log files from Elasticsearch to free up disk space. It provides a visual example of navigating to the Elasticsearch log directory and deleting the log files that are no longer needed. This process can help resolve disk space issues caused by the accumulation of log files over time.",
+        "use_cases": [
+            "Freeing up disk space on the Elasticsearch server",
+            "Managing and maintaining Elasticsearch log files",
+            "Troubleshooting disk space alerts or issues related to Elasticsearch",
+            "Periodic maintenance and cleanup of Elasticsearch logs"
+        ],
+        "capabilities": [
+            "Accessing Elasticsearch log directory",
+            "Identifying and deleting old log files",
+            "Purging or removing log files",
+            "Disk space management",
+            "Log file maintenance"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/6d7554298b7247fbd7d83af60d1c671f.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_self-managed-datastores_elasticsearch_elasticsearch-disk-alerts-chunk-4",
+        "name": "Elasticsearch disk alerts.txt - Increasing EBS Volume Size",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "Self Managed Datastores",
+            "Elasticsearch"
+        ],
+        "description": "This section explains the process of increasing the storage capacity of an Elastic Block Store (EBS) volume attached to an Elasticsearch node. It provides step-by-step instructions with screenshots on how to resize the EBS volume through the AWS Management Console. This process is necessary when the existing storage space on the node is running low, and more space is required to accommodate data growth or logs.",
+        "use_cases": [
+            "Increasing storage capacity for an Elasticsearch node",
+            "Resolving storage space issues on an Elasticsearch node",
+            "Scaling up an Elasticsearch cluster to handle data growth"
+        ],
+        "capabilities": [
+            "EBS volume resizing",
+            "AWS Management Console",
+            "Elasticsearch storage management",
+            "Cluster scaling",
+            "Data growth handling"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/aef6cf5cd7c07ff1106a69c8dc842173.png",
+            "https://alpha.razorpay.com/_static/file/5d1b5c45ebc56e1fd9dda8480a03d83d.png",
+            "https://alpha.razorpay.com/_static/file/e382d7056c3dc7501b6df411b73a64c3.png",
+            "https://alpha.razorpay.com/_static/file/ae3aa2ada86e5bfa031323c3d6a74aad.png",
+            "https://alpha.razorpay.com/_static/file/a4bf029e278942c68f1e210441711131.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_datastore_application-datastores_self-managed-datastores_elasticsearch_elasticsearch-disk-alerts-chunk-5",
+        "name": "Elasticsearch disk alerts.txt - Extending Filesystem",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Datastore",
+            "Application Datastores",
+            "Self Managed Datastores",
+            "Elasticsearch"
+        ],
+        "description": "This section explains the process of extending the filesystem on an AWS Elastic Block Store (EBS) volume attached to an Elasticsearch node. It provides instructions and considerations for increasing the storage capacity of the node by expanding the size of the root EBS volume. The process differs slightly between older and newer generation EC2 instance types, with newer instances allowing volume resizing without rebooting.",
+        "use_cases": [
+            "Increasing storage capacity for an Elasticsearch cluster node",
+            "Expanding the root filesystem of an AWS EC2 instance",
+            "Handling storage growth requirements for data-intensive applications"
+        ],
+        "capabilities": [
+            "EBS volume resizing",
+            "Filesystem expansion",
+            "Instance type compatibility check",
+            "Root volume expansion",
+            "Storage capacity increase",
+            "AWS EC2 instance management"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/e4da6169979d7bdf845597e62673bc04.png",
+            "https://alpha.razorpay.com/_static/file/be58929fec2dfce35806e87d19acda93.png",
+            "https://alpha.razorpay.com/_static/file/346d866e49a2aeff4183ddea4cf2c0d1.png",
+            "https://alpha.razorpay.com/_static/file/801605e875db3435ff30bc7c41a578cf.png",
+            "https://aws.amazon.com/premiumsupport/knowledge-center/expand-root-ebs-linux/>",
+            "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html#current-gen-instances>"
+        ]
+    }
+]

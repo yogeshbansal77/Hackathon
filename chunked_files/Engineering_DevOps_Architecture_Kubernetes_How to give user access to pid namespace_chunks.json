@@ -1,0 +1,123 @@
+[
+    {
+        "id": "engineering_devops_architecture_kubernetes_how-to-give-user-access-to-pid-namespace-chunk-0",
+        "name": "How to give user access to pid namespace.txt - Check if rolebindings already exists",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section explains how to check if a RoleBinding already exists in a specific namespace (in this case, 'pid-1') using the 'kubectl get rolebindings' command. It shows the command to run and provides an example of the expected output if a RoleBinding is present in that namespace. This is a preliminary step before granting user access to the namespace, as it helps determine if the necessary RoleBinding already exists or needs to be created.",
+        "use_cases": [
+            "Checking if a RoleBinding exists in a specific namespace",
+            "Verifying access permissions before granting user access",
+            "Auditing existing RoleBindings in a namespace",
+            "Troubleshooting access issues related to RoleBindings"
+        ],
+        "capabilities": [
+            "Listing RoleBindings in a namespace",
+            "Checking RoleBinding existence",
+            "Viewing RoleBinding output",
+            "Namespace-specific RoleBinding management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_how-to-give-user-access-to-pid-namespace-chunk-1",
+        "name": "How to give user access to pid namespace.txt - If it's not there, create new rolebindings using below yaml",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section explains how to create a new RoleBinding in Kubernetes if the existing RoleBinding named 'pid-1-rb' with the ClusterRole 'pid-access-role' is not present. It provides a YAML template that can be used to create a new RoleBinding, where the user needs to specify the name of the RoleBinding and the namespace in which it should be created. This allows granting access to the pid namespace for specific users or groups.",
+        "use_cases": [
+            "Granting access to the pid namespace for specific users or groups",
+            "Managing access control and permissions in a Kubernetes cluster",
+            "Ensuring proper isolation and security for different namespaces"
+        ],
+        "capabilities": [
+            "Creating RoleBindings",
+            "Specifying namespace",
+            "Referencing ClusterRoles",
+            "Access control management",
+            "RBAC configuration"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_how-to-give-user-access-to-pid-namespace-chunk-2",
+        "name": "How to give user access to pid namespace.txt - If the rolebindings already exists and if you need to give permission for more users, just edit the rolebindings and add extra \"apiGroup\" block with the user's email ID",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section provides a code snippet for defining a ClusterRole resource in Kubernetes, specifically named 'pid-access-role'. A ClusterRole is a set of permissions that can be granted to users or groups to perform certain actions within a Kubernetes cluster. The purpose of this particular ClusterRole is likely to grant access to the process ID (PID) namespace, which allows users to view and manage processes running in containers.",
+        "use_cases": [
+            "Granting users access to view and manage processes in containers",
+            "Controlling access to sensitive resources like PID namespace",
+            "Implementing role-based access control (RBAC) in Kubernetes"
+        ],
+        "capabilities": [
+            "ClusterRole",
+            "RBAC",
+            "PID namespace access",
+            "Access control",
+            "Resource management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_how-to-give-user-access-to-pid-namespace-chunk-3",
+        "name": "How to give user access to pid namespace.txt - Command to edit rolebindings",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section explains how to grant user access to a specific namespace in a Kubernetes cluster. It shows the configuration syntax for defining a user subject in a RoleBinding resource, which binds a user to a particular role within a namespace. The 'subjects' field specifies the user or group that the role applies to, and the 'name' field identifies the specific user being granted access.",
+        "use_cases": [
+            "Granting individual user access to a namespace",
+            "Configuring role-based access control (RBAC) in Kubernetes",
+            "Managing user permissions and access levels within a Kubernetes cluster",
+            "Securing and isolating resources within a namespace"
+        ],
+        "capabilities": [
+            "User access management",
+            "Namespace isolation",
+            "Role-based access control (RBAC)",
+            "User subject definition",
+            "RoleBinding configuration"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_kubernetes_how-to-give-user-access-to-pid-namespace-chunk-4",
+        "name": "How to give user access to pid namespace.txt - apiGroup block",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section explains how to grant user access to a specific namespace in a Kubernetes cluster using role bindings. It provides a sample YAML block that defines an API group, user kind, and user name (email) to be added to an existing role binding. The section also includes a command to edit an existing role binding and add more users by appending additional API group blocks with user email IDs.",
+        "use_cases": [
+            "Granting user access to a specific namespace in a Kubernetes cluster",
+            "Adding new users to an existing role binding",
+            "Managing user permissions and access control in a Kubernetes environment"
+        ],
+        "capabilities": [
+            "Defining API groups and user kinds in YAML",
+            "Specifying user names (email IDs) for access",
+            "Editing existing role bindings",
+            "Adding multiple users to a role binding",
+            "Managing access control and permissions"
+        ],
+        "references": []
+    }
+]

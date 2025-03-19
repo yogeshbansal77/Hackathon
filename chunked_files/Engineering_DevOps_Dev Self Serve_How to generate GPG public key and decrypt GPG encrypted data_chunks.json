@@ -1,0 +1,102 @@
+[
+    {
+        "id": "engineering_devops_dev-self-serve_how-to-generate-gpg-public-key-and-decrypt-gpg-encrypted-data-chunk-0",
+        "name": "How to generate GPG public key and decrypt GPG encrypted data.txt - Install GPG in MacOS",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section introduces the concept of generating GPG (GNU Privacy Guard) keys, which are essential for encrypting and decrypting data using the GPG encryption system. It mentions that there are three different ways to generate these keys, as outlined in a provided external link. GPG keys are used to secure sensitive information and ensure data privacy and integrity during transmission or storage.",
+        "use_cases": [
+            "Encrypting and decrypting sensitive data",
+            "Securing data transmission",
+            "Ensuring data integrity",
+            "Maintaining data privacy"
+        ],
+        "capabilities": [
+            "Key generation",
+            "Data encryption",
+            "Data decryption",
+            "Data security",
+            "Data privacy",
+            "Data integrity"
+        ],
+        "references": [
+            "https://www.redhat.com/sysadmin/creating-gpg-keypairs"
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_how-to-generate-gpg-public-key-and-decrypt-gpg-encrypted-data-chunk-1",
+        "name": "How to generate GPG public key and decrypt GPG encrypted data.txt - Generate keys",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains how to quickly generate a GPG (GNU Privacy Guard) key pair, which consists of a public and private key. The process involves running a command with specific options, where you need to replace 'USER_ID' with a unique identifier of your choice. The command generates the key pair in a batch mode without requiring user interaction or a passphrase. The generated key pair can be used for encrypting and decrypting data, ensuring data privacy and security.",
+        "use_cases": [
+            "Encrypting sensitive data",
+            "Decrypting encrypted data",
+            "Secure communication",
+            "Digital signatures"
+        ],
+        "capabilities": [
+            "Quick key generation",
+            "Batch mode operation",
+            "Passphrase-less key creation",
+            "User-defined key identifier",
+            "Default key type and key length"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_how-to-generate-gpg-public-key-and-decrypt-gpg-encrypted-data-chunk-2",
+        "name": "How to generate GPG public key and decrypt GPG encrypted data.txt - Share public key",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains how to export your GPG public key in a format that can be shared with others. The public key is used for encrypting data that only the corresponding private key can decrypt. By sharing the public key, others can send you encrypted messages or files that only you can read with your private key. The process involves running a command that exports the public key to a file with the .asc extension, which can then be shared securely.",
+        "use_cases": [
+            "Sharing public key for secure communication",
+            "Enabling others to send encrypted data",
+            "Establishing trust for data encryption",
+            "Distributing public key for verification"
+        ],
+        "capabilities": [
+            "Export public key",
+            "Armor public key",
+            "Specify user ID",
+            "Save public key to file",
+            "Share public key file"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_how-to-generate-gpg-public-key-and-decrypt-gpg-encrypted-data-chunk-3",
+        "name": "How to generate GPG public key and decrypt GPG encrypted data.txt - Decrypt data",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains how to decrypt a GPG encrypted file using the recipient's private key. It first shows how to export your public key to a file (mypubkey.asc) that can be shared with others who want to encrypt data for you. Then, it demonstrates how to decrypt a file (bank_data.gpg) that was encrypted with your public key by using the 'gpg --decrypt' command along with the encrypted file as an argument.",
+        "use_cases": [
+            "Securely sharing sensitive data with others",
+            "Decrypting confidential files encrypted with your public key",
+            "Protecting sensitive information from unauthorized access",
+            "Ensuring data integrity and authenticity through encryption"
+        ],
+        "capabilities": [
+            "Exporting public key to a file",
+            "Sharing public key with others",
+            "Decrypting GPG encrypted files",
+            "Using command-line interface for GPG operations",
+            "Handling encrypted data files",
+            "Secure data exchange"
+        ],
+        "references": []
+    }
+]

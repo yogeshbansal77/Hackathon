@@ -1,0 +1,46 @@
+[
+    {
+        "id": "engineering_devops_harbor_harbor-custom-changes-chunk-0",
+        "name": "Harbor custom changes.txt - GC optimisation",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Harbor"
+        ],
+        "description": "This section discusses the performance issue related to the Garbage Collection (GC) process in Harbor, which is a cloud-native registry for storing and distributing container images. The issue arises due to the large volume of images stored in the registry, leading to slowness in the GC process. The section aims to provide insights into this problem and potentially suggest solutions or optimizations.",
+        "use_cases": [
+            "Managing large volumes of container images in a registry",
+            "Optimizing performance of the Garbage Collection process",
+            "Improving overall system performance and responsiveness"
+        ],
+        "capabilities": [
+            "Garbage Collection",
+            "Performance optimization",
+            "Container image management",
+            "Large-scale storage",
+            "System monitoring"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_harbor_harbor-custom-changes-chunk-1",
+        "name": "Harbor custom changes.txt - Multiarch image build",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Harbor"
+        ],
+        "description": "This section explains that changes have been made to the Make process in order to support building multi-architecture (multiarch) container images. Multi-architecture images allow a single container image to run on different CPU architectures, such as x86 and ARM, without needing separate images for each architecture.",
+        "use_cases": [
+            "Building multi-architecture container images",
+            "Supporting deployment on different CPU architectures (e.g., x86, ARM)",
+            "Reducing the need for multiple architecture-specific images"
+        ],
+        "capabilities": [
+            "Multiarch image build",
+            "Make changes",
+            "Cross-architecture support"
+        ],
+        "references": []
+    }
+]

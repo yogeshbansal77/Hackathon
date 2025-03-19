@@ -1,0 +1,126 @@
+[
+    {
+        "id": "engineering_devops_unicreds-tables-chunk-0",
+        "name": "Unicreds tables.txt - Databricks / EMR uses dedicated credstash tables",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section appears to be providing instructions on how to install a software or tool called 'unicreds'. However, the content provided is incomplete and does not contain any actual installation steps or explanations.",
+        "use_cases": [
+            "Installing unicreds software or tool",
+            "Setting up or configuring unicreds for use"
+        ],
+        "capabilities": [
+            "Installation instructions",
+            "Software setup",
+            "Configuration guidance"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_unicreds-tables-chunk-1",
+        "name": "Unicreds tables.txt - How to install unicreds",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section provides instructions on how to install the 'unicreds' tool using the Homebrew package manager on macOS or Linux systems. It explains that users need to first tap into the Versent Homebrew repository, and then run the 'brew install unicreds' command to install the tool.",
+        "use_cases": [
+            "Installing the 'unicreds' tool on macOS or Linux systems",
+            "Setting up the Versent Homebrew repository for accessing the 'unicreds' package",
+            "Using the Homebrew package manager to install command-line tools"
+        ],
+        "capabilities": [
+            "Tapping into third-party Homebrew repositories",
+            "Installing command-line tools using Homebrew",
+            "Managing package installations on macOS and Linux systems"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_unicreds-tables-chunk-2",
+        "name": "Unicreds tables.txt - spark properties.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section appears to be introducing two tables related to Spark properties. However, the content provided does not include the actual tables or any further details about their purpose or structure. Without more context, it is difficult to provide a comprehensive description.",
+        "use_cases": [
+            "Configuring Spark properties",
+            "Understanding Spark table structures"
+        ],
+        "capabilities": [
+            "Listing Spark properties",
+            "Documenting Spark tables"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_unicreds-tables-chunk-3",
+        "name": "Unicreds tables.txt - Switch to quoble profile",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section explains that the 'unicreds_prod_config' is used for production, reporting, and development workspaces, while the 'unicreds_stage_config' is used for the non-production workspace. It appears to be describing different configurations or settings used for different environments or stages of a system or application.",
+        "use_cases": [
+            "Managing configurations for different environments (production, staging, development)",
+            "Separating configurations for production and non-production workspaces",
+            "Configuring workspaces or environments based on specific requirements"
+        ],
+        "capabilities": [
+            "unicreds_prod_config",
+            "unicreds_stage_config",
+            "prod workspace",
+            "reporting workspace",
+            "dev workspace",
+            "nonprd workspace"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_unicreds-tables-chunk-4",
+        "name": "Unicreds tables.txt - To list all credentials from unicreds tables",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section explains how to switch to the Qubole profile in the AWS command-line interface (CLI) environment. The Qubole profile is likely a configuration setting that allows the user to interact with Qubole services or resources using the AWS CLI. This step may be necessary before performing certain operations related to Qubole within the AWS ecosystem.",
+        "use_cases": [
+            "Managing Qubole resources or services through the AWS CLI",
+            "Accessing Qubole-specific functionality or data within the AWS environment",
+            "Configuring or setting up the AWS CLI for Qubole-related tasks"
+        ],
+        "capabilities": [
+            "AWS CLI profile management",
+            "Qubole integration with AWS",
+            "Command-line interface for Qubole operations"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_unicreds-tables-chunk-5",
+        "name": "Unicreds tables.txt - Add new secrets to unicreds tables",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section explains how to list and add new secrets or credentials to the unicreds tables, which are used to store sensitive information like database hostnames and other configuration details. The code snippets provided demonstrate the commands to be executed using the 'credstash' tool to list existing secrets and add new ones for both production and staging environments.",
+        "use_cases": [
+            "Securely storing and retrieving sensitive configuration data like database hostnames",
+            "Managing credentials and secrets for different environments (production and staging)",
+            "Centralized management of sensitive information used by applications or services",
+            "Auditing and controlling access to sensitive data"
+        ],
+        "capabilities": [
+            "Listing existing secrets/credentials",
+            "Adding new secrets/credentials",
+            "Environment-specific credential management",
+            "Secure storage and retrieval of sensitive data",
+            "Command-line interface (CLI) for credential management",
+            "Aliasing or naming conventions for credential stores"
+        ],
+        "references": []
+    }
+]

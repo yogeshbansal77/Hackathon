@@ -1,0 +1,111 @@
+[
+    {
+        "id": "engineering_devops_run-books-and-sops_pd-alert-run-books_statuscake-ip-whitelisting-chunk-0",
+        "name": "Statuscake ip whitelisting.txt - StatusCake",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs",
+            "PD Alert Run-books"
+        ],
+        "description": "This section explains that StatusCake is a service that provides website monitoring from multiple servers located around the world. It has over 200 monitoring servers globally. The IP addresses of these servers have been whitelisted in an AWS security group called 'prod-common-ingress-statuscake', which is used by all production load balancers for the Concierge service. This allows the StatusCake servers to access and monitor the websites or applications behind these load balancers.",
+        "use_cases": [
+            "Website monitoring from multiple global locations",
+            "Whitelisting monitoring service IP addresses for secure access",
+            "Integrating monitoring service with cloud infrastructure (AWS)",
+            "Monitoring production applications or websites"
+        ],
+        "capabilities": [
+            "Global monitoring servers",
+            "IP whitelisting",
+            "AWS security group integration",
+            "Load balancer integration",
+            "Production environment monitoring"
+        ],
+        "references": [
+            "https://ap-south-1.console.aws.amazon.com/ec2/v2/home?region=ap-south-1#SecurityGroups:group-name=prod-common-ingress-statuscake;sort=group-id",
+            "https://app.statuscake.com/Workfloor/Locations.php?format=json>",
+            "https://ap-south-1.console.aws.amazon.com/ec2/v2/home?region=ap-south-1#LoadBalancers:search=sg-03dc85ebda019afec;sort=loadBalancerName>"
+        ]
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_pd-alert-run-books_statuscake-ip-whitelisting-chunk-1",
+        "name": "Statuscake ip whitelisting.txt - Problem",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs",
+            "PD Alert Run-books"
+        ],
+        "description": "This section appears to be introducing a problem or issue related to IP whitelisting and security group management using Terraform. However, the provided content is incomplete and lacks context, making it difficult to fully understand the specific problem being addressed.",
+        "use_cases": [
+            "Managing IP whitelisting",
+            "Configuring security groups",
+            "Using Terraform for infrastructure as code"
+        ],
+        "capabilities": [
+            "IP whitelisting",
+            "Security group management",
+            "Terraform configuration",
+            "Infrastructure as code"
+        ],
+        "references": [
+            "https://github.com/razorpay/vishnu/blob/master/modules/common-security-group/main.tf#L57>"
+        ]
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_pd-alert-run-books_statuscake-ip-whitelisting-chunk-2",
+        "name": "Statuscake ip whitelisting.txt - Limitation",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs",
+            "PD Alert Run-books"
+        ],
+        "description": "This section explains a limitation in managing security group rules using Terraform. When Statuscake rotates their servers, new IP addresses need to be whitelisted in the security group. However, Terraform does not allow updating security groups by adding duplicate rules that already exist, causing an error and terminating the process midway.",
+        "use_cases": [
+            "Managing security group rules for whitelisting IP addresses",
+            "Handling server IP rotation by a third-party service (Statuscake)",
+            "Automating security group updates using Terraform"
+        ],
+        "capabilities": [
+            "Whitelisting IP addresses",
+            "Security group management",
+            "Terraform automation",
+            "Error handling",
+            "Handling duplicate security group rules"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/a3c7ff2df22da4ca4b6d43d57e0fd85a.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_pd-alert-run-books_statuscake-ip-whitelisting-chunk-3",
+        "name": "Statuscake ip whitelisting.txt - How to resolve",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs",
+            "PD Alert Run-books"
+        ],
+        "description": "This section explains a workaround to temporarily open up network access for a specific IP range (Statuscake) while staying within the AWS security group limits. It involves manually adding a rule to allow all traffic, applying a Terraform change to update the IP range, and then removing the temporary rule.",
+        "use_cases": [
+            "Temporarily allowing access for a specific IP range or service",
+            "Working around AWS security group limits",
+            "Updating IP ranges in Terraform configurations"
+        ],
+        "capabilities": [
+            "Manually adding security group rules",
+            "Applying Terraform changes",
+            "Updating CIDR blocks and IPv6 CIDR blocks",
+            "Removing security group rules",
+            "Checking security group rule changes in AWS console"
+        ],
+        "references": [
+            "https://ap-south-1.console.aws.amazon.com/ec2/v2/home?region=ap-south-1#SecurityGroups:search=sg-0ada773e1d592adaa;sort=group-id",
+            "https://alpha.razorpay.com/_static/file/e62e2401c915599b6fce904f50ca3b0e.png",
+            "https://alpha.razorpay.com/_static/file/35a5fa71cb9963dfc0c54aeeb27a62f7.png",
+            "https://github.com/razorpay/vishnu/blob/master/modules/common-security-group/main.tf#L57>"
+        ]
+    }
+]

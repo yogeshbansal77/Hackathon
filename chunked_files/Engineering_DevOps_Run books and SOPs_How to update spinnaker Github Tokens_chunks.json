@@ -1,0 +1,56 @@
+[
+    {
+        "id": "engineering_devops_run-books-and-sops_how-to-update-spinnaker-github-tokens-chunk-0",
+        "name": "How to update spinnaker Github Tokens.txt - Github token or hal config token.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains the process of updating the GitHub token used by Spinnaker, a continuous delivery platform, to access GitHub repositories. It involves creating a new GitHub token with the required permissions, updating the token in a secure credential store, and restarting the Spinnaker components to load the new token. The instructions cover two types of tokens: one for general GitHub access and another for a specific GitHub integration called Spin Sleeve.",
+        "use_cases": [
+            "Updating the GitHub token used by Spinnaker for accessing repositories",
+            "Securing the GitHub token in a credential store",
+            "Restarting Spinnaker components to load the new token"
+        ],
+        "capabilities": [
+            "GitHub token management",
+            "Credential store integration",
+            "Spinnaker component restart",
+            "Token permission configuration",
+            "Spinnaker configuration update",
+            "Kubernetes pod management"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/f6f3d54177fbfc85e8561814efa7665c.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_how-to-update-spinnaker-github-tokens-chunk-1",
+        "name": "How to update spinnaker Github Tokens.txt - Spin Sleeve token.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains how to update the GitHub token used by Spinnaker, a continuous delivery platform, to authenticate with GitHub repositories. It provides step-by-step instructions for editing the 'spin-sleeve' secret in a Kubernetes cluster, where the GitHub token is stored in base64 encoded format. After updating the token, the Spinnaker pods need to be restarted to apply the changes.",
+        "use_cases": [
+            "Updating GitHub authentication token for Spinnaker",
+            "Rotating GitHub token for security purposes",
+            "Configuring Spinnaker to access private GitHub repositories",
+            "Maintaining Spinnaker's integration with GitHub"
+        ],
+        "capabilities": [
+            "Editing Kubernetes secrets",
+            "Base64 encoding/decoding",
+            "Restarting Spinnaker pods",
+            "Integrating Spinnaker with GitHub",
+            "Securing Spinnaker with authentication tokens",
+            "Configuring Spinnaker in a Kubernetes environment"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/bef63140705aaec02de25332461ecb2a.png",
+            "https://spinnaker.io/docs/setup/other_config/security/authorization/github-teams/>"
+        ]
+    }
+]

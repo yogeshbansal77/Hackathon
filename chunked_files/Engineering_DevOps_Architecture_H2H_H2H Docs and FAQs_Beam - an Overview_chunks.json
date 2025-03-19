@@ -1,0 +1,113 @@
+[
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_beam---an-overview-chunk-0",
+        "name": "Beam - an Overview.txt - Little Flashback :camera_flash: :",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section provides an overview of Beam, a service that manages file transfers (sending and receiving) between the company and its partners, such as banks and other financial technology companies. Beam was initially developed in Golang but has been rewritten in Python to accommodate additional features like two-factor authentication and verbose logging for failed connections. The section highlights the need for automation to reduce human error and labor costs associated with manual file transfers.",
+        "use_cases": [
+            "Automating file transfers with partner entities",
+            "Reducing human error and labor costs associated with manual file transfers",
+            "Enabling secure file transfers with two-factor authentication",
+            "Providing detailed logging for failed connections"
+        ],
+        "capabilities": [
+            "SFTP file transfers",
+            "Two-factor authentication",
+            "Verbose logging for failed connections",
+            "Maintained by DevOps team",
+            "Evolved from Golang to Python implementation",
+            "Caters to evolving needs of different business units"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_beam---an-overview-chunk-1",
+        "name": "Beam - an Overview.txt - Prerequisites :writing_hand: :",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section outlines the prerequisites needed to work with Beam, an open-source project. It provides a link to the Beam repository on GitHub, which contains the source code and documentation. Additionally, it mentions the need for either the Cred-stash UI or the Cred-stash CLI, which are likely tools or interfaces for managing credentials or sensitive information securely. The section also hints at the presence of jargon or terminology specific to the Beam project, which may require further explanation.",
+        "use_cases": [
+            "Accessing the Beam source code and documentation",
+            "Managing credentials or sensitive information securely",
+            "Understanding project-specific terminology and jargon"
+        ],
+        "capabilities": [
+            "GitHub repository access",
+            "Credential management",
+            "Jargon explanation"
+        ],
+        "references": [
+            "https://github.com/razorpay/beam>"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_beam---an-overview-chunk-2",
+        "name": "Beam - an Overview.txt - The Jargons :jack_o_lantern: :",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains the terminology used in the context of file transfer operations between different entities or partners. It defines the terms 'push' and 'pull' to differentiate between sending files to partners and receiving files from partners, respectively. This terminology helps in understanding the direction of file transfer and the associated processes.",
+        "use_cases": [
+            "Sending files to partner entities",
+            "Receiving files from partner entities",
+            "File exchange between different organizations or systems",
+            "Data integration and sharing across different platforms"
+        ],
+        "capabilities": [
+            "Push operations",
+            "Pull operations",
+            "File transfer",
+            "Partner integration",
+            "Data exchange"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_beam---an-overview-chunk-3",
+        "name": "Beam - an Overview.txt - Core Understanding :brain: :",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains the core functionality of Beam, which is a Flask server that serves various endpoints for transferring files between an AWS S3 bucket and partner entities' SFTP accounts. It describes the three main endpoints: /push for uploading files to SFTP, /pull for downloading files from SFTP, and /test for testing SFTP connectivity. The section also covers the required payload parameters for each endpoint, the response structure, and the process of loading configuration data from JSON files.",
+        "use_cases": [
+            "Transferring files from an AWS S3 bucket to partner entities' SFTP accounts",
+            "Retrieving files from partner entities' SFTP accounts and storing them in an AWS S3 bucket",
+            "Testing SFTP connectivity with partner entities",
+            "Monitoring service metrics using the /metrics endpoint"
+        ],
+        "capabilities": [
+            "File transfer between AWS S3 and SFTP",
+            "SFTP connectivity testing",
+            "Configuration management through JSON files",
+            "Logging and error handling",
+            "Metrics exposure for monitoring",
+            "Dual-authentication (key and password) for SFTP"
+        ],
+        "references": [
+            "https://razorpay.slack.com/archives/C02DH9Q29LJ",
+            "https://alpha.razorpay.com/repo/beam-an-overview#loading-data-:",
+            "https://alpha.razorpay.com/repo/beam-an-overview#what's-new-:",
+            "https://alpha.razorpay.com/repo/wiki-kubestash#h-usage>",
+            "https://pynative.com/python-datetime-format-strftime/>\\"
+        ]
+    }
+]

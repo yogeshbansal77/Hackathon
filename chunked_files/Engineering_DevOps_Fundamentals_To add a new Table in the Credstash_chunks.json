@@ -1,0 +1,96 @@
+[
+    {
+        "id": "engineering_devops_fundamentals_to-add-a-new-table-in-the-credstash-chunk-0",
+        "name": "To add a new Table in the Credstash.txt - Before adding a table in the Credstash",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Fundamentals"
+        ],
+        "description": "This section provides instructions for accessing the contents of a container or pod in a Kubernetes environment. It suggests entering one of the running pods and viewing the 'entrypoint.sh' file, which likely contains scripts or commands executed when the container starts up. This could be useful for troubleshooting or understanding the container's behavior.",
+        "use_cases": [
+            "Accessing container logs or files for debugging or troubleshooting",
+            "Understanding the startup process or configuration of a container",
+            "Verifying the contents of a container's entrypoint script"
+        ],
+        "capabilities": [
+            "Accessing running containers or pods",
+            "Viewing container files",
+            "Inspecting container entrypoint scripts"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_fundamentals_to-add-a-new-table-in-the-credstash-chunk-1",
+        "name": "To add a new Table in the Credstash.txt - Here is the ref PR",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Fundamentals"
+        ],
+        "description": "This section provides a reference to a pull request (PR) on GitHub that adds a new table to the Credstash system. Credstash is likely a tool or system used for securely storing and managing credentials or sensitive data. The pull request link serves as a reference for the changes made to introduce the new table functionality.",
+        "use_cases": [
+            "Adding a new table to the Credstash system",
+            "Tracking changes or updates to the Credstash system through version control",
+            "Referencing specific code changes or implementations related to the new table addition"
+        ],
+        "capabilities": [
+            "Adding new tables",
+            "Version control integration (GitHub)",
+            "Pull request tracking",
+            "Code change references"
+        ],
+        "references": [
+            "https://github.com/razorpay/vishnu/pull/4873>"
+        ]
+    },
+    {
+        "id": "engineering_devops_fundamentals_to-add-a-new-table-in-the-credstash-chunk-2",
+        "name": "To add a new Table in the Credstash.txt - Post approve and merge the PR, Follow the steps",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Fundamentals"
+        ],
+        "description": "This section outlines the steps to be followed after a Pull Request (PR) related to adding a new table in the Credstash environment has been approved and merged. It involves pulling the latest code changes from the master branch, initializing the Terraform configuration, and planning the changes specifically targeting the DynamoDB Credstash module for the specified environment and service. This process ensures that the necessary infrastructure changes are properly planned and reviewed before applying them.",
+        "use_cases": [
+            "Adding a new table to the Credstash environment",
+            "Updating infrastructure configuration using Terraform",
+            "Reviewing and planning infrastructure changes before applying them"
+        ],
+        "capabilities": [
+            "Git operations (pull)",
+            "Terraform initialization",
+            "Terraform plan with resource targeting",
+            "Infrastructure as Code (IaC) management",
+            "Version control integration",
+            "Environment and service-specific configuration"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_fundamentals_to-add-a-new-table-in-the-credstash-chunk-3",
+        "name": "To add a new Table in the Credstash.txt - To migrate all the secrets from one env (perf) to another env (perf1) in one shot",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Fundamentals"
+        ],
+        "description": "This section explains how to migrate secrets (sensitive data like passwords, API keys, etc.) from one environment (perf) to another environment (perf1) in a single operation using the Credstash tool. Credstash is a tool that securely stores and retrieves secrets using AWS Key Management Service (KMS). The process involves listing all secrets in the source environment, exporting them to a file, and then importing that file into the target environment.",
+        "use_cases": [
+            "Migrating secrets from one environment to another",
+            "Securely storing and retrieving sensitive data using AWS KMS",
+            "Managing secrets across multiple environments",
+            "Automating the migration of secrets during environment changes or updates"
+        ],
+        "capabilities": [
+            "List secrets in an environment",
+            "Export all secrets to a file",
+            "Import secrets from a file",
+            "Verify migrated secrets",
+            "Secure storage and retrieval of secrets using AWS KMS",
+            "Manage secrets across multiple environments"
+        ],
+        "references": []
+    }
+]

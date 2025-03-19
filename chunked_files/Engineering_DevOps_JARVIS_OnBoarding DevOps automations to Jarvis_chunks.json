@@ -1,0 +1,141 @@
+[
+    {
+        "id": "engineering_devops_jarvis_onboarding-devops-automations-to-jarvis-chunk-0",
+        "name": "OnBoarding DevOps automations to Jarvis.txt - Step1: Decide on the type of Automation",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section explains the two types of automations that can be onboarded to Jarvis: those that require approval and those that don't. Automations that perform write operations on critical infrastructure like AWS, Kubernetes, or other important components require approval, while automations that only read data from these systems don't need approval. The section provides examples and visual diagrams to illustrate the approval flow for each type of automation.",
+        "use_cases": [
+            "AWS resource creation automation (via VISHNU Repo)",
+            "Kubernetes access management automation (via kube-manifest repo)",
+            "Troubleshooting automations",
+            "JarvisKube automation"
+        ],
+        "capabilities": [
+            "Approval workflow for write operations on critical infrastructure",
+            "No approval required for read-only operations",
+            "Visual diagrams illustrating approval flows",
+            "Examples of automations requiring approval",
+            "Examples of automations not requiring approval"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/a1afb17f86d3cd10f8faf1769cfe3dad.png",
+            "https://alpha.razorpay.com/_static/file/ce32219fdd3ef8facf426c70b8dda294.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_jarvis_onboarding-devops-automations-to-jarvis-chunk-1",
+        "name": "OnBoarding DevOps automations to Jarvis.txt - Step2: Create Frontend for the automation",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section explains the next step after creating the frontend for the automation, which is coding the backend logic and deploying the automation as either a Deployment or a Job in the cluster(s), depending on its intended usage. The backend code will handle the actual execution of the automation tasks, while the deployment or job configuration will determine how the automation runs within the cluster environment.",
+        "use_cases": [
+            "Automating repetitive tasks or processes",
+            "Deploying applications or services to a cluster",
+            "Running scheduled or on-demand jobs in a cluster"
+        ],
+        "capabilities": [
+            "Backend coding",
+            "Deployment management",
+            "Job scheduling",
+            "Cluster integration",
+            "Automation execution"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_jarvis_onboarding-devops-automations-to-jarvis-chunk-2",
+        "name": "OnBoarding DevOps automations to Jarvis.txt - Step3: Code the Backend and deploy",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section outlines the steps to code the backend automation and deploy it within the Jarvis ecosystem. It explains how to deploy the automation as a Deployment or Job in a Kubernetes cluster, expose it via Ingress or Service, and integrate it with the Jarvis frontend. The section also emphasizes the importance of enabling metrics for tracking usage and optimizing the automation.",
+        "use_cases": [
+            "Deploying backend automations as Deployments or Jobs in a Kubernetes cluster",
+            "Exposing automations via Ingress or Service for secure communication",
+            "Integrating backend automations with the Jarvis frontend",
+            "Enabling metrics for tracking usage and optimizing automations"
+        ],
+        "capabilities": [
+            "Deployment",
+            "Job",
+            "Kubernetes",
+            "Namespace",
+            "Ingress",
+            "Service",
+            "HTTPS",
+            "ServiceAccount",
+            "ClusterRole",
+            "Role",
+            "Metrics",
+            "Integration",
+            "Frontend",
+            "Backend"
+        ],
+        "references": [
+            "https://github.com/razorpay/infra-tools/pull/73",
+            "https://github.com/razorpay/infra-tools/pull/81/files"
+        ]
+    },
+    {
+        "id": "engineering_devops_jarvis_onboarding-devops-automations-to-jarvis-chunk-3",
+        "name": "OnBoarding DevOps automations to Jarvis.txt - Step4: Integrate Frontend and Backend",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section provides a link to a pull request (PR) that contains integration scripts for Jarvis and JarvisKube. Jarvis and JarvisKube are likely internal tools or platforms used by the organization. The integration scripts aim to connect or combine the functionality of these two systems, enabling seamless communication or data exchange between them. This integration step is crucial for ensuring a cohesive and efficient workflow within the organization's DevOps processes.",
+        "use_cases": [
+            "Integrating Jarvis and JarvisKube platforms",
+            "Enabling communication between internal tools",
+            "Streamlining DevOps workflows",
+            "Facilitating data exchange between systems"
+        ],
+        "capabilities": [
+            "Integration scripts",
+            "Pull request (PR) link",
+            "Jarvis platform",
+            "JarvisKube platform",
+            "DevOps automation",
+            "System integration"
+        ],
+        "references": [
+            "https://github.com/razorpay/infra-tools/pull/83/files"
+        ]
+    },
+    {
+        "id": "engineering_devops_jarvis_onboarding-devops-automations-to-jarvis-chunk-4",
+        "name": "OnBoarding DevOps automations to Jarvis.txt - Enable metrics",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section appears to be empty or missing content. Without any meaningful text or information provided, it is difficult to provide a concise description, identify use cases, or list capabilities or features.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_jarvis_onboarding-devops-automations-to-jarvis-chunk-5",
+        "name": "OnBoarding DevOps automations to Jarvis.txt - Reference PRs",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "JARVIS"
+        ],
+        "description": "This section appears to be empty or missing content. It does not provide any meaningful information or explanation about the topic of 'Reference PRs' in the context of OnBoarding DevOps automations to Jarvis.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    }
+]
