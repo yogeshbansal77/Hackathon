@@ -1,0 +1,102 @@
+Query: also i have to upload to s3
+
+Recommendation:
+### Recommendation:
+1. **Beam Service** (for fetching the file from SFTP)
+2. **Batch Service** (for uploading the file to Amazon S3)
+
+These two services combined will allow you to first retrieve the file from the SFTP server and then upload it to S3 efficiently.
+
+---
+
+### Why These Services?
+- **Beam Service**: It is designed for SFTP operations like fetching files, ensuring secure and reliable data transfer from external servers.
+- **Batch Service**: It specializes in uploading files to Amazon S3 buckets, and it’s optimized for handling uploads even when dealing with large files or frequent operations.
+
+---
+
+### Example Workflow
+
+Here’s how you can fetch a file from an SFTP server using **Beam Service** and then upload it to an Amazon S3 bucket using **Batch Service**.
+
+#### Step-by-Step Code Snippets
+
+1. **Fetch File from SFTP using Beam Service**:
+
+```python
+from beam_client import BeamClient
+
+# Initialize Beam client with SFTP credentials
+beam_client = BeamClient(
+    sftp_host="sftp.example.com",
+    sftp_port=22,
+    username="your_sftp_username",
+    password="your_sftp_password"  # Use a secure method for production
+)
+
+remote_file_path = "/remote-directory/your_file.csv"
+local_file_path = "/local-directory/your_file.csv"
+
+try:
+    # Connect to the SFTP server
+    beam_client.connect()
+
+    # Download the file
+    beam_client.download_file(remote_file_path, local_file_path)
+    print(f"File successfully downloaded to {local_file_path}")
+
+except Exception as e:
+    print(f"Error while downloading: {e}")
+
+finally:
+    # Disconnect from the SFTP server
+    beam_client.disconnect()
+```
+
+2. **Upload File to S3 using Batch Service**:
+
+```python
+from batch_service import BatchClient
+
+# Initialize Batch client with S3 bucket details
+batch_client = BatchClient(
+    aws_access_key="your_aws_access_key",
+    aws_secret_key="your_aws_secret_key",
+    region="your_aws_region"
+)
+
+bucket_name = "your-s3-bucket"
+s3_key = "uploaded-files/your_file.csv"
+local_file_path = "/local-directory/your_file.csv"
+
+try:
+    # Upload the downloaded file to S3
+    batch_client.upload_file_to_s3(bucket_name, s3_key, local_file_path)
+    print(f"File successfully uploaded to s3://{bucket_name}/{s3_key}")
+
+except Exception as e:
+    print(f"Error while uploading to S3: {e}")
+```
+
+---
+
+### Steps to Implement:
+1. **Beam Service Setup**:
+   - Request credentials and access to the Beam Service.
+   - Test SFTP configurations to ensure connectivity.
+
+2. **Batch Service Setup**:
+   - Obtain necessary AWS credentials and S3 bucket configuration.
+   - Ensure IAM roles and permissions for accessing the S3 bucket are set up.
+
+3. **Integrate Both Services**:
+   - Use the first script to fetch the file from the SFTP server.
+   - Use the second script to upload the same file to S3.
+
+4. **Secure Credentials**:
+   - For both Beam and Batch services, ensure sensitive credentials like SFTP passwords and AWS access keys are securely stored (e.g., environment variables, secrets manager).
+
+5. **Test End-to-End Workflow**:
+   - Validate that the file is correctly downloaded and uploaded by comparing checksums or other integrity mechanisms.
+
+Let me know if you need further assistance or modifications for this setup!

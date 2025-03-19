@@ -55,35 +55,111 @@ async function sendMessage() {
     typeText(typingArea, formattedResponse, function() {
         // Callback after typing completes
         conversation.scrollTop = conversation.scrollHeight;
-    });
+    },10);
 
 // Add this function to implement the typing effect
+// ...existing code...
+
+// Replace your current typeText function with this one
 function typeText(element, html, callback, speed = 30) {
-    const tempDiv = document.createElement('div');
-    tempDiv.innerHTML = html;
-    const text = tempDiv.textContent;
-    let i = 0;
+    // Split HTML into chunks, preserving HTML tags
+    const chunks = splitHTMLIntoChunks(html);
+    let currentIndex = 0;
     
-    function typeNextChar() {
-        if (i < text.length) {
-            // Show one character at a time while typing
-            const progress = i / text.length;
-            element.textContent = text.slice(0, i + 1);
-            i++;
+    function typeNextChunk() {
+        if (currentIndex < chunks.length) {
+            // Add the next chunk (which could be a tag or text)
+            element.innerHTML += chunks[currentIndex];
+            currentIndex++;
             
             // Scroll while typing
             const conversation = document.getElementById('conversation');
             conversation.scrollTop = conversation.scrollHeight;
             
-            setTimeout(typeNextChar, speed);
+            // Only delay for visible text chunks, not for HTML tags
+            const delay = chunks[currentIndex - 1].startsWith('<') && chunks[currentIndex - 1].endsWith('>') ? 0 : speed;
+            setTimeout(typeNextChunk, delay);
         } else {
-            // Typing complete - replace with fully formatted HTML
-            element.innerHTML = html;
             if (callback) callback();
         }
     }
     
-    typeNextChar();
+    element.innerHTML = ''; // Clear the element before starting
+    typeNextChunk();
+}
+
+// Helper function to split HTML into chunks
+function splitHTMLIntoChunks(html) {
+    // First identify and protect code blocks
+    const codeBlocks = [];
+    let processedHtml = html.replace(/<pre class="code-box"><code>([\s\S]*?)<\/code><\/pre>/g, (match, codeContent, index) => {
+        const placeholder = `__CODE_BLOCK_${codeBlocks.length}__`;
+        codeBlocks.push(match);
+        return placeholder;
+    });
+    
+    const result = [];
+    let inTag = false;
+    let currentChunk = '';
+    
+    // Process HTML character by character
+    for (let i = 0; i < processedHtml.length; i++) {
+        const char = processedHtml[i];
+        
+        // Check for code block placeholder
+        if (char === '_' && processedHtml.substring(i, i+13) === '__CODE_BLOCK_') {
+            // If we have accumulated visible text, add it as a chunk
+            if (currentChunk) {
+                result.push(currentChunk);
+                currentChunk = '';
+            }
+            
+            // Extract placeholder index
+            const endIndex = processedHtml.indexOf('__', i+13);
+            const blockNum = parseInt(processedHtml.substring(i+13, endIndex));
+            
+            // Add the entire code block as a single chunk
+            result.push(codeBlocks[blockNum]);
+            
+            // Skip to end of placeholder
+            i = endIndex + 1;
+            continue;
+        }
+        
+        // Start of an HTML tag
+        if (char === '<') {
+            // If we have accumulated visible text, add it as a chunk
+            if (currentChunk && !inTag) {
+                result.push(currentChunk);
+                currentChunk = '';
+            }
+            inTag = true;
+            currentChunk += char;
+        } 
+        // End of an HTML tag
+        else if (char === '>' && inTag) {
+            currentChunk += char;
+            result.push(currentChunk); // Add complete tag as a chunk
+            currentChunk = '';
+            inTag = false;
+        }
+        // Any other character
+        else {
+            currentChunk += char;
+            // If not in tag and reached a good breakpoint (space or punctuation), add as chunk
+            if (!inTag && (char === ' ' || char === '.' || char === ',' || char === ';' || char === ':' || char === '!' || char === '?')) {
+                result.push(currentChunk);
+                currentChunk = '';
+            }
+        }
+    }
+    
+    // Add any remaining content
+    if (currentChunk) {
+        result.push(currentChunk);
+    }
+    
+    return result;
 }
     // Scroll to the bottom of the chat
     // conversation.scrollTop = conversation.scrollHeight;

@@ -1,0 +1,40 @@
+Query: i need to fetch file from sftp along with code snippets
+
+Recommendation:
+### Recommended Service(s):
+**Beam Service**
+
+### Why Beam Service?
+Beam Service is specifically designed for fetching files from SFTP servers. It supports SFTP connection, authentication, and file downloads, making it an ideal match for your requirement. 
+
+### How to Use Beam Service for Fetching Files from SFTP:
+Below is a simple code snippet to help you get started.
+
+```python
+from beam_client import BeamClient
+
+# Instantiate the BeamClient
+beam = BeamClient(
+    host='sftp.example.com',            # SFTP server hostname
+    username='your_username',           # SFTP username
+    password='your_password'            # SFTP password or private key
+)
+
+# Specify the file path to fetch
+remote_file_path = "/path/to/sftp/file.txt"
+local_file_path = "/path/to/save/local/file.txt"
+
+# Fetch the file
+try:
+    beam.fetch_file(remote_file_path, local_file_path)
+    print(f"File fetched successfully and saved to {local_file_path}")
+except Exception as e:
+    print(f"Error while fetching file: {str(e)}")
+```
+
+### Steps:
+1. Replace `sftp.example.com`, `your_username`, and `your_password` with your SFTP server details.
+2. Set `remote_file_path` to the file location on the SFTP server.
+3. Set `local_file_path` to the desired location where the file will be saved on your system.
+
+Beam Service handles the connection to the server, file authentication, and downloading, allowing you to efficiently retrieve files from an SFTP server. Let me know if you need further assistance!
