@@ -1,0 +1,88 @@
+[
+    {
+        "id": "engineering_backend_guides_proto-and-rpc-faqs-chunk-0",
+        "name": "Proto and RPC FAQs.txt - Advantages and Disadvantages/limitations of using proto structs inside the program (along with grpc).",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Guides"
+        ],
+        "description": "This section discusses the advantages and disadvantages of using protocol buffer (proto) structs within a program alongside gRPC. It emphasizes the importance of separating the API specification (proto) from internal data models (ORM structs) to maintain flexibility and extensibility as the application grows. The section advises against automatically generating internal models from protos, as it can lead to maintenance issues and unnecessary complexity.",
+        "use_cases": [
+            "Maintaining a clear separation between API specifications (protos) and internal data models (ORM structs)",
+            "Handling scenarios where a request maps to multiple models or no models",
+            "Generating boilerplate code from protos where appropriate, but keeping internal models separate and manually maintained"
+        ],
+        "capabilities": [
+            "Strict versioning and maintenance of protos (API specifications)",
+            "Flexibility to refactor and change internal data models more frequently",
+            "Ability to extend and customize the mapping between protos and internal models",
+            "Generating boilerplate code from protos",
+            "Maintaining separation between protos and internal models in the CI process"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_backend_guides_proto-and-rpc-faqs-chunk-1",
+        "name": "Proto and RPC FAQs.txt - Why not use proto to generate the gorm model structs as well ?",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Guides"
+        ],
+        "description": "This section discusses the potential of using Protocol Buffers (proto) to generate the data model structs for the application layer, specifically for the GORM (Go Object-Relational Mapping) library. It suggests that a simple one-to-one mapping between the proto and application structs is acceptable. However, if the proto struct is large and all fields are required, the application struct will be almost identical to the request proto, raising the question of whether it's better to use the proto itself instead of generating a separate application struct.",
+        "use_cases": [
+            "Generating data model structs for the application layer using Protocol Buffers",
+            "Mapping proto structs to application structs for GORM (Go Object-Relational Mapping)",
+            "Handling large proto structs with all fields required in the application layer",
+            "Evaluating the trade-offs between using proto structs directly or generating separate application structs"
+        ],
+        "capabilities": [
+            "Proto struct mapping",
+            "Application struct generation",
+            "GORM integration",
+            "Struct field management",
+            "Struct size optimization",
+            "Code reusability"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_backend_guides_proto-and-rpc-faqs-chunk-2",
+        "name": "Proto and RPC FAQs.txt - What is an efficient way to transform the request proto to application struct with minimal mapping required between application struct and input proto ?",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Guides"
+        ],
+        "description": "This section advises against using the same data structures (proto) for both the HTTP request/response and the internal application logic. It recommends mapping the request proto to a separate application-specific data structure at a single point in the server code. This separation keeps the codebase clean and maintainable, as the internal data structures and the API proto can evolve independently over time.",
+        "use_cases": [
+            "Maintaining a clean separation between the API layer and the core application logic",
+            "Allowing independent evolution of the API and internal data structures",
+            "Facilitating code refactoring without impacting the API",
+            "Enabling backward-compatible API changes without affecting the core application logic"
+        ],
+        "capabilities": [
+            "Mapping between request proto and application data structures",
+            "Separate data structures for API and application logic",
+            "Centralized mapping at a single point in the server code",
+            "Independent evolution of API and internal data structures",
+            "Backward-compatible API changes",
+            "Clean and maintainable codebase"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_backend_guides_proto-and-rpc-faqs-chunk-3",
+        "name": "Proto and RPC FAQs.txt - If proto struct is huge and all the fields are required the application struct will almost be identical to the request proto, then why not use the proto it self?",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Guides"
+        ],
+        "description": "This section appears to be empty, as there is no content provided between the triple backticks. Without any explanatory text, it is difficult to provide a meaningful description or extract use cases and capabilities.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    }
+]

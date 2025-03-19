@@ -1,0 +1,80 @@
+[
+    {
+        "id": "engineering_devops_architecture_infrastructure-as-code_infra-as-code-(terraform)-arch-chunk-0",
+        "name": "Infra As Code (TerraForm) Arch.txt - Why use IaC? Why not just click buttons??",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Infrastructure as Code"
+        ],
+        "description": "This section explains the advantages of using Infrastructure as Code (IaC) tools like Terraform over manually provisioning infrastructure through a user interface. It highlights benefits such as version control, accountability, automated provisioning and deletion of resources, increased developer productivity, and the ability to manage infrastructure state. The concept of Terraform state, which tracks the current state of infrastructure resources, is also introduced.",
+        "use_cases": [
+            "Version control and accountability for infrastructure changes",
+            "Automated provisioning and deletion of complex infrastructure through CI/CD pipelines",
+            "Enabling developers to manage infrastructure through code",
+            "Managing and tracking infrastructure state across different environments"
+        ],
+        "capabilities": [
+            "Version control",
+            "Accountability",
+            "Rollback",
+            "CI/CD for infrastructure",
+            "Automated provisioning",
+            "Automated deletion",
+            "Developer productivity",
+            "Infrastructure as code",
+            "Terraform state management",
+            "Diff tracking between state and cloud resources"
+        ],
+        "references": [
+            "https://github.com/razorpay/vishnu",
+            "https://www.katacoda.com/courses/terraform/playground>"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_infrastructure-as-code_infra-as-code-(terraform)-arch-chunk-1",
+        "name": "Infra As Code (TerraForm) Arch.txt - What is a Terraform State?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Infrastructure as Code"
+        ],
+        "description": "This section does not provide any explanation about what a Terraform State is. It only contains a link to the official Terraform documentation for more information on Terraform State. The section also includes a heading 'Razorpay Architecture' but does not provide any content related to it.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": [
+            "https://www.terraform.io/docs/state/index.html"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_infrastructure-as-code_infra-as-code-(terraform)-arch-chunk-2",
+        "name": "Infra As Code (TerraForm) Arch.txt - Razorpay Architecture:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Infrastructure as Code"
+        ],
+        "description": "This section explains that Razorpay stores its Terraform state files, which contain information about the infrastructure resources managed by Terraform, in an Amazon S3 bucket. This allows for centralized storage and management of state files across multiple environments and AWS accounts. The section also mentions that Razorpay has an internal guide and repository for contributing to their Infrastructure as Code (IaC) setup.",
+        "use_cases": [
+            "Centralized storage of Terraform state files",
+            "Managing infrastructure across multiple environments and AWS accounts",
+            "Collaborating on Infrastructure as Code (IaC) setup",
+            "Versioning and tracking changes to infrastructure resources"
+        ],
+        "capabilities": [
+            "S3 backend for storing Terraform state files",
+            "Multiple state files for different environments and accounts",
+            "Internal guide and repository for contributing to IaC setup",
+            "Terraform for managing infrastructure resources",
+            "Infrastructure as Code (IaC) approach",
+            "Collaboration and version control for infrastructure management"
+        ],
+        "references": [
+            "https://www.terraform.io/docs/backends/types/s3.html",
+            "https://github.com/razorpay/vishnu"
+        ]
+    }
+]

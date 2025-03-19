@@ -1,0 +1,78 @@
+[
+    {
+        "id": "engineering_devops_harbor_harbor-access-chunk-0",
+        "name": "Harbor access.txt - Production Harbor",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Harbor"
+        ],
+        "description": "This section provides information about the Production Harbor, which is a web-based user interface for managing container images and related resources. It is hosted on the ops-common cluster and can be accessed via the provided URL (https://harbor.razorpay.com/). The section also mentions that users have guest-level access by default, and if they need additional permissions, they need to raise a ticket with the IT department. Additionally, it provides a link to the Harbor documentation for understanding user roles and permissions.",
+        "use_cases": [
+            "Accessing the Production Harbor web interface",
+            "Understanding user roles and permissions in Harbor",
+            "Requesting additional permissions or roles for Harbor access"
+        ],
+        "capabilities": [
+            "Web-based user interface",
+            "Container image management",
+            "Resource management",
+            "User role management",
+            "Access control",
+            "Ticketing system for permission requests"
+        ],
+        "references": [
+            "https://harbor.razorpay.com/>",
+            "https://goharbor.io/docs/1.10/administration/managing-users/user-permissions-by-role/>"
+        ]
+    },
+    {
+        "id": "engineering_devops_harbor_harbor-access-chunk-1",
+        "name": "Harbor access.txt - Wallet Harbor",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Harbor"
+        ],
+        "description": "This section appears to outline different types of access or permissions related to a Harbor, which could be a software platform or system. The two items listed, 'Harbor-Guest' and 'Harbor-developer', suggest different levels of access or roles within the Harbor system. A 'Guest' role likely has limited access or privileges, while a 'developer' role may have more extensive permissions for development or modification purposes.",
+        "use_cases": [
+            "Granting limited or guest-level access to a Harbor system",
+            "Providing developer-level access for building or modifying the Harbor system",
+            "Managing user roles and permissions within the Harbor system",
+            "Controlling access to sensitive or restricted areas of the Harbor system"
+        ],
+        "capabilities": [
+            "Guest access role",
+            "Developer access role",
+            "Role-based access control",
+            "User permission management",
+            "Access level differentiation"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_harbor_harbor-access-chunk-2",
+        "name": "Harbor access.txt - Stage Harbor",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Harbor"
+        ],
+        "description": "This section provides information about Harbor, which seems to be a platform or service related to access management. It explains the different environments or instances of Harbor, such as the production environment (Harbor-projectAdmin) running on the prod-wallet-white cluster, and the stage environment (Stage Harbor) running on the stage-white-eks cluster. Each environment has a specific endpoint URL for accessing it. The section also mentions different user roles or access levels, such as Harbor-admin, Harbor-Guest, Harbor-user, and Harbor-projectAdmin.",
+        "use_cases": [
+            "Accessing the production Harbor instance (Harbor-projectAdmin) for wallet-related operations",
+            "Accessing the stage Harbor instance (Stage Harbor) for testing or development purposes",
+            "Managing user access and roles within Harbor (Harbor-admin, Harbor-Guest, Harbor-user, Harbor-projectAdmin)"
+        ],
+        "capabilities": [
+            "Harbor instances for different environments (production, stage)",
+            "Endpoint URLs for accessing Harbor instances",
+            "User roles or access levels (Harbor-admin, Harbor-Guest, Harbor-user, Harbor-projectAdmin)",
+            "Cluster and namespace information (prod-wallet-white cluster, stage-white-eks cluster, harbor namespace)"
+        ],
+        "references": [
+            "https://harbor.razorpaywallet.com/>",
+            "https://harbor.concierge.stage.razorpay.in/>"
+        ]
+    }
+]

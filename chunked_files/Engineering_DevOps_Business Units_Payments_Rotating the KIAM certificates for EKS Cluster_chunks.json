@@ -1,0 +1,80 @@
+[
+    {
+        "id": "engineering_devops_business-units_payments_rotating-the-kiam-certificates-for-eks-cluster-chunk-0",
+        "name": "Rotating the KIAM certificates for EKS Cluster.txt - Introduction",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section introduces the purpose of the documentation, which is to provide a detailed account of the steps taken to rotate the KIAM (Kubernetes Identity and Access Management) certificates for the CDE Blue EKS (Elastic Kubernetes Service) Cluster. It aims to serve as a reference for future certificate rotation processes, as the certificates have expiration dates and need to be renewed periodically for security reasons. The section also mentions that the documented steps were discussed and approved by senior members before implementation.",
+        "use_cases": [
+            "Rotating KIAM certificates for an EKS Cluster",
+            "Documenting the process for future reference",
+            "Ensuring security by renewing certificates before expiration",
+            "Involving senior members for approval and guidance"
+        ],
+        "capabilities": [
+            "Certificate rotation",
+            "EKS Cluster management",
+            "KIAM integration",
+            "Documentation",
+            "Security best practices",
+            "Collaboration and approval process"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_business-units_payments_rotating-the-kiam-certificates-for-eks-cluster-chunk-1",
+        "name": "Rotating the KIAM certificates for EKS Cluster.txt - Job Steps",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section explains the steps to rotate the KIAM (Kubernetes IAM Authenticator) certificates for an EKS (Elastic Kubernetes Service) cluster. It provides commands to check the expiry of the current KIAM certificates, delete the existing secrets containing the certificates, and create new secrets with freshly generated certificates. The process also includes restarting the KIAM server to ensure the new certificates are used.",
+        "use_cases": [
+            "Rotating KIAM certificates for security purposes or due to expiration",
+            "Maintaining secure communication between KIAM components in an EKS cluster",
+            "Ensuring compliance with security policies or best practices",
+            "Troubleshooting issues related to KIAM certificate expiration or misconfigurations"
+        ],
+        "capabilities": [
+            "Checking KIAM certificate expiry",
+            "Listing KIAM-related secrets",
+            "Deleting existing KIAM secrets",
+            "Creating new KIAM secrets with fresh certificates",
+            "Restarting KIAM server to apply new certificates"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/rotating-kiam-certs>"
+        ]
+    },
+    {
+        "id": "engineering_devops_business-units_payments_rotating-the-kiam-certificates-for-eks-cluster-chunk-2",
+        "name": "Rotating the KIAM certificates for EKS Cluster.txt - Rotating the Deployments",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Business Units",
+            "Payments"
+        ],
+        "description": "This section provides a script to rotate or restart all Kubernetes deployments in an Amazon EKS cluster that have the 'iam.amazonaws.com/role' annotation. The script checks each deployment in every namespace, identifies those with the specified annotation, and performs a rolling restart on them. It is designed to be used after rotating the KIAM (Kubernetes IAM Authenticator) certificates to ensure that all applications using IAM roles are updated with the new certificates.",
+        "use_cases": [
+            "Rotating IAM certificates for applications running on an EKS cluster",
+            "Updating applications to use new IAM role credentials",
+            "Ensuring applications are using the latest IAM role permissions"
+        ],
+        "capabilities": [
+            "Automated deployment restart",
+            "Namespace-level deployment scanning",
+            "Annotation-based deployment filtering",
+            "Rolling restart of deployments",
+            "Logging and progress tracking",
+            "Cluster context switching"
+        ],
+        "references": []
+    }
+]

@@ -1,0 +1,107 @@
+[
+    {
+        "id": "engineering_devops_processes_access-management_vajra-dashboard:-write|edit-access-chunk-0",
+        "name": "Vajra Dashboard: Write|Edit Access.txt - **Steps:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management"
+        ],
+        "description": "This section appears to be empty or missing content. Without any text or instructions provided, it is difficult to determine what this section is intended to explain or describe.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_access-management_vajra-dashboard:-write|edit-access-chunk-1",
+        "name": "Vajra Dashboard: Write|Edit Access.txt - 1. Requests for vajra dashboard write access will be handled via a JIRA ticket. (PE Project : __<https://razorpay.atlassian.net/jira/dashboards/10124>__) . If the requestor or their team don't have access to JIRA please reach out to slack group @techit at #tech_it slack channel for JIRA access.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management"
+        ],
+        "description": "This section outlines the process for requesting write access to the Vajra Dashboard. It states that requests should be submitted via a JIRA ticket in the specified PE Project. If the requestor or their team does not have access to JIRA, they should reach out to the @techit slack group at #tech_it for assistance in obtaining JIRA access. The section also mentions that certain details need to be provided in the email or JIRA ticket when making the request.",
+        "use_cases": [
+            "Requesting write access to the Vajra Dashboard",
+            "Obtaining JIRA access for submitting requests",
+            "Providing required details for the write access request"
+        ],
+        "capabilities": [
+            "JIRA ticket submission",
+            "Slack group communication",
+            "Write access management",
+            "Access control",
+            "Request handling"
+        ],
+        "references": [
+            "https://razorpay.atlassian.net/jira/dashboards/10124>__"
+        ]
+    },
+    {
+        "id": "engineering_devops_processes_access-management_vajra-dashboard:-write|edit-access-chunk-2",
+        "name": "Vajra Dashboard: Write|Edit Access.txt - 2. Please furnish the following details in the email/JIRA:-",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management"
+        ],
+        "description": "This section outlines the process for requesting write or edit access to a specific Vajra Dashboard. It instructs the requester to provide their email address, the link to the Vajra Dashboard they need access to, and approval from their manager. After creating a ticket with these details, the relevant DevOps team will grant the requested write permission to the user.",
+        "use_cases": [
+            "Requesting write or edit access to a Vajra Dashboard",
+            "Granting write or edit access to a Vajra Dashboard",
+            "Obtaining manager approval for accessing a Vajra Dashboard",
+            "Involving the DevOps team in granting access to a Vajra Dashboard"
+        ],
+        "capabilities": [
+            "Requesting write access",
+            "Providing email address",
+            "Specifying Vajra Dashboard link",
+            "Obtaining manager approval",
+            "Creating access request ticket",
+            "Granting write permission",
+            "Involving DevOps team"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_access-management_vajra-dashboard:-write|edit-access-chunk-3",
+        "name": "Vajra Dashboard: Write|Edit Access.txt - 3. Post creation of the ticket, your BU specific devops group (@devops.rx, @devops.capital, @devops.platform etc) will grant the write permission to the user.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management"
+        ],
+        "description": "This section explains that there is a predefined Service Level Agreement (SLA) for approving and granting access permissions to users, which is specified within the JIRA ticket itself. This SLA outlines the expected timeline or deadline for the relevant DevOps team to review and grant the requested access rights to the user after the ticket has been created.",
+        "use_cases": [
+            "Defining and adhering to SLAs for access management processes",
+            "Tracking and monitoring access request approvals within JIRA tickets",
+            "Ensuring timely access provisioning for users based on predefined SLAs"
+        ],
+        "capabilities": [
+            "SLA definition",
+            "Access approval tracking",
+            "Access grant timeline management",
+            "JIRA ticket integration",
+            "User access provisioning"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_access-management_vajra-dashboard:-write|edit-access-chunk-4",
+        "name": "Vajra Dashboard: Write|Edit Access.txt - 4. SLA for access approval & grant is already defined in the JIRA ticket itself.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Access Management"
+        ],
+        "description": "This section appears to be empty, as there is no content provided between the code block delimiters. Without any actual text or information, it is not possible to provide a meaningful description, use cases, or capabilities related to this section.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    }
+]

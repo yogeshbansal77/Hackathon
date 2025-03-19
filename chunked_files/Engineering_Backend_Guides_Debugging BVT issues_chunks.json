@@ -1,0 +1,203 @@
+[
+    {
+        "id": "engineering_backend_guides_debugging-bvt-issues-chunk-0",
+        "name": "Debugging BVT issues.txt - BVT - short for Build verification Test. It's an added check for testing.",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Guides"
+        ],
+        "description": "This section aims to explain what a Build Verification Test (BVT) is and its purpose. A BVT is an additional testing process that helps verify the functionality and stability of a software build before it is released or deployed. It serves as a quality check to catch any potential issues or regressions introduced during the development or build process.",
+        "use_cases": [
+            "Verifying the functionality of a software build before release",
+            "Catching regressions or issues introduced during development",
+            "Ensuring the stability and quality of a software build",
+            "Providing an additional layer of testing and quality assurance"
+        ],
+        "capabilities": [
+            "Build verification",
+            "Regression testing",
+            "Functional testing",
+            "Quality assurance",
+            "Pre-release testing",
+            "Stability testing"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_backend_guides_debugging-bvt-issues-chunk-1",
+        "name": "Debugging BVT issues.txt - What does it do ?",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Guides"
+        ],
+        "description": "This section explains a process where a set of critical (P0) test cases are automatically run against the latest code changes in a Pull Request (PR) before it is merged into the main codebase. This process is triggered when the PR is approved, and it deploys the code changes to a specific environment (bvt namespace) using a deployment pipeline tool called Spinnaker. The test cases are executed in this environment, and the results determine whether the PR can be merged or not.",
+        "use_cases": [
+            "Automated testing of critical functionality before code merge",
+            "Ensuring code changes do not break existing features",
+            "Continuous integration and quality assurance",
+            "Streamlining the code review and merge process"
+        ],
+        "capabilities": [
+            "Automated deployment of code changes",
+            "Execution of predefined test cases",
+            "Integration with code review and merge workflows",
+            "Test result reporting and feedback",
+            "Continuous integration pipeline",
+            "Environment isolation (bvt namespace)"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_backend_guides_debugging-bvt-issues-chunk-2",
+        "name": "Debugging BVT issues.txt - Which repos have this enabled ?",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Guides"
+        ],
+        "description": "This section explains that certain repositories within the organization have a feature called BVT (Build Verification Test) enabled. When this feature is enabled, an additional check is performed during the pull request (PR) process. The check is visible in the PR, and its status (required or not) varies across repositories. The section also provides guidance on what to do if the BVT check is pending for a PR.",
+        "use_cases": [
+            "Understanding which repositories have the BVT feature enabled",
+            "Identifying the status (required or not) of the BVT check for a specific repository",
+            "Troubleshooting steps when the BVT check is pending for a PR"
+        ],
+        "capabilities": [
+            "BVT (Build Verification Test) check",
+            "Pull Request (PR) process",
+            "Repository-specific configuration",
+            "Check status (required or not)",
+            "Troubleshooting pending checks"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/5abebbe9112bef84de72bb708020b062.png"
+        ]
+    },
+    {
+        "id": "engineering_backend_guides_debugging-bvt-issues-chunk-3",
+        "name": "Debugging BVT issues.txt - My PR has this check marked as pending what to do ?",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Guides"
+        ],
+        "description": "This section explains the behavior of a specific status check in a Pull Request (PR) workflow. The status check, which runs certain tests, is triggered only after the PR is approved. If the tests pass, the status is marked as passed. However, if new commits are pushed to the approved PR, the status goes back to pending, requiring the tests to run again. To re-trigger the tests, the PR needs to be approved again or the specific workflow action needs to be manually re-run.",
+        "use_cases": [
+            "Understanding the behavior of a status check in a PR workflow",
+            "Knowing when the status check is triggered and how to re-trigger it",
+            "Troubleshooting a pending status check in an approved PR"
+        ],
+        "capabilities": [
+            "PR approval",
+            "Status check",
+            "Test suite execution",
+            "Workflow re-triggering",
+            "Commit detection",
+            "Status update"
+        ],
+        "references": [
+            "https://github.com/razorpay/api/actions/workflows/pr_workflow.yaml?query=workflow%3APR+validate+UT+and+Roast+Workflow+"
+        ]
+    },
+    {
+        "id": "engineering_backend_guides_debugging-bvt-issues-chunk-4",
+        "name": "Debugging BVT issues.txt - Reason 1:",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Guides"
+        ],
+        "description": "This section explains how to check the status of a Pull Request (PR) in the BVT (Build Verification Test) pipeline. It provides two methods to verify if a PR is currently being processed or queued in the pipeline. The first method involves navigating to a specific pipeline URL and checking the 'Evaluate Variables' stage to see the PR number and commit ID. The second method involves searching for the PR number or commit ID directly in another pipeline URL.",
+        "use_cases": [
+            "Checking the status of a PR in the BVT pipeline",
+            "Verifying if a PR is currently being processed or queued",
+            "Identifying the commit ID associated with a PR in the pipeline",
+            "Troubleshooting delays or issues with the BVT pipeline"
+        ],
+        "capabilities": [
+            "Pipeline status checking",
+            "PR tracking",
+            "Commit ID identification",
+            "Pipeline execution monitoring",
+            "Troubleshooting pipeline issues"
+        ],
+        "references": [
+            "https://deploy.razorpay.com/#/applications/bvt-roast/executions?pipeline=Trigger%20BVT%20Execution",
+            "https://alpha.razorpay.com/_static/file/0e42dff1e9dcfdfb16fec9ac5bc112cb.png",
+            "https://deploy.razorpay.com/#/applications/bvt-roast/executions?pipeline=Run%20BVT%20On%20Instance%20BVT-1,Run%20BVT%20On%20Instance%20BVT-2",
+            "https://alpha.razorpay.com/_static/file/e8384bbccda2797fd1c59ffa10ad6544.png"
+        ]
+    },
+    {
+        "id": "engineering_backend_guides_debugging-bvt-issues-chunk-5",
+        "name": "Debugging BVT issues.txt - Reason 2:",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Guides"
+        ],
+        "description": "This section explains how to debug and find the reasons for failures in the BVT (Build Verification Test) process for microservices. It provides instructions on accessing the pipeline for running BVT tests, checking the build queue status, and identifying the specific stage or step that caused the failure. The section emphasizes that BVT tests involve deploying the application build and its dependent services, so failures can occur during deployment or test execution. It guides users on how to inspect the pipeline stages, check the build deployment status, and troubleshoot accordingly.",
+        "use_cases": [
+            "Debugging BVT issues for microservices",
+            "Identifying the cause of BVT failures (deployment or test execution)",
+            "Checking the status of builds in the BVT queue",
+            "Troubleshooting failed BVT stages or steps"
+        ],
+        "capabilities": [
+            "Accessing BVT pipeline for microservices",
+            "Checking build queue status by commit ID",
+            "Inspecting pipeline stages and configurations",
+            "Verifying build deployment success",
+            "Checking deployment of dependent services",
+            "Identifying failed test cases"
+        ],
+        "references": [
+            "https://deploy.razorpay.com//#/applications/bvt-roast/executions?pipeline=Run%20BVT%20for%20microservice",
+            "https://alpha.razorpay.com/_static/file/29eb5f05a3725d47083b81e179b3c19d.png",
+            "https://alpha.razorpay.com/_static/file/14197ec11933226c44d76e68bfb0303f.png"
+        ]
+    },
+    {
+        "id": "engineering_backend_guides_debugging-bvt-issues-chunk-6",
+        "name": "Debugging BVT issues.txt - BVT-check failed, how to find reason for failures ?",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Guides"
+        ],
+        "description": "This section explains the process of debugging and re-running failed test cases in the BVT (Build Verification Test) suite for the Razorpay API. It provides step-by-step instructions on how to access the test reports, identify failed test cases, check logs for failure reasons, and re-run the failed tests or the entire suite. The section also mentions how to handle hot-fix PRs and skip certain checks.",
+        "use_cases": [
+            "Debugging failed BVT test cases",
+            "Re-running failed BVT test cases or the entire suite",
+            "Handling hot-fix PRs and skipping certain checks",
+            "Accessing test reports and logs for failure analysis"
+        ],
+        "capabilities": [
+            "access_test_reports",
+            "identify_failed_tests",
+            "check_logs_for_failures",
+            "re-run_failed_tests",
+            "re-run_entire_suite",
+            "handle_hotfix_prs",
+            "skip_checks",
+            "access_sumologic_logs",
+            "contact_qaoncall_team"
+        ],
+        "references": [
+            "https://reportportal.concierge.stage.razorpay.in/ui/#login",
+            "https://alpha.razorpay.com/_static/file/448ddd2492f7f1093b860d336286f940.png",
+            "https://alpha.razorpay.com/_static/file/8dbe2bbe1fd6103e787f8f903534b4bb.png",
+            "https://alpha.razorpay.com/_static/file/6903065a0adcdb5a04c5edb14c037140.png",
+            "https://alpha.razorpay.com/_static/file/a29f69c414187b75533dd7585a5e3a1f.png",
+            "https://alpha.razorpay.com/_static/file/39ba8a79dff45d0e7717204262b3c521.png",
+            "https://github.com/razorpay/api/actions/workflows/pr_workflow.yaml?query=workflow%3APR+validate+UT+and+Roast+Workflow+",
+            "https://deploy.razorpay.com//#/applications/bvt-roast/executions?pipeline=API%20PR%20Approval%20Run%20temp",
+            "https://alpha.razorpay.com/_static/file/d93d51f37939c31eab166f9fda334910.png",
+            "https://alpha.razorpay.com/_static/file/2a89cdc06151a7cbc32cb7d29602a774.png",
+            "https://alpha.razorpay.com/_static/file/120722bb7a6dc179c8f78f237bbed827.png",
+            "https://deploy.razorpay.com/#/applications/bvt-roast/executions?pipeline=Publish%20Status%20Check%20Passed%20API%20PR",
+            "https://reportportal.concierge.stage.razorpay.in/ui/#roast/launches/all>"
+        ]
+    }
+]

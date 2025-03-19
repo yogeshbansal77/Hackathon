@@ -1,0 +1,158 @@
+[
+    {
+        "id": "engineering_backend_guides_code-review-checklist-chunk-0",
+        "name": "Code Review Checklist.txt - Code Formatting",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Guides"
+        ],
+        "description": "This section outlines guidelines for maintaining a clean and readable code structure. It emphasizes the importance of proper indentation, spacing, and alignment to enhance code readability. Additionally, it recommends following established naming conventions for variables, functions, and classes to ensure consistency and clarity. The section also suggests keeping code within the standard screen width to avoid horizontal scrolling and removing commented code to maintain a clutter-free codebase.",
+        "use_cases": [
+            "Ensuring code readability and maintainability",
+            "Adhering to coding style guidelines",
+            "Improving code comprehension for team collaboration",
+            "Facilitating code reviews and debugging"
+        ],
+        "capabilities": [
+            "Proper indentation and alignment",
+            "Consistent white space and tab spacing",
+            "Adherence to naming conventions",
+            "Code formatting within standard screen width",
+            "Removal of commented code"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_backend_guides_code-review-checklist-chunk-1",
+        "name": "Code Review Checklist.txt - Coding Best Practices",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Guides"
+        ],
+        "description": "This section outlines best practices for writing clean, maintainable code. It emphasizes the importance of using constants and configuration values instead of hard-coding values, grouping related values together, writing meaningful comments that explain the reasoning behind the code rather than just describing what the code does, avoiding complex nested conditional statements, and leveraging the features provided by the framework or library being used instead of writing custom code.",
+        "use_cases": [
+            "Ensuring code readability and maintainability",
+            "Promoting code reusability and modularity",
+            "Facilitating code reviews and collaboration",
+            "Adhering to coding standards and best practices"
+        ],
+        "capabilities": [
+            "Avoiding hard-coded values",
+            "Grouping related values",
+            "Writing meaningful comments",
+            "Minimizing complex conditional statements",
+            "Utilizing framework features",
+            "Promoting code design best practices"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_backend_guides_code-review-checklist-chunk-2",
+        "name": "Code Review Checklist.txt - Code Design",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Guides"
+        ],
+        "description": "This section outlines guidelines for designing code in a modular and organized manner. It emphasizes separating concerns by dividing the codebase into distinct layers (presentation, business, and data) and files. The code should align with existing patterns and technologies used within the project. Additionally, it stresses the importance of writing modular and abstracted code that is easy to understand and maintain.",
+        "use_cases": [
+            "Ensuring code follows the Separation of Concerns principle",
+            "Dividing code into layers (presentation, business, data) based on requirements",
+            "Maintaining consistency with existing code patterns and technologies",
+            "Promoting modular and abstracted code design"
+        ],
+        "capabilities": [
+            "separation-of-concerns",
+            "layered-architecture",
+            "modular-design",
+            "code-abstraction",
+            "pattern-consistency",
+            "technology-alignment"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_backend_guides_code-review-checklist-chunk-3",
+        "name": "Code Review Checklist.txt - Logic Errors and Bugs",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Guides"
+        ],
+        "description": "This section focuses on identifying potential logic errors and bugs in the code being reviewed. It emphasizes the importance of thoroughly testing the code with various inputs and scenarios to ensure it behaves as intended and does not break under unexpected conditions. The goal is to catch any instances where the code deviates from its expected functionality or produces undesirable results.",
+        "use_cases": [
+            "Checking for any use case where the code does not behave as intended",
+            "Testing with inputs or external events that could potentially break the code",
+            "Verifying the code's behavior under edge cases or boundary conditions",
+            "Ensuring the code handles errors and exceptions gracefully"
+        ],
+        "capabilities": [
+            "Logic error detection",
+            "Bug identification",
+            "Input validation",
+            "Edge case testing",
+            "Error handling",
+            "Functionality verification"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_backend_guides_code-review-checklist-chunk-4",
+        "name": "Code Review Checklist.txt - Dependencies",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Guides"
+        ],
+        "description": "This section emphasizes the importance of updating related documentation, configuration files, and readme files whenever a code change is made. It suggests that any updates required outside of the code itself should be included as part of the same change to ensure consistency and completeness.",
+        "use_cases": [
+            "Updating documentation when making code changes",
+            "Updating configuration files when making code changes",
+            "Updating readme files when making code changes",
+            "Ensuring consistency between code and related artifacts"
+        ],
+        "capabilities": [
+            "Documentation updates",
+            "Configuration file updates",
+            "Readme file updates",
+            "Consistency maintenance",
+            "Comprehensive change management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_backend_guides_code-review-checklist-chunk-5",
+        "name": "Code Review Checklist.txt - Non Functional requirements",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Guides"
+        ],
+        "description": "This section outlines various non-functional requirements that should be considered during code review. It emphasizes aspects like maintainability, readability, testability, debuggability, configurability, reusability, extensibility, security, performance, scalability, and usability. The section also highlights the importance of following SOLID principles, which are fundamental guidelines for designing software systems that are easy to maintain, extend, and understand.",
+        "use_cases": [
+            "Reviewing code changes for potential impact on system performance, security vulnerabilities, or backward compatibility issues.",
+            "Ensuring that the proposed code changes adhere to best practices for maintainability, readability, testability, and extensibility.",
+            "Verifying that the code follows SOLID principles for better software design and architecture.",
+            "Assessing the usability and documentation of APIs or user interfaces introduced by the code changes."
+        ],
+        "capabilities": [
+            "maintainability",
+            "readability",
+            "testability",
+            "debuggability",
+            "configurability",
+            "reusability",
+            "extensibility",
+            "security",
+            "performance",
+            "scalability",
+            "usability",
+            "solid_principles"
+        ],
+        "references": [
+            "https://en.wikipedia.org/wiki/Liskov_substitution_principle"
+        ]
+    }
+]

@@ -1,0 +1,162 @@
+[
+    {
+        "id": "engineering_databases_db-optimization_razorpay--optimization-scope-of-rds-api--instance-&-storage-size-chunk-0",
+        "name": "Razorpay- Optimization Scope of RDS API- Instance & Storage Size.txt - Summary",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "DB optimization"
+        ],
+        "description": "This section explains that the Razorpay API monolith is a critical component of the Razorpay ecosystem, handling a significant portion (90%) of financial transactions. It is a PHP application running on Apache, serving as the backbone for various functionalities offered by Razorpay to its merchants and banking partners. The API system architecture is designed to handle diverse workloads, enabling merchants to perform transactions such as payments, payouts, refunds, settlements, and providing APIs for dashboard and data analysis purposes.",
+        "use_cases": [
+            "Enabling financial transactions for merchants (payments, payouts, refunds, settlements)",
+            "Providing APIs for dashboard and data analysis",
+            "Facilitating interactions between Razorpay and banking partners"
+        ],
+        "capabilities": [
+            "Monolithic API system",
+            "PHP application running on Apache",
+            "Handles 90% of financial transactions",
+            "Supports diverse workloads",
+            "Enables merchant transactions",
+            "Provides APIs for data analysis and dashboards"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_db-optimization_razorpay--optimization-scope-of-rds-api--instance-&-storage-size-chunk-1",
+        "name": "Razorpay- Optimization Scope of RDS API- Instance & Storage Size.txt - Objective",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "DB optimization"
+        ],
+        "description": "This section outlines the objective of evaluating the technical specifications of the main RDS API database instance, including its storage capacity and instance sizing/class/family. The goal is to determine if the instance is over-provisioned and, if so, to scale it down while ensuring that performance and availability remain critical for the application.",
+        "use_cases": [
+            "Optimizing resource utilization and cost by scaling down over-provisioned database instances",
+            "Ensuring critical performance and availability requirements are met for the application",
+            "Evaluating and adjusting database instance specifications based on usage patterns and requirements"
+        ],
+        "capabilities": [
+            "RDS API database instance sizing",
+            "Storage capacity evaluation",
+            "Instance class/family assessment",
+            "Performance optimization",
+            "Availability assurance",
+            "Scalability"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_db-optimization_razorpay--optimization-scope-of-rds-api--instance-&-storage-size-chunk-2",
+        "name": "Razorpay- Optimization Scope of RDS API- Instance & Storage Size.txt - Background",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "DB optimization"
+        ],
+        "description": "This section provides background information on Razorpay's database, which stores payment data. It highlights that the database size is growing rapidly, reaching around 21 TB on the primary instance and 35 TB on the read replicas. The data growth rate is approximately 36 GB per day on the primary instance and 65 GB on the read replicas due to additional indexes. Razorpay is concerned about hitting the 64 TB storage limit within the next 6 to 9 months. However, they are currently testing a dual writing strategy, maintaining two tables (payments and payments_new) for 3 months before archiving the older table. The document aims to focus on optimizing the instance class size and overall performance of the MySQL database, as well as exploring storage options.",
+        "use_cases": [
+            "Storing and managing payment data for Razorpay's services",
+            "Handling large volumes of data and rapid data growth",
+            "Implementing a dual writing strategy for data migration and archiving",
+            "Optimizing database performance and storage capacity"
+        ],
+        "capabilities": [
+            "RDS (Relational Database Service)",
+            "MySQL database",
+            "Primary database instance",
+            "Read replicas",
+            "Indexing",
+            "Dual writing strategy",
+            "Data archiving",
+            "Database optimization",
+            "Storage capacity management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_db-optimization_razorpay--optimization-scope-of-rds-api--instance-&-storage-size-chunk-3",
+        "name": "Razorpay- Optimization Scope of RDS API- Instance & Storage Size.txt - Current state of Database",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "DB optimization"
+        ],
+        "description": "This section provides details about the current state of Razorpay's production database instance hosted on Amazon RDS (Relational Database Service). It specifies the endpoint URL, instance type (r5.24xlarge), storage size (28TB), and other configuration details like the number of vCPUs, memory, network performance, and backup retention period. The instance type is optimized for memory-intensive applications and offers improved storage and network performance.",
+        "use_cases": [
+            "Memory-intensive applications",
+            "High-performance database workloads",
+            "Large-scale data storage and retrieval",
+            "Reliable backup and recovery"
+        ],
+        "capabilities": [
+            "96 vCPUs",
+            "768 GB memory",
+            "19000 Mbps max bandwidth",
+            "25 Gbps network performance",
+            "EBS-optimized storage",
+            "General Purpose SSD (gp2) storage",
+            "Encrypted storage",
+            "14-day backup retention"
+        ],
+        "references": [
+            "http://prod-api-mysql-p5-live.cxwgtjgl2oc5.ap-south-1.rds.amazonaws.com"
+        ]
+    },
+    {
+        "id": "engineering_databases_db-optimization_razorpay--optimization-scope-of-rds-api--instance-&-storage-size-chunk-4",
+        "name": "Razorpay- Optimization Scope of RDS API- Instance & Storage Size.txt - Architecture",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "DB optimization"
+        ],
+        "description": "This section describes the architecture of Razorpay's RDS API database system. It consists of one primary MySQL database instance and four replicas, all running on version 8.x. The replicas are used for load balancing, supporting data pipelines, and backup purposes. Two replicas handle the main traffic in a 50-50 manner, while another replica is used for data lake and pipeline support. The fourth replica acts as a backup, and there is a fifth replica that contains a filtered dataset.",
+        "use_cases": [
+            "Load balancing and traffic distribution across replicas",
+            "Data pipeline and data lake support",
+            "Backup and disaster recovery",
+            "Filtered dataset replication for specific use cases"
+        ],
+        "capabilities": [
+            "Multi-AZ deployment",
+            "MySQL 8.x version",
+            "Primary-replica architecture",
+            "Replica load balancing",
+            "Graviton instances for replicas",
+            "Filtered data replication"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/ca1564d93b5f546571fbb91945f7adf7.png"
+        ]
+    },
+    {
+        "id": "engineering_databases_db-optimization_razorpay--optimization-scope-of-rds-api--instance-&-storage-size-chunk-5",
+        "name": "Razorpay- Optimization Scope of RDS API- Instance & Storage Size.txt - MySQL Version",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "DB optimization"
+        ],
+        "description": "This section discusses the current MySQL version used by Razorpay, the potential for upgrading to a newer minor version, and the scope for optimizing the RDS instance and storage size based on performance metrics and configured parameters. It provides insights into the workload patterns, resource utilization, and potential areas for improvement.",
+        "use_cases": [
+            "Evaluating the need for upgrading to a newer MySQL minor version",
+            "Optimizing RDS instance and storage size based on performance metrics",
+            "Reviewing configured parameters for potential improvements",
+            "Analyzing memory consumption patterns to determine scaling options"
+        ],
+        "capabilities": [
+            "MySQL version management",
+            "RDS instance sizing",
+            "Storage capacity management",
+            "Performance monitoring and analysis",
+            "Parameter configuration optimization",
+            "Memory usage profiling",
+            "Workload pattern analysis"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/1e27b955ac312df8dae16b87f331b54d.png"
+        ]
+    }
+]

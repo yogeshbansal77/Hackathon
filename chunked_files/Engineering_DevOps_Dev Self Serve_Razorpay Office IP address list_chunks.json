@@ -1,0 +1,73 @@
+[
+    {
+        "id": "engineering_devops_dev-self-serve_razorpay-office-ip-address-list-chunk-0",
+        "name": "Razorpay Office IP address list.txt - IP Address / CIDR",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section provides a list of IP addresses and CIDR ranges assigned to Razorpay's offices by different Internet Service Providers (ISPs). Each entry includes the IP range, the office location, the ISP name, and whether the IP addresses are load balanced or not. The section explains that currently, only the Bangalore and Gurgaon offices have static IP addresses, while the other offices may have dynamic IP addresses.",
+        "use_cases": [
+            "Identifying the IP addresses used by Razorpay's offices for network communication",
+            "Configuring firewalls or security rules to allow or restrict access from specific IP ranges",
+            "Troubleshooting network connectivity issues by verifying the IP addresses used by different offices",
+            "Monitoring network traffic and usage patterns based on the assigned IP ranges"
+        ],
+        "capabilities": [
+            "IP address listing",
+            "CIDR notation",
+            "Office location mapping",
+            "ISP identification",
+            "Load balancing information",
+            "Static vs dynamic IP assignment"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_razorpay-office-ip-address-list-chunk-1",
+        "name": "Razorpay Office IP address list.txt - These are the IP Addresses used by our ISPs against our offices. Only Bangalore and Gurgaon offices have static IPs as of now.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section appears to be providing instructions or a process to follow when making changes to the IP address list. It suggests that there is a specific procedure that needs to be adhered to before modifying the IP addresses used by the company's Internet Service Providers (ISPs) for their offices in Bangalore and Gurgaon. The note implies that the IP addresses are static and any changes to them should be done carefully and following the prescribed process.",
+        "use_cases": [
+            "Updating the IP address list for Razorpay's offices",
+            "Maintaining a record of static IP addresses used by ISPs for Razorpay's offices",
+            "Ensuring changes to IP addresses are made following a defined process"
+        ],
+        "capabilities": [
+            "IP address management",
+            "Process documentation",
+            "Change control"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_razorpay-office-ip-address-list-chunk-2",
+        "name": "Razorpay Office IP address list.txt - NOTE: If you are making a change to this, please following the below process:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section outlines the process to follow when making changes to the Razorpay Office IP address list. It emphasizes the importance of coordinating with relevant teams, updating the necessary repositories, and properly announcing the changes to ensure smooth integration across the organization.",
+        "use_cases": [
+            "Updating the Razorpay Office IP address list",
+            "Coordinating changes with relevant teams",
+            "Announcing changes to the organization"
+        ],
+        "capabilities": [
+            "Whitelisting new IP addresses",
+            "Updating Terraform modules",
+            "Applying changes across multiple repositories",
+            "Announcing changes on Slack channels"
+        ],
+        "references": [
+            "https://github.com/razorpay/terraform-modules/tree/master/providers/data/office-ips",
+            "https://github.com/razorpay/vishnu/search?utf8=%E2%9C%93&q=office-ips&type="
+        ]
+    }
+]

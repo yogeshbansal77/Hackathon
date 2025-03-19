@@ -1,0 +1,140 @@
+[
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_beam-debugging-chunk-0",
+        "name": "Beam Debugging.txt - UNABLE_TO_ESTABLISH_CONNECTION",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains various error messages that can occur when attempting to establish a connection with a remote server's SFTP service. It provides a list of common errors and potential remediation steps. The errors indicate issues such as incorrect server addresses, authentication failures, timeouts, and algorithm compatibility problems. The section emphasizes that these errors are server-side issues, and job owners need to debug and coordinate with the remote party to resolve the underlying problems.",
+        "use_cases": [
+            "Troubleshooting connection issues with remote SFTP servers",
+            "Identifying and resolving authentication and algorithm compatibility problems",
+            "Coordinating with remote parties to address server-side errors"
+        ],
+        "capabilities": [
+            "Error message identification",
+            "Potential remediation steps",
+            "Server-side error diagnosis",
+            "Authentication failure handling",
+            "Algorithm compatibility checking",
+            "Coordination with remote parties"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_beam-debugging-chunk-1",
+        "name": "Beam Debugging.txt - UNABLE_TO_OPEN_REMOTE_FILE,UNABLE_TO_LIST_REMOTE_FILES",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains that if the user does not have the necessary access permissions, they will be unable to open or list remote files for debugging purposes with other parties involved in the job. It suggests that there may be issues with accessing remote files due to missing access rights, which can prevent effective debugging and collaboration.",
+        "use_cases": [
+            "Debugging remote files with other parties involved in a job",
+            "Accessing remote files for troubleshooting or analysis",
+            "Collaborating on debugging efforts across different teams or organizations",
+            "Ensuring proper access permissions are granted for remote file operations"
+        ],
+        "capabilities": [
+            "Opening remote files",
+            "Listing remote files",
+            "Access control for remote file operations",
+            "Collaboration on debugging",
+            "Error handling for access issues"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_beam-debugging-chunk-2",
+        "name": "Beam Debugging.txt - SERVER_ERROR",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section provides guidance on what to do if you encounter an 'internal server error' while working with the Beam Debugging tool. It suggests finding the logs for the failed runs and contacting the @pg-common-platform-oncall team for assistance.",
+        "use_cases": [
+            "Troubleshooting internal server errors",
+            "Accessing log files for failed runs",
+            "Contacting support team for assistance"
+        ],
+        "capabilities": [
+            "Error handling",
+            "Log file access",
+            "Support team contact"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_beam-debugging-chunk-3",
+        "name": "Beam Debugging.txt - UNABLE_TO_FIND_ENV_SECRET",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains how to resolve the 'UNABLE_TO_FIND_ENV_SECRET' error that may occur during the execution of a Beam job. It suggests checking a specific URL (https://alpha.razorpay.com/repo/beam-job-password-update) and adding the required keys or secrets. After adding the secrets, it recommends rotating the pods within 15-20 minutes to ensure the changes take effect. The section also includes an FAQ section, although its content is not provided.",
+        "use_cases": [
+            "Resolving the 'UNABLE_TO_FIND_ENV_SECRET' error in Beam jobs",
+            "Adding required keys or secrets for Beam job execution",
+            "Rotating pods after adding secrets to apply changes"
+        ],
+        "capabilities": [
+            "Error troubleshooting",
+            "Secret management",
+            "Pod rotation",
+            "Job execution",
+            "Documentation"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/beam-job-password-update",
+            "https://alpha.razorpay.com/repo/beam-job-password-update"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_beam-debugging-chunk-4",
+        "name": "Beam Debugging.txt - FAQ",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section provides answers to frequently asked questions (FAQ) related to Beam, which appears to be a tool or service for transferring data securely. It covers topics such as verifying credentials, updating job passwords, supported key exchange algorithms, multi-step authentication, retrying jobs, whitelisting IP addresses, and monitoring/setting up alerts for jobs.",
+        "use_cases": [
+            "Verifying credentials and host name for Beam jobs",
+            "Updating passwords for Beam jobs",
+            "Retrying failed Beam jobs",
+            "Monitoring and setting up alerts for Beam jobs"
+        ],
+        "capabilities": [
+            "Credential and host verification",
+            "Password update for jobs",
+            "Support for specific key exchange algorithms (curve25519-sha256, ecdh-sha2-nistp256, etc.)",
+            "Job retry functionality",
+            "IP whitelisting",
+            "Job monitoring and alerting"
+        ],
+        "references": [
+            "https://razorpay.enterprise.slack.com/admin/user_groups",
+            "https://razorpay.slack.com/archives/C0432SCD5/p1719485995596489>",
+            "https://jarvis.razorpay.com/sftp/fileOperations>",
+            "https://alpha.razorpay.com/repo/beam-job-password-update>",
+            "https://alpha.razorpay.com/repo/beam-jobs-retry>",
+            "https://alpha.razorpay.com/repo/razorpay-ips-for-whitelisting>",
+            "https://razorpay.slack.com/archives/C03EL9LM058/p1732704840943789>"
+        ]
+    }
+]

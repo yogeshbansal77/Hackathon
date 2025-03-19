@@ -1,0 +1,51 @@
+[
+    {
+        "id": "engineering_devops_teleport-sop-chunk-0",
+        "name": "Teleport SOP.txt - Main Content",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps"
+        ],
+        "description": "This section explains the prerequisites and steps to set up Teleport, an open-source access plane for managing access to servers, databases, and Kubernetes clusters. It covers configuring the Proxy and Auth Node, enabling the TagSync feature to automatically sync EC2 instance tags, and setting up automatic joining of instances using an IAM token. The instructions are tailored for an Ubuntu 20.04 environment with specific AWS policies and configurations.",
+        "use_cases": [
+            "Secure access management for servers, databases, and Kubernetes clusters",
+            "Automatic synchronization of EC2 instance tags for access control",
+            "Automatic joining of instances using IAM tokens for simplified provisioning",
+            "Centralized session recording and storage in an S3 bucket for auditing and compliance"
+        ],
+        "capabilities": [
+            "Teleport setup and configuration",
+            "DNS record management",
+            "AWS IAM policy configuration",
+            "EC2 instance tag synchronization",
+            "Automatic instance joining using IAM tokens",
+            "Session recording and storage in S3"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/b664b040e48c63e13fb16366435b3446.png",
+            "https://alpha.razorpay.com/_static/file/a4e56f9b4897471e9e15f89a1ebcb167.png",
+            "https://alpha.razorpay.com/_static/file/538e0e589a91f468deeb4012b2ccc12f.png",
+            "https://alpha.razorpay.com/_static/file/e1b70ecfd3a5c55ff06279195d9c5ef0.png",
+            "http://tele.example.com",
+            "http://example.com",
+            "http://tele.example.com",
+            "https://alpha.razorpay.com/_static/file/4f25832db8a8e1b7e76f39b146a3a4e4.png",
+            "https://alpha.razorpay.com/_static/file/e1b70ecfd3a5c55ff06279195d9c5ef0.png",
+            "https://deb.releases.teleport.dev/teleport-pubkey.asc",
+            "https://deb.releases.teleport.dev/",
+            "http://169.254.169.254/latest/api/token\"",
+            "http://169.254.169.254/latest/meta-data/instance-id",
+            "http://169.254.169.254/latest/meta-data/placement/availability-zone",
+            "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip\"",
+            "https://tele.yashkothekar.xyz/v1/webapi/github/callback",
+            "http://localhost:9000\"",
+            "https://deb.releases.teleport.dev/teleport-pubkey.asc",
+            "https://deb.releases.teleport.dev/",
+            "http://169.254.169.254/latest/api/token\"",
+            "http://169.254.169.254/latest/meta-data/instance-id",
+            "http://169.254.169.254/latest/meta-data/placement/availability-zone",
+            "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip\"",
+            "https://tele.yashkothekar.xyz:443"
+        ]
+    }
+]

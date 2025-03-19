@@ -1,0 +1,144 @@
+[
+    {
+        "id": "engineering_devops_architecture_custom-domain-linking-:-cloudflare-architecture-chunk-0",
+        "name": "Custom Domain Linking : Cloudflare Architecture.txt - Little Background",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture"
+        ],
+        "description": "This section provides background information on the challenges faced in implementing a custom domain linking project that requires HTTPS communication. It explores various SSL management solutions, including in-house and external SaaS options, and explains the rationale behind choosing Cloudflare's SSL SaaS product for the project.",
+        "use_cases": [
+            "Custom domain linking for merchants",
+            "HTTPS communication with SSL management",
+            "DDoS protection",
+            "Handling Let's Encrypt rate limits"
+        ],
+        "capabilities": [
+            "SSL management",
+            "DDoS protection",
+            "Load balancing",
+            "Ingress creation for custom domains",
+            "Integration with Cloudflare SSL SaaS product",
+            "Argo Tunnel integration"
+        ],
+        "references": [
+            "https://docs.google.com/document/d/1rk9wLuHBb68JljJaBPl4VQuzEVmBVqPewARlWq7xhwQ/edit?usp=sharing",
+            "https://docs.google.com/document/d/16tzumEwpMZlzvbmaI3hy3uexsD4kfi49Soo2Z1U28tc/edit?usp=sharing",
+            "https://docs.google.com/document/d/16tzumEwpMZlzvbmaI3hy3uexsD4kfi49Soo2Z1U28tc/edit?usp=sharing"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_custom-domain-linking-:-cloudflare-architecture-chunk-1",
+        "name": "Custom Domain Linking : Cloudflare Architecture.txt - Infrastructure",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture"
+        ],
+        "description": "This section explains the infrastructure setup for integrating a merchant's domain with Cloudflare's services. It provides a visual representation of the architecture, where the merchant's domain is DNS-pointed to Cloudflare. The DNS configuration process may vary depending on whether it's an apex domain or a subdomain, as indicated in the table mentioned.",
+        "use_cases": [
+            "Integrating a merchant's domain with Cloudflare's services",
+            "Configuring DNS settings for apex domains and subdomains",
+            "Leveraging Cloudflare's infrastructure for website hosting or content delivery"
+        ],
+        "capabilities": [
+            "DNS configuration",
+            "Domain integration",
+            "Infrastructure setup",
+            "Apex domain support",
+            "Subdomain support",
+            "Visual architecture representation"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/1598c9fb7b9880d37fab212bcaf87eab.png"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_custom-domain-linking-:-cloudflare-architecture-chunk-2",
+        "name": "Custom Domain Linking : Cloudflare Architecture.txt - Request flow",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture"
+        ],
+        "description": "This section explains the request flow and configuration for custom domain linking using Cloudflare's architecture. It describes how incoming HTTPS requests to a merchant's custom domain are handled by Cloudflare's edge servers, load balancers, and tunnels before reaching Razorpay's internal services. The section also mentions the use of Cloudflare's client 'cloudflared' to establish a secure tunnel between Razorpay's clusters and Cloudflare.",
+        "use_cases": [
+            "Handling HTTPS requests for custom merchant domains",
+            "Load balancing and routing requests to internal services",
+            "Secure communication between Razorpay's clusters and Cloudflare",
+            "Configuring Cloudflare for custom domain linking"
+        ],
+        "capabilities": [
+            "SSL termination",
+            "HTTP header manipulation",
+            "Load balancing",
+            "Cloudflare Tunnels",
+            "Cloudflared client",
+            "Ingress configuration"
+        ],
+        "references": [
+            "https://drive.google.com/file/d/1bpwx9sGVMw6Rf_t-BHWWCD89JC5_5A7p/view?usp=sharing"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_custom-domain-linking-:-cloudflare-architecture-chunk-3",
+        "name": "Custom Domain Linking : Cloudflare Architecture.txt - Cloudflare Configuraton",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture"
+        ],
+        "description": "This section explains that the client, which is a Kubernetes deployment running in the 'cloudflare-tunnel' namespace, is currently deployed in both CDE clusters. Additionally, two Cloudflare tunnels have been created, one for each CDE cluster. The section provides a link to a tutorial on creating multiple tunnels for a single Cloudflare for Teams account.",
+        "use_cases": [
+            "Deploying a client application as a Kubernetes deployment",
+            "Configuring Cloudflare tunnels for secure communication between clusters and Cloudflare",
+            "Managing multiple Cloudflare tunnels for different clusters or environments"
+        ],
+        "capabilities": [
+            "Kubernetes deployment",
+            "Cloudflare tunnel creation",
+            "Multiple tunnel management",
+            "Secure communication between clusters and Cloudflare"
+        ],
+        "references": [
+            "https://developers.cloudflare.com/cloudflare-one/tutorials/many-cfd-one-tunnel/"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_custom-domain-linking-:-cloudflare-architecture-chunk-4",
+        "name": "Custom Domain Linking : Cloudflare Architecture.txt - Cloudflared Client",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture"
+        ],
+        "description": "This section explains the architecture and configuration of the Cloudflared client, which is used to establish a secure tunnel between an application and Cloudflare's network. It describes how multiple replicas of the Cloudflared client are run for high availability, with each replica creating multiple connections to Cloudflare's data centers. The section also covers load balancing mechanisms, health checks, networking requirements, and the management of secrets used for authentication.",
+        "use_cases": [
+            "Securely exposing internal applications to the internet",
+            "Enabling remote access to private resources",
+            "Load balancing and high availability for tunneled connections",
+            "Monitoring and managing the Cloudflared client deployment"
+        ],
+        "capabilities": [
+            "High availability with multiple Cloudflared replicas",
+            "Load balancing across replicas and tunnels",
+            "Health checks and liveness probes",
+            "Secure authentication with Cloudflare using secrets",
+            "Integration with Kubernetes and Grafana for deployment and monitoring",
+            "Outbound networking requirements (UDP and TCP ports)"
+        ],
+        "references": [
+            "https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/run-tunnel/deploy-cloudflared-replicas/",
+            "https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/configuration/local-management/ingress/",
+            "https://github.com/razorpay/kube-manifests/tree/master/templates/cloudflare-tunnel",
+            "https://vajra.razorpay.com/d/TjLJZuP7z/cloudflare-tunnel?orgId=1",
+            "https://grafana.np.razorpay.in/d/TjLJZuP7z/cloudflared-stage?orgId=1",
+            "https://alpha.razorpay.com/repo/cloudflare-tunnel-alerts",
+            "https://razorpay.slack.com/archives/C02JKR8Q9JN/p1646206828249369?thread_ts=1646118312.566779&cid=C02JKR8Q9JN",
+            "https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/run-tunnel/>",
+            "https://blog.cloudflare.com/tunnel-for-everyone/>",
+            "https://blog.cloudflare.com/argo-tunnels-that-live-forever/>"
+        ]
+    }
+]

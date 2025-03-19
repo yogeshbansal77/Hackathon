@@ -1,0 +1,462 @@
+[
+    {
+        "id": "engineering_backend_magic-checkout_mvp_architecture-chunk-0",
+        "name": "Architecture.txt - Entity Model",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Magic Checkout",
+            "MVP"
+        ],
+        "description": "This section appears to be about the interactions and communication between different components or entities within the system architecture. It likely explains how various modules, services, or subsystems interact with each other to perform specific tasks or functionalities. The section aims to provide an understanding of the system's internal communication and data flow.",
+        "use_cases": [
+            "Describing the communication patterns between different architectural components",
+            "Explaining the data exchange mechanisms within the system",
+            "Illustrating the integration points and interfaces between modules or services",
+            "Documenting the dependencies and relationships between entities in the architecture"
+        ],
+        "capabilities": [
+            "System Integration",
+            "Component Interaction",
+            "Data Flow",
+            "Communication Patterns",
+            "Interface Documentation",
+            "Dependency Management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_backend_magic-checkout_mvp_architecture-chunk-1",
+        "name": "Architecture.txt - System Interactions",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Magic Checkout",
+            "MVP"
+        ],
+        "description": "This section appears to explain the process or functionality related to creating an order within the system. It likely outlines the steps, interactions, or data flow involved when a user or client initiates an order creation request. The details provided in this section would help developers or architects understand how the 'Create Order' feature works and integrates with other components of the system.",
+        "use_cases": [
+            "User/client initiating an order creation",
+            "Processing and validating order data",
+            "Integrating with payment systems",
+            "Updating inventory and order management systems"
+        ],
+        "capabilities": [
+            "Order creation",
+            "Order data validation",
+            "Payment integration",
+            "Inventory management",
+            "Order tracking",
+            "Order fulfillment"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_backend_magic-checkout_mvp_architecture-chunk-2",
+        "name": "Architecture.txt - Create Order",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Magic Checkout",
+            "MVP"
+        ],
+        "description": "This section explains the process of customer checkout for an order when the customer is not logged in. It provides a visual representation of the flow, likely depicting the various steps involved in the checkout process for an anonymous or guest user. The image seems to outline the different stages a customer goes through, such as selecting products, providing shipping and payment details, and ultimately completing the purchase.",
+        "use_cases": [
+            "Guest checkout",
+            "Anonymous user purchase flow",
+            "E-commerce order placement without account",
+            "Handling non-registered customer transactions"
+        ],
+        "capabilities": [
+            "Guest checkout flow",
+            "Anonymous user order placement",
+            "Non-registered customer purchase support",
+            "Visual representation of checkout process",
+            "Step-by-step depiction of order flow",
+            "Handling payment and shipping details for guests"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/d63e78fccdb5ac4d05d48b69d2828c1a.png"
+        ]
+    },
+    {
+        "id": "engineering_backend_magic-checkout_mvp_architecture-chunk-3",
+        "name": "Architecture.txt - Customer Checkout (Logged out)",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Magic Checkout",
+            "MVP"
+        ],
+        "description": "This section appears to be explaining the customer checkout process for an e-commerce platform. It includes an image that likely illustrates the flow or user interface for the checkout process when a customer is not logged in. However, the content provided does not provide any further details about this process.",
+        "use_cases": [
+            "Allowing customers to complete purchases without creating an account",
+            "Providing a guest checkout option for one-time or infrequent customers",
+            "Streamlining the checkout process for customers who prefer not to log in"
+        ],
+        "capabilities": [
+            "Guest checkout",
+            "Logged out customer checkout",
+            "Checkout flow visualization"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/34a10ad594becd986718a45fff54adf0.png"
+        ]
+    },
+    {
+        "id": "engineering_backend_magic-checkout_mvp_architecture-chunk-4",
+        "name": "Architecture.txt - Customer Checkout (Logged in)",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Magic Checkout",
+            "MVP"
+        ],
+        "description": "This section appears to be explaining the different flows or processes involved in the customer checkout experience when a user is logged in. It likely outlines the various steps, interactions, and system components involved in facilitating a successful purchase or transaction for an authenticated customer.",
+        "use_cases": [
+            "Customer checkout process for logged-in users",
+            "Authenticated user purchase flow",
+            "Secure online transaction handling",
+            "User account integration with checkout"
+        ],
+        "capabilities": [
+            "User authentication",
+            "Shopping cart management",
+            "Payment processing",
+            "Order fulfillment",
+            "Customer account integration",
+            "Secure transaction handling"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_backend_magic-checkout_mvp_architecture-chunk-5",
+        "name": "Architecture.txt - Flows",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Magic Checkout",
+            "MVP"
+        ],
+        "description": "This section appears to explain the process or flow involved in creating an order within the system or application being documented. It likely outlines the steps, interactions, or data exchanges that occur when a user or system initiates the creation of a new order.",
+        "use_cases": [
+            "Creating a new order",
+            "Placing an order",
+            "Initiating an order process",
+            "Order management"
+        ],
+        "capabilities": [
+            "Order creation",
+            "Order flow",
+            "Order processing",
+            "Order initiation",
+            "Order management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_backend_magic-checkout_mvp_architecture-chunk-6",
+        "name": "Architecture.txt - Create Order",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Magic Checkout",
+            "MVP"
+        ],
+        "description": "This section provides a visual representation of the order initiation process, likely for an e-commerce platform or payment gateway. It illustrates the steps involved in initiating a checkout process, which is a crucial aspect of completing a purchase transaction.",
+        "use_cases": [
+            "E-commerce checkout process",
+            "Payment gateway integration",
+            "Online purchase flow",
+            "Order management system"
+        ],
+        "capabilities": [
+            "Checkout initiation",
+            "Order creation",
+            "Payment processing",
+            "User interface visualization",
+            "Transaction flow illustration"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/2383b022301fd86b86d9497bed4449dd.png"
+        ]
+    },
+    {
+        "id": "engineering_backend_magic-checkout_mvp_architecture-chunk-7",
+        "name": "Architecture.txt - Initiate Checkout",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Magic Checkout",
+            "MVP"
+        ],
+        "description": "This section appears to be explaining the process of initiating a checkout flow, likely for an e-commerce platform or payment gateway. It includes an image that visually represents the steps involved in this process. The section also mentions 'Coupons Flow', suggesting that it may cover the integration or handling of coupons or discounts during the checkout process.",
+        "use_cases": [
+            "E-commerce checkout process",
+            "Payment gateway integration",
+            "Handling coupons or discounts during checkout"
+        ],
+        "capabilities": [
+            "Initiating checkout flow",
+            "Coupon integration",
+            "Visual representation of checkout steps"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/743efc25660a33e86954da775ce7bf7c.png"
+        ]
+    },
+    {
+        "id": "engineering_backend_magic-checkout_mvp_architecture-chunk-8",
+        "name": "Architecture.txt - Coupons Flow",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Magic Checkout",
+            "MVP"
+        ],
+        "description": "This section appears to explain the process of fetching or retrieving coupons, which are likely promotional codes or discounts offered by a business or service. The section title 'Fetch Coupons' suggests that it outlines the steps or mechanisms involved in obtaining these coupons, potentially for use in an e-commerce or marketing application.",
+        "use_cases": [
+            "Retrieving promotional coupons or discount codes",
+            "Integrating coupon functionality into an e-commerce platform",
+            "Implementing coupon management and distribution systems",
+            "Enabling coupon-based marketing campaigns"
+        ],
+        "capabilities": [
+            "Coupon fetching",
+            "Coupon retrieval",
+            "Coupon management",
+            "Coupon distribution",
+            "Coupon integration",
+            "Coupon-based promotions"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_backend_magic-checkout_mvp_architecture-chunk-9",
+        "name": "Architecture.txt - Fetch Coupons",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Magic Checkout",
+            "MVP"
+        ],
+        "description": "This section appears to be explaining the process of applying coupons or discount codes during a payment transaction. The image provided seems to be a visual representation of the coupon application flow, likely depicting the user interface or steps involved in entering and applying a coupon code. This feature allows customers to receive discounts or promotional offers by entering a valid coupon code during the checkout or payment process.",
+        "use_cases": [
+            "Applying discount coupons or promotional codes during online purchases or transactions",
+            "Providing customers with a way to redeem offers or avail discounts",
+            "Enabling merchants or businesses to offer promotional campaigns or incentives to customers",
+            "Facilitating the application of coupon codes in a user-friendly manner during the checkout process"
+        ],
+        "capabilities": [
+            "Coupon code entry",
+            "Coupon code validation",
+            "Discount calculation and application",
+            "Visual representation of coupon application flow",
+            "User interface for coupon redemption",
+            "Integration with payment gateway or checkout process"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/e882ebf1a6cc1365bde018ed6e36ba5a.png"
+        ]
+    },
+    {
+        "id": "engineering_backend_magic-checkout_mvp_architecture-chunk-10",
+        "name": "Architecture.txt - Apply Coupons",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Magic Checkout",
+            "MVP"
+        ],
+        "description": "This section appears to be explaining the process of applying coupons or discount codes during a customer's purchase journey. The image provided seems to be a visual representation of the customer's perspective, likely depicting the user interface where customers can enter a coupon code to avail discounts or offers.",
+        "use_cases": [
+            "Allowing customers to apply coupon codes or discount codes during the checkout process",
+            "Providing a user-friendly interface for customers to enter coupon codes",
+            "Enabling businesses to offer promotional discounts or special offers to customers",
+            "Facilitating customer loyalty and engagement through coupon-based promotions"
+        ],
+        "capabilities": [
+            "Coupon code validation",
+            "Discount calculation and application",
+            "Coupon code redemption tracking",
+            "Coupon code management",
+            "User interface for coupon code entry",
+            "Integration with payment gateways"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/b28fbf000ab0a5c4705a70655e805545.png"
+        ]
+    },
+    {
+        "id": "engineering_backend_magic-checkout_mvp_architecture-chunk-11",
+        "name": "Architecture.txt - Customer",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Magic Checkout",
+            "MVP"
+        ],
+        "description": "This section appears to be explaining the OTP (One-Time Password) flow, which is a security mechanism used for authentication and authorization purposes. It likely describes the process of generating and verifying OTPs, which are temporary codes sent to users for validating their identity during sensitive transactions or logins. The OTP flow helps enhance security by adding an extra layer of verification beyond traditional passwords.",
+        "use_cases": [
+            "User authentication",
+            "Secure login process",
+            "Sensitive transaction authorization",
+            "Two-factor authentication"
+        ],
+        "capabilities": [
+            "OTP generation",
+            "OTP verification",
+            "OTP delivery (e.g., SMS, email)",
+            "Multi-factor authentication",
+            "Secure authentication flow",
+            "Temporary code validation"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_backend_magic-checkout_mvp_architecture-chunk-12",
+        "name": "Architecture.txt - OTP Flow",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Magic Checkout",
+            "MVP"
+        ],
+        "description": "This section appears to be a placeholder or a reminder to provide information about the OTP (One-Time Password) flow, which is likely a crucial part of the authentication or security process in the described architecture. However, since the content is currently 'TODO', there is no specific information available to summarize.",
+        "use_cases": [
+            "Authentication process",
+            "Secure login or access control",
+            "Multi-factor authentication",
+            "Passwordless authentication"
+        ],
+        "capabilities": [
+            "OTP generation",
+            "OTP validation",
+            "Time-based OTP",
+            "HMAC-based OTP",
+            "OTP delivery mechanisms (e.g., SMS, email, mobile app)",
+            "OTP expiration and renewal"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_backend_magic-checkout_mvp_architecture-chunk-13",
+        "name": "Architecture.txt - Address Flows",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Magic Checkout",
+            "MVP"
+        ],
+        "description": "This section appears to be about explaining the flow or movement of addresses within the system's architecture. However, the section content is currently empty, so there is no specific information provided about how addresses are handled or transmitted.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_backend_magic-checkout_mvp_architecture-chunk-14",
+        "name": "Architecture.txt - Add Address",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Magic Checkout",
+            "MVP"
+        ],
+        "description": "This section appears to be a placeholder or an empty section titled 'Add Address' in a documentation file related to Architecture. Without any additional content, it is difficult to provide a meaningful description or infer any specific use cases or capabilities.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_backend_magic-checkout_mvp_architecture-chunk-15",
+        "name": "Architecture.txt - Edit Address",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Magic Checkout",
+            "MVP"
+        ],
+        "description": "This section appears to be a placeholder or a reminder for the author to provide information about the 'Edit Address' feature or functionality. As there is no content currently, it is difficult to infer any specific details about what this section should explain. However, based on the section title, it is likely intended to describe the process or steps involved in editing or modifying an address within the context of the Architecture documentation.",
+        "use_cases": [
+            "Updating an existing address record",
+            "Correcting errors or inaccuracies in an address",
+            "Modifying address details due to a change of location"
+        ],
+        "capabilities": [
+            "Address editing",
+            "Address modification",
+            "Address record management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_backend_magic-checkout_mvp_architecture-chunk-16",
+        "name": "Architecture.txt - Payment",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Magic Checkout",
+            "MVP"
+        ],
+        "description": "This section appears to be misnamed or misplaced within the documentation file. The content provided does not seem to explain anything related to editing an address or payment functionality. Instead, it only contains a section header titled 'Edit Address' without any further details or explanations.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_backend_magic-checkout_mvp_architecture-chunk-17",
+        "name": "Architecture.txt - Prepaid",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Magic Checkout",
+            "MVP"
+        ],
+        "description": "The section titled 'Prepaid' does not provide any meaningful information or explanation. The content simply contains the placeholder text 'TODO', indicating that the details for this section have not been filled in or completed yet.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_backend_magic-checkout_mvp_architecture-chunk-18",
+        "name": "Architecture.txt - COD",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Magic Checkout",
+            "MVP"
+        ],
+        "description": "This section appears to be about payment-related functionality or features within the architecture or system being documented. However, the provided content is empty, so there are no specific details to summarize.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_backend_magic-checkout_mvp_architecture-chunk-19",
+        "name": "Architecture.txt - Component View",
+        "breadcrumb": [
+            "Engineering",
+            "Backend",
+            "Magic Checkout",
+            "MVP"
+        ],
+        "description": "This section provides a high-level architectural overview of the system through a component diagram. The diagram illustrates the various components or modules that make up the system and how they interact with each other. It gives a visual representation of the system's structure, making it easier to understand the overall design and the relationships between different parts of the system.",
+        "use_cases": [
+            "Understanding the system's architecture",
+            "Identifying the key components and their interactions",
+            "Visualizing the system's structure for better comprehension",
+            "Facilitating communication and collaboration among stakeholders"
+        ],
+        "capabilities": [
+            "Component diagram",
+            "Architectural overview",
+            "Visual representation",
+            "System structure",
+            "Component interactions",
+            "High-level design"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/b1e6cd6f971d4bb987b02a78e39fa0cd.png"
+        ]
+    }
+]

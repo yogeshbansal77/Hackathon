@@ -1,0 +1,87 @@
+[
+    {
+        "id": "engineering_devops_dev-self-serve_dev-serve-environment-chunk-0",
+        "name": "Dev-Serve Environment.txt - How to get cluster access",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains the steps to gain access to the 'dev-serve' Kubernetes cluster hosted on Amazon Elastic Kubernetes Service (EKS). It guides the user through installing necessary tools, configuring AWS credentials, and verifying cluster access permissions. The instructions are tailored for users who need to manage the EKS cluster for development or serving purposes.",
+        "use_cases": [
+            "Accessing the 'dev-serve' Kubernetes cluster on AWS EKS",
+            "Managing and administering the EKS cluster for development or serving purposes",
+            "Configuring AWS credentials and permissions for EKS cluster access"
+        ],
+        "capabilities": [
+            "Installing kubectl and aws-iam-authenticator tools",
+            "Configuring AWS CLI with Access Key and Secret Access Key",
+            "Setting default AWS region",
+            "Listing available EKS clusters",
+            "Verifying user permissions for EKS cluster access"
+        ],
+        "references": [
+            "https://docs.aws.amazon.com/eks/latest/userguide/managing-auth.html\""
+        ]
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_dev-serve-environment-chunk-1",
+        "name": "Dev-Serve Environment.txt - Run Database inside your namespace",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains how developers can run databases like MySQL, PostgreSQL, or NoSQL databases like Redis within their assigned namespace in the dev-serve environment. It allows developers to easily set up and use backend data stores required by their applications, while restricting access to their specific namespace for security and isolation purposes.",
+        "use_cases": [
+            "Setting up a database for application development and testing",
+            "Running a database instance within a restricted namespace for security and isolation",
+            "Deploying backend data stores like MySQL, PostgreSQL, or Redis for application use",
+            "Enabling developers to work with databases within their assigned namespace"
+        ],
+        "capabilities": [
+            "Run databases inside namespace",
+            "Deploy MySQL, PostgreSQL, Redis databases",
+            "Restricted access to namespace",
+            "Isolated environment for database deployment",
+            "Easy setup of backend data stores",
+            "Integration with applications in the same namespace"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_dev-self-serve_dev-serve-environment-chunk-2",
+        "name": "Dev-Serve Environment.txt - Kubedb to run Mysql",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Dev Self Serve"
+        ],
+        "description": "This section explains how to use KubeDB, a Kubernetes operator, to run and manage MySQL and PostgreSQL databases within a Kubernetes cluster. It provides instructions on checking available database versions, creating MySQL and PostgreSQL instances with persistent storage, and connecting to the databases from applications running in the cluster. The section also mentions resource quotas and storage class configurations specific to the dev-serve cluster environment.",
+        "use_cases": [
+            "Running and managing MySQL databases in a Kubernetes cluster",
+            "Running and managing PostgreSQL databases in a Kubernetes cluster",
+            "Provisioning persistent storage for databases in a Kubernetes cluster",
+            "Connecting applications to databases running in a Kubernetes cluster"
+        ],
+        "capabilities": [
+            "Check supported MySQL and PostgreSQL versions",
+            "Create MySQL and PostgreSQL instances",
+            "Specify database version",
+            "Configure persistent storage",
+            "Set resource quotas",
+            "Connect to databases using DNS names"
+        ],
+        "references": [
+            "https://kubedb.com/\"",
+            "https://kubedb.com/docs/v0.13.0-rc.0/guides/mysql/quickstart/quickstart/\"",
+            "https://kubedb.com/docs/v0.13.0-rc.0/guides/postgres/quickstart/quickstart/\"",
+            "https://kubedb.com/docs/v0.13.0-rc.0/guides/redis/quickstart/quickstart/\"",
+            "https://aws.amazon.com/blogs/opensource/aws-service-operator-kubernetes-available/\"",
+            "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-s3-acls.html\"",
+            "https://github.com/awslabs/aws-service-operator/tree/master/examples\"",
+            "https://\\-checkout.dev.razorpay.in",
+            "https://concierge.stage.razorpay.in/manage/sg-0e925543b79699008\""
+        ]
+    }
+]

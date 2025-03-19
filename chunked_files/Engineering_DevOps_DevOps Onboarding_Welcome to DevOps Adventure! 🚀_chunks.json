@@ -1,0 +1,82 @@
+[
+    {
+        "id": "engineering_devops_devops-onboarding_welcome-to-devops-adventure!-\ud83d\ude80-chunk-0",
+        "name": "Welcome to DevOps Adventure! \ud83d\ude80.txt - A warm welcome to the heart of our DevOps family!",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section warmly welcomes new members to the DevOps team at Razorpay. It emphasizes the company's belief that each individual brings unique skills and perspectives that contribute to the dynamic DevOps culture. The section assures new members that they are joining a supportive community that values learning, growth, and collaboration. It outlines the onboarding process, which includes introductions to key team members, access to essential resources, and guidance on best practices. The section encourages new members to seek support from the team whenever needed.",
+        "use_cases": [
+            "Welcoming new members to the DevOps team",
+            "Outlining the onboarding process for new hires",
+            "Emphasizing the company's values and culture",
+            "Encouraging collaboration and support within the team"
+        ],
+        "capabilities": [
+            "Tailored onboarding plan",
+            "Introduction to key team members",
+            "Access to essential resources",
+            "Guidance on best practices",
+            "Supportive team environment",
+            "Emphasis on learning and growth"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_welcome-to-devops-adventure!-\ud83d\ude80-chunk-1",
+        "name": "Welcome to DevOps Adventure! \ud83d\ude80.txt - Onboarding process",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section outlines the onboarding process for new employees on their first day. It involves an introduction to the team members, key stakeholders, and an overview of the company's mission, values, and goals. Additionally, there is an office tour or virtual introduction to team members if the onboarding is done remotely. The manager is responsible for facilitating this onboarding process.",
+        "use_cases": [
+            "Onboarding new employees",
+            "Introducing company culture and values",
+            "Familiarizing with team members and stakeholders",
+            "Providing an office tour or virtual introduction"
+        ],
+        "capabilities": [
+            "Team introduction",
+            "Stakeholder introduction",
+            "Company mission overview",
+            "Company values overview",
+            "Company goals overview",
+            "Office tour",
+            "Virtual team member introduction"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_welcome-to-devops-adventure!-\ud83d\ude80-chunk-2",
+        "name": "Welcome to DevOps Adventure! \ud83d\ude80.txt - Week 1: Introduction to the Organization and DevOps Culture",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section outlines the onboarding plan for new DevOps engineers at the organization. It provides a week-by-week breakdown of the activities and tasks that need to be completed during the initial three weeks. The plan covers setting up the necessary tools and access, understanding the organization's DevOps culture and practices, attending training sessions, and gradually getting involved in non-production and production tasks under the guidance of a buddy or mentor.",
+        "use_cases": [
+            "Onboarding new DevOps engineers",
+            "Familiarizing new hires with the organization's DevOps tools and practices",
+            "Providing structured training and knowledge transfer",
+            "Gradually involving new hires in non-production and production tasks"
+        ],
+        "capabilities": [
+            "Laptop setup and VPN access",
+            "Introduction to DevOps tools and lifecycle",
+            "Access to knowledge sharing sessions and training resources",
+            "Mentorship and guidance from a buddy or experienced team member",
+            "Hands-on experience with non-production and production tasks"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/repo/devops-onboarding-checklist",
+            "https://alpha.razorpay.com/repo/knowledge-sharing-sessions",
+            "https://alpha.razorpay.com/repo/devops-code-challenge",
+            "https://alpha.razorpay.com/_static/file/11d127a7204643a2e7e146ded47135ce.png"
+        ]
+    }
+]

@@ -1,0 +1,43 @@
+[
+    {
+        "id": "engineering_devops_architecture_kubernetes_pmm-architecture-and-upgrade-process-chunk-0",
+        "name": "PMM Architecture and Upgrade process.txt - Main Content",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Kubernetes"
+        ],
+        "description": "This section provides an overview of Percona Monitoring and Management (PMM), an open-source tool for monitoring MySQL, PostgreSQL, MongoDB, and ProxySQL databases, as well as the servers they run on. It explains the architecture, deployment, and upgrade process of PMM within the Razorpay infrastructure. The section covers the main components of PMM, such as data collection, visualization, and security checks. It also provides links to the PMM Helm chart, deployment pipelines, and admin credentials for different environments.",
+        "use_cases": [
+            "Monitoring and managing the performance of MySQL, PostgreSQL, MongoDB, and ProxySQL databases",
+            "Visualizing database performance metrics in dashboards",
+            "Checking databases for security threats",
+            "Upgrading PMM to a newer version within the Razorpay infrastructure"
+        ],
+        "capabilities": [
+            "Collects thousands of performance metrics from databases and their hosts",
+            "Web UI for visualizing data in dashboards",
+            "Security threat checking for databases",
+            "Deployment using Helm charts and Spinnaker pipelines",
+            "Persistent volume storage for PMM data",
+            "Upgrade process with volume snapshots and rollback plan",
+            "Dynamic volume expansion using StorageClass",
+            "Initcontainer for bootstrapping PMM components",
+            "Adjustable readiness probes for smooth upgrades"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/7ec8f180ae534a8f98ac2b6c5a39248c.png",
+            "https://github.com/razorpay/kube-manifests/tree/master/templates/pmm>",
+            "https://deploy.razorpay.com/#/applications/pmm/executions?pipeline=pmm-stage-infra-deployment>",
+            "https://deploy.razorpay.com/#/applications/pmm/executions?pipeline=pmm-cde-infra-deployment>",
+            "https://github.com/razorpay/kube-manifests/pull/3074>",
+            "https://pmm.concierge.stage.razorpay.in/>__",
+            "https://pmm.razorpay.com/graph/>__",
+            "https://github.com/razorpay/kube-manifests/tree/master/templates/pmm>",
+            "https://deploy.razorpay.com/#/applications/pmm/executions?pipeline=pmm-stage-infra-deployment>",
+            "https://deploy.razorpay.com/#/applications/pmm/executions?pipeline=pmm-cde-infra-deployment>",
+            "https://github.com/razorpay/kube-manifests/pull/3074>"
+        ]
+    }
+]

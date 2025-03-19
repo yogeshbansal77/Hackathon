@@ -1,0 +1,223 @@
+[
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_vpn-management-chunk-0",
+        "name": "VPN Management.txt - VPN initiation",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section outlines the process of setting up a Virtual Private Network (VPN) connection between a client and a service provider. It involves filling out a VPN form with the necessary parameters and sharing it with the client. However, before completing the form, the service provider needs to configure the VPN on their end, specifically on the Amazon Web Services (AWS) platform. This requires obtaining certain information or resources from the client.",
+        "use_cases": [
+            "Establishing a secure connection between a client and a service provider",
+            "Enabling remote access to resources or services",
+            "Facilitating data transfer or communication over a private network",
+            "Enhancing security and privacy for sensitive information exchange"
+        ],
+        "capabilities": [
+            "VPN form filling",
+            "VPN parameter specification",
+            "VPN setup on AWS",
+            "Client resource/information gathering",
+            "VPN configuration management",
+            "Secure communication channel establishment"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_vpn-management-chunk-1",
+        "name": "VPN Management.txt - Sample VPN Form",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section provides a sample form for configuring a VPN (Virtual Private Network) connection between two devices, specifically a HITACHI VPN device and an AWS Managed VPN device. The form includes technical details such as IP addresses, encryption schemes, authentication methods, and various settings for Phase 1 and Phase 2 of the VPN tunnel establishment process. This information is crucial for setting up a secure and compatible VPN connection between the two devices.",
+        "use_cases": [
+            "Establishing a VPN connection between a HITACHI VPN device and an AWS Managed VPN device",
+            "Configuring secure communication between two remote networks or locations",
+            "Enabling remote access to corporate resources or cloud services"
+        ],
+        "capabilities": [
+            "VPN Gateway Device Information",
+            "Tunnel Properties",
+            "Phase 1 Configuration",
+            "Phase 2 Configuration",
+            "Encryption Schemes (AES 256, SHA1)",
+            "Authentication Methods (IKEv2, Main Mode)",
+            "Diffie-Hellman Group",
+            "Perfect Forward Secrecy",
+            "Lifetime and Renegotiation Settings"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_vpn-management-chunk-2",
+        "name": "VPN Management.txt - Setting up AWS VPN",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains the process of setting up a Virtual Private Network (VPN) connection between an on-premises network and Amazon Web Services (AWS). It outlines the three main components required: a Customer Gateway (CGW) representing the client's router, a Virtual Private Gateway (VPG) on the AWS side, and the VPN Connection itself. The section also describes the five-step process, including configuring the CGW and VPG, creating the VPN Connection, downloading the VPN configuration file for the client, and obtaining the tunnel endpoints for the client to configure their router.",
+        "use_cases": [
+            "Establishing a secure connection between an on-premises network and AWS resources",
+            "Extending an organization's private network to the cloud",
+            "Enabling remote access to AWS resources from on-premises locations",
+            "Facilitating hybrid cloud deployments by integrating on-premises and cloud environments"
+        ],
+        "capabilities": [
+            "Customer Gateway (CGW) configuration",
+            "Virtual Private Gateway (VPG) setup",
+            "VPN Connection creation",
+            "VPN configuration file generation",
+            "Tunnel endpoint retrieval",
+            "Pre-shared key (PSK) management",
+            "Active-passive tunnel redundancy",
+            "Encryption domain configuration"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_vpn-management-chunk-3",
+        "name": "VPN Management.txt - Filing up the VPN form and encryption details",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section provides a visual representation of the configuration settings for a Virtual Private Network (VPN) tunnel. It illustrates the various parameters and options that need to be specified when setting up a secure, encrypted connection between two networks or devices over the internet. The image serves as a guide for users to understand the different fields and values required for establishing a VPN connection.",
+        "use_cases": [
+            "Configuring a VPN tunnel for secure remote access",
+            "Enabling encrypted communication between branch offices or remote sites",
+            "Providing a secure connection for remote employees or mobile workers",
+            "Establishing a site-to-site VPN for interconnecting corporate networks"
+        ],
+        "capabilities": [
+            "VPN tunnel configuration",
+            "Encryption settings",
+            "Authentication methods",
+            "Key management",
+            "Network addressing",
+            "Firewall rules"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_vpn-management-chunk-4",
+        "name": "VPN Management.txt - HITACHI VPN Configs",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section appears to be introducing a subsection related to Virtual Private Gateway (VPG) configurations for Hitachi VPN setups. A Virtual Private Gateway is a component that enables secure communication between a private network and a public network, such as the internet, through encrypted VPN connections.",
+        "use_cases": [
+            "Enabling secure remote access to a private network",
+            "Establishing site-to-site VPN connections between different locations",
+            "Providing a secure communication channel for cloud-based resources or services",
+            "Protecting sensitive data transmissions over public networks"
+        ],
+        "capabilities": [
+            "Virtual Private Gateway (VPG) configuration",
+            "VPN encryption",
+            "Remote access",
+            "Site-to-site connectivity",
+            "Cloud integration",
+            "Data security"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_vpn-management-chunk-5",
+        "name": "VPN Management.txt - Virtual Private Gateway (VPG)",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains the Virtual Private Gateway (VPG), which is a component that enables secure remote access to an organization's network resources. It acts as a gateway for remote users or devices to establish a secure connection to the internal network, allowing them to access resources as if they were physically connected to the network. The VPG provides a secure and controlled entry point for remote access, ensuring that only authorized users and devices can connect to the network.",
+        "use_cases": [
+            "Enabling remote access for employees or contractors working from home or other remote locations",
+            "Providing secure access to internal resources for partners or clients",
+            "Allowing mobile workers or field personnel to connect to the corporate network",
+            "Facilitating secure access to cloud-based resources or services"
+        ],
+        "capabilities": [
+            "Secure remote access",
+            "User authentication and authorization",
+            "Encryption and data protection",
+            "Access control and policy enforcement",
+            "Centralized management and monitoring",
+            "Support for various VPN protocols"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_vpn-management-chunk-6",
+        "name": "VPN Management.txt - Customer Gateway (CGW)",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section introduces the concept of a Customer Gateway (CGW) in the context of VPN Management. A CGW is a software or hardware device located on the customer's premises that serves as the entry point for establishing a secure VPN connection between the customer's network and a remote network or service. It acts as the anchor point for the customer's end of the VPN tunnel, enabling secure communication and data transfer over the public internet.",
+        "use_cases": [
+            "Establishing a secure VPN connection between a customer's on-premises network and a remote network or service",
+            "Enabling secure communication and data transfer over the public internet",
+            "Providing a secure entry point for remote access to a customer's network resources"
+        ],
+        "capabilities": [
+            "Customer Gateway (CGW)",
+            "VPN connection",
+            "Secure communication",
+            "Data transfer",
+            "On-premises network",
+            "Remote network access"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_vpn-management-chunk-7",
+        "name": "VPN Management.txt - VPN Connection",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section explains the VPN connection setup between the company and Hitachi for secure data transfer. It provides details about the Hitachi endpoint IP and port, the allowed IP range for accessing the endpoint, the ping server setup for monitoring the tunnel state, and the process to check the tunnel status on the AWS console. It also mentions alerts related to data transfer and a health check URL, along with Hitachi's contact information for support.",
+        "use_cases": [
+            "Secure data transfer between the company and Hitachi",
+            "Monitoring the VPN tunnel state",
+            "Troubleshooting VPN connection issues",
+            "Contacting Hitachi support for assistance"
+        ],
+        "capabilities": [
+            "VPN connection setup",
+            "IP range restriction",
+            "Ping server monitoring",
+            "AWS console tunnel status check",
+            "Data transfer alerts",
+            "Health check URL monitoring"
+        ],
+        "references": [
+            "https://api.razorpay.com/v1/externalapi/health>\u201d"
+        ]
+    }
+]

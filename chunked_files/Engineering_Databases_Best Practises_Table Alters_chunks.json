@@ -1,0 +1,149 @@
+[
+    {
+        "id": "engineering_databases_best-practises_table-alters-chunk-0",
+        "name": "Table Alters.txt - MySQL 8 does support instant Alters for few modifications.",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Best Practises"
+        ],
+        "description": "This section explains that MySQL 8 supports instant alters for certain modifications like adding a new column at the end of a table, setting or dropping a default value for a column, and modifying the definition of an ENUM column. However, some operations that support the INPLACE algorithm may cause the slave to lag behind once the ALTER command is completed. To avoid this slave lag issue, the section recommends using pt-osc (a tool) to make changes that involve locking during or at the end of the ALTER operation. It also suggests merging all ALTER statements of a specific category into a single statement as a best practice.",
+        "use_cases": [
+            "Performing instant alters in MySQL 8 for specific modifications",
+            "Avoiding slave lag issues during ALTER operations",
+            "Merging multiple ALTER statements into a single statement"
+        ],
+        "capabilities": [
+            "Instant alters",
+            "Adding new column at table end",
+            "Setting/dropping default column value",
+            "Modifying ENUM column definition",
+            "INPLACE algorithm support",
+            "pt-osc tool for locking changes",
+            "Merging ALTER statements"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_best-practises_table-alters-chunk-1",
+        "name": "Table Alters.txt - Merge All the instant alters into a Single Statement",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Best Practises"
+        ],
+        "description": "This section explains how to combine multiple ALTER TABLE statements that add new columns into a single statement. Instead of executing separate statements for each column addition, you can merge them into one statement by separating the column definitions with commas. This approach can be more efficient and streamlined. However, it's important not to mix other types of ALTER TABLE operations like dropping columns or modifying data types, as that could lead to performance issues.",
+        "use_cases": [
+            "Adding multiple columns to a table in a single operation",
+            "Optimizing database operations by reducing the number of statements executed",
+            "Streamlining schema changes for better maintainability"
+        ],
+        "capabilities": [
+            "Merging multiple ALTER TABLE ADD COLUMN statements",
+            "Separating column definitions with commas",
+            "Avoiding mixing different types of ALTER TABLE operations",
+            "Potential performance optimization",
+            "Improved code readability and maintainability"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_best-practises_table-alters-chunk-2",
+        "name": "Table Alters.txt - Merge rest of the alters into a single statement",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Best Practises"
+        ],
+        "description": "This section explains how to merge multiple table alteration operations, except for INSTANT alters, into a single statement using the pt-osc tool. This approach is recommended to avoid issues with slave replica lag. The process involves creating a new table, copying the existing data into it, and performing heavy read and write operations. The section also advises against such complex alterations during the initial table creation, if possible.",
+        "use_cases": [
+            "Merging multiple table alterations into a single statement",
+            "Avoiding slave replica lag issues during table alterations",
+            "Performing complex table alterations using pt-osc tool"
+        ],
+        "capabilities": [
+            "Merging table alterations",
+            "Excluding INSTANT alters",
+            "Using pt-osc tool",
+            "Creating new tables",
+            "Copying data to new tables",
+            "Performing heavy read/write operations",
+            "Avoiding complex alterations during table creation"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_best-practises_table-alters-chunk-3",
+        "name": "Table Alters.txt - Avoid adding columns in the middle of the tables",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Best Practises"
+        ],
+        "description": "This section explains that when modifying the structure of a database table, it is recommended to add new columns at the end of the table instead of inserting them in the middle. Adding columns in the middle using the 'AFTER' keyword should be avoided because it requires a heavy operation called 'pt-osc' which does not support instant alterations. This recommendation is made to ensure efficient and seamless table modifications without causing significant disruptions or performance issues.",
+        "use_cases": [
+            "Modifying the structure of an existing database table by adding new columns",
+            "Avoiding performance issues or disruptions when altering table structure",
+            "Ensuring efficient and seamless table modifications"
+        ],
+        "capabilities": [
+            "Adding columns at the end of a table",
+            "Avoiding the use of the 'AFTER' keyword for adding columns in the middle",
+            "Preventing the need for heavy operations like 'pt-osc'",
+            "Supporting instant table alterations",
+            "Optimizing table modification processes"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_best-practises_table-alters-chunk-4",
+        "name": "Table Alters.txt - Avoid Duplicate indexes for Key columns",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Best Practises"
+        ],
+        "description": "This section explains that when a column is defined as a unique or primary key, an index is automatically created for that column. Adding additional regular indexes on top of these key columns is redundant and can slow down data manipulation operations (such as inserting, updating, or deleting data). To avoid performance issues, it is recommended to avoid creating duplicate indexes on columns that are already indexed as part of a unique or primary key constraint.",
+        "use_cases": [
+            "Optimizing database performance by avoiding redundant indexes",
+            "Ensuring efficient data manipulation operations (inserts, updates, deletes)",
+            "Maintaining database integrity through unique and primary key constraints"
+        ],
+        "capabilities": [
+            "Automatic index creation for unique/primary key columns",
+            "Identifying duplicate indexes",
+            "Avoiding performance overhead from redundant indexes",
+            "Optimizing data manipulation operations",
+            "Maintaining database integrity"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_best-practises_table-alters-chunk-5",
+        "name": "Table Alters.txt - Avoid Duplicate indexes on the top of Composite indexes",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Best Practises"
+        ],
+        "description": "This section explains the importance of ordering columns correctly when creating composite indexes (indexes on multiple columns) in a database table. The order of columns in the index determines which queries can efficiently utilize the index. The section recommends ordering columns based on their cardinality (number of distinct values) and the frequency of usage in query conditions (WHERE clauses). Proper column ordering can significantly improve query performance.",
+        "use_cases": [
+            "Optimizing query performance by creating composite indexes with columns ordered based on their cardinality and usage frequency in WHERE clauses.",
+            "Analyzing existing composite indexes and reordering columns to better match common query patterns.",
+            "Designing new database tables with composite indexes that align with anticipated query workloads.",
+            "Troubleshooting slow queries and identifying opportunities for index optimization."
+        ],
+        "capabilities": [
+            "Composite indexes",
+            "Index column ordering",
+            "Index usage analysis",
+            "Query performance optimization",
+            "Cardinality analysis",
+            "WHERE clause analysis"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/f8833bad3e306e92c050dba9c2063494.png",
+            "https://alpha.razorpay.com/_static/file/e9ab661dd03c8e0dc5dd37a426199401.png"
+        ]
+    }
+]

@@ -1,0 +1,114 @@
+[
+    {
+        "id": "engineering_databases_reservations-for-rds,-ec-&-es-chunk-0",
+        "name": "Reservations for RDS, EC & ES.txt - RDS & Aurora",
+        "breadcrumb": [
+            "Engineering",
+            "Databases"
+        ],
+        "description": "This section explains the concept of size flexible reserved instances for Amazon RDS and Aurora databases. It allows users to purchase reserved instances for a specific database engine and class, and if the instance needs to be scaled up or down within the same class and engine, the existing reserved instance will be applied to the new instance size. This helps optimize costs by allowing users to reserve capacity at a lower size and scale up as needed while still benefiting from the reserved instance pricing. However, size flexibility is limited to the same instance class and cannot be applied across different classes.",
+        "use_cases": [
+            "Scaling up or down database instances within the same class and engine while retaining reserved instance pricing benefits.",
+            "Optimizing costs by reserving capacity at a lower size and scaling up as needed.",
+            "Achieving partial or full reserved instance coverage for database instances."
+        ],
+        "capabilities": [
+            "Size flexible reserved instances",
+            "Reserved instance coverage",
+            "Instance scaling (up/down)",
+            "Cost optimization",
+            "Multi-AZ deployment",
+            "Instance class and engine specific reservations"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_reservations-for-rds,-ec-&-es-chunk-1",
+        "name": "Reservations for RDS, EC & ES.txt - Aurora IO optimized clusters",
+        "breadcrumb": [
+            "Engineering",
+            "Databases"
+        ],
+        "description": "This section explains that AWS offers a cost-saving feature called 'IO optimized clusters' for Aurora databases. By purchasing additional reserved instances (30% more than the current reserved instances), users can benefit from discounted pricing for the IO usage of their Aurora databases. The section also mentions that AWS provides size flexibility for Aurora instances, allowing users to convert their instances to a normalized unit (r6g.large) for purchasing reserved instances in batches.",
+        "use_cases": [
+            "Cost optimization for Aurora databases",
+            "Purchasing reserved instances for Aurora databases",
+            "Normalizing instance sizes for batch purchasing"
+        ],
+        "capabilities": [
+            "IO optimized clusters",
+            "Reserved instance discounts",
+            "Size flexibility",
+            "Instance normalization",
+            "Batch purchasing"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_reservations-for-rds,-ec-&-es-chunk-2",
+        "name": "Reservations for RDS, EC & ES.txt - Elasticache(EC) & ElasticSearch(ES)",
+        "breadcrumb": [
+            "Engineering",
+            "Databases"
+        ],
+        "description": "This section appears to be discussing the process of determining the appropriate number of reserved instances to purchase for various Amazon Web Services (AWS) offerings, specifically Amazon Relational Database Service (RDS), Amazon Aurora, Amazon ElastiCache, and Amazon Elasticsearch. It provides examples of calculations based on different instance types and configurations, considering factors such as multi-AZ deployments and normalization. The goal seems to be optimizing costs by purchasing the right number of reserved instances based on the projected usage and requirements.",
+        "use_cases": [
+            "Cost optimization for AWS database services (RDS, Aurora)",
+            "Capacity planning for caching services (ElastiCache)",
+            "Capacity planning for search and analytics services (Elasticsearch)",
+            "Determining the appropriate number of reserved instances to purchase"
+        ],
+        "capabilities": [
+            "Reserved instance calculations",
+            "Multi-AZ deployment considerations",
+            "Normalization of instance types",
+            "Cost optimization strategies",
+            "Capacity planning",
+            "Instance type selection"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_reservations-for-rds,-ec-&-es-chunk-3",
+        "name": "Reservations for RDS, EC & ES.txt - How do we handle instance upgrade to latest generation ?",
+        "breadcrumb": [
+            "Engineering",
+            "Databases"
+        ],
+        "description": "This section explains how to handle instance upgrades to newer generations when using AWS Reserved Instances (RIs) for EC2 and ElastiCache clusters. It mentions that when AWS releases new instance types, the existing RIs need to be canceled and new RIs for the latest instance types need to be purchased. This process involves opening a case with AWS Support and engaging with the AWS Technical Account Manager (TAM), which can take around 14-21 days to complete. The section also highlights that opting for 3-year RIs instead of 1-year RIs can provide additional cost savings of 20%.",
+        "use_cases": [
+            "Upgrading EC2 and ElastiCache instances to newer generations",
+            "Optimizing costs by purchasing 3-year Reserved Instances",
+            "Engaging with AWS Support and TAM for RI modifications"
+        ],
+        "capabilities": [
+            "Reserved Instances (RIs) for EC2 and ElastiCache",
+            "Instance generation upgrades (e.g., r5 to r6g, r6g to r7g)",
+            "RI cancellation and repurchase process",
+            "Cost savings with longer RI commitment periods",
+            "AWS Support case creation",
+            "AWS Technical Account Manager (TAM) engagement"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_reservations-for-rds,-ec-&-es-chunk-4",
+        "name": "Reservations for RDS, EC & ES.txt - Other Pointers",
+        "breadcrumb": [
+            "Engineering",
+            "Databases"
+        ],
+        "description": "This section provides additional pointers and considerations when managing AWS reservations for RDS, EC, and ES services. It suggests being mindful of AWS spending targets and credits, avoiding reservations for certain instance types (t class) that may not be suitable for production workloads, and consulting with cost team leaders or AWS TAM for guidance on achieving targeted spending and credits.",
+        "use_cases": [
+            "Managing AWS spending targets and credits",
+            "Optimizing instance reservations for production workloads",
+            "Consulting with cost team leaders or AWS TAM for guidance"
+        ],
+        "capabilities": [
+            "AWS spending targets and credits",
+            "Instance reservation management",
+            "Cost optimization guidance from AWS TAM"
+        ],
+        "references": []
+    }
+]

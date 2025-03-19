@@ -1,0 +1,166 @@
+[
+    {
+        "id": "engineering_devops_harbor_harbor-doc---home-chunk-0",
+        "name": "Harbor Doc - Home.txt - Overview",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Harbor"
+        ],
+        "description": "This section appears to provide an overview or guide on setting up Harbor, which is likely a software or platform. It aims to offer instructions or steps for properly configuring and installing Harbor, potentially covering prerequisites, system requirements, and the necessary procedures to get it up and running.",
+        "use_cases": [
+            "Setting up Harbor",
+            "Installing Harbor",
+            "Configuring Harbor"
+        ],
+        "capabilities": [
+            "Setup guide",
+            "Installation instructions",
+            "Configuration steps"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_harbor_harbor-doc---home-chunk-1",
+        "name": "Harbor Doc - Home.txt - Setup guide",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Harbor"
+        ],
+        "description": "This section appears to provide an overview of the architecture or structural design of the Harbor system. It likely explains the different components or modules that make up the Harbor system and how they interact or work together to deliver the intended functionality. The architecture section aims to give readers a high-level understanding of the system's organization and the relationships between its various parts.",
+        "use_cases": [
+            "Understanding the overall structure and design of the Harbor system",
+            "Gaining insights into the different components or modules that make up the Harbor system",
+            "Learning about the interactions and relationships between the various components of the Harbor system"
+        ],
+        "capabilities": [
+            "Architecture overview",
+            "Component breakdown",
+            "Component interactions",
+            "System design",
+            "Structural organization"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_harbor_harbor-doc---home-chunk-2",
+        "name": "Harbor Doc - Home.txt - Architecture",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Harbor"
+        ],
+        "description": "This section appears to be a placeholder or a heading for a section that discusses custom changes or modifications that can be made to the Harbor software. However, there is no further information provided in the given content.",
+        "use_cases": [
+            "Customizing Harbor software to meet specific requirements",
+            "Modifying Harbor's functionality or behavior",
+            "Extending Harbor's capabilities through custom changes"
+        ],
+        "capabilities": [
+            "Custom changes",
+            "Customization",
+            "Modification"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_harbor_harbor-doc---home-chunk-3",
+        "name": "Harbor Doc - Home.txt - Custom changes",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Harbor"
+        ],
+        "description": "This section appears to provide information about setting up or configuring cells, which are likely components or modules within the Harbor system. The term 'cell setup' suggests that this section explains the process or steps involved in initializing or configuring these cells for proper operation within the Harbor environment.",
+        "use_cases": [
+            "Configuring components or modules within the Harbor system",
+            "Initializing cells or modules for proper operation",
+            "Setting up the Harbor environment with required cells or modules",
+            "Customizing the cell configuration based on specific requirements"
+        ],
+        "capabilities": [
+            "Cell setup",
+            "Cell configuration",
+            "Cell initialization",
+            "Customizable cell settings",
+            "Component configuration",
+            "Module setup"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_harbor_harbor-doc---home-chunk-4",
+        "name": "Harbor Doc - Home.txt - Cell setup",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Harbor"
+        ],
+        "description": "This section appears to be about troubleshooting issues related to cell setup in the Harbor Doc. It likely provides guidance, tips, or steps to help users identify and resolve common problems or errors that may arise during the cell setup process. The troubleshooting information aims to assist users in overcoming challenges and ensuring a smooth setup experience.",
+        "use_cases": [
+            "Resolving errors or issues during cell setup",
+            "Identifying and addressing common cell setup problems",
+            "Troubleshooting guide for users setting up cells",
+            "Debugging and fixing cell setup-related issues"
+        ],
+        "capabilities": [
+            "Troubleshooting",
+            "Error resolution",
+            "Problem identification",
+            "Issue debugging",
+            "Setup guidance",
+            "Smooth setup experience"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_harbor_harbor-doc---home-chunk-5",
+        "name": "Harbor Doc - Home.txt - Troubleshooting",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Harbor"
+        ],
+        "description": "This section provides instructions on how to reset the administrative password for the Harbor application. Harbor is a cloud-native registry that stores and distributes container images, and the admin password is required to access and manage the application. Resetting the password may be necessary if the current password is forgotten or compromised, and this section likely outlines the steps to securely reset the password and regain administrative access.",
+        "use_cases": [
+            "Resetting a forgotten admin password",
+            "Resetting a compromised admin password",
+            "Regaining administrative access to Harbor",
+            "Securing Harbor by changing the admin password periodically"
+        ],
+        "capabilities": [
+            "Admin password reset",
+            "Harbor access control",
+            "Harbor security management",
+            "Harbor administration"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_harbor_harbor-doc---home-chunk-6",
+        "name": "Harbor Doc - Home.txt - Reset harbor admin password",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Harbor"
+        ],
+        "description": "This section provides a link to a Google document that likely contains instructions or steps to reset the admin password for Harbor, which is a cloud-native registry server for storing and distributing container images. Resetting the admin password is a common task for administrators to regain access or change the default password for security purposes.",
+        "use_cases": [
+            "Resetting the admin password after forgetting the current password",
+            "Changing the default admin password for security reasons",
+            "Regaining access to the Harbor admin account",
+            "Updating the admin password periodically as a security best practice"
+        ],
+        "capabilities": [
+            "Password reset",
+            "Admin account management",
+            "Access control",
+            "Security",
+            "Documentation"
+        ],
+        "references": [
+            "https://docs.google.com/document/d/1lXkplGTpuuQYccLbKdCEy253dcBwKf291v5w3qLnX6A/edit?tab=t.0"
+        ]
+    }
+]

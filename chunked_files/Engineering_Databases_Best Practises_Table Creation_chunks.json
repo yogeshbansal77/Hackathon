@@ -1,0 +1,195 @@
+[
+    {
+        "id": "engineering_databases_best-practises_table-creation-chunk-0",
+        "name": "Table Creation.txt - Unique Character Set and Collation",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Best Practises"
+        ],
+        "description": "This section emphasizes the importance of defining appropriate data types for columns in a database table. It explains that using the correct data type can improve query performance, especially when dealing with joins and indexes. Choosing the wrong data type, such as storing integers as varchar, can lead to performance issues and make future modifications more complex. The section suggests carefully considering the data types during table creation to ensure optimal performance and maintainability.",
+        "use_cases": [
+            "Improving query performance, especially for joins and indexed columns",
+            "Facilitating efficient index usage based on data types",
+            "Avoiding complex and time-consuming table alterations in the future",
+            "Ensuring data integrity by storing values in appropriate data types"
+        ],
+        "capabilities": [
+            "Defining proper data types for columns",
+            "Optimizing query performance",
+            "Efficient index usage",
+            "Facilitating table maintenance",
+            "Ensuring data integrity",
+            "Avoiding complex table alterations"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_best-practises_table-creation-chunk-1",
+        "name": "Table Creation.txt - Define proper Data Types for the columns",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Best Practises"
+        ],
+        "description": "This section explains the importance of maintaining consistent data types for columns across related tables in a database. It emphasizes that if a column, such as 'user_id', is defined as an integer in one table, it should be defined as an integer in all other tables that store values for that column. Using different data types for the same column across tables can lead to data inconsistencies and potential errors. Additionally, the section advises against creating foreign key references, which are used to establish relationships between tables.",
+        "use_cases": [
+            "Ensuring data integrity and consistency across related tables",
+            "Facilitating data analysis and reporting by maintaining uniform data types",
+            "Simplifying database maintenance and updates",
+            "Avoiding potential errors and data inconsistencies caused by mismatched data types"
+        ],
+        "capabilities": [
+            "Maintaining uniform data types",
+            "Defining consistent column data types",
+            "Avoiding foreign key references",
+            "Ensuring data integrity",
+            "Facilitating data analysis",
+            "Simplifying database maintenance"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/9b99c52a3ab2cfc54caff244b26022c6.png"
+        ]
+    },
+    {
+        "id": "engineering_databases_best-practises_table-creation-chunk-2",
+        "name": "Table Creation.txt - Maintain same data type for uniform columns across tables",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Best Practises"
+        ],
+        "description": "This section discusses the performance implications of adding foreign key constraints and indexing referenced columns in database tables. It explains that validating data integrity through foreign keys consumes CPU resources and increases transaction duration. Additionally, it mentions that altering tables with large amounts of data or using certain tools like pt-osc or renaming tables can have an impact on performance.",
+        "use_cases": [
+            "Adding foreign key references to tables",
+            "Indexing referenced columns for faster data validation",
+            "Altering tables with large amounts of data",
+            "Using tools like pt-osc or renaming tables"
+        ],
+        "capabilities": [
+            "Data integrity validation",
+            "CPU resource utilization",
+            "Transaction duration impact",
+            "Indexing for faster data validation",
+            "Table altering performance impact",
+            "Tool usage impact (pt-osc, table renaming)"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_best-practises_table-creation-chunk-3",
+        "name": "Table Creation.txt - Avoid Creating Foreign Key references.",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Best Practises"
+        ],
+        "description": "This section discusses best practices for optimizing database performance and reducing transaction times. It recommends avoiding foreign key references and triggers, as they can slow down operations. Instead, it suggests maintaining referential integrity at the code level. Additionally, it advises using the CHAR data type over VARCHAR for fixed-length data, as CHAR allocates fixed storage and avoids the need for reference pointers.",
+        "use_cases": [
+            "Improving database performance",
+            "Reducing transaction times",
+            "Maintaining referential integrity",
+            "Optimizing data storage for fixed-length data types"
+        ],
+        "capabilities": [
+            "Avoiding foreign key references",
+            "Avoiding triggers",
+            "Maintaining referential integrity at code level",
+            "Using CHAR data type for fixed-length data",
+            "Optimizing data storage",
+            "Improving transaction times"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_best-practises_table-creation-chunk-4",
+        "name": "Table Creation.txt - Avoid using Triggers",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Best Practises"
+        ],
+        "description": "This section explains the benefits of using the ENUM data type for columns that store predefined string values, such as status fields. It suggests that using ENUM instead of VARCHAR can improve performance because ENUMs are stored as integers internally, which are faster to retrieve. Additionally, ENUMs provide built-in validation to prevent inserting invalid values.",
+        "use_cases": [
+            "Storing predefined string values, such as status fields",
+            "Improving performance for columns with a limited set of possible values",
+            "Enforcing data validation to prevent invalid values from being inserted"
+        ],
+        "capabilities": [
+            "Faster retrieval of ENUM values compared to VARCHAR",
+            "Built-in validation for ENUM data types",
+            "Storage of ENUM values as integers internally",
+            "Predefined set of allowed values for ENUM columns"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_best-practises_table-creation-chunk-5",
+        "name": "Table Creation.txt - For Fixed length data types, prefer CHAR over VARCHAR",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Best Practises"
+        ],
+        "description": "This section discusses considerations when working with ENUM data types in MySQL databases. It explains that adding new values to the end of an existing ENUM list can be done instantly, but adding values in the middle requires a pt-osc operation to avoid replication lag. Additionally, it cautions that deleting values from the middle of an ENUM list also requires a pt-osc operation. The section emphasizes the importance of proper planning and design when using ENUM data types to avoid potential issues.",
+        "use_cases": [
+            "Adding new values to the end of an existing ENUM list",
+            "Adding new values in the middle of an existing ENUM list",
+            "Deleting values from the middle of an existing ENUM list"
+        ],
+        "capabilities": [
+            "Instant ALTER for adding new values to the end of an ENUM",
+            "pt-osc operation required for adding values in the middle of an ENUM",
+            "pt-osc operation required for deleting values from the middle of an ENUM",
+            "Proper planning and design for ENUM data types"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_best-practises_table-creation-chunk-6",
+        "name": "Table Creation.txt - Prefer Enum columns for defined varchar values",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Best Practises"
+        ],
+        "description": "This section discusses best practices for database table design and optimization. It recommends using ENUM data types instead of VARCHAR for columns with a defined set of values, as ENUMs are more efficient. It also suggests partitioning large tables based on frequently accessed data to improve query performance and enable dropping old partitions. Additionally, it advises against using VARCHAR columns as primary or unique keys due to the computational overhead involved in validating uniqueness for string data types.",
+        "use_cases": [
+            "Tables with columns that have a predefined set of possible values",
+            "Large tables with frequently accessed data subsets",
+            "Write-intensive applications where primary/unique key performance is critical"
+        ],
+        "capabilities": [
+            "ENUM data type for efficient storage and retrieval of predefined values",
+            "Table partitioning for improved query performance and data management",
+            "Avoiding VARCHAR columns as primary/unique keys for better write performance"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_databases_best-practises_table-creation-chunk-7",
+        "name": "Table Creation.txt - Partitioning tables where necessary",
+        "breadcrumb": [
+            "Engineering",
+            "Databases",
+            "Best Practises"
+        ],
+        "description": "This section provides guidelines for optimizing database performance by properly indexing tables and columns. It emphasizes the importance of indexing frequently used columns in queries, avoiding duplicate indexes, limiting the number of indexes to prevent performance degradation during data modification operations, and indexing columns involved in join conditions. Additionally, it offers suggestions for efficient table design, such as adding columns at the end, using optimal varchar lengths, and utilizing unsigned auto-increment columns.",
+        "use_cases": [
+            "Improving query performance by indexing frequently used columns in WHERE clauses",
+            "Avoiding performance degradation caused by duplicate indexes",
+            "Optimizing join query performance by indexing columns involved in join conditions",
+            "Efficient table design for better storage and performance"
+        ],
+        "capabilities": [
+            "Index frequently used columns",
+            "Avoid duplicate indexes",
+            "Limit number of indexes",
+            "Index columns in join conditions",
+            "Add columns at table end",
+            "Optimize varchar column lengths",
+            "Use unsigned auto-increment columns"
+        ],
+        "references": []
+    }
+]

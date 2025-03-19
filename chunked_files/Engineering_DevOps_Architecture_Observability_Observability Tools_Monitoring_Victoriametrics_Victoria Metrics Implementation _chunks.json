@@ -1,0 +1,214 @@
+[
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_monitoring_victoriametrics_victoria-metrics-implementation--chunk-0",
+        "name": "Victoria Metrics Implementation .txt - Overview",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Monitoring",
+            "Victoriametrics"
+        ],
+        "description": "This section provides an overview of the infrastructure monitoring setup, which primarily revolves around VictoriaMetrics as the central monitoring solution. It is integrated with other components like Prometheus for collecting metrics, Grafana for data visualization, and AlertManager for alerting. The setup aims to provide a comprehensive monitoring solution for the infrastructure.",
+        "use_cases": [
+            "Infrastructure monitoring",
+            "Metric collection and analysis",
+            "Data visualization",
+            "Alerting and notification"
+        ],
+        "capabilities": [
+            "VictoriaMetrics as central monitoring solution",
+            "Integration with Prometheus",
+            "Integration with Grafana",
+            "Integration with AlertManager"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_monitoring_victoriametrics_victoria-metrics-implementation--chunk-1",
+        "name": "Victoria Metrics Implementation .txt - Architecture",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Monitoring",
+            "Victoriametrics"
+        ],
+        "description": "This section outlines the overall architecture of the monitoring system, which follows a centralized approach with VictoriaMetrics serving as the core component for storing and querying metrics data. The system is designed to be highly available, scalable, and efficient in handling large volumes of metrics, ensuring reliable monitoring and data analysis capabilities.",
+        "use_cases": [
+            "Centralized monitoring",
+            "High availability monitoring",
+            "Scalable monitoring",
+            "Efficient metric handling"
+        ],
+        "capabilities": [
+            "Core metrics storage",
+            "Querying metrics",
+            "High availability",
+            "Scalability",
+            "Efficient metric handling"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_monitoring_victoriametrics_victoria-metrics-implementation--chunk-2",
+        "name": "Victoria Metrics Implementation .txt - Core Components",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Monitoring",
+            "Victoriametrics"
+        ],
+        "description": "This section explains the core components of the VictoriaMetrics implementation, which is a centralized metrics storage and processing platform. It consists of four main components: VMInsert for data ingestion, VMSelect for retrieving and serving data, VMStorage for storing time-series data, and VMAgent as a lightweight replacement for Prometheus for collecting metrics. The deployment strategy involves collecting infrastructure metrics in the ops-common cluster, application-specific metrics in respective environment clusters, and segregating metric scraping based on Business Unit (BU) labels.",
+        "use_cases": [
+            "Centralized metrics storage and processing",
+            "Infrastructure metrics collection",
+            "Application-specific metrics collection",
+            "Business Unit (BU) label-based metric scraping segregation"
+        ],
+        "capabilities": [
+            "Data ingestion from vm-agents",
+            "Time-series data distribution across storage nodes",
+            "Stateless deployment for VMInsert and VMSelect",
+            "Data retrieval and merging from storage nodes",
+            "Query interface for dashboarding and alerting",
+            "Stateful storage of time-series data with high availability",
+            "Lightweight and Prometheus-compatible metric collection with VMAgent",
+            "Reduced resource footprint and storage requirements",
+            "Highly scalable architecture"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_monitoring_victoriametrics_victoria-metrics-implementation--chunk-3",
+        "name": "Victoria Metrics Implementation .txt - Alerting System",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Monitoring",
+            "Victoriametrics"
+        ],
+        "description": "This section outlines the alerting system used in the Victoria Metrics implementation. It explains how Prometheus instances send metrics to Victoria Metrics for centralized storage and querying. The alerting system consists of two main components: VMAlert and AlertManager. VMAlert evaluates alert rules and integrates with AlertManager, while AlertManager handles alert routing, aggregation, and integration with notification channels like Slack and Zenduty.",
+        "use_cases": [
+            "Centralized metric storage and querying",
+            "Consistent data retention policies",
+            "Alerting and monitoring",
+            "Integration with notification channels"
+        ],
+        "capabilities": [
+            "Prometheus integration (remote write)",
+            "VMAlert (alert rule evaluation, AlertManager integration, scalability, alert silencing and inhibition)",
+            "AlertManager (alert routing, aggregation, notification channel integration)"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_monitoring_victoriametrics_victoria-metrics-implementation--chunk-4",
+        "name": "Victoria Metrics Implementation .txt - Additional Components",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Monitoring",
+            "Victoriametrics"
+        ],
+        "description": "This section outlines the various components and data flow paths involved in the Victoria Metrics implementation. It describes how metrics data flows from the VmAgent to VmInsert and VmStorage, and then how the stored data can be accessed by various tools like Grafana, Spinnaker, VmAlert, and custom metrics adapters. Additionally, it mentions the integration of Grafana with Slack and AlertManager/Karma, which can further route alerts to Zenduty or Slack.",
+        "use_cases": [
+            "Monitoring and visualizing metrics data using Grafana",
+            "Alerting and notification routing via AlertManager/Karma and Zenduty/Slack",
+            "Integration with Spinnaker for continuous delivery",
+            "Custom metrics adapters for specific use cases"
+        ],
+        "capabilities": [
+            "Metrics data collection (VmAgent)",
+            "Metrics data storage (VmInsert, VmStorage)",
+            "Metrics data querying and visualization (VmSelect, Grafana)",
+            "Alerting and notification routing (VmAlert, AlertManager/Karma, Zenduty, Slack)",
+            "Integration with Spinnaker",
+            "Custom metrics adapters"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_monitoring_victoriametrics_victoria-metrics-implementation--chunk-5",
+        "name": "Victoria Metrics Implementation .txt - Special Use Cases",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Monitoring",
+            "Victoriametrics"
+        ],
+        "description": "This section explains Promxy, a tool that consolidates time-series data from multiple sources into a unified interface. It acts as a middleware layer, routing queries to different VictoriaMetrics instances and merging the responses, providing a single point of access for querying data across multiple sources.",
+        "use_cases": [
+            "Consolidating data from multiple sources",
+            "Providing a unified query interface",
+            "Routing queries to different VictoriaMetrics instances",
+            "Handling load balancing and failover"
+        ],
+        "capabilities": [
+            "Data merging",
+            "Unified query interface",
+            "Query routing",
+            "Load balancing",
+            "Failover handling",
+            "Multi-instance deployment"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_monitoring_victoriametrics_victoria-metrics-implementation--chunk-6",
+        "name": "Victoria Metrics Implementation .txt - Deployment Considerations",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Monitoring",
+            "Victoriametrics"
+        ],
+        "description": "This section provides an overview of the deployment considerations and infrastructure setup for Victoria Metrics, a monitoring solution used at Razorpay. It explains the various components involved, such as VMStorage, VMInsert, VMSelect, VMAgents, and their deployment across different Kubernetes namespaces and clusters. It also covers the integration with other tools like StatsD for metrics exposition, Grafana for data visualization, and the processes for managing persistent queues and scaling storage nodes.",
+        "use_cases": [
+            "Monitoring PHP monolith applications by pushing metrics via UDP to EC2 instances running StatsD",
+            "Scraping metrics from StatsD exporters using dedicated VMAgent instances",
+            "Visualizing metrics data using Grafana dashboards",
+            "Managing Grafana team memberships and dashboard backups using automation tools"
+        ],
+        "capabilities": [
+            "VMStorage management and scaling",
+            "VMInsert and VMSelect configuration updates",
+            "Node anti-affinity rules for VMStorage pods",
+            "Persistent queue management for VMAgents",
+            "Concurrent queue tuning for VMAgents",
+            "Enabling VictoriaMetrics remote write protocol for reduced network usage"
+        ],
+        "references": [
+            "http://prometheus.io/port:",
+            "http://prometheus.io/scrape:",
+            "https://vajra.razorpay.com/?orgId=1>",
+            "https://alpha.razorpay.com/repo/statsd-config-change>",
+            "https://github.com/razorpay/alert-rules/blob/0cc684dab6d921322ded6d9ad0bb9a572949c93b/rules/prod-rules/infra_rules_all_eks.yaml#L67>",
+            "https://vajra.razorpay.com/goto/1XwbtEdNR?orgId=1>",
+            "https://vajra.razorpay.com/goto/3HrmTPdHR?orgId=1>",
+            "https://vajra.razorpay.com/goto/NnPATPOHg?orgId=1>",
+            "https://vajra.razorpay.com/goto/R-JxTPdNg?orgId=1>",
+            "https://vajra.razorpay.com/d/oS7Bi_0Wzsgqrg2/victoriametrics-cluster?orgId=1>",
+            "http://localhost:8481/select/447581938/vmui>"
+        ]
+    }
+]

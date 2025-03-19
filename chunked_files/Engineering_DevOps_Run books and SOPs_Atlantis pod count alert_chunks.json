@@ -1,0 +1,75 @@
+[
+    {
+        "id": "engineering_devops_run-books-and-sops_atlantis-pod-count-alert-chunk-0",
+        "name": "Atlantis pod count alert.txt - Issue:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains that the number of pods (containers) for the Atlantis deployment, which is responsible for managing infrastructure changes, has dropped to zero in a specific cluster. When the pod count reaches zero, the Atlantis service becomes inaccessible, meaning that infrastructure changes cannot be managed or monitored. This issue occurs within the 'atlantis' namespace of the cluster.",
+        "use_cases": [
+            "Monitoring the health and availability of critical infrastructure management services like Atlantis",
+            "Ensuring that infrastructure changes can be properly managed and tracked",
+            "Detecting and resolving issues that may impact the ability to deploy or modify infrastructure resources"
+        ],
+        "capabilities": [
+            "Pod count monitoring",
+            "Deployment health monitoring",
+            "Service availability monitoring",
+            "Namespace-level monitoring",
+            "Infrastructure management",
+            "Infrastructure change tracking"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_atlantis-pod-count-alert-chunk-1",
+        "name": "Atlantis pod count alert.txt - Debugging:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section titled 'Debugging' appears to provide information or instructions related to troubleshooting or investigating issues with the Atlantis pod count alert in a Kubernetes cluster named 'ops-common'. However, the section content itself is empty, so there are no specific details or steps provided.",
+        "use_cases": [
+            "Troubleshooting Atlantis pod count alerts",
+            "Investigating issues with Atlantis pods",
+            "Debugging Kubernetes cluster 'ops-common'"
+        ],
+        "capabilities": [
+            "Debugging",
+            "Cluster monitoring",
+            "Pod monitoring",
+            "Alert investigation"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_atlantis-pod-count-alert-chunk-2",
+        "name": "Atlantis pod count alert.txt - Resolution:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section provides guidance on troubleshooting and resolving issues related to the Atlantis pod count alert. It suggests checking the pod logs and disk space availability. If the disk space is full, it recommends increasing the disk space as it is an EBS (Elastic Block Store) volume. Additionally, it suggests trying to rotate the pod as a potential resolution. The section also includes a link to the Vajra dashboard, which likely provides monitoring and visualization capabilities for the Atlantis CPU and memory usage.",
+        "use_cases": [
+            "Troubleshooting Atlantis pod count alerts",
+            "Monitoring disk space usage and management",
+            "Rotating or restarting Atlantis pods",
+            "Monitoring Atlantis CPU and memory usage"
+        ],
+        "capabilities": [
+            "Pod log analysis",
+            "Disk space management",
+            "EBS volume resizing",
+            "Pod rotation/restart",
+            "Vajra dashboard integration",
+            "CPU and memory monitoring"
+        ],
+        "references": [
+            "https://vajra.razorpay.com/d/X8q-GwzVk/atlantis-cpu-and-memory?viewPanel=12>"
+        ]
+    }
+]

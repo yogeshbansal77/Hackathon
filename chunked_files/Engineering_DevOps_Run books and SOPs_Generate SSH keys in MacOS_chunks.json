@@ -1,0 +1,120 @@
+[
+    {
+        "id": "engineering_devops_run-books-and-sops_generate-ssh-keys-in-macos-chunk-0",
+        "name": "Generate SSH keys in MacOS.txt - Introduction to SSH keys",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section introduces the initial step to generate SSH keys on a Mac computer. It explains how to open the Terminal application, which is a command-line interface tool used to execute various commands and operations on the system. Opening the Terminal is a prerequisite for generating SSH keys, as the subsequent steps will involve running specific commands within the Terminal environment.",
+        "use_cases": [
+            "Generating SSH keys for secure remote access",
+            "Authenticating with remote servers or services using SSH keys",
+            "Enabling secure file transfers or remote command execution"
+        ],
+        "capabilities": [
+            "Opening Terminal application",
+            "Accessing Utilities folder",
+            "Locating Terminal in Utilities list",
+            "Launching Terminal"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_generate-ssh-keys-in-macos-chunk-1",
+        "name": "Generate SSH keys in MacOS.txt - Steps to generate SSH keys",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains the process of generating SSH keys on a Mac computer. It suggests creating a directory where the generated keys will be stored, and then provides a command to generate an RSA key pair with a specific key length (4096 bits) and a specified file name (id_rsa) in the chosen directory. The command also includes an option to set an empty passphrase for the key pair, which is generally not recommended for security reasons.",
+        "use_cases": [
+            "Secure remote access to servers or other systems",
+            "Authenticating with Git repositories",
+            "Establishing secure connections for file transfers or other network services"
+        ],
+        "capabilities": [
+            "Generate RSA key pair",
+            "Specify key length",
+            "Specify key file name and location",
+            "Set empty passphrase for key pair"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_generate-ssh-keys-in-macos-chunk-2",
+        "name": "Generate SSH keys in MacOS.txt - Create a directory and generate keys",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains the process of generating SSH keys on a macOS system. It specifically mentions that the encryption algorithm used is RSA, but also notes that newer algorithms like ed25519 can be used if the system supports them. After executing the command, it states that two new files will be created: id_rsa.pub (the public key) and id_rsa (the private key), which will be located in the ~/temp directory.",
+        "use_cases": [
+            "Secure remote access to servers or systems",
+            "Authenticating with Git repositories",
+            "Establishing secure communication channels",
+            "Encrypting and decrypting data"
+        ],
+        "capabilities": [
+            "SSH key generation",
+            "RSA encryption algorithm",
+            "ed25519 encryption algorithm (if supported)",
+            "Public key file (id_rsa.pub)",
+            "Private key file (id_rsa)",
+            "Key storage in specified directory"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_generate-ssh-keys-in-macos-chunk-3",
+        "name": "Generate SSH keys in MacOS.txt - Verify the generated keys",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section demonstrates how to verify the generated SSH keys on a macOS system. It shows the output of the 'ls' command, which lists the files in the '~/temp' directory. The output indicates that two files, 'id_rsa' and 'id_rsa.pub', have been created. These files represent the private and public SSH keys, respectively. The presence of these files confirms that the SSH key generation process was successful.",
+        "use_cases": [
+            "Secure remote access to servers or systems",
+            "Authenticating with Git repositories",
+            "Establishing secure connections for file transfers",
+            "Enabling passwordless login for automated scripts or processes"
+        ],
+        "capabilities": [
+            "SSH key generation",
+            "Private key storage",
+            "Public key sharing",
+            "File listing",
+            "Directory navigation"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_generate-ssh-keys-in-macos-chunk-4",
+        "name": "Generate SSH keys in MacOS.txt - Share the public key",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains that after generating an SSH key pair, which consists of a public key and a private key, you should keep the private key secure and confidential, while sharing the public key with the party or service that requires it for authentication and secure communication.",
+        "use_cases": [
+            "Secure remote access to servers or services",
+            "Authenticating with Git repositories",
+            "Establishing secure communication channels",
+            "Automating deployment processes"
+        ],
+        "capabilities": [
+            "Key pair generation",
+            "Public key sharing",
+            "Private key protection",
+            "Secure authentication",
+            "Encrypted communication",
+            "Access control"
+        ],
+        "references": []
+    }
+]

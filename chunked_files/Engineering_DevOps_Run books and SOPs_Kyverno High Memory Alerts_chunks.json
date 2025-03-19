@@ -1,0 +1,98 @@
+[
+    {
+        "id": "engineering_devops_run-books-and-sops_kyverno-high-memory-alerts-chunk-0",
+        "name": "Kyverno High Memory Alerts.txt - Issue:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section explains that the Kyverno pod, which is a Kubernetes admission controller for policy management, is experiencing high memory usage in a specific cluster. The alert should mention the cluster where this issue is occurring. The namespace where the Kyverno pod is running is 'kyverno'.",
+        "use_cases": [
+            "Monitoring memory usage of Kyverno pods",
+            "Alerting on high memory usage of Kyverno pods",
+            "Identifying the cluster and namespace where the issue is occurring"
+        ],
+        "capabilities": [
+            "Memory usage monitoring",
+            "Alerting",
+            "Cluster identification",
+            "Namespace identification"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_kyverno-high-memory-alerts-chunk-1",
+        "name": "Kyverno High Memory Alerts.txt - Debugging:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section warns about the potential consequences of high memory usage, specifically the risk of running out of memory (OOM) or rendering a node unavailable. It suggests that the content being discussed, likely related to Kyverno or Kubernetes configurations, could lead to excessive memory consumption, causing system instability or downtime.",
+        "use_cases": [
+            "Monitoring and managing memory usage in Kubernetes clusters",
+            "Troubleshooting and debugging memory-related issues",
+            "Optimizing resource allocation and utilization"
+        ],
+        "capabilities": [
+            "Memory management",
+            "Resource monitoring",
+            "Cluster stability",
+            "Availability",
+            "Debugging",
+            "Optimization"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_kyverno-high-memory-alerts-chunk-2",
+        "name": "Kyverno High Memory Alerts.txt - Resolution:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section provides guidance on debugging and troubleshooting high memory alerts related to the Kyverno component. It suggests examining the pod logs for further insights into the issue.",
+        "use_cases": [
+            "Troubleshooting high memory usage",
+            "Analyzing pod logs for debugging",
+            "Identifying root causes of memory-related issues"
+        ],
+        "capabilities": [
+            "Log analysis",
+            "Debugging",
+            "Troubleshooting",
+            "Memory management",
+            "Pod monitoring"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_run-books-and-sops_kyverno-high-memory-alerts-chunk-3",
+        "name": "Kyverno High Memory Alerts.txt - Impact:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Run books and SOPs"
+        ],
+        "description": "This section discusses the impact of high memory usage on the Kyverno pods, which are responsible for enforcing infrastructure guardrails. It suggests restarting the pods and increasing the memory limits based on usage. It also mentions that if Kyverno is not functioning properly, changes to the infrastructure may not be validated or audited, leading to potential issues. However, it notes that any manual changes will be reverted by FluxCD during reconciliation.",
+        "use_cases": [
+            "Monitoring and managing high memory usage in Kyverno pods",
+            "Ensuring infrastructure changes are properly validated and audited",
+            "Maintaining high availability of Kyverno for continuous infrastructure guardrails"
+        ],
+        "capabilities": [
+            "Restarting Kyverno pods",
+            "Increasing memory limits",
+            "Monitoring Kyverno usage",
+            "Enforcing infrastructure guardrails",
+            "Validating and auditing infrastructure changes",
+            "High availability deployment",
+            "Automatic reconciliation with FluxCD"
+        ],
+        "references": [
+            "https://vajra.razorpay.com/d/B5komYeVk/kyverno-usage?orgId=1&var-cluster=eks-ops-common-infra>"
+        ]
+    }
+]

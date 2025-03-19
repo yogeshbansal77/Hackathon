@@ -1,0 +1,57 @@
+[
+    {
+        "id": "engineering_devops_processes_change-management_github-actions-best-practices-chunk-0",
+        "name": "Github Actions best practices.txt - Why we need Github Actions best practices:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Change Management"
+        ],
+        "description": "This section explains the importance of following best practices when using GitHub Actions. It highlights how adhering to best practices can ensure consistency, security, efficiency, collaboration, and continuous improvement across projects and organizations. The section emphasizes that well-designed workflows and actions can automate repetitive tasks, minimize security risks, and facilitate collaboration by making workflows easier to understand and reuse.",
+        "use_cases": [
+            "Ensuring consistency across projects and organizations",
+            "Automating tasks like code deployment and testing",
+            "Facilitating collaboration and reducing duplication of effort",
+            "Continuously improving workflows and actions"
+        ],
+        "capabilities": [
+            "Consistency",
+            "Security",
+            "Efficiency",
+            "Collaboration",
+            "Continuous Improvement",
+            "Modular and reusable actions",
+            "Caching"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_processes_change-management_github-actions-best-practices-chunk-1",
+        "name": "Github Actions best practices.txt - Things to keep in mind while creating GAs:",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Processes",
+            "Change Management"
+        ],
+        "description": "This section provides best practices and recommendations for creating and managing GitHub Actions workflows effectively. It covers various aspects such as securely handling sensitive data, optimizing workflow performance, testing workflows locally, conditional execution, using official GitHub Actions, monitoring logs, and documenting workflows for better collaboration and maintainability.",
+        "use_cases": [
+            "Securely storing and accessing sensitive information like secrets and access keys",
+            "Optimizing workflow performance by setting timeouts and conditional execution",
+            "Testing and debugging workflows locally before pushing to the repository",
+            "Ensuring workflows are triggered only when necessary, such as on pull requests to the default branch"
+        ],
+        "capabilities": [
+            "Define environment variables",
+            "Set job and step timeouts",
+            "Local workflow testing",
+            "Conditional execution",
+            "Use pull_request_target event",
+            "Utilize official GitHub Actions",
+            "Review workflow logs",
+            "Document workflows"
+        ],
+        "references": []
+    }
+]

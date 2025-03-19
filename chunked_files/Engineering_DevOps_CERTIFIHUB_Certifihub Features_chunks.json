@@ -1,0 +1,222 @@
+[
+    {
+        "id": "engineering_devops_certifihub_certifihub-features-chunk-0",
+        "name": "Certifihub Features.txt - Problem Statement",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "CERTIFIHUB"
+        ],
+        "description": "This section explains that Razorpay uses various types of certificates, including self-signed, internally created CA-signed, and third-party CA-signed certificates, across multiple parts of their system. Keeping track of the expiration dates and managing these certificates is crucial for maintaining their availability goals. The section implies that they need a solution to centrally monitor and manage these certificates.",
+        "use_cases": [
+            "Tracking expiration dates of certificates",
+            "Identifying the team responsible for managing each certificate",
+            "Maintaining availability goals by ensuring certificate validity",
+            "Centralized visibility and management of certificates"
+        ],
+        "capabilities": [
+            "Certificate expiry tracking",
+            "Certificate ownership mapping",
+            "Certificate inventory management",
+            "Certificate lifecycle management",
+            "Certificate visibility and reporting"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_certifihub_certifihub-features-chunk-1",
+        "name": "Certifihub Features.txt - Scope",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "CERTIFIHUB"
+        ],
+        "description": "This section outlines the scope of certificates that the Certifihub system handles. It covers certificates stored in kubestash tables, certificates created by the IT team from SSLstore, and AWS ACM (Amazon Certificate Manager) certificates across multiple regions.",
+        "use_cases": [
+            "Managing certificates stored in a kubestash database",
+            "Handling certificates created by an internal IT team from an SSLstore",
+            "Monitoring and managing AWS ACM certificates across multiple AWS regions"
+        ],
+        "capabilities": [
+            "kubestash table certificate management",
+            "SSLstore certificate integration",
+            "ACM certificate management",
+            "Multi-region certificate handling"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_certifihub_certifihub-features-chunk-2",
+        "name": "Certifihub Features.txt - Proposed Solution",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "CERTIFIHUB"
+        ],
+        "description": "This section appears to be introducing the concept of different types of certificates that will be covered or supported by the Certifihub platform. However, the content provided is minimal and does not provide any specific details about the certificate types themselves. It seems to be a placeholder or a section heading for further elaboration.",
+        "use_cases": [
+            "Categorizing or classifying different types of certificates",
+            "Providing information about various certificate types supported by Certifihub",
+            "Helping users understand the different certificate options available"
+        ],
+        "capabilities": [
+            "Certificate types categorization",
+            "Certificate types information",
+            "Certificate types support"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_certifihub_certifihub-features-chunk-3",
+        "name": "Certifihub Features.txt - Features",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "CERTIFIHUB"
+        ],
+        "description": "This section describes a tool called Certifihub that helps manage and track the expiration of SSL/TLS certificates across an organization. It provides a centralized overview of all certificates, their expiration dates, and additional metadata like certificate names, common names, subject alternative names (SANs), and comments or documentation related to the certificate renewal process.",
+        "use_cases": [
+            "Centralized tracking and management of SSL/TLS certificates across an organization",
+            "Monitoring and alerting for certificate expiration",
+            "Integration with JIRA and Slack for certificate management workflows",
+            "Storing and accessing additional metadata related to certificates"
+        ],
+        "capabilities": [
+            "Certificate expiry tracking",
+            "Centralized certificate overview",
+            "Certificate metadata storage",
+            "Alerting for certificate expiration",
+            "Integration with JIRA",
+            "Integration with Slack"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_certifihub_certifihub-features-chunk-4",
+        "name": "Certifihub Features.txt - Components",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "CERTIFIHUB"
+        ],
+        "description": "This section outlines various features and capabilities related to managing and tracking SSL/TLS certificates within an organization. It covers aspects such as displaying certificate details, associating certificates with stakeholders and Slack handles for expiry notifications, generating Certificate Signing Requests (CSRs) and integrating with JIRA for certificate management workflows. Additionally, it mentions role-based access control (RBAC) for different user roles and separate Slack channels for auditing logs and expiry notifications.",
+        "use_cases": [
+            "Tracking and managing SSL/TLS certificates from various sources",
+            "Sending expiry notifications to stakeholders via Slack",
+            "Generating CSRs and integrating with JIRA for certificate issuance",
+            "Creating JIRA tickets for expiring certificates"
+        ],
+        "capabilities": [
+            "Display certificate details (source, JIRA link, type, last sync time)",
+            "Associate Slack handles with certificates for expiry notifications",
+            "Generate CSRs and attach to JIRA tickets with auto-filled details",
+            "Create JIRA tickets for expiring certificates",
+            "Separate Slack channels for auditing logs and expiry notifications",
+            "Role-based access control (RBAC) with read-only and admin roles"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_certifihub_certifihub-features-chunk-5",
+        "name": "Certifihub Features.txt - Dashboard",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "CERTIFIHUB"
+        ],
+        "description": "This section describes the components of the Certifihub Dashboard, specifically the Cert Collector. The Cert Collector is responsible for reading and collecting certificates across the Razorpay organization and storing them in a database. It explains that the Cert Collector stores data in some form of data stores, but the details of these data stores are not provided in the given content.",
+        "use_cases": [
+            "Centralized collection and storage of certificates across an organization",
+            "Monitoring and tracking of certificates within an organization",
+            "Maintaining a database of certificates for compliance or auditing purposes"
+        ],
+        "capabilities": [
+            "Certificate collection",
+            "Certificate storage",
+            "Data storage",
+            "Organization-wide certificate management"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_certifihub_certifihub-features-chunk-6",
+        "name": "Certifihub Features.txt - Certificate Management",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "CERTIFIHUB"
+        ],
+        "description": "This section outlines various components and features related to certificate management within the Certifihub system. It mentions different data stores like Credstash Tables and AWS ACM for storing and managing SSL certificates. Additionally, it describes two key components: Cert Backend, which provides a REST API for searching, viewing, and updating Slack handles associated with certificates, and Cert Frontend, which offers a user interface for stakeholders to view all certificates across the organization and update their Slack handles for alert notifications.",
+        "use_cases": [
+            "Centralized management and storage of SSL certificates",
+            "Searching and viewing certificates across the organization",
+            "Updating Slack handles associated with certificates for alert notifications",
+            "Providing a unified interface for stakeholders to access and manage certificates"
+        ],
+        "capabilities": [
+            "Credstash Tables for storing certificates",
+            "SSL Store API for certificates procured by IT Team",
+            "Integration with AWS ACM for certificate management",
+            "Cert Backend REST API for certificate search, view, and Slack handle updates",
+            "Cert Frontend UI for viewing all certificates and updating Slack handles"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_certifihub_certifihub-features-chunk-7",
+        "name": "Certifihub Features.txt - Alerting and Notifications",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "CERTIFIHUB"
+        ],
+        "description": "This section describes a feature called 'Expiry Tracker' which is designed to monitor and alert users about the expiration of digital certificates. It runs as a scheduled task (cron job) and checks for certificates that are nearing their expiry date within a specified number of days. When such certificates are found, it generates a report and sends it to a designated Slack channel, allowing users to stay informed and take necessary actions to renew or replace the expiring certificates.",
+        "use_cases": [
+            "Monitoring and tracking the expiration dates of digital certificates",
+            "Sending timely notifications and reports about expiring certificates",
+            "Integrating with collaboration tools like Slack for efficient communication",
+            "Automating the process of checking and reporting certificate expirations"
+        ],
+        "capabilities": [
+            "Expiry Tracker",
+            "Cron job",
+            "Certificate expiry monitoring",
+            "Configurable expiry threshold",
+            "Slack integration",
+            "Automated reporting"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_certifihub_certifihub-features-chunk-8",
+        "name": "Certifihub Features.txt - Monitoring",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "CERTIFIHUB"
+        ],
+        "description": "This section outlines the key features and capabilities of a certificate management tool called Certifihub. It covers various aspects such as monitoring certificate status, managing certificate lifecycles, setting up alerts and notifications, user access control, integrations with other systems, security measures, usability considerations, and scalability. The tool aims to provide a centralized platform for organizations to effectively manage and monitor their digital certificates.",
+        "use_cases": [
+            "Monitoring and tracking the status of SSL/PGP certificates across the organization",
+            "Streamlining the process of renewing and provisioning new certificates",
+            "Setting up customizable alerts and notifications for certificate expiration",
+            "Integrating with existing systems and workflows for certificate management"
+        ],
+        "capabilities": [
+            "Certificate status monitoring dashboard",
+            "Search and filtering capabilities for certificates",
+            "System health monitoring",
+            "Certificate lifecycle management (renewal, provisioning)",
+            "Customizable alerts and notifications",
+            "Incident management integration",
+            "Real-time monitoring and audit logs",
+            "Analytics and reporting",
+            "Role-based access control (RBAC)",
+            "API and third-party integrations",
+            "Secure authentication and authorization",
+            "User-friendly interface and documentation",
+            "High availability and scalability"
+        ],
+        "references": []
+    }
+]

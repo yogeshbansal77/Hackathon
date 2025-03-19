@@ -1,0 +1,214 @@
+[
+    {
+        "id": "engineering_devops_devops-onboarding_devops-user-off-boarding-chunk-0",
+        "name": "Devops User Off-boarding.txt - Introduction",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section does not provide any meaningful content or explanation. It appears to be an empty section with no text or information.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_devops-user-off-boarding-chunk-1",
+        "name": "Devops User Off-boarding.txt - AWS Access Revocation",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section outlines the steps to revoke AWS access for a user who is being off-boarded from the organization. It involves creating a Jira ticket to track the process, and then manually disabling the user's access in various AWS accounts by navigating to the IAM console, searching for the user, disabling their console password, removing their MFA device access, and marking their access key as inactive. The accounts mentioned are LZ account, Prod, Stage, POC, and Qubole.",
+        "use_cases": [
+            "User off-boarding",
+            "Revoking AWS access",
+            "Disabling user accounts",
+            "Tracking off-boarding process"
+        ],
+        "capabilities": [
+            "Jira ticket creation",
+            "IAM console access",
+            "User search",
+            "Console password disabling",
+            "MFA device removal",
+            "Access key deactivation",
+            "Account management across multiple AWS accounts"
+        ],
+        "references": [
+            "https://razorpay.atlassian.net/browse/PE-1112>"
+        ]
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_devops-user-off-boarding-chunk-2",
+        "name": "Devops User Off-boarding.txt - Vishnu, Narayan, and Brahma Access Revocation",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section outlines the process of revoking access for a DevOps user across various systems and repositories. It involves raising pull requests (PRs) in specific GitHub repositories (Vishnu, Narayan, and Brahma) to remove the user's access and applying the changes through Terraform. The section also provides instructions on how to remove the user's access in the Vishnu repository using Terraform.",
+        "use_cases": [
+            "Revoking access for a DevOps user across multiple systems and repositories",
+            "Removing user access from Redislabs, thirdwatch (prod and stage), Razorpayx, Wallet account, MPOS (UAT/Prod), Razorpay-tech, Startree, and Terrafin",
+            "Applying changes to user access through Terraform in the Vishnu repository",
+            "Streamlining the off-boarding process for DevOps users"
+        ],
+        "capabilities": [
+            "Access revocation",
+            "Pull request management",
+            "Terraform integration",
+            "Multi-repository access control",
+            "DevOps user off-boarding",
+            "Access management automation"
+        ],
+        "references": [
+            "https://github.com/razorpay/vishnu/pull/5940>",
+            "https://github.com/razorpay/narayan/pull/2975/files>",
+            "https://github.com/razorpay/brahma/pull/1695>",
+            "https://github.com/razorpay/vishnu/pull/5940/files>"
+        ]
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_devops-user-off-boarding-chunk-3",
+        "name": "Devops User Off-boarding.txt - IAM Console Access Removal",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section appears to be empty or missing content. Without any text or details provided, it is difficult to determine what this section explains or covers regarding the removal of IAM (Identity and Access Management) console access during the Devops user off-boarding process.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_devops-user-off-boarding-chunk-4",
+        "name": "Devops User Off-boarding.txt - Reference Threads",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section provides instructions for deprovisioning resources related to a user named 'prakhya' using Terraform. It involves running Terraform commands to destroy specific resources associated with an IAM role for Redis, and suggests repeating the process for other accounts and the Landing Zone (LZ) account. It also mentions a potential error related to Terraform version mismatch and suggests upgrading Terraform to resolve it.",
+        "use_cases": [
+            "User off-boarding process",
+            "Deprovisioning user-specific resources",
+            "Cleaning up resources across multiple accounts",
+            "Managing Terraform state and version compatibility"
+        ],
+        "capabilities": [
+            "Terraform resource management",
+            "IAM role deprovisioning",
+            "Redis resource deprovisioning",
+            "Cross-account resource management",
+            "Terraform state management",
+            "Terraform version compatibility"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_devops-user-off-boarding-chunk-5",
+        "name": "Devops User Off-boarding.txt - Duo and Vajra Access Removal",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section appears to be empty or missing content. Without any information provided, it is difficult to determine what this section explains or covers regarding Duo and Vajra Access Removal in the context of the Devops User Off-boarding process.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_devops-user-off-boarding-chunk-6",
+        "name": "Devops User Off-boarding.txt - StatusCake and Cloudflare Access Removal",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section provides instructions for setting the Terraform version to 0.13.5 by creating or modifying a file named '.terraform-version' using the vi text editor. This step is likely a prerequisite for running Terraform commands or configurations related to the off-boarding process.",
+        "use_cases": [
+            "Setting up the Terraform environment for off-boarding tasks",
+            "Ensuring consistent Terraform version across team members or systems",
+            "Preparing the infrastructure for changes related to user off-boarding"
+        ],
+        "capabilities": [
+            "Terraform version management",
+            "Text file editing",
+            "Version control"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_devops-user-off-boarding-chunk-7",
+        "name": "Devops User Off-boarding.txt - Kube-manifests Access Removal",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section provides a command to remove the '.terraform' directory, which is typically used by Terraform, a popular Infrastructure as Code (IaC) tool. Removing this directory is likely part of the off-boarding process for a DevOps user, ensuring that any Terraform state or configuration files associated with that user are deleted from the system.",
+        "use_cases": [
+            "Removing Terraform state and configuration files during user off-boarding",
+            "Cleaning up Terraform-related files and directories",
+            "Ensuring no residual Terraform data is left behind after user off-boarding"
+        ],
+        "capabilities": [
+            "Terraform directory removal",
+            "User off-boarding",
+            "Infrastructure as Code (IaC) cleanup",
+            "Secure data removal"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_devops-user-off-boarding-chunk-8",
+        "name": "Devops User Off-boarding.txt - Other Kubernetes Clusters Access Removal",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section appears to be empty, as there is no content provided within the code block. It is likely intended to provide instructions or guidance on removing access for a departing user from other Kubernetes clusters that they may have had access to, beyond the primary cluster being addressed in the off-boarding process. However, without any actual content, it is difficult to provide a more detailed description.",
+        "use_cases": [
+            "Revoking access for a departing user from multiple Kubernetes clusters",
+            "Ensuring comprehensive access removal as part of the off-boarding process",
+            "Maintaining security and access control across different Kubernetes environments"
+        ],
+        "capabilities": [],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_devops-onboarding_devops-user-off-boarding-chunk-9",
+        "name": "Devops User Off-boarding.txt - Bastion Host Access Removal",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "DevOps Onboarding"
+        ],
+        "description": "This section outlines the steps involved in revoking access privileges for a departing employee or user from various systems and platforms used within the organization. It covers removing the user's access from cloud infrastructure, authentication systems, monitoring tools, code repositories, and internal clusters or servers. The process aims to ensure that the former employee no longer has any unauthorized access to sensitive resources or data.",
+        "use_cases": [
+            "Employee off-boarding process",
+            "Revoking access to critical systems and resources",
+            "Maintaining security and data integrity",
+            "Centralized access management"
+        ],
+        "capabilities": [
+            "IAM user management",
+            "Multi-cloud access control",
+            "Authentication system integration",
+            "Monitoring tool access removal",
+            "Code repository access revocation",
+            "Internal cluster access revocation"
+        ],
+        "references": [
+            "https://razorpay.slack.com/archives/C02GUKL2MS6/p1657192477470509>",
+            "https://razorpay.slack.com/archives/C02GUKL2MS6/p1644499399463459?thread_ts=1644499324.570609&cid=C02GUKL2MS6>",
+            "https://razorpay.slack.com/archives/C02GUKL2MS6/p1656740866480019>",
+            "https://github.com/razorpay/kube-manifests/pull/6537>"
+        ]
+    }
+]

@@ -1,0 +1,102 @@
+[
+    {
+        "id": "engineering_devops_security_pingsafe_acm-certificates-have-transparency-logging-disabled-chunk-0",
+        "name": "ACM certificates have transparency logging disabled.txt - Introduction",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Security",
+            "PingSafe"
+        ],
+        "description": "This section explains that some of the SSL/TLS certificates managed by AWS Certificate Manager (ACM) have their transparency logging disabled. This means that these certificates are not being publicly logged and audited, which could raise security concerns. The issue seems to be more prevalent with certificates that have been imported into ACM from external sources.",
+        "use_cases": [
+            "Managing SSL/TLS certificates",
+            "Ensuring certificate transparency and security",
+            "Auditing imported certificates"
+        ],
+        "capabilities": [
+            "Certificate management",
+            "Certificate transparency logging",
+            "Importing external certificates",
+            "Identifying security issues"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_security_pingsafe_acm-certificates-have-transparency-logging-disabled-chunk-1",
+        "name": "ACM certificates have transparency logging disabled.txt - Certificates with transparency logging disabled",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Security",
+            "PingSafe"
+        ],
+        "description": "This section discusses certificates issued by AWS Certificate Manager (ACM) that have transparency logging disabled. By default, ACM sends issued certificates for public logging, but some certificates are imported from external sources and may have transparency logging disabled. The section provides examples of certificate IDs and links to crt.sh, a website that tracks certificate transparency logs.",
+        "use_cases": [
+            "Identifying certificates with transparency logging disabled",
+            "Tracking certificate transparency logs",
+            "Monitoring imported certificates in ACM"
+        ],
+        "capabilities": [
+            "Certificate transparency logging",
+            "Certificate import",
+            "Certificate identification by ID",
+            "Certificate tracking via crt.sh"
+        ],
+        "references": [
+            "https://crt.sh/?id=6785407219",
+            "https://crt.sh/?id=6726840603"
+        ]
+    },
+    {
+        "id": "engineering_devops_security_pingsafe_acm-certificates-have-transparency-logging-disabled-chunk-2",
+        "name": "ACM certificates have transparency logging disabled.txt - Certificates with transparency logging enabled",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Security",
+            "PingSafe"
+        ],
+        "description": "This section provides information about identifying whether a specific SSL/TLS certificate has transparency logging enabled or not. Transparency logging is a security feature that helps detect and prevent the issuance of misissued certificates by publicly logging all issued certificates. The section includes a specific certificate ID and a link to a website (crt.sh) where you can check if that certificate has transparency logging enabled. It also mentions that some certificates might be issued in different AWS regions like us-east-1 (for CloudFront) or ap-south-1 (default), and that certain certificates issued by payment networks like Visa and MasterCard have been excluded from this documentation.",
+        "use_cases": [
+            "Verifying if a specific SSL/TLS certificate has transparency logging enabled",
+            "Checking the AWS region where a certificate was issued",
+            "Identifying certificates issued by payment networks like Visa and MasterCard"
+        ],
+        "capabilities": [
+            "Certificate transparency logging",
+            "Certificate issuance region identification",
+            "Certificate issuer identification (payment networks)"
+        ],
+        "references": [
+            "https://crt.sh/?id=6785464618"
+        ]
+    },
+    {
+        "id": "engineering_devops_security_pingsafe_acm-certificates-have-transparency-logging-disabled-chunk-3",
+        "name": "ACM certificates have transparency logging disabled.txt - How to understand if a cert has transparency logs enabled",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Security",
+            "PingSafe"
+        ],
+        "description": "This section explains how to verify if a given ACM (AWS Certificate Manager) certificate has transparency logging enabled. Transparency logging is a security feature that logs all issued certificates to public logs, allowing anyone to audit them. The steps involve finding the certificate's serial number, searching for it on crt.sh (a public certificate transparency log), and checking if the certificate has a 'CT Precertificate SCT' section, which indicates transparency logging is enabled.",
+        "use_cases": [
+            "Verifying if a specific ACM certificate has transparency logging enabled",
+            "Auditing ACM certificates for security and compliance purposes",
+            "Troubleshooting issues related to certificate transparency logging"
+        ],
+        "capabilities": [
+            "Finding ACM certificate serial number",
+            "Searching for certificates on crt.sh",
+            "Identifying 'CT Precertificate SCT' section in certificate details",
+            "Verifying certificate transparency logging status",
+            "Auditing certificates for security and compliance"
+        ],
+        "references": [
+            "https://alpha.razorpay.com/_static/file/ef9fc90abb0edd90be259ede7475124d.png",
+            "https://crt.sh/?serial=07:80:06:61:52:fd:84:45:e4:e2:9d:48:fe:97:91:9e>"
+        ]
+    }
+]

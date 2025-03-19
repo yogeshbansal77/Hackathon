@@ -1,0 +1,173 @@
+[
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_metrics_sentry_how-to-remove-a-user-from-sentry?-chunk-0",
+        "name": "How to remove a user from sentry?.txt - User membership in Sentry",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Metrics",
+            "Sentry"
+        ],
+        "description": "This section provides an example link to a forum discussion related to issues with changing user membership settings in Sentry. It suggests that users may encounter problems when trying to modify user roles or permissions within the Sentry application.",
+        "use_cases": [
+            "Troubleshooting user membership issues in Sentry",
+            "Seeking help from the Sentry community forum",
+            "Understanding potential limitations or bugs related to user management in Sentry"
+        ],
+        "capabilities": [
+            "User membership management",
+            "User roles and permissions",
+            "Community support forum"
+        ],
+        "references": [
+            "https://forum.sentry.io/t/sentry-members-setting-changes-not-working/3524>"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_metrics_sentry_how-to-remove-a-user-from-sentry?-chunk-1",
+        "name": "How to remove a user from sentry?.txt - Examples",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Metrics",
+            "Sentry"
+        ],
+        "description": "This section provides an example of how to remove a user from the Sentry application. It suggests that deleting the corresponding row from the 'auth_user' table in the database will effectively remove the user account. The section also includes a link to a forum discussion related to the issue of logging in with accounts that have the same email as a previously deleted account.",
+        "use_cases": [
+            "Removing a user account from Sentry",
+            "Handling issues with duplicate email addresses after account deletion",
+            "Managing user accounts in Sentry"
+        ],
+        "capabilities": [
+            "User account deletion",
+            "Database management",
+            "User authentication",
+            "Forum support"
+        ],
+        "references": [
+            "https://forum.sentry.io/t/cant-log-in-with-accounts-that-have-same-email-as-deleted-accounts/2268>"
+        ]
+    },
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_metrics_sentry_how-to-remove-a-user-from-sentry?-chunk-2",
+        "name": "How to remove a user from sentry?.txt - Removing a user from the database",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Metrics",
+            "Sentry"
+        ],
+        "description": "This section explains the process of removing a user from the Sentry database, which is a complex task due to the presence of foreign constraints and references to external tables. It involves accessing the database through SSH, identifying the user's ID, and performing the removal manually, as there is no straightforward way to perform a cascading removal.",
+        "use_cases": [
+            "Removing a user from the Sentry database",
+            "Managing user accounts in Sentry",
+            "Handling complex database operations with foreign constraints"
+        ],
+        "capabilities": [
+            "SSH access",
+            "Database querying",
+            "User identification",
+            "Manual data manipulation",
+            "Foreign constraint handling",
+            "Cascading removal"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_metrics_sentry_how-to-remove-a-user-from-sentry?-chunk-3",
+        "name": "How to remove a user from sentry?.txt - Finding the user_id",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Metrics",
+            "Sentry"
+        ],
+        "description": "This section appears to be incomplete or missing content. It introduces the topic of finding a user's ID in the Sentry application, which is likely a prerequisite step for removing a user. However, the section does not provide any actual instructions or explanations on how to find the user ID.",
+        "use_cases": [
+            "Removing a user from Sentry",
+            "Managing user access in Sentry",
+            "Auditing or reviewing user accounts in Sentry"
+        ],
+        "capabilities": [
+            "User management",
+            "User identification",
+            "User removal"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_metrics_sentry_how-to-remove-a-user-from-sentry?-chunk-4",
+        "name": "How to remove a user from sentry?.txt - Deleting user data from related tables",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Metrics",
+            "Sentry"
+        ],
+        "description": "This section provides SQL commands to delete user data from various tables in the Sentry database. It appears to be a step-by-step guide for removing a user's information, such as audit logs, activity, project bookmarks, API tokens, IP addresses, email addresses, lost password hashes, group assignments, organization memberships, and finally the user account itself. This process ensures that all traces of the user are removed from the system.",
+        "use_cases": [
+            "Deleting a user account from Sentry",
+            "Removing user data for compliance or privacy reasons",
+            "Cleaning up user data after an employee leaves the organization",
+            "Maintaining data integrity by removing stale or unnecessary user records"
+        ],
+        "capabilities": [
+            "Delete user data from audit log table",
+            "Delete user activity records",
+            "Remove user's project bookmarks",
+            "Revoke user's API tokens",
+            "Delete user's IP address records",
+            "Remove user's email address",
+            "Delete user's lost password hash",
+            "Remove user's group assignments",
+            "Delete user's organization memberships",
+            "Delete user account from authentication table"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_observability_observability-tools_metrics_sentry_how-to-remove-a-user-from-sentry?-chunk-5",
+        "name": "How to remove a user from sentry?.txt - Taking a database backup",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "Observability",
+            "Observability Tools",
+            "Metrics",
+            "Sentry"
+        ],
+        "description": "This section provides instructions for taking a backup of the Sentry database before removing a user. It explains that it's a good practice to create a backup, especially if you're cautious about making changes. The section includes two commands: one for creating a plain SQL dump of the database, and another for creating a formatted dump that can be restored using the pg_restore utility. The commands are specific to a PostgreSQL database hosted on Amazon RDS.",
+        "use_cases": [
+            "Taking a database backup before making critical changes",
+            "Backing up a PostgreSQL database hosted on Amazon RDS",
+            "Creating a plain SQL dump of a database",
+            "Creating a formatted database dump for restoration"
+        ],
+        "capabilities": [
+            "Database backup",
+            "PostgreSQL backup",
+            "SQL dump",
+            "Formatted database dump",
+            "pg_dump utility",
+            "pg_restore utility",
+            "Amazon RDS database backup"
+        ],
+        "references": []
+    }
+]

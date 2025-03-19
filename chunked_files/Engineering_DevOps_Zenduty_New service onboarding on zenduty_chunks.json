@@ -1,0 +1,113 @@
+[
+    {
+        "id": "engineering_devops_zenduty_new-service-onboarding-on-zenduty-chunk-0",
+        "name": "New service onboarding on zenduty.txt - Get the access from MyAccess",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Zenduty"
+        ],
+        "description": "This section is inquiring whether the user or organization already has an existing Zenduty team set up. It seems to be the first step in the onboarding process, where the system needs to determine if a new team needs to be created or if an existing team can be used for the new service integration.",
+        "use_cases": [
+            "Onboarding a new service or integration with Zenduty",
+            "Determining if a new Zenduty team needs to be created",
+            "Associating an existing Zenduty team with a new service"
+        ],
+        "capabilities": [
+            "Existing team detection",
+            "New team creation",
+            "Team association with services"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_zenduty_new-service-onboarding-on-zenduty-chunk-1",
+        "name": "New service onboarding on zenduty.txt - Whether you have any existing zenduty team for your org?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Zenduty"
+        ],
+        "description": "This section explains the process of onboarding a new service on the Zenduty platform. It covers two scenarios: whether the organization already has an existing Zenduty team or not. If a team exists, the user can directly add the new service to that team. If not, a new team needs to be created by the DevOps team, and the user needs to raise a JIRA ticket with the required details. Once the team is set up, the user can add members, create schedules, escalation policies, and services, and configure Slack integration for receiving alerts.",
+        "use_cases": [
+            "Onboarding a new service on Zenduty",
+            "Creating a new team on Zenduty for an organization",
+            "Configuring Slack integration for receiving alerts",
+            "Managing team members, schedules, and escalation policies"
+        ],
+        "capabilities": [
+            "Create new team",
+            "Add team members",
+            "Create schedules",
+            "Create escalation policies",
+            "Create services",
+            "Configure Slack integration",
+            "Manage service access roles"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_zenduty_new-service-onboarding-on-zenduty-chunk-2",
+        "name": "New service onboarding on zenduty.txt - What is the alert source?",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Zenduty"
+        ],
+        "description": "This section explains the different alert sources that can be integrated with the Zenduty service for monitoring and receiving alerts. It provides instructions on how to set up integrations with popular tools like Prometheus, Sentry, Databricks, and Grafana. The section also mentions that if Prometheus is used as the alert source, a global alert rule needs to be configured by administrators to route alerts to the appropriate team.",
+        "use_cases": [
+            "Monitoring and receiving alerts from various sources",
+            "Integrating with popular monitoring and logging tools",
+            "Routing alerts to specific teams based on alert source"
+        ],
+        "capabilities": [
+            "Prometheus integration",
+            "Sentry integration",
+            "Databricks integration",
+            "Grafana integration",
+            "Global alert rule configuration",
+            "Documentation for integrations"
+        ],
+        "references": [
+            "https://docs.zenduty.com/docs/integrations/integrations>"
+        ]
+    },
+    {
+        "id": "engineering_devops_zenduty_new-service-onboarding-on-zenduty-chunk-3",
+        "name": "New service onboarding on zenduty.txt - If Alert manager is your alert source then a global alert rules entry needs to be made to route the alerts to your team.(Admins can do this)",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Zenduty"
+        ],
+        "description": "This section provides instructions for configuring alert routing and notification rules in the Zenduty system. It mentions that if AlertManager is being used as the alert source, a global alert rule entry needs to be created to route alerts to the appropriate team. This task can be performed by administrators, and a reference to a JIRA ticket with more details is provided. Additionally, it states that all team members added to the system need to update their notification rules to receive calls or SMS alerts.",
+        "use_cases": [
+            "Configuring alert routing from AlertManager to Zenduty",
+            "Setting up global alert rules for teams",
+            "Updating individual notification preferences for team members"
+        ],
+        "capabilities": [
+            "Global alert rules management",
+            "Alert routing configuration",
+            "Notification rules customization",
+            "Integration with AlertManager",
+            "Call and SMS notifications"
+        ],
+        "references": [
+            "https://razorpay.atlassian.net/browse/PE-9908>"
+        ]
+    },
+    {
+        "id": "engineering_devops_zenduty_new-service-onboarding-on-zenduty-chunk-4",
+        "name": "New service onboarding on zenduty.txt - All the added folks need to update their notification rules so they get calls/sms.",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Zenduty"
+        ],
+        "description": "This section appears to be empty, as there is no content provided between the code block markers. Without any actual content, it is not possible to provide a meaningful description, use cases, or capabilities related to the section.",
+        "use_cases": [],
+        "capabilities": [],
+        "references": []
+    }
+]

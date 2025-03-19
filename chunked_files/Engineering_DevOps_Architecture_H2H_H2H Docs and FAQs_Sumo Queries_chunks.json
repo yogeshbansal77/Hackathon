@@ -1,0 +1,56 @@
+[
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sumo-queries-chunk-0",
+        "name": "Sumo Queries.txt - To check file push and pull failures",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section provides a Sumo Logic query that can be used to search for error logs related to file push and pull failures in a product named 'beam'. The query filters the logs from the 'prod_beam' index, extracts the 'level' field from the JSON-formatted logs, and displays only the logs where the 'level' field is set to 'error'. This can help identify and troubleshoot issues related to file transfer operations in the 'beam' product.",
+        "use_cases": [
+            "Troubleshooting file transfer failures in the 'beam' product",
+            "Monitoring and analyzing error logs related to file push and pull operations",
+            "Identifying and resolving issues with file transfer processes",
+            "Auditing and reporting on file transfer errors"
+        ],
+        "capabilities": [
+            "Sumo Logic query",
+            "Log filtering",
+            "JSON log parsing",
+            "Error log analysis",
+            "File transfer monitoring",
+            "Troubleshooting"
+        ],
+        "references": []
+    },
+    {
+        "id": "engineering_devops_architecture_h2h_h2h-docs-and-faqs_sumo-queries-chunk-1",
+        "name": "Sumo Queries.txt - To check file push success/list all files pulled",
+        "breadcrumb": [
+            "Engineering",
+            "DevOps",
+            "Architecture",
+            "H2H",
+            "H2H Docs and FAQs"
+        ],
+        "description": "This section provides a Sumo Logic query that can be used to check the success of file transfers via SFTP and list all the files that have been pulled (downloaded) from a remote server. The query filters the logs for entries related to a specific 'beam_job_name' and the 'SFTP_PUT_SUCCESSFUL' message, extracts the 'job_type' field, and then filters the results to only show entries where the job_type is 'pull'.",
+        "use_cases": [
+            "Monitoring the success of file transfers via SFTP",
+            "Listing all files that have been pulled (downloaded) from a remote server",
+            "Troubleshooting issues with file transfers",
+            "Auditing file transfer activities"
+        ],
+        "capabilities": [
+            "Sumo Logic query",
+            "Filtering logs",
+            "Extracting specific fields",
+            "Conditional filtering",
+            "Monitoring SFTP file transfers",
+            "Listing pulled files"
+        ],
+        "references": []
+    }
+]
