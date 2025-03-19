@@ -42,15 +42,51 @@ async function sendMessage() {
         .replace(/(<li>.+<\/li>)+/g, '<ul>$&</ul>')  // Wrap list items in ul tags
         .replace(/\n/g, '<br>');  // Line breaks
 
-
     // Create Assistant Message
     const assistantMessage = document.createElement('div');
     assistantMessage.classList.add('message', 'assistant-message');
-    assistantMessage.innerHTML = `<strong>Assistant:</strong><br>${formattedResponse}`;
+    assistantMessage.innerHTML = '<strong>Assistant:</strong><br><span class="typing-text"></span>';
     conversation.appendChild(assistantMessage);
 
+    // Get typing area
+    const typingArea = assistantMessage.querySelector('.typing-text');
+    
+    // Type the message with animation
+    typeText(typingArea, formattedResponse, function() {
+        // Callback after typing completes
+        conversation.scrollTop = conversation.scrollHeight;
+    });
+
+// Add this function to implement the typing effect
+function typeText(element, html, callback, speed = 30) {
+    const tempDiv = document.createElement('div');
+    tempDiv.innerHTML = html;
+    const text = tempDiv.textContent;
+    let i = 0;
+    
+    function typeNextChar() {
+        if (i < text.length) {
+            // Show one character at a time while typing
+            const progress = i / text.length;
+            element.textContent = text.slice(0, i + 1);
+            i++;
+            
+            // Scroll while typing
+            const conversation = document.getElementById('conversation');
+            conversation.scrollTop = conversation.scrollHeight;
+            
+            setTimeout(typeNextChar, speed);
+        } else {
+            // Typing complete - replace with fully formatted HTML
+            element.innerHTML = html;
+            if (callback) callback();
+        }
+    }
+    
+    typeNextChar();
+}
     // Scroll to the bottom of the chat
-    conversation.scrollTop = conversation.scrollHeight;
+    // conversation.scrollTop = conversation.scrollHeight;
 
     
 }
