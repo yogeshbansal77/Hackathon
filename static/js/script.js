@@ -82,10 +82,6 @@ function typeText(element, html, callback, speed = 30) {
             element.innerHTML += chunks[currentIndex];
             currentIndex++;
             
-            // Scroll while typing
-            const conversation = document.getElementById('conversation');
-            conversation.scrollTop = conversation.scrollHeight;
-            
             // Only delay for visible text chunks, not for HTML tags
             const delay = chunks[currentIndex - 1].startsWith('<') && chunks[currentIndex - 1].endsWith('>') ? 0 : speed;
             setTimeout(typeNextChunk, delay);
