@@ -24,6 +24,12 @@ async function sendMessage() {
     // Clear input field immediately after sending message
     userInputField.value = '';
 
+    // Create Loading Icon
+    const loadingIcon = document.createElement('div');
+    loadingIcon.classList.add('loading-icon');
+    loadingIcon.innerHTML = 'Loading...';
+    conversation.appendChild(loadingIcon);
+
     // Send user input to backend
     const response = await fetch('/get_recommendation', {
         method: 'POST',
@@ -42,6 +48,9 @@ async function sendMessage() {
         .replace(/(<li>.+<\/li>)+/g, '<ul>$&</ul>')  // Wrap list items in ul tags
         .replace(/\n/g, '<br>');  // Line breaks
 
+    // Remove Loading Icon
+    conversation.removeChild(loadingIcon);
+
     // Create Assistant Message
     const assistantMessage = document.createElement('div');
     assistantMessage.classList.add('message', 'assistant-message');
@@ -55,7 +64,8 @@ async function sendMessage() {
     typeText(typingArea, formattedResponse, function() {
         // Callback after typing completes
         conversation.scrollTop = conversation.scrollHeight;
-    },10);
+    }, 10);
+}
 
 // Add this function to implement the typing effect
 // ...existing code...
@@ -160,9 +170,4 @@ function splitHTMLIntoChunks(html) {
     }
     
     return result;
-}
-    // Scroll to the bottom of the chat
-    // conversation.scrollTop = conversation.scrollHeight;
-
-    
 }

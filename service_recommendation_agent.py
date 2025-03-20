@@ -1,4 +1,3 @@
-
 import asyncio
 import os
 import datetime
@@ -74,14 +73,12 @@ async def get_service_recommendations(query, history):
     service_message = {
         "role": "system", 
         "content": f"""
-        Available Services related to the latest query:
+        Based on the user's query, provide a detailed and specific recommendation. Include:
+        1. The recommended solution(s)
+        2. A brief explanation of why these solutions are appropriate
+        3. A simple example of how to implement these solutions for the requested task
+        Relevant information:
         {services_text}
-        
-        Based on the user's request and the available services, provide a recommendation on which Razorpay internal services to use.
-        Include:
-        1. The recommended service(s)
-        2. A brief explanation of why these services are appropriate
-        3. A simple example of how to use these services for the requested task
         """
     }
     messages.append(service_message)
@@ -100,7 +97,6 @@ async def get_service_recommendations(query, history):
     file_path = recommendations_dir / filename
     
     # Stream the response and save to file
-    print("### Service Recommendation Agent :>\n", end="", flush=True)
     full_response = ""
     
     # Create the file and write the query
